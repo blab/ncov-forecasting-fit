@@ -1,0 +1,197 @@
+date,location,variant,median_freq,freq_upper_95,freq_lower_95,freq_upper_80,freq_lower_80,freq_upper_50,freq_lower_50
+2022-05-25,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,Delta,nan,nan,nan,nan,nan,nan,nan
+2022-05-25,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,Omicron 21K,nan,nan,nan,nan,nan,nan,nan
+2022-05-25,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,Omicron 21L,nan,nan,nan,nan,nan,nan,nan
+2022-05-25,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,Omicron 22A,nan,nan,nan,nan,nan,nan,nan
+2022-05-25,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,Omicron 22B,nan,nan,nan,nan,nan,nan,nan
+2022-05-25,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,Omicron 22C,nan,nan,nan,nan,nan,nan,nan
+2022-05-25,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-05-26,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-05-27,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-05-28,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-05-29,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-05-30,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-05-31,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-01,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-02,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-03,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-04,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-05,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-06,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-07,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-08,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-09,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-10,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-11,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-12,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-13,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-14,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-15,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-16,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-17,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-18,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-19,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-20,Australia,other,nan,nan,nan,nan,nan,nan,nan
+2022-06-21,Australia,other,nan,nan,nan,nan,nan,nan,nan
