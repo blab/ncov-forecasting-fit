@@ -55,7 +55,8 @@ class LogLoss(Scores): #to-do
 
 
 if __name__=='__main__':
-    locations = ["United Kingdom","Japan"]
+    locations = ["USA","Japan"]
+    models = ["GARW", "FGA"]
     dates = ['2022-01-24', '2022-02-04','2022-02-08','2022-02-18','2022-02-23',
          '2022-02-28','2022-03-03','2022-03-08','2022-03-15',
          '2022-03-21','2022-03-25','2022-04-07','2022-04-14','2022-04-27'
@@ -71,48 +72,59 @@ if __name__=='__main__':
 
     final_sets = {}
     pred_dic = {}
-    for location in locations: 
 
-        #filtering final_truth dataset to run location
-        location_truth = final_truth[final_truth['location']==location]
-        location_truth = location_truth[['date','location','variant','truth_freq']]
-        for date in dates:
-            filepath = f"../cast_estimates_full/{location}/freq_full_{date}.csv"
+
+    #loop thorough different files of model versions
+    for model in models:
+
+        for location in locations:
+
+            #filtering final_truth dataset to run location
+            location_truth = final_truth[final_truth['location']==location]
+            location_truth = location_truth[['date','location','variant','truth_freq']]
+
+            for date in dates:
+                
+                filepath = f"../cast_estimates_full_{model}/{location}/freq_full_{date}.csv"
+                    
+                #Check if file exists and continue if not
+                if not os.path.exists(filepath):
+                    continue
+                    #read models and add to dict
+                pred_dic[date] = pd.read_csv(filepath)
+                
+                    #loop through data and merge to final set
             
-            #Check if file exists and continue if not
-            if not os.path.exists(filepath):
-                continue
-            #read models and add to dict
-            pred_dic[date] = pd.read_csv(filepath)
-
-            #loop through data and merge to final set
-        final_sets_location = {k: pd.merge(location_truth,d) for k,d in pred_dic.items()} 
-        final_sets[location] = final_sets_location
-        #print(final_sets.keys())   
-
+            final_sets_location = {k: pd.merge(location_truth,d) for k,d in pred_dic.items()}
+            final_sets[location, model] = final_sets_location
+        
+    #print(final_sets.keys())   
+    #print(final_sets['USA','FGA'])
 
 
     error_id_dict = {}
     #prep arrays of data
-    for location in locations:
-        prepped_data = {k: prep_freq_data(v) for k,v in final_sets[location].items()}
+
+    for model in models:
+
+        for location in locations:
+            prepped_data = {k: prep_freq_data(v) for k,v in final_sets[location, model].items()}
 
 
-        error_id_location = {}    
-        for k, v in prepped_data.items():
-            error_dict={}
-            #MAE
-            
-            error = MAE()  
-            error_dict['MAE'] = error.evaluate(v[0],v[1])
-            
-            #MSE
-            mse = MSE()
-            error_dict['MSE'] = mse.evaluate(v[0],v[1])
-            
-            error_id_location[k] = error_dict
-        error_id_dict[location] = error_id_location
+            error_id_location = {}    
+            for k, v in prepped_data.items():
+                error_dict={}
+                #MAE
+                
+                error = MAE()  
+                error_dict['MAE'] = error.evaluate(v[0],v[1])
+                
+                #MSE
+                mse = MSE()
+                error_dict['MSE'] = mse.evaluate(v[0],v[1])
+                
+                error_id_location[k] = error_dict
+            error_id_dict[location, model] = error_id_location
         
 
-    print(prepped_data)
     print(error_id_dict)
