@@ -85,7 +85,7 @@ if __name__=='__main__':
 
             for date in dates:
                 
-                filepath = f"../cast_estimates_full_{model}/{location}/freq_full_{date}.csv"
+                filepath = f"../Var Model estimates/cast_estimates_full_{model}/{location}/freq_full_{date}.csv"
                     
                 #Check if file exists and continue if not
                 if not os.path.exists(filepath):
@@ -127,4 +127,21 @@ if __name__=='__main__':
             error_id_dict[location, model] = error_id_location
         
 
-    print(error_id_dict)
+    #print(error_id_dict.keys())
+    
+#formatting output to desired format
+    
+#convert output to a dataframe
+score_df = pd.DataFrame.from_dict({(location,model): error_id_dict[location][model] 
+for location in error_id_dict.keys() 
+for model in error_id_dict[location]}, orient='index')
+
+#transform dict to columns
+scores = score_df.explode('MSE').reset_index(drop=False)
+scores.columns = ['location','date','Mean Abs Error','Mean Sq Error']
+#unnesting location and model columns
+iden_model = pd.DataFrame(scores["location"].to_list(), columns=['locations', 'model'])
+scores_final = pd.concat([iden_model,scores], axis = 1).drop(['location'], axis = 1)
+
+#save score output to a csv file
+scores_final.to_csv(f"../Var Model estimates/model_scores_output.csv",index = False)
