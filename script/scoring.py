@@ -63,7 +63,7 @@ if __name__=='__main__':
          ,'2022-05-06','2022-05-17','2022-05-20','2022-05-28','2022-06-09'
          ,'2022-06-14','2022-06-22']
     #Latest model run "truth"
-    truth_set = pd.read_csv("https://raw.githubusercontent.com/blab/rt-from-frequency-dynamics/master/estimates/omicron-countries-split/omicron-countries-split_freq-combined-GARW.tsv", sep="\t")
+    truth_set = pd.read_csv("omicron-countries-split_freq-combined-GARW.tsv", sep="\t")
     final_truth = truth_set.rename(columns = {'median_freq':'truth_freq'}, inplace = False)
 
     
@@ -71,21 +71,19 @@ if __name__=='__main__':
 
 
     final_sets = {}
-    pred_dic = {}
-
 
     #loop thorough different files of model versions
     for model in models:
 
         for location in locations:
-
+            pred_dic = {}
             #filtering final_truth dataset to run location
             location_truth = final_truth[final_truth['location']==location]
             location_truth = location_truth[['date','location','variant','truth_freq']]
 
             for date in dates:
                 
-                filepath = f"../Var Model estimates/cast_estimates_full_{model}/{location}/freq_full_{date}.csv"
+                filepath = f"../estimates/cast_estimates_full_{model}/{location}/freq_full_{date}.csv"
                     
                 #Check if file exists and continue if not
                 if not os.path.exists(filepath):
@@ -94,12 +92,16 @@ if __name__=='__main__':
                 pred_dic[date] = pd.read_csv(filepath)
                 
                     #loop through data and merge to final set
-            
+            #print(pred_dic['2022-02-28']['median_freq_nowcast'])
+            #print(model,location)
+            #print(location_truth['date'].min())
+            #print(pred_dic['2022-02-28']['date'])
             final_sets_location = {k: pd.merge(location_truth,d) for k,d in pred_dic.items()}
+            #print(final_sets_location['2022-02-28']['median_freq_nowcast'])
             final_sets[location, model] = final_sets_location
         
-    #print(final_sets.keys())   
-    #print(final_sets['USA','FGA'])
+    #print(final_sets.keys())  
+    #print(final_sets['USA','GARW']['2022-02-28']['median_freq_nowcast'])
 
 
     error_id_dict = {}
@@ -109,8 +111,7 @@ if __name__=='__main__':
 
         for location in locations:
             prepped_data = {k: prep_freq_data(v) for k,v in final_sets[location, model].items()}
-
-
+              
             error_id_location = {}    
             for k, v in prepped_data.items():
                 error_dict={}
@@ -118,7 +119,7 @@ if __name__=='__main__':
                 
                 error = MAE()  
                 error_dict['MAE'] = error.evaluate(v[0],v[1])
-                
+                #print(v[1])
                 #MSE
                 mse = MSE()
                 error_dict['MSE'] = mse.evaluate(v[0],v[1])
@@ -126,8 +127,8 @@ if __name__=='__main__':
                 error_id_location[k] = error_dict
             error_id_dict[location, model] = error_id_location
         
-
-    #print(error_id_dict.keys())
+    #print(prepped_data)
+    #print(error_id_dict)
     
 #formatting output to desired format
     
@@ -136,12 +137,16 @@ score_df = pd.DataFrame.from_dict({(location,model): error_id_dict[location][mod
 for location in error_id_dict.keys() 
 for model in error_id_dict[location]}, orient='index')
 
-#transform dict to columns
-scores = score_df.explode('MSE').reset_index(drop=False)
-scores.columns = ['location','date','Mean Abs Error','Mean Sq Error']
-#unnesting location and model columns
-iden_model = pd.DataFrame(scores["location"].to_list(), columns=['locations', 'model'])
-scores_final = pd.concat([iden_model,scores], axis = 1).drop(['location'], axis = 1)
 
-#save score output to a csv file
-scores_final.to_csv(f"../Var Model estimates/model_scores_output.csv",index = False)
+def clean_score(score_df):
+    #transform dict to columns
+    scores = score_df.explode('MSE').reset_index(drop=False)
+    scores.columns = ['location','date','Mean Abs Error','Mean Sq Error']
+    #unnesting location and model columns
+    iden_model = pd.DataFrame(scores["location"].to_list(), columns=['locations', 'model'])
+    scores_final = pd.concat([iden_model,scores], axis = 1).drop(['location'], axis = 1)
+
+    #save score output to a csv file
+    scores_final.to_csv(f"../estimates/model_scores_outputt.csv",index = False)
+
+clean_score(score_df)
