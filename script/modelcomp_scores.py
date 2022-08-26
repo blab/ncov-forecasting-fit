@@ -1,6 +1,8 @@
+from contextlib import nullcontext
 from itertools import dropwhile
 from pickle import TRUE
 from statistics import mode
+from turtle import left
 from typing import final
 import pandas as pd
 import sklearn
@@ -10,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from abc import ABC, abstractmethod
 from datetime import datetime
+import math
 
 
 
@@ -23,11 +26,12 @@ def prep_freq_data(final_set):
         return (None,)*5
     #smoothing frequencies
     #smoothing
+    
     filter_length = 7
     truth_mv_avg = np.convolve(truth_values, np.ones((filter_length)), mode = 'same')
     truth_mv_avg /= filter_length
     
-    
+
     #return seq_total 
     seq_value = np.squeeze(final_set[['sequences']].to_numpy())
     #return seq
@@ -37,6 +41,19 @@ def prep_freq_data(final_set):
     values =np.squeeze(final_set[['pred_freq']].to_numpy())
 
     return truth_values, values, seq_value, total_seq, truth_mv_avg
+
+def merge_truth_pred(df, location_truth):
+
+    merged_set = pd.merge(df, location_truth, how = 'left')
+    merged_set['sequences'] = merged_set['sequences'].fillna(0)
+    #sum sequences of each location and date
+    merged_set['total_seq'] = merged_set.groupby(['date', 'location'])['sequences'].transform('sum')
+    #compute truth frequencies for each variant
+    merged_set['truth_freq'] = merged_set['sequences']/merged_set['total_seq']
+    print(merged_set[merged_set["pred_freq"].notnull()])
+    
+    return merged_set[merged_set["pred_freq"].notnull()]
+
 
 
 
@@ -75,20 +92,24 @@ class LogLoss(Scores): #to-do
 
 if __name__=='__main__':
     locations = ["USA","Japan", "United Kingdom"]
-    models = ["GARW", "MLR", "FGA", "GARW-N"]
-    dates = ['2022-01-24', '2022-02-04','2022-02-08','2022-02-18','2022-02-23',
-         '2022-02-28','2022-03-03','2022-03-08','2022-03-15',
-         '2022-03-21','2022-03-25','2022-04-07','2022-04-14','2022-04-27'
-         ,'2022-05-06','2022-05-17','2022-05-20','2022-05-28','2022-06-09'
-         ,'2022-06-14','2022-06-22']
+    models = ["GARW", "MLR", "FGA"]
+    dates = ['2022-04-15','2022-04-22','2022-04-29','2022-05-06',
+         '2022-05-13','2022-05-20','2022-05-27','2022-06-03',
+         '2022-06-10','2022-06-17','2022-06-24','2022-06-30']
     #Latest model run "truth"
 
     #truth_seq_count per variant
     truth_set = pd.read_csv("../data/2022-06-30/seq_counts_2022-06-30.tsv", sep="\t")
-    #sum sequences of each location and date
-    truth_set['total_seq'] = truth_set.groupby(['date', 'location'])['sequences'].transform('sum')
-    #compute truth frequencies for each variant
-    truth_set['truth_freq'] = truth_set['sequences']/truth_set['total_seq']
+ 
+
+
+    #print(truth_set[truth_set['variant']=='Delta'] )   
+
+
+
+#nans to 0 
+
+
 
 
 
@@ -104,7 +125,7 @@ if __name__=='__main__':
             pred_dic = {}
             #filtering final_truth dataset to run location
             location_truth = truth_set[truth_set['location']==location]
-            location_truth = location_truth[['date','location','variant','truth_freq', 'total_seq','sequences']]
+            location_truth = location_truth[['date','location','variant','sequences']]
             #print(location_truth)
             for date in dates:
                 
@@ -118,19 +139,34 @@ if __name__=='__main__':
                 raw_pred = pd.read_csv(filepath)
                 
                 raw_pred['pred_freq'] = raw_pred['median_freq_forecast'].fillna(raw_pred['median_freq_nowcast'])
-            
-     
+                
+
                 pred_dic[date] =  raw_pred
+            
+                #for..
+            final_sets_location = {k: merge_truth_pred(df,location_truth) for k,df in pred_dic.items()} 
 
-
-            final_sets_location = {k: pd.merge(location_truth,df) for k,df in pred_dic.items()}            
+            #print(final_sets_location["2022-04-15"][['truth_freq', 'pred_freq']])
 
             final_sets[location, model] = final_sets_location
 
 
-    #print(final_sets['USA', 'GARW']['2022-05-17'])
+        
 
-    test = prep_freq_data(final_sets['USA','GARW']['2022-05-17'])
+            #print(final_sets)
+        
+
+
+            #final_sets_new  =  final_sets[location, model].fillna('NA')
+
+            
+            #final_sets_new =  {k: fillna(v) for k, v in final_sets[location, model].values()}
+
+    #print(final_sets['United Kingdom', 'GARW']['2022-06-24'])
+
+    
+
+    #test = prep_freq_data(final_sets['USA','GARW']['2022-05-17'])
 
     #print(final_sets[location,model].values())
 
@@ -151,11 +187,12 @@ if __name__=='__main__':
 
 
                 error_df = pd.DataFrame({'location': location, 'model': model, 'pivot_date': pivot_date, 'lead': lead, 'variant':variants})
-                
+                #print(error_df)
                 #unpacking prepped_data values
                 true_freq, pred_freq, sequences, total_sequences, truth_mv_avg = v 
+                print(true_freq.shape)
                 #one of sets likely empty causing error
-                if true_freq is None: 
+                if true_freq is None:
                     continue
 
                 #Calculating error
