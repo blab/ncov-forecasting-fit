@@ -1,42 +1,69 @@
-from itertools import dropwhile
-from pickle import TRUE
 from statistics import mode
-from typing import final
 import pandas as pd
-import sklearn
-from sklearn.metrics import log_loss, brier_score_loss
 import os
 import numpy as np
-import matplotlib.pyplot as plt
 from abc import ABC, abstractmethod
-from datetime import datetime
+from scipy.ndimage import uniform_filter1d
+import itertools
+
+
+#smoothing truth raw frequency using 1dimension filter
+def smooth_freq(df):
+
+    raw_freq = df['truth_freq']
+    df['smoothed_freq'] = uniform_filter1d(raw_freq, size=7, mode = "nearest")
+
+    return df
+
+
+#reading truth_set
+def load_truthset(path):
+
+    truth_set = pd.read_csv(path, sep="\t")
+
+    all_dates = pd.unique(truth_set['date'])
+    all_loc = pd.unique(truth_set['location'])
+    all_var = pd.unique(truth_set['variant'])
+    
+    combined = [all_dates, all_loc, all_var]
+    df = pd.DataFrame(columns= ['date', 'location', 'variant'], 
+        data = list(itertools.product(*combined)))
+
+    new_truth = df.merge(truth_set, how = "left").fillna(0)
+
+    new_truth['total_seq'] = new_truth.groupby(['date', 'location'])['sequences'].transform('sum')
+
+    new_truth['truth_freq'] = new_truth['sequences']/new_truth['total_seq']
+    new_truth = new_truth.sort_values(by=["location", "variant", "date"])
+    new_truth = new_truth.groupby(['location', 'variant']).apply(smooth_freq).reset_index(drop=True)
+    
+    return new_truth
 
 
 
-
-#comment
 def prep_freq_data(final_set):
     
     #convert frequencies to arrays
-    truth_values = np.squeeze(final_set[['truth_freq']].to_numpy())
+    truth_values = np.squeeze(final_set[['smoothed_freq']].to_numpy())
     if len(truth_values) == 0: 
         return (None,)*5
-    #smoothing frequencies
-    #smoothing
-    filter_length = 7
-    truth_mv_avg = np.convolve(truth_values, np.ones((filter_length)), mode = 'same')
-    truth_mv_avg /= filter_length
-    
-    
+
+    raw_freq = np.squeeze(final_set[['truth_freq']].to_numpy())
     #return seq_total 
     seq_value = np.squeeze(final_set[['sequences']].to_numpy())
     #return seq
     total_seq =np.squeeze(final_set[['total_seq']].to_numpy())
 
     #convert predicted frequencies to arrays
-    values =np.squeeze(final_set[['pred_freq']].to_numpy())
+    pred_values =np.squeeze(final_set[['pred_freq']].to_numpy())
 
-    return truth_values, values, seq_value, total_seq, truth_mv_avg
+
+    return raw_freq, pred_values, seq_value, total_seq, truth_values
+
+def merge_truth_pred(df, location_truth):
+    merged_set = pd.merge(df, location_truth, how = 'left')
+    return merged_set[merged_set["pred_freq"].notnull()]
+
 
 
 
@@ -75,26 +102,17 @@ class LogLoss(Scores): #to-do
 
 if __name__=='__main__':
     locations = ["USA","Japan", "United Kingdom"]
-    models = ["GARW", "MLR", "FGA", "GARW-N"]
-    dates = ['2022-01-24', '2022-02-04','2022-02-08','2022-02-18','2022-02-23',
-         '2022-02-28','2022-03-03','2022-03-08','2022-03-15',
-         '2022-03-21','2022-03-25','2022-04-07','2022-04-14','2022-04-27'
-         ,'2022-05-06','2022-05-17','2022-05-20','2022-05-28','2022-06-09'
-         ,'2022-06-14','2022-06-22']
-    #Latest model run "truth"
+    models = ["GARW", "MLR", "FGA"]
+    dates = ['2022-04-15','2022-04-22','2022-04-29','2022-05-06',
+         '2022-05-13','2022-05-20','2022-05-27','2022-06-03',
+         '2022-06-10','2022-06-17','2022-06-24','2022-06-30']
 
-    #truth_seq_count per variant
-    truth_set = pd.read_csv("../data/2022-06-30/seq_counts_2022-06-30.tsv", sep="\t")
-    #sum sequences of each location and date
-    truth_set['total_seq'] = truth_set.groupby(['date', 'location'])['sequences'].transform('sum')
-    #compute truth frequencies for each variant
-    truth_set['truth_freq'] = truth_set['sequences']/truth_set['total_seq']
+    #reading truth_sequence count dataset per variant
+    truth_set = load_truthset("../data/truth/seq_counts_truth.tsv")
 
 
 
     #full model output set dict
-
-
     final_sets = {}
 
     #loop thorough different files of model versions
@@ -104,8 +122,6 @@ if __name__=='__main__':
             pred_dic = {}
             #filtering final_truth dataset to run location
             location_truth = truth_set[truth_set['location']==location]
-            location_truth = location_truth[['date','location','variant','truth_freq', 'total_seq','sequences']]
-            #print(location_truth)
             for date in dates:
                 
                 filepath = f"../plot-est/cast_estimates_full_{model}/{location}/freq_full_{date}.csv"
@@ -113,26 +129,27 @@ if __name__=='__main__':
                 #Check if file exists and continue if not
                 if not os.path.exists(filepath):
                     continue
-                    #read models and add to dict
-                
+
+                #read models and add to dict
                 raw_pred = pd.read_csv(filepath)
-                
+                #adding predicted frequency column
                 raw_pred['pred_freq'] = raw_pred['median_freq_forecast'].fillna(raw_pred['median_freq_nowcast'])
-            
-     
+                
+
                 pred_dic[date] =  raw_pred
+            
+            #merging predicted frequency with smoothed frequency
+            final_sets_location = {k: merge_truth_pred(df,location_truth) for k,df in pred_dic.items()} 
 
-
-            final_sets_location = {k: pd.merge(location_truth,df) for k,df in pred_dic.items()}            
 
             final_sets[location, model] = final_sets_location
 
+        
+            #final_sets_new  =  final_sets[location, model].fillna('NA')
 
-    #print(final_sets['USA', 'GARW']['2022-05-17'])
+            
+            #final_sets_new =  {k: fillna(v) for k, v in final_sets[location, model].values()}
 
-    test = prep_freq_data(final_sets['USA','GARW']['2022-05-17'])
-
-    #print(final_sets[location,model].values())
 
 
     score_df_list = []
@@ -140,7 +157,7 @@ if __name__=='__main__':
     for model in models:
 
         for location in locations:
-            #prep_Freq_data for truth values
+            #prep_Freq_data through conversion to arrays to pass in the metric class
             prepped_data = {k: prep_freq_data(v) for k,v in final_sets[location, model].items()}
 
             for k, v in prepped_data.items():
@@ -149,30 +166,39 @@ if __name__=='__main__':
                 lead = (model_dates-pivot_date).dt.days
                 variants = final_sets[location, model][k]['variant']
 
-
+                #creating error dict with results
                 error_df = pd.DataFrame({'location': location, 'model': model, 'pivot_date': pivot_date, 'lead': lead, 'variant':variants})
-                
+
                 #unpacking prepped_data values
-                true_freq, pred_freq, sequences, total_sequences, truth_mv_avg = v 
-                #one of sets likely empty causing error
-                if true_freq is None: 
+                raw_freq, pred_values, seq_value, total_seq, truth_values = v 
+            
+                
+                if truth_values is None:
                     continue
 
-                #Calculating error
+                #Calculating MAE error
                 mae = MAE()  
-                error_df['MAE'] = mae.evaluate(truth_mv_avg,pred_freq)
-                #print(v[1])
-                #MSE
-                rmse = RMSE()
-                error_df['RMSE'] = rmse.evaluate(truth_mv_avg,pred_freq)
+                error_df['MAE'] = mae.evaluate(truth_values,pred_values)
 
+
+                #Calculating RMSE error
+                rmse = RMSE()
+                error_df['RMSE'] = rmse.evaluate(truth_values,pred_values)
+
+                #adding frequencies columns for comparison and diagnostics
+                error_df['raw_freq'] = raw_freq
+                error_df['smoothed_freq'] = truth_values
+                error_df['pred_freq'] = pred_values
+                error_df['date'] = model_dates
 
 
                 
                 score_df_list.append(error_df)
+
+
+
                 
     score_df = pd.concat(score_df_list)
-
 
 
     #save score output to a csv file
