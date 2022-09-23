@@ -1,4 +1,6 @@
-# Preparing metadata for sequence counts
+# Data preparation
+
+## Preparing metadata for sequence counts
 
 To begin data preparation, we first download the Nextstrain-curated metadata TSV of the GISAID database.
 This metadata file is used to construct the datasets in the sub-folders.
@@ -16,3 +18,8 @@ tsv-select -H -f strain,date,country,division,QC_overall_status,Nextstrain_clade
 
 These operations can be found in the script `./download_prune_metadata.sh`.
 
+## Creating data sets as of observation date
+
+This generates the sequence counts for variants of interest from available sequence data as of a given date as well as an additional retrospective truth data set i.e. including all sequences up to now. 
+
+This process can be found in the notebook `./creating-data-sets.ipynb`.
