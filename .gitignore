@@ -1,2 +1,40 @@
 *.DS_Store
 *.ipynb_checkpoints
+
+.DS_Store
+Desktop.ini
+.ipynb_checkpoints
+*/.ipyb_checkpoints/*n
+
+# Intermediate data prep files
+metadata.tsv.gz
+open_metadata.tsv
+open_metadata_pruned.tsv
+gisaid_metadata.tsv
+gisaid_metadata_pruned.tsv
+gisaid_metadata_filtered.tsv
+
+# Protect environment variables
+environment*
+
+# LaTeX Files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
