@@ -35,11 +35,8 @@ if __name__=='__main__':
 
                 #read models and add to dict
                 ga_data = pd.read_csv(filepath)
-                
-
 
                 ga_dic[date] =  ga_data
-                #print(pred_dic)
 
 
             #dict of all ga datasets by pivot date

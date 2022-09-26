@@ -5,6 +5,7 @@ import numpy as np
 from abc import ABC, abstractmethod
 from scipy.ndimage import uniform_filter1d
 import itertools
+from scipy.stats import binom
 
 
 #smoothing truth raw frequency using 1dimension filter
@@ -96,8 +97,10 @@ class LogLoss(Scores): #to-do
     def __init__(self):
         pass
         #mlr log loss error
-    def evaluate(self, truth, prediction):
-        pass
+    def evaluate(self, seq_value, tot_seq, pred_values):
+        loglik = binom.logpmf(k = seq_value, n = tot_seq, p = pred_values) 
+        return loglik
+
 
 
 if __name__=='__main__':
@@ -185,7 +188,11 @@ if __name__=='__main__':
                 rmse = RMSE()
                 error_df['RMSE'] = rmse.evaluate(truth_values,pred_values)
 
+                logloss = LogLoss()
+                error_df["loglik"] = logloss.evaluate(seq_value, total_seq, pred_values)
+
                 #adding frequencies columns for comparison and diagnostics
+                error_df['total_seq'] = total_seq
                 error_df['raw_freq'] = raw_freq
                 error_df['smoothed_freq'] = truth_values
                 error_df['pred_freq'] = pred_values
