@@ -5,14 +5,46 @@ from statistics import mode
 from turtle import left
 from typing import final
 import pandas as pd
-import sklearn
-from sklearn.metrics import log_loss, brier_score_loss
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 from abc import ABC, abstractmethod
-from datetime import datetime
-import math
+from scipy.ndimage import uniform_filter1d
+import itertools
+from scipy.stats import binom
+
+
+#smoothing truth raw frequency using 1dimension filter
+def smooth_freq(df):
+
+    raw_freq = df['truth_freq'].values
+    df['smoothed_freq'] = uniform_filter1d(raw_freq, size=7, mode = "nearest")
+
+    return df
+
+
+#reading truth_set
+def load_truthset(path):
+
+    truth_set = pd.read_csv(path, sep="\t")
+
+    all_dates = pd.unique(truth_set['date'])
+    all_loc = pd.unique(truth_set['location'])
+    all_var = pd.unique(truth_set['variant'])
+    
+    combined = [all_dates, all_loc, all_var]
+    df = pd.DataFrame(columns= ['date', 'location', 'variant'], 
+        data = list(itertools.product(*combined)))
+
+    new_truth = df.merge(truth_set, how = "left").fillna(0)
+
+    new_truth['total_seq'] = new_truth.groupby(['date', 'location'])['sequences'].transform('sum')
+
+    new_truth['truth_freq'] = new_truth['sequences']/new_truth['total_seq']
+    new_truth = new_truth.sort_values(by=["location", "variant", "date"])
+    new_truth = new_truth.groupby(['location', 'variant']).apply(smooth_freq).reset_index(drop=True)
+    
+    return new_truth
 
 
 
@@ -21,26 +53,20 @@ import math
 def prep_freq_data(final_set):
     
     #convert frequencies to arrays
-    truth_values = np.squeeze(final_set[['truth_freq']].to_numpy())
-    if len(truth_values) == 0: 
+    raw_freq = np.squeeze(final_set[['truth_freq']].to_numpy())
+    if len(raw_freq) == 0: 
         return (None,)*5
-    #smoothing frequencies
-    #smoothing
-    
-    filter_length = 7
-    truth_mv_avg = np.convolve(truth_values, np.ones((filter_length)), mode = 'same')
-    truth_mv_avg /= filter_length
-    
 
+    smoothed_freq = np.squeeze(final_set[['smoothed_freq']].to_numpy())
     #return seq_total 
-    seq_value = np.squeeze(final_set[['sequences']].to_numpy())
+    seq_count = np.squeeze(final_set[['sequences']].to_numpy())
     #return seq
     total_seq =np.squeeze(final_set[['total_seq']].to_numpy())
 
     #convert predicted frequencies to arrays
-    values =np.squeeze(final_set[['pred_freq']].to_numpy())
+    pred_freq =np.squeeze(final_set[['pred_freq']].to_numpy())
 
-    return truth_values, values, seq_value, total_seq, truth_mv_avg
+    return raw_freq, pred_freq, seq_count, total_seq, smoothed_freq
 
 def merge_truth_pred(df, location_truth):
 
@@ -50,7 +76,7 @@ def merge_truth_pred(df, location_truth):
     merged_set['total_seq'] = merged_set.groupby(['date', 'location'])['sequences'].transform('sum')
     #compute truth frequencies for each variant
     merged_set['truth_freq'] = merged_set['sequences']/merged_set['total_seq']
-    print(merged_set[merged_set["pred_freq"].notnull()])
+    #print(merged_set[merged_set["pred_freq"].notnull()])
     
     return merged_set[merged_set["pred_freq"].notnull()]
 
@@ -82,35 +108,29 @@ class RMSE(Scores):
         squared_error = np.square(truth - prediction)
         return np.sqrt(squared_error)
 
-class LogLoss(Scores): #to-do
+class LogLoss(Scores):
     def __init__(self):
         pass
         #mlr log loss error
-    def evaluate(self, truth, prediction):
-        pass
+    def evaluate(self, seq_value, tot_seq, pred_values):
+        loglik = binom.logpmf(k = seq_value, n = tot_seq, p = pred_values) 
+        return loglik
+
 
 
 if __name__=='__main__':
-    locations = ["USA","Japan", "United Kingdom"]
-    models = ["GARW", "MLR", "FGA"]
+    locations = ["USA", "United Kingdom", "Brazil","Australia", "South Africa", "Japan"]
+    models = ["GARW", "MLR", "FGA", "Piantham"]
     dates = ['2022-04-15','2022-04-22','2022-04-29','2022-05-06',
          '2022-05-13','2022-05-20','2022-05-27','2022-06-03',
          '2022-06-10','2022-06-17','2022-06-24','2022-06-30']
-    #Latest model run "truth"
 
     #truth_seq_count per variant
-    truth_set = pd.read_csv("../data/2022-06-30/seq_counts_2022-06-30.tsv", sep="\t")
- 
-
-
-    #print(truth_set[truth_set['variant']=='Delta'] )   
+    truth_set = load_truthset("../data/time_stamped/truth/seq_counts_truth.tsv")
 
 
 
 #nans to 0 
-
-
-
 
 
     #full model output set dict
@@ -125,7 +145,7 @@ if __name__=='__main__':
             pred_dic = {}
             #filtering final_truth dataset to run location
             location_truth = truth_set[truth_set['location']==location]
-            location_truth = location_truth[['date','location','variant','sequences']]
+            #location_truth = location_truth[['date','location','variant','sequences']]
             #print(location_truth)
             for date in dates:
                 
@@ -134,39 +154,26 @@ if __name__=='__main__':
                 #Check if file exists and continue if not
                 if not os.path.exists(filepath):
                     continue
-                    #read models and add to dict
-                
+                #read models and add to dict
                 raw_pred = pd.read_csv(filepath)
-                
-                raw_pred['pred_freq'] = raw_pred['median_freq_forecast'].fillna(raw_pred['median_freq_nowcast'])
-                
+                print(model,location,date)
+                raw_pred['pred_freq'] = raw_pred['median_freq_forecast']
+                if "median_freq_nowcast" in raw_pred.columns:
+                    raw_pred['pred_freq'] = raw_pred['pred_freq'].fillna(value = raw_pred['median_freq_nowcast'])
 
+                #raw_pred['pred_freq'] = raw_pred['median_freq_forecast'].combine_first(raw_pred['median_freq_nowcast'])
+
+
+                #print(raw_pred)
                 pred_dic[date] =  raw_pred
             
-                #for..
             final_sets_location = {k: merge_truth_pred(df,location_truth) for k,df in pred_dic.items()} 
-
+            #print(final_sets_location)
             #print(final_sets_location["2022-04-15"][['truth_freq', 'pred_freq']])
 
             final_sets[location, model] = final_sets_location
 
 
-        
-
-            #print(final_sets)
-        
-
-
-            #final_sets_new  =  final_sets[location, model].fillna('NA')
-
-            
-            #final_sets_new =  {k: fillna(v) for k, v in final_sets[location, model].values()}
-
-    #print(final_sets['United Kingdom', 'GARW']['2022-06-24'])
-
-    
-
-    #test = prep_freq_data(final_sets['USA','GARW']['2022-05-17'])
 
     #print(final_sets[location,model].values())
 
@@ -187,22 +194,32 @@ if __name__=='__main__':
 
 
                 error_df = pd.DataFrame({'location': location, 'model': model, 'pivot_date': pivot_date, 'lead': lead, 'variant':variants})
-                #print(error_df)
+
                 #unpacking prepped_data values
-                true_freq, pred_freq, sequences, total_sequences, truth_mv_avg = v 
-                print(true_freq.shape)
-                #one of sets likely empty causing error
-                if true_freq is None:
+                raw_freq, pred_freq, seq_count, total_seq, smoothed_freq = v
+ 
+                if truth_values is None:
                     continue
 
                 #Calculating error
                 mae = MAE()  
-                error_df['MAE'] = mae.evaluate(truth_mv_avg,pred_freq)
-                #print(v[1])
+                #error_df['MAE'] = mae.evaluate(truth_mv_avg,pred_freq)
+                error_df['MAE'] = mae.evaluate(smoothed_freq,pred_freq)
+
                 #MSE
                 rmse = RMSE()
-                error_df['RMSE'] = rmse.evaluate(truth_mv_avg,pred_freq)
+                error_df['RMSE'] = rmse.evaluate(smoothed_freq,pred_freq)
 
+
+                logloss = LogLoss()
+                error_df["loglik"] = logloss.evaluate(seq_count, total_seq, pred_freq)
+
+                #adding frequencies columns for comparison and diagnostics
+                error_df['total_seq'] = total_seq
+                error_df['raw_freq'] = raw_freq
+                error_df['smoothed_freq'] = smoothed_freq
+                error_df['pred_freq'] = pred_freq
+                error_df['date'] = model_dates
 
 
                 
