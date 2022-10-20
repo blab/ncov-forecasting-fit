@@ -9,7 +9,7 @@ import itertools
 
 if __name__=='__main__':
     locations = ["USA","Japan", "United Kingdom"]
-    models = ["GARW", "MLR", "FGA"]
+    models = ["GARW", "MLR", "FGA", "Piantham"]
     dates = ['2022-04-15','2022-04-22','2022-04-29','2022-05-06',
          '2022-05-13','2022-05-20','2022-05-27','2022-06-03',
          '2022-06-10','2022-06-17','2022-06-24','2022-06-30']
