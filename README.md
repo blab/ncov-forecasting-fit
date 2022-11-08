@@ -1,8 +1,8 @@
 # ncov-forecasting-fit
 
-**Eslam Abousamra** <sup>1,2</sup>, **Marlin Figgins** <sup>1,3,4</sup>, **Trevor Bedford** <sup>1,4</sup>
+**Eslam Abousamra** <sup>1,2</sup>, **Marlin Figgins** <sup>1,3</sup>, **Trevor Bedford** <sup>1,4</sup>
 
-<sup>1</sup> *Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center, Seattle, WA, USA* <br />
+<sup>1</sup> *Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center, Seattle, WA, USA*
 <sup>2</sup> *Department of Epidemiology, University of Washington, Seattle, WA, USA* 
 <sup>3</sup> *Department of Applied Mathematics, University of Washington, Seattle, WA, USA*
 <sup>4</sup> *Howard Hughes Medical Institute, Seattle, WA, USA*
