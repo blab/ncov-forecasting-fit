@@ -25,41 +25,38 @@ The **#ncov-forecasting-fit** repository hosts a data curation and a live-foreca
 
 
 
-### Data processing
-Outline pipeline going from sequences to estimates 
+### Data
+
+Script to obtain raw data can be found `script/get_versioned_data.py`, please refer to `script/README.md` for more information on how to obtain the data.
+
+
+### Running the models
+
+`notebooks/auto_renewal_accuracy.ipynb` notebook contains code to generate time-stamped estimates of variant frequencies, growth advantages, and cases for a specified number of countries using five different models that vary in complexity. 
 
 
 
-### Model comparison and evaluation (Analysis I)
+### I. Model comparison and evaluation
 
-Data: format data in the form of sequence counts per location per model per observation data (as known of that date)
-what specific time period and frequency to run these analysis on?
-Modeling: Naive, Piantham, MLR, FGA, GARW
-
-
+**Input**: formatted data in the form of sequence counts per location per model per observation data (as known of that date)  <br />
+**Models**: Naive, Piantham, MLR, FGA, GARW
 
 ### Scoring Script
 
-MSE, MAE, logLoss
-Computation of truth set vs estimates. How to estimate the truth set, should be logloss, mlr run or other?
-Visualization: Violin plots, scatterplots, (?) of errors over time. Group error to show variants errors over time independently.
-Conclusions: Inferences and discussion of findings 
+Scoring estimates for different models can be generated using `script/modelcomp_scores.py`
 
 
-### Comparison of growth advantages (Analysis II)
-Data: format data in the form of growth advantages estimates per location per model per observation date.
-Explore growth advantages change over time relative to the first analysis
-Visualization: discuss how to we want to visualize the variation of growth advantage per variant
-Conclusion: inferences and discussion of findings
+### II. Comparison of growth advantages 
+**Input**: format data in the form of growth advantages estimates per location per model per observation date.
+GA estimates for different models can be generated using `script/tidy_growth_adv.py`
 
-### Examination of data quality reflection to error (Analysis III)
-Data: Submission delays, missing data (sequence counts per date), errors
-Visualization: Scatterplot of sequence counts per date and errors
-Analysis: infer relationship between sequence efforts and quality to model errors (Fit model)
-Conclusion: Make statements regarding the relationship
+### III. Examination of data quality reflection to error
+
+Effect of emergence of variants on model estimation.
 
 
+### Figures
 
-
+Figures can be generated using `script/script_result_vis.rmd`
 
 
