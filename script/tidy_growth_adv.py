@@ -8,7 +8,7 @@ import itertools
 
 
 if __name__=='__main__':
-    locations = ["USA","Japan", "United Kingdom"]
+    locations = ["USA", "United Kingdom", "Brazil","Australia", "South Africa", "Japan"]
     models = ["GARW", "MLR", "FGA", "Piantham"]
     dates = ['2022-04-15','2022-04-22','2022-04-29','2022-05-06',
          '2022-05-13','2022-05-20','2022-05-27','2022-06-03',
