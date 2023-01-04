@@ -93,19 +93,15 @@ Furthermore, different modeling approaches may have varying levels of sensitivit
 Thereby, it is essential to take these factors into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output [2].
 
 
-
-*Challenges
-
 Mathematical models elucidate disease processes and have been sought to assess the risk and framing the response to emerging pathogens. 
 Representation of disease mechanisms and spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also
 uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population [3].
 The validity and reliability of these mathematical models are dependent on the quality and quantity of data used for the model.
-With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts as it leads to 
+With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts and also nowcasts, i.e forecasting on a short-term scale, as it leads to 
 increased uncertainty in identifying and forecasting epidemic trends [3].
 
 
 
-The need for accurate predictions of epidemic trajectories led to development of "nowcasting" approaches, i.e forecasting on a short-term scale which handles data pitfalls differently. 
 
 
 
@@ -116,6 +112,27 @@ The need for accurate predictions of epidemic trajectories led to development of
 
 
 * How different models handle imperfect data
+
+\textbf{MLR}
+
+\textbf{GARW}
+
+\textbf{FGA}
+
+\textbf{Piantham}
+
+\textbf{Naive}
+
+
+* Framework
+
+In our efforts to investigate how modelling approaches handle data issues, we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets, and to facilitate comparisons of forecasting and nowcasting accuracy between various statistical models.
+This framework utilizes live surveillance data to examine the empirical aspects of evolutionary forecasting by forecasting targets which includes viral pathogen frequencies, pathogen growth advantages, and incidence estimates. 
+Additionally, the framework provides a statistical scoring rule system for evaluating the effectiveness of different modeling approaches.
+The purpose of this study is to investigate the utility of this framework in the context of evolutionary forecasting and to improve our understanding of the factors that influence the accuracy of nowcast and forecast targets.
+
+
+
 
 
 
@@ -131,6 +148,23 @@ I use Google Scholar format for citation style with first author, year and first
 
 Todo
 
+
+
+
+\section*{Data and code accessibility}
+
+Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated ‘open’
+dataset that pulls data from GISAID database. 
+
+
+
+Derived data of sequence counts and case counts, along with all source code used to analyze
+this data and produce figures is available via the GitHub repository https://github.com/blab/ncov-forecasting-fit
+
+
+
+
+
 %%% RESULTS %%%
 \section*{Results}
 
@@ -140,8 +174,8 @@ I put figures into a `/figures' directory and use semantic labeling ala (Figure~
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figures/example_predictions}
-	\caption{\textbf{Example data and predictions for Japan and the USA.}
-	Further legend here.
+	\caption{\textbf{Example data and predictions for Japan and USA.}
+	Figure 1 represents a schematic of the dynamic estimation environment, including the progression of dataset estimation, submission delays, and an example estimation of the frequencies of variants using the GARW model. This figure serves as a visual representation of the used methodology
 	}
 	\label{example_predictions}
 \end{figure}
