@@ -83,25 +83,26 @@ Todo
 \section*{Introduction}
 
 Modeling infectious diseases plays a key role in predicting growth of epidemics.
-Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread [1].
+Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread [Ding et al., 2021].
 Epidemiologists face a multitude of challenges in order to provide accurate and timely predictions of disease spread.
 %interest in genomic data and their use in epidemic modelling
+With the increased availability of genomic sequencing, there has been efforts and potential in using sequences as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens [Gire SK et al., 2014, Zhou et al., 2020]. 
 More recently, with the deluge of data from various sources, issues with data arise regarding quantity, near-real-time accessibility, and quality.
 %Integration of these data sources 
-Data collected from different geographical locations and time-points exhibit varying degrees of issues with reporting bias, submission delays, and back-filling of disease occurence especially with a larger geographical scale [2].
+Data collected from different geographical locations and time-points exhibit varying degrees of issues with reporting bias, submission delays, and back-filling of disease occurence especially with a larger geographical scale [Pascal Crépey et al., 2022].
 %preforming real-time analysis 
 Thus, the quantities and the availability of genomic sequencing data differ depending on the date of observation and forecasting in varying geographical regions being studied.
-This variability in sequences availability can have a significant impact on the accuracy and reliability of forecasting efforts using mathematical models.
+This variability in sequences availability can have a significant impact on the accuracy and reliability of forecasting efforts using mathematical models [Suchard et al., 2018].
 Furthermore, different modeling approaches may have varying levels of sensitivity to imperfections or limitations in the data.
-%additonally, models sometimes fail to capture real-trends even with perfect data
-Thereby, it is essential to take these factors (data-wise and systematic) into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output [2].
+Even when data is complete and accurate, the chosen model may not be suitable for the problem being analyzed, resulting in inability to capture target trends [Gelman et al., 2013].
+Thereby, it is essential to take these factors (data-wise and systematic) into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output [Pascal Crépey et al., 2022].
 
 
 Mathematical models elucidate disease processes and have been sought to assess the risk and framing the response to emerging pathogens. 
-Representation of disease mechanisms and spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population [3].
+Representation of disease mechanisms and spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population [Metcalf et al., 2019].
 The validity and reliability of these mathematical models are dependent on the quality and quantity of data used for the model.
 With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts and also nowcasts, i.e forecasting on a short-term scale, as it leads to 
-increased uncertainty in identifying and forecasting epidemic trends [3].
+increased uncertainty in identifying and forecasting epidemic trends [Metcalf et al., 2019].
 
 
 
@@ -109,6 +110,11 @@ increased uncertainty in identifying and forecasting epidemic trends [3].
 
 %In our efforts to investigate how modelling approaches handle data issues, 
 %we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets
+
+In our efforts to investigate how modelling approaches handle data issues, 
+we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets for different modelling approaches.
+
+
 
 %framework
 
