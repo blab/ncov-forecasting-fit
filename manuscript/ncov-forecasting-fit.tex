@@ -85,7 +85,6 @@ Todo
 Modeling infectious diseases plays a key role in predicting growth of epidemics.
 Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread [Ding et al., 2021].
 Epidemiologists face a multitude of challenges in order to provide accurate and timely predictions of disease spread.
-%interest in genomic data and their use in epidemic modelling
 With the increased availability of genomic sequencing, there has been efforts and potential in using sequences as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens [Gire SK et al., 2014, Zhou et al., 2020]. 
 More recently, with the deluge of data from various sources, issues with data arise regarding quantity, near-real-time accessibility, and quality.
 %Integration of these data sources 
@@ -108,11 +107,14 @@ increased uncertainty in identifying and forecasting epidemic trends [Metcalf et
 
 %what we actually did (high level)
 
-%In our efforts to investigate how modelling approaches handle data issues, 
-%we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets
 
-In our efforts to investigate how modelling approaches handle data issues, 
-we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets for different modelling approaches.
+In our efforts to investigate how modelling approaches handle data issues, we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets for different modelling approaches.
+In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 variants genomic sequence data as a basis for model comparison and evaluation. 
+Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python. 
+To assess the performance of these models, we developed a statistical scoring rules script that compared the predicted outcomes to a set of known true values, or a "truth set."
+This allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends and patterns.
+% Visualiztion
+
 
 
 
