@@ -108,14 +108,15 @@ increased uncertainty in identifying and forecasting epidemic trends [Metcalf et
 %what we actually did (high level)
 
 
-In our efforts to investigate how modelling approaches handle data issues, we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets for different modelling approaches.
-In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 variants genomic sequence data as a basis for model comparison and evaluation. 
-Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python. 
-To assess the performance of these models, we developed a statistical scoring rules script that compared the predicted outcomes to a set of known true values, or a "truth set."
-This allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends and patterns.
-% Visualiztion
+In our efforts to investigate how modelling approaches handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 variant frequencies.
+%what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
+In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 variants genomic sequence data as a input data for model comparison and evaluation.
+%Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python. 
+To assess the performance of these models, we used several metrics such as MAE, RMSE, and Sequence log likelihood to compare the predicted frequencies to a set of known true values, or a "truth set." %what is truth set (Smoothed raw_freq)
+This allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
 
-
+%What explains our errors
+%try to explain the presistent patterns in the errors
 
 
 %framework
@@ -126,7 +127,7 @@ This allowed us to evaluate the accuracy and reliability of the models and to id
 %scoring system to rate model preforamnes
 
 
-%try to explain the presistent patterns in the errors
+
 
 
 
@@ -174,7 +175,8 @@ The purpose of this study is to investigate the utility of this framework in the
 
 
 
-
+%How to replicate the different analyses
+%Talking about what variables mean
 
 
 
@@ -195,6 +197,21 @@ this data and produce figures is available via the GitHub repository https://git
 
 %%% RESULTS %%%
 \section*{Results}
+%TALKING ABOUT PROCESS FIGURES
+
+% Specific numbers 
+
+
+% 
+
+
+
+
+%
+
+
+
+
 
 I put figures into a `/figures' directory and use semantic labeling ala (Figure~\ref{example_predictions}).
 
