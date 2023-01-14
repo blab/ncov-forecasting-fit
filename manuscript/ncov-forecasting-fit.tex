@@ -196,8 +196,40 @@ this data and produce figures is available via the GitHub repository https://git
 
 
 %%% RESULTS %%%
-\section*{Results}
+\section*{Results} 
+
 %TALKING ABOUT PROCESS FIGURES
+
+\paragraph{Live Forecasting Environment}\
+
+We implemeneted the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for SARS-CoV-2 variants.
+Utilizing sequencing data, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022, as represented in Figure 1A.
+Throughout the observation period, the United States had a higher average availability of SARS-CoV-2 sequences compared to Japan. 
+Nonetheless, both country exhibit variability in sequence availability count for the same dates depending on observation dates. 
+
+
+We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
+We used this data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (as depicted in Fig. 1B)
+However, it was observed that the model predictions for Japan were worse as compared to United States.
+
+
+
+\paragraph{Model Comparison}\
+
+
+We implemented a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries spanning across different continents (Australia, Brazil, Japan, South Africa, United Kingdom, United States).
+These models were implemented using the evofr (evolutionary forecasting) software package in Python.
+The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary forecasting models... %write about whats common
+The fifth model, referred to as the Naive model, is a simple model that serves as a reference point for comparison.
+It is a baseline model which uses simple assumptions to make predictions. 
+The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
+
+
+Using the forecasts, we implemeneted several metrics to assess their relative performance.
+Mean Absolute Error (MAE) was estimated for 
+
+
+
 
 % Specific numbers 
 
@@ -208,6 +240,22 @@ this data and produce figures is available via the GitHub repository https://git
 
 
 %
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figures/table1.png}
+	\caption{\textbf{Table 1}
+	Further legend here.
+	}
+	\label{table1}
+\end{figure}
+
+
+
+
+
 
 
 
