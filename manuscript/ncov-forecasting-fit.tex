@@ -202,8 +202,8 @@ this data and produce figures is available via the GitHub repository https://git
 
 \paragraph{Live Forecasting Environment}\
 
-We implemeneted the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for SARS-CoV-2 variants.
-Utilizing sequencing data, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022, as represented in Figure 1A.
+We implemeneted the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C.
+Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022, as represented in Figure 1A.
 Throughout the observation period, the United States had a higher average availability of SARS-CoV-2 sequences compared to Japan. 
 Nonetheless, both country exhibit variability in sequence availability count for the same dates depending on observation dates. 
 
@@ -211,6 +211,19 @@ Nonetheless, both country exhibit variability in sequence availability count for
 We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
 We used this data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (as depicted in Fig. 1B)
 However, it was observed that the model predictions for Japan were worse as compared to United States.
+
+
+%%% map %%%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figures/Figure1Final.png}
+	\caption{\textbf{Example data and predictions for Japan and USA.}
+	Figure 1 represents a schematic of the dynamic estimation environment, including the progression of dataset estimation, submission delays, and an example estimation of the frequencies of variants using the GARW model. This figure serves as a visual representation of the used methodology
+	}
+	\label{Figure1Final}
+\end{figure}
+
+
 
 
 
@@ -224,9 +237,13 @@ The fifth model, referred to as the Naive model, is a simple model that serves a
 It is a baseline model which uses simple assumptions to make predictions. 
 The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 
-
-Using the forecasts, we implemeneted several metrics to assess their relative performance.
-Mean Absolute Error (MAE) was estimated for 
+We began our comparison by calculating the lag times (difference in days between the date of observation and the date of estimation) as a means of evaluating the performance of the models over time.
+This approach provides a reference for understanding how the models perform as the lag time decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of estimation), specifically from [-30,30].
+This enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
+We used our predictions and implemented a metric from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models (as presented in Table 1).
+The model with the lowest MAE error is highlighted in the table as it indicates the best performance among all models. 
+The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants.
+Models were then compared side by side using error quantiles as shown in Figure 2A.
 
 
 
@@ -261,17 +278,8 @@ Mean Absolute Error (MAE) was estimated for
 
 
 
-I put figures into a `/figures' directory and use semantic labeling ala (Figure~\ref{example_predictions}).
+%I put figures into a `/figures' directory and use semantic labeling ala (Figure~\ref{example_predictions}).
 
-%%% map %%%
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.0\textwidth]{figures/example_predictions}
-	\caption{\textbf{Example data and predictions for Japan and USA.}
-	Figure 1 represents a schematic of the dynamic estimation environment, including the progression of dataset estimation, submission delays, and an example estimation of the frequencies of variants using the GARW model. This figure serves as a visual representation of the used methodology
-	}
-	\label{example_predictions}
-\end{figure}
 
 
 \begin{figure}[h]
