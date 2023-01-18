@@ -174,6 +174,19 @@ Additionally, the framework provides a statistical scoring rule system for evalu
 The purpose of this study is to investigate the utility of this framework in the context of evolutionary forecasting and to improve our understanding of the factors that influence the accuracy of nowcast and forecast targets.
 
 
+\paragraph{Evaluation Criteria}\
+
+RMSE was calculated as
+
+%Equation
+
+MAE was calculated as
+
+%Equation
+
+Logliklihood was calculated as
+
+%Equation
 
 %How to replicate the different analyses
 %Talking about what variables mean
@@ -227,7 +240,7 @@ However, it was observed that the model predictions for Japan were worse as comp
 
 
 
-\paragraph{Model Comparison}\
+\paragraph{Model Error Comparison}\
 
 
 We implemented a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries spanning across different continents (Australia, Brazil, Japan, South Africa, United Kingdom, United States).
@@ -240,10 +253,19 @@ The use of multiple models that ranges in complexity allows for a comprehensive 
 We began our comparison by calculating the lag times (difference in days between the date of observation and the date of estimation) as a means of evaluating the performance of the models over time.
 This approach provides a reference for understanding how the models perform as the lag time decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of estimation), specifically from [-30,30].
 This enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
-We used our predictions and implemented a metric from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models (as presented in Table 1).
-The model with the lowest MAE error is highlighted in the table as it indicates the best performance among all models. 
+We used our predictions and implemented a metric from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models for the six countries (as presented in Table 1).
 The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants.
-Models were then compared side by side using error quantiles as shown in Figure 2A.
+The model with the lowest MAE error is highlighted in the table as it indicates the best performance among all models. 
+The results showed that there was a range of values among the models, specifically, range of MAE values for the GARW model was from 0.002 to 0.170, showing that the model had a low level of error on average when compared to the other models in the study. 
+The FGA model had a range of MAE values from 0.003 to 0.214, the MLR model had a range of MAE values from 0.003 to 0.154, the Piantham model had a range of MAE values from 0.004 to 0.262, and the Naive model had a range of MAE values from 0.011 to 0.247. 
+These results suggest that the GARW model performed the best in terms of MAE, while the Piantham model performed the worst on average among the models tested excluding reference (Naive).
+Models were then compared side by side using error quantiles (25,50, and 75th percentile) as shown in Figure 2A.
+The results of the analysis show an increase in MAE error for all models as lag or day from estimation increases. 
+In other words, as forecasting step increases, the prediction accuracy for all models decreased.
+Figure 2B compared the MAE score distirbution between models for all countries.
+
+
+\paragraph{Comparison of Growth Advantages}\
 
 
 
