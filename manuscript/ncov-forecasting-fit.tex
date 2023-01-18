@@ -215,7 +215,8 @@ this data and produce figures is available via the GitHub repository https://git
 
 \paragraph{Live Forecasting Environment}\
 
-We implemeneted the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C.
+We implemented the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C. 
+%MF: We did not implement the model for this paper, we used it among several others in this analysis. If we're talking about what's going on in Figure 1, I would say that directly and cite it \ref{fig:Figure1}
 Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022, as represented in Figure 1A.
 Throughout the observation period, the United States had a higher average availability of SARS-CoV-2 sequences compared to Japan. 
 Nonetheless, both country exhibit variability in sequence availability count for the same dates depending on observation dates. 
@@ -226,14 +227,22 @@ We used this data to predict the frequencies of SARS-CoV-2 variants in these cou
 However, it was observed that the model predictions for Japan were worse as compared to United States.
 
 
+%MF: In general, we want to be a bit more direct. These are not just the data there are predictions here as well. Really this figure is about a "Live nowcasting environment".
 %%% map %%%
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figures/Figure1Final.png}
 	\caption{\textbf{Example data and predictions for Japan and USA.}
-	Figure 1 represents a schematic of the dynamic estimation environment, including the progression of dataset estimation, submission delays, and an example estimation of the frequencies of variants using the GARW model. This figure serves as a visual representation of the used methodology
+    %MF: I would not say things like "Figure 1 represents". Just jump straight into the discription. 
+    %MF: You should also be using things like (A) and (B) to direct the reader
+    %MF: Example text might start with: Nowcasting variant frequencies is complicated by the continuous nature of the data submission process. (A) Variant sequence counts from Japan and United States are shown at 3 different observation dates. Notice ...
+    %MF: Something similar can be done for (B) Various frequency nowcasts ... are shown ...
+	Figure 1 represents a schematic of the dynamic estimation environment, including the progression of dataset estimation, submission delays, and an example estimation of the frequencies of variants using the GARW model. 
+    This figure serves as a visual representation of the used methodology
+    %MF: Personally, I think it makes most sense to use MLR here for (B) instead of GARW since it is the simplest model.
 	}
 	\label{Figure1Final}
+    %MF: Figure filenames and labels we typically want to describe what's in the figure itself since the order is usually subject to change.
 \end{figure}
 
 
@@ -244,31 +253,43 @@ However, it was observed that the model predictions for Japan were worse as comp
 
 
 We implemented a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries spanning across different continents (Australia, Brazil, Japan, South Africa, United Kingdom, United States).
-These models were implemented using the evofr (evolutionary forecasting) software package in Python.
+%MF: We did not implement these models for the project. We should say we tested or used 5 models.
+These models were implemented using the evofr (evolutionary forecasting) software package in Python. %MF: This can be moved to methods and will need a link to the github
 The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary forecasting models... %write about whats common
-The fifth model, referred to as the Naive model, is a simple model that serves as a reference point for comparison.
-It is a baseline model which uses simple assumptions to make predictions. 
-The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
+The fifth model, referred to as the Naive model, is a simple model that serves as a reference point for comparison. 
+%MF: I would flip this slightly e.g. we compare the above 4 models to a naive model to serve as a reference for comparison.
+It is a baseline model which uses simple assumptions to make predictions. %MF: Unnescarry
+The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods. %MF: How so?
 
+
+%MF: What did we set out to do should come before how we did it.
 We began our comparison by calculating the lag times (difference in days between the date of observation and the date of estimation) as a means of evaluating the performance of the models over time.
 This approach provides a reference for understanding how the models perform as the lag time decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of estimation), specifically from [-30,30].
-This enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
-We used our predictions and implemented a metric from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models for the six countries (as presented in Table 1).
+This enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation. 
+
+%MF: I would just say: "We used several metrics ...". Otherwise, this bit is near perfect
+We used our predictions and implemented a metric from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models for the six countries (as presented in Table 1). %MF: Add a reference to table directly \ref{Table1} and make sure to give it a better name
 The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants.
 The model with the lowest MAE error is highlighted in the table as it indicates the best performance among all models. 
+
+%MF: Do we actually care about the absolute range? The entire table is about the mean MAE, no?
 The results showed that there was a range of values among the models, specifically, range of MAE values for the GARW model was from 0.002 to 0.170, showing that the model had a low level of error on average when compared to the other models in the study. 
 The FGA model had a range of MAE values from 0.003 to 0.214, the MLR model had a range of MAE values from 0.003 to 0.154, the Piantham model had a range of MAE values from 0.004 to 0.262, and the Naive model had a range of MAE values from 0.011 to 0.247. 
+
+%MF: It wasn't the range of values that we used to make this determination, so this sentence is a bit confusing
 These results suggest that the GARW model performed the best in terms of MAE, while the Piantham model performed the worst on average among the models tested excluding reference (Naive).
+
+%MF: Something like "The distributions are visualized in \ref{Figure2} A". Once again, make sure to give the figure labels clearer names.
 Models were then compared side by side using error quantiles (25,50, and 75th percentile) as shown in Figure 2A.
 The results of the analysis show an increase in MAE error for all models as lag or day from estimation increases. 
 In other words, as forecasting step increases, the prediction accuracy for all models decreased.
-Figure 2B compared the MAE score distirbution between models for all countries.
+Figure 2B compared the MAE score distribution between models for all countries.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figures/Figure2.png}
-	\caption{\textbf{MAE estimates based on date of estimation.}
+	\caption{\textbf{MAE estimates based on date of estimation.} %MF: We're predicting. We could also use "Observation date" to remove ambiguity.
 	Further legend here.
 	}
 	\label{Figure 2}
@@ -281,9 +302,12 @@ Figure 2B compared the MAE score distirbution between models for all countries.
 \paragraph{Comparison of Growth Advantages}\
 
 Furthermore, In this study, we investigated the behavior of the growth advantage of different variants in various countries.
+%MF: This is not what is happening in Figure 3 at all... First there's multiple models. Secondly, these are growth advantage estimates as of that day not necessarily the growth advantages on that date.
 Using GARW model, we standardized the varying growth advantage by estimating the median Growth Advantage values over time, we were able to observe when and which variants stabilized in each country (Figure 3). 
-The estimation shown of growth advantages are calculated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time. 
 
+
+%MF: The growth advantage estimates provided are .... This is also something could appera in the methods or in the figure caption.
+The estimation shown of growth advantages are calculated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time. 
 
 
 
@@ -306,6 +330,7 @@ The estimation shown of growth advantages are calculated relative to the baselin
 	\includegraphics[width=1.0\textwidth]{figures/table1.png}
 	\caption{\textbf{Table 1}
 	Further legend here.
+    %MF: The document will not render because table1.png wasn't pushed
 	}
 	\label{table1}
 \end{figure}
@@ -331,7 +356,7 @@ The estimation shown of growth advantages are calculated relative to the baselin
 	\caption{\textbf{Growth Advantage of variants over time}
 	Further legend here.
 	}
-	\label{Figure 2}
+	\label{Figure 3}
 \end{figure}
 
 
