@@ -98,10 +98,16 @@ Thereby, it is essential to take these factors (data-wise and systematic) into a
 
 
 Mathematical models elucidate disease processes and have been sought to assess the risk and framing the response to emerging pathogens. 
+%not mechanisms% 
 Representation of disease mechanisms and spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population [Metcalf et al., 2019].
+%mention importance of forecasting variant frequences and estimating growth advantage
 The validity and reliability of these mathematical models are dependent on the quality and quantity of data used for the model.
 With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts and also nowcasts, i.e forecasting on a short-term scale, as it leads to 
 increased uncertainty in identifying and forecasting epidemic trends [Metcalf et al., 2019].
+
+
+
+
 
 
 
@@ -112,11 +118,19 @@ In our efforts to investigate how modelling approaches handle data issues, we de
 %what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
 In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 variants genomic sequence data as a input data for model comparison and evaluation.
 %Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python. 
-To assess the performance of these models, we used several metrics such as MAE, RMSE, and Sequence log likelihood to compare the predicted frequencies to a set of known true values, or a "truth set." %what is truth set (Smoothed raw_freq)
+To assess the performance of these models, we used several metrics such as MAE, RMSE, and Sequence log likelihood to compare the predicted frequencies to a set of known true values (Smoothed raw frequency values of SARS-CoV-2 variants). %what is truth set (Smoothed raw_freq)
 This allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
 
 %What explains our errors
-%try to explain the presistent patterns in the errors
+%try to explain the persistent patterns in the errors
+In our study, we aimed to investigate the persistent patterns of errors in the different models used for nowcasting and forecasting the emergence of SARS-CoV-2 variants. 
+To do so, we examined a variety of variables that may contribute to the emergence of errors in these models. 
+Our goal was to identify the most important variables that play a role in our ability to forecast variant frequencies.
+Through this analysis, we hope to gain a deeper understanding of the factors that contribute to errors in nowcasting and forecasting, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these models.
+%limits of their use-ability 
+
+
+
 
 
 %framework
@@ -131,7 +145,7 @@ This allowed us to evaluate the accuracy and reliability of the models and to id
 
 
 
-* Common Methods to forecast from sequences
+%Common Methods to forecast from sequences
 
 
 
@@ -144,7 +158,7 @@ This allowed us to evaluate the accuracy and reliability of the models and to id
 
 
 
-I use Google Scholar format for citation style with first author, year and first word of title, ala \cite{hadfield2018nextstrain}.
+%I use Google Scholar format for citation style with first author, year and first word of title, ala \cite{hadfield2018nextstrain}.
 
 %%% METHODS %%%
 \section*{Methods}
@@ -166,9 +180,19 @@ Todo
 \textbf{Naive}
 
 
+These models were implemented using the evofr (evolutionary forecasting) software package in Python.
+
+
+
+
+%ga
+
+The estimation shown of growth advantages are calculated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time. 
+
+
 * Framework
 
-In our efforts to investigate how modelling approaches handle data issues, we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets, and to facilitate comparisons of forecasting and nowcasting accuracy between various statistical models.
+In our efforts to investigate how modeling approaches handle data issues, we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets, and to facilitate comparisons of forecasting and nowcasting accuracy between various statistical models.
 This framework utilizes live surveillance data to examine the empirical aspects of evolutionary forecasting by forecasting targets which includes viral pathogen frequencies, pathogen growth advantages, and incidence estimates. 
 Additionally, the framework provides a statistical scoring rule system for evaluating the effectiveness of different modeling approaches.
 The purpose of this study is to investigate the utility of this framework in the context of evolutionary forecasting and to improve our understanding of the factors that influence the accuracy of nowcast and forecast targets.
@@ -215,15 +239,17 @@ this data and produce figures is available via the GitHub repository https://git
 
 \paragraph{Live Forecasting Environment}\
 
-We implemeneted the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C.
-Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022, as represented in Figure 1A.
+Figures presented in 1A and 1B offers a visual representation of the live nowcasting environment, illustrating the significance of incorporating observational data in our forecasting models and the variations that exist among countries in terms of the utilization and impact of such data.
+We utilized the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C (Figure 1A).
+Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022 (Figure~\ref{Example data and predictions for Japan and USA}.A).
 Throughout the observation period, the United States had a higher average availability of SARS-CoV-2 sequences compared to Japan. 
 Nonetheless, both country exhibit variability in sequence availability count for the same dates depending on observation dates. 
 
 
 We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
-We used this data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (as depicted in Fig. 1B)
-However, it was observed that the model predictions for Japan were worse as compared to United States.
+We used this data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (Figure~\ref{Example data and predictions for Japan and USA}.B).
+However, it was observed that the model predictions for Japan were more frequently misestimated compared to United States.
+
 
 
 %%% map %%%
@@ -231,9 +257,13 @@ However, it was observed that the model predictions for Japan were worse as comp
 	\centering
 	\includegraphics[width=0.8\textwidth=0.01]{figures/Figure1Final.png}
 	\caption{\textbf{Example data and predictions for Japan and USA.}
-	Figure 1 represents a schematic of the dynamic estimation environment, including the progression of dataset estimation, submission delays, and an example estimation of the frequencies of variants using the GARW model. This figure serves as a visual representation of the used methodology
+	Figure 1 represents a schematic of the dynamic estimation environment.
+	Nowcasting variant frequencies is complicated by the continuous nature of the data submission process.
+	(A) Variant sequence counts from Japan and United States are shown at 3 different observation dates.
+	Notice varying sequence availability at different observation dates. 
+	(B) Various frequency nowcasts which depends on the data are shown to vary predictions for different observation dates. 
 	}
-	\label{Figure1Final}
+	\label{Example data and predictions for Japan and USA}
 \end{figure}
 
 
@@ -242,48 +272,58 @@ However, it was observed that the model predictions for Japan were worse as comp
 
 \paragraph{Model Error Comparison}\
 
-
-We implemented a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries spanning across different continents (Australia, Brazil, Japan, South Africa, United Kingdom, United States).
-These models were implemented using the evofr (evolutionary forecasting) software package in Python.
-The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary forecasting models... %write about whats common
-The fifth model, referred to as the Naive model, is a simple model that serves as a reference point for comparison.
-It is a baseline model which uses simple assumptions to make predictions. 
-The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
-
 We began our comparison by calculating the lag times (difference in days between the date of observation and the date of estimation) as a means of evaluating the performance of the models over time.
 This approach provides a reference for understanding how the models perform as the lag time decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of estimation), specifically from [-30,30].
 This enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
-We used our predictions and implemented a metric from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models for the six countries (as presented in Table 1).
-The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants.
-The model with the lowest MAE error is highlighted in the table as it indicates the best performance among all models. 
-The results showed that there was a range of values among the models, specifically, range of MAE values for the GARW model was from 0.002 to 0.170, showing that the model had a low level of error on average when compared to the other models in the study. 
-The FGA model had a range of MAE values from 0.003 to 0.214, the MLR model had a range of MAE values from 0.003 to 0.154, the Piantham model had a range of MAE values from 0.004 to 0.262, and the Naive model had a range of MAE values from 0.011 to 0.247. 
-These results suggest that the GARW model performed the best in terms of MAE, while the Piantham model performed the worst on average among the models tested excluding reference (Naive).
-Models were then compared side by side using error quantiles (25,50, and 75th percentile) as shown in Figure 2A.
-The results of the analysis show an increase in MAE error for all models as lag or day from estimation increases. 
-In other words, as forecasting step increases, the prediction accuracy for all models decreased.
-Figure 2B compared the MAE score distirbution between models for all countries.
 
+We applied a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries spanning across different continents (Australia, Brazil, Japan, South Africa, United Kingdom, United States).
+The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary forecasting models... %write about whats common
+We compare the above 4 models to a naive model to serve as a reference model for comparison.
+It is a baseline model which uses simple assumptions to make predictions. 
+The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
+In particular, the use of multiple models allows to examine if more complex models may be better at capturing epidemiological variant patterns. 
+
+
+
+%Mention which models performed best in each lead (no need to mention numbers)
+We used our predictions and used several metrics from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models for the six countries (Table~\ref{table1}).
+The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants.
+The model with the lowest mean MAE error for each country is highlighted as it indicates the best performance among all models (Table~\ref{table1}). 
+The results showed that there was a range of values among the models for different leads.
+In this study, the GARW model demonstrated best performance, on average, for -30 and 0 days from the date of estimation, when compared to the other models evaluated. 
+Notably, for 30 days from the date of estimation, the MLR and GARW models both performed similarly well, with the MLR model exhibiting better performance in Australia, Brazil, and Japan, while the GARW model demonstrated better performance in South Africa, the United Kingdom, and the United States.
+These findings indicate that the GARW model exhibited the best performance, as measured by mean absolute error (MAE), among the models evaluated, with the exception of the reference model (Naive).
+In contrast, the Piantham model performed worst on average among the models tested.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/Figure2.png}
-	\caption{\textbf{MAE estimates based on date of estimation.}
+	\caption{\textbf{MAE estimates based on observation date.}
 	Further legend here.
 	}
 	\label{Figure 2}
 \end{figure}
 
 
+Models were then compared side by side using error quantiles (25,50, and 75th percentile).
+The majority of the models evaluated in this study exhibited median error values within the range of 0 to 10 percent of logarithm of mean absolute error (log(MAE)) (Figure~\ref{Figure 2}.A).
+Furthermore,we compared the MAE score distribution between models for all countries (Figure~\ref{Figure 2}.B) .
+As expected, the results of the analysis show an increase in MAE error for all models as lag or day from estimation increases. 
+In other words, as forecasting step increases, the prediction accuracy for all models decreased.
 
-\begin{figure}[H]
+
+
+
+
+
+\begin{table}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/table1.png}
-	\caption{\textbf{Table 1}
+	\includegraphics[width=0.6\textwidth]{figures/table1.png}
+	\caption{\textbf{Mean Absolute Error}
 	Further legend here.
 	}
 	\label{table1}
-\end{figure}
+\end{table}
 
 
 
@@ -291,8 +331,11 @@ Figure 2B compared the MAE score distirbution between models for all countries.
 \paragraph{Comparison of Growth Advantages}\
 
 Furthermore, In this study, we investigated the behavior of the growth advantage of different variants in various countries.
-Using GARW model, we standardized the varying growth advantage by estimating the median Growth Advantage values over time, we were able to observe when and which variants stabilized in each country (Figure 3). 
-The estimation shown of growth advantages are calculated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time. 
+Using GARW, MLR, and Piantham models, we standardized the varying growth advantage by estimating the median Growth Advantage values as of that date, we were able to observe when and which variants stabilized in each country (Figure~\ref{Figure 3}). 
+The results of the analysis revealed that the majority of countries displayed stabilization with regard to the Omicron 22A, B, and C variants, with the exception of Japan.
+This discrepancy may be attributed to Japan's limited availability of sequence data or other imperfections in the data.
+%they mostly stabilized except Japan % and why (motivated us to next step of analysis)
+
 
 \begin{figure}[H]
 	\centering
@@ -300,24 +343,36 @@ The estimation shown of growth advantages are calculated relative to the baselin
 	\caption{\textbf{Growth Advantage of variants over time}
 	Further legend here.
 	}
-	\label{Figure 2}
+	\label{Figure 3}
 \end{figure}
 
+\paragraph{Explanatory Regression Model}\
+
+In order to investigate the variability among different countries and models and explain the emergence of error patterns in the forecasts, we employed a step-wise regression model to identify various variables that may contribute to errors in mean absolute error (MAE) of the models.
+These variables were variants selective pressure, lead, sequence availability, fraction of sequences available within a week, median delay of data submission. 
+Subsequently, a multivariate regression model was constructed to predict MAE errors, which was then fitted to SARS-CoV-2 variant data for all countries, as well as for each country individually.
+
+\textbf{Model Specification}
+
+
+maybe stepwise regression?
+log(MAE = xxxx)
+
+
+\textbf{Model Performance}
+
+R2 for each country (maybe make a table)
+R2 for full model with all countries
+
+Confidence intervals
+prediction interval
 
 
 
 
-
-
-
-
-
-
-
-
-% Specific numbers 
-
-
+%we built a linear model
+% we picked these variables to predict the error
+%identified which variables are of most importance
 % 
 
 
