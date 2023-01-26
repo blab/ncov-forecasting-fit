@@ -41,8 +41,9 @@ library(magrittr)
 library(gt)
 library(runner)
 library(ggpmisc)
-
-
+library(MASS)
+library(tree)
+library(huxtable)
 
 ```
 
@@ -145,7 +146,7 @@ freq_plot_US = error_dataset %>%
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
-        legend.position = "none",
+        #legend.position = "none",
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
   ylim(0,1)
 
@@ -236,6 +237,8 @@ error_dataset2 %>%
 #First estimated date
 Initial_date = seqs_first  %>%
   filter(location =="USA") %>%
+  filter(variant != "Delta") %>%
+  filter(variant != "other") %>%
   ggplot() +
   geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
   bbc_style() +
@@ -253,7 +256,7 @@ Initial_date = seqs_first  %>%
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
-        legend.position = "none",
+        #legend.position = "none",
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
   labs(subtitle = "USA")+
   xlab("Date")+
@@ -330,7 +333,7 @@ later_date
 
 ggsave("later_est.png", plot = later_date, width = 7, height = 10, units = "cm", bg = 'transparent')
 ggsave("mid_est.png", plot = mid_date, width = 7, height = 10, units = "cm", bg = 'transparent')
-ggsave("initial_est.png", plot = Initial_date, width = 7, height = 10, units = "cm", bg = 'transparent')
+ggsave("initial_est.png", plot = Initial_date, width = 20, height = 10, units = "cm", bg = 'transparent')
 
 ggsave("full_plot_schem.png", plot = full_plot_schem, width = 20, height = 20, units = "cm", bg = 'transparent')
 ```
@@ -888,7 +891,9 @@ table_1 %>%
 #FGA AND MLR Dataset
 ga_plot1 = growthadv_dataset %>%
   group_by(location, model,variant ,date,  pivot_date) %>%
-  filter(model != 'GARW') %>%
+  filter(model != 'GARW') 
+
+ga_plot1%>%
   select(-date)
 
 #GARW dataset
@@ -900,7 +905,7 @@ ga_plot2 = growthadv_dataset %>%
 #FGA, MLR, and GARW
 #GARW GA values are averaged over pivot_dates as it is varying
 full_ga = ga_plot1 %>%
-  full_join(ga_plot2)
+  full_join(ga_plot2) 
 
 
 
@@ -1386,130 +1391,7 @@ emerge_dt %>%
 - Basically, keeping things on natural time axis. Plotting MAE and growth advantage of variant together. 
 - Start with plotting average MAE on date over time and labeling variant emergences.
 
-### Helper function
 
-
-```{r}
-
-#Function to get last 30 days sequences that are collected and submitted
-get_recent_sequences <- function (df, end_date, k) {
-  filtered <- df %>%
-    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
-    filter(as.Date(date_submitted) < end_date) %>%
-    group_by(location) %>%
-    summarise(sequence_recent = sum(sequences))
-  filtered$date <- end_date
-  return(filtered)
-}
-
-get_recent_sequences(seq_date, "2022-04-01", 30)
-
-# Repeat for all possible end dates
-dates = unique(seq_date$date)
-
-recent_seq_30= data.frame()
-
-for (date in dates) {
-  seq_d = get_recent_sequences(seq_date, date , 30)
-  recent_seq_30 = rbind(recent_seq_30, seq_d)
-}
-
-#Sequence Data
-recent_seq_30
-#average MAE per country
-average_mae = error_dataset %>%
-  filter(lead < 0 & lead > -14) %>%
-  group_by(location, model, date, pivot_date, lead) %>%
-  #filter(location =="Japan")%>%
-  summarize(meanMAE = mean(MAE)) %>%
-  mutate(date = as.Date(date))
-
-#Full_date
-mae_seq_data = average_mae %>%
-  left_join(recent_seq_30)
-
-
-
-#what percentage of sequences in the past 14 days with MAE 
-
-
-get_recent_sequences_frac <- function (df, end_date, k) {
-  filtered <- df %>%
-    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
-    
-    group_by(location) %>%
-    summarise(
-      #Total sequences collected
-      seq_collected = sum(sequences),
-      #sequences available at the submission dates of interest
-      seq_available = sum(sequences * (as.Date(date_submitted) < end_date)),
-     
-      #Fraction of sequences available 
-      frac_seq_avail = (seq_available/seq_collected))
-  filtered$date <- end_date
-  return(filtered)
-}
-
-get_recent_sequences_frac(seq_date, "2022-04-01", 14)
-seq
-
-# Repeat for all possible end dates
-dates = unique(seq_date$date)
-
-frac_seq = data.frame()
-
-for (date in dates) {
-  seq_d = get_recent_sequences_frac(seq_date, date , 14)
-  frac_seq = rbind(frac_seq, seq_d)
-}
-
-
-
-#Full_date
-frac_seq = frac_seq %>%
-  mutate(date = as.Date(date))
-
-mae_seq_frac_data = average_mae %>%
-  left_join(frac_seq)
-
-
-
-#Mean delays 
-
-get_mean_delays <- function (df, end_date, k) {
-  filtered <- df %>%
-    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
-    mutate(delay = as.Date(date_submitted) - as.Date(date)) %>%
-    group_by(location) %>%
-    summarise(mean_delay = mean(delay),
-              median_delay = median(delay))
-  filtered$date <- end_date
-  return(filtered)
-}
-
-
-get_mean_delays(seq_date, "2022-04-01", 14)
-
-
-dates = unique(seq_date$date)
-
-delay_seq = data.frame()
-
-for (date in dates) {
-  seq_d = get_mean_delays(seq_date, date , 14)
-  delay_seq = rbind(delay_seq, seq_d)
-}
-
-delay_seq = delay_seq %>%
-  mutate(date = as.Date(date))
-
-mae_seq_delay_data = average_mae %>%
-  left_join(delay_seq)
-
-
-
-
-```
 
 
 ## Figure 4 Visualization
@@ -1567,26 +1449,6 @@ mae_seq_delay_data  %>%
   #bbc_style() +
  # theme(axis.title.y = element_text(color="Black", size=17),
      #   axis.title.x = element_text(color="Black", size=17))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1777,15 +1639,14 @@ hist(resc)
 ```
 
 
-## Pivot Date
+# Helper Function
 
 ```{r}
 
 
 #what percentage of sequences in the past 14 days with MAE 
 
-
-get_recent_sequences_frac_pivot <- function (df, end_date, k) {
+get_recent_sequences_frac <- function (df, end_date, k) {
   filtered <- df %>%
     filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
     group_by(location) %>%
@@ -1793,38 +1654,24 @@ get_recent_sequences_frac_pivot <- function (df, end_date, k) {
       #Total sequences collected
       seq_collected = sum(sequences),
       #sequences available at the submission dates of interest
-      seq_available = sum(sequences * (as.Date(date_submitted) < end_date)),
+      seq_available = sum(sequences * (as.Date(date_submitted) - as.Date(date) < k)),
+      
+     
       #Fraction of sequences available 
       frac_seq_avail = (seq_available/seq_collected))
+  filtered$date <- end_date
   return(filtered)
 }
 
 
 
-get_recent_sequences_frac_pivot(seq_date, "2022-04-15", 14)
-
-# Repeat for all possible end dates
-pivot_dates = unique(error_dataset$pivot_date)
-frac_seq_pivot = data.frame()
-
-for (pivot_date in pivot_dates) {
-  #LAST DATE BEFROE NOWCAST PERIOD as end date
-  last_date = as.Date(pivot_date) - 14
-  #2 weeks before that end date
-  seq_d = get_recent_sequences_frac_pivot(seq_date, last_date , 14) %>%
-    mutate(pivot_date = pivot_date)
-  frac_seq_pivot = rbind(frac_seq_pivot, seq_d)
-}
-
-#Full_date
-mae_seq_frac_data_piv = average_mae %>%
-  left_join(frac_seq_pivot)
 
 
 
-#Mean delays 
 
-get_mean_delays_piv <- function (df, end_date, k) {
+#function to obtain sequence submission and collected delays
+
+get_delays_piv <- function (df, end_date, k) {
   filtered <- df %>%
     filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
     mutate(delay = as.Date(date_submitted) - as.Date(date)) %>%
@@ -1836,31 +1683,39 @@ get_mean_delays_piv <- function (df, end_date, k) {
 
 
 
+
+get_recent_sequences_frac(seq_date, "2022-04-01", 14)
+
+
+
+
+# Repeat for all possible end dates
+pivot_dates = unique(error_dataset$pivot_date)
+#sequences df
+frac_seq_pivot = data.frame()
+#delay df
 delay_seq_pivot = data.frame()
 
+
+#Get fraction of sequences for all pivot dates
 for (pivot_date in pivot_dates) {
+  #LAST DATE BEFROE NOWCAST PERIOD as end date
   last_date = as.Date(pivot_date) - 14
-  seq_d = get_mean_delays_piv(seq_date, last_date , 14) %>%
+  #2 weeks before that end date
+  seq_d = get_recent_sequences_frac(seq_date, last_date , 14) %>%
     mutate(pivot_date = pivot_date)
-  delay_seq_pivot = rbind(delay_seq_pivot, seq_d)
+  frac_seq_pivot = rbind(frac_seq_pivot, seq_d)
 }
 
 
-mae_seq_delay_data_piv = average_mae %>%
-  left_join(delay_seq_pivot)
 
-
-
-
-
-
-
-
-
-
-
-
-
+#Get delay of sequences for all pivot dates
+for (pivot_date in pivot_dates) {
+  last_date = as.Date(pivot_date) - 14
+  seq_d = get_delays_piv(seq_date, last_date , 14) %>%
+    mutate(pivot_date = pivot_date)
+  delay_seq_pivot = rbind(delay_seq_pivot, seq_d)
+}
 
 
 
@@ -1871,41 +1726,31 @@ mae_seq_delay_data_piv = average_mae %>%
 
 
 
+#Variant Selection Pressure with MAE
+
+***Calculate selective pressure***
+* Delta bar = sum(ga * smoothed_freq)
+* sum [((ga per variant) - (Delta bar))^2 * smoothed_freq]
+* p = 1/v(number) x sum
 
 
-
-
-
-
-
-
-#Figure 5: Variant Selection Pressure with MAE
 
 ```{r}
 
-#Avg Mae
-
-average_mae =error_dataset %>%
-  group_by(location) %>%
-  #filter(location =="Japan")%>%
-  select(location, variant, MAE, date, raw_freq) %>%
-  aggregate(MAE~date+location, FUN=mean) %>%
-  mutate(date = as.Date(date))
-
-
-
-#GA + error dataset 
+#Growth advantage dataset
 growthadv_dataset_MLR = growthadv_dataset %>%
   filter(model =="MLR") %>%
-  #group_by(location, model, date, pivot_date) %>% 
   select(-date) 
   
+
+#Error dataset
 error_dataset_MLR = error_dataset  %>%
-  #get 28 days of nowcast
+  #get 28 days of nowcast data
   filter(lead > -14) %>% 
   filter(lead < 14) %>%
   filter(model =="MLR") 
 
+#full growth advantage and error dataset
 select_pres_data = error_dataset_MLR %>% 
   left_join(growthadv_dataset_MLR)
   
@@ -1914,12 +1759,6 @@ select_pres_data = select_pres_data %>%
          ga_upper_80 = replace_na(ga_upper_80, 1),
          ga_lower_80 = replace_na(ga_lower_80, 1))
 
-#Delta bar = sum(ga * smoothed_freq)
- 
-#sum [((ga per variant) - (Delta bar))^2 * smoothed_freq]
-
-#p = 1/v(number) x sum
-
 
 
 select_pres_data %>%
@@ -1927,7 +1766,7 @@ select_pres_data %>%
   slice(2)
 
 
-#Calc selective Pressure
+#Estimate selective Pressure
 
 get_selective_pres <- function (df) {
   press_df <- df %>% 
@@ -1944,6 +1783,16 @@ get_selective_pres <- function (df) {
 }
 
 select_pres_data2 = get_selective_pres(select_pres_data)
+
+
+
+
+
+```
+
+
+
+```{r}
 
 select_pres_data2 %>% 
   filter(lead > -14) %>%
@@ -1973,11 +1822,6 @@ select_pres_data2 %>%
   facet_wrap(~location) +
   theme_classic()
 
-
-
-scale = 1
-
-
 #Clean up and seperate pivot dates
 #Fit a line
 
@@ -1997,27 +1841,88 @@ select_pres_data2 %>%
   bbc_style()+
   theme(axis.title.y = element_text(color="Black", size=17))
 
-class(select_pres_data2$selective_pres)
 
-
-cor.test(select_pres_data2$selective_pres, select_pres_data2$MAE_avg, method = "spearman")
-
-plot(lm(select_pres_data2$MAE_avg ~ select_pres_data2$selective_pres))
+```
 
 
 
-m0 = lm ( MAE ~ 1 ,full_test )
-m1 = lm (MAE_avg ~ selective_pres ,select_pres_data2)
-m2 = lm ( MAE_avg ~ selective_pres + I(selective_pres^2), select_pres_data2 )
-m3 = lm ( MAE_avg ~ selective_pres + I(selective_pres^2) + I(selective_pres^3) , select_pres_data2)
-m4 = lm ( MAE_avg ~ selective_pres + I(selective_pres^2) + I(selective_pres^3) + I(selective_pres^4) , select_pres_data2)
-AIC(m0,m1,m2,m3,m4)
 
-summary(m4)
+
+
+
+
+
+#Full model data
+
+```{r}
+
+#Average MAE dataset
+
+#average MAE per country
+average_mae = error_dataset %>%
+  filter(lead < 0 & lead > -14) %>%
+  group_by(location, model, date, pivot_date, lead) %>%
+  filter(model =="MLR") %>%
+  #filter(location =="Japan")%>%
+  summarize(meanMAE = mean(MAE)) %>%
+  mutate(date = as.Date(date))
+
+
+ 
+#####Combine Datasets#####
+
+
+#Data with meanMAE and sequence avail, fraction of seq avail
+mae_seq_frac_data_piv = average_mae %>%
+  left_join(frac_seq_pivot)
+
+view(average_mae)
+view(frac_seq_pivot)
+#Data with meanMAE and delay sequencies
+mae_seq_delay_data_piv = average_mae %>%
+  left_join(delay_seq_pivot)
+
+
+
+#full mae seq data
+mae_seq_full = mae_seq_frac_data_piv %>%
+  left_join(mae_seq_delay_data_piv)
+
+
+
+#Adding selection pressure
+
+select_pres_data2 = select_pres_data2 %>%
+  mutate(date = as.Date(date))
+
+
+#selection pressure and mae
+full_model_data = mae_seq_full %>%
+  left_join(select_pres_data2)
+
+
+
+
+
+
+
+
+
 
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+
 
 #Final Model
 
@@ -2034,26 +1939,409 @@ mae_seq_full = mae_seq_frac_data_piv %>%
 
 
 full_test = mae_seq_full %>%
-  right_join(select_pres_data2)
+  left_join(select_pres_data2)
 
 
+
+
+#Incorporated selective pressure
 
 test3 = full_test %>%
   filter(model =="MLR") %>%
   filter(location =="USA")
 
-reg = lm(meanMAE ~ frac_seq_avail + seq_available + lead +mean_delay + median_delay + selective_pres + frac_seq_avail *  mean_delay, test3)
+reg = lm(log(meanMAE) ~ frac_seq_avail + seq_available + lead +mean_delay + median_delay + selective_pres + frac_seq_avail *  mean_delay, test3)
 
-
+test3
 step.model <- stepAIC(reg, direction = "both", 
                       trace = FALSE)
 
-summary(step.model)
+
+summary(step.model) 
+
+residuals(step.model)
+
+
+#update ncovfit
+
+
 
 
 
 ```
 
+
+
+#Variable selection
+
+```{r}
+
+#Selective pressure data and Delay Mae seq data
+jp_var = full_test %>%
+  filter(model == "MLR") %>%
+  filter(location == "Japan")
+
+  
+
+full_test %>%
+  filter(model == "MLR") %>%
+  ggplot()+
+  geom_point(aes(x = frac_seq_avail, y = seq_available, color = location)) +
+  facet_wrap(~location, scales = "free") + 
+  theme_classic()+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14))
+
+
+
+
+
+full_test %>%
+  filter(model == "MLR") %>%
+  ggplot()+
+  geom_point(aes(x = seq_collected, y = seq_available, color = location)) +
+  facet_wrap(~location, scales = "free") + 
+  theme_classic()+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14))
+
+
+
+full_test %>%
+  filter(model == "MLR") %>%
+  filter(lead < 0) %>%
+  ggplot()+
+  geom_point(aes(x = meanMAE, y =frac_seq_avail , color = location)) +
+  #facet_wrap(~location, scales = "free") + 
+  theme_classic()+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14))
+
+
+```
+
+
+
+
+
+
+
+```{r}
+
+#models per country
+
+
+#United States
+US_model = full_test %>%
+  filter(model =="MLR") %>%
+  filter(location =="USA")
+
+#Regression Model
+reg_US = lm(log(meanMAE) ~ frac_seq_avail + seq_available + lead + median_delay + selective_pres , US_model)
+
+summary(reg_US)
+#Stepwise regression
+step.model_US <- stepAIC(reg_US, direction = "both", trace = FALSE)
+
+summary(reg_US)
+
+
+#United Kingdom
+
+UK_model = full_test %>%
+  filter(model =="MLR") %>%
+  filter(location =="United Kingdom")
+
+#Regression Model
+reg_UK = lm(log(meanMAE) ~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, UK_model)
+
+#Stepwise regression
+step.model_UK <- stepAIC(reg_UK, direction = "both", trace = FALSE)
+
+summary(step.model_UK)
+
+#Japan
+
+JP_model = full_test %>%
+  filter(model =="MLR") %>%
+  filter(location =="Japan")
+
+#Regression Model
+reg_JP = lm(log(meanMAE)~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, JP_model)
+
+#Stepwise regression
+step.model_JP <- stepAIC(reg_JP, direction = "both", trace = FALSE)
+summary(step.model_JP)
+
+
+
+#figure
+
+
+US_m = ggplot(US_model, aes(x=predict(step.model_US), y= log(meanMAE))) +
+  geom_point( color = "green") +
+  geom_abline(intercept=0, slope=1) +
+  theme_bw() +
+  xlab('Observed log(MeanMAE)') +
+  ylab('predicted log(MeanMAE)')
+
+
+UK_m =  ggplot(UK_model, aes(x=predict(step.model_UK), y= log(meanMAE))) +
+  geom_point(color = "blue") +
+  geom_abline(intercept=0, slope=1) +
+  theme_bw() +
+  xlab('Observed log(MeanMAE)') +
+  ylab('predicted log(MeanMAE)')
+  
+  
+  
+  
+JP_m =  ggplot(JP_model, aes(x=predict(step.model_JP), y= log(meanMAE))) +
+  geom_point(color = "red") +
+  geom_abline(intercept=0, slope=1) +
+  theme_bw() +
+  xlab('Observed log(MeanMAE)') +
+  ylab('predicted log(MeanMAE)')
+
+
+
+plot(step.model)
+install.packages("coefplot")
+library(coefplot)
+
+
+
+#Test regression model performances
+
+install.packages("performance")
+library(performance)
+
+plot(reg_JP)
+check_model(reg_JP)
+check_predictions(step.model_JP)
+check_collinearity(step.model_JP)
+check_normality(step.model_US)
+check_heteroscedasticity(step.model_US)
+performance(reg_US)
+compare_performance(models)
+
+coefplot(step.model_US) +
+  theme_classic()
+
+
+
+models <- list("US.Model" = step.model_US,
+"UK.Model" = step.model_UK,
+"JP.Model" = step.model_JP)
+
+summary(step.model_JP)
+
+beta(step.model_US)
+
+library("reghelper")
+ggcoef_compare(models, type = "faceted") + xlim(-200,1)
+
+library(GGally)
+
+US_m/UK_m / JP_m
+
+
+ggplot() +
+  geom_point(data = JP_model, aes(x=exp(predict(step.model_JP)), y= meanMAE), color = "red") +
+  geom_point(data = US_model, aes(x=exp(predict(step.model_US)), y= meanMAE), color = "green") +
+  geom_point(data = UK_model, aes(x=exp(predict(step.model_UK)), y= meanMAE), color = "Yellow")+
+  geom_abline() +
+  theme_bw() +
+  xlab('Observed MeanMAE') +
+  ylab('predicted MeanMAE')
+
+
+plot_summs(reg_JP, reg_UK, reg_US, plot.distributions = TRUE)
+#Variables to include
+
+#mean centered summary
+jtools::export_summs(reg_JP, reg_UK, reg_US, scale = F, results = 'asis',
+                     error_format = "[{conf.low}, {conf.high}]")
+#Adding leads (-30,30)
+
+
+
+```
+
+
+
+
+#All countries Model
+
+
+
+
+```{r}
+
+all_count_model = full_model_data %>%
+  filter(model =="MLR") 
+
+
+
+
+first.tree= tree(meanMAE~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model)
+initial_tree = plot(first.tree);text(first.tree)
+summary(first.tree)
+
+
+#train
+
+set.seed(100)
+n = length(US_model$meanMAE)
+Z= sample(n,n/2)
+train = US_model[Z,]
+test= US_model[-Z,]
+tree.US = tree(meanMAE~frac_seq_avail + seq_available + lead +mean_delay + median_delay + selective_pres,train)
+summary(tree.US)
+plot(tree.US);text(tree.US)
+
+##Prune tree
+
+
+cv.US = cv.tree(tree.US)
+cv.US$dev #dev is RSS
+cv.US$size #How many terminal nodes
+
+plot(cv.US$size,cv.US$dev, type = "b" )
+cbind(cv.US$size,cv.US$dev)  #best 9
+
+#Prune
+pruned.tree = prune.tree(tree.US, best = 10)
+plot(tree.US); text(tree.US, pretty = 1)
+
+
+
+
+
+
+
+
+
+library(rpart)
+library(rpart.plot)
+set.seed(1)
+m1 = rpart(meanMAE~frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model)
+rpart.plot(m1)
+
+summary(m1)
+
+
+#Random forest
+
+library(randomForest)
+set.seed(1)
+n = length(all_count_model$meanMAE)
+Z= sample(n,n/2)
+train = all_count_model[Z,]
+test= all_count_model[-Z,]
+tree.all = tree(meanMAE~frac_seq_avail + seq_available + lead + median_delay + selective_pres,train)
+plot(tree.all);text(tree.all)
+
+
+#Fit random forest
+
+#Assumptions to consider
+
+plot(rf.fit, "proximity")
+
+
+#+ seq_available + lead + median_delay +
+rf.fit = randomForest(meanMAE~frac_seq_avail + seq_available + lead + median_delay+ selective_pres,data=all_count_model,importance = TRUE)
+print(rf.fit)
+varImpPlot(rf.fit, main = "Random Forest Variable")
+which.min(rf.fit$rsq)
+plot(rf.fit)
+#Prediction
+
+importance(rf.fit)
+
+
+
+plot(yhat.rf, residuals(rf.fit, test$meanMAE))
+
+print(rf.fit)
+yhat.rf = predict(rf.fit,newdata=test)
+
+table(yhat.rf, test$meanMAE)
+
+mean((yhat.rf-test$meanMAE)^2)
+
+
+# Create a scatterplot of the model's predictions
+ggplot(data = data.frame(yhat.rf, test$meanMAE), aes(x = yhat.rf, y = test$meanMAE)) +geom_point() + theme_bw()
+
+
+
+
+
+
+
+
+# Get variable importance from the model fit
+#Visualize
+ImpData <- as.data.frame(importance(rf.fit))
+ImpData$Var.Names <- row.names(ImpData)
+
+ggplot(ImpData, aes(x=Var.Names, y=`IncNodePurity`)) +
+  geom_segment( aes(x=Var.Names, xend=Var.Names, y=0, yend=`IncNodePurity`), color="black") +
+  geom_point(aes(size =`%IncMSE`), color="black", alpha=0.6) +
+  theme_light() +
+  coord_flip() +
+  theme(
+    legend.position="bottom",
+    panel.grid.major.y = element_blank(),
+    panel.border = element_blank(),
+    axis.ticks.y = element_blank()
+  )
+
+
+
+```
+
+
+
+
+```{r}
+
+all_count_model = full_model_data %>%
+  filter(model =="MLR") 
+library(rigr)
+
+#Regression Model
+reg_all = lm(log(meanMAE) ~ frac_seq_avail + seq_collected + lead + median_delay + selective_pres, all_count_model)
+
+regress("mean", log(meanMAE) ~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model )
+
+#Stepwise regression
+step.model_all <- stepAIC(reg_all, direction = "backward", trace = FALSE)
+
+summary(step.model_all)
+
+
+summary(reg_all)
+check_model(reg_all)
+
+ggplot(all_count_model, aes(x=exp(predict(reg_all)), y= meanMAE, color= location)) +
+  geom_point() +
+  facet_wrap(~location)+
+  geom_abline(intercept=0, slope=1) +
+  theme_bw() #+
+  #Mean('Observed log(MeanMAE)') +
+  #ylab('predicted log(MeanMAE)')
+library(jtools) # Load jtools
+
+plot_summs(reg_all, inner_ci_level = .9, plot.distributions = TRUE)
+
+plot(cooks.distance(reg_all))
+summ(reg_all, center = T, transform.response = TRUE)
+
+export_summs(reg_all, error_format = "[{conf.low}, {conf.high}]")
+```
 
 #Supplementary Figures
 
@@ -2613,6 +2901,133 @@ ggsave("ga_var_US.png", plot = p1, width = 20, height = 20, units = "cm" )
 #Misc code
 
 
+
+# Helper function
+
+
+```{r}
+
+#Function to get last 30 days sequences that are collected and submitted
+get_recent_sequences <- function (df, end_date, k) {
+  filtered <- df %>%
+    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
+    #filter(as.Date(date_submitted) < end_date) %>%
+    filter(as.Date(date_submitted) - as.Date(date) < k) %>%
+    
+    group_by(location) %>%
+    summarise(sequence_recent = sum(sequences))
+  filtered$date <- end_date
+  return(filtered)
+}
+
+get_recent_sequences(seq_date, "2022-04-01", 30)
+
+# Repeat for all possible end dates
+dates = unique(seq_date$date)
+
+recent_seq_30= data.frame()
+
+for (date in dates) {
+  seq_d = get_recent_sequences(seq_date, date , 30)
+  recent_seq_30 = rbind(recent_seq_30, seq_d)
+}
+
+#Sequence Data
+recent_seq_30
+#average MAE per country
+average_mae = error_dataset %>%
+  filter(lead < 0 & lead > -14) %>%
+  group_by(location, model, date, pivot_date, lead) %>%
+  #filter(location =="Japan")%>%
+  summarize(meanMAE = mean(MAE)) %>%
+  mutate(date = as.Date(date))
+
+#Full_date
+mae_seq_data = average_mae %>%
+  left_join(recent_seq_30)
+
+
+
+#what percentage of sequences in the past 14 days with MAE 
+
+
+get_recent_sequences_frac <- function (df, end_date, k) {
+  filtered <- df %>%
+    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
+    filter(as.Date(date_submitted) - as.Date(date) < k) %>%
+    group_by(location) %>%
+    summarise(
+      #Total sequences collected
+      seq_collected = sum(sequences),
+      #sequences available at the submission dates of interest
+      seq_available = sum(sequences * (as.Date(date_submitted) < end_date)),
+     
+      #Fraction of sequences available 
+      frac_seq_avail = (seq_available/seq_collected))
+  filtered$date <- end_date
+  return(filtered)
+}
+
+get_recent_sequences_frac(seq_date, "2022-04-01", 30)
+seq
+
+# Repeat for all possible end dates
+dates = unique(seq_date$date)
+
+frac_seq = data.frame()
+
+for (date in dates) {
+  seq_d = get_recent_sequences_frac(seq_date, date , 14)
+  frac_seq = rbind(frac_seq, seq_d)
+}
+
+
+
+#Full_date
+frac_seq = frac_seq %>%
+  mutate(date = as.Date(date))
+
+mae_seq_frac_data = average_mae %>%
+  left_join(frac_seq)
+
+
+
+#Mean delays 
+
+get_mean_delays <- function (df, end_date, k) {
+  filtered <- df %>%
+    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
+    mutate(delay = as.Date(date_submitted) - as.Date(date)) %>%
+    group_by(location) %>%
+    summarise(mean_delay = mean(delay),
+              median_delay = median(delay))
+  filtered$date <- end_date
+  return(filtered)
+}
+
+
+get_mean_delays(seq_date, "2022-04-01", 14)
+
+
+dates = unique(seq_date$date)
+
+delay_seq = data.frame()
+
+for (date in dates) {
+  seq_d = get_mean_delays(seq_date, date , 14)
+  delay_seq = rbind(delay_seq, seq_d)
+}
+
+delay_seq = delay_seq %>%
+  mutate(date = as.Date(date))
+
+mae_seq_delay_data = average_mae %>%
+  left_join(delay_seq)
+
+
+
+
+```
 
 ```{r}
 
