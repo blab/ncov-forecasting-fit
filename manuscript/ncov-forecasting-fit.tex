@@ -88,7 +88,7 @@ Epidemiologists face a multitude of challenges in order to provide accurate and 
 With the increased availability of genomic sequencing, there has been efforts and potential in using sequences as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens [Gire SK et al., 2014, Zhou et al., 2020]. 
 More recently, with the deluge of data from various sources, issues with data arise regarding quantity, near-real-time accessibility, and quality.
 %Integration of these data sources 
-Data collected from different geographical locations and time-points exhibit varying degrees of issues with reporting bias, submission delays, and back-filling of disease occurence especially with a larger geographical scale [Pascal Crépey et al., 2022].
+Data collected from different geographical locations and time-points exhibit varying degrees of issues with missing data, submission delays, and back-filling of disease occurence especially with a larger geographical scale [Pascal Crépey et al., 2022].
 %preforming real-time analysis 
 Thus, the quantities and the availability of genomic sequencing data differ depending on the date of observation and forecasting in varying geographical regions being studied.
 This variability in sequences availability can have a significant impact on the accuracy and reliability of forecasting efforts using mathematical models [Suchard et al., 2018].
@@ -348,7 +348,10 @@ This discrepancy may be attributed to Japan's limited availability of sequence d
 	\label{Figure 3}
 \end{figure}
 
-\paragraph{Explanatory Regression Model}\
+\paragraph{Inferential Regression Model}\
+
+
+\paragraph{Variation in frequency error}\
 
 In order to investigate the variability among different countries and models and explain the emergence of error patterns in the forecasts, we employed a step-wise regression model to identify various variables that may contribute to errors in mean absolute error (MAE) of the models.
 These variables were variants selective pressure, lead, sequence availability, fraction of sequences available within a week, median delay of data submission. 
@@ -357,7 +360,21 @@ Subsequently, a multivariate regression model was constructed to predict MAE err
 \textbf{Model Specification}
 
 
-maybe stepwise regression?
+
+
+maybe stepwise regression??
+
+All countries model with logit transformation?
+
+Model with interactions?
+
+Mixture model?
+
+Maybe just use correlations between the variables that we believe has an association?
+
+
+
+
 log(MAE = xxxx)
 
 
@@ -404,6 +421,25 @@ prediction interval
 \section*{Discussion}
 
 Todo
+
+% Interpretation of the results
+
+%Main findings
+
+%Unexpected results
+
+%Limitations
+
+%Future research
+
+
+%Conclusion
+
+
+
+
+
+
 
 %%% REFERENCES %%%
 \bibliographystyle{plos}
