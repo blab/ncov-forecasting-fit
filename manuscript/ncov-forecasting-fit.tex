@@ -243,7 +243,9 @@ this data and produce figures is available via the GitHub repository https://git
 
 Figures presented in 1A and 1B offers a visual representation of the live nowcasting environment, illustrating the significance of incorporating observational data in our forecasting models and the variations that exist among countries in terms of the utilization and impact of such data.
 We utilized the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C (Figure 1A).
+%MF:Being specific about the model isn't necessary here and which model can be mentioned in the caption alone. If we're talking about what's going on in Figure 1, I would say that directly and cite it \ref{fig:Figure1}
 Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022 (Figure~\ref{Example data and predictions for Japan and USA}.A).
+
 Throughout the observation period, the United States had a higher average availability of SARS-CoV-2 sequences compared to Japan. 
 Nonetheless, both country exhibit variability in sequence availability count for the same dates depending on observation dates. 
 
@@ -254,22 +256,23 @@ However, it was observed that the model predictions for Japan were more frequent
 
 
 
+%MF: In general, we want to be a bit more direct. These are not just the data there are predictions here as well. Really this figure is about a "Live nowcasting environment".
 %%% map %%%
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth=0.01]{figures/Figure1Final.png}
 	\caption{\textbf{Example data and predictions for Japan and USA.}
+  %MF: I would not say things like "Figure 1 represents". Just jump straight into the discription. 
+  %MF: Example text might start with: Nowcasting variant frequencies is complicated by the continuous nature of the data submission process. (A) Variant sequence counts from Japan and United States are shown at 3 different observation dates. Notice ...
 	Figure 1 represents a schematic of the dynamic estimation environment.
 	Nowcasting variant frequencies is complicated by the continuous nature of the data submission process.
 	(A) Variant sequence counts from Japan and United States are shown at 3 different observation dates.
 	Notice varying sequence availability at different observation dates. 
 	(B) Various frequency nowcasts which depends on the data are shown to vary predictions for different observation dates. 
 	}
-	\label{Example data and predictions for Japan and USA}
+	\label{LiveNowcasts}
+  %MF: Figure filenames and labels we typically want to describe what's in the figure itself since the order is usually subject to change.
 \end{figure}
-
-
-
 
 
 \paragraph{Model Error Comparison}\
@@ -284,8 +287,6 @@ We compare the above 4 models to a naive model to serve as a reference model for
 It is a baseline model which uses simple assumptions to make predictions. 
 The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 In particular, the use of multiple models allows to examine if more complex models may be better at capturing epidemiological variant patterns. 
-
-
 
 %Mention which models performed best in each lead (no need to mention numbers)
 We used our predictions and used several metrics from the framework, specifically Mean Absolute Error (MAE), to assess the relative performance of the models for the six countries (Table~\ref{table1}).
@@ -333,6 +334,7 @@ In other words, as forecasting step increases, the prediction accuracy for all m
 \paragraph{Comparison of Growth Advantages}\
 
 Furthermore, In this study, we investigated the behavior of the growth advantage of different variants in various countries.
+
 Using GARW, MLR, and Piantham models, we standardized the varying growth advantage by estimating the median Growth Advantage values as of that date, we were able to observe when and which variants stabilized in each country (Figure~\ref{Figure 3}). 
 The results of the analysis revealed that the majority of countries displayed stabilization with regard to the Omicron 22A, B, and C variants, with the exception of Japan.
 This discrepancy may be attributed to Japan's limited availability of sequence data or other imperfections in the data.
@@ -369,6 +371,7 @@ All countries model with logit transformation?
 Model with interactions?
 
 Mixture model?
+
 
 Maybe just use correlations between the variables that we believe has an association?
 
