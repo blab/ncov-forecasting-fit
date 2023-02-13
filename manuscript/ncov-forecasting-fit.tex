@@ -165,8 +165,25 @@ Through this analysis, we hope to gain a deeper understanding of the factors tha
 %%% METHODS %%%
 \section*{Methods}
 
-Todo
 
+\paragraph{Preparing sequence counts and case counts}
+
+We prepare sequence count datasets in order to mirror a live nowcasting environment. 
+For a given pivot or observation date, we filter to all sequences which were collected 90 days before the observation date. 
+In order to properly account for submission delays in this collection process, we additionally filter to those sequences which were submitted before the observation day. These sequences are then counted according to their Nextstrain clade assignment to produce sequence counts for each Nextstrain clade each day over the period of interest. 
+These sequence counts are produced independent for … countries including Australia, Brazil, Japan, the United States, the United Kingdom, and South Africa.
+We repeat this process for a series of observations days which are every 7 days starting with … and ending with … giving a total of … datasets for each country.
+Since two models (FGA and GARW) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data.
+
+\paragraph{Frequency dynamics and transmission advantages}%
+
+We implement and evaluate several models of variant frequencies.
+Each of these methods estimate variant frequencies over time and as well as estimate the transmission advantage of given variant relative to a baseline variant $R_{t}^{v} / R_{t}^{u}$.
+
+The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model (cite), a fixed growth advantage model (FGA), and a growth advantage random walk model (GARW). 
+Details for each of these models can be found in the corresponding citations above.
+
+We provide a brief mathematical overview of these methods below.
 
 
 * How different models handle imperfect data
@@ -220,15 +237,6 @@ Logliklihood was calculated as
 
 
 
-\section*{Data and code accessibility}
-
-Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated
-dataset that pulls data from GISAID database. 
-
-
-
-Derived data of sequence counts and case counts, along with all source code used to analyze
-this data and produce figures is available via the GitHub repository https://github.com/blab/ncov-forecasting-fit
 
 
 
@@ -363,7 +371,6 @@ Subsequently, a multivariate regression model was constructed to predict MAE err
 
 
 
-
 maybe stepwise regression??
 
 All countries model with logit transformation?
@@ -438,10 +445,15 @@ Todo
 
 %Conclusion
 
+\section*{Data and code accessibility}
+
+Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated
+dataset that pulls data from GISAID database. 
 
 
 
-
+Derived data of sequence counts and case counts, along with all source code used to analyze
+this data and produce figures is available via the GitHub repository https://github.com/blab/ncov-forecasting-fit
 
 
 %%% REFERENCES %%%
