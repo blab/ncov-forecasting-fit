@@ -351,11 +351,10 @@ The models mentioned above estimate the frequency  $f_{v}(t)$ of variant $v$ at 
 All models simultaneously estimate the variant transmission advantages $\Delta_{v} = \frac{R_{t}^{v}}{R_{t}^{\text{pivot}}}$ where $R_{t}^{v}$ is the effective reproduction number for variant $v$.
 We can interpret these transmission advantages as the relative effective reproduction number of a variant against a given pivot variant.
 Growth advantages presented in this manuscript are relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time. 
-The models different in assumptions in computing this quantity i.e. MLR depends on an assumption of a fixed generation time, Piantham assumes the total prevalence is fixed in time, while GARW / FGA additionally model the transmission process using case count data.
+The models differ in assumptions in computing this quantity i.e. MLR depends on an assumption of a fixed generation time, Piantham assumes the total prevalence is fixed in time, while GARW / FGA additionally model the transmission process using case count data.
 Further details on the model formats can be found in their respective citations.
-
-%TODO: Insert segment decsribing the naive model.
 All models were implemented using the evofr (evolutionary forecasting) software package in Python using Numpyro for inference.
+We compare the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies.
 
 % * Framework
 %
