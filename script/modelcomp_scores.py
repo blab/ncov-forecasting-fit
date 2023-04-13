@@ -266,7 +266,7 @@ if __name__ == "__main__":
             # print(location_truth)
             for pivot_date in dates:
 
-                filepath = f"../plot-est/cast_estimates_full_{model}/{location}/freq_full_{pivot_date}.csv"
+                filepath = f"../plot-est2/cast_estimates_full_{model}/{location}/freq_full_{pivot_date}.csv"
 
                 # Load data
                 raw_pred = load_data(filepath)

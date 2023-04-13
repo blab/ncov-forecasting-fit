@@ -1,8 +1,9 @@
 ---
 title: "script_result_vis.rmd"
 output:
-  pdf_document: default
+  word_document: default
   html_document: default
+  pdf_document: default
 date: "2022-08-22"
 ---
 
@@ -44,21 +45,44 @@ library(ggpmisc)
 library(MASS)
 library(tree)
 library(huxtable)
+library(patchwork)
+library(gridExtra)
+require(grid)
 
 ```
 
+```{r}
 
+my_theme() {
+  bbc_style() +
+    theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "none",
+        plot.subtitle  = element_text(size = 14))
+}
+```
 #reading datasets
 
 ```{r}
 
 #read error datasets
 
-error_dataset = read.csv('estimates/model_scores_output4.csv') %>%
+error_dataset = read.csv('../estimates/model_scores_output4.csv') %>%
   mutate(model = recode(model, dummy = "Naïve")) 
 
 #growth advantage dataset per variant
-growthadv_dataset = read.csv("estimates/ga_output.csv")
+growthadv_dataset = read.csv("../estimates/ga_output.csv")
 
 
 
@@ -99,6 +123,8 @@ variant_colorsga = c("Delta" = "#926224",		"Omicron 21K" = "#781C86","Omicron 22
 
 
 
+loc_color_map = c("USA" = "#a12525", "United Kingdom" = "#00299b", "Japan" = "#3d405b",
+                  "Brazil" = "#f9722f","Australia" = "#309975", "South Africa"= "#b300b3")
 
 model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", "FGA" = "#FFCF00","GARW" = "#D62828" )
 
@@ -123,13 +149,20 @@ freq_plot_US = error_dataset %>%
            model =="GARW", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta") %>%
   ggplot() +
-    geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "darkgrey" ,size = 1.2)+
+    geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "black" ,size = 1.5, alpha = 0.9)+
   geom_line(aes(x = as.Date(date), y = pred_freq,  group = factor(pivot_date),color = factor(variant), fill = factor(pivot_date)),size = 0.8, alpha = 0.7)+
-  facet_wrap(~variant, nrow = 1)+
+  facet_wrap(~variant, nrow = 1,
+             labeller = labeller(variant = 
+    c("Omicron 21K" = "Clade 21K",
+      "Omicron 21L" = "Clade 21L",
+      "Omicron 22A" = "Clade 22A",
+      "Omicron 22B" = "Clade 22B",
+      "Omicron 22C" = "Clade 22C")))+
   bbc_style()+
   scale_color_manual(
     values= variant_colors,
-    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C" )
+    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C" ),
+    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C" )
   )+
   labs( x = "Date", y= "Frequency",
         caption = "MA smoothed frequency with predicted frequency")+
@@ -146,7 +179,7 @@ freq_plot_US = error_dataset %>%
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
-        #legend.position = "none",
+        legend.position = "none",
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
   ylim(0,1)
 
@@ -160,12 +193,20 @@ freq_plot_JA = error_dataset %>%
            model =="GARW", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta") %>%
   ggplot() +
-    geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "darkgrey" ,size = 1.2)+
+    geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "black" ,size = 1.5, alpha = 0.9)+
+   scale_color_manual(values=c("black"))+
   geom_line(aes(x = as.Date(date), y = pred_freq,  group = factor(pivot_date),color = factor(variant)),size = 0.8, alpha = 0.7)+
     scale_color_manual(
     values= variant_colors,
-    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C" ))+
-  facet_wrap(~variant, nrow = 1)+
+    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C" ),
+    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C"))+
+  facet_wrap(~variant, nrow = 1,
+             labeller = labeller(variant = 
+    c("Omicron 21K" = "Clade 21K",
+      "Omicron 21L" = "Clade 21L",
+      "Omicron 22A" = "Clade 22A",
+      "Omicron 22B" = "Clade 22B",
+      "Omicron 22C" = "Clade 22C")))+
   bbc_style()+
 
   labs( x = "Date", y= "Frequency",
@@ -242,7 +283,8 @@ Initial_date = seqs_first  %>%
   ggplot() +
   geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
   bbc_style() +
-  scale_fill_manual(values =variant_colors )+
+  scale_fill_manual(values =variant_colors,
+                    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C"))+
   theme(axis.title.x = element_blank(),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -256,7 +298,7 @@ Initial_date = seqs_first  %>%
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
-        #legend.position = "none",
+        legend.position = "none",
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
   labs(subtitle = "USA")+
   xlab("Date")+
@@ -471,7 +513,7 @@ Figure_1= (Figure_1A + theme(plot.margin = unit(c(0,20,50,0), "pt")))  /(Figure_
   plot_layout( guides = "collect" , ncol = 1) & theme(legend.position = "bottom") 
   
 
-ggsave("Figure1.png", plot = Figure_1, width = 25, height = 30, units = "cm", bg = 'transparent',  dpi = 300,  scale = 0.85)
+ggsave("dynamic_forecasting_env.png", plot = Figure_1, width = 25, height = 30, units = "cm", bg = 'transparent',  dpi = 300,  scale = 0.85)
 
 
 
@@ -486,21 +528,19 @@ ggsave("Figure1.png", plot = Figure_1, width = 25, height = 30, units = "cm", bg
 # Analysis 1: (Figure 2A, 2B) Model Evaluation and Comparison
 
 
-#Figure 2A: Model comparison with error quantiles
-
 
 ```{r}
 #plotting error quantile 
 error_quantiles_mae = error_dataset %>%
   filter(lead > -14) %>%
   group_by(lead, location, model) %>%
-  #filter(location =="USA") %>%
+  filter(location == c("USA", "Japan")) %>%
   summarise(quant75 = quantile(MAE, probs = c(.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(.50), na.rm = TRUE),
             quant25 = quantile(MAE, probs = c(.25), na.rm = TRUE)) %>%
   ggplot(aes(x = lead, color = model)) +
   geom_line(aes(y = quant75, linetype = '75th Quantile'), alpha= 0.6, size = 1, se= FALSE)+
-  geom_line(aes(y = quant50, linetype = '50th Quantile'), size = 1)+
+  geom_line(aes(y = quant50, linetype = 'Median'), size = 1)+
   geom_point(aes(y = quant50, shape = model), size = 1.2, alpha = 0.75)+
   geom_line(aes(y = quant25, linetype = '25th Quantile'), alpha = 0.6, size = 1, se= FALSE)+
   facet_wrap(~location) +
@@ -509,7 +549,7 @@ error_quantiles_mae = error_dataset %>%
   scale_linetype_manual(values = c("dotted","solid","dashed"),
                         labels = c("25th Quantile","Median", "75th Quantile" ))+
   scale_color_manual(values=model_colors)+
-  labs( x = "Days from date of estimation", y= "MAE")+
+  labs( x = "Days from date of estimation", y= "Mean Absolute Error")+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -554,7 +594,7 @@ ggsave("figure2.png", plot = error_quantiles_mae, width = 25, height = 20, units
   
 ```
 
-
+#Figure 2A: mae
 
 ```{r}
 
@@ -571,18 +611,18 @@ error_quant_30 = error_dataset %>%
             quant50 = quantile(MAE, probs = c(.50), na.rm = TRUE),
             quant25 = quantile(MAE, probs = c(.25), na.rm = TRUE)) %>%
   ggplot(aes(x = lead, color = model)) +
-  geom_line(aes(y = quant75, linetype = '75th Quantile'), alpha= 0.6, size = 1, se= FALSE)+
-  geom_line(aes(y = quant50, linetype = '50th Quantile'), size = 1)+
-  geom_point(aes(y = quant50), size = 1.2, alpha = 0.75)+
-  geom_line(aes(y = quant25, linetype = '25th Quantile'), alpha = 0.6, size = 1, se= FALSE)+
+  #geom_line(aes(y = quant75, linetype = '75th Quantile'), alpha= 0.6, size = 1, se= FALSE)+
+  geom_line(aes(y = quant50), size = 0.5)+
+  geom_point(aes(y = quant50), size = 0.9, alpha = 0.75)+
+  #geom_line(aes(y = quant25, linetype = '25th Quantile'), alpha = 0.6, size = 1, se= FALSE)+
   facet_wrap(~location) +
   bbc_style()+
-  labs(linetype="Median Quantile", color = "Model", shape = "")+
-  scale_linetype_manual(values = c("dotted","solid","dashed"),
-                        labels = c("25th Quantile","Median", "75th Quantile" ))+
+  labs(linetype=" ", color = "Model", shape = 1)+
+  #scale_linetype_manual(values = c("dotted","solid","dashed"),
+  #                      labels = c("25th Quantile","Median", "75th Quantile" ))+
   scale_color_manual(values=model_colors,
                       breaks=c("GARW", "FGA","MLR" ,"Piantham","Naïve"))+
-  labs( x = "Days from date of estimation", y= "log(MAE)")+
+  labs( x = "Days from date of estimation", y= "Mean Absolute Error")+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -600,8 +640,8 @@ error_quant_30 = error_dataset %>%
         legend.title = element_text(size = 12))+
 
   scale_y_continuous(trans = log_trans(),
-                     breaks = trans_breaks('log10', function(x) 10^x, n = 4),
-                     labels = label_percent(accuracy = 0.1L))+
+                     breaks = c(0.001,0.005,0.1, 1))+
+                      # trans_breaks('log10', function(x) 10^x, n = 4))+
   #trans_format('log10', math_format(10^.x))
   #ylim(0,2)+
 
@@ -679,23 +719,29 @@ lags = as_labeller(c("-30" = "-30 Lag", "0" = "0 Lag","30"= "30 Lag"))
 
 mae_dist = error_dataset %>%
   filter(lead %in% c(0,30,-30)) %>%
+  filter(location == c("USA", "Japan")) %>%
   group_by(lead, location, model) %>%
-  ggplot(aes(y = MAE, x = factor(model, levels = c("Naïve","Piantham","MLR","FGA","GARW")), fill = model)) +
-  geom_violin(lwd = 0.4,
-              trim=FALSE, 
-             position = "dodge", 
-              alpha = 0.825,
-            draw_quantiles = c(.25, .75), 
-            show.legend = TRUE,
-            inherit.aes = TRUE)+
-  stat_summary(aes(x = factor(model), y = MAE,col = "Mean"), fun= mean,
+  ggplot(aes(y = MAE, x = factor(model, levels = c("Naïve","Piantham","MLR","FGA","GARW")), color = model)) +
+  #geom_violin(lwd = 0.4,
+  #            trim=F, 
+  #           position = "dodge", 
+  #            alpha = 0.6,
+  #          draw_quantiles = c(.25, .75), 
+  #          show.legend = TRUE,
+  #          inherit.aes = TRUE)+
+  geom_beeswarm(aes(color= model), cex = 0.4, size = 1, alpha = 0.9,
+                priority = "density",
+                show.legend = T)+
+  geom_boxplot(outline=F, alpha = 0.6)+
+  #geom_quasirandom(method = 'quasirandom',alpha = 0.6, width = 0.1, inherit.aes = T, aes(fill=model))+
+  stat_summary(aes(x = factor(model), y = MAE,col = "Median"), fun= median,
                geom = "crossbar", size = 0.3, alpha = 1, na.rm = TRUE, inherit.aes = FALSE)+
-  scale_colour_manual(name = "Mean Quantile",
-    values = c("Mean" = "black",
+  scale_colour_manual(
+    values = c("Median" = "black",
                                  "Q3" = "black",
                                  "Q1" = "black"),
-                       breaks = c('Mean','Q3','Q1'))+
-    scale_fill_manual(name = "Model", 
+                       breaks = c('Median','Q3','Q1'))+
+    scale_colour_manual(name = "Model", 
                     values = model_colors,
                       breaks=c("GARW", "FGA","MLR" ,"Piantham","Naïve"))+
   #geom_dotplot(binaxis = "y", binwidth = 0.001, stackdir = "center")+
@@ -704,7 +750,7 @@ mae_dist = error_dataset %>%
    geom_rangeframe(sides = "b", size = 0.5)+
    coord_cartesian(clip="off", expand = FALSE) +
   bbc_style()+
-    labs(y = "MAE score distribution" )+
+    labs(y = "Mean Absolute Error" )+
     theme(axis.title.x = element_blank(),
           axis.title.y = element_text(color="Black", size=14),
        panel.grid.major = element_line(),
@@ -721,13 +767,18 @@ mae_dist = error_dataset %>%
         legend.title = element_text(size = 12),
        axis.ticks.length = unit(5, "pt"),
        axis.line.y = element_line(color="black", size = 0.5),
+       axis.line.x = element_line(color="black", size = 0.4),
        aspect.ratio = 1.5)+
  scale_alpha(guide = 'none')  +
-  scale_y_continuous(limit = c(-0.2,0.45),
-                     breaks = c(0,0.2,0.4))
+  scale_y_continuous(trans = log_trans(),
+                     breaks = c(0.001,0.005,0.5,0.1, 1),
+                     limits = c(0.001,1.2))
+  #scale_y_continuous(limit = c(-0.05,0.45),
+   #                  breaks = c(0,0.2,0.4))
 
 
 mae_dist
+
 
 
 ggsave("figure2B.png", plot = mae_dist, width = 25, height = 15, units = "cm", bg ='transparent')
@@ -955,7 +1006,7 @@ ggsave("violin_ga.png", plot = violin_ga, width = 35, height = 25, units = "cm",
 
 
 
-#Figure 3: stabilization between models
+#Figure 3A: stabilization between models
 
 ```{r}
 #are different models consistent in their estimation of the median growth advantage of variants
@@ -967,25 +1018,29 @@ ggsave("violin_ga.png", plot = violin_ga, width = 35, height = 25, units = "cm",
 
 max_val <- max(full_ga$median_ga)
 number_ticks <- function(n) {function(limits) pretty(limits, n)}
-
-
+install.packages("ggh4x")
+library(ggh4x)
 variant_colorsga
 ga_models = full_ga %>% 
   #filter(pivot_date != "2022-05-06") %>% 
   filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C")) %>%
-  filter(model %in% c("GARW", "MLR", "Piantham")) %>%
+  #filter(model %in% c("GARW", "MLR", "Piantham")) %>%
+  filter(model %in% c( "MLR")) %>%
   ggplot(aes(y = median_ga, x = as.Date(pivot_date))) +
   geom_line(aes(color = variant)) +
   geom_point(aes(color = variant), shape = "diamond", size = 2)+
   #geom_pointrange(size=0.2)+
   #scale_x_discrete(breaks=seq(-14, 14, 7)) +
-  facet_grid(model~location)+
-  bbc_style()+
+  #ggh4x::facet_grid2(model~location)+
+  facet_wrap(~location, scales='free')+
+  
+  theme_minimal()+
   xlab("Pivot Date")+
   ylab("Median Growth Advantage")+
 
  # "Omicron 21A" ="#4272CE", "Omicron 21B" = "#006494", "Omicron 21C" ="#D95D39"
-  scale_color_manual(values = variant_colorsga)+
+  scale_color_manual(values = variant_colorsga,
+                     labels = c("Clade 22A | BA.4","Clade 22B | BA.5", "Clade 22C | BA.2.12.1"))+
   scale_y_continuous(breaks = number_ticks(3))+
   
    #coord_cartesian(clip="off", expand = FALSE) +
@@ -1021,12 +1076,70 @@ ggsave("Figure3.png", plot = ga_models, width = 30, height = 15, units = "cm", b
 
 
 
+#Figure 3B: Freq needed to stabilize GA?
+
+```{r}
+
+#Grouping by Pivot_date,
+#GA vs maximum retrospective freq (at the time of interest) (Freq at pivot date)
+Figure3B = select_pres_data %>%
+  group_by(pivot_date, location) %>%
+  filter(lead == -13) %>%
+  filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C")) %>%
+  filter(model == "MLR") %>%
+  ggplot(aes(x = smoothed_freq, y = median_ga, color = variant)) +
+  geom_line() +
+  geom_point()+
+  facet_wrap(~location, scales='free')+
+  theme_minimal() +
+  scale_x_continuous(limits = c(0.001,0.5),
+    trans=logit_trans(),
+                     breaks = c(0.001, 0.01,0.05,0.1,0.25,0.5),
+    labels = c("0.1%","1%", "5%","10%","25%","50%"))+
+   scale_color_manual(values = variant_colorsga)+
+  #ylim(1,2.5)+
+  labs( x = "Variant Frequency at Observation", y= "Median Growth Advantage")+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 11),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "none",
+        legend.title = element_blank())
+  
+
+
+
+full_model_data
+error_dataset
+```
+
+
+#Figure 3:Growth advantage modeling and observed frequencies at observation
 
 
 
 
+```{r}
+
+Figure_3 = ggarrange(ga_models,Figure3B,
+                      labels = c(" A", "B"),
+                      ncol = 1, nrow = 2)
 
 
+ggsave("Figure3GA&Freq.png", plot = Figure_3, width = 30, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+
+
+
+```
 
 
 
@@ -1386,7 +1499,7 @@ emerge_dt %>%
 
 
 
-#Figure 4: Errors with volume of sequences: Average MAE plot with sequences 
+#Figure x: Errors with volume of sequences: Average MAE plot with sequences 
 
 - Basically, keeping things on natural time axis. Plotting MAE and growth advantage of variant together. 
 - Start with plotting average MAE on date over time and labeling variant emergences.
@@ -1394,7 +1507,7 @@ emerge_dt %>%
 
 
 
-## Figure 4 Visualization
+## Figure x Visualization
 
 ```{r}
 
@@ -1646,25 +1759,22 @@ hist(resc)
 
 #what percentage of sequences in the past 14 days with MAE 
 
-get_recent_sequences_frac <- function (df, end_date, k) {
+get_avail_sequences <- function (df, start_date, end_date, k) {
   filtered <- df %>%
-    filter((as.Date(end_date) - k) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
+    filter(as.Date(start_date) < as.Date(date) & (as.Date(end_date) > as.Date(date))) %>%
     group_by(location) %>%
     summarise(
       #Total sequences collected
       seq_collected = sum(sequences),
       #sequences available at the submission dates of interest
-      seq_available = sum(sequences * (as.Date(date_submitted) - as.Date(date) < k)),
-      
-     
+      seq_available = sum(sequences * (as.Date(date_submitted) < as.Date(end_date))),
       #Fraction of sequences available 
       frac_seq_avail = (seq_available/seq_collected))
-  filtered$date <- end_date
   return(filtered)
 }
 
 
-
+#in sequences that were collected in the past 2 weeks, in the next month how many submitted
 
 
 
@@ -1682,9 +1792,9 @@ get_delays_piv <- function (df, end_date, k) {
 }
 
 
+get_delays_piv(seq_date, "2022-04-01", 30)
 
-
-get_recent_sequences_frac(seq_date, "2022-04-01", 14)
+get_avail_sequences(seq_date, "2022-03-15" ,  "2022-04-01", 50)
 
 
 
@@ -1701,8 +1811,11 @@ delay_seq_pivot = data.frame()
 for (pivot_date in pivot_dates) {
   #LAST DATE BEFROE NOWCAST PERIOD as end date
   last_date = as.Date(pivot_date) - 14
+  #Most recent (2 weeks fo data before nowcast prediction period)
+  start_date = as.Date(pivot_date) - 28
   #2 weeks before that end date
-  seq_d = get_recent_sequences_frac(seq_date, last_date , 14) %>%
+  #Available within 14 days
+  seq_d = get_avail_sequences(seq_date, start_date, last_date , 14) %>%
     mutate(pivot_date = pivot_date)
   frac_seq_pivot = rbind(frac_seq_pivot, seq_d)
 }
@@ -1712,19 +1825,36 @@ for (pivot_date in pivot_dates) {
 #Get delay of sequences for all pivot dates
 for (pivot_date in pivot_dates) {
   last_date = as.Date(pivot_date) - 14
-  seq_d = get_delays_piv(seq_date, last_date , 14) %>%
+  seq_d = get_delays_piv(seq_date, last_date , 30) %>%
     mutate(pivot_date = pivot_date)
   delay_seq_pivot = rbind(delay_seq_pivot, seq_d)
 }
 
 
 
+
+#Make another function get seq_counts instead of available and see how they differ for different pivot dates
+
+
 ```
 
+```{r}
+seq_date %>%
+  mutate(delay = as.Date(date_submitted) - as.Date(date)) %>%
+  mutate(delay = as.integer(delay)) %>%
+  ggplot() +
+  geom_histogram(aes(x = delay, y= ..density..), bins = 70) +
+  facet_wrap(~location) +
+  xlim(0,100)+
+  geom_vline(xintercept = 30)+
+  theme_bw()
+  
 
 
 
 
+
+```
 
 #Variant Selection Pressure with MAE
 
@@ -1739,8 +1869,9 @@ for (pivot_date in pivot_dates) {
 
 #Growth advantage dataset
 growthadv_dataset_MLR = growthadv_dataset %>%
-  filter(model =="MLR") %>%
-  select(-date) 
+  dplyr::select(-date) %>%
+  filter(model =="MLR")
+
   
 
 #Error dataset
@@ -1860,9 +1991,10 @@ select_pres_data2 %>%
 
 #average MAE per country
 average_mae = error_dataset %>%
+  #filter(lead>0) %>%
   filter(lead < 0 & lead > -14) %>%
   group_by(location, model, date, pivot_date, lead) %>%
-  filter(model =="MLR") %>%
+  #filter(model =="MLR") %>%
   #filter(location =="Japan")%>%
   summarize(meanMAE = mean(MAE)) %>%
   mutate(date = as.Date(date))
@@ -1874,10 +2006,9 @@ average_mae = error_dataset %>%
 
 #Data with meanMAE and sequence avail, fraction of seq avail
 mae_seq_frac_data_piv = average_mae %>%
-  left_join(frac_seq_pivot)
+  left_join(frac_seq_pivot, by= c("location", "pivot_date"))
 
-view(average_mae)
-view(frac_seq_pivot)
+
 #Data with meanMAE and delay sequencies
 mae_seq_delay_data_piv = average_mae %>%
   left_join(delay_seq_pivot)
@@ -1901,10 +2032,10 @@ full_model_data = mae_seq_full %>%
   left_join(select_pres_data2)
 
 
+View(full_model_data)
 
 
-
-
+range(full_model_data$lead)
 
 
 
@@ -1930,21 +2061,7 @@ full_model_data = mae_seq_full %>%
 
 
 ```{r}
-select_pres_data2 = select_pres_data2 %>%
-  mutate(date = as.Date(date))
 
-
-mae_seq_full = mae_seq_frac_data_piv %>%
-  left_join(mae_seq_delay_data_piv)
-
-
-full_test = mae_seq_full %>%
-  left_join(select_pres_data2)
-
-
-
-
-#Incorporated selective pressure
 
 test3 = full_test %>%
   filter(model =="MLR") %>%
@@ -1996,17 +2113,25 @@ full_test %>%
 
 
 
-full_test %>%
+full_model_data %>%
   filter(model == "MLR") %>%
+  filter(lead == -13) %>%
   ggplot()+
-  geom_point(aes(x = seq_collected, y = seq_available, color = location)) +
+  geom_point(aes(x = selective_pres, y = meanMAE, color = location)) +
   facet_wrap(~location, scales = "free") + 
+  geom_abline()+
   theme_classic()+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14))
 
 
+library(corrplot)
 
+mm = full_model_data %>%
+  filter(model == "MLR") %>%
+  filter(location == "Japan") %>%
+  corrplot(method="color")
+mm
 full_test %>%
   filter(model == "MLR") %>%
   filter(lead < 0) %>%
@@ -2017,27 +2142,280 @@ full_test %>%
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14))
 
-
 ```
 
 
+#Correlation plots
+
+```{r}
+
+correlation_plot = function (locations) {
+  spec_data = full_model_data %>%
+  filter(location == locations) %>%
+  filter(model == "MLR") %>%
+  mutate(median_delay = as.numeric(median_delay))
+  
+  
+# Select the variables of interest and target variable
+  vars_of_interest <- c("selective_pres", "seq_available", "frac_seq_avail", "lead", "median_delay")
+  y <- spec_data$MAE_avg
+  
+
+# Calculate the correlation between the variables of interest and the target variable
+  corr_vars_y <- cor(spec_data[, vars_of_interest], y)
+  
+
+# Extract the correlation coefficients
+  corr_coefs <- cor(spec_data[, vars_of_interest], y, use = "pairwise.complete.obs",
+                    method = "spearman")
 
 
+# Plot the correlation coefficients
+  ggplot(data.frame(variable = vars_of_interest, corr_coef = corr_coefs), 
+       aes(x = reorder(variable, corr_coef), y = corr_coef)) +
+  geom_point(stat = "identity") +
+  geom_text(aes(label = round(corr_coef, 2)), 
+            vjust = -0.5, color = "black", size = 4) +
+  xlab("Variable") +
+  ylab("Correlation Coefficient") +
+  ggtitle(paste("Correlation Coefficient between Variables of Interest and Mean MAE")) +
+  theme_bw()
+}
+
+correlation_plot("Japan")
+
+```
+
+#Fig 4: Correlation scatter
+
+```{r}
+
+corr_scatters = function (data){
+  data %>%
+      #filter(location == locations) %>%
+      filter(model == "MLR") %>%
+    ggplot(aes(x = median_delay, y = meanMAE, color = location))+
+    facet_wrap(~location)+
+    stat_cor(aes(y = median_delay, x = meanMAE),  method = "spearman")+
+    geom_point()+
+    theme_bw()+
+    ylim(0,0.1)+
+    theme(axis.title.x = element_text(color="Black", size=14),
+          axis.title.y = element_text(color="Black", size=14))
+}
+
+
+corr_scatters(full_model_data)
+
+
+#
+
+#Notes
+
+# In Australia, Japan, UK > selective pressure is highly > 0.7 correlated with meanMAE
+
+# In Japan, UK, median delay is negatively correlated with meanMAE
+
+#
+med_del_corr = full_model_data %>%
+  filter(model == "MLR") %>%
+   filter(lead==-1) %>%
+  group_by(location, pivot_date) %>%
+  summarise(median_delay = median(median_delay),
+            meanMAE = median(meanMAE)) %>%
+  ggplot(aes(x = median_delay, y = meanMAE, group = location, color = location))+
+  geom_point(size = 2)+
+   scale_color_manual(values = loc_color_map)+
+  stat_cor(method = "pearson", aes(x = median_delay, y = meanMAE), label.x = 40, inherit.aes = F)+
+  theme_minimal()+
+        labs( x = "Median Submission Delay", y= "Median MAE")+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) 
+
+
+frac_seq_corr = full_model_data %>%
+  filter(model == "MLR") %>%
+  filter(lead==-1) %>%
+  group_by(location, pivot_date) %>%
+  summarise(frac_seq_avail = median(frac_seq_avail),
+            meanMAE = median(meanMAE)) %>%
+  ggplot(aes(x = frac_seq_avail, y = meanMAE, group = location, color = location))+
+  geom_point(size = 2)+
+  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = meanMAE), label.x = 0.25, inherit.aes = F)+
+  theme_minimal()+
+   scale_color_manual(values = loc_color_map)+
+        labs( x = "Fraction of Sequences at Observation", y= "Mean MAE")+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) 
+
+
+seq_avail_corr = full_model_data %>%
+  filter(model == "MLR") %>%
+   filter(lead==-1) %>%
+  group_by(location, pivot_date) %>%
+  summarise(seq_available = median(seq_available),
+            meanMAE = median(meanMAE)) %>%
+  ggplot(aes(x = seq_available, y = meanMAE, group = location, color = location))+
+  geom_point(size = 2)+
+  stat_cor(method = "pearson", aes(x = seq_available, y = meanMAE), label.x = 10000, inherit.aes = F)+
+  theme_minimal()+
+        labs( x = "Sequences Available at Observation ", y= "Mean MAE")+
+   scale_color_manual(values = loc_color_map)+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) +
+  xlim(0,20000) + ylim(0,0.20)
+
+pivot_mae = full_model_data %>%
+  filter(model == "MLR") %>%
+   filter(lead==-1) %>%
+  group_by(location, pivot_date) %>%
+  mutate(pivot_date = as.Date(pivot_date)) %>%
+  summarise(#seq_collected = median(seq_collected),
+            meanMAE = median(meanMAE)) %>%
+  ggplot(aes(x = pivot_date, y = meanMAE, group = location, color = location))+
+  geom_line()+
+  geom_point(size = 2, alpha = 0.5)+
+    theme_minimal()+
+        labs( x = "Observation Dates", y= "Mean MAE")+
+   scale_color_manual(values = loc_color_map)+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) +
+  scale_x_date(date_breaks = "2 weeks", date_labels =  "%W %b") 
+
+
+country_mae = full_model_data %>%
+  filter(model == "MLR") %>%
+   filter(lead==-1) %>%
+  group_by(location, pivot_date) %>%
+  summarise(#seq_collected = median(seq_collected),
+            meanMAE = median(meanMAE)) %>%
+  ggplot(aes(x = location, y = meanMAE, group = location, color = location))+
+  #geom_point(size = 2)+
+    geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
+                priority = "density",
+                show.legend = T)+
+  geom_boxplot(alpha = 0.3)+
+  theme_minimal()+
+  scale_color_manual(values = loc_color_map)+
+        labs( x = "Location", y= "Mean MAE")+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) 
+
+
+
+```
+
+#Figure 4: Final
+```{r}
+
+Figure_4A = ggarrange(country_mae + rremove("ylab"),
+                      labels = c(" A"),
+                      ncol = 1, nrow = 1)
+
+
+Figure_4 = ggarrange(pivot_mae + rremove("ylab"), med_del_corr + rremove("ylab"), frac_seq_corr + rremove("ylab"),seq_avail_corr + rremove("ylab"),
+                     ncol = 2, nrow = 2,
+                     labels = c(" B", "C", "D" ,"E"), vjust=-0.8, 
+                     hjust = -1,
+                     common.legend  = TRUE,
+                      legend="none",
+                      #widths = c(1,1),
+                     #heights = c(1,1),
+                     align = c("hv")) +
+  theme(plot.margin = margin(1, 0, 0, 0, "cm"))
+
+
+
+Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4), left = "Median Mean Absolute Error")
+
+
+ggsave("Figure4F.png", plot = Figure_4_full, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+
+
+
+
+
+```
 
 
 
 ```{r}
 
 #models per country
-
+library(performance)
 
 #United States
-US_model = full_test %>%
+US_model = full_model_data %>%
   filter(model =="MLR") %>%
   filter(location =="USA")
 
 #Regression Model
-reg_US = lm(log(meanMAE) ~ frac_seq_avail + seq_available + lead + median_delay + selective_pres , US_model)
+reg_US = lm(qlogis(meanMAE)~ frac_seq_avail + seq_available + lead + median_delay + selective_pres , US_model)
 
 summary(reg_US)
 #Stepwise regression
@@ -2045,7 +2423,7 @@ step.model_US <- stepAIC(reg_US, direction = "both", trace = FALSE)
 
 summary(reg_US)
 
-
+plot(reg_US)
 #United Kingdom
 
 UK_model = full_test %>%
@@ -2062,23 +2440,23 @@ summary(step.model_UK)
 
 #Japan
 
-JP_model = full_test %>%
+JP_model = full_model_data %>%
   filter(model =="MLR") %>%
   filter(location =="Japan")
 
 #Regression Model
-reg_JP = lm(log(meanMAE)~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, JP_model)
+reg_JP = lm(qlogis(meanMAE)~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, JP_model)
 
 #Stepwise regression
 step.model_JP <- stepAIC(reg_JP, direction = "both", trace = FALSE)
-summary(step.model_JP)
+summary(reg_JP)
 
 
 
 #figure
 
 
-US_m = ggplot(US_model, aes(x=predict(step.model_US), y= log(meanMAE))) +
+US_m = ggplot(US_model, aes(x=plogis(predict(step.model_US)), y= meanMAE)) +
   geom_point( color = "green") +
   geom_abline(intercept=0, slope=1) +
   theme_bw() +
@@ -2096,7 +2474,7 @@ UK_m =  ggplot(UK_model, aes(x=predict(step.model_UK), y= log(meanMAE))) +
   
   
   
-JP_m =  ggplot(JP_model, aes(x=predict(step.model_JP), y= log(meanMAE))) +
+JP_m =  ggplot(JP_model, aes(x=plogis(predict(step.model_JP)), y= meanMAE)) +
   geom_point(color = "red") +
   geom_abline(intercept=0, slope=1) +
   theme_bw() +
@@ -2304,29 +2682,34 @@ ggplot(ImpData, aes(x=Var.Names, y=`IncNodePurity`)) +
 ```
 
 
-
+#Full model
 
 ```{r}
+#Try a mixture model
+#lead vary
+#add the intercept differ
+
+#what other models could explain
+
+
 
 all_count_model = full_model_data %>%
   filter(model =="MLR") 
-library(rigr)
 
-#Regression Model
-reg_all = lm(log(meanMAE) ~ frac_seq_avail + seq_collected + lead + median_delay + selective_pres, all_count_model)
+#Regression Model #*location*location 
+reg_all = lm(qlogis(meanMAE) ~ frac_seq_avail + seq_collected + lead + median_delay + selective_pres*frac_seq_avail + location, all_count_model)
 
-regress("mean", log(meanMAE) ~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model )
-
+reg_all$fitted.values
 #Stepwise regression
 step.model_all <- stepAIC(reg_all, direction = "backward", trace = FALSE)
 
-summary(step.model_all)
+summary(reg_all)
 
-
+library(performance)
 summary(reg_all)
 check_model(reg_all)
 
-ggplot(all_count_model, aes(x=exp(predict(reg_all)), y= meanMAE, color= location)) +
+ggplot(all_count_model, aes(x=plogis(reg_all$fitted.values), y= meanMAE, color= location)) +
   geom_point() +
   facet_wrap(~location)+
   geom_abline(intercept=0, slope=1) +
@@ -2342,6 +2725,223 @@ summ(reg_all, center = T, transform.response = TRUE)
 
 export_summs(reg_all, error_format = "[{conf.low}, {conf.high}]")
 ```
+
+
+#Mixture model
+
+
+```{r}
+library(flexmix)
+
+
+
+# Fit the mixture model
+fit <- flexmix(qlogis(meanMAE) ~ seq_collected + lead + median_delay + selective_pres*frac_seq_avail + location, 
+               data = all_count_model, k = 2)
+
+
+
+fitted_values = fitted(fit)
+# Plot the fitted densities for each component
+#plot(density(fit, comp = 1), col = "red", lwd = 2, main = "Component 1", xlab = "qlogis(meanMAE)")
+#lines(density(fit, comp = 2), col = "blue", lwd = 2, main = "Component 2")
+
+# Plot the log-likelihoods for each observation
+plot(fit, main = "Observation Log-Likelihoods")
+plot(fit)
+summary(fit)
+summary(reg_all)
+# Plot the posterior probabilities for each observation
+plot(fit, type= "count")
+
+parameters(fit, component = 2)
+
+
+posterior_first = posterior(fit)[,1]
+
+
+
+cluster_pos_assignment = clusters(fit)
+
+BIC(reg_all)
+BIC(fit)
+
+
+
+# Plot the scatterplot
+#Try different variables
+
+all_count_model %>%
+  ggplot(aes(x = pivot_date, y = frac_seq_avail)) +
+  geom_point(aes(color = factor(cluster_pos_assignment)))+
+  facet_wrap(~location)+
+  #scale_color_discrete(name = "Cluster") +
+  theme_bw()
+
+
+all_count_model %>%
+  ggplot(aes(x = pivot_date, y = meanMAE)) +
+  geom_point(aes(color = factor(cluster_pos_assignment)))+
+  facet_wrap(~location)+
+  #scale_color_discrete(name = "Cluster") +
+  theme_bw()
+
+
+
+
+#multiplying posterior prob of clusters to fitted value for that cluster
+#summing to get the expectation of clusters
+posterior_fit = rowSums(posterior(fit)*fitted(fit))
+
+#Try different clusters
+
+
+all_count_model %>%
+  ggplot(aes(x = plogis(posterior_fit), y = meanMAE)) +
+  geom_point(aes(color = factor(cluster_pos_assignment)))+
+  facet_wrap(~location)+
+  geom_abline(a=1)+
+  #scale_color_discrete(name = "Cluster") +
+  theme_bw()
+
+
+```
+
+
+#Mixed Effects
+#Figure 5:MEM
+```{r}
+
+#mixeffect_model 
+
+
+
+library(lme4)
+
+#
+
+#predictors effects can differ between different locations but should be similar 
+
+
+#Choose what is fixed factors and what as a random effect
+
+#Random Effects that vary > selective pressure by location
+# median delay by location
+
+
+mixed_data = 
+  full_model_data %>%
+  filter(model == "MLR") %>%
+  mutate(location = as.factor(location)) %>%
+  mutate(seq_availper1000 = seq_available/1000)
+
+
+range(mixed_data$frac_seq_avail)
+
+install.packages("optimx")
+library(tidymodels)
+library(ggeffects)
+library(optimx)
+
+
+mixed.lmer <- lme4::lmer(qlogis(meanMAE) ~  frac_seq_avail + lead + seq_availper1000 +median_delay + (1+ frac_seq_avail+ seq_availper1000 +median_delay | location), data = mixed_data, REML = T, lmerControl(optimizer ='optimx', optCtrl=list(method='bobyqa')))
+
+install.packages("glmmTMB")
+library(glmmTMB)
+library(sjPlot)
+library(sjmisc)
+library(sjlabelled)
+
+sjp.lmer(mixed.lmer, y.offset = .4)
+
+ranef(mixed.lmer)
+
+plot_model(mixed.lmer, type ="re")
+
+
+mixed_data %>%
+  filter(lead == -13) %>%
+  filter(location == "Japan") %>%
+  ggplot()+
+  geom_point(aes(x = seq_available, y = selective_pres))
+
+
+
+coef(mixed.lmer)
+
+predict(mixed.lmer)
+
+
+ggplot(aes(x = plogis(predict(mixed.lmer)), y = meanMAE, color = location), data = mixed_data) +
+  geom_point() +
+  facet_wrap(~location)+
+  theme_bw() +
+  xlab("Predicted Mean MAE")+
+  ylab("Observed Mean MAE")+
+  geom_abline()
+
+
+sjPlot::plot_model(mixed.lmer)
+
+
+sjPlot::plot_model(mixed.lmer, 
+                   axis.labels=c("Fractions seq Avail", "lead", "Seq Available", "Median Delay"),
+                   show.values=TRUE, show.p=TRUE,
+                   title="Effect of VOI on MAE") +
+  theme_bw()
+
+
+sjPlot:: tab_model(mixed.lmer)
+
+ggplot(mixed_data, aes(x=median_delay, y=meanMAE, colour=location)) +
+  geom_point(size=2, alpha = 0.2) +
+  geom_line(aes(y=plogis(predict(mixed.lmer)), group=location, size="location"), alpha = 0.75) +
+  #geom_line(data=newdat, aes(y=predict(fm2, level=0, newdata=newdat), size="Population")) +
+  #scale_size_manual(name="Predictions", values=c("Subjects"=0.5, "Population"=3)) +
+  theme_bw(base_size=22) 
+
+
+
+ggpredict(mixed.lmer, terms = c("frac_seq_avail","location"), type = "re") %>%
+  plot()
+  
+remotes::install_github('m-clark/mixedup')
+library(mixedup)
+
+summarize_model(mixed.lmer) 
+
+
+ddd = mixedup::extract_random_effects(mixed.lmer)
+
+ddd %>%
+  ggplot() +
+  geom_point(aes(x =group , y = value, color = effect)) +
+  theme_minimal()
+
+
+ddd %>%
+  ggplot() +
+  geom_point(aes(x =effect , y = value, color = group)) +
+  theme_minimal()+
+        labs( x = "Location", y= "Effect Size")+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) 
+```
+
+
 
 #Supplementary Figures
 
@@ -2902,7 +3502,7 @@ ggsave("ga_var_US.png", plot = p1, width = 20, height = 20, units = "cm" )
 
 
 
-# Helper function
+#Helper function
 
 
 ```{r}
