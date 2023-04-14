@@ -93,18 +93,18 @@ seqs2 = read.csv("data/time_stamped/truth/seq_counts_truth.tsv",sep = "\t")
 
 #seq by submitted date
 
-seq_date = read.csv("data/seq_counts_delayed.tsv" ,sep = "\t")
+seq_date = read.csv("../data/seq_counts_delayed.tsv" ,sep = "\t")
 
 
 #schematic figure data
-seqs_first = read.csv("data/time_stamped/2022-04-22/seq_counts_2022-04-22.tsv", sep = "\t")
-seq_mid =  read.csv("data/time_stamped/2022-05-20/seq_counts_2022-05-20.tsv", sep = "\t") 
-seq_last =  read.csv("data/time_stamped/2022-06-30/seq_counts_2022-06-30.tsv", sep = "\t")
+seqs_first = read.csv("../data/time_stamped/2022-04-01/seq_counts_2022-04-01.tsv", sep = "\t")
+seq_mid =  read.csv("../data/time_stamped/2022-06-01/seq_counts_2022-06-01.tsv", sep = "\t") 
+seq_mid2 =  read.csv("../data/time_stamped/2022-09-01/seq_counts_2022-09-01.tsv", sep = "\t") 
+seq_last =  read.csv("../data/time_stamped/2022-12-01/seq_counts_2022-12-01.tsv", sep = "\t")
 
 #truth set
 
-truth_set = read.csv("data/time_stamped/truth/seq_counts_truth.tsv",sep = "\t")
-
+truth_set = read.csv("../data/time_stamped/truth/seq_counts_truth.tsv",sep = "\t")
 
 ```
 
@@ -117,7 +117,7 @@ high_color = "#2C9191"
 
 #Variant colors
 #,"#E67A32",	"#DB2823", 
-variant_colors = c("Delta" = "#926224",		"Omicron 21K" = "#781C86", "Omicron 21L" = "#83BA70","Omicron 22A" = "#D3AE4E", "Omicron 22B" ="#574BD3", "Omicron 22C" = "#DF4327", "other" = "grey")
+variant_colors = c("Delta" = "#926224",		"Omicron 21K" = "#781C86", "Omicron 21L" = "#83BA70","Omicron 22A" = "#D3AE4E", "Omicron 22B" ="#574BD3", "Omicron 22C" = "#DF4327", "Omicron 22D" = "#a65628" ,  "Omicron 22E" = "#35978f" , "Omicron 23A" = "#ae017e" , "other" = "grey")
 
 variant_colorsga = c("Delta" = "#926224",		"Omicron 21K" = "#781C86","Omicron 22A" = "#D3AE4E", "Omicron 22B" ="#574BD3", "Omicron 22C" = "#DF4327", "other" = "grey")
 
@@ -147,7 +147,7 @@ model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", 
 freq_plot_US = error_dataset %>% 
   filter(location =="USA" &
            model =="GARW", na.rm= TRUE) %>%
-  filter(variant != "other" & variant != "Delta") %>%
+  filter(variant != "other" & variant != "Delta" & variant != "Omicron 23A") %>%
   ggplot() +
     geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "black" ,size = 1.5, alpha = 0.9)+
   geom_line(aes(x = as.Date(date), y = pred_freq,  group = factor(pivot_date),color = factor(variant), fill = factor(pivot_date)),size = 0.8, alpha = 0.7)+
@@ -157,12 +157,17 @@ freq_plot_US = error_dataset %>%
       "Omicron 21L" = "Clade 21L",
       "Omicron 22A" = "Clade 22A",
       "Omicron 22B" = "Clade 22B",
-      "Omicron 22C" = "Clade 22C")))+
+      "Omicron 22C" = "Clade 22C",
+      "Omicron 22D" = "Clade 22D",
+      "Omicron 22E" = "Clade 22E",
+      "Omicron 23A" = "Clade 23A")))+
   bbc_style()+
   scale_color_manual(
     values= variant_colors,
-    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C" ),
-    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C" )
+    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C",
+                "Omicron 22D", "Omicron 22E","Omicron 23A" ),
+    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C" ,"Clade 22D", 
+               "Clade 22E", "Clade 23A")
   )+
   labs( x = "Date", y= "Frequency",
         caption = "MA smoothed frequency with predicted frequency")+
@@ -181,7 +186,9 @@ freq_plot_US = error_dataset %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
-  ylim(0,1)
+  ylim(0,1)+
+  scale_x_date(date_breaks = "4 month",
+               labels=label_date_short())
 
 freq_plot_US
 
@@ -196,17 +203,23 @@ freq_plot_JA = error_dataset %>%
     geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "black" ,size = 1.5, alpha = 0.9)+
    scale_color_manual(values=c("black"))+
   geom_line(aes(x = as.Date(date), y = pred_freq,  group = factor(pivot_date),color = factor(variant)),size = 0.8, alpha = 0.7)+
-    scale_color_manual(
+  scale_color_manual(
     values= variant_colors,
-    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C" ),
-    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C"))+
+    limits = c(	"Omicron 21K", "Omicron 21L","Omicron 22A",  "Omicron 22B", "Omicron 22C",
+                "Omicron 22D", "Omicron 22E","Omicron 23A" ),
+    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C" ,"Clade 22D", 
+               "Clade 22E", "Clade 23A")
+  )+
   facet_wrap(~variant, nrow = 1,
              labeller = labeller(variant = 
     c("Omicron 21K" = "Clade 21K",
       "Omicron 21L" = "Clade 21L",
       "Omicron 22A" = "Clade 22A",
       "Omicron 22B" = "Clade 22B",
-      "Omicron 22C" = "Clade 22C")))+
+      "Omicron 22C" = "Clade 22C",
+      "Omicron 22D" = "Clade 22D",
+      "Omicron 22E" = "Clade 22E",
+      "Omicron 23A" = "Clade 23A")))+
   bbc_style()+
 
   labs( x = "Date", y= "Frequency",
@@ -226,7 +239,9 @@ freq_plot_JA = error_dataset %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "Japan") +
-  ylim(0,1)
+  ylim(0,1) +
+  scale_x_date(date_breaks = "4 month",
+               labels=label_date_short())
   
 freq_plot_JA
 
@@ -284,7 +299,8 @@ Initial_date = seqs_first  %>%
   geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
   bbc_style() +
   scale_fill_manual(values =variant_colors,
-                    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C"))+
+                    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C",
+                               "Clade 22D", "Clade 22E", "Clade 23A"))+
   theme(axis.title.x = element_blank(),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -302,9 +318,9 @@ Initial_date = seqs_first  %>%
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
   labs(subtitle = "USA")+
   xlab("Date")+
-  scale_x_date(date_breaks = "1 month",
+  scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-02-20','2022-06-15')))+
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,8000)
   
 Initial_date
@@ -318,7 +334,8 @@ mid_date =seq_mid %>%
   bbc_style() +
   scale_fill_manual(values =variant_colors )+
   theme(axis.title.x = element_blank(),
-        axis.title.y = element_text(color="Black", size=14),
+        axis.title.y = element_blank(),
+        #axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
         panel.grid.major.y = element_blank(),
@@ -333,10 +350,45 @@ mid_date =seq_mid %>%
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) +
   xlab("Date")+
-  scale_x_date(date_breaks = "1 month",
+  scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-02-20','2022-06-15')))+
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,8000)
+
+
+
+#Mid estimation date
+mid_date2 =seq_mid2 %>%
+  filter(location =="USA") %>%
+  ggplot() +
+  geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
+  bbc_style() +
+  scale_fill_manual(values =variant_colors )+
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        #axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 15),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "none",
+        plot.subtitle  = element_text(size = 14)) +
+  xlab("Date")+
+  scale_x_date(date_breaks = "3 month",
+               labels=label_date_short(),
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
+  ylim(0,8000)
+
+
+
+
 
 
 #Late estimation date
@@ -348,7 +400,8 @@ later_date =seq_last %>%
   bbc_style() +
   scale_fill_manual(values =variant_colors )+
   theme(axis.title.x = element_blank(),
-        axis.title.y = element_text(color="Black", size=14),
+        axis.title.y = element_blank(),
+        #axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
         panel.grid.major.y = element_blank(),
@@ -363,9 +416,9 @@ later_date =seq_last %>%
         legend.position = "none",
         plot.subtitle  = element_text(size = 14))+
   xlab("Date")+
-  scale_x_date(date_breaks = "1 month",
+  scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-02-20','2022-06-15')))+
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,8000)
 
 later_date
@@ -407,9 +460,9 @@ Initial_dateJ = seqs_first%>%
         plot.subtitle  = element_text(size = 14)) + labs(subtitle = "Japan") +
   labs(subtitle = "Japan")+
   xlab("Date")+
-  scale_x_date(date_breaks = "1 month",
+  scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-02-20','2022-06-15')))+
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,1500)
 Initial_date
 
@@ -422,7 +475,8 @@ mid_dateJ =seq_mid %>%
   bbc_style() +
   scale_fill_manual(values =variant_colors )+
   theme(axis.title.x = element_blank(),
-        axis.title.y = element_text(color="Black", size=14),
+        axis.title.y = element_blank(),
+        #axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
         panel.grid.major.y = element_blank(),
@@ -437,11 +491,42 @@ mid_dateJ =seq_mid %>%
         legend.position = "none",
         plot.subtitle  = element_text(size = 14))+
   xlab("Date")+
-  scale_x_date(date_breaks = "1 month",
+  scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-02-20','2022-06-15')))+
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,1500)
 mid_dateJ
+
+
+mid_dateJ2 =seq_mid2 %>%
+  filter(location =="Japan") %>%
+  ggplot() +
+  geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
+  bbc_style() +
+  scale_fill_manual(values =variant_colors )+
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        #axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 15),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "none",
+        plot.subtitle  = element_text(size = 14))+
+  xlab("Date")+
+  scale_x_date(date_breaks = "3 month",
+               labels=label_date_short(),
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
+  ylim(0,1500)
+
+
 
 #Late estimation date
 
@@ -452,7 +537,8 @@ later_dateJ =seq_last %>%
   bbc_style() +
   scale_fill_manual(values =variant_colors )+
   theme(axis.title.x = element_blank(),
-        axis.title.y = element_text(color="Black", size=14),
+        axis.title.y = element_blank(),
+        #axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
         panel.grid.major.y = element_blank(),
@@ -467,9 +553,9 @@ later_dateJ =seq_last %>%
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) +
   xlab("Date")+
-  scale_x_date(date_breaks = "1 month",
+  scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-02-20','2022-06-15')))+
+               limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,1500)
 
 later_dateJ
@@ -499,8 +585,9 @@ ggsave("legend.png", plot = Initial_dateJ, width = 15, height = 10, units = "cm"
 ```{r}
 
 
-Figure_1A = ((Initial_dateJ + labs(title = "A")))+ mid_dateJ+later_dateJ+ 
-   Initial_date +mid_date +later_date 
+Figure_1A = ((Initial_dateJ + labs(title = "A")))+ mid_dateJ+mid_dateJ2+later_dateJ+ 
+   Initial_date +mid_date + mid_date2+ later_date +
+   plot_layout( ncol = 4, nrow = 2) 
 
 library(plotly)
 
@@ -516,7 +603,7 @@ Figure_1= (Figure_1A + theme(plot.margin = unit(c(0,20,50,0), "pt")))  /(Figure_
 ggsave("dynamic_forecasting_env.png", plot = Figure_1, width = 25, height = 30, units = "cm", bg = 'transparent',  dpi = 300,  scale = 0.85)
 
 
-
+ggsave("testfig1.png", plot = Figure_1, width = 40, height = 50, units = "cm", bg = 'transparent',  dpi = 300,  scale = 0.85)
 
 
 ```
@@ -799,7 +886,7 @@ Figure_2 = ggarrange(error_quant_30, mae_dist, ncol = 1,
                      labels = c("  A", "  B"), hjust=-0.8)
 
 
-ggsave("Figure2tt.png", plot = Figure_2, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+ggsave("model_comp.png", plot = Figure_2, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
 
 ```
 
