@@ -422,9 +422,9 @@ date	location	variant	sequences
 2022-03-11	Brazil	other	2
 2022-03-24	Brazil	other	1
 2022-01-18	Japan	Delta	39
-2022-01-19	Japan	Delta	27
-2022-01-20	Japan	Delta	19
-2022-01-21	Japan	Delta	14
+2022-01-19	Japan	Delta	26
+2022-01-20	Japan	Delta	18
+2022-01-21	Japan	Delta	13
 2022-01-22	Japan	Delta	16
 2022-01-23	Japan	Delta	8
 2022-01-24	Japan	Delta	20
@@ -432,7 +432,7 @@ date	location	variant	sequences
 2022-01-26	Japan	Delta	9
 2022-01-27	Japan	Delta	20
 2022-01-28	Japan	Delta	12
-2022-01-29	Japan	Delta	11
+2022-01-29	Japan	Delta	10
 2022-01-30	Japan	Delta	3
 2022-01-31	Japan	Delta	5
 2022-02-01	Japan	Delta	13
@@ -450,205 +450,183 @@ date	location	variant	sequences
 2022-02-14	Japan	Delta	3
 2022-02-15	Japan	Delta	2
 2022-02-17	Japan	Delta	2
-2022-02-20	Japan	Delta	1
 2022-02-21	Japan	Delta	1
 2022-02-22	Japan	Delta	2
-2022-02-23	Japan	Delta	2
+2022-02-23	Japan	Delta	1
 2022-02-24	Japan	Delta	2
 2022-02-25	Japan	Delta	1
 2022-02-28	Japan	Delta	1
 2022-03-02	Japan	Delta	3
 2022-03-10	Japan	Delta	1
 2022-03-14	Japan	Delta	1
-2022-03-17	Japan	Delta	1
-2022-03-27	Japan	Delta	1
-2022-04-07	Japan	Delta	1
-2022-01-18	Japan	Omicron 21K	2350
-2022-01-19	Japan	Omicron 21K	2443
-2022-01-20	Japan	Omicron 21K	1091
-2022-01-21	Japan	Omicron 21K	1098
-2022-01-22	Japan	Omicron 21K	882
-2022-01-23	Japan	Omicron 21K	512
-2022-01-24	Japan	Omicron 21K	1225
-2022-01-25	Japan	Omicron 21K	1402
-2022-01-26	Japan	Omicron 21K	835
-2022-01-27	Japan	Omicron 21K	1151
-2022-01-28	Japan	Omicron 21K	788
-2022-01-29	Japan	Omicron 21K	1001
-2022-01-30	Japan	Omicron 21K	363
-2022-01-31	Japan	Omicron 21K	895
-2022-02-01	Japan	Omicron 21K	1271
-2022-02-02	Japan	Omicron 21K	670
-2022-02-03	Japan	Omicron 21K	1058
-2022-02-04	Japan	Omicron 21K	576
-2022-02-05	Japan	Omicron 21K	679
-2022-02-06	Japan	Omicron 21K	238
-2022-02-07	Japan	Omicron 21K	717
-2022-02-08	Japan	Omicron 21K	837
-2022-02-09	Japan	Omicron 21K	521
-2022-02-10	Japan	Omicron 21K	825
-2022-02-11	Japan	Omicron 21K	389
-2022-02-12	Japan	Omicron 21K	725
-2022-02-13	Japan	Omicron 21K	273
-2022-02-14	Japan	Omicron 21K	662
-2022-02-15	Japan	Omicron 21K	873
-2022-02-16	Japan	Omicron 21K	491
-2022-02-17	Japan	Omicron 21K	754
-2022-02-18	Japan	Omicron 21K	525
-2022-02-19	Japan	Omicron 21K	553
-2022-02-20	Japan	Omicron 21K	235
-2022-02-21	Japan	Omicron 21K	437
-2022-02-22	Japan	Omicron 21K	720
-2022-02-23	Japan	Omicron 21K	246
-2022-02-24	Japan	Omicron 21K	711
-2022-02-25	Japan	Omicron 21K	386
-2022-02-26	Japan	Omicron 21K	549
-2022-02-27	Japan	Omicron 21K	159
-2022-02-28	Japan	Omicron 21K	500
-2022-03-01	Japan	Omicron 21K	573
-2022-03-02	Japan	Omicron 21K	381
-2022-03-03	Japan	Omicron 21K	582
-2022-03-04	Japan	Omicron 21K	353
-2022-03-05	Japan	Omicron 21K	456
-2022-03-06	Japan	Omicron 21K	195
-2022-03-07	Japan	Omicron 21K	300
-2022-03-08	Japan	Omicron 21K	382
-2022-03-09	Japan	Omicron 21K	164
-2022-03-10	Japan	Omicron 21K	294
-2022-03-11	Japan	Omicron 21K	81
-2022-03-12	Japan	Omicron 21K	234
-2022-03-13	Japan	Omicron 21K	69
-2022-03-14	Japan	Omicron 21K	77
-2022-03-15	Japan	Omicron 21K	210
-2022-03-16	Japan	Omicron 21K	41
-2022-03-17	Japan	Omicron 21K	165
-2022-03-18	Japan	Omicron 21K	5
-2022-03-19	Japan	Omicron 21K	131
-2022-03-20	Japan	Omicron 21K	9
-2022-03-21	Japan	Omicron 21K	4
-2022-03-22	Japan	Omicron 21K	106
-2022-03-23	Japan	Omicron 21K	16
-2022-03-24	Japan	Omicron 21K	100
-2022-03-25	Japan	Omicron 21K	11
-2022-03-26	Japan	Omicron 21K	96
-2022-03-27	Japan	Omicron 21K	9
-2022-03-28	Japan	Omicron 21K	11
-2022-03-29	Japan	Omicron 21K	5
-2022-03-30	Japan	Omicron 21K	11
-2022-03-31	Japan	Omicron 21K	7
-2022-04-01	Japan	Omicron 21K	5
-2022-04-02	Japan	Omicron 21K	4
-2022-04-03	Japan	Omicron 21K	2
-2022-04-04	Japan	Omicron 21K	10
-2022-04-05	Japan	Omicron 21K	7
-2022-04-06	Japan	Omicron 21K	6
+2022-01-18	Japan	Omicron 21K	2312
+2022-01-19	Japan	Omicron 21K	2394
+2022-01-20	Japan	Omicron 21K	1037
+2022-01-21	Japan	Omicron 21K	1056
+2022-01-22	Japan	Omicron 21K	857
+2022-01-23	Japan	Omicron 21K	466
+2022-01-24	Japan	Omicron 21K	1200
+2022-01-25	Japan	Omicron 21K	1373
+2022-01-26	Japan	Omicron 21K	817
+2022-01-27	Japan	Omicron 21K	1125
+2022-01-28	Japan	Omicron 21K	749
+2022-01-29	Japan	Omicron 21K	970
+2022-01-30	Japan	Omicron 21K	322
+2022-01-31	Japan	Omicron 21K	871
+2022-02-01	Japan	Omicron 21K	1217
+2022-02-02	Japan	Omicron 21K	645
+2022-02-03	Japan	Omicron 21K	1024
+2022-02-04	Japan	Omicron 21K	556
+2022-02-05	Japan	Omicron 21K	670
+2022-02-06	Japan	Omicron 21K	225
+2022-02-07	Japan	Omicron 21K	707
+2022-02-08	Japan	Omicron 21K	825
+2022-02-09	Japan	Omicron 21K	505
+2022-02-10	Japan	Omicron 21K	819
+2022-02-11	Japan	Omicron 21K	377
+2022-02-12	Japan	Omicron 21K	711
+2022-02-13	Japan	Omicron 21K	259
+2022-02-14	Japan	Omicron 21K	656
+2022-02-15	Japan	Omicron 21K	865
+2022-02-16	Japan	Omicron 21K	478
+2022-02-17	Japan	Omicron 21K	734
+2022-02-18	Japan	Omicron 21K	514
+2022-02-19	Japan	Omicron 21K	546
+2022-02-20	Japan	Omicron 21K	223
+2022-02-21	Japan	Omicron 21K	421
+2022-02-22	Japan	Omicron 21K	714
+2022-02-23	Japan	Omicron 21K	235
+2022-02-24	Japan	Omicron 21K	706
+2022-02-25	Japan	Omicron 21K	382
+2022-02-26	Japan	Omicron 21K	540
+2022-02-27	Japan	Omicron 21K	150
+2022-02-28	Japan	Omicron 21K	491
+2022-03-01	Japan	Omicron 21K	562
+2022-03-02	Japan	Omicron 21K	374
+2022-03-03	Japan	Omicron 21K	579
+2022-03-04	Japan	Omicron 21K	349
+2022-03-05	Japan	Omicron 21K	447
+2022-03-06	Japan	Omicron 21K	183
+2022-03-07	Japan	Omicron 21K	298
+2022-03-08	Japan	Omicron 21K	378
+2022-03-09	Japan	Omicron 21K	156
+2022-03-10	Japan	Omicron 21K	292
+2022-03-11	Japan	Omicron 21K	75
+2022-03-12	Japan	Omicron 21K	228
+2022-03-13	Japan	Omicron 21K	63
+2022-03-14	Japan	Omicron 21K	71
+2022-03-15	Japan	Omicron 21K	197
+2022-03-16	Japan	Omicron 21K	31
+2022-03-17	Japan	Omicron 21K	163
+2022-03-19	Japan	Omicron 21K	127
+2022-03-20	Japan	Omicron 21K	2
+2022-03-21	Japan	Omicron 21K	3
+2022-03-22	Japan	Omicron 21K	105
+2022-03-23	Japan	Omicron 21K	8
+2022-03-24	Japan	Omicron 21K	96
+2022-03-25	Japan	Omicron 21K	5
+2022-03-26	Japan	Omicron 21K	88
+2022-03-28	Japan	Omicron 21K	6
+2022-03-29	Japan	Omicron 21K	2
+2022-03-30	Japan	Omicron 21K	6
+2022-03-31	Japan	Omicron 21K	5
+2022-04-01	Japan	Omicron 21K	2
+2022-04-04	Japan	Omicron 21K	9
+2022-04-05	Japan	Omicron 21K	6
+2022-04-06	Japan	Omicron 21K	4
 2022-04-07	Japan	Omicron 21K	4
-2022-04-08	Japan	Omicron 21K	4
-2022-04-09	Japan	Omicron 21K	3
-2022-04-10	Japan	Omicron 21K	1
+2022-04-08	Japan	Omicron 21K	1
 2022-04-11	Japan	Omicron 21K	2
 2022-04-15	Japan	Omicron 21K	1
 2022-04-17	Japan	Omicron 21K	1
-2022-01-18	Japan	Omicron 21L	38
-2022-01-19	Japan	Omicron 21L	64
-2022-01-20	Japan	Omicron 21L	35
-2022-01-21	Japan	Omicron 21L	38
-2022-01-22	Japan	Omicron 21L	35
-2022-01-23	Japan	Omicron 21L	35
-2022-01-24	Japan	Omicron 21L	17
-2022-01-25	Japan	Omicron 21L	25
-2022-01-26	Japan	Omicron 21L	39
-2022-01-27	Japan	Omicron 21L	19
-2022-01-28	Japan	Omicron 21L	23
-2022-01-29	Japan	Omicron 21L	32
-2022-01-30	Japan	Omicron 21L	21
-2022-01-31	Japan	Omicron 21L	18
-2022-02-01	Japan	Omicron 21L	35
-2022-02-02	Japan	Omicron 21L	16
-2022-02-03	Japan	Omicron 21L	23
-2022-02-04	Japan	Omicron 21L	17
-2022-02-05	Japan	Omicron 21L	29
-2022-02-06	Japan	Omicron 21L	13
-2022-02-07	Japan	Omicron 21L	11
-2022-02-08	Japan	Omicron 21L	43
-2022-02-09	Japan	Omicron 21L	34
-2022-02-10	Japan	Omicron 21L	36
-2022-02-11	Japan	Omicron 21L	15
-2022-02-12	Japan	Omicron 21L	37
-2022-02-13	Japan	Omicron 21L	19
-2022-02-14	Japan	Omicron 21L	34
-2022-02-15	Japan	Omicron 21L	61
-2022-02-16	Japan	Omicron 21L	24
-2022-02-17	Japan	Omicron 21L	59
-2022-02-18	Japan	Omicron 21L	27
-2022-02-19	Japan	Omicron 21L	64
-2022-02-20	Japan	Omicron 21L	19
-2022-02-21	Japan	Omicron 21L	60
-2022-02-22	Japan	Omicron 21L	93
-2022-02-23	Japan	Omicron 21L	34
-2022-02-24	Japan	Omicron 21L	100
-2022-02-25	Japan	Omicron 21L	49
-2022-02-26	Japan	Omicron 21L	119
-2022-02-27	Japan	Omicron 21L	54
-2022-02-28	Japan	Omicron 21L	60
-2022-03-01	Japan	Omicron 21L	109
-2022-03-02	Japan	Omicron 21L	72
-2022-03-03	Japan	Omicron 21L	133
-2022-03-04	Japan	Omicron 21L	88
-2022-03-05	Japan	Omicron 21L	143
-2022-03-06	Japan	Omicron 21L	54
-2022-03-07	Japan	Omicron 21L	105
-2022-03-08	Japan	Omicron 21L	180
-2022-03-09	Japan	Omicron 21L	66
-2022-03-10	Japan	Omicron 21L	208
-2022-03-11	Japan	Omicron 21L	92
-2022-03-12	Japan	Omicron 21L	210
-2022-03-13	Japan	Omicron 21L	68
-2022-03-14	Japan	Omicron 21L	59
-2022-03-15	Japan	Omicron 21L	226
-2022-03-16	Japan	Omicron 21L	58
-2022-03-17	Japan	Omicron 21L	214
-2022-03-18	Japan	Omicron 21L	69
-2022-03-19	Japan	Omicron 21L	227
-2022-03-20	Japan	Omicron 21L	72
-2022-03-21	Japan	Omicron 21L	45
-2022-03-22	Japan	Omicron 21L	271
-2022-03-23	Japan	Omicron 21L	65
-2022-03-24	Japan	Omicron 21L	248
-2022-03-25	Japan	Omicron 21L	78
-2022-03-26	Japan	Omicron 21L	299
-2022-03-27	Japan	Omicron 21L	85
-2022-03-28	Japan	Omicron 21L	74
-2022-03-29	Japan	Omicron 21L	76
-2022-03-30	Japan	Omicron 21L	83
-2022-03-31	Japan	Omicron 21L	85
-2022-04-01	Japan	Omicron 21L	86
-2022-04-02	Japan	Omicron 21L	69
-2022-04-03	Japan	Omicron 21L	78
-2022-04-04	Japan	Omicron 21L	71
-2022-04-05	Japan	Omicron 21L	83
-2022-04-06	Japan	Omicron 21L	75
-2022-04-07	Japan	Omicron 21L	74
-2022-04-08	Japan	Omicron 21L	54
-2022-04-09	Japan	Omicron 21L	52
-2022-04-10	Japan	Omicron 21L	36
+2022-01-18	Japan	Omicron 21L	13
+2022-01-19	Japan	Omicron 21L	9
+2022-01-20	Japan	Omicron 21L	8
+2022-01-21	Japan	Omicron 21L	6
+2022-01-22	Japan	Omicron 21L	5
+2022-01-24	Japan	Omicron 21L	5
+2022-01-25	Japan	Omicron 21L	5
+2022-01-26	Japan	Omicron 21L	7
+2022-01-27	Japan	Omicron 21L	7
+2022-01-28	Japan	Omicron 21L	2
+2022-01-29	Japan	Omicron 21L	8
+2022-01-31	Japan	Omicron 21L	6
+2022-02-01	Japan	Omicron 21L	11
+2022-02-02	Japan	Omicron 21L	4
+2022-02-03	Japan	Omicron 21L	10
+2022-02-04	Japan	Omicron 21L	6
+2022-02-05	Japan	Omicron 21L	15
+2022-02-06	Japan	Omicron 21L	1
+2022-02-07	Japan	Omicron 21L	6
+2022-02-08	Japan	Omicron 21L	29
+2022-02-09	Japan	Omicron 21L	15
+2022-02-10	Japan	Omicron 21L	22
+2022-02-11	Japan	Omicron 21L	7
+2022-02-12	Japan	Omicron 21L	32
+2022-02-13	Japan	Omicron 21L	8
+2022-02-14	Japan	Omicron 21L	26
+2022-02-15	Japan	Omicron 21L	51
+2022-02-16	Japan	Omicron 21L	10
+2022-02-17	Japan	Omicron 21L	45
+2022-02-18	Japan	Omicron 21L	14
+2022-02-19	Japan	Omicron 21L	42
+2022-02-20	Japan	Omicron 21L	6
+2022-02-21	Japan	Omicron 21L	51
+2022-02-22	Japan	Omicron 21L	77
+2022-02-23	Japan	Omicron 21L	10
+2022-02-24	Japan	Omicron 21L	74
+2022-02-25	Japan	Omicron 21L	32
+2022-02-26	Japan	Omicron 21L	84
+2022-02-27	Japan	Omicron 21L	17
+2022-02-28	Japan	Omicron 21L	49
+2022-03-01	Japan	Omicron 21L	88
+2022-03-02	Japan	Omicron 21L	45
+2022-03-03	Japan	Omicron 21L	110
+2022-03-04	Japan	Omicron 21L	55
+2022-03-05	Japan	Omicron 21L	106
+2022-03-06	Japan	Omicron 21L	23
+2022-03-07	Japan	Omicron 21L	54
+2022-03-08	Japan	Omicron 21L	154
+2022-03-09	Japan	Omicron 21L	38
+2022-03-10	Japan	Omicron 21L	183
+2022-03-11	Japan	Omicron 21L	31
+2022-03-12	Japan	Omicron 21L	164
+2022-03-13	Japan	Omicron 21L	11
+2022-03-14	Japan	Omicron 21L	25
+2022-03-15	Japan	Omicron 21L	186
+2022-03-16	Japan	Omicron 21L	19
+2022-03-17	Japan	Omicron 21L	168
+2022-03-18	Japan	Omicron 21L	3
+2022-03-19	Japan	Omicron 21L	183
+2022-03-21	Japan	Omicron 21L	2
+2022-03-22	Japan	Omicron 21L	212
+2022-03-23	Japan	Omicron 21L	2
+2022-03-24	Japan	Omicron 21L	211
+2022-03-25	Japan	Omicron 21L	1
+2022-03-26	Japan	Omicron 21L	220
+2022-03-27	Japan	Omicron 21L	1
+2022-03-28	Japan	Omicron 21L	20
+2022-03-29	Japan	Omicron 21L	10
+2022-03-30	Japan	Omicron 21L	6
+2022-03-31	Japan	Omicron 21L	10
+2022-04-01	Japan	Omicron 21L	11
+2022-04-02	Japan	Omicron 21L	2
+2022-04-03	Japan	Omicron 21L	2
+2022-04-04	Japan	Omicron 21L	11
+2022-04-05	Japan	Omicron 21L	6
+2022-04-06	Japan	Omicron 21L	11
+2022-04-07	Japan	Omicron 21L	8
+2022-04-08	Japan	Omicron 21L	9
+2022-04-09	Japan	Omicron 21L	5
+2022-04-10	Japan	Omicron 21L	4
 2022-04-11	Japan	Omicron 21L	19
 2022-04-12	Japan	Omicron 21L	2
 2022-04-14	Japan	Omicron 21L	2
 2022-04-15	Japan	Omicron 21L	3
 2022-04-16	Japan	Omicron 21L	2
 2022-04-17	Japan	Omicron 21L	2
-2022-04-02	Japan	Omicron 22C	1
-2022-04-09	Japan	Omicron 22C	1
-2022-01-20	Japan	other	1
-2022-02-22	Japan	other	1
-2022-02-23	Japan	other	1
-2022-03-11	Japan	other	1
-2022-03-13	Japan	other	1
-2022-03-14	Japan	other	2
 2022-03-17	Japan	other	1
 2022-03-22	Japan	other	1
-2022-03-26	Japan	other	3
 2022-04-04	Japan	other	3
 2022-01-20	South Africa	Delta	1
 2022-01-25	South Africa	Delta	1

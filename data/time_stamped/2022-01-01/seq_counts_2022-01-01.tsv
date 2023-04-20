@@ -274,120 +274,103 @@ date	location	variant	sequences
 2021-12-05	Brazil	other	1
 2021-12-07	Brazil	other	1
 2021-09-20	Japan	Delta	137
-2021-09-21	Japan	Delta	517
-2021-09-22	Japan	Delta	319
-2021-09-23	Japan	Delta	178
-2021-09-24	Japan	Delta	323
-2021-09-25	Japan	Delta	174
-2021-09-26	Japan	Delta	52
-2021-09-27	Japan	Delta	281
-2021-09-28	Japan	Delta	175
-2021-09-29	Japan	Delta	159
-2021-09-30	Japan	Delta	156
-2021-10-01	Japan	Delta	148
-2021-10-02	Japan	Delta	102
+2021-09-21	Japan	Delta	503
+2021-09-22	Japan	Delta	316
+2021-09-23	Japan	Delta	174
+2021-09-24	Japan	Delta	303
+2021-09-25	Japan	Delta	172
+2021-09-26	Japan	Delta	49
+2021-09-27	Japan	Delta	278
+2021-09-28	Japan	Delta	173
+2021-09-29	Japan	Delta	156
+2021-09-30	Japan	Delta	155
+2021-10-01	Japan	Delta	138
+2021-10-02	Japan	Delta	96
 2021-10-03	Japan	Delta	39
-2021-10-04	Japan	Delta	144
+2021-10-04	Japan	Delta	141
 2021-10-05	Japan	Delta	117
-2021-10-06	Japan	Delta	122
-2021-10-07	Japan	Delta	98
-2021-10-08	Japan	Delta	108
-2021-10-09	Japan	Delta	80
-2021-10-10	Japan	Delta	27
-2021-10-11	Japan	Delta	80
-2021-10-12	Japan	Delta	85
-2021-10-13	Japan	Delta	57
-2021-10-14	Japan	Delta	78
-2021-10-15	Japan	Delta	89
-2021-10-16	Japan	Delta	51
-2021-10-17	Japan	Delta	24
+2021-10-06	Japan	Delta	121
+2021-10-07	Japan	Delta	95
+2021-10-08	Japan	Delta	104
+2021-10-09	Japan	Delta	79
+2021-10-10	Japan	Delta	21
+2021-10-11	Japan	Delta	79
+2021-10-12	Japan	Delta	84
+2021-10-13	Japan	Delta	56
+2021-10-14	Japan	Delta	71
+2021-10-15	Japan	Delta	85
+2021-10-16	Japan	Delta	50
+2021-10-17	Japan	Delta	22
 2021-10-18	Japan	Delta	53
-2021-10-19	Japan	Delta	42
-2021-10-20	Japan	Delta	44
+2021-10-19	Japan	Delta	40
+2021-10-20	Japan	Delta	39
 2021-10-21	Japan	Delta	29
-2021-10-22	Japan	Delta	38
-2021-10-23	Japan	Delta	24
-2021-10-24	Japan	Delta	30
-2021-10-25	Japan	Delta	59
-2021-10-26	Japan	Delta	28
-2021-10-27	Japan	Delta	54
-2021-10-28	Japan	Delta	48
-2021-10-29	Japan	Delta	40
-2021-10-30	Japan	Delta	34
-2021-10-31	Japan	Delta	8
-2021-11-01	Japan	Delta	49
-2021-11-02	Japan	Delta	47
-2021-11-03	Japan	Delta	15
-2021-11-04	Japan	Delta	52
-2021-11-05	Japan	Delta	26
-2021-11-06	Japan	Delta	25
-2021-11-07	Japan	Delta	10
-2021-11-08	Japan	Delta	31
-2021-11-09	Japan	Delta	23
-2021-11-10	Japan	Delta	27
-2021-11-11	Japan	Delta	28
-2021-11-12	Japan	Delta	37
-2021-11-13	Japan	Delta	18
-2021-11-14	Japan	Delta	34
-2021-11-15	Japan	Delta	36
-2021-11-16	Japan	Delta	22
-2021-11-17	Japan	Delta	30
-2021-11-18	Japan	Delta	18
-2021-11-19	Japan	Delta	29
-2021-11-20	Japan	Delta	23
-2021-11-21	Japan	Delta	6
-2021-11-22	Japan	Delta	26
-2021-11-23	Japan	Delta	3
-2021-11-24	Japan	Delta	23
-2021-11-25	Japan	Delta	14
-2021-11-26	Japan	Delta	14
-2021-11-27	Japan	Delta	19
-2021-11-28	Japan	Delta	5
-2021-11-29	Japan	Delta	25
-2021-11-30	Japan	Delta	13
-2021-12-01	Japan	Delta	28
-2021-12-02	Japan	Delta	29
+2021-10-22	Japan	Delta	36
+2021-10-23	Japan	Delta	23
+2021-10-24	Japan	Delta	27
+2021-10-25	Japan	Delta	56
+2021-10-26	Japan	Delta	27
+2021-10-27	Japan	Delta	53
+2021-10-28	Japan	Delta	46
+2021-10-29	Japan	Delta	36
+2021-10-30	Japan	Delta	28
+2021-10-31	Japan	Delta	6
+2021-11-01	Japan	Delta	46
+2021-11-02	Japan	Delta	44
+2021-11-03	Japan	Delta	10
+2021-11-04	Japan	Delta	46
+2021-11-05	Japan	Delta	24
+2021-11-06	Japan	Delta	22
+2021-11-07	Japan	Delta	9
+2021-11-08	Japan	Delta	25
+2021-11-09	Japan	Delta	22
+2021-11-10	Japan	Delta	23
+2021-11-11	Japan	Delta	26
+2021-11-12	Japan	Delta	35
+2021-11-13	Japan	Delta	14
+2021-11-14	Japan	Delta	31
+2021-11-15	Japan	Delta	33
+2021-11-16	Japan	Delta	19
+2021-11-17	Japan	Delta	28
+2021-11-18	Japan	Delta	14
+2021-11-19	Japan	Delta	26
+2021-11-20	Japan	Delta	18
+2021-11-21	Japan	Delta	3
+2021-11-22	Japan	Delta	23
+2021-11-23	Japan	Delta	2
+2021-11-24	Japan	Delta	18
+2021-11-25	Japan	Delta	12
+2021-11-26	Japan	Delta	9
+2021-11-27	Japan	Delta	12
+2021-11-28	Japan	Delta	2
+2021-11-29	Japan	Delta	18
+2021-11-30	Japan	Delta	11
+2021-12-01	Japan	Delta	21
+2021-12-02	Japan	Delta	27
 2021-12-03	Japan	Delta	36
 2021-12-04	Japan	Delta	21
-2021-12-05	Japan	Delta	6
-2021-12-06	Japan	Delta	17
-2021-12-07	Japan	Delta	4
-2021-12-08	Japan	Delta	5
-2021-12-09	Japan	Delta	3
-2021-12-10	Japan	Delta	4
-2021-12-11	Japan	Delta	6
-2021-12-12	Japan	Delta	2
-2021-12-13	Japan	Delta	4
-2021-12-14	Japan	Delta	4
-2021-12-15	Japan	Delta	6
-2021-12-16	Japan	Delta	4
-2021-12-17	Japan	Delta	4
-2021-12-18	Japan	Delta	2
-2021-11-27	Japan	Omicron 21K	2
-2021-11-28	Japan	Omicron 21K	3
-2021-12-01	Japan	Omicron 21K	2
+2021-12-06	Japan	Delta	2
+2021-12-07	Japan	Delta	1
+2021-12-09	Japan	Delta	1
+2021-12-11	Japan	Delta	1
+2021-12-13	Japan	Delta	2
+2021-12-14	Japan	Delta	2
+2021-12-15	Japan	Delta	1
+2021-12-17	Japan	Delta	1
+2021-12-18	Japan	Delta	1
+2021-11-27	Japan	Omicron 21K	1
+2021-11-28	Japan	Omicron 21K	2
+2021-12-01	Japan	Omicron 21K	1
 2021-12-02	Japan	Omicron 21K	1
-2021-12-04	Japan	Omicron 21K	1
-2021-12-05	Japan	Omicron 21K	1
-2021-12-06	Japan	Omicron 21K	3
-2021-12-07	Japan	Omicron 21K	3
-2021-12-08	Japan	Omicron 21K	3
-2021-12-09	Japan	Omicron 21K	2
-2021-12-10	Japan	Omicron 21K	2
-2021-12-11	Japan	Omicron 21K	6
-2021-12-12	Japan	Omicron 21K	3
-2021-12-13	Japan	Omicron 21K	3
-2021-12-14	Japan	Omicron 21K	8
-2021-12-15	Japan	Omicron 21K	16
-2021-12-16	Japan	Omicron 21K	9
-2021-12-17	Japan	Omicron 21K	12
-2021-12-18	Japan	Omicron 21K	19
+2021-12-13	Japan	Omicron 21K	1
+2021-12-14	Japan	Omicron 21K	1
+2021-12-15	Japan	Omicron 21K	2
+2021-12-18	Japan	Omicron 21K	2
 2021-09-21	Japan	other	2
-2021-09-22	Japan	other	2
-2021-09-24	Japan	other	2
+2021-09-22	Japan	other	1
+2021-09-24	Japan	other	1
 2021-09-27	Japan	other	1
 2021-10-01	Japan	other	1
-2021-10-05	Japan	other	1
 2021-10-16	Japan	other	1
 2021-09-20	South Africa	Delta	93
 2021-09-21	South Africa	Delta	69

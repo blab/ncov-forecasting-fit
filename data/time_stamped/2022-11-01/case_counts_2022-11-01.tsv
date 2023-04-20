@@ -1,74 +1,74 @@
 date	location	cases
-2022-07-21	Australia	64969.0
-2022-07-22	Australia	55590.0
-2022-07-23	Australia	53161.0
-2022-07-24	Australia	0.0
-2022-07-25	Australia	82576.0
-2022-07-26	Australia	36650.0
-2022-07-27	Australia	46257.0
-2022-07-28	Australia	47793.0
-2022-07-29	Australia	46769.0
-2022-07-30	Australia	46634.0
-2022-07-31	Australia	0.0
-2022-08-01	Australia	85830.0
-2022-08-02	Australia	28054.0
-2022-08-03	Australia	35409.0
-2022-08-04	Australia	41050.0
-2022-08-05	Australia	37393.0
-2022-08-06	Australia	34597.0
-2022-08-07	Australia	0.0
-2022-08-08	Australia	49237.0
-2022-08-09	Australia	19666.0
-2022-08-10	Australia	26765.0
-2022-08-11	Australia	27153.0
-2022-08-12	Australia	25394.0
-2022-08-13	Australia	22958.0
-2022-08-14	Australia	0.0
-2022-08-15	Australia	35741.0
-2022-08-16	Australia	14555.0
-2022-08-17	Australia	19739.0
-2022-08-18	Australia	20539.0
-2022-08-19	Australia	19981.0
-2022-08-20	Australia	16958.0
-2022-08-21	Australia	0.0
-2022-08-22	Australia	25078.0
-2022-08-23	Australia	5686.0
-2022-08-24	Australia	15367.0
-2022-08-25	Australia	15462.0
-2022-08-26	Australia	13976.0
-2022-08-27	Australia	13350.0
-2022-08-28	Australia	0.0
-2022-08-29	Australia	20548.0
-2022-08-30	Australia	8733.0
-2022-08-31	Australia	12039.0
-2022-09-01	Australia	13210.0
-2022-09-02	Australia	11734.0
-2022-09-03	Australia	10610.0
-2022-09-04	Australia	0.0
-2022-09-05	Australia	15768.0
-2022-09-06	Australia	6442.0
-2022-09-07	Australia	9266.0
-2022-09-08	Australia	9979.0
-2022-09-09	Australia	8922.0
-2022-09-10	Australia	8396.0
-2022-09-11	Australia	0.0
+2022-07-21	Australia	0.0
+2022-07-22	Australia	0.0
+2022-07-23	Australia	0.0
+2022-07-24	Australia	319779.0
+2022-07-25	Australia	0.0
+2022-07-26	Australia	0.0
+2022-07-27	Australia	0.0
+2022-07-28	Australia	0.0
+2022-07-29	Australia	0.0
+2022-07-30	Australia	0.0
+2022-07-31	Australia	259334.0
+2022-08-01	Australia	0.0
+2022-08-02	Australia	0.0
+2022-08-03	Australia	0.0
+2022-08-04	Australia	0.0
+2022-08-05	Australia	0.0
+2022-08-06	Australia	0.0
+2022-08-07	Australia	200397.0
+2022-08-08	Australia	0.0
+2022-08-09	Australia	0.0
+2022-08-10	Australia	0.0
+2022-08-11	Australia	0.0
+2022-08-12	Australia	0.0
+2022-08-13	Australia	0.0
+2022-08-14	Australia	139178.0
+2022-08-15	Australia	0.0
+2022-08-16	Australia	0.0
+2022-08-17	Australia	0.0
+2022-08-18	Australia	0.0
+2022-08-19	Australia	0.0
+2022-08-20	Australia	0.0
+2022-08-21	Australia	103184.0
+2022-08-22	Australia	0.0
+2022-08-23	Australia	0.0
+2022-08-24	Australia	0.0
+2022-08-25	Australia	0.0
+2022-08-26	Australia	0.0
+2022-08-27	Australia	0.0
+2022-08-28	Australia	79985.0
+2022-08-29	Australia	0.0
+2022-08-30	Australia	0.0
+2022-08-31	Australia	0.0
+2022-09-01	Australia	0.0
+2022-09-02	Australia	0.0
+2022-09-03	Australia	0.0
+2022-09-04	Australia	63392.0
+2022-09-05	Australia	0.0
+2022-09-06	Australia	0.0
+2022-09-07	Australia	0.0
+2022-09-08	Australia	0.0
+2022-09-09	Australia	0.0
+2022-09-10	Australia	0.0
+2022-09-11	Australia	51273.0
 2022-09-12	Australia	0.0
-2022-09-13	Australia	18472.0
+2022-09-13	Australia	0.0
 2022-09-14	Australia	0.0
-2022-09-15	Australia	15298.0
-2022-09-16	Australia	7911.0
+2022-09-15	Australia	0.0
+2022-09-16	Australia	0.0
 2022-09-17	Australia	0.0
-2022-09-18	Australia	19137.0
-2022-09-19	Australia	4593.0
-2022-09-20	Australia	80.0
-2022-09-21	Australia	6889.0
-2022-09-22	Australia	6703.0
+2022-09-18	Australia	43401.0
+2022-09-19	Australia	0.0
+2022-09-20	Australia	0.0
+2022-09-21	Australia	0.0
+2022-09-22	Australia	0.0
 2022-09-23	Australia	0.0
 2022-09-24	Australia	0.0
-2022-09-25	Australia	0.0
+2022-09-25	Australia	37578.0
 2022-09-26	Australia	0.0
 2022-09-27	Australia	0.0
-2022-09-28	Australia	74695.0
+2022-09-28	Australia	0.0
 2022-09-29	Australia	0.0
 2022-09-30	Australia	0.0
 2022-10-01	Australia	0.0
@@ -207,78 +207,78 @@ date	location	cases
 2022-10-30	Brazil	6969.0
 2022-10-31	Brazil	1842.0
 2022-11-01	Brazil	797.0
-2022-07-21	Japan	135239.0
-2022-07-22	Japan	180826.0
-2022-07-23	Japan	196297.0
-2022-07-24	Japan	192109.0
-2022-07-25	Japan	172673.0
-2022-07-26	Japan	154011.0
-2022-07-27	Japan	180226.0
-2022-07-28	Japan	207236.0
-2022-07-29	Japan	230055.0
-2022-07-30	Japan	221938.0
-2022-07-31	Japan	212960.0
-2022-08-01	Japan	196812.0
-2022-08-02	Japan	167678.0
-2022-08-03	Japan	195801.0
-2022-08-04	Japan	231597.0
-2022-08-05	Japan	253392.0
-2022-08-06	Japan	236809.0
-2022-08-07	Japan	214879.0
-2022-08-08	Japan	198563.0
-2022-08-09	Japan	172998.0
-2022-08-10	Japan	196732.0
-2022-08-11	Japan	227828.0
-2022-08-12	Japan	240205.0
-2022-08-13	Japan	192364.0
-2022-08-14	Japan	166611.0
-2022-08-15	Japan	169972.0
-2022-08-16	Japan	159781.0
-2022-08-17	Japan	178286.0
-2022-08-18	Japan	208483.0
-2022-08-19	Japan	261252.0
-2022-08-20	Japan	255810.0
-2022-08-21	Japan	242790.0
-2022-08-22	Japan	217875.0
-2022-08-23	Japan	185497.0
-2022-08-24	Japan	194223.0
-2022-08-25	Japan	237410.0
-2022-08-26	Japan	227139.0
-2022-08-27	Japan	196628.0
-2022-08-28	Japan	0.0
-2022-08-29	Japan	326090.0
-2022-08-30	Japan	125907.0
-2022-08-31	Japan	139582.0
-2022-09-01	Japan	167340.0
-2022-09-02	Japan	153313.0
-2022-09-03	Japan	135425.0
-2022-09-04	Japan	117130.0
-2022-09-05	Japan	105010.0
-2022-09-06	Japan	84295.0
-2022-09-07	Japan	100729.0
-2022-09-08	Japan	126487.0
-2022-09-09	Japan	120660.0
+2022-07-21	Japan	180826.0
+2022-07-22	Japan	196297.0
+2022-07-23	Japan	192109.0
+2022-07-24	Japan	172673.0
+2022-07-25	Japan	154011.0
+2022-07-26	Japan	180226.0
+2022-07-27	Japan	207236.0
+2022-07-28	Japan	230055.0
+2022-07-29	Japan	221938.0
+2022-07-30	Japan	212960.0
+2022-07-31	Japan	196812.0
+2022-08-01	Japan	167678.0
+2022-08-02	Japan	195801.0
+2022-08-03	Japan	231597.0
+2022-08-04	Japan	253392.0
+2022-08-05	Japan	236809.0
+2022-08-06	Japan	214879.0
+2022-08-07	Japan	198563.0
+2022-08-08	Japan	172998.0
+2022-08-09	Japan	196732.0
+2022-08-10	Japan	227828.0
+2022-08-11	Japan	240205.0
+2022-08-12	Japan	192364.0
+2022-08-13	Japan	166611.0
+2022-08-14	Japan	169972.0
+2022-08-15	Japan	159781.0
+2022-08-16	Japan	178286.0
+2022-08-17	Japan	208483.0
+2022-08-18	Japan	261252.0
+2022-08-19	Japan	255810.0
+2022-08-20	Japan	242790.0
+2022-08-21	Japan	217875.0
+2022-08-22	Japan	185497.0
+2022-08-23	Japan	194223.0
+2022-08-24	Japan	237410.0
+2022-08-25	Japan	227139.0
+2022-08-26	Japan	196628.0
+2022-08-27	Japan	0.0
+2022-08-28	Japan	326090.0
+2022-08-29	Japan	125907.0
+2022-08-30	Japan	139582.0
+2022-08-31	Japan	167340.0
+2022-09-01	Japan	153313.0
+2022-09-02	Japan	135425.0
+2022-09-03	Japan	117130.0
+2022-09-04	Japan	105010.0
+2022-09-05	Japan	84295.0
+2022-09-06	Japan	100729.0
+2022-09-07	Japan	126487.0
+2022-09-08	Japan	120660.0
+2022-09-09	Japan	0.0
 2022-09-10	Japan	0.0
-2022-09-11	Japan	0.0
-2022-09-12	Japan	274599.0
-2022-09-13	Japan	64694.0
-2022-09-14	Japan	78701.0
-2022-09-15	Japan	99546.0
-2022-09-16	Japan	88379.0
+2022-09-11	Japan	274599.0
+2022-09-12	Japan	64694.0
+2022-09-13	Japan	78701.0
+2022-09-14	Japan	99546.0
+2022-09-15	Japan	88379.0
+2022-09-16	Japan	0.0
 2022-09-17	Japan	0.0
-2022-09-18	Japan	0.0
-2022-09-19	Japan	211155.0
-2022-09-20	Japan	41330.0
-2022-09-21	Japan	58510.0
-2022-09-22	Japan	41478.0
-2022-09-23	Japan	78058.0
-2022-09-24	Japan	64053.0
-2022-09-25	Japan	40918.0
-2022-09-26	Japan	43730.0
-2022-09-27	Japan	50781.0
-2022-09-28	Japan	0.0
-2022-09-29	Japan	68718.0
-2022-09-30	Japan	114237.0
+2022-09-18	Japan	211155.0
+2022-09-19	Japan	41330.0
+2022-09-20	Japan	58510.0
+2022-09-21	Japan	41478.0
+2022-09-22	Japan	78058.0
+2022-09-23	Japan	64053.0
+2022-09-24	Japan	40918.0
+2022-09-25	Japan	43730.0
+2022-09-26	Japan	50781.0
+2022-09-27	Japan	0.0
+2022-09-28	Japan	68718.0
+2022-09-29	Japan	42173.0
+2022-09-30	Japan	72064.0
 2022-10-01	Japan	29492.0
 2022-10-02	Japan	0.0
 2022-10-03	Japan	15167.0
@@ -415,110 +415,110 @@ date	location	cases
 2022-10-30	South Africa	177.0
 2022-10-31	South Africa	416.0
 2022-11-01	South Africa	148.0
-2022-07-21	United Kingdom	14998.0
-2022-07-22	United Kingdom	14671.0
-2022-07-23	United Kingdom	12900.0
-2022-07-24	United Kingdom	11283.0
-2022-07-25	United Kingdom	8978.0
-2022-07-26	United Kingdom	10288.0
-2022-07-27	United Kingdom	12056.0
-2022-07-28	United Kingdom	10572.0
-2022-07-29	United Kingdom	9508.0
-2022-07-30	United Kingdom	8419.0
-2022-07-31	United Kingdom	7666.0
-2022-08-01	United Kingdom	6681.0
-2022-08-02	United Kingdom	7718.0
-2022-08-03	United Kingdom	8921.0
-2022-08-04	United Kingdom	8259.0
-2022-08-05	United Kingdom	7482.0
-2022-08-06	United Kingdom	6596.0
-2022-08-07	United Kingdom	5923.0
-2022-08-08	United Kingdom	4912.0
-2022-08-09	United Kingdom	5945.0
-2022-08-10	United Kingdom	7313.0
-2022-08-11	United Kingdom	6532.0
-2022-08-12	United Kingdom	6077.0
-2022-08-13	United Kingdom	5527.0
-2022-08-14	United Kingdom	4852.0
-2022-08-15	United Kingdom	4032.0
-2022-08-16	United Kingdom	4824.0
-2022-08-17	United Kingdom	5697.0
-2022-08-18	United Kingdom	4925.0
-2022-08-19	United Kingdom	4431.0
-2022-08-20	United Kingdom	3923.0
-2022-08-21	United Kingdom	3373.0
-2022-08-22	United Kingdom	2873.0
-2022-08-23	United Kingdom	3592.0
-2022-08-24	United Kingdom	4633.0
-2022-08-25	United Kingdom	4128.0
-2022-08-26	United Kingdom	3963.0
-2022-08-27	United Kingdom	3308.0
-2022-08-28	United Kingdom	3028.0
-2022-08-29	United Kingdom	2640.0
-2022-08-30	United Kingdom	2912.0
-2022-08-31	United Kingdom	3968.0
-2022-09-01	United Kingdom	4533.0
-2022-09-02	United Kingdom	4039.0
-2022-09-03	United Kingdom	3813.0
-2022-09-04	United Kingdom	3284.0
-2022-09-05	United Kingdom	3019.0
-2022-09-06	United Kingdom	3813.0
-2022-09-07	United Kingdom	4432.0
-2022-09-08	United Kingdom	3981.0
-2022-09-09	United Kingdom	3776.0
-2022-09-10	United Kingdom	3293.0
-2022-09-11	United Kingdom	3152.0
-2022-09-12	United Kingdom	2892.0
-2022-09-13	United Kingdom	3917.0
-2022-09-14	United Kingdom	4810.0
-2022-09-15	United Kingdom	4665.0
-2022-09-16	United Kingdom	4488.0
-2022-09-17	United Kingdom	4223.0
-2022-09-18	United Kingdom	3739.0
-2022-09-19	United Kingdom	3206.0
-2022-09-20	United Kingdom	3977.0
-2022-09-21	United Kingdom	5755.0
-2022-09-22	United Kingdom	7292.0
-2022-09-23	United Kingdom	7021.0
-2022-09-24	United Kingdom	6370.0
-2022-09-25	United Kingdom	6084.0
-2022-09-26	United Kingdom	5379.0
-2022-09-27	United Kingdom	6805.0
-2022-09-28	United Kingdom	8130.0
-2022-09-29	United Kingdom	7758.0
-2022-09-30	United Kingdom	7924.0
-2022-10-01	United Kingdom	7447.0
-2022-10-02	United Kingdom	7209.0
-2022-10-03	United Kingdom	6640.0
-2022-10-04	United Kingdom	8713.0
-2022-10-05	United Kingdom	11025.0
-2022-10-06	United Kingdom	10361.0
-2022-10-07	United Kingdom	9652.0
-2022-10-08	United Kingdom	8908.0
-2022-10-09	United Kingdom	8458.0
-2022-10-10	United Kingdom	6653.0
-2022-10-11	United Kingdom	8102.0
-2022-10-12	United Kingdom	9972.0
-2022-10-13	United Kingdom	8918.0
-2022-10-14	United Kingdom	8231.0
-2022-10-15	United Kingdom	7675.0
-2022-10-16	United Kingdom	7473.0
-2022-10-17	United Kingdom	6103.0
-2022-10-18	United Kingdom	7331.0
-2022-10-19	United Kingdom	9420.0
-2022-10-20	United Kingdom	7759.0
-2022-10-21	United Kingdom	7151.0
-2022-10-22	United Kingdom	6172.0
-2022-10-23	United Kingdom	5845.0
-2022-10-24	United Kingdom	4587.0
-2022-10-25	United Kingdom	5064.0
-2022-10-26	United Kingdom	6246.0
-2022-10-27	United Kingdom	5255.0
-2022-10-28	United Kingdom	5006.0
-2022-10-29	United Kingdom	4455.0
-2022-10-30	United Kingdom	3995.0
-2022-10-31	United Kingdom	3276.0
-2022-11-01	United Kingdom	3892.0
+2022-07-21	United Kingdom	16670.0
+2022-07-22	United Kingdom	16170.0
+2022-07-23	United Kingdom	14158.0
+2022-07-24	United Kingdom	12377.0
+2022-07-25	United Kingdom	9934.0
+2022-07-26	United Kingdom	11275.0
+2022-07-27	United Kingdom	13299.0
+2022-07-28	United Kingdom	11725.0
+2022-07-29	United Kingdom	10544.0
+2022-07-30	United Kingdom	9330.0
+2022-07-31	United Kingdom	8507.0
+2022-08-01	United Kingdom	7326.0
+2022-08-02	United Kingdom	8426.0
+2022-08-03	United Kingdom	9836.0
+2022-08-04	United Kingdom	9171.0
+2022-08-05	United Kingdom	8355.0
+2022-08-06	United Kingdom	7296.0
+2022-08-07	United Kingdom	6549.0
+2022-08-08	United Kingdom	5420.0
+2022-08-09	United Kingdom	6547.0
+2022-08-10	United Kingdom	8067.0
+2022-08-11	United Kingdom	7309.0
+2022-08-12	United Kingdom	6748.0
+2022-08-13	United Kingdom	6193.0
+2022-08-14	United Kingdom	5336.0
+2022-08-15	United Kingdom	4494.0
+2022-08-16	United Kingdom	5363.0
+2022-08-17	United Kingdom	6417.0
+2022-08-18	United Kingdom	5546.0
+2022-08-19	United Kingdom	5001.0
+2022-08-20	United Kingdom	4455.0
+2022-08-21	United Kingdom	3837.0
+2022-08-22	United Kingdom	3287.0
+2022-08-23	United Kingdom	4085.0
+2022-08-24	United Kingdom	5224.0
+2022-08-25	United Kingdom	4779.0
+2022-08-26	United Kingdom	4554.0
+2022-08-27	United Kingdom	3796.0
+2022-08-28	United Kingdom	3451.0
+2022-08-29	United Kingdom	3112.0
+2022-08-30	United Kingdom	3439.0
+2022-08-31	United Kingdom	4663.0
+2022-09-01	United Kingdom	5226.0
+2022-09-02	United Kingdom	4616.0
+2022-09-03	United Kingdom	4350.0
+2022-09-04	United Kingdom	3808.0
+2022-09-05	United Kingdom	3417.0
+2022-09-06	United Kingdom	4288.0
+2022-09-07	United Kingdom	5125.0
+2022-09-08	United Kingdom	4579.0
+2022-09-09	United Kingdom	4236.0
+2022-09-10	United Kingdom	3747.0
+2022-09-11	United Kingdom	3553.0
+2022-09-12	United Kingdom	3268.0
+2022-09-13	United Kingdom	4346.0
+2022-09-14	United Kingdom	5299.0
+2022-09-15	United Kingdom	5150.0
+2022-09-16	United Kingdom	4971.0
+2022-09-17	United Kingdom	4635.0
+2022-09-18	United Kingdom	4134.0
+2022-09-19	United Kingdom	3521.0
+2022-09-20	United Kingdom	4339.0
+2022-09-21	United Kingdom	6166.0
+2022-09-22	United Kingdom	7828.0
+2022-09-23	United Kingdom	7553.0
+2022-09-24	United Kingdom	6815.0
+2022-09-25	United Kingdom	6485.0
+2022-09-26	United Kingdom	5719.0
+2022-09-27	United Kingdom	7241.0
+2022-09-28	United Kingdom	8616.0
+2022-09-29	United Kingdom	8251.0
+2022-09-30	United Kingdom	8415.0
+2022-10-01	United Kingdom	7895.0
+2022-10-02	United Kingdom	7614.0
+2022-10-03	United Kingdom	7065.0
+2022-10-04	United Kingdom	9198.0
+2022-10-05	United Kingdom	11692.0
+2022-10-06	United Kingdom	10965.0
+2022-10-07	United Kingdom	10230.0
+2022-10-08	United Kingdom	9388.0
+2022-10-09	United Kingdom	8951.0
+2022-10-10	United Kingdom	7053.0
+2022-10-11	United Kingdom	8558.0
+2022-10-12	United Kingdom	10495.0
+2022-10-13	United Kingdom	9459.0
+2022-10-14	United Kingdom	8764.0
+2022-10-15	United Kingdom	8132.0
+2022-10-16	United Kingdom	7969.0
+2022-10-17	United Kingdom	6442.0
+2022-10-18	United Kingdom	7780.0
+2022-10-19	United Kingdom	9996.0
+2022-10-20	United Kingdom	8233.0
+2022-10-21	United Kingdom	7597.0
+2022-10-22	United Kingdom	6577.0
+2022-10-23	United Kingdom	6298.0
+2022-10-24	United Kingdom	4968.0
+2022-10-25	United Kingdom	5523.0
+2022-10-26	United Kingdom	6806.0
+2022-10-27	United Kingdom	5663.0
+2022-10-28	United Kingdom	5448.0
+2022-10-29	United Kingdom	4857.0
+2022-10-30	United Kingdom	4400.0
+2022-10-31	United Kingdom	3583.0
+2022-11-01	United Kingdom	4271.0
 2022-07-21	USA	179375.0
 2022-07-22	USA	158884.0
 2022-07-23	USA	148445.0
