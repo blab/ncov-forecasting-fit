@@ -1202,6 +1202,7 @@ date	location	cases
 2023-04-17	Australia	0.0
 2023-04-18	Australia	0.0
 2023-04-19	Australia	0.0
+2023-04-20	Australia	0.0
 2020-01-03	Brazil	0.0
 2020-01-04	Brazil	0.0
 2020-01-05	Brazil	0.0
@@ -3608,6 +3609,7 @@ date	location	cases
 2023-04-17	Japan	7028.0
 2023-04-18	Japan	0.0
 2023-04-19	Japan	0.0
+2023-04-20	Japan	0.0
 2020-01-03	South Africa	0.0
 2020-01-04	South Africa	0.0
 2020-01-05	South Africa	0.0
@@ -7217,3 +7219,6 @@ date	location	cases
 2023-04-17	USA	0.0
 2023-04-18	USA	0.0
 2023-04-19	USA	0.0
+2023-04-20	USA	0.0
+2023-04-21	USA	0.0
+2023-04-22	USA	0.0

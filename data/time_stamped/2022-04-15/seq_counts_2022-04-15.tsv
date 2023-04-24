@@ -1,0 +1,1704 @@
+date	location	variant	sequences
+2022-01-02	Australia	Delta	33
+2022-01-03	Australia	Delta	31
+2022-01-04	Australia	Delta	32
+2022-01-05	Australia	Delta	20
+2022-01-06	Australia	Delta	13
+2022-01-07	Australia	Delta	16
+2022-01-08	Australia	Delta	16
+2022-01-09	Australia	Delta	24
+2022-01-10	Australia	Delta	16
+2022-01-11	Australia	Delta	25
+2022-01-12	Australia	Delta	10
+2022-01-13	Australia	Delta	12
+2022-01-14	Australia	Delta	11
+2022-01-15	Australia	Delta	9
+2022-01-16	Australia	Delta	3
+2022-01-17	Australia	Delta	10
+2022-01-18	Australia	Delta	4
+2022-01-19	Australia	Delta	6
+2022-01-20	Australia	Delta	5
+2022-01-21	Australia	Delta	5
+2022-01-22	Australia	Delta	1
+2022-01-23	Australia	Delta	1
+2022-01-24	Australia	Delta	2
+2022-01-25	Australia	Delta	1
+2022-01-26	Australia	Delta	4
+2022-01-27	Australia	Delta	1
+2022-01-28	Australia	Delta	1
+2022-01-30	Australia	Delta	2
+2022-01-31	Australia	Delta	1
+2022-02-01	Australia	Delta	1
+2022-02-02	Australia	Delta	1
+2022-02-05	Australia	Delta	1
+2022-02-13	Australia	Delta	1
+2022-02-15	Australia	Delta	1
+2022-03-07	Australia	Delta	1
+2022-01-02	Australia	Omicron 21K	357
+2022-01-03	Australia	Omicron 21K	652
+2022-01-04	Australia	Omicron 21K	1002
+2022-01-05	Australia	Omicron 21K	427
+2022-01-06	Australia	Omicron 21K	448
+2022-01-07	Australia	Omicron 21K	370
+2022-01-08	Australia	Omicron 21K	300
+2022-01-09	Australia	Omicron 21K	454
+2022-01-10	Australia	Omicron 21K	351
+2022-01-11	Australia	Omicron 21K	604
+2022-01-12	Australia	Omicron 21K	421
+2022-01-13	Australia	Omicron 21K	334
+2022-01-14	Australia	Omicron 21K	290
+2022-01-15	Australia	Omicron 21K	397
+2022-01-16	Australia	Omicron 21K	253
+2022-01-17	Australia	Omicron 21K	461
+2022-01-18	Australia	Omicron 21K	423
+2022-01-19	Australia	Omicron 21K	274
+2022-01-20	Australia	Omicron 21K	254
+2022-01-21	Australia	Omicron 21K	240
+2022-01-22	Australia	Omicron 21K	186
+2022-01-23	Australia	Omicron 21K	260
+2022-01-24	Australia	Omicron 21K	266
+2022-01-25	Australia	Omicron 21K	231
+2022-01-26	Australia	Omicron 21K	155
+2022-01-27	Australia	Omicron 21K	269
+2022-01-28	Australia	Omicron 21K	293
+2022-01-29	Australia	Omicron 21K	280
+2022-01-30	Australia	Omicron 21K	319
+2022-01-31	Australia	Omicron 21K	222
+2022-02-01	Australia	Omicron 21K	282
+2022-02-02	Australia	Omicron 21K	217
+2022-02-03	Australia	Omicron 21K	238
+2022-02-04	Australia	Omicron 21K	246
+2022-02-05	Australia	Omicron 21K	244
+2022-02-06	Australia	Omicron 21K	381
+2022-02-07	Australia	Omicron 21K	379
+2022-02-08	Australia	Omicron 21K	502
+2022-02-09	Australia	Omicron 21K	459
+2022-02-10	Australia	Omicron 21K	420
+2022-02-11	Australia	Omicron 21K	256
+2022-02-12	Australia	Omicron 21K	165
+2022-02-13	Australia	Omicron 21K	227
+2022-02-14	Australia	Omicron 21K	320
+2022-02-15	Australia	Omicron 21K	252
+2022-02-16	Australia	Omicron 21K	178
+2022-02-17	Australia	Omicron 21K	213
+2022-02-18	Australia	Omicron 21K	135
+2022-02-19	Australia	Omicron 21K	110
+2022-02-20	Australia	Omicron 21K	195
+2022-02-21	Australia	Omicron 21K	209
+2022-02-22	Australia	Omicron 21K	195
+2022-02-23	Australia	Omicron 21K	170
+2022-02-24	Australia	Omicron 21K	267
+2022-02-25	Australia	Omicron 21K	145
+2022-02-26	Australia	Omicron 21K	128
+2022-02-27	Australia	Omicron 21K	157
+2022-02-28	Australia	Omicron 21K	182
+2022-03-01	Australia	Omicron 21K	192
+2022-03-02	Australia	Omicron 21K	248
+2022-03-03	Australia	Omicron 21K	226
+2022-03-04	Australia	Omicron 21K	149
+2022-03-05	Australia	Omicron 21K	90
+2022-03-06	Australia	Omicron 21K	138
+2022-03-07	Australia	Omicron 21K	162
+2022-03-08	Australia	Omicron 21K	103
+2022-03-09	Australia	Omicron 21K	150
+2022-03-10	Australia	Omicron 21K	174
+2022-03-11	Australia	Omicron 21K	82
+2022-03-12	Australia	Omicron 21K	46
+2022-03-13	Australia	Omicron 21K	82
+2022-03-14	Australia	Omicron 21K	145
+2022-03-15	Australia	Omicron 21K	110
+2022-03-16	Australia	Omicron 21K	110
+2022-03-17	Australia	Omicron 21K	114
+2022-03-18	Australia	Omicron 21K	72
+2022-03-19	Australia	Omicron 21K	25
+2022-03-20	Australia	Omicron 21K	35
+2022-03-21	Australia	Omicron 21K	49
+2022-03-22	Australia	Omicron 21K	40
+2022-03-23	Australia	Omicron 21K	44
+2022-03-24	Australia	Omicron 21K	45
+2022-03-25	Australia	Omicron 21K	24
+2022-03-26	Australia	Omicron 21K	23
+2022-03-27	Australia	Omicron 21K	20
+2022-03-28	Australia	Omicron 21K	23
+2022-03-29	Australia	Omicron 21K	15
+2022-03-30	Australia	Omicron 21K	28
+2022-03-31	Australia	Omicron 21K	10
+2022-04-01	Australia	Omicron 21K	12
+2022-01-02	Australia	Omicron 21L	1
+2022-01-03	Australia	Omicron 21L	1
+2022-01-04	Australia	Omicron 21L	5
+2022-01-05	Australia	Omicron 21L	2
+2022-01-07	Australia	Omicron 21L	1
+2022-01-08	Australia	Omicron 21L	1
+2022-01-09	Australia	Omicron 21L	3
+2022-01-10	Australia	Omicron 21L	3
+2022-01-11	Australia	Omicron 21L	10
+2022-01-12	Australia	Omicron 21L	3
+2022-01-13	Australia	Omicron 21L	9
+2022-01-14	Australia	Omicron 21L	18
+2022-01-15	Australia	Omicron 21L	11
+2022-01-16	Australia	Omicron 21L	6
+2022-01-17	Australia	Omicron 21L	2
+2022-01-18	Australia	Omicron 21L	12
+2022-01-19	Australia	Omicron 21L	14
+2022-01-20	Australia	Omicron 21L	3
+2022-01-21	Australia	Omicron 21L	4
+2022-01-22	Australia	Omicron 21L	5
+2022-01-23	Australia	Omicron 21L	11
+2022-01-24	Australia	Omicron 21L	12
+2022-01-25	Australia	Omicron 21L	15
+2022-01-26	Australia	Omicron 21L	20
+2022-01-27	Australia	Omicron 21L	16
+2022-01-28	Australia	Omicron 21L	13
+2022-01-29	Australia	Omicron 21L	13
+2022-01-30	Australia	Omicron 21L	27
+2022-01-31	Australia	Omicron 21L	5
+2022-02-01	Australia	Omicron 21L	12
+2022-02-02	Australia	Omicron 21L	15
+2022-02-03	Australia	Omicron 21L	25
+2022-02-04	Australia	Omicron 21L	7
+2022-02-05	Australia	Omicron 21L	9
+2022-02-06	Australia	Omicron 21L	48
+2022-02-07	Australia	Omicron 21L	16
+2022-02-08	Australia	Omicron 21L	37
+2022-02-09	Australia	Omicron 21L	52
+2022-02-10	Australia	Omicron 21L	53
+2022-02-11	Australia	Omicron 21L	27
+2022-02-12	Australia	Omicron 21L	57
+2022-02-13	Australia	Omicron 21L	103
+2022-02-14	Australia	Omicron 21L	44
+2022-02-15	Australia	Omicron 21L	52
+2022-02-16	Australia	Omicron 21L	45
+2022-02-17	Australia	Omicron 21L	71
+2022-02-18	Australia	Omicron 21L	22
+2022-02-19	Australia	Omicron 21L	31
+2022-02-20	Australia	Omicron 21L	61
+2022-02-21	Australia	Omicron 21L	64
+2022-02-22	Australia	Omicron 21L	78
+2022-02-23	Australia	Omicron 21L	57
+2022-02-24	Australia	Omicron 21L	60
+2022-02-25	Australia	Omicron 21L	57
+2022-02-26	Australia	Omicron 21L	38
+2022-02-27	Australia	Omicron 21L	76
+2022-02-28	Australia	Omicron 21L	76
+2022-03-01	Australia	Omicron 21L	153
+2022-03-02	Australia	Omicron 21L	147
+2022-03-03	Australia	Omicron 21L	132
+2022-03-04	Australia	Omicron 21L	107
+2022-03-05	Australia	Omicron 21L	89
+2022-03-06	Australia	Omicron 21L	149
+2022-03-07	Australia	Omicron 21L	144
+2022-03-08	Australia	Omicron 21L	191
+2022-03-09	Australia	Omicron 21L	246
+2022-03-10	Australia	Omicron 21L	244
+2022-03-11	Australia	Omicron 21L	230
+2022-03-12	Australia	Omicron 21L	128
+2022-03-13	Australia	Omicron 21L	234
+2022-03-14	Australia	Omicron 21L	348
+2022-03-15	Australia	Omicron 21L	408
+2022-03-16	Australia	Omicron 21L	357
+2022-03-17	Australia	Omicron 21L	393
+2022-03-18	Australia	Omicron 21L	246
+2022-03-19	Australia	Omicron 21L	149
+2022-03-20	Australia	Omicron 21L	210
+2022-03-21	Australia	Omicron 21L	278
+2022-03-22	Australia	Omicron 21L	257
+2022-03-23	Australia	Omicron 21L	201
+2022-03-24	Australia	Omicron 21L	236
+2022-03-25	Australia	Omicron 21L	128
+2022-03-26	Australia	Omicron 21L	173
+2022-03-27	Australia	Omicron 21L	184
+2022-03-28	Australia	Omicron 21L	261
+2022-03-29	Australia	Omicron 21L	263
+2022-03-30	Australia	Omicron 21L	247
+2022-03-31	Australia	Omicron 21L	120
+2022-04-01	Australia	Omicron 21L	88
+2022-01-24	Australia	Omicron 22C	1
+2022-01-02	Australia	other	1
+2022-01-04	Australia	other	1
+2022-01-07	Australia	other	1
+2022-01-08	Australia	other	2
+2022-01-10	Australia	other	3
+2022-01-11	Australia	other	1
+2022-01-12	Australia	other	1
+2022-01-19	Australia	other	1
+2022-01-21	Australia	other	1
+2022-02-08	Australia	other	1
+2022-02-10	Australia	other	1
+2022-02-11	Australia	other	1
+2022-02-13	Australia	other	1
+2022-02-15	Australia	other	1
+2022-02-22	Australia	other	1
+2022-02-23	Australia	other	2
+2022-02-24	Australia	other	3
+2022-02-25	Australia	other	7
+2022-02-26	Australia	other	6
+2022-02-27	Australia	other	2
+2022-02-28	Australia	other	6
+2022-03-03	Australia	other	4
+2022-03-06	Australia	other	1
+2022-03-07	Australia	other	7
+2022-03-08	Australia	other	1
+2022-03-09	Australia	other	31
+2022-03-13	Australia	other	1
+2022-03-14	Australia	other	1
+2022-03-15	Australia	other	1
+2022-03-17	Australia	other	1
+2022-03-22	Australia	other	1
+2022-03-24	Australia	other	1
+2022-03-29	Australia	other	1
+2022-01-02	Brazil	Delta	10
+2022-01-03	Brazil	Delta	60
+2022-01-04	Brazil	Delta	48
+2022-01-05	Brazil	Delta	37
+2022-01-06	Brazil	Delta	28
+2022-01-07	Brazil	Delta	28
+2022-01-08	Brazil	Delta	7
+2022-01-09	Brazil	Delta	5
+2022-01-10	Brazil	Delta	17
+2022-01-11	Brazil	Delta	15
+2022-01-12	Brazil	Delta	9
+2022-01-13	Brazil	Delta	6
+2022-01-14	Brazil	Delta	2
+2022-01-15	Brazil	Delta	3
+2022-01-16	Brazil	Delta	1
+2022-01-17	Brazil	Delta	8
+2022-01-18	Brazil	Delta	1
+2022-01-19	Brazil	Delta	2
+2022-01-20	Brazil	Delta	2
+2022-01-21	Brazil	Delta	2
+2022-01-24	Brazil	Delta	2
+2022-01-25	Brazil	Delta	1
+2022-01-26	Brazil	Delta	4
+2022-01-28	Brazil	Delta	1
+2022-01-29	Brazil	Delta	1
+2022-01-30	Brazil	Delta	1
+2022-01-31	Brazil	Delta	1
+2022-02-02	Brazil	Delta	1
+2022-02-04	Brazil	Delta	1
+2022-02-05	Brazil	Delta	3
+2022-02-10	Brazil	Delta	1
+2022-03-04	Brazil	Delta	1
+2022-03-10	Brazil	Delta	1
+2022-01-02	Brazil	Omicron 21K	214
+2022-01-03	Brazil	Omicron 21K	800
+2022-01-04	Brazil	Omicron 21K	939
+2022-01-05	Brazil	Omicron 21K	959
+2022-01-06	Brazil	Omicron 21K	958
+2022-01-07	Brazil	Omicron 21K	765
+2022-01-08	Brazil	Omicron 21K	304
+2022-01-09	Brazil	Omicron 21K	275
+2022-01-10	Brazil	Omicron 21K	1145
+2022-01-11	Brazil	Omicron 21K	723
+2022-01-12	Brazil	Omicron 21K	704
+2022-01-13	Brazil	Omicron 21K	585
+2022-01-14	Brazil	Omicron 21K	420
+2022-01-15	Brazil	Omicron 21K	209
+2022-01-16	Brazil	Omicron 21K	133
+2022-01-17	Brazil	Omicron 21K	601
+2022-01-18	Brazil	Omicron 21K	637
+2022-01-19	Brazil	Omicron 21K	537
+2022-01-20	Brazil	Omicron 21K	403
+2022-01-21	Brazil	Omicron 21K	300
+2022-01-22	Brazil	Omicron 21K	145
+2022-01-23	Brazil	Omicron 21K	126
+2022-01-24	Brazil	Omicron 21K	487
+2022-01-25	Brazil	Omicron 21K	398
+2022-01-26	Brazil	Omicron 21K	406
+2022-01-27	Brazil	Omicron 21K	381
+2022-01-28	Brazil	Omicron 21K	643
+2022-01-29	Brazil	Omicron 21K	131
+2022-01-30	Brazil	Omicron 21K	470
+2022-01-31	Brazil	Omicron 21K	944
+2022-02-01	Brazil	Omicron 21K	402
+2022-02-02	Brazil	Omicron 21K	327
+2022-02-03	Brazil	Omicron 21K	324
+2022-02-04	Brazil	Omicron 21K	364
+2022-02-05	Brazil	Omicron 21K	501
+2022-02-06	Brazil	Omicron 21K	115
+2022-02-07	Brazil	Omicron 21K	582
+2022-02-08	Brazil	Omicron 21K	551
+2022-02-09	Brazil	Omicron 21K	392
+2022-02-10	Brazil	Omicron 21K	363
+2022-02-11	Brazil	Omicron 21K	263
+2022-02-12	Brazil	Omicron 21K	96
+2022-02-13	Brazil	Omicron 21K	139
+2022-02-14	Brazil	Omicron 21K	604
+2022-02-15	Brazil	Omicron 21K	284
+2022-02-16	Brazil	Omicron 21K	222
+2022-02-17	Brazil	Omicron 21K	204
+2022-02-18	Brazil	Omicron 21K	184
+2022-02-19	Brazil	Omicron 21K	65
+2022-02-20	Brazil	Omicron 21K	66
+2022-02-21	Brazil	Omicron 21K	405
+2022-02-22	Brazil	Omicron 21K	263
+2022-02-23	Brazil	Omicron 21K	219
+2022-02-24	Brazil	Omicron 21K	167
+2022-02-25	Brazil	Omicron 21K	78
+2022-02-26	Brazil	Omicron 21K	26
+2022-02-27	Brazil	Omicron 21K	29
+2022-02-28	Brazil	Omicron 21K	98
+2022-03-01	Brazil	Omicron 21K	75
+2022-03-02	Brazil	Omicron 21K	169
+2022-03-03	Brazil	Omicron 21K	181
+2022-03-04	Brazil	Omicron 21K	128
+2022-03-05	Brazil	Omicron 21K	57
+2022-03-06	Brazil	Omicron 21K	42
+2022-03-07	Brazil	Omicron 21K	184
+2022-03-08	Brazil	Omicron 21K	110
+2022-03-09	Brazil	Omicron 21K	92
+2022-03-10	Brazil	Omicron 21K	104
+2022-03-11	Brazil	Omicron 21K	85
+2022-03-12	Brazil	Omicron 21K	42
+2022-03-13	Brazil	Omicron 21K	21
+2022-03-14	Brazil	Omicron 21K	90
+2022-03-15	Brazil	Omicron 21K	55
+2022-03-16	Brazil	Omicron 21K	53
+2022-03-17	Brazil	Omicron 21K	36
+2022-03-18	Brazil	Omicron 21K	31
+2022-03-19	Brazil	Omicron 21K	14
+2022-03-20	Brazil	Omicron 21K	10
+2022-03-21	Brazil	Omicron 21K	32
+2022-03-22	Brazil	Omicron 21K	24
+2022-03-23	Brazil	Omicron 21K	22
+2022-03-24	Brazil	Omicron 21K	18
+2022-03-25	Brazil	Omicron 21K	13
+2022-03-26	Brazil	Omicron 21K	4
+2022-03-27	Brazil	Omicron 21K	4
+2022-03-28	Brazil	Omicron 21K	2
+2022-03-29	Brazil	Omicron 21K	4
+2022-03-30	Brazil	Omicron 21K	5
+2022-03-31	Brazil	Omicron 21K	8
+2022-04-01	Brazil	Omicron 21K	2
+2022-01-03	Brazil	Omicron 21L	1
+2022-01-08	Brazil	Omicron 21L	1
+2022-01-12	Brazil	Omicron 21L	1
+2022-01-17	Brazil	Omicron 21L	8
+2022-01-18	Brazil	Omicron 21L	8
+2022-01-19	Brazil	Omicron 21L	11
+2022-01-20	Brazil	Omicron 21L	3
+2022-01-21	Brazil	Omicron 21L	10
+2022-01-22	Brazil	Omicron 21L	6
+2022-01-23	Brazil	Omicron 21L	2
+2022-01-24	Brazil	Omicron 21L	5
+2022-01-25	Brazil	Omicron 21L	6
+2022-01-27	Brazil	Omicron 21L	2
+2022-01-28	Brazil	Omicron 21L	5
+2022-01-29	Brazil	Omicron 21L	1
+2022-01-30	Brazil	Omicron 21L	1
+2022-01-31	Brazil	Omicron 21L	1
+2022-02-01	Brazil	Omicron 21L	6
+2022-02-02	Brazil	Omicron 21L	2
+2022-02-03	Brazil	Omicron 21L	2
+2022-02-04	Brazil	Omicron 21L	1
+2022-02-07	Brazil	Omicron 21L	11
+2022-02-08	Brazil	Omicron 21L	1
+2022-02-09	Brazil	Omicron 21L	6
+2022-02-10	Brazil	Omicron 21L	3
+2022-02-11	Brazil	Omicron 21L	3
+2022-02-12	Brazil	Omicron 21L	1
+2022-02-13	Brazil	Omicron 21L	2
+2022-02-14	Brazil	Omicron 21L	2
+2022-02-15	Brazil	Omicron 21L	5
+2022-02-16	Brazil	Omicron 21L	4
+2022-02-17	Brazil	Omicron 21L	4
+2022-02-18	Brazil	Omicron 21L	4
+2022-02-19	Brazil	Omicron 21L	5
+2022-02-20	Brazil	Omicron 21L	1
+2022-02-21	Brazil	Omicron 21L	6
+2022-02-22	Brazil	Omicron 21L	5
+2022-02-23	Brazil	Omicron 21L	4
+2022-02-24	Brazil	Omicron 21L	3
+2022-02-25	Brazil	Omicron 21L	5
+2022-02-26	Brazil	Omicron 21L	1
+2022-02-27	Brazil	Omicron 21L	1
+2022-02-28	Brazil	Omicron 21L	12
+2022-03-01	Brazil	Omicron 21L	2
+2022-03-02	Brazil	Omicron 21L	8
+2022-03-03	Brazil	Omicron 21L	13
+2022-03-04	Brazil	Omicron 21L	5
+2022-03-05	Brazil	Omicron 21L	1
+2022-03-07	Brazil	Omicron 21L	13
+2022-03-08	Brazil	Omicron 21L	14
+2022-03-09	Brazil	Omicron 21L	7
+2022-03-10	Brazil	Omicron 21L	10
+2022-03-11	Brazil	Omicron 21L	13
+2022-03-12	Brazil	Omicron 21L	9
+2022-03-13	Brazil	Omicron 21L	3
+2022-03-14	Brazil	Omicron 21L	11
+2022-03-15	Brazil	Omicron 21L	4
+2022-03-16	Brazil	Omicron 21L	6
+2022-03-17	Brazil	Omicron 21L	4
+2022-03-18	Brazil	Omicron 21L	7
+2022-03-19	Brazil	Omicron 21L	3
+2022-03-20	Brazil	Omicron 21L	4
+2022-03-21	Brazil	Omicron 21L	8
+2022-03-22	Brazil	Omicron 21L	6
+2022-03-23	Brazil	Omicron 21L	9
+2022-03-24	Brazil	Omicron 21L	3
+2022-03-25	Brazil	Omicron 21L	4
+2022-03-26	Brazil	Omicron 21L	2
+2022-03-27	Brazil	Omicron 21L	3
+2022-03-28	Brazil	Omicron 21L	6
+2022-03-29	Brazil	Omicron 21L	2
+2022-03-30	Brazil	Omicron 21L	10
+2022-03-31	Brazil	Omicron 21L	7
+2022-04-01	Brazil	Omicron 21L	9
+2022-01-10	Brazil	other	2
+2022-01-20	Brazil	other	2
+2022-02-05	Brazil	other	1
+2022-02-16	Brazil	other	1
+2022-03-07	Brazil	other	1
+2022-01-02	Japan	Delta	54
+2022-01-03	Japan	Delta	73
+2022-01-04	Japan	Delta	134
+2022-01-05	Japan	Delta	144
+2022-01-06	Japan	Delta	142
+2022-01-07	Japan	Delta	165
+2022-01-08	Japan	Delta	119
+2022-01-09	Japan	Delta	51
+2022-01-10	Japan	Delta	44
+2022-01-11	Japan	Delta	144
+2022-01-12	Japan	Delta	91
+2022-01-13	Japan	Delta	109
+2022-01-14	Japan	Delta	74
+2022-01-15	Japan	Delta	48
+2022-01-16	Japan	Delta	19
+2022-01-17	Japan	Delta	59
+2022-01-18	Japan	Delta	39
+2022-01-19	Japan	Delta	26
+2022-01-20	Japan	Delta	18
+2022-01-21	Japan	Delta	13
+2022-01-22	Japan	Delta	16
+2022-01-23	Japan	Delta	8
+2022-01-24	Japan	Delta	20
+2022-01-25	Japan	Delta	24
+2022-01-26	Japan	Delta	9
+2022-01-27	Japan	Delta	20
+2022-01-28	Japan	Delta	12
+2022-01-29	Japan	Delta	10
+2022-01-30	Japan	Delta	3
+2022-01-31	Japan	Delta	5
+2022-02-01	Japan	Delta	13
+2022-02-02	Japan	Delta	5
+2022-02-03	Japan	Delta	9
+2022-02-04	Japan	Delta	5
+2022-02-05	Japan	Delta	3
+2022-02-06	Japan	Delta	1
+2022-02-07	Japan	Delta	4
+2022-02-08	Japan	Delta	3
+2022-02-09	Japan	Delta	2
+2022-02-10	Japan	Delta	2
+2022-02-11	Japan	Delta	1
+2022-02-12	Japan	Delta	9
+2022-02-14	Japan	Delta	3
+2022-02-15	Japan	Delta	2
+2022-02-17	Japan	Delta	2
+2022-02-21	Japan	Delta	1
+2022-02-22	Japan	Delta	2
+2022-02-23	Japan	Delta	1
+2022-02-24	Japan	Delta	2
+2022-02-25	Japan	Delta	1
+2022-02-28	Japan	Delta	1
+2022-03-02	Japan	Delta	3
+2022-03-10	Japan	Delta	1
+2022-03-14	Japan	Delta	1
+2022-01-02	Japan	Omicron 21K	266
+2022-01-03	Japan	Omicron 21K	434
+2022-01-04	Japan	Omicron 21K	743
+2022-01-05	Japan	Omicron 21K	899
+2022-01-06	Japan	Omicron 21K	1191
+2022-01-07	Japan	Omicron 21K	1402
+2022-01-08	Japan	Omicron 21K	1114
+2022-01-09	Japan	Omicron 21K	639
+2022-01-10	Japan	Omicron 21K	688
+2022-01-11	Japan	Omicron 21K	2157
+2022-01-12	Japan	Omicron 21K	1974
+2022-01-13	Japan	Omicron 21K	2555
+2022-01-14	Japan	Omicron 21K	2304
+2022-01-15	Japan	Omicron 21K	1694
+2022-01-16	Japan	Omicron 21K	458
+2022-01-17	Japan	Omicron 21K	3466
+2022-01-18	Japan	Omicron 21K	2308
+2022-01-19	Japan	Omicron 21K	2385
+2022-01-20	Japan	Omicron 21K	1035
+2022-01-21	Japan	Omicron 21K	1041
+2022-01-22	Japan	Omicron 21K	856
+2022-01-23	Japan	Omicron 21K	466
+2022-01-24	Japan	Omicron 21K	1181
+2022-01-25	Japan	Omicron 21K	1371
+2022-01-26	Japan	Omicron 21K	815
+2022-01-27	Japan	Omicron 21K	1124
+2022-01-28	Japan	Omicron 21K	745
+2022-01-29	Japan	Omicron 21K	958
+2022-01-30	Japan	Omicron 21K	318
+2022-01-31	Japan	Omicron 21K	858
+2022-02-01	Japan	Omicron 21K	1201
+2022-02-02	Japan	Omicron 21K	633
+2022-02-03	Japan	Omicron 21K	1011
+2022-02-04	Japan	Omicron 21K	541
+2022-02-05	Japan	Omicron 21K	659
+2022-02-06	Japan	Omicron 21K	225
+2022-02-07	Japan	Omicron 21K	685
+2022-02-08	Japan	Omicron 21K	817
+2022-02-09	Japan	Omicron 21K	463
+2022-02-10	Japan	Omicron 21K	777
+2022-02-11	Japan	Omicron 21K	358
+2022-02-12	Japan	Omicron 21K	645
+2022-02-13	Japan	Omicron 21K	254
+2022-02-14	Japan	Omicron 21K	629
+2022-02-15	Japan	Omicron 21K	798
+2022-02-16	Japan	Omicron 21K	470
+2022-02-17	Japan	Omicron 21K	730
+2022-02-18	Japan	Omicron 21K	511
+2022-02-19	Japan	Omicron 21K	546
+2022-02-20	Japan	Omicron 21K	222
+2022-02-21	Japan	Omicron 21K	414
+2022-02-22	Japan	Omicron 21K	714
+2022-02-23	Japan	Omicron 21K	235
+2022-02-24	Japan	Omicron 21K	703
+2022-02-25	Japan	Omicron 21K	381
+2022-02-26	Japan	Omicron 21K	540
+2022-02-27	Japan	Omicron 21K	150
+2022-02-28	Japan	Omicron 21K	490
+2022-03-01	Japan	Omicron 21K	561
+2022-03-02	Japan	Omicron 21K	374
+2022-03-03	Japan	Omicron 21K	579
+2022-03-04	Japan	Omicron 21K	348
+2022-03-05	Japan	Omicron 21K	447
+2022-03-06	Japan	Omicron 21K	183
+2022-03-07	Japan	Omicron 21K	298
+2022-03-08	Japan	Omicron 21K	377
+2022-03-09	Japan	Omicron 21K	156
+2022-03-10	Japan	Omicron 21K	292
+2022-03-11	Japan	Omicron 21K	73
+2022-03-12	Japan	Omicron 21K	228
+2022-03-13	Japan	Omicron 21K	63
+2022-03-14	Japan	Omicron 21K	67
+2022-03-15	Japan	Omicron 21K	173
+2022-03-16	Japan	Omicron 21K	31
+2022-03-17	Japan	Omicron 21K	10
+2022-03-19	Japan	Omicron 21K	3
+2022-03-20	Japan	Omicron 21K	2
+2022-03-21	Japan	Omicron 21K	2
+2022-03-22	Japan	Omicron 21K	4
+2022-03-23	Japan	Omicron 21K	8
+2022-03-24	Japan	Omicron 21K	2
+2022-03-25	Japan	Omicron 21K	5
+2022-03-29	Japan	Omicron 21K	2
+2022-03-30	Japan	Omicron 21K	4
+2022-03-31	Japan	Omicron 21K	5
+2022-04-01	Japan	Omicron 21K	2
+2022-01-02	Japan	Omicron 21L	3
+2022-01-03	Japan	Omicron 21L	2
+2022-01-04	Japan	Omicron 21L	1
+2022-01-05	Japan	Omicron 21L	11
+2022-01-06	Japan	Omicron 21L	8
+2022-01-07	Japan	Omicron 21L	10
+2022-01-08	Japan	Omicron 21L	8
+2022-01-09	Japan	Omicron 21L	2
+2022-01-10	Japan	Omicron 21L	8
+2022-01-11	Japan	Omicron 21L	11
+2022-01-12	Japan	Omicron 21L	8
+2022-01-13	Japan	Omicron 21L	11
+2022-01-14	Japan	Omicron 21L	6
+2022-01-15	Japan	Omicron 21L	15
+2022-01-16	Japan	Omicron 21L	3
+2022-01-17	Japan	Omicron 21L	19
+2022-01-18	Japan	Omicron 21L	13
+2022-01-19	Japan	Omicron 21L	9
+2022-01-20	Japan	Omicron 21L	8
+2022-01-21	Japan	Omicron 21L	6
+2022-01-22	Japan	Omicron 21L	5
+2022-01-24	Japan	Omicron 21L	5
+2022-01-25	Japan	Omicron 21L	5
+2022-01-26	Japan	Omicron 21L	6
+2022-01-27	Japan	Omicron 21L	7
+2022-01-28	Japan	Omicron 21L	2
+2022-01-29	Japan	Omicron 21L	8
+2022-01-31	Japan	Omicron 21L	6
+2022-02-01	Japan	Omicron 21L	11
+2022-02-02	Japan	Omicron 21L	4
+2022-02-03	Japan	Omicron 21L	10
+2022-02-04	Japan	Omicron 21L	6
+2022-02-05	Japan	Omicron 21L	15
+2022-02-06	Japan	Omicron 21L	1
+2022-02-07	Japan	Omicron 21L	5
+2022-02-08	Japan	Omicron 21L	28
+2022-02-09	Japan	Omicron 21L	13
+2022-02-10	Japan	Omicron 21L	22
+2022-02-11	Japan	Omicron 21L	7
+2022-02-12	Japan	Omicron 21L	31
+2022-02-13	Japan	Omicron 21L	7
+2022-02-14	Japan	Omicron 21L	26
+2022-02-15	Japan	Omicron 21L	50
+2022-02-16	Japan	Omicron 21L	10
+2022-02-17	Japan	Omicron 21L	44
+2022-02-18	Japan	Omicron 21L	14
+2022-02-19	Japan	Omicron 21L	42
+2022-02-20	Japan	Omicron 21L	6
+2022-02-21	Japan	Omicron 21L	51
+2022-02-22	Japan	Omicron 21L	77
+2022-02-23	Japan	Omicron 21L	10
+2022-02-24	Japan	Omicron 21L	74
+2022-02-25	Japan	Omicron 21L	32
+2022-02-26	Japan	Omicron 21L	84
+2022-02-27	Japan	Omicron 21L	17
+2022-02-28	Japan	Omicron 21L	49
+2022-03-01	Japan	Omicron 21L	86
+2022-03-02	Japan	Omicron 21L	45
+2022-03-03	Japan	Omicron 21L	110
+2022-03-04	Japan	Omicron 21L	54
+2022-03-05	Japan	Omicron 21L	106
+2022-03-06	Japan	Omicron 21L	23
+2022-03-07	Japan	Omicron 21L	54
+2022-03-08	Japan	Omicron 21L	154
+2022-03-09	Japan	Omicron 21L	38
+2022-03-10	Japan	Omicron 21L	183
+2022-03-11	Japan	Omicron 21L	31
+2022-03-12	Japan	Omicron 21L	164
+2022-03-13	Japan	Omicron 21L	9
+2022-03-14	Japan	Omicron 21L	21
+2022-03-15	Japan	Omicron 21L	166
+2022-03-16	Japan	Omicron 21L	17
+2022-03-17	Japan	Omicron 21L	7
+2022-03-18	Japan	Omicron 21L	1
+2022-03-19	Japan	Omicron 21L	1
+2022-03-21	Japan	Omicron 21L	2
+2022-03-22	Japan	Omicron 21L	2
+2022-03-23	Japan	Omicron 21L	2
+2022-03-24	Japan	Omicron 21L	2
+2022-03-25	Japan	Omicron 21L	1
+2022-03-26	Japan	Omicron 21L	4
+2022-03-27	Japan	Omicron 21L	1
+2022-03-28	Japan	Omicron 21L	5
+2022-03-29	Japan	Omicron 21L	5
+2022-03-30	Japan	Omicron 21L	3
+2022-03-31	Japan	Omicron 21L	4
+2022-04-01	Japan	Omicron 21L	2
+2022-03-17	Japan	other	1
+2022-03-22	Japan	other	1
+2022-01-05	South Africa	Delta	1
+2022-01-11	South Africa	Delta	1
+2022-01-12	South Africa	Delta	1
+2022-01-15	South Africa	Delta	1
+2022-01-16	South Africa	Delta	1
+2022-01-20	South Africa	Delta	1
+2022-01-25	South Africa	Delta	1
+2022-01-28	South Africa	Delta	1
+2022-01-31	South Africa	Delta	1
+2022-02-07	South Africa	Delta	1
+2022-02-16	South Africa	Delta	1
+2022-02-21	South Africa	Delta	1
+2022-02-25	South Africa	Delta	1
+2022-02-27	South Africa	Delta	1
+2022-03-05	South Africa	Delta	1
+2022-03-11	South Africa	Delta	1
+2022-03-15	South Africa	Delta	1
+2022-03-18	South Africa	Delta	1
+2022-01-02	South Africa	Omicron 21K	43
+2022-01-03	South Africa	Omicron 21K	136
+2022-01-04	South Africa	Omicron 21K	138
+2022-01-05	South Africa	Omicron 21K	98
+2022-01-06	South Africa	Omicron 21K	85
+2022-01-07	South Africa	Omicron 21K	71
+2022-01-08	South Africa	Omicron 21K	36
+2022-01-09	South Africa	Omicron 21K	29
+2022-01-10	South Africa	Omicron 21K	95
+2022-01-11	South Africa	Omicron 21K	66
+2022-01-12	South Africa	Omicron 21K	74
+2022-01-13	South Africa	Omicron 21K	51
+2022-01-14	South Africa	Omicron 21K	44
+2022-01-15	South Africa	Omicron 21K	28
+2022-01-16	South Africa	Omicron 21K	27
+2022-01-17	South Africa	Omicron 21K	100
+2022-01-18	South Africa	Omicron 21K	74
+2022-01-19	South Africa	Omicron 21K	43
+2022-01-20	South Africa	Omicron 21K	35
+2022-01-21	South Africa	Omicron 21K	19
+2022-01-22	South Africa	Omicron 21K	14
+2022-01-23	South Africa	Omicron 21K	11
+2022-01-24	South Africa	Omicron 21K	33
+2022-01-25	South Africa	Omicron 21K	29
+2022-01-26	South Africa	Omicron 21K	24
+2022-01-27	South Africa	Omicron 21K	26
+2022-01-28	South Africa	Omicron 21K	22
+2022-01-29	South Africa	Omicron 21K	12
+2022-01-30	South Africa	Omicron 21K	5
+2022-01-31	South Africa	Omicron 21K	19
+2022-02-01	South Africa	Omicron 21K	14
+2022-02-02	South Africa	Omicron 21K	10
+2022-02-03	South Africa	Omicron 21K	7
+2022-02-04	South Africa	Omicron 21K	13
+2022-02-05	South Africa	Omicron 21K	2
+2022-02-06	South Africa	Omicron 21K	1
+2022-02-07	South Africa	Omicron 21K	13
+2022-02-08	South Africa	Omicron 21K	9
+2022-02-09	South Africa	Omicron 21K	3
+2022-02-10	South Africa	Omicron 21K	10
+2022-02-11	South Africa	Omicron 21K	4
+2022-02-12	South Africa	Omicron 21K	1
+2022-02-14	South Africa	Omicron 21K	4
+2022-02-15	South Africa	Omicron 21K	2
+2022-02-16	South Africa	Omicron 21K	5
+2022-02-17	South Africa	Omicron 21K	6
+2022-02-18	South Africa	Omicron 21K	3
+2022-02-19	South Africa	Omicron 21K	2
+2022-02-20	South Africa	Omicron 21K	2
+2022-02-21	South Africa	Omicron 21K	8
+2022-02-22	South Africa	Omicron 21K	5
+2022-02-23	South Africa	Omicron 21K	5
+2022-02-24	South Africa	Omicron 21K	4
+2022-02-25	South Africa	Omicron 21K	1
+2022-02-26	South Africa	Omicron 21K	2
+2022-02-28	South Africa	Omicron 21K	5
+2022-03-01	South Africa	Omicron 21K	3
+2022-03-02	South Africa	Omicron 21K	2
+2022-03-04	South Africa	Omicron 21K	1
+2022-03-06	South Africa	Omicron 21K	1
+2022-03-07	South Africa	Omicron 21K	6
+2022-03-08	South Africa	Omicron 21K	7
+2022-03-09	South Africa	Omicron 21K	4
+2022-03-10	South Africa	Omicron 21K	4
+2022-03-11	South Africa	Omicron 21K	4
+2022-03-12	South Africa	Omicron 21K	1
+2022-03-13	South Africa	Omicron 21K	1
+2022-03-14	South Africa	Omicron 21K	5
+2022-03-15	South Africa	Omicron 21K	1
+2022-03-16	South Africa	Omicron 21K	3
+2022-03-17	South Africa	Omicron 21K	2
+2022-03-18	South Africa	Omicron 21K	2
+2022-03-22	South Africa	Omicron 21K	3
+2022-03-24	South Africa	Omicron 21K	5
+2022-03-25	South Africa	Omicron 21K	2
+2022-03-26	South Africa	Omicron 21K	1
+2022-03-29	South Africa	Omicron 21K	1
+2022-04-01	South Africa	Omicron 21K	2
+2022-01-02	South Africa	Omicron 21L	21
+2022-01-03	South Africa	Omicron 21L	41
+2022-01-04	South Africa	Omicron 21L	42
+2022-01-05	South Africa	Omicron 21L	38
+2022-01-06	South Africa	Omicron 21L	30
+2022-01-07	South Africa	Omicron 21L	32
+2022-01-08	South Africa	Omicron 21L	16
+2022-01-09	South Africa	Omicron 21L	8
+2022-01-10	South Africa	Omicron 21L	54
+2022-01-11	South Africa	Omicron 21L	22
+2022-01-12	South Africa	Omicron 21L	36
+2022-01-13	South Africa	Omicron 21L	34
+2022-01-14	South Africa	Omicron 21L	26
+2022-01-15	South Africa	Omicron 21L	22
+2022-01-16	South Africa	Omicron 21L	17
+2022-01-17	South Africa	Omicron 21L	78
+2022-01-18	South Africa	Omicron 21L	66
+2022-01-19	South Africa	Omicron 21L	70
+2022-01-20	South Africa	Omicron 21L	54
+2022-01-21	South Africa	Omicron 21L	69
+2022-01-22	South Africa	Omicron 21L	30
+2022-01-23	South Africa	Omicron 21L	15
+2022-01-24	South Africa	Omicron 21L	66
+2022-01-25	South Africa	Omicron 21L	30
+2022-01-26	South Africa	Omicron 21L	24
+2022-01-27	South Africa	Omicron 21L	88
+2022-01-28	South Africa	Omicron 21L	70
+2022-01-29	South Africa	Omicron 21L	22
+2022-01-30	South Africa	Omicron 21L	5
+2022-01-31	South Africa	Omicron 21L	46
+2022-02-01	South Africa	Omicron 21L	53
+2022-02-02	South Africa	Omicron 21L	26
+2022-02-03	South Africa	Omicron 21L	38
+2022-02-04	South Africa	Omicron 21L	22
+2022-02-05	South Africa	Omicron 21L	4
+2022-02-06	South Africa	Omicron 21L	4
+2022-02-07	South Africa	Omicron 21L	56
+2022-02-08	South Africa	Omicron 21L	41
+2022-02-09	South Africa	Omicron 21L	56
+2022-02-10	South Africa	Omicron 21L	33
+2022-02-11	South Africa	Omicron 21L	43
+2022-02-12	South Africa	Omicron 21L	10
+2022-02-13	South Africa	Omicron 21L	9
+2022-02-14	South Africa	Omicron 21L	90
+2022-02-15	South Africa	Omicron 21L	43
+2022-02-16	South Africa	Omicron 21L	55
+2022-02-17	South Africa	Omicron 21L	66
+2022-02-18	South Africa	Omicron 21L	43
+2022-02-19	South Africa	Omicron 21L	9
+2022-02-20	South Africa	Omicron 21L	10
+2022-02-21	South Africa	Omicron 21L	109
+2022-02-22	South Africa	Omicron 21L	66
+2022-02-23	South Africa	Omicron 21L	42
+2022-02-24	South Africa	Omicron 21L	24
+2022-02-25	South Africa	Omicron 21L	27
+2022-02-26	South Africa	Omicron 21L	7
+2022-02-27	South Africa	Omicron 21L	2
+2022-02-28	South Africa	Omicron 21L	24
+2022-03-01	South Africa	Omicron 21L	47
+2022-03-02	South Africa	Omicron 21L	65
+2022-03-03	South Africa	Omicron 21L	39
+2022-03-04	South Africa	Omicron 21L	41
+2022-03-05	South Africa	Omicron 21L	9
+2022-03-06	South Africa	Omicron 21L	19
+2022-03-07	South Africa	Omicron 21L	76
+2022-03-08	South Africa	Omicron 21L	61
+2022-03-09	South Africa	Omicron 21L	38
+2022-03-10	South Africa	Omicron 21L	28
+2022-03-11	South Africa	Omicron 21L	31
+2022-03-12	South Africa	Omicron 21L	3
+2022-03-13	South Africa	Omicron 21L	7
+2022-03-14	South Africa	Omicron 21L	46
+2022-03-15	South Africa	Omicron 21L	53
+2022-03-16	South Africa	Omicron 21L	55
+2022-03-17	South Africa	Omicron 21L	32
+2022-03-18	South Africa	Omicron 21L	30
+2022-03-19	South Africa	Omicron 21L	6
+2022-03-20	South Africa	Omicron 21L	4
+2022-03-21	South Africa	Omicron 21L	7
+2022-03-22	South Africa	Omicron 21L	39
+2022-03-23	South Africa	Omicron 21L	23
+2022-03-24	South Africa	Omicron 21L	22
+2022-03-25	South Africa	Omicron 21L	33
+2022-03-26	South Africa	Omicron 21L	8
+2022-03-27	South Africa	Omicron 21L	12
+2022-03-28	South Africa	Omicron 21L	2
+2022-03-29	South Africa	Omicron 21L	5
+2022-03-30	South Africa	Omicron 21L	12
+2022-03-31	South Africa	Omicron 21L	11
+2022-04-01	South Africa	Omicron 21L	10
+2022-01-10	South Africa	Omicron 22A	1
+2022-01-22	South Africa	Omicron 22A	1
+2022-01-26	South Africa	Omicron 22A	1
+2022-02-14	South Africa	Omicron 22A	2
+2022-02-16	South Africa	Omicron 22A	1
+2022-02-21	South Africa	Omicron 22A	1
+2022-03-01	South Africa	Omicron 22A	1
+2022-03-02	South Africa	Omicron 22A	2
+2022-03-04	South Africa	Omicron 22A	2
+2022-03-05	South Africa	Omicron 22A	1
+2022-03-06	South Africa	Omicron 22A	1
+2022-03-07	South Africa	Omicron 22A	4
+2022-03-08	South Africa	Omicron 22A	11
+2022-03-09	South Africa	Omicron 22A	1
+2022-03-10	South Africa	Omicron 22A	2
+2022-03-12	South Africa	Omicron 22A	4
+2022-03-13	South Africa	Omicron 22A	3
+2022-03-14	South Africa	Omicron 22A	4
+2022-03-15	South Africa	Omicron 22A	8
+2022-03-16	South Africa	Omicron 22A	5
+2022-03-17	South Africa	Omicron 22A	4
+2022-03-18	South Africa	Omicron 22A	2
+2022-03-19	South Africa	Omicron 22A	2
+2022-03-20	South Africa	Omicron 22A	2
+2022-03-21	South Africa	Omicron 22A	1
+2022-03-22	South Africa	Omicron 22A	13
+2022-03-23	South Africa	Omicron 22A	6
+2022-03-24	South Africa	Omicron 22A	14
+2022-03-25	South Africa	Omicron 22A	15
+2022-03-26	South Africa	Omicron 22A	1
+2022-03-28	South Africa	Omicron 22A	1
+2022-03-29	South Africa	Omicron 22A	10
+2022-03-30	South Africa	Omicron 22A	16
+2022-03-31	South Africa	Omicron 22A	11
+2022-04-01	South Africa	Omicron 22A	9
+2022-02-21	South Africa	Omicron 22B	1
+2022-02-25	South Africa	Omicron 22B	1
+2022-03-02	South Africa	Omicron 22B	1
+2022-03-03	South Africa	Omicron 22B	1
+2022-03-08	South Africa	Omicron 22B	1
+2022-03-10	South Africa	Omicron 22B	1
+2022-03-11	South Africa	Omicron 22B	1
+2022-03-14	South Africa	Omicron 22B	2
+2022-03-16	South Africa	Omicron 22B	1
+2022-03-17	South Africa	Omicron 22B	1
+2022-03-18	South Africa	Omicron 22B	3
+2022-03-21	South Africa	Omicron 22B	1
+2022-03-22	South Africa	Omicron 22B	6
+2022-03-23	South Africa	Omicron 22B	8
+2022-03-24	South Africa	Omicron 22B	3
+2022-03-25	South Africa	Omicron 22B	2
+2022-03-30	South Africa	Omicron 22B	1
+2022-03-31	South Africa	Omicron 22B	2
+2022-04-01	South Africa	Omicron 22B	12
+2022-01-02	South Africa	other	1
+2022-01-04	South Africa	other	3
+2022-01-05	South Africa	other	2
+2022-01-06	South Africa	other	1
+2022-01-07	South Africa	other	3
+2022-01-08	South Africa	other	4
+2022-01-10	South Africa	other	1
+2022-01-11	South Africa	other	1
+2022-01-12	South Africa	other	2
+2022-01-14	South Africa	other	1
+2022-01-15	South Africa	other	2
+2022-01-17	South Africa	other	1
+2022-01-18	South Africa	other	1
+2022-01-21	South Africa	other	2
+2022-01-23	South Africa	other	1
+2022-01-24	South Africa	other	4
+2022-01-26	South Africa	other	1
+2022-01-27	South Africa	other	3
+2022-01-28	South Africa	other	3
+2022-01-29	South Africa	other	1
+2022-02-01	South Africa	other	1
+2022-02-02	South Africa	other	1
+2022-02-03	South Africa	other	2
+2022-02-04	South Africa	other	1
+2022-02-06	South Africa	other	1
+2022-02-07	South Africa	other	2
+2022-02-08	South Africa	other	1
+2022-02-09	South Africa	other	1
+2022-02-11	South Africa	other	1
+2022-02-14	South Africa	other	1
+2022-02-16	South Africa	other	1
+2022-02-18	South Africa	other	1
+2022-02-21	South Africa	other	7
+2022-02-22	South Africa	other	2
+2022-02-28	South Africa	other	1
+2022-03-02	South Africa	other	1
+2022-03-03	South Africa	other	1
+2022-03-07	South Africa	other	5
+2022-03-08	South Africa	other	3
+2022-03-10	South Africa	other	3
+2022-03-11	South Africa	other	3
+2022-03-13	South Africa	other	1
+2022-03-14	South Africa	other	1
+2022-03-15	South Africa	other	3
+2022-03-17	South Africa	other	1
+2022-03-18	South Africa	other	1
+2022-03-21	South Africa	other	1
+2022-03-22	South Africa	other	1
+2022-03-23	South Africa	other	1
+2022-03-24	South Africa	other	1
+2022-03-25	South Africa	other	1
+2022-01-02	USA	Delta	621
+2022-01-03	USA	Delta	1086
+2022-01-04	USA	Delta	975
+2022-01-05	USA	Delta	682
+2022-01-06	USA	Delta	565
+2022-01-07	USA	Delta	444
+2022-01-08	USA	Delta	243
+2022-01-09	USA	Delta	255
+2022-01-10	USA	Delta	470
+2022-01-11	USA	Delta	356
+2022-01-12	USA	Delta	289
+2022-01-13	USA	Delta	240
+2022-01-14	USA	Delta	209
+2022-01-15	USA	Delta	97
+2022-01-16	USA	Delta	83
+2022-01-17	USA	Delta	127
+2022-01-18	USA	Delta	181
+2022-01-19	USA	Delta	132
+2022-01-20	USA	Delta	122
+2022-01-21	USA	Delta	93
+2022-01-22	USA	Delta	76
+2022-01-23	USA	Delta	53
+2022-01-24	USA	Delta	102
+2022-01-25	USA	Delta	79
+2022-01-26	USA	Delta	51
+2022-01-27	USA	Delta	67
+2022-01-28	USA	Delta	44
+2022-01-29	USA	Delta	27
+2022-01-30	USA	Delta	26
+2022-01-31	USA	Delta	90
+2022-02-01	USA	Delta	92
+2022-02-02	USA	Delta	63
+2022-02-03	USA	Delta	29
+2022-02-04	USA	Delta	32
+2022-02-05	USA	Delta	23
+2022-02-06	USA	Delta	17
+2022-02-07	USA	Delta	23
+2022-02-08	USA	Delta	20
+2022-02-09	USA	Delta	17
+2022-02-10	USA	Delta	11
+2022-02-11	USA	Delta	14
+2022-02-12	USA	Delta	4
+2022-02-13	USA	Delta	8
+2022-02-14	USA	Delta	16
+2022-02-15	USA	Delta	13
+2022-02-16	USA	Delta	7
+2022-02-17	USA	Delta	5
+2022-02-18	USA	Delta	4
+2022-02-19	USA	Delta	2
+2022-02-20	USA	Delta	1
+2022-02-21	USA	Delta	14
+2022-02-22	USA	Delta	7
+2022-02-23	USA	Delta	8
+2022-02-24	USA	Delta	4
+2022-02-25	USA	Delta	1
+2022-02-26	USA	Delta	5
+2022-02-27	USA	Delta	3
+2022-02-28	USA	Delta	6
+2022-03-01	USA	Delta	3
+2022-03-02	USA	Delta	6
+2022-03-03	USA	Delta	3
+2022-03-04	USA	Delta	1
+2022-03-06	USA	Delta	2
+2022-03-07	USA	Delta	3
+2022-03-08	USA	Delta	2
+2022-03-09	USA	Delta	2
+2022-03-10	USA	Delta	3
+2022-03-11	USA	Delta	4
+2022-03-12	USA	Delta	3
+2022-03-14	USA	Delta	3
+2022-03-15	USA	Delta	1
+2022-03-16	USA	Delta	4
+2022-03-17	USA	Delta	1
+2022-03-18	USA	Delta	1
+2022-03-19	USA	Delta	1
+2022-03-20	USA	Delta	2
+2022-03-21	USA	Delta	3
+2022-03-22	USA	Delta	2
+2022-03-24	USA	Delta	2
+2022-03-28	USA	Delta	1
+2022-01-02	USA	Omicron 21K	9553
+2022-01-03	USA	Omicron 21K	19853
+2022-01-04	USA	Omicron 21K	21420
+2022-01-05	USA	Omicron 21K	15221
+2022-01-06	USA	Omicron 21K	12881
+2022-01-07	USA	Omicron 21K	12675
+2022-01-08	USA	Omicron 21K	8365
+2022-01-09	USA	Omicron 21K	7553
+2022-01-10	USA	Omicron 21K	17851
+2022-01-11	USA	Omicron 21K	17366
+2022-01-12	USA	Omicron 21K	15267
+2022-01-13	USA	Omicron 21K	14720
+2022-01-14	USA	Omicron 21K	14030
+2022-01-15	USA	Omicron 21K	9468
+2022-01-16	USA	Omicron 21K	7425
+2022-01-17	USA	Omicron 21K	12468
+2022-01-18	USA	Omicron 21K	19018
+2022-01-19	USA	Omicron 21K	18515
+2022-01-20	USA	Omicron 21K	13461
+2022-01-21	USA	Omicron 21K	12072
+2022-01-22	USA	Omicron 21K	8199
+2022-01-23	USA	Omicron 21K	7311
+2022-01-24	USA	Omicron 21K	15498
+2022-01-25	USA	Omicron 21K	14178
+2022-01-26	USA	Omicron 21K	13334
+2022-01-27	USA	Omicron 21K	14080
+2022-01-28	USA	Omicron 21K	10909
+2022-01-29	USA	Omicron 21K	7998
+2022-01-30	USA	Omicron 21K	7006
+2022-01-31	USA	Omicron 21K	15490
+2022-02-01	USA	Omicron 21K	14241
+2022-02-02	USA	Omicron 21K	13037
+2022-02-03	USA	Omicron 21K	10295
+2022-02-04	USA	Omicron 21K	9370
+2022-02-05	USA	Omicron 21K	5901
+2022-02-06	USA	Omicron 21K	5813
+2022-02-07	USA	Omicron 21K	14649
+2022-02-08	USA	Omicron 21K	12445
+2022-02-09	USA	Omicron 21K	10675
+2022-02-10	USA	Omicron 21K	9647
+2022-02-11	USA	Omicron 21K	8451
+2022-02-12	USA	Omicron 21K	5860
+2022-02-13	USA	Omicron 21K	4246
+2022-02-14	USA	Omicron 21K	8863
+2022-02-15	USA	Omicron 21K	7992
+2022-02-16	USA	Omicron 21K	8741
+2022-02-17	USA	Omicron 21K	6998
+2022-02-18	USA	Omicron 21K	6055
+2022-02-19	USA	Omicron 21K	3718
+2022-02-20	USA	Omicron 21K	2801
+2022-02-21	USA	Omicron 21K	5229
+2022-02-22	USA	Omicron 21K	6891
+2022-02-23	USA	Omicron 21K	4722
+2022-02-24	USA	Omicron 21K	4108
+2022-02-25	USA	Omicron 21K	3896
+2022-02-26	USA	Omicron 21K	2448
+2022-02-27	USA	Omicron 21K	1918
+2022-02-28	USA	Omicron 21K	3720
+2022-03-01	USA	Omicron 21K	3751
+2022-03-02	USA	Omicron 21K	2699
+2022-03-03	USA	Omicron 21K	2329
+2022-03-04	USA	Omicron 21K	2162
+2022-03-05	USA	Omicron 21K	1378
+2022-03-06	USA	Omicron 21K	1108
+2022-03-07	USA	Omicron 21K	2558
+2022-03-08	USA	Omicron 21K	1961
+2022-03-09	USA	Omicron 21K	1725
+2022-03-10	USA	Omicron 21K	1582
+2022-03-11	USA	Omicron 21K	1368
+2022-03-12	USA	Omicron 21K	765
+2022-03-13	USA	Omicron 21K	794
+2022-03-14	USA	Omicron 21K	1710
+2022-03-15	USA	Omicron 21K	1251
+2022-03-16	USA	Omicron 21K	1223
+2022-03-17	USA	Omicron 21K	1111
+2022-03-18	USA	Omicron 21K	1008
+2022-03-19	USA	Omicron 21K	711
+2022-03-20	USA	Omicron 21K	615
+2022-03-21	USA	Omicron 21K	1114
+2022-03-22	USA	Omicron 21K	870
+2022-03-23	USA	Omicron 21K	747
+2022-03-24	USA	Omicron 21K	661
+2022-03-25	USA	Omicron 21K	478
+2022-03-26	USA	Omicron 21K	388
+2022-03-27	USA	Omicron 21K	343
+2022-03-28	USA	Omicron 21K	380
+2022-03-29	USA	Omicron 21K	244
+2022-03-30	USA	Omicron 21K	293
+2022-03-31	USA	Omicron 21K	247
+2022-04-01	USA	Omicron 21K	108
+2022-01-02	USA	Omicron 21L	4
+2022-01-03	USA	Omicron 21L	14
+2022-01-04	USA	Omicron 21L	10
+2022-01-05	USA	Omicron 21L	14
+2022-01-06	USA	Omicron 21L	13
+2022-01-07	USA	Omicron 21L	21
+2022-01-08	USA	Omicron 21L	21
+2022-01-09	USA	Omicron 21L	19
+2022-01-10	USA	Omicron 21L	31
+2022-01-11	USA	Omicron 21L	37
+2022-01-12	USA	Omicron 21L	37
+2022-01-13	USA	Omicron 21L	33
+2022-01-14	USA	Omicron 21L	46
+2022-01-15	USA	Omicron 21L	31
+2022-01-16	USA	Omicron 21L	31
+2022-01-17	USA	Omicron 21L	69
+2022-01-18	USA	Omicron 21L	80
+2022-01-19	USA	Omicron 21L	81
+2022-01-20	USA	Omicron 21L	63
+2022-01-21	USA	Omicron 21L	65
+2022-01-22	USA	Omicron 21L	52
+2022-01-23	USA	Omicron 21L	53
+2022-01-24	USA	Omicron 21L	124
+2022-01-25	USA	Omicron 21L	101
+2022-01-26	USA	Omicron 21L	108
+2022-01-27	USA	Omicron 21L	98
+2022-01-28	USA	Omicron 21L	91
+2022-01-29	USA	Omicron 21L	79
+2022-01-30	USA	Omicron 21L	76
+2022-01-31	USA	Omicron 21L	157
+2022-02-01	USA	Omicron 21L	177
+2022-02-02	USA	Omicron 21L	139
+2022-02-03	USA	Omicron 21L	139
+2022-02-04	USA	Omicron 21L	106
+2022-02-05	USA	Omicron 21L	83
+2022-02-06	USA	Omicron 21L	119
+2022-02-07	USA	Omicron 21L	279
+2022-02-08	USA	Omicron 21L	261
+2022-02-09	USA	Omicron 21L	314
+2022-02-10	USA	Omicron 21L	252
+2022-02-11	USA	Omicron 21L	215
+2022-02-12	USA	Omicron 21L	179
+2022-02-13	USA	Omicron 21L	142
+2022-02-14	USA	Omicron 21L	345
+2022-02-15	USA	Omicron 21L	357
+2022-02-16	USA	Omicron 21L	356
+2022-02-17	USA	Omicron 21L	364
+2022-02-18	USA	Omicron 21L	308
+2022-02-19	USA	Omicron 21L	219
+2022-02-20	USA	Omicron 21L	178
+2022-02-21	USA	Omicron 21L	356
+2022-02-22	USA	Omicron 21L	547
+2022-02-23	USA	Omicron 21L	511
+2022-02-24	USA	Omicron 21L	428
+2022-02-25	USA	Omicron 21L	334
+2022-02-26	USA	Omicron 21L	334
+2022-02-27	USA	Omicron 21L	247
+2022-02-28	USA	Omicron 21L	638
+2022-03-01	USA	Omicron 21L	598
+2022-03-02	USA	Omicron 21L	608
+2022-03-03	USA	Omicron 21L	443
+2022-03-04	USA	Omicron 21L	505
+2022-03-05	USA	Omicron 21L	366
+2022-03-06	USA	Omicron 21L	390
+2022-03-07	USA	Omicron 21L	871
+2022-03-08	USA	Omicron 21L	795
+2022-03-09	USA	Omicron 21L	810
+2022-03-10	USA	Omicron 21L	839
+2022-03-11	USA	Omicron 21L	742
+2022-03-12	USA	Omicron 21L	471
+2022-03-13	USA	Omicron 21L	618
+2022-03-14	USA	Omicron 21L	1257
+2022-03-15	USA	Omicron 21L	1093
+2022-03-16	USA	Omicron 21L	1046
+2022-03-17	USA	Omicron 21L	1095
+2022-03-18	USA	Omicron 21L	1062
+2022-03-19	USA	Omicron 21L	920
+2022-03-20	USA	Omicron 21L	941
+2022-03-21	USA	Omicron 21L	1796
+2022-03-22	USA	Omicron 21L	1664
+2022-03-23	USA	Omicron 21L	1638
+2022-03-24	USA	Omicron 21L	1390
+2022-03-25	USA	Omicron 21L	1229
+2022-03-26	USA	Omicron 21L	1077
+2022-03-27	USA	Omicron 21L	997
+2022-03-28	USA	Omicron 21L	1265
+2022-03-29	USA	Omicron 21L	1012
+2022-03-30	USA	Omicron 21L	1281
+2022-03-31	USA	Omicron 21L	1191
+2022-04-01	USA	Omicron 21L	553
+2022-02-09	USA	Omicron 22C	1
+2022-02-10	USA	Omicron 22C	1
+2022-02-13	USA	Omicron 22C	1
+2022-02-16	USA	Omicron 22C	1
+2022-02-17	USA	Omicron 22C	1
+2022-02-18	USA	Omicron 22C	1
+2022-02-19	USA	Omicron 22C	1
+2022-02-20	USA	Omicron 22C	2
+2022-02-22	USA	Omicron 22C	1
+2022-02-23	USA	Omicron 22C	3
+2022-02-24	USA	Omicron 22C	2
+2022-02-26	USA	Omicron 22C	1
+2022-02-28	USA	Omicron 22C	2
+2022-03-01	USA	Omicron 22C	2
+2022-03-02	USA	Omicron 22C	4
+2022-03-03	USA	Omicron 22C	8
+2022-03-04	USA	Omicron 22C	7
+2022-03-05	USA	Omicron 22C	7
+2022-03-06	USA	Omicron 22C	4
+2022-03-07	USA	Omicron 22C	13
+2022-03-08	USA	Omicron 22C	12
+2022-03-09	USA	Omicron 22C	12
+2022-03-10	USA	Omicron 22C	15
+2022-03-11	USA	Omicron 22C	31
+2022-03-12	USA	Omicron 22C	11
+2022-03-13	USA	Omicron 22C	16
+2022-03-14	USA	Omicron 22C	47
+2022-03-15	USA	Omicron 22C	36
+2022-03-16	USA	Omicron 22C	50
+2022-03-17	USA	Omicron 22C	42
+2022-03-18	USA	Omicron 22C	57
+2022-03-19	USA	Omicron 22C	43
+2022-03-20	USA	Omicron 22C	61
+2022-03-21	USA	Omicron 22C	108
+2022-03-22	USA	Omicron 22C	114
+2022-03-23	USA	Omicron 22C	86
+2022-03-24	USA	Omicron 22C	99
+2022-03-25	USA	Omicron 22C	104
+2022-03-26	USA	Omicron 22C	84
+2022-03-27	USA	Omicron 22C	85
+2022-03-28	USA	Omicron 22C	118
+2022-03-29	USA	Omicron 22C	106
+2022-03-30	USA	Omicron 22C	168
+2022-03-31	USA	Omicron 22C	167
+2022-04-01	USA	Omicron 22C	65
+2022-01-02	USA	other	27
+2022-01-03	USA	other	51
+2022-01-04	USA	other	87
+2022-01-05	USA	other	62
+2022-01-06	USA	other	48
+2022-01-07	USA	other	48
+2022-01-08	USA	other	28
+2022-01-09	USA	other	45
+2022-01-10	USA	other	77
+2022-01-11	USA	other	17
+2022-01-12	USA	other	16
+2022-01-13	USA	other	26
+2022-01-14	USA	other	12
+2022-01-15	USA	other	3
+2022-01-16	USA	other	3
+2022-01-17	USA	other	5
+2022-01-18	USA	other	8
+2022-01-19	USA	other	9
+2022-01-20	USA	other	12
+2022-01-21	USA	other	11
+2022-01-22	USA	other	5
+2022-01-23	USA	other	7
+2022-01-24	USA	other	9
+2022-01-25	USA	other	27
+2022-01-26	USA	other	10
+2022-01-27	USA	other	10
+2022-01-28	USA	other	9
+2022-01-29	USA	other	3
+2022-01-30	USA	other	8
+2022-01-31	USA	other	11
+2022-02-01	USA	other	9
+2022-02-02	USA	other	5
+2022-02-03	USA	other	4
+2022-02-04	USA	other	7
+2022-02-05	USA	other	5
+2022-02-06	USA	other	3
+2022-02-07	USA	other	6
+2022-02-08	USA	other	14
+2022-02-09	USA	other	4
+2022-02-10	USA	other	8
+2022-02-11	USA	other	8
+2022-02-12	USA	other	12
+2022-02-13	USA	other	3
+2022-02-14	USA	other	12
+2022-02-15	USA	other	9
+2022-02-16	USA	other	18
+2022-02-17	USA	other	10
+2022-02-18	USA	other	14
+2022-02-19	USA	other	2
+2022-02-20	USA	other	6
+2022-02-21	USA	other	5
+2022-02-22	USA	other	6
+2022-02-23	USA	other	14
+2022-02-24	USA	other	16
+2022-02-25	USA	other	9
+2022-02-26	USA	other	12
+2022-02-27	USA	other	10
+2022-02-28	USA	other	12
+2022-03-01	USA	other	16
+2022-03-02	USA	other	25
+2022-03-03	USA	other	13
+2022-03-04	USA	other	14
+2022-03-05	USA	other	12
+2022-03-06	USA	other	9
+2022-03-07	USA	other	24
+2022-03-08	USA	other	28
+2022-03-09	USA	other	27
+2022-03-10	USA	other	32
+2022-03-11	USA	other	27
+2022-03-12	USA	other	14
+2022-03-13	USA	other	15
+2022-03-14	USA	other	31
+2022-03-15	USA	other	29
+2022-03-16	USA	other	21
+2022-03-17	USA	other	8
+2022-03-18	USA	other	14
+2022-03-19	USA	other	8
+2022-03-20	USA	other	6
+2022-03-21	USA	other	12
+2022-03-22	USA	other	12
+2022-03-23	USA	other	10
+2022-03-24	USA	other	3
+2022-03-25	USA	other	3
+2022-03-26	USA	other	10
+2022-03-27	USA	other	3
+2022-03-28	USA	other	11
+2022-03-29	USA	other	9
+2022-03-30	USA	other	2
+2022-03-31	USA	other	2
+2022-04-01	USA	other	3
+2022-01-02	United Kingdom	Delta	290
+2022-01-03	United Kingdom	Delta	331
+2022-01-04	United Kingdom	Delta	341
+2022-01-05	United Kingdom	Delta	250
+2022-01-06	United Kingdom	Delta	248
+2022-01-07	United Kingdom	Delta	202
+2022-01-08	United Kingdom	Delta	114
+2022-01-09	United Kingdom	Delta	100
+2022-01-10	United Kingdom	Delta	149
+2022-01-11	United Kingdom	Delta	88
+2022-01-12	United Kingdom	Delta	85
+2022-01-13	United Kingdom	Delta	85
+2022-01-14	United Kingdom	Delta	78
+2022-01-15	United Kingdom	Delta	53
+2022-01-16	United Kingdom	Delta	39
+2022-01-17	United Kingdom	Delta	50
+2022-01-18	United Kingdom	Delta	53
+2022-01-19	United Kingdom	Delta	49
+2022-01-20	United Kingdom	Delta	28
+2022-01-21	United Kingdom	Delta	39
+2022-01-22	United Kingdom	Delta	24
+2022-01-23	United Kingdom	Delta	19
+2022-01-24	United Kingdom	Delta	21
+2022-01-25	United Kingdom	Delta	38
+2022-01-26	United Kingdom	Delta	10
+2022-01-27	United Kingdom	Delta	14
+2022-01-28	United Kingdom	Delta	31
+2022-01-29	United Kingdom	Delta	11
+2022-01-30	United Kingdom	Delta	5
+2022-01-31	United Kingdom	Delta	7
+2022-02-01	United Kingdom	Delta	7
+2022-02-02	United Kingdom	Delta	19
+2022-02-03	United Kingdom	Delta	8
+2022-02-04	United Kingdom	Delta	5
+2022-02-05	United Kingdom	Delta	5
+2022-02-06	United Kingdom	Delta	3
+2022-02-07	United Kingdom	Delta	3
+2022-02-08	United Kingdom	Delta	9
+2022-02-09	United Kingdom	Delta	5
+2022-02-10	United Kingdom	Delta	5
+2022-02-11	United Kingdom	Delta	2
+2022-02-12	United Kingdom	Delta	1
+2022-02-13	United Kingdom	Delta	3
+2022-02-15	United Kingdom	Delta	5
+2022-02-16	United Kingdom	Delta	4
+2022-02-17	United Kingdom	Delta	7
+2022-02-18	United Kingdom	Delta	1
+2022-02-19	United Kingdom	Delta	3
+2022-02-21	United Kingdom	Delta	3
+2022-02-22	United Kingdom	Delta	6
+2022-02-23	United Kingdom	Delta	1
+2022-02-24	United Kingdom	Delta	3
+2022-02-26	United Kingdom	Delta	1
+2022-02-28	United Kingdom	Delta	2
+2022-03-05	United Kingdom	Delta	1
+2022-03-06	United Kingdom	Delta	3
+2022-03-08	United Kingdom	Delta	1
+2022-03-10	United Kingdom	Delta	2
+2022-03-11	United Kingdom	Delta	2
+2022-03-12	United Kingdom	Delta	1
+2022-03-13	United Kingdom	Delta	1
+2022-03-15	United Kingdom	Delta	1
+2022-03-16	United Kingdom	Delta	3
+2022-03-18	United Kingdom	Delta	1
+2022-03-22	United Kingdom	Delta	2
+2022-01-02	United Kingdom	Omicron 21K	9129
+2022-01-03	United Kingdom	Omicron 21K	12786
+2022-01-04	United Kingdom	Omicron 21K	15081
+2022-01-05	United Kingdom	Omicron 21K	12346
+2022-01-06	United Kingdom	Omicron 21K	12438
+2022-01-07	United Kingdom	Omicron 21K	8140
+2022-01-08	United Kingdom	Omicron 21K	7163
+2022-01-09	United Kingdom	Omicron 21K	6610
+2022-01-10	United Kingdom	Omicron 21K	11010
+2022-01-11	United Kingdom	Omicron 21K	10828
+2022-01-12	United Kingdom	Omicron 21K	9573
+2022-01-13	United Kingdom	Omicron 21K	8551
+2022-01-14	United Kingdom	Omicron 21K	9896
+2022-01-15	United Kingdom	Omicron 21K	6951
+2022-01-16	United Kingdom	Omicron 21K	7651
+2022-01-17	United Kingdom	Omicron 21K	11328
+2022-01-18	United Kingdom	Omicron 21K	11195
+2022-01-19	United Kingdom	Omicron 21K	10440
+2022-01-20	United Kingdom	Omicron 21K	9711
+2022-01-21	United Kingdom	Omicron 21K	10827
+2022-01-22	United Kingdom	Omicron 21K	7440
+2022-01-23	United Kingdom	Omicron 21K	8020
+2022-01-24	United Kingdom	Omicron 21K	10901
+2022-01-25	United Kingdom	Omicron 21K	9575
+2022-01-26	United Kingdom	Omicron 21K	8908
+2022-01-27	United Kingdom	Omicron 21K	7015
+2022-01-28	United Kingdom	Omicron 21K	7125
+2022-01-29	United Kingdom	Omicron 21K	7163
+2022-01-30	United Kingdom	Omicron 21K	8460
+2022-01-31	United Kingdom	Omicron 21K	11304
+2022-02-01	United Kingdom	Omicron 21K	7858
+2022-02-02	United Kingdom	Omicron 21K	11123
+2022-02-03	United Kingdom	Omicron 21K	8994
+2022-02-04	United Kingdom	Omicron 21K	7924
+2022-02-05	United Kingdom	Omicron 21K	8268
+2022-02-06	United Kingdom	Omicron 21K	8181
+2022-02-07	United Kingdom	Omicron 21K	10096
+2022-02-08	United Kingdom	Omicron 21K	9399
+2022-02-09	United Kingdom	Omicron 21K	7558
+2022-02-10	United Kingdom	Omicron 21K	7199
+2022-02-11	United Kingdom	Omicron 21K	7286
+2022-02-12	United Kingdom	Omicron 21K	6923
+2022-02-13	United Kingdom	Omicron 21K	6099
+2022-02-14	United Kingdom	Omicron 21K	9140
+2022-02-15	United Kingdom	Omicron 21K	7585
+2022-02-16	United Kingdom	Omicron 21K	5886
+2022-02-17	United Kingdom	Omicron 21K	6025
+2022-02-18	United Kingdom	Omicron 21K	4917
+2022-02-19	United Kingdom	Omicron 21K	5038
+2022-02-20	United Kingdom	Omicron 21K	4287
+2022-02-21	United Kingdom	Omicron 21K	6700
+2022-02-22	United Kingdom	Omicron 21K	5303
+2022-02-23	United Kingdom	Omicron 21K	4571
+2022-02-24	United Kingdom	Omicron 21K	2506
+2022-02-25	United Kingdom	Omicron 21K	2467
+2022-02-26	United Kingdom	Omicron 21K	1671
+2022-02-27	United Kingdom	Omicron 21K	1423
+2022-02-28	United Kingdom	Omicron 21K	2061
+2022-03-01	United Kingdom	Omicron 21K	2272
+2022-03-02	United Kingdom	Omicron 21K	2482
+2022-03-03	United Kingdom	Omicron 21K	2562
+2022-03-04	United Kingdom	Omicron 21K	2343
+2022-03-05	United Kingdom	Omicron 21K	1871
+2022-03-06	United Kingdom	Omicron 21K	1770
+2022-03-07	United Kingdom	Omicron 21K	2771
+2022-03-08	United Kingdom	Omicron 21K	1707
+2022-03-09	United Kingdom	Omicron 21K	2184
+2022-03-10	United Kingdom	Omicron 21K	1228
+2022-03-11	United Kingdom	Omicron 21K	1153
+2022-03-12	United Kingdom	Omicron 21K	1007
+2022-03-13	United Kingdom	Omicron 21K	1188
+2022-03-14	United Kingdom	Omicron 21K	1691
+2022-03-15	United Kingdom	Omicron 21K	1045
+2022-03-16	United Kingdom	Omicron 21K	979
+2022-03-17	United Kingdom	Omicron 21K	930
+2022-03-18	United Kingdom	Omicron 21K	738
+2022-03-19	United Kingdom	Omicron 21K	664
+2022-03-20	United Kingdom	Omicron 21K	452
+2022-03-21	United Kingdom	Omicron 21K	577
+2022-03-22	United Kingdom	Omicron 21K	528
+2022-03-23	United Kingdom	Omicron 21K	450
+2022-03-24	United Kingdom	Omicron 21K	458
+2022-03-25	United Kingdom	Omicron 21K	404
+2022-03-26	United Kingdom	Omicron 21K	255
+2022-03-27	United Kingdom	Omicron 21K	219
+2022-03-28	United Kingdom	Omicron 21K	358
+2022-03-29	United Kingdom	Omicron 21K	61
+2022-03-30	United Kingdom	Omicron 21K	15
+2022-03-31	United Kingdom	Omicron 21K	8
+2022-04-01	United Kingdom	Omicron 21K	26
+2022-01-02	United Kingdom	Omicron 21L	10
+2022-01-03	United Kingdom	Omicron 21L	30
+2022-01-04	United Kingdom	Omicron 21L	56
+2022-01-05	United Kingdom	Omicron 21L	30
+2022-01-06	United Kingdom	Omicron 21L	35
+2022-01-07	United Kingdom	Omicron 21L	48
+2022-01-08	United Kingdom	Omicron 21L	59
+2022-01-09	United Kingdom	Omicron 21L	66
+2022-01-10	United Kingdom	Omicron 21L	104
+2022-01-11	United Kingdom	Omicron 21L	112
+2022-01-12	United Kingdom	Omicron 21L	134
+2022-01-13	United Kingdom	Omicron 21L	124
+2022-01-14	United Kingdom	Omicron 21L	159
+2022-01-15	United Kingdom	Omicron 21L	165
+2022-01-16	United Kingdom	Omicron 21L	229
+2022-01-17	United Kingdom	Omicron 21L	383
+2022-01-18	United Kingdom	Omicron 21L	436
+2022-01-19	United Kingdom	Omicron 21L	309
+2022-01-20	United Kingdom	Omicron 21L	292
+2022-01-21	United Kingdom	Omicron 21L	394
+2022-01-22	United Kingdom	Omicron 21L	353
+2022-01-23	United Kingdom	Omicron 21L	479
+2022-01-24	United Kingdom	Omicron 21L	716
+2022-01-25	United Kingdom	Omicron 21L	683
+2022-01-26	United Kingdom	Omicron 21L	611
+2022-01-27	United Kingdom	Omicron 21L	550
+2022-01-28	United Kingdom	Omicron 21L	501
+2022-01-29	United Kingdom	Omicron 21L	789
+2022-01-30	United Kingdom	Omicron 21L	1077
+2022-01-31	United Kingdom	Omicron 21L	1247
+2022-02-01	United Kingdom	Omicron 21L	1219
+2022-02-02	United Kingdom	Omicron 21L	1637
+2022-02-03	United Kingdom	Omicron 21L	1769
+2022-02-04	United Kingdom	Omicron 21L	1538
+2022-02-05	United Kingdom	Omicron 21L	2153
+2022-02-06	United Kingdom	Omicron 21L	2085
+2022-02-07	United Kingdom	Omicron 21L	2264
+2022-02-08	United Kingdom	Omicron 21L	2772
+2022-02-09	United Kingdom	Omicron 21L	2335
+2022-02-10	United Kingdom	Omicron 21L	2568
+2022-02-11	United Kingdom	Omicron 21L	2891
+2022-02-12	United Kingdom	Omicron 21L	2759
+2022-02-13	United Kingdom	Omicron 21L	2750
+2022-02-14	United Kingdom	Omicron 21L	4426
+2022-02-15	United Kingdom	Omicron 21L	4528
+2022-02-16	United Kingdom	Omicron 21L	4255
+2022-02-17	United Kingdom	Omicron 21L	4306
+2022-02-18	United Kingdom	Omicron 21L	3535
+2022-02-19	United Kingdom	Omicron 21L	4928
+2022-02-20	United Kingdom	Omicron 21L	4623
+2022-02-21	United Kingdom	Omicron 21L	7132
+2022-02-22	United Kingdom	Omicron 21L	6558
+2022-02-23	United Kingdom	Omicron 21L	5912
+2022-02-24	United Kingdom	Omicron 21L	3219
+2022-02-25	United Kingdom	Omicron 21L	3889
+2022-02-26	United Kingdom	Omicron 21L	3325
+2022-02-27	United Kingdom	Omicron 21L	2862
+2022-02-28	United Kingdom	Omicron 21L	4739
+2022-03-01	United Kingdom	Omicron 21L	5390
+2022-03-02	United Kingdom	Omicron 21L	6493
+2022-03-03	United Kingdom	Omicron 21L	7585
+2022-03-04	United Kingdom	Omicron 21L	7417
+2022-03-05	United Kingdom	Omicron 21L	7039
+2022-03-06	United Kingdom	Omicron 21L	7761
+2022-03-07	United Kingdom	Omicron 21L	11324
+2022-03-08	United Kingdom	Omicron 21L	8182
+2022-03-09	United Kingdom	Omicron 21L	11853
+2022-03-10	United Kingdom	Omicron 21L	7251
+2022-03-11	United Kingdom	Omicron 21L	7221
+2022-03-12	United Kingdom	Omicron 21L	7426
+2022-03-13	United Kingdom	Omicron 21L	9920
+2022-03-14	United Kingdom	Omicron 21L	12851
+2022-03-15	United Kingdom	Omicron 21L	9261
+2022-03-16	United Kingdom	Omicron 21L	9634
+2022-03-17	United Kingdom	Omicron 21L	10148
+2022-03-18	United Kingdom	Omicron 21L	8652
+2022-03-19	United Kingdom	Omicron 21L	10256
+2022-03-20	United Kingdom	Omicron 21L	6533
+2022-03-21	United Kingdom	Omicron 21L	8611
+2022-03-22	United Kingdom	Omicron 21L	8113
+2022-03-23	United Kingdom	Omicron 21L	8949
+2022-03-24	United Kingdom	Omicron 21L	9122
+2022-03-25	United Kingdom	Omicron 21L	9113
+2022-03-26	United Kingdom	Omicron 21L	6630
+2022-03-27	United Kingdom	Omicron 21L	5742
+2022-03-28	United Kingdom	Omicron 21L	9380
+2022-03-29	United Kingdom	Omicron 21L	1751
+2022-03-30	United Kingdom	Omicron 21L	450
+2022-03-31	United Kingdom	Omicron 21L	509
+2022-04-01	United Kingdom	Omicron 21L	516
+2022-03-22	United Kingdom	Omicron 22A	2
+2022-03-23	United Kingdom	Omicron 22C	1
+2022-03-27	United Kingdom	Omicron 22C	2
+2022-01-02	United Kingdom	other	9
+2022-01-03	United Kingdom	other	17
+2022-01-04	United Kingdom	other	10
+2022-01-05	United Kingdom	other	7
+2022-01-06	United Kingdom	other	8
+2022-01-07	United Kingdom	other	5
+2022-01-08	United Kingdom	other	6
+2022-01-09	United Kingdom	other	1
+2022-01-10	United Kingdom	other	5
+2022-01-11	United Kingdom	other	8
+2022-01-12	United Kingdom	other	4
+2022-01-13	United Kingdom	other	3
+2022-01-14	United Kingdom	other	4
+2022-01-15	United Kingdom	other	7
+2022-01-16	United Kingdom	other	3
+2022-01-17	United Kingdom	other	7
+2022-01-18	United Kingdom	other	14
+2022-01-19	United Kingdom	other	9
+2022-01-20	United Kingdom	other	6
+2022-01-21	United Kingdom	other	14
+2022-01-22	United Kingdom	other	11
+2022-01-23	United Kingdom	other	17
+2022-01-24	United Kingdom	other	12
+2022-01-25	United Kingdom	other	8
+2022-01-26	United Kingdom	other	7
+2022-01-27	United Kingdom	other	8
+2022-01-28	United Kingdom	other	6
+2022-01-29	United Kingdom	other	11
+2022-01-30	United Kingdom	other	12
+2022-01-31	United Kingdom	other	19
+2022-02-01	United Kingdom	other	15
+2022-02-02	United Kingdom	other	27
+2022-02-03	United Kingdom	other	25
+2022-02-04	United Kingdom	other	22
+2022-02-05	United Kingdom	other	32
+2022-02-06	United Kingdom	other	31
+2022-02-07	United Kingdom	other	31
+2022-02-08	United Kingdom	other	56
+2022-02-09	United Kingdom	other	32
+2022-02-10	United Kingdom	other	23
+2022-02-11	United Kingdom	other	36
+2022-02-12	United Kingdom	other	24
+2022-02-13	United Kingdom	other	33
+2022-02-14	United Kingdom	other	37
+2022-02-15	United Kingdom	other	45
+2022-02-16	United Kingdom	other	41
+2022-02-17	United Kingdom	other	22
+2022-02-18	United Kingdom	other	36
+2022-02-19	United Kingdom	other	33
+2022-02-20	United Kingdom	other	28
+2022-02-21	United Kingdom	other	70
+2022-02-22	United Kingdom	other	55
+2022-02-23	United Kingdom	other	51
+2022-02-24	United Kingdom	other	39
+2022-02-25	United Kingdom	other	35
+2022-02-26	United Kingdom	other	25
+2022-02-27	United Kingdom	other	28
+2022-02-28	United Kingdom	other	33
+2022-03-01	United Kingdom	other	63
+2022-03-02	United Kingdom	other	63
+2022-03-03	United Kingdom	other	67
+2022-03-04	United Kingdom	other	51
+2022-03-05	United Kingdom	other	50
+2022-03-06	United Kingdom	other	51
+2022-03-07	United Kingdom	other	73
+2022-03-08	United Kingdom	other	74
+2022-03-09	United Kingdom	other	83
+2022-03-10	United Kingdom	other	70
+2022-03-11	United Kingdom	other	52
+2022-03-12	United Kingdom	other	75
+2022-03-13	United Kingdom	other	89
+2022-03-14	United Kingdom	other	91
+2022-03-15	United Kingdom	other	90
+2022-03-16	United Kingdom	other	69
+2022-03-17	United Kingdom	other	78
+2022-03-18	United Kingdom	other	84
+2022-03-19	United Kingdom	other	95
+2022-03-20	United Kingdom	other	59
+2022-03-21	United Kingdom	other	74
+2022-03-22	United Kingdom	other	53
+2022-03-23	United Kingdom	other	72
+2022-03-24	United Kingdom	other	67
+2022-03-25	United Kingdom	other	73
+2022-03-26	United Kingdom	other	50
+2022-03-27	United Kingdom	other	40
+2022-03-28	United Kingdom	other	72
+2022-03-29	United Kingdom	other	10
+2022-03-30	United Kingdom	other	3
+2022-03-31	United Kingdom	other	7
+2022-04-01	United Kingdom	other	1
