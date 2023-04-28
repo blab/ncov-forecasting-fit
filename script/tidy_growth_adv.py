@@ -1,22 +1,12 @@
 import pandas as pd
 import os
 
-locations = ["USA", "Japan", "United Kingdom"]
+locations = ["USA", "Japan", "United Kingdom", "Brazil", "Australia", "South Africa"]
 models = ["GARW", "MLR", "FGA", "Piantham"]
-dates = [
-    "2022-04-15",
-    "2022-04-22",
-    "2022-04-29",
-    "2022-05-06",
-    "2022-05-13",
-    "2022-05-20",
-    "2022-05-27",
-    "2022-06-03",
-    "2022-06-10",
-    "2022-06-17",
-    "2022-06-24",
-    "2022-06-30",
-]
+dates = ['2022-01-01', '2022-01-15','2022-02-01','2022-02-15','2022-03-01','2022-03-15',
+         '2022-04-01','2022-04-15','2022-05-01','2022-05-15','2022-06-01','2022-06-15',
+         '2022-07-01','2022-07-15','2022-08-01','2022-08-15','2022-09-01','2022-09-15',
+         '2022-10-01','2022-10-15','2022-11-01','2022-11-15','2022-12-01','2022-12-15']
 
 
 def format_growth_advantages(ga_data, pivot_date, model, location):
@@ -38,6 +28,7 @@ def format_growth_advantages(ga_data, pivot_date, model, location):
     return ga_df
 
 
+
 def main(dates, models, locations):
 
     # full model output set dict
@@ -51,7 +42,7 @@ def main(dates, models, locations):
             for pivot_date in dates:
 
                 filepath = (
-                    f"../plot-est/cast_estimates_full_{model}/{location}"
+                    f"../plot-est2/cast_estimates_full_{model}/{location}"
                     + f"/full_growth_advantages_{pivot_date}.csv"
                 )
 
