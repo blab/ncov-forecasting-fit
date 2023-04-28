@@ -85,7 +85,6 @@ error_dataset = read.csv('../estimates/model_scores_output4.csv') %>%
 growthadv_dataset = read.csv("../estimates/ga_output.csv")
 
 
-
 #add pivot_date column to each dataset for figure 1 plot 2
 seqs1 = read.csv("data/time_stamped/2022-04-22/seq_counts_2022-04-22.tsv", sep = "\t")
 seqs2 = read.csv("data/time_stamped/truth/seq_counts_truth.tsv",sep = "\t")
@@ -119,7 +118,10 @@ high_color = "#2C9191"
 #,"#E67A32",	"#DB2823", 
 variant_colors = c("Delta" = "#926224",		"Omicron 21K" = "#781C86", "Omicron 21L" = "#83BA70","Omicron 22A" = "#D3AE4E", "Omicron 22B" ="#574BD3", "Omicron 22C" = "#DF4327", "Omicron 22D" = "#a65628" ,  "Omicron 22E" = "#35978f" , "Omicron 23A" = "#ae017e" , "other" = "grey")
 
-variant_colorsga = c("Delta" = "#926224",		"Omicron 21K" = "#781C86","Omicron 22A" = "#D3AE4E", "Omicron 22B" ="#574BD3", "Omicron 22C" = "#DF4327", "other" = "grey")
+#Reference is Omicron 21L
+variant_colorsga = c("Delta" = "#926224",		"Omicron 21K" = "#781C86","Omicron 22A" = "#D3AE4E", "Omicron 22B" ="#574BD3", "Omicron 22C" = "#DF4327", "Omicron 22D" = "#a65628",
+                     "Omicron 22E" = "#35978f" , "Omicron 23A" = "#ae017e" ,
+                     "other" = "grey")
 
 
 
@@ -184,11 +186,12 @@ freq_plot_US = error_dataset %>%
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
-        legend.position = "none",
-        plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
+        #legend.position = "none",
+        plot.subtitle  = element_text(size = 14,face = "bold")) + labs(subtitle = "USA") +
   ylim(0,1)+
   scale_x_date(date_breaks = "4 month",
-               labels=label_date_short())
+               labels=label_date_short())+
+  scale_y_continuous(labels = label_percent())
 
 freq_plot_US
 
@@ -236,12 +239,13 @@ freq_plot_JA = error_dataset %>%
         axis.text.y = element_text(size = 12),
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
-        plot.title = element_text(family = "Helvetica", size = (12)),
+        plot.title = element_text(family = "Helvetica", size = (17)),
         legend.position = "none",
-        plot.subtitle  = element_text(size = 14)) + labs(subtitle = "Japan") +
+        plot.subtitle  = element_text(size = 14, face = "bold")) + labs(subtitle = "Japan") +
   ylim(0,1) +
   scale_x_date(date_breaks = "4 month",
-               labels=label_date_short())
+               labels=label_date_short())+
+  scale_y_continuous(labels = label_percent())
   
 freq_plot_JA
 
@@ -283,6 +287,7 @@ error_dataset2 %>%
 
 
 
+ggsave("freq_plot_us.png", plot = freq_plot_US, width = 20, height = 10, units = "cm", bg = 'transparent')
 
 ```
 
@@ -290,6 +295,12 @@ error_dataset2 %>%
 #Figure 1A: Schematic
 
 ```{r}
+#2022-04-01
+#2022-06-01
+#2022-09-01
+#2022-12-01
+
+
 #First estimated date
 Initial_date = seqs_first  %>%
   filter(location =="USA") %>%
@@ -315,9 +326,10 @@ Initial_date = seqs_first  %>%
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
-        plot.subtitle  = element_text(size = 14)) + labs(subtitle = "USA") +
-  labs(subtitle = "USA")+
+        plot.subtitle  = element_text(size = 14, face = "bold"))+
+  labs(subtitle = "USA") +
   xlab("Date")+
+  geom_vline(xintercept = as.numeric(as.Date("2022-04-01")), linetype=2, color = "grey", size = 1.1)+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
                limits = as.Date(c('2022-02-15','2022-12-01')))+
@@ -349,6 +361,7 @@ mid_date =seq_mid %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) +
+  geom_vline(xintercept = as.numeric(as.Date("2022-06-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
@@ -380,6 +393,7 @@ mid_date2 =seq_mid2 %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) +
+  geom_vline(xintercept = as.numeric(as.Date("2022-09-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
@@ -394,11 +408,14 @@ mid_date2 =seq_mid2 %>%
 #Late estimation date
 
 later_date =seq_last %>%
+  filter(variant != "other" & variant != "Delta")  %>%
   filter(location =="USA") %>%
   ggplot() +
   geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
   bbc_style() +
-  scale_fill_manual(values =variant_colors )+
+  scale_fill_manual(values =variant_colors,
+                    labels = c( "Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C",
+                               "Clade 22D", "Clade 22E", "Clade 23A", "Other"))+
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         #axis.title.y = element_text(color="Black", size=14),
@@ -413,8 +430,9 @@ later_date =seq_last %>%
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
-        legend.position = "none",
+        #legend.position = "none",
         plot.subtitle  = element_text(size = 14))+
+  geom_vline(xintercept = as.numeric(as.Date("2022-12-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
@@ -426,7 +444,7 @@ later_date
 
 
 
-ggsave("later_est.png", plot = later_date, width = 7, height = 10, units = "cm", bg = 'transparent')
+ggsave("later_est.png", plot = later_date, width = 20, height = 10, units = "cm", bg = 'transparent')
 ggsave("mid_est.png", plot = mid_date, width = 7, height = 10, units = "cm", bg = 'transparent')
 ggsave("initial_est.png", plot = Initial_date, width = 20, height = 10, units = "cm", bg = 'transparent')
 
@@ -455,16 +473,17 @@ Initial_dateJ = seqs_first%>%
         axis.text.y = element_text(size = 12),
         axis.ticks = element_line(), 
         strip.text.y = element_text(size = 11),
-        plot.title = element_text(family = "Helvetica", size = (12)),
+        plot.title = element_text(family = "Helvetica", size = (17)),
         legend.position = "none",
-        plot.subtitle  = element_text(size = 14)) + labs(subtitle = "Japan") +
+        plot.subtitle  = element_text(size = 14, face = "bold")) + labs(subtitle = "Japan") +
   labs(subtitle = "Japan")+
+  geom_vline(xintercept = as.numeric(as.Date("2022-04-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
                limits = as.Date(c('2022-02-15','2022-12-01')))+
   ylim(0,1500)
-Initial_date
+Initial_dateJ
 
 
 #Mid estimation date
@@ -490,6 +509,7 @@ mid_dateJ =seq_mid %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14))+
+  geom_vline(xintercept = as.numeric(as.Date("2022-06-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
@@ -520,6 +540,7 @@ mid_dateJ2 =seq_mid2 %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14))+
+  geom_vline(xintercept = as.numeric(as.Date("2022-09-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
@@ -552,6 +573,7 @@ later_dateJ =seq_last %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "none",
         plot.subtitle  = element_text(size = 14)) +
+  geom_vline(xintercept = as.numeric(as.Date("2022-12-01")), linetype=2, color = "grey", size = 1.1)+
   xlab("Date")+
   scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
@@ -584,14 +606,20 @@ ggsave("legend.png", plot = Initial_dateJ, width = 15, height = 10, units = "cm"
 
 ```{r}
 
+Figure_1A = (Initial_dateJ+ labs(title = element_text( "A", face = "bold"))) +
+  mid_dateJ+
+  mid_dateJ2+
+  later_dateJ+ 
+  Initial_date+
+  mid_date +
+  mid_date2+
+  later_date + plot_layout( ncol = 4, nrow = 2) 
 
-Figure_1A = ((Initial_dateJ + labs(title = "A")))+ mid_dateJ+mid_dateJ2+later_dateJ+ 
-   Initial_date +mid_date + mid_date2+ later_date +
-   plot_layout( ncol = 4, nrow = 2) 
+
 
 library(plotly)
 
-Figure_1B=  ((freq_plot_JA + labs(title = "B"))) + freq_plot_US   +
+Figure_1B=  (freq_plot_JA + labs(title = element_text( "B",face = "bold"))) + freq_plot_US   +
   plot_layout( ncol = 1, nrow = 2) 
 
 ggplotly(Figure_1B)
@@ -603,7 +631,7 @@ Figure_1= (Figure_1A + theme(plot.margin = unit(c(0,20,50,0), "pt")))  /(Figure_
 ggsave("dynamic_forecasting_env.png", plot = Figure_1, width = 25, height = 30, units = "cm", bg = 'transparent',  dpi = 300,  scale = 0.85)
 
 
-ggsave("testfig1.png", plot = Figure_1, width = 40, height = 50, units = "cm", bg = 'transparent',  dpi = 300,  scale = 0.85)
+ggsave("dynamic_forecasting_env.png", plot = Figure_1, width = 35, height = 40, units = "cm", bg = 'transparent',  dpi = 600,  scale = 0.85)
 
 
 ```
@@ -727,7 +755,8 @@ error_quant_30 = error_dataset %>%
         legend.title = element_text(size = 12))+
 
   scale_y_continuous(trans = log_trans(),
-                     breaks = c(0.001,0.005,0.1, 1))+
+                     breaks = c(0.001,0.005,0.1, 1),
+                     labels = label_percent())+
                       # trans_breaks('log10', function(x) 10^x, n = 4))+
   #trans_format('log10', math_format(10^.x))
   #ylim(0,2)+
@@ -858,6 +887,7 @@ mae_dist = error_dataset %>%
        aspect.ratio = 1.5)+
  scale_alpha(guide = 'none')  +
   scale_y_continuous(trans = log_trans(),
+                     labels = label_percent(),
                      breaks = c(0.001,0.005,0.5,0.1, 1),
                      limits = c(0.001,1.2))
   #scale_y_continuous(limit = c(-0.05,0.45),
@@ -882,7 +912,8 @@ library(egg)
 library(cowplot)
 
 
-Figure_2 = ggarrange(error_quant_30, mae_dist, ncol = 1,
+
+Figure_2 = ggpubr::ggarrange(error_quant_30, mae_dist, ncol = 1,
                      labels = c("  A", "  B"), hjust=-0.8)
 
 
@@ -1045,7 +1076,7 @@ ga_plot2 = growthadv_dataset %>%
 full_ga = ga_plot1 %>%
   full_join(ga_plot2) 
 
-
+table(growthadv_dataset$location)
 
 ```
 
@@ -1107,10 +1138,13 @@ max_val <- max(full_ga$median_ga)
 number_ticks <- function(n) {function(limits) pretty(limits, n)}
 install.packages("ggh4x")
 library(ggh4x)
+library(scales)
+
 variant_colorsga
 ga_models = full_ga %>% 
   #filter(pivot_date != "2022-05-06") %>% 
-  filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C")) %>%
+  filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C", "Omicron 22D",
+                        "Omicron 22E", "Omicron 23A")) %>%
   #filter(model %in% c("GARW", "MLR", "Piantham")) %>%
   filter(model %in% c( "MLR")) %>%
   ggplot(aes(y = median_ga, x = as.Date(pivot_date))) +
@@ -1127,7 +1161,8 @@ ga_models = full_ga %>%
 
  # "Omicron 21A" ="#4272CE", "Omicron 21B" = "#006494", "Omicron 21C" ="#D95D39"
   scale_color_manual(values = variant_colorsga,
-                     labels = c("Clade 22A | BA.4","Clade 22B | BA.5", "Clade 22C | BA.2.12.1"))+
+                     labels = c("Clade 22A | BA.4","Clade 22B | BA.5", "Clade 22C | BA.2.12.1",
+                                "Clade 22D | BA.2.75", "Clade 22E | BQ.1", "Clade 23A | XBB.1.5"))+
   scale_y_continuous(breaks = number_ticks(3))+
   
    #coord_cartesian(clip="off", expand = FALSE) +
@@ -1151,12 +1186,14 @@ ga_models = full_ga %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
         legend.title = element_blank()) +
-    scale_x_date(date_breaks = "1 month",
+    scale_x_date(date_breaks = "3 month",
                labels=label_date_short(),
-               limits = as.Date(c('2022-04-01','2022-06-30')))
+               limits = as.Date(c('2022-01-01','2022-12-01')))
 ga_models
 
 ggsave("Figure3.png", plot = ga_models, width = 30, height = 15, units = "cm", bg='white' )
+
+full_ga$location
 
 
 ```
@@ -1172,12 +1209,13 @@ ggsave("Figure3.png", plot = ga_models, width = 30, height = 15, units = "cm", b
 Figure3B = select_pres_data %>%
   group_by(pivot_date, location) %>%
   filter(lead == -13) %>%
-  filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C")) %>%
+  filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C", "Omicron 22D",
+                        "Omicron 22E", "Omicron 23A")) %>%
   filter(model == "MLR") %>%
   ggplot(aes(x = smoothed_freq, y = median_ga, color = variant)) +
-  geom_line() +
+  geom_smooth() +
   geom_point()+
-  facet_wrap(~location, scales='free')+
+  #facet_wrap(~location, scales='free')+
   theme_minimal() +
   scale_x_continuous(limits = c(0.001,0.5),
     trans=logit_trans(),
@@ -1205,8 +1243,9 @@ Figure3B = select_pres_data %>%
 
 
 
-full_model_data
-error_dataset
+Figure3B
+
+ggsave("GA&Fred.png", plot = Figure3B, width = 30, height = 20, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
 ```
 
 
@@ -1245,7 +1284,7 @@ library(grid)
 
 
 emergent_variant = emergence_date %>%
-  filter(variant =="Omicron 22B") %>%
+  filter(variant =="Omicron 22B") #%>%
   select(location, emergence_date)
 
 
@@ -1417,7 +1456,7 @@ emerge_dt = error_dataset %>%
 
 
 emergent_variant = emergence_date %>%
-  filter(variant =="Omicron 22B") %>%
+  filter(variant =="Omicron 22B") #%>%
   select(location, emergence_date)
 
 
@@ -1973,9 +2012,9 @@ select_pres_data = error_dataset_MLR %>%
   left_join(growthadv_dataset_MLR)
   
 select_pres_data = select_pres_data %>%
-  mutate(median_ga = replace_na(median_ga, 1),
-         ga_upper_80 = replace_na(ga_upper_80, 1),
-         ga_lower_80 = replace_na(ga_lower_80, 1))
+  mutate(median_ga = replace_na(median_ga,  1),
+         ga_upper_80 = replace_na(ga_upper_80,  1),
+         ga_lower_80 = replace_na(ga_lower_80,  1))
 
 
 
@@ -2078,18 +2117,17 @@ select_pres_data2 %>%
 
 #average MAE per country
 average_mae = error_dataset %>%
-  #filter(lead>0) %>%
-  filter(lead < 0 & lead > -14) %>%
-  group_by(location, model, date, pivot_date, lead) %>%
-  #filter(model =="MLR") %>%
+  filter(lead==0) %>%
+  filter(model =="MLR") %>%
+  #filter(lead < 0 & lead > -14) %>%
+  group_by(location, pivot_date) %>%
   #filter(location =="Japan")%>%
-  summarize(meanMAE = mean(MAE)) %>%
-  mutate(date = as.Date(date))
+  summarize(meanMAE = mean(MAE))
 
 
  
 #####Combine Datasets#####
-
+#Change average_mae data to nowcast_mae
 
 #Data with meanMAE and sequence avail, fraction of seq avail
 mae_seq_frac_data_piv = average_mae %>%
@@ -2111,12 +2149,11 @@ mae_seq_full = mae_seq_frac_data_piv %>%
 #Adding selection pressure
 
 select_pres_data2 = select_pres_data2 %>%
-  mutate(date = as.Date(date))
+  dplyr::select(-c(date, selective_))
 
 
 #selection pressure and mae
-full_model_data = mae_seq_full %>%
-  left_join(select_pres_data2)
+full_model_data = mae_seq_full
 
 
 View(full_model_data)
@@ -2305,15 +2342,14 @@ corr_scatters(full_model_data)
 
 #
 med_del_corr = full_model_data %>%
-  filter(model == "MLR") %>%
-   filter(lead==-1) %>%
+   #filter(lead==-1) %>%
   group_by(location, pivot_date) %>%
-  summarise(median_delay = median(median_delay),
-            meanMAE = median(meanMAE)) %>%
-  ggplot(aes(x = median_delay, y = meanMAE, group = location, color = location))+
+ summarise(median_delay = median(median_delay),
+            mean_nowcast_MAE = median(meanMAE)) %>%
+  ggplot(aes(x = median_delay, y = mean_nowcast_MAE, group = location, color = location))+
   geom_point(size = 2)+
    scale_color_manual(values = loc_color_map)+
-  stat_cor(method = "pearson", aes(x = median_delay, y = meanMAE), label.x = 40, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = median_delay, y = mean_nowcast_MAE), label.x = 65, inherit.aes = F)+
   theme_minimal()+
         labs( x = "Median Submission Delay", y= "Median MAE")+
   theme(axis.title.x = element_text(color="Black", size=14),
@@ -2334,14 +2370,14 @@ med_del_corr = full_model_data %>%
 
 
 frac_seq_corr = full_model_data %>%
-  filter(model == "MLR") %>%
-  filter(lead==-1) %>%
+  #filter(model == "MLR") %>%
+  #filter(lead==-1) %>%
   group_by(location, pivot_date) %>%
   summarise(frac_seq_avail = median(frac_seq_avail),
-            meanMAE = median(meanMAE)) %>%
-  ggplot(aes(x = frac_seq_avail, y = meanMAE, group = location, color = location))+
+            mean_nowcast_mae = median(meanMAE)) %>%
+  ggplot(aes(x = frac_seq_avail, y = mean_nowcast_mae, group = location, color = location))+
   geom_point(size = 2)+
-  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = meanMAE), label.x = 0.25, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = mean_nowcast_mae), label.x = 0.2, inherit.aes = F)+
   theme_minimal()+
    scale_color_manual(values = loc_color_map)+
         labs( x = "Fraction of Sequences at Observation", y= "Mean MAE")+
@@ -2392,13 +2428,13 @@ seq_avail_corr = full_model_data %>%
   xlim(0,20000) + ylim(0,0.20)
 
 pivot_mae = full_model_data %>%
-  filter(model == "MLR") %>%
-   filter(lead==-1) %>%
+  #filter(model == "MLR") %>%
+   #filter(lead==-1) %>%
   group_by(location, pivot_date) %>%
   mutate(pivot_date = as.Date(pivot_date)) %>%
   summarise(#seq_collected = median(seq_collected),
-            meanMAE = median(meanMAE)) %>%
-  ggplot(aes(x = pivot_date, y = meanMAE, group = location, color = location))+
+            mean_nowcast_MAE = median(meanMAE)) %>%
+  ggplot(aes(x = pivot_date, y = mean_nowcast_MAE, group = location, color = location))+
   geom_line()+
   geom_point(size = 2, alpha = 0.5)+
     theme_minimal()+
@@ -2419,16 +2455,16 @@ pivot_mae = full_model_data %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
         legend.title = element_blank()) +
-  scale_x_date(date_breaks = "2 weeks", date_labels =  "%W %b") 
+  scale_x_date(date_breaks = "3 months", date_labels =  "%d %b") 
 
 
 country_mae = full_model_data %>%
-  filter(model == "MLR") %>%
-   filter(lead==-1) %>%
+  #filter(model == "MLR") %>%
+   #filter(lead==-1) %>%
   group_by(location, pivot_date) %>%
   summarise(#seq_collected = median(seq_collected),
-            meanMAE = median(meanMAE)) %>%
-  ggplot(aes(x = location, y = meanMAE, group = location, color = location))+
+            mean_nowcast_MAE = median(meanMAE)) %>%
+  ggplot(aes(x = location, y = mean_nowcast_MAE, group = location, color = location))+
   #geom_point(size = 2)+
     geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
                 priority = "density",
@@ -2931,9 +2967,9 @@ library(ggeffects)
 library(optimx)
 
 
-mixed.lmer <- lme4::lmer(qlogis(meanMAE) ~  frac_seq_avail + lead + seq_availper1000 +median_delay + (1+ frac_seq_avail+ seq_availper1000 +median_delay | location), data = mixed_data, REML = T, lmerControl(optimizer ='optimx', optCtrl=list(method='bobyqa')))
+mixed.lmer <- lme4::lmer(qlogis(meanMAE) ~  frac_seq_avail + lead + seq_availper1000 +median_delay + (1+ median_delay+ frac_seq_avail | location), data = mixed_data, REML = T, lmerControl(optimizer ='optimx', optCtrl=list(method='bobyqa')))
 
-install.packages("glmmTMB")
+
 library(glmmTMB)
 library(sjPlot)
 library(sjmisc)
@@ -2991,8 +3027,7 @@ ggplot(mixed_data, aes(x=median_delay, y=meanMAE, colour=location)) +
 
 ggpredict(mixed.lmer, terms = c("frac_seq_avail","location"), type = "re") %>%
   plot()
-  
-remotes::install_github('m-clark/mixedup')
+
 library(mixedup)
 
 summarize_model(mixed.lmer) 
