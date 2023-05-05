@@ -22,4 +22,10 @@ These operations can be found in the script `./download_prune_metadata.sh`.
 
 This generates the sequence counts for variants of interest from available sequence data as of a given date as well as an additional retrospective truth data set i.e. including all sequences up to now. 
 
-This process can be found in the notebook `./creating-data-sets.ipynb`.
+This process can be found in the notebook `./creating-data-sets.ipynb` and generated data sets can be found in `./time_stamped/`
+
+## Creating data sets under down-scaled sequencing efforts
+
+We generate sequence counts for variants of interest as of various observation dates for the United Kingdom under various versions of down-scaled sequencing efforts including increased submission delay and decreasing total sequences per week.
+
+This process for generating data sets can be found in the notebook `./simulating-downscaling-data-sets.ipynb` and generated data sets can be found in `./down_scaled/`.
