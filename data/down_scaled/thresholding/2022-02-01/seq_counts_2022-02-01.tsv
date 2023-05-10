@@ -1,0 +1,1499 @@
+date	location	variant	sequences	thres
+2021-09-01	United Kingdom	Delta	25	100.0
+2021-09-02	United Kingdom	Delta	13	100.0
+2021-09-03	United Kingdom	Delta	21	100.0
+2021-09-04	United Kingdom	Delta	14	100.0
+2021-09-05	United Kingdom	Delta	22	100.0
+2021-09-06	United Kingdom	Delta	13	100.0
+2021-09-07	United Kingdom	Delta	8	100.0
+2021-09-08	United Kingdom	Delta	17	100.0
+2021-09-09	United Kingdom	Delta	17	100.0
+2021-09-10	United Kingdom	Delta	13	100.0
+2021-09-11	United Kingdom	Delta	14	100.0
+2021-09-12	United Kingdom	Delta	10	100.0
+2021-09-13	United Kingdom	Delta	19	100.0
+2021-09-14	United Kingdom	Delta	16	100.0
+2021-09-15	United Kingdom	Delta	15	100.0
+2021-09-16	United Kingdom	Delta	13	100.0
+2021-09-17	United Kingdom	Delta	14	100.0
+2021-09-18	United Kingdom	Delta	8	100.0
+2021-09-19	United Kingdom	Delta	12	100.0
+2021-09-20	United Kingdom	Delta	20	100.0
+2021-09-21	United Kingdom	Delta	11	100.0
+2021-09-22	United Kingdom	Delta	8	100.0
+2021-09-23	United Kingdom	Delta	15	100.0
+2021-09-24	United Kingdom	Delta	27	100.0
+2021-09-25	United Kingdom	Delta	11	100.0
+2021-09-26	United Kingdom	Delta	6	100.0
+2021-09-27	United Kingdom	Delta	18	100.0
+2021-09-28	United Kingdom	Delta	14	100.0
+2021-09-29	United Kingdom	Delta	17	100.0
+2021-09-30	United Kingdom	Delta	15	100.0
+2021-10-01	United Kingdom	Delta	9	100.0
+2021-10-02	United Kingdom	Delta	9	100.0
+2021-10-03	United Kingdom	Delta	18	100.0
+2021-10-04	United Kingdom	Delta	18	100.0
+2021-10-05	United Kingdom	Delta	15	100.0
+2021-10-06	United Kingdom	Delta	10	100.0
+2021-10-07	United Kingdom	Delta	14	100.0
+2021-10-08	United Kingdom	Delta	13	100.0
+2021-10-09	United Kingdom	Delta	10	100.0
+2021-10-10	United Kingdom	Delta	14	100.0
+2021-10-11	United Kingdom	Delta	18	100.0
+2021-10-12	United Kingdom	Delta	21	100.0
+2021-10-13	United Kingdom	Delta	14	100.0
+2021-10-14	United Kingdom	Delta	15	100.0
+2021-10-15	United Kingdom	Delta	9	100.0
+2021-10-16	United Kingdom	Delta	10	100.0
+2021-10-17	United Kingdom	Delta	9	100.0
+2021-10-18	United Kingdom	Delta	18	100.0
+2021-10-19	United Kingdom	Delta	21	100.0
+2021-10-20	United Kingdom	Delta	9	100.0
+2021-10-21	United Kingdom	Delta	12	100.0
+2021-10-22	United Kingdom	Delta	8	100.0
+2021-10-23	United Kingdom	Delta	15	100.0
+2021-10-24	United Kingdom	Delta	15	100.0
+2021-10-25	United Kingdom	Delta	10	100.0
+2021-10-26	United Kingdom	Delta	15	100.0
+2021-10-27	United Kingdom	Delta	22	100.0
+2021-10-28	United Kingdom	Delta	7	100.0
+2021-10-29	United Kingdom	Delta	9	100.0
+2021-10-30	United Kingdom	Delta	23	100.0
+2021-10-31	United Kingdom	Delta	13	100.0
+2021-11-01	United Kingdom	Delta	12	100.0
+2021-11-02	United Kingdom	Delta	15	100.0
+2021-11-03	United Kingdom	Delta	14	100.0
+2021-11-04	United Kingdom	Delta	9	100.0
+2021-11-05	United Kingdom	Delta	17	100.0
+2021-11-06	United Kingdom	Delta	14	100.0
+2021-11-07	United Kingdom	Delta	17	100.0
+2021-11-08	United Kingdom	Delta	18	100.0
+2021-11-09	United Kingdom	Delta	14	100.0
+2021-11-10	United Kingdom	Delta	14	100.0
+2021-11-11	United Kingdom	Delta	13	100.0
+2021-11-12	United Kingdom	Delta	9	100.0
+2021-11-13	United Kingdom	Delta	16	100.0
+2021-11-14	United Kingdom	Delta	12	100.0
+2021-11-15	United Kingdom	Delta	20	100.0
+2021-11-16	United Kingdom	Delta	8	100.0
+2021-11-17	United Kingdom	Delta	17	100.0
+2021-11-18	United Kingdom	Delta	8	100.0
+2021-11-19	United Kingdom	Delta	12	100.0
+2021-11-20	United Kingdom	Delta	17	100.0
+2021-11-21	United Kingdom	Delta	16	100.0
+2021-11-22	United Kingdom	Delta	16	100.0
+2021-11-23	United Kingdom	Delta	19	100.0
+2021-11-24	United Kingdom	Delta	13	100.0
+2021-11-25	United Kingdom	Delta	11	100.0
+2021-11-26	United Kingdom	Delta	18	100.0
+2021-11-27	United Kingdom	Delta	11	100.0
+2021-11-28	United Kingdom	Delta	8	100.0
+2021-11-29	United Kingdom	Delta	21	100.0
+2021-11-30	United Kingdom	Delta	12	100.0
+2021-12-01	United Kingdom	Delta	16	100.0
+2021-12-02	United Kingdom	Delta	12	100.0
+2021-12-03	United Kingdom	Delta	9	100.0
+2021-12-04	United Kingdom	Delta	12	100.0
+2021-12-05	United Kingdom	Delta	13	100.0
+2021-12-06	United Kingdom	Delta	23	100.0
+2021-12-07	United Kingdom	Delta	11	100.0
+2021-12-08	United Kingdom	Delta	14	100.0
+2021-12-09	United Kingdom	Delta	11	100.0
+2021-12-10	United Kingdom	Delta	8	100.0
+2021-12-11	United Kingdom	Delta	9	100.0
+2021-12-12	United Kingdom	Delta	3	100.0
+2021-12-13	United Kingdom	Delta	7	100.0
+2021-12-14	United Kingdom	Delta	8	100.0
+2021-12-15	United Kingdom	Delta	7	100.0
+2021-12-16	United Kingdom	Delta	5	100.0
+2021-12-17	United Kingdom	Delta	4	100.0
+2021-12-18	United Kingdom	Delta	4	100.0
+2021-12-19	United Kingdom	Delta	1	100.0
+2021-12-20	United Kingdom	Delta	4	100.0
+2021-12-21	United Kingdom	Delta	4	100.0
+2021-12-22	United Kingdom	Delta	4	100.0
+2021-12-23	United Kingdom	Delta	3	100.0
+2021-12-26	United Kingdom	Delta	1	100.0
+2021-12-29	United Kingdom	Delta	1	100.0
+2022-01-05	United Kingdom	Delta	1	100.0
+2021-11-27	United Kingdom	Omicron 21K	2	100.0
+2021-11-29	United Kingdom	Omicron 21K	1	100.0
+2021-12-03	United Kingdom	Omicron 21K	1	100.0
+2021-12-05	United Kingdom	Omicron 21K	1	100.0
+2021-12-06	United Kingdom	Omicron 21K	3	100.0
+2021-12-07	United Kingdom	Omicron 21K	2	100.0
+2021-12-08	United Kingdom	Omicron 21K	2	100.0
+2021-12-10	United Kingdom	Omicron 21K	1	100.0
+2021-12-11	United Kingdom	Omicron 21K	2	100.0
+2021-12-12	United Kingdom	Omicron 21K	7	100.0
+2021-12-13	United Kingdom	Omicron 21K	10	100.0
+2021-12-14	United Kingdom	Omicron 21K	6	100.0
+2021-12-15	United Kingdom	Omicron 21K	10	100.0
+2021-12-16	United Kingdom	Omicron 21K	4	100.0
+2021-12-17	United Kingdom	Omicron 21K	10	100.0
+2021-12-18	United Kingdom	Omicron 21K	14	100.0
+2021-12-19	United Kingdom	Omicron 21K	6	100.0
+2021-12-20	United Kingdom	Omicron 21K	20	100.0
+2021-12-21	United Kingdom	Omicron 21K	7	100.0
+2021-12-22	United Kingdom	Omicron 21K	10	100.0
+2021-12-23	United Kingdom	Omicron 21K	9	100.0
+2021-12-24	United Kingdom	Omicron 21K	8	100.0
+2021-12-25	United Kingdom	Omicron 21K	1	100.0
+2021-12-26	United Kingdom	Omicron 21K	10	100.0
+2021-12-27	United Kingdom	Omicron 21K	11	100.0
+2021-12-28	United Kingdom	Omicron 21K	12	100.0
+2021-12-29	United Kingdom	Omicron 21K	13	100.0
+2021-12-30	United Kingdom	Omicron 21K	12	100.0
+2021-12-31	United Kingdom	Omicron 21K	13	100.0
+2022-01-01	United Kingdom	Omicron 21K	9	100.0
+2022-01-02	United Kingdom	Omicron 21K	17	100.0
+2022-01-03	United Kingdom	Omicron 21K	12	100.0
+2022-01-04	United Kingdom	Omicron 21K	13	100.0
+2022-01-05	United Kingdom	Omicron 21K	12	100.0
+2022-01-06	United Kingdom	Omicron 21K	13	100.0
+2022-01-07	United Kingdom	Omicron 21K	10	100.0
+2022-01-08	United Kingdom	Omicron 21K	9	100.0
+2022-01-09	United Kingdom	Omicron 21K	9	100.0
+2022-01-10	United Kingdom	Omicron 21K	13	100.0
+2022-01-11	United Kingdom	Omicron 21K	8	100.0
+2022-01-12	United Kingdom	Omicron 21K	7	100.0
+2022-01-13	United Kingdom	Omicron 21K	9	100.0
+2022-01-14	United Kingdom	Omicron 21K	9	100.0
+2022-01-15	United Kingdom	Omicron 21K	10	100.0
+2022-01-16	United Kingdom	Omicron 21K	15	100.0
+2022-01-17	United Kingdom	Omicron 21K	9	100.0
+2022-01-18	United Kingdom	Omicron 21K	9	100.0
+2022-01-19	United Kingdom	Omicron 21K	10	100.0
+2022-01-20	United Kingdom	Omicron 21K	14	100.0
+2022-01-21	United Kingdom	Omicron 21K	13	100.0
+2022-01-22	United Kingdom	Omicron 21K	7	100.0
+2022-01-23	United Kingdom	Omicron 21K	8	100.0
+2022-01-24	United Kingdom	Omicron 21K	4	100.0
+2022-01-25	United Kingdom	Omicron 21K	1	100.0
+2022-01-16	United Kingdom	Omicron 21L	1	100.0
+2022-01-17	United Kingdom	Omicron 21L	1	100.0
+2022-01-21	United Kingdom	Omicron 21L	1	100.0
+2022-01-22	United Kingdom	Omicron 21L	1	100.0
+2022-01-23	United Kingdom	Omicron 21L	1	100.0
+2021-12-11	United Kingdom	other	1	100.0
+2021-12-16	United Kingdom	other	1	100.0
+2022-01-04	United Kingdom	other	1	100.0
+2021-09-01	United Kingdom	Delta	121	500.0
+2021-09-02	United Kingdom	Delta	123	500.0
+2021-09-03	United Kingdom	Delta	105	500.0
+2021-09-04	United Kingdom	Delta	78	500.0
+2021-09-05	United Kingdom	Delta	59	500.0
+2021-09-06	United Kingdom	Delta	85	500.0
+2021-09-07	United Kingdom	Delta	57	500.0
+2021-09-08	United Kingdom	Delta	68	500.0
+2021-09-09	United Kingdom	Delta	78	500.0
+2021-09-10	United Kingdom	Delta	63	500.0
+2021-09-11	United Kingdom	Delta	60	500.0
+2021-09-12	United Kingdom	Delta	54	500.0
+2021-09-13	United Kingdom	Delta	77	500.0
+2021-09-14	United Kingdom	Delta	71	500.0
+2021-09-15	United Kingdom	Delta	71	500.0
+2021-09-16	United Kingdom	Delta	92	500.0
+2021-09-17	United Kingdom	Delta	66	500.0
+2021-09-18	United Kingdom	Delta	50	500.0
+2021-09-19	United Kingdom	Delta	59	500.0
+2021-09-20	United Kingdom	Delta	68	500.0
+2021-09-21	United Kingdom	Delta	78	500.0
+2021-09-22	United Kingdom	Delta	51	500.0
+2021-09-23	United Kingdom	Delta	78	500.0
+2021-09-24	United Kingdom	Delta	100	500.0
+2021-09-25	United Kingdom	Delta	35	500.0
+2021-09-26	United Kingdom	Delta	74	500.0
+2021-09-27	United Kingdom	Delta	93	500.0
+2021-09-28	United Kingdom	Delta	65	500.0
+2021-09-29	United Kingdom	Delta	97	500.0
+2021-09-30	United Kingdom	Delta	59	500.0
+2021-10-01	United Kingdom	Delta	54	500.0
+2021-10-02	United Kingdom	Delta	44	500.0
+2021-10-03	United Kingdom	Delta	77	500.0
+2021-10-04	United Kingdom	Delta	87	500.0
+2021-10-05	United Kingdom	Delta	62	500.0
+2021-10-06	United Kingdom	Delta	57	500.0
+2021-10-07	United Kingdom	Delta	98	500.0
+2021-10-08	United Kingdom	Delta	67	500.0
+2021-10-09	United Kingdom	Delta	61	500.0
+2021-10-10	United Kingdom	Delta	56	500.0
+2021-10-11	United Kingdom	Delta	82	500.0
+2021-10-12	United Kingdom	Delta	87	500.0
+2021-10-13	United Kingdom	Delta	73	500.0
+2021-10-14	United Kingdom	Delta	58	500.0
+2021-10-15	United Kingdom	Delta	64	500.0
+2021-10-16	United Kingdom	Delta	62	500.0
+2021-10-17	United Kingdom	Delta	51	500.0
+2021-10-18	United Kingdom	Delta	76	500.0
+2021-10-19	United Kingdom	Delta	70	500.0
+2021-10-20	United Kingdom	Delta	70	500.0
+2021-10-21	United Kingdom	Delta	57	500.0
+2021-10-22	United Kingdom	Delta	66	500.0
+2021-10-23	United Kingdom	Delta	65	500.0
+2021-10-24	United Kingdom	Delta	79	500.0
+2021-10-25	United Kingdom	Delta	55	500.0
+2021-10-26	United Kingdom	Delta	69	500.0
+2021-10-27	United Kingdom	Delta	71	500.0
+2021-10-28	United Kingdom	Delta	75	500.0
+2021-10-29	United Kingdom	Delta	61	500.0
+2021-10-30	United Kingdom	Delta	77	500.0
+2021-10-31	United Kingdom	Delta	81	500.0
+2021-11-01	United Kingdom	Delta	73	500.0
+2021-11-02	United Kingdom	Delta	79	500.0
+2021-11-03	United Kingdom	Delta	62	500.0
+2021-11-04	United Kingdom	Delta	78	500.0
+2021-11-05	United Kingdom	Delta	74	500.0
+2021-11-06	United Kingdom	Delta	52	500.0
+2021-11-07	United Kingdom	Delta	70	500.0
+2021-11-08	United Kingdom	Delta	101	500.0
+2021-11-09	United Kingdom	Delta	71	500.0
+2021-11-10	United Kingdom	Delta	67	500.0
+2021-11-11	United Kingdom	Delta	68	500.0
+2021-11-12	United Kingdom	Delta	59	500.0
+2021-11-13	United Kingdom	Delta	55	500.0
+2021-11-14	United Kingdom	Delta	56	500.0
+2021-11-15	United Kingdom	Delta	81	500.0
+2021-11-16	United Kingdom	Delta	69	500.0
+2021-11-17	United Kingdom	Delta	86	500.0
+2021-11-18	United Kingdom	Delta	61	500.0
+2021-11-19	United Kingdom	Delta	68	500.0
+2021-11-20	United Kingdom	Delta	62	500.0
+2021-11-21	United Kingdom	Delta	64	500.0
+2021-11-22	United Kingdom	Delta	77	500.0
+2021-11-23	United Kingdom	Delta	73	500.0
+2021-11-24	United Kingdom	Delta	68	500.0
+2021-11-25	United Kingdom	Delta	66	500.0
+2021-11-26	United Kingdom	Delta	73	500.0
+2021-11-27	United Kingdom	Delta	56	500.0
+2021-11-28	United Kingdom	Delta	74	500.0
+2021-11-29	United Kingdom	Delta	93	500.0
+2021-11-30	United Kingdom	Delta	80	500.0
+2021-12-01	United Kingdom	Delta	62	500.0
+2021-12-02	United Kingdom	Delta	63	500.0
+2021-12-03	United Kingdom	Delta	55	500.0
+2021-12-04	United Kingdom	Delta	58	500.0
+2021-12-05	United Kingdom	Delta	65	500.0
+2021-12-06	United Kingdom	Delta	74	500.0
+2021-12-07	United Kingdom	Delta	85	500.0
+2021-12-08	United Kingdom	Delta	68	500.0
+2021-12-09	United Kingdom	Delta	57	500.0
+2021-12-10	United Kingdom	Delta	51	500.0
+2021-12-11	United Kingdom	Delta	30	500.0
+2021-12-12	United Kingdom	Delta	30	500.0
+2021-12-13	United Kingdom	Delta	46	500.0
+2021-12-14	United Kingdom	Delta	31	500.0
+2021-12-15	United Kingdom	Delta	35	500.0
+2021-12-16	United Kingdom	Delta	25	500.0
+2021-12-17	United Kingdom	Delta	12	500.0
+2021-12-18	United Kingdom	Delta	16	500.0
+2021-12-19	United Kingdom	Delta	10	500.0
+2021-12-20	United Kingdom	Delta	19	500.0
+2021-12-21	United Kingdom	Delta	9	500.0
+2021-12-22	United Kingdom	Delta	10	500.0
+2021-12-23	United Kingdom	Delta	13	500.0
+2021-12-24	United Kingdom	Delta	4	500.0
+2021-12-25	United Kingdom	Delta	5	500.0
+2021-12-26	United Kingdom	Delta	5	500.0
+2021-12-27	United Kingdom	Delta	8	500.0
+2021-12-28	United Kingdom	Delta	3	500.0
+2021-12-29	United Kingdom	Delta	2	500.0
+2021-12-30	United Kingdom	Delta	2	500.0
+2022-01-01	United Kingdom	Delta	1	500.0
+2022-01-03	United Kingdom	Delta	2	500.0
+2022-01-04	United Kingdom	Delta	1	500.0
+2022-01-05	United Kingdom	Delta	1	500.0
+2022-01-06	United Kingdom	Delta	4	500.0
+2022-01-11	United Kingdom	Delta	1	500.0
+2022-01-12	United Kingdom	Delta	2	500.0
+2022-01-15	United Kingdom	Delta	1	500.0
+2021-11-27	United Kingdom	Omicron 21K	1	500.0
+2021-11-29	United Kingdom	Omicron 21K	1	500.0
+2021-11-30	United Kingdom	Omicron 21K	1	500.0
+2021-12-01	United Kingdom	Omicron 21K	4	500.0
+2021-12-02	United Kingdom	Omicron 21K	1	500.0
+2021-12-03	United Kingdom	Omicron 21K	1	500.0
+2021-12-04	United Kingdom	Omicron 21K	2	500.0
+2021-12-05	United Kingdom	Omicron 21K	4	500.0
+2021-12-06	United Kingdom	Omicron 21K	7	500.0
+2021-12-07	United Kingdom	Omicron 21K	12	500.0
+2021-12-08	United Kingdom	Omicron 21K	9	500.0
+2021-12-09	United Kingdom	Omicron 21K	16	500.0
+2021-12-10	United Kingdom	Omicron 21K	14	500.0
+2021-12-11	United Kingdom	Omicron 21K	11	500.0
+2021-12-12	United Kingdom	Omicron 21K	28	500.0
+2021-12-13	United Kingdom	Omicron 21K	26	500.0
+2021-12-14	United Kingdom	Omicron 21K	36	500.0
+2021-12-15	United Kingdom	Omicron 21K	66	500.0
+2021-12-16	United Kingdom	Omicron 21K	35	500.0
+2021-12-17	United Kingdom	Omicron 21K	40	500.0
+2021-12-18	United Kingdom	Omicron 21K	52	500.0
+2021-12-19	United Kingdom	Omicron 21K	45	500.0
+2021-12-20	United Kingdom	Omicron 21K	71	500.0
+2021-12-21	United Kingdom	Omicron 21K	51	500.0
+2021-12-22	United Kingdom	Omicron 21K	45	500.0
+2021-12-23	United Kingdom	Omicron 21K	52	500.0
+2021-12-24	United Kingdom	Omicron 21K	29	500.0
+2021-12-25	United Kingdom	Omicron 21K	17	500.0
+2021-12-26	United Kingdom	Omicron 21K	47	500.0
+2021-12-27	United Kingdom	Omicron 21K	58	500.0
+2021-12-28	United Kingdom	Omicron 21K	70	500.0
+2021-12-29	United Kingdom	Omicron 21K	73	500.0
+2021-12-30	United Kingdom	Omicron 21K	72	500.0
+2021-12-31	United Kingdom	Omicron 21K	53	500.0
+2022-01-01	United Kingdom	Omicron 21K	34	500.0
+2022-01-02	United Kingdom	Omicron 21K	63	500.0
+2022-01-03	United Kingdom	Omicron 21K	70	500.0
+2022-01-04	United Kingdom	Omicron 21K	69	500.0
+2022-01-05	United Kingdom	Omicron 21K	56	500.0
+2022-01-06	United Kingdom	Omicron 21K	83	500.0
+2022-01-07	United Kingdom	Omicron 21K	51	500.0
+2022-01-08	United Kingdom	Omicron 21K	42	500.0
+2022-01-09	United Kingdom	Omicron 21K	36	500.0
+2022-01-10	United Kingdom	Omicron 21K	69	500.0
+2022-01-11	United Kingdom	Omicron 21K	64	500.0
+2022-01-12	United Kingdom	Omicron 21K	36	500.0
+2022-01-13	United Kingdom	Omicron 21K	51	500.0
+2022-01-14	United Kingdom	Omicron 21K	57	500.0
+2022-01-15	United Kingdom	Omicron 21K	46	500.0
+2022-01-16	United Kingdom	Omicron 21K	48	500.0
+2022-01-17	United Kingdom	Omicron 21K	60	500.0
+2022-01-18	United Kingdom	Omicron 21K	68	500.0
+2022-01-19	United Kingdom	Omicron 21K	45	500.0
+2022-01-20	United Kingdom	Omicron 21K	48	500.0
+2022-01-21	United Kingdom	Omicron 21K	73	500.0
+2022-01-22	United Kingdom	Omicron 21K	29	500.0
+2022-01-23	United Kingdom	Omicron 21K	22	500.0
+2022-01-24	United Kingdom	Omicron 21K	37	500.0
+2022-01-25	United Kingdom	Omicron 21K	12	500.0
+2021-12-06	United Kingdom	Omicron 21L	1	500.0
+2022-01-11	United Kingdom	Omicron 21L	1	500.0
+2022-01-16	United Kingdom	Omicron 21L	1	500.0
+2022-01-17	United Kingdom	Omicron 21L	2	500.0
+2022-01-18	United Kingdom	Omicron 21L	1	500.0
+2022-01-20	United Kingdom	Omicron 21L	2	500.0
+2022-01-21	United Kingdom	Omicron 21L	2	500.0
+2022-01-22	United Kingdom	Omicron 21L	1	500.0
+2022-01-23	United Kingdom	Omicron 21L	2	500.0
+2022-01-24	United Kingdom	Omicron 21L	3	500.0
+2022-01-25	United Kingdom	Omicron 21L	1	500.0
+2021-09-22	United Kingdom	other	1	500.0
+2021-09-24	United Kingdom	other	1	500.0
+2021-10-04	United Kingdom	other	1	500.0
+2021-12-09	United Kingdom	other	1	500.0
+2021-12-15	United Kingdom	other	1	500.0
+2021-12-26	United Kingdom	other	1	500.0
+2021-12-29	United Kingdom	other	1	500.0
+2022-01-05	United Kingdom	other	1	500.0
+2022-01-17	United Kingdom	other	1	500.0
+2021-09-01	United Kingdom	Delta	221	1000.0
+2021-09-02	United Kingdom	Delta	208	1000.0
+2021-09-03	United Kingdom	Delta	208	1000.0
+2021-09-04	United Kingdom	Delta	172	1000.0
+2021-09-05	United Kingdom	Delta	153	1000.0
+2021-09-06	United Kingdom	Delta	194	1000.0
+2021-09-07	United Kingdom	Delta	132	1000.0
+2021-09-08	United Kingdom	Delta	118	1000.0
+2021-09-09	United Kingdom	Delta	151	1000.0
+2021-09-10	United Kingdom	Delta	132	1000.0
+2021-09-11	United Kingdom	Delta	104	1000.0
+2021-09-12	United Kingdom	Delta	113	1000.0
+2021-09-13	United Kingdom	Delta	165	1000.0
+2021-09-14	United Kingdom	Delta	128	1000.0
+2021-09-15	United Kingdom	Delta	147	1000.0
+2021-09-16	United Kingdom	Delta	166	1000.0
+2021-09-17	United Kingdom	Delta	141	1000.0
+2021-09-18	United Kingdom	Delta	105	1000.0
+2021-09-19	United Kingdom	Delta	114	1000.0
+2021-09-20	United Kingdom	Delta	143	1000.0
+2021-09-21	United Kingdom	Delta	142	1000.0
+2021-09-22	United Kingdom	Delta	119	1000.0
+2021-09-23	United Kingdom	Delta	151	1000.0
+2021-09-24	United Kingdom	Delta	182	1000.0
+2021-09-25	United Kingdom	Delta	104	1000.0
+2021-09-26	United Kingdom	Delta	123	1000.0
+2021-09-27	United Kingdom	Delta	172	1000.0
+2021-09-28	United Kingdom	Delta	146	1000.0
+2021-09-29	United Kingdom	Delta	184	1000.0
+2021-09-30	United Kingdom	Delta	162	1000.0
+2021-10-01	United Kingdom	Delta	90	1000.0
+2021-10-02	United Kingdom	Delta	93	1000.0
+2021-10-03	United Kingdom	Delta	130	1000.0
+2021-10-04	United Kingdom	Delta	181	1000.0
+2021-10-05	United Kingdom	Delta	131	1000.0
+2021-10-06	United Kingdom	Delta	112	1000.0
+2021-10-07	United Kingdom	Delta	163	1000.0
+2021-10-08	United Kingdom	Delta	121	1000.0
+2021-10-09	United Kingdom	Delta	127	1000.0
+2021-10-10	United Kingdom	Delta	135	1000.0
+2021-10-11	United Kingdom	Delta	152	1000.0
+2021-10-12	United Kingdom	Delta	205	1000.0
+2021-10-13	United Kingdom	Delta	115	1000.0
+2021-10-14	United Kingdom	Delta	109	1000.0
+2021-10-15	United Kingdom	Delta	141	1000.0
+2021-10-16	United Kingdom	Delta	122	1000.0
+2021-10-17	United Kingdom	Delta	122	1000.0
+2021-10-18	United Kingdom	Delta	155	1000.0
+2021-10-19	United Kingdom	Delta	158	1000.0
+2021-10-20	United Kingdom	Delta	141	1000.0
+2021-10-21	United Kingdom	Delta	123	1000.0
+2021-10-22	United Kingdom	Delta	130	1000.0
+2021-10-23	United Kingdom	Delta	138	1000.0
+2021-10-24	United Kingdom	Delta	129	1000.0
+2021-10-25	United Kingdom	Delta	156	1000.0
+2021-10-26	United Kingdom	Delta	131	1000.0
+2021-10-27	United Kingdom	Delta	141	1000.0
+2021-10-28	United Kingdom	Delta	128	1000.0
+2021-10-29	United Kingdom	Delta	121	1000.0
+2021-10-30	United Kingdom	Delta	119	1000.0
+2021-10-31	United Kingdom	Delta	174	1000.0
+2021-11-01	United Kingdom	Delta	169	1000.0
+2021-11-02	United Kingdom	Delta	124	1000.0
+2021-11-03	United Kingdom	Delta	163	1000.0
+2021-11-04	United Kingdom	Delta	146	1000.0
+2021-11-05	United Kingdom	Delta	150	1000.0
+2021-11-06	United Kingdom	Delta	104	1000.0
+2021-11-07	United Kingdom	Delta	129	1000.0
+2021-11-08	United Kingdom	Delta	180	1000.0
+2021-11-09	United Kingdom	Delta	145	1000.0
+2021-11-10	United Kingdom	Delta	146	1000.0
+2021-11-11	United Kingdom	Delta	131	1000.0
+2021-11-12	United Kingdom	Delta	131	1000.0
+2021-11-13	United Kingdom	Delta	119	1000.0
+2021-11-14	United Kingdom	Delta	110	1000.0
+2021-11-15	United Kingdom	Delta	124	1000.0
+2021-11-16	United Kingdom	Delta	154	1000.0
+2021-11-17	United Kingdom	Delta	167	1000.0
+2021-11-18	United Kingdom	Delta	131	1000.0
+2021-11-19	United Kingdom	Delta	141	1000.0
+2021-11-20	United Kingdom	Delta	139	1000.0
+2021-11-21	United Kingdom	Delta	124	1000.0
+2021-11-22	United Kingdom	Delta	157	1000.0
+2021-11-23	United Kingdom	Delta	139	1000.0
+2021-11-24	United Kingdom	Delta	145	1000.0
+2021-11-25	United Kingdom	Delta	131	1000.0
+2021-11-26	United Kingdom	Delta	164	1000.0
+2021-11-27	United Kingdom	Delta	84	1000.0
+2021-11-28	United Kingdom	Delta	150	1000.0
+2021-11-29	United Kingdom	Delta	184	1000.0
+2021-11-30	United Kingdom	Delta	164	1000.0
+2021-12-01	United Kingdom	Delta	140	1000.0
+2021-12-02	United Kingdom	Delta	132	1000.0
+2021-12-03	United Kingdom	Delta	123	1000.0
+2021-12-04	United Kingdom	Delta	91	1000.0
+2021-12-05	United Kingdom	Delta	132	1000.0
+2021-12-06	United Kingdom	Delta	166	1000.0
+2021-12-07	United Kingdom	Delta	172	1000.0
+2021-12-08	United Kingdom	Delta	136	1000.0
+2021-12-09	United Kingdom	Delta	112	1000.0
+2021-12-10	United Kingdom	Delta	89	1000.0
+2021-12-11	United Kingdom	Delta	73	1000.0
+2021-12-12	United Kingdom	Delta	65	1000.0
+2021-12-13	United Kingdom	Delta	84	1000.0
+2021-12-14	United Kingdom	Delta	65	1000.0
+2021-12-15	United Kingdom	Delta	76	1000.0
+2021-12-16	United Kingdom	Delta	45	1000.0
+2021-12-17	United Kingdom	Delta	39	1000.0
+2021-12-18	United Kingdom	Delta	49	1000.0
+2021-12-19	United Kingdom	Delta	24	1000.0
+2021-12-20	United Kingdom	Delta	47	1000.0
+2021-12-21	United Kingdom	Delta	23	1000.0
+2021-12-22	United Kingdom	Delta	20	1000.0
+2021-12-23	United Kingdom	Delta	23	1000.0
+2021-12-24	United Kingdom	Delta	8	1000.0
+2021-12-25	United Kingdom	Delta	7	1000.0
+2021-12-26	United Kingdom	Delta	10	1000.0
+2021-12-27	United Kingdom	Delta	4	1000.0
+2021-12-28	United Kingdom	Delta	4	1000.0
+2021-12-29	United Kingdom	Delta	5	1000.0
+2021-12-30	United Kingdom	Delta	10	1000.0
+2021-12-31	United Kingdom	Delta	5	1000.0
+2022-01-01	United Kingdom	Delta	2	1000.0
+2022-01-02	United Kingdom	Delta	9	1000.0
+2022-01-03	United Kingdom	Delta	3	1000.0
+2022-01-04	United Kingdom	Delta	3	1000.0
+2022-01-05	United Kingdom	Delta	1	1000.0
+2022-01-06	United Kingdom	Delta	4	1000.0
+2022-01-08	United Kingdom	Delta	1	1000.0
+2022-01-09	United Kingdom	Delta	2	1000.0
+2022-01-10	United Kingdom	Delta	1	1000.0
+2022-01-11	United Kingdom	Delta	5	1000.0
+2022-01-12	United Kingdom	Delta	1	1000.0
+2022-01-13	United Kingdom	Delta	1	1000.0
+2022-01-14	United Kingdom	Delta	1	1000.0
+2022-01-15	United Kingdom	Delta	1	1000.0
+2022-01-17	United Kingdom	Delta	2	1000.0
+2022-01-19	United Kingdom	Delta	3	1000.0
+2022-01-23	United Kingdom	Delta	1	1000.0
+2021-11-24	United Kingdom	Omicron 21K	1	1000.0
+2021-11-25	United Kingdom	Omicron 21K	1	1000.0
+2021-11-26	United Kingdom	Omicron 21K	2	1000.0
+2021-11-27	United Kingdom	Omicron 21K	2	1000.0
+2021-11-28	United Kingdom	Omicron 21K	1	1000.0
+2021-11-30	United Kingdom	Omicron 21K	3	1000.0
+2021-12-01	United Kingdom	Omicron 21K	2	1000.0
+2021-12-02	United Kingdom	Omicron 21K	1	1000.0
+2021-12-03	United Kingdom	Omicron 21K	1	1000.0
+2021-12-04	United Kingdom	Omicron 21K	3	1000.0
+2021-12-05	United Kingdom	Omicron 21K	2	1000.0
+2021-12-06	United Kingdom	Omicron 21K	10	1000.0
+2021-12-07	United Kingdom	Omicron 21K	20	1000.0
+2021-12-08	United Kingdom	Omicron 21K	22	1000.0
+2021-12-09	United Kingdom	Omicron 21K	29	1000.0
+2021-12-10	United Kingdom	Omicron 21K	25	1000.0
+2021-12-11	United Kingdom	Omicron 21K	20	1000.0
+2021-12-12	United Kingdom	Omicron 21K	45	1000.0
+2021-12-13	United Kingdom	Omicron 21K	73	1000.0
+2021-12-14	United Kingdom	Omicron 21K	71	1000.0
+2021-12-15	United Kingdom	Omicron 21K	119	1000.0
+2021-12-16	United Kingdom	Omicron 21K	70	1000.0
+2021-12-17	United Kingdom	Omicron 21K	61	1000.0
+2021-12-18	United Kingdom	Omicron 21K	104	1000.0
+2021-12-19	United Kingdom	Omicron 21K	88	1000.0
+2021-12-20	United Kingdom	Omicron 21K	131	1000.0
+2021-12-21	United Kingdom	Omicron 21K	102	1000.0
+2021-12-22	United Kingdom	Omicron 21K	75	1000.0
+2021-12-23	United Kingdom	Omicron 21K	106	1000.0
+2021-12-24	United Kingdom	Omicron 21K	62	1000.0
+2021-12-25	United Kingdom	Omicron 21K	39	1000.0
+2021-12-26	United Kingdom	Omicron 21K	101	1000.0
+2021-12-27	United Kingdom	Omicron 21K	109	1000.0
+2021-12-28	United Kingdom	Omicron 21K	130	1000.0
+2021-12-29	United Kingdom	Omicron 21K	154	1000.0
+2021-12-30	United Kingdom	Omicron 21K	165	1000.0
+2021-12-31	United Kingdom	Omicron 21K	87	1000.0
+2022-01-01	United Kingdom	Omicron 21K	78	1000.0
+2022-01-02	United Kingdom	Omicron 21K	114	1000.0
+2022-01-03	United Kingdom	Omicron 21K	142	1000.0
+2022-01-04	United Kingdom	Omicron 21K	167	1000.0
+2022-01-05	United Kingdom	Omicron 21K	130	1000.0
+2022-01-06	United Kingdom	Omicron 21K	145	1000.0
+2022-01-07	United Kingdom	Omicron 21K	81	1000.0
+2022-01-08	United Kingdom	Omicron 21K	81	1000.0
+2022-01-09	United Kingdom	Omicron 21K	44	1000.0
+2022-01-10	United Kingdom	Omicron 21K	137	1000.0
+2022-01-11	United Kingdom	Omicron 21K	122	1000.0
+2022-01-12	United Kingdom	Omicron 21K	96	1000.0
+2022-01-13	United Kingdom	Omicron 21K	90	1000.0
+2022-01-14	United Kingdom	Omicron 21K	110	1000.0
+2022-01-15	United Kingdom	Omicron 21K	83	1000.0
+2022-01-16	United Kingdom	Omicron 21K	81	1000.0
+2022-01-17	United Kingdom	Omicron 21K	116	1000.0
+2022-01-18	United Kingdom	Omicron 21K	108	1000.0
+2022-01-19	United Kingdom	Omicron 21K	113	1000.0
+2022-01-20	United Kingdom	Omicron 21K	76	1000.0
+2022-01-21	United Kingdom	Omicron 21K	115	1000.0
+2022-01-22	United Kingdom	Omicron 21K	67	1000.0
+2022-01-23	United Kingdom	Omicron 21K	56	1000.0
+2022-01-24	United Kingdom	Omicron 21K	71	1000.0
+2022-01-25	United Kingdom	Omicron 21K	17	1000.0
+2021-12-25	United Kingdom	Omicron 21L	1	1000.0
+2022-01-04	United Kingdom	Omicron 21L	3	1000.0
+2022-01-08	United Kingdom	Omicron 21L	1	1000.0
+2022-01-10	United Kingdom	Omicron 21L	2	1000.0
+2022-01-11	United Kingdom	Omicron 21L	1	1000.0
+2022-01-12	United Kingdom	Omicron 21L	2	1000.0
+2022-01-13	United Kingdom	Omicron 21L	1	1000.0
+2022-01-14	United Kingdom	Omicron 21L	2	1000.0
+2022-01-15	United Kingdom	Omicron 21L	5	1000.0
+2022-01-16	United Kingdom	Omicron 21L	2	1000.0
+2022-01-17	United Kingdom	Omicron 21L	1	1000.0
+2022-01-18	United Kingdom	Omicron 21L	6	1000.0
+2022-01-19	United Kingdom	Omicron 21L	2	1000.0
+2022-01-20	United Kingdom	Omicron 21L	4	1000.0
+2022-01-21	United Kingdom	Omicron 21L	8	1000.0
+2022-01-22	United Kingdom	Omicron 21L	4	1000.0
+2022-01-23	United Kingdom	Omicron 21L	6	1000.0
+2022-01-24	United Kingdom	Omicron 21L	1	1000.0
+2022-01-25	United Kingdom	Omicron 21L	1	1000.0
+2021-09-06	United Kingdom	other	2	1000.0
+2021-09-23	United Kingdom	other	1	1000.0
+2021-09-24	United Kingdom	other	1	1000.0
+2021-10-04	United Kingdom	other	1	1000.0
+2021-10-07	United Kingdom	other	1	1000.0
+2021-12-06	United Kingdom	other	1	1000.0
+2021-12-24	United Kingdom	other	1	1000.0
+2021-12-27	United Kingdom	other	1	1000.0
+2022-01-01	United Kingdom	other	1	1000.0
+2022-01-19	United Kingdom	other	1	1000.0
+2022-01-20	United Kingdom	other	1	1000.0
+2022-01-21	United Kingdom	other	1	1000.0
+2021-09-01	United Kingdom	Delta	471	2000.0
+2021-09-02	United Kingdom	Delta	437	2000.0
+2021-09-03	United Kingdom	Delta	405	2000.0
+2021-09-04	United Kingdom	Delta	308	2000.0
+2021-09-05	United Kingdom	Delta	303	2000.0
+2021-09-06	United Kingdom	Delta	377	2000.0
+2021-09-07	United Kingdom	Delta	272	2000.0
+2021-09-08	United Kingdom	Delta	264	2000.0
+2021-09-09	United Kingdom	Delta	281	2000.0
+2021-09-10	United Kingdom	Delta	242	2000.0
+2021-09-11	United Kingdom	Delta	202	2000.0
+2021-09-12	United Kingdom	Delta	238	2000.0
+2021-09-13	United Kingdom	Delta	335	2000.0
+2021-09-14	United Kingdom	Delta	259	2000.0
+2021-09-15	United Kingdom	Delta	268	2000.0
+2021-09-16	United Kingdom	Delta	324	2000.0
+2021-09-17	United Kingdom	Delta	300	2000.0
+2021-09-18	United Kingdom	Delta	205	2000.0
+2021-09-19	United Kingdom	Delta	256	2000.0
+2021-09-20	United Kingdom	Delta	286	2000.0
+2021-09-21	United Kingdom	Delta	325	2000.0
+2021-09-22	United Kingdom	Delta	216	2000.0
+2021-09-23	United Kingdom	Delta	325	2000.0
+2021-09-24	United Kingdom	Delta	341	2000.0
+2021-09-25	United Kingdom	Delta	164	2000.0
+2021-09-26	United Kingdom	Delta	272	2000.0
+2021-09-27	United Kingdom	Delta	396	2000.0
+2021-09-28	United Kingdom	Delta	284	2000.0
+2021-09-29	United Kingdom	Delta	370	2000.0
+2021-09-30	United Kingdom	Delta	275	2000.0
+2021-10-01	United Kingdom	Delta	210	2000.0
+2021-10-02	United Kingdom	Delta	185	2000.0
+2021-10-03	United Kingdom	Delta	251	2000.0
+2021-10-04	United Kingdom	Delta	311	2000.0
+2021-10-05	United Kingdom	Delta	255	2000.0
+2021-10-06	United Kingdom	Delta	270	2000.0
+2021-10-07	United Kingdom	Delta	308	2000.0
+2021-10-08	United Kingdom	Delta	266	2000.0
+2021-10-09	United Kingdom	Delta	269	2000.0
+2021-10-10	United Kingdom	Delta	260	2000.0
+2021-10-11	United Kingdom	Delta	283	2000.0
+2021-10-12	United Kingdom	Delta	361	2000.0
+2021-10-13	United Kingdom	Delta	288	2000.0
+2021-10-14	United Kingdom	Delta	274	2000.0
+2021-10-15	United Kingdom	Delta	229	2000.0
+2021-10-16	United Kingdom	Delta	231	2000.0
+2021-10-17	United Kingdom	Delta	261	2000.0
+2021-10-18	United Kingdom	Delta	357	2000.0
+2021-10-19	United Kingdom	Delta	322	2000.0
+2021-10-20	United Kingdom	Delta	276	2000.0
+2021-10-21	United Kingdom	Delta	240	2000.0
+2021-10-22	United Kingdom	Delta	232	2000.0
+2021-10-23	United Kingdom	Delta	275	2000.0
+2021-10-24	United Kingdom	Delta	246	2000.0
+2021-10-25	United Kingdom	Delta	276	2000.0
+2021-10-26	United Kingdom	Delta	260	2000.0
+2021-10-27	United Kingdom	Delta	301	2000.0
+2021-10-28	United Kingdom	Delta	294	2000.0
+2021-10-29	United Kingdom	Delta	224	2000.0
+2021-10-30	United Kingdom	Delta	277	2000.0
+2021-10-31	United Kingdom	Delta	324	2000.0
+2021-11-01	United Kingdom	Delta	330	2000.0
+2021-11-02	United Kingdom	Delta	262	2000.0
+2021-11-03	United Kingdom	Delta	321	2000.0
+2021-11-04	United Kingdom	Delta	262	2000.0
+2021-11-05	United Kingdom	Delta	320	2000.0
+2021-11-06	United Kingdom	Delta	202	2000.0
+2021-11-07	United Kingdom	Delta	269	2000.0
+2021-11-08	United Kingdom	Delta	333	2000.0
+2021-11-09	United Kingdom	Delta	251	2000.0
+2021-11-10	United Kingdom	Delta	324	2000.0
+2021-11-11	United Kingdom	Delta	285	2000.0
+2021-11-12	United Kingdom	Delta	270	2000.0
+2021-11-13	United Kingdom	Delta	236	2000.0
+2021-11-14	United Kingdom	Delta	219	2000.0
+2021-11-15	United Kingdom	Delta	312	2000.0
+2021-11-16	United Kingdom	Delta	301	2000.0
+2021-11-17	United Kingdom	Delta	282	2000.0
+2021-11-18	United Kingdom	Delta	253	2000.0
+2021-11-19	United Kingdom	Delta	256	2000.0
+2021-11-20	United Kingdom	Delta	294	2000.0
+2021-11-21	United Kingdom	Delta	268	2000.0
+2021-11-22	United Kingdom	Delta	327	2000.0
+2021-11-23	United Kingdom	Delta	276	2000.0
+2021-11-24	United Kingdom	Delta	307	2000.0
+2021-11-25	United Kingdom	Delta	245	2000.0
+2021-11-26	United Kingdom	Delta	347	2000.0
+2021-11-27	United Kingdom	Delta	200	2000.0
+2021-11-28	United Kingdom	Delta	254	2000.0
+2021-11-29	United Kingdom	Delta	377	2000.0
+2021-11-30	United Kingdom	Delta	334	2000.0
+2021-12-01	United Kingdom	Delta	268	2000.0
+2021-12-02	United Kingdom	Delta	265	2000.0
+2021-12-03	United Kingdom	Delta	231	2000.0
+2021-12-04	United Kingdom	Delta	185	2000.0
+2021-12-05	United Kingdom	Delta	259	2000.0
+2021-12-06	United Kingdom	Delta	337	2000.0
+2021-12-07	United Kingdom	Delta	374	2000.0
+2021-12-08	United Kingdom	Delta	282	2000.0
+2021-12-09	United Kingdom	Delta	180	2000.0
+2021-12-10	United Kingdom	Delta	175	2000.0
+2021-12-11	United Kingdom	Delta	162	2000.0
+2021-12-12	United Kingdom	Delta	149	2000.0
+2021-12-13	United Kingdom	Delta	141	2000.0
+2021-12-14	United Kingdom	Delta	113	2000.0
+2021-12-15	United Kingdom	Delta	124	2000.0
+2021-12-16	United Kingdom	Delta	109	2000.0
+2021-12-17	United Kingdom	Delta	83	2000.0
+2021-12-18	United Kingdom	Delta	87	2000.0
+2021-12-19	United Kingdom	Delta	57	2000.0
+2021-12-20	United Kingdom	Delta	90	2000.0
+2021-12-21	United Kingdom	Delta	52	2000.0
+2021-12-22	United Kingdom	Delta	30	2000.0
+2021-12-23	United Kingdom	Delta	40	2000.0
+2021-12-24	United Kingdom	Delta	18	2000.0
+2021-12-25	United Kingdom	Delta	7	2000.0
+2021-12-26	United Kingdom	Delta	20	2000.0
+2021-12-27	United Kingdom	Delta	21	2000.0
+2021-12-28	United Kingdom	Delta	14	2000.0
+2021-12-29	United Kingdom	Delta	15	2000.0
+2021-12-30	United Kingdom	Delta	8	2000.0
+2021-12-31	United Kingdom	Delta	13	2000.0
+2022-01-01	United Kingdom	Delta	4	2000.0
+2022-01-02	United Kingdom	Delta	4	2000.0
+2022-01-03	United Kingdom	Delta	7	2000.0
+2022-01-04	United Kingdom	Delta	12	2000.0
+2022-01-05	United Kingdom	Delta	5	2000.0
+2022-01-06	United Kingdom	Delta	1	2000.0
+2022-01-07	United Kingdom	Delta	5	2000.0
+2022-01-08	United Kingdom	Delta	1	2000.0
+2022-01-09	United Kingdom	Delta	1	2000.0
+2022-01-10	United Kingdom	Delta	4	2000.0
+2022-01-12	United Kingdom	Delta	2	2000.0
+2022-01-13	United Kingdom	Delta	4	2000.0
+2022-01-14	United Kingdom	Delta	4	2000.0
+2022-01-15	United Kingdom	Delta	2	2000.0
+2022-01-17	United Kingdom	Delta	2	2000.0
+2022-01-19	United Kingdom	Delta	1	2000.0
+2022-01-22	United Kingdom	Delta	1	2000.0
+2021-11-26	United Kingdom	Omicron 21K	3	2000.0
+2021-11-27	United Kingdom	Omicron 21K	2	2000.0
+2021-11-28	United Kingdom	Omicron 21K	1	2000.0
+2021-11-29	United Kingdom	Omicron 21K	1	2000.0
+2021-11-30	United Kingdom	Omicron 21K	2	2000.0
+2021-12-01	United Kingdom	Omicron 21K	3	2000.0
+2021-12-02	United Kingdom	Omicron 21K	5	2000.0
+2021-12-03	United Kingdom	Omicron 21K	5	2000.0
+2021-12-04	United Kingdom	Omicron 21K	5	2000.0
+2021-12-05	United Kingdom	Omicron 21K	11	2000.0
+2021-12-06	United Kingdom	Omicron 21K	30	2000.0
+2021-12-07	United Kingdom	Omicron 21K	27	2000.0
+2021-12-08	United Kingdom	Omicron 21K	33	2000.0
+2021-12-09	United Kingdom	Omicron 21K	31	2000.0
+2021-12-10	United Kingdom	Omicron 21K	59	2000.0
+2021-12-11	United Kingdom	Omicron 21K	37	2000.0
+2021-12-12	United Kingdom	Omicron 21K	84	2000.0
+2021-12-13	United Kingdom	Omicron 21K	137	2000.0
+2021-12-14	United Kingdom	Omicron 21K	173	2000.0
+2021-12-15	United Kingdom	Omicron 21K	215	2000.0
+2021-12-16	United Kingdom	Omicron 21K	146	2000.0
+2021-12-17	United Kingdom	Omicron 21K	159	2000.0
+2021-12-18	United Kingdom	Omicron 21K	209	2000.0
+2021-12-19	United Kingdom	Omicron 21K	154	2000.0
+2021-12-20	United Kingdom	Omicron 21K	277	2000.0
+2021-12-21	United Kingdom	Omicron 21K	211	2000.0
+2021-12-22	United Kingdom	Omicron 21K	165	2000.0
+2021-12-23	United Kingdom	Omicron 21K	213	2000.0
+2021-12-24	United Kingdom	Omicron 21K	106	2000.0
+2021-12-25	United Kingdom	Omicron 21K	67	2000.0
+2021-12-26	United Kingdom	Omicron 21K	219	2000.0
+2021-12-27	United Kingdom	Omicron 21K	211	2000.0
+2021-12-28	United Kingdom	Omicron 21K	255	2000.0
+2021-12-29	United Kingdom	Omicron 21K	357	2000.0
+2021-12-30	United Kingdom	Omicron 21K	287	2000.0
+2021-12-31	United Kingdom	Omicron 21K	204	2000.0
+2022-01-01	United Kingdom	Omicron 21K	139	2000.0
+2022-01-02	United Kingdom	Omicron 21K	218	2000.0
+2022-01-03	United Kingdom	Omicron 21K	276	2000.0
+2022-01-04	United Kingdom	Omicron 21K	348	2000.0
+2022-01-05	United Kingdom	Omicron 21K	245	2000.0
+2022-01-06	United Kingdom	Omicron 21K	301	2000.0
+2022-01-07	United Kingdom	Omicron 21K	160	2000.0
+2022-01-08	United Kingdom	Omicron 21K	154	2000.0
+2022-01-09	United Kingdom	Omicron 21K	115	2000.0
+2022-01-10	United Kingdom	Omicron 21K	282	2000.0
+2022-01-11	United Kingdom	Omicron 21K	250	2000.0
+2022-01-12	United Kingdom	Omicron 21K	211	2000.0
+2022-01-13	United Kingdom	Omicron 21K	155	2000.0
+2022-01-14	United Kingdom	Omicron 21K	233	2000.0
+2022-01-15	United Kingdom	Omicron 21K	192	2000.0
+2022-01-16	United Kingdom	Omicron 21K	133	2000.0
+2022-01-17	United Kingdom	Omicron 21K	218	2000.0
+2022-01-18	United Kingdom	Omicron 21K	236	2000.0
+2022-01-19	United Kingdom	Omicron 21K	215	2000.0
+2022-01-20	United Kingdom	Omicron 21K	190	2000.0
+2022-01-21	United Kingdom	Omicron 21K	228	2000.0
+2022-01-22	United Kingdom	Omicron 21K	152	2000.0
+2022-01-23	United Kingdom	Omicron 21K	108	2000.0
+2022-01-24	United Kingdom	Omicron 21K	146	2000.0
+2022-01-25	United Kingdom	Omicron 21K	39	2000.0
+2022-01-03	United Kingdom	Omicron 21L	1	2000.0
+2022-01-07	United Kingdom	Omicron 21L	1	2000.0
+2022-01-08	United Kingdom	Omicron 21L	2	2000.0
+2022-01-11	United Kingdom	Omicron 21L	1	2000.0
+2022-01-12	United Kingdom	Omicron 21L	1	2000.0
+2022-01-13	United Kingdom	Omicron 21L	2	2000.0
+2022-01-14	United Kingdom	Omicron 21L	3	2000.0
+2022-01-15	United Kingdom	Omicron 21L	5	2000.0
+2022-01-16	United Kingdom	Omicron 21L	3	2000.0
+2022-01-17	United Kingdom	Omicron 21L	11	2000.0
+2022-01-18	United Kingdom	Omicron 21L	13	2000.0
+2022-01-19	United Kingdom	Omicron 21L	3	2000.0
+2022-01-20	United Kingdom	Omicron 21L	8	2000.0
+2022-01-21	United Kingdom	Omicron 21L	6	2000.0
+2022-01-22	United Kingdom	Omicron 21L	9	2000.0
+2022-01-23	United Kingdom	Omicron 21L	7	2000.0
+2022-01-24	United Kingdom	Omicron 21L	6	2000.0
+2022-01-25	United Kingdom	Omicron 21L	3	2000.0
+2021-09-01	United Kingdom	other	1	2000.0
+2021-09-13	United Kingdom	other	1	2000.0
+2021-09-23	United Kingdom	other	5	2000.0
+2021-09-24	United Kingdom	other	1	2000.0
+2021-10-04	United Kingdom	other	1	2000.0
+2021-10-08	United Kingdom	other	1	2000.0
+2021-10-12	United Kingdom	other	1	2000.0
+2021-10-13	United Kingdom	other	1	2000.0
+2021-10-22	United Kingdom	other	1	2000.0
+2021-10-28	United Kingdom	other	1	2000.0
+2021-11-22	United Kingdom	other	1	2000.0
+2021-12-10	United Kingdom	other	1	2000.0
+2021-12-15	United Kingdom	other	1	2000.0
+2021-12-19	United Kingdom	other	1	2000.0
+2021-12-22	United Kingdom	other	1	2000.0
+2021-12-24	United Kingdom	other	1	2000.0
+2022-01-22	United Kingdom	other	1	2000.0
+2021-09-01	United Kingdom	Delta	1089	5000.0
+2021-09-02	United Kingdom	Delta	1140	5000.0
+2021-09-03	United Kingdom	Delta	1024	5000.0
+2021-09-04	United Kingdom	Delta	814	5000.0
+2021-09-05	United Kingdom	Delta	732	5000.0
+2021-09-06	United Kingdom	Delta	846	5000.0
+2021-09-07	United Kingdom	Delta	610	5000.0
+2021-09-08	United Kingdom	Delta	694	5000.0
+2021-09-09	United Kingdom	Delta	753	5000.0
+2021-09-10	United Kingdom	Delta	652	5000.0
+2021-09-11	United Kingdom	Delta	496	5000.0
+2021-09-12	United Kingdom	Delta	627	5000.0
+2021-09-13	United Kingdom	Delta	766	5000.0
+2021-09-14	United Kingdom	Delta	670	5000.0
+2021-09-15	United Kingdom	Delta	738	5000.0
+2021-09-16	United Kingdom	Delta	791	5000.0
+2021-09-17	United Kingdom	Delta	719	5000.0
+2021-09-18	United Kingdom	Delta	543	5000.0
+2021-09-19	United Kingdom	Delta	634	5000.0
+2021-09-20	United Kingdom	Delta	755	5000.0
+2021-09-21	United Kingdom	Delta	788	5000.0
+2021-09-22	United Kingdom	Delta	587	5000.0
+2021-09-23	United Kingdom	Delta	789	5000.0
+2021-09-24	United Kingdom	Delta	851	5000.0
+2021-09-25	United Kingdom	Delta	438	5000.0
+2021-09-26	United Kingdom	Delta	658	5000.0
+2021-09-27	United Kingdom	Delta	966	5000.0
+2021-09-28	United Kingdom	Delta	672	5000.0
+2021-09-29	United Kingdom	Delta	964	5000.0
+2021-09-30	United Kingdom	Delta	657	5000.0
+2021-10-01	United Kingdom	Delta	507	5000.0
+2021-10-02	United Kingdom	Delta	498	5000.0
+2021-10-03	United Kingdom	Delta	646	5000.0
+2021-10-04	United Kingdom	Delta	838	5000.0
+2021-10-05	United Kingdom	Delta	613	5000.0
+2021-10-06	United Kingdom	Delta	682	5000.0
+2021-10-07	United Kingdom	Delta	789	5000.0
+2021-10-08	United Kingdom	Delta	676	5000.0
+2021-10-09	United Kingdom	Delta	620	5000.0
+2021-10-10	United Kingdom	Delta	677	5000.0
+2021-10-11	United Kingdom	Delta	767	5000.0
+2021-10-12	United Kingdom	Delta	891	5000.0
+2021-10-13	United Kingdom	Delta	734	5000.0
+2021-10-14	United Kingdom	Delta	661	5000.0
+2021-10-15	United Kingdom	Delta	646	5000.0
+2021-10-16	United Kingdom	Delta	587	5000.0
+2021-10-17	United Kingdom	Delta	550	5000.0
+2021-10-18	United Kingdom	Delta	809	5000.0
+2021-10-19	United Kingdom	Delta	762	5000.0
+2021-10-20	United Kingdom	Delta	696	5000.0
+2021-10-21	United Kingdom	Delta	613	5000.0
+2021-10-22	United Kingdom	Delta	590	5000.0
+2021-10-23	United Kingdom	Delta	759	5000.0
+2021-10-24	United Kingdom	Delta	648	5000.0
+2021-10-25	United Kingdom	Delta	726	5000.0
+2021-10-26	United Kingdom	Delta	704	5000.0
+2021-10-27	United Kingdom	Delta	706	5000.0
+2021-10-28	United Kingdom	Delta	641	5000.0
+2021-10-29	United Kingdom	Delta	594	5000.0
+2021-10-30	United Kingdom	Delta	661	5000.0
+2021-10-31	United Kingdom	Delta	847	5000.0
+2021-11-01	United Kingdom	Delta	853	5000.0
+2021-11-02	United Kingdom	Delta	657	5000.0
+2021-11-03	United Kingdom	Delta	765	5000.0
+2021-11-04	United Kingdom	Delta	683	5000.0
+2021-11-05	United Kingdom	Delta	741	5000.0
+2021-11-06	United Kingdom	Delta	528	5000.0
+2021-11-07	United Kingdom	Delta	685	5000.0
+2021-11-08	United Kingdom	Delta	912	5000.0
+2021-11-09	United Kingdom	Delta	656	5000.0
+2021-11-10	United Kingdom	Delta	719	5000.0
+2021-11-11	United Kingdom	Delta	709	5000.0
+2021-11-12	United Kingdom	Delta	734	5000.0
+2021-11-13	United Kingdom	Delta	572	5000.0
+2021-11-14	United Kingdom	Delta	493	5000.0
+2021-11-15	United Kingdom	Delta	746	5000.0
+2021-11-16	United Kingdom	Delta	762	5000.0
+2021-11-17	United Kingdom	Delta	747	5000.0
+2021-11-18	United Kingdom	Delta	669	5000.0
+2021-11-19	United Kingdom	Delta	613	5000.0
+2021-11-20	United Kingdom	Delta	725	5000.0
+2021-11-21	United Kingdom	Delta	646	5000.0
+2021-11-22	United Kingdom	Delta	884	5000.0
+2021-11-23	United Kingdom	Delta	645	5000.0
+2021-11-24	United Kingdom	Delta	742	5000.0
+2021-11-25	United Kingdom	Delta	692	5000.0
+2021-11-26	United Kingdom	Delta	828	5000.0
+2021-11-27	United Kingdom	Delta	464	5000.0
+2021-11-28	United Kingdom	Delta	628	5000.0
+2021-11-29	United Kingdom	Delta	980	5000.0
+2021-11-30	United Kingdom	Delta	870	5000.0
+2021-12-01	United Kingdom	Delta	679	5000.0
+2021-12-02	United Kingdom	Delta	599	5000.0
+2021-12-03	United Kingdom	Delta	605	5000.0
+2021-12-04	United Kingdom	Delta	480	5000.0
+2021-12-05	United Kingdom	Delta	570	5000.0
+2021-12-06	United Kingdom	Delta	822	5000.0
+2021-12-07	United Kingdom	Delta	847	5000.0
+2021-12-08	United Kingdom	Delta	667	5000.0
+2021-12-09	United Kingdom	Delta	508	5000.0
+2021-12-10	United Kingdom	Delta	420	5000.0
+2021-12-11	United Kingdom	Delta	377	5000.0
+2021-12-12	United Kingdom	Delta	402	5000.0
+2021-12-13	United Kingdom	Delta	438	5000.0
+2021-12-14	United Kingdom	Delta	348	5000.0
+2021-12-15	United Kingdom	Delta	303	5000.0
+2021-12-16	United Kingdom	Delta	277	5000.0
+2021-12-17	United Kingdom	Delta	169	5000.0
+2021-12-18	United Kingdom	Delta	200	5000.0
+2021-12-19	United Kingdom	Delta	126	5000.0
+2021-12-20	United Kingdom	Delta	214	5000.0
+2021-12-21	United Kingdom	Delta	125	5000.0
+2021-12-22	United Kingdom	Delta	96	5000.0
+2021-12-23	United Kingdom	Delta	99	5000.0
+2021-12-24	United Kingdom	Delta	31	5000.0
+2021-12-25	United Kingdom	Delta	17	5000.0
+2021-12-26	United Kingdom	Delta	56	5000.0
+2021-12-27	United Kingdom	Delta	43	5000.0
+2021-12-28	United Kingdom	Delta	38	5000.0
+2021-12-29	United Kingdom	Delta	52	5000.0
+2021-12-30	United Kingdom	Delta	27	5000.0
+2021-12-31	United Kingdom	Delta	18	5000.0
+2022-01-01	United Kingdom	Delta	15	5000.0
+2022-01-02	United Kingdom	Delta	12	5000.0
+2022-01-03	United Kingdom	Delta	14	5000.0
+2022-01-04	United Kingdom	Delta	20	5000.0
+2022-01-05	United Kingdom	Delta	13	5000.0
+2022-01-06	United Kingdom	Delta	9	5000.0
+2022-01-07	United Kingdom	Delta	13	5000.0
+2022-01-08	United Kingdom	Delta	6	5000.0
+2022-01-09	United Kingdom	Delta	3	5000.0
+2022-01-10	United Kingdom	Delta	8	5000.0
+2022-01-11	United Kingdom	Delta	3	5000.0
+2022-01-12	United Kingdom	Delta	1	5000.0
+2022-01-13	United Kingdom	Delta	2	5000.0
+2022-01-14	United Kingdom	Delta	3	5000.0
+2022-01-15	United Kingdom	Delta	4	5000.0
+2022-01-16	United Kingdom	Delta	1	5000.0
+2022-01-17	United Kingdom	Delta	1	5000.0
+2022-01-19	United Kingdom	Delta	3	5000.0
+2022-01-21	United Kingdom	Delta	1	5000.0
+2021-10-07	United Kingdom	Omicron 21K	1	5000.0
+2021-11-03	United Kingdom	Omicron 21K	1	5000.0
+2021-11-14	United Kingdom	Omicron 21K	1	5000.0
+2021-11-23	United Kingdom	Omicron 21K	1	5000.0
+2021-11-25	United Kingdom	Omicron 21K	1	5000.0
+2021-11-26	United Kingdom	Omicron 21K	2	5000.0
+2021-11-27	United Kingdom	Omicron 21K	6	5000.0
+2021-11-28	United Kingdom	Omicron 21K	3	5000.0
+2021-11-29	United Kingdom	Omicron 21K	10	5000.0
+2021-11-30	United Kingdom	Omicron 21K	10	5000.0
+2021-12-01	United Kingdom	Omicron 21K	4	5000.0
+2021-12-02	United Kingdom	Omicron 21K	15	5000.0
+2021-12-03	United Kingdom	Omicron 21K	13	5000.0
+2021-12-04	United Kingdom	Omicron 21K	23	5000.0
+2021-12-05	United Kingdom	Omicron 21K	20	5000.0
+2021-12-06	United Kingdom	Omicron 21K	59	5000.0
+2021-12-07	United Kingdom	Omicron 21K	86	5000.0
+2021-12-08	United Kingdom	Omicron 21K	87	5000.0
+2021-12-09	United Kingdom	Omicron 21K	112	5000.0
+2021-12-10	United Kingdom	Omicron 21K	161	5000.0
+2021-12-11	United Kingdom	Omicron 21K	108	5000.0
+2021-12-12	United Kingdom	Omicron 21K	221	5000.0
+2021-12-13	United Kingdom	Omicron 21K	305	5000.0
+2021-12-14	United Kingdom	Omicron 21K	381	5000.0
+2021-12-15	United Kingdom	Omicron 21K	541	5000.0
+2021-12-16	United Kingdom	Omicron 21K	391	5000.0
+2021-12-17	United Kingdom	Omicron 21K	336	5000.0
+2021-12-18	United Kingdom	Omicron 21K	551	5000.0
+2021-12-19	United Kingdom	Omicron 21K	430	5000.0
+2021-12-20	United Kingdom	Omicron 21K	702	5000.0
+2021-12-21	United Kingdom	Omicron 21K	541	5000.0
+2021-12-22	United Kingdom	Omicron 21K	466	5000.0
+2021-12-23	United Kingdom	Omicron 21K	458	5000.0
+2021-12-24	United Kingdom	Omicron 21K	290	5000.0
+2021-12-25	United Kingdom	Omicron 21K	194	5000.0
+2021-12-26	United Kingdom	Omicron 21K	524	5000.0
+2021-12-27	United Kingdom	Omicron 21K	551	5000.0
+2021-12-28	United Kingdom	Omicron 21K	687	5000.0
+2021-12-29	United Kingdom	Omicron 21K	789	5000.0
+2021-12-30	United Kingdom	Omicron 21K	738	5000.0
+2021-12-31	United Kingdom	Omicron 21K	483	5000.0
+2022-01-01	United Kingdom	Omicron 21K	365	5000.0
+2022-01-02	United Kingdom	Omicron 21K	567	5000.0
+2022-01-03	United Kingdom	Omicron 21K	719	5000.0
+2022-01-04	United Kingdom	Omicron 21K	821	5000.0
+2022-01-05	United Kingdom	Omicron 21K	661	5000.0
+2022-01-06	United Kingdom	Omicron 21K	708	5000.0
+2022-01-07	United Kingdom	Omicron 21K	403	5000.0
+2022-01-08	United Kingdom	Omicron 21K	401	5000.0
+2022-01-09	United Kingdom	Omicron 21K	295	5000.0
+2022-01-10	United Kingdom	Omicron 21K	669	5000.0
+2022-01-11	United Kingdom	Omicron 21K	628	5000.0
+2022-01-12	United Kingdom	Omicron 21K	484	5000.0
+2022-01-13	United Kingdom	Omicron 21K	486	5000.0
+2022-01-14	United Kingdom	Omicron 21K	586	5000.0
+2022-01-15	United Kingdom	Omicron 21K	408	5000.0
+2022-01-16	United Kingdom	Omicron 21K	415	5000.0
+2022-01-17	United Kingdom	Omicron 21K	608	5000.0
+2022-01-18	United Kingdom	Omicron 21K	556	5000.0
+2022-01-19	United Kingdom	Omicron 21K	541	5000.0
+2022-01-20	United Kingdom	Omicron 21K	493	5000.0
+2022-01-21	United Kingdom	Omicron 21K	607	5000.0
+2022-01-22	United Kingdom	Omicron 21K	364	5000.0
+2022-01-23	United Kingdom	Omicron 21K	272	5000.0
+2022-01-24	United Kingdom	Omicron 21K	322	5000.0
+2022-01-25	United Kingdom	Omicron 21K	68	5000.0
+2022-01-27	United Kingdom	Omicron 21K	2	5000.0
+2021-12-28	United Kingdom	Omicron 21L	2	5000.0
+2021-12-31	United Kingdom	Omicron 21L	1	5000.0
+2022-01-01	United Kingdom	Omicron 21L	1	5000.0
+2022-01-04	United Kingdom	Omicron 21L	2	5000.0
+2022-01-06	United Kingdom	Omicron 21L	3	5000.0
+2022-01-07	United Kingdom	Omicron 21L	3	5000.0
+2022-01-08	United Kingdom	Omicron 21L	3	5000.0
+2022-01-09	United Kingdom	Omicron 21L	5	5000.0
+2022-01-10	United Kingdom	Omicron 21L	7	5000.0
+2022-01-11	United Kingdom	Omicron 21L	7	5000.0
+2022-01-12	United Kingdom	Omicron 21L	8	5000.0
+2022-01-13	United Kingdom	Omicron 21L	6	5000.0
+2022-01-14	United Kingdom	Omicron 21L	7	5000.0
+2022-01-15	United Kingdom	Omicron 21L	6	5000.0
+2022-01-16	United Kingdom	Omicron 21L	11	5000.0
+2022-01-17	United Kingdom	Omicron 21L	17	5000.0
+2022-01-18	United Kingdom	Omicron 21L	19	5000.0
+2022-01-19	United Kingdom	Omicron 21L	18	5000.0
+2022-01-20	United Kingdom	Omicron 21L	11	5000.0
+2022-01-21	United Kingdom	Omicron 21L	27	5000.0
+2022-01-22	United Kingdom	Omicron 21L	33	5000.0
+2022-01-23	United Kingdom	Omicron 21L	20	5000.0
+2022-01-24	United Kingdom	Omicron 21L	32	5000.0
+2022-01-25	United Kingdom	Omicron 21L	3	5000.0
+2021-09-01	United Kingdom	other	3	5000.0
+2021-09-05	United Kingdom	other	1	5000.0
+2021-09-13	United Kingdom	other	1	5000.0
+2021-09-15	United Kingdom	other	1	5000.0
+2021-09-21	United Kingdom	other	1	5000.0
+2021-09-22	United Kingdom	other	2	5000.0
+2021-09-23	United Kingdom	other	1	5000.0
+2021-09-24	United Kingdom	other	1	5000.0
+2021-09-26	United Kingdom	other	2	5000.0
+2021-09-29	United Kingdom	other	4	5000.0
+2021-10-02	United Kingdom	other	1	5000.0
+2021-10-06	United Kingdom	other	1	5000.0
+2021-10-13	United Kingdom	other	2	5000.0
+2021-10-28	United Kingdom	other	1	5000.0
+2021-11-10	United Kingdom	other	1	5000.0
+2021-11-12	United Kingdom	other	2	5000.0
+2021-11-20	United Kingdom	other	1	5000.0
+2021-11-24	United Kingdom	other	1	5000.0
+2021-12-06	United Kingdom	other	1	5000.0
+2021-12-07	United Kingdom	other	1	5000.0
+2021-12-09	United Kingdom	other	2	5000.0
+2021-12-10	United Kingdom	other	2	5000.0
+2021-12-12	United Kingdom	other	1	5000.0
+2021-12-13	United Kingdom	other	1	5000.0
+2021-12-14	United Kingdom	other	3	5000.0
+2021-12-15	United Kingdom	other	2	5000.0
+2021-12-16	United Kingdom	other	2	5000.0
+2021-12-18	United Kingdom	other	2	5000.0
+2021-12-21	United Kingdom	other	1	5000.0
+2021-12-23	United Kingdom	other	1	5000.0
+2021-12-26	United Kingdom	other	2	5000.0
+2021-12-27	United Kingdom	other	2	5000.0
+2021-12-28	United Kingdom	other	1	5000.0
+2021-12-29	United Kingdom	other	1	5000.0
+2021-12-31	United Kingdom	other	2	5000.0
+2022-01-02	United Kingdom	other	2	5000.0
+2022-01-03	United Kingdom	other	1	5000.0
+2022-01-04	United Kingdom	other	1	5000.0
+2022-01-05	United Kingdom	other	1	5000.0
+2022-01-06	United Kingdom	other	1	5000.0
+2022-01-11	United Kingdom	other	1	5000.0
+2022-01-18	United Kingdom	other	1	5000.0
+2022-01-21	United Kingdom	other	3	5000.0
+2022-01-22	United Kingdom	other	1	5000.0
+2021-09-01	United Kingdom	Delta	5901	10000000000.0
+2021-09-02	United Kingdom	Delta	6170	10000000000.0
+2021-09-03	United Kingdom	Delta	5301	10000000000.0
+2021-09-04	United Kingdom	Delta	4405	10000000000.0
+2021-09-05	United Kingdom	Delta	3936	10000000000.0
+2021-09-06	United Kingdom	Delta	7008	10000000000.0
+2021-09-07	United Kingdom	Delta	5140	10000000000.0
+2021-09-08	United Kingdom	Delta	5704	10000000000.0
+2021-09-09	United Kingdom	Delta	5993	10000000000.0
+2021-09-10	United Kingdom	Delta	5293	10000000000.0
+2021-09-11	United Kingdom	Delta	4095	10000000000.0
+2021-09-12	United Kingdom	Delta	4822	10000000000.0
+2021-09-13	United Kingdom	Delta	6336	10000000000.0
+2021-09-14	United Kingdom	Delta	5450	10000000000.0
+2021-09-15	United Kingdom	Delta	5760	10000000000.0
+2021-09-16	United Kingdom	Delta	6309	10000000000.0
+2021-09-17	United Kingdom	Delta	5761	10000000000.0
+2021-09-18	United Kingdom	Delta	4244	10000000000.0
+2021-09-19	United Kingdom	Delta	5281	10000000000.0
+2021-09-20	United Kingdom	Delta	5862	10000000000.0
+2021-09-21	United Kingdom	Delta	6479	10000000000.0
+2021-09-22	United Kingdom	Delta	4450	10000000000.0
+2021-09-23	United Kingdom	Delta	5982	10000000000.0
+2021-09-24	United Kingdom	Delta	6535	10000000000.0
+2021-09-25	United Kingdom	Delta	3224	10000000000.0
+2021-09-26	United Kingdom	Delta	4993	10000000000.0
+2021-09-27	United Kingdom	Delta	7203	10000000000.0
+2021-09-28	United Kingdom	Delta	5113	10000000000.0
+2021-09-29	United Kingdom	Delta	7256	10000000000.0
+2021-09-30	United Kingdom	Delta	5578	10000000000.0
+2021-10-01	United Kingdom	Delta	3981	10000000000.0
+2021-10-02	United Kingdom	Delta	3698	10000000000.0
+2021-10-03	United Kingdom	Delta	5061	10000000000.0
+2021-10-04	United Kingdom	Delta	6663	10000000000.0
+2021-10-05	United Kingdom	Delta	5387	10000000000.0
+2021-10-06	United Kingdom	Delta	5516	10000000000.0
+2021-10-07	United Kingdom	Delta	6803	10000000000.0
+2021-10-08	United Kingdom	Delta	5312	10000000000.0
+2021-10-09	United Kingdom	Delta	5234	10000000000.0
+2021-10-10	United Kingdom	Delta	5485	10000000000.0
+2021-10-11	United Kingdom	Delta	5560	10000000000.0
+2021-10-12	United Kingdom	Delta	6883	10000000000.0
+2021-10-13	United Kingdom	Delta	5194	10000000000.0
+2021-10-14	United Kingdom	Delta	4902	10000000000.0
+2021-10-15	United Kingdom	Delta	4817	10000000000.0
+2021-10-16	United Kingdom	Delta	4431	10000000000.0
+2021-10-17	United Kingdom	Delta	4514	10000000000.0
+2021-10-18	United Kingdom	Delta	7045	10000000000.0
+2021-10-19	United Kingdom	Delta	6967	10000000000.0
+2021-10-20	United Kingdom	Delta	6036	10000000000.0
+2021-10-21	United Kingdom	Delta	5365	10000000000.0
+2021-10-22	United Kingdom	Delta	5068	10000000000.0
+2021-10-23	United Kingdom	Delta	6057	10000000000.0
+2021-10-24	United Kingdom	Delta	5604	10000000000.0
+2021-10-25	United Kingdom	Delta	6402	10000000000.0
+2021-10-26	United Kingdom	Delta	6213	10000000000.0
+2021-10-27	United Kingdom	Delta	6677	10000000000.0
+2021-10-28	United Kingdom	Delta	5877	10000000000.0
+2021-10-29	United Kingdom	Delta	5202	10000000000.0
+2021-10-30	United Kingdom	Delta	6135	10000000000.0
+2021-10-31	United Kingdom	Delta	7462	10000000000.0
+2021-11-01	United Kingdom	Delta	7616	10000000000.0
+2021-11-02	United Kingdom	Delta	5969	10000000000.0
+2021-11-03	United Kingdom	Delta	7014	10000000000.0
+2021-11-04	United Kingdom	Delta	6382	10000000000.0
+2021-11-05	United Kingdom	Delta	6839	10000000000.0
+2021-11-06	United Kingdom	Delta	5028	10000000000.0
+2021-11-07	United Kingdom	Delta	6262	10000000000.0
+2021-11-08	United Kingdom	Delta	9543	10000000000.0
+2021-11-09	United Kingdom	Delta	7282	10000000000.0
+2021-11-10	United Kingdom	Delta	7813	10000000000.0
+2021-11-11	United Kingdom	Delta	7888	10000000000.0
+2021-11-12	United Kingdom	Delta	7311	10000000000.0
+2021-11-13	United Kingdom	Delta	6268	10000000000.0
+2021-11-14	United Kingdom	Delta	5776	10000000000.0
+2021-11-15	United Kingdom	Delta	8416	10000000000.0
+2021-11-16	United Kingdom	Delta	8285	10000000000.0
+2021-11-17	United Kingdom	Delta	8319	10000000000.0
+2021-11-18	United Kingdom	Delta	7212	10000000000.0
+2021-11-19	United Kingdom	Delta	6736	10000000000.0
+2021-11-20	United Kingdom	Delta	7800	10000000000.0
+2021-11-21	United Kingdom	Delta	7073	10000000000.0
+2021-11-22	United Kingdom	Delta	10196	10000000000.0
+2021-11-23	United Kingdom	Delta	8414	10000000000.0
+2021-11-24	United Kingdom	Delta	8684	10000000000.0
+2021-11-25	United Kingdom	Delta	7808	10000000000.0
+2021-11-26	United Kingdom	Delta	9729	10000000000.0
+2021-11-27	United Kingdom	Delta	5664	10000000000.0
+2021-11-28	United Kingdom	Delta	8234	10000000000.0
+2021-11-29	United Kingdom	Delta	12563	10000000000.0
+2021-11-30	United Kingdom	Delta	11104	10000000000.0
+2021-12-01	United Kingdom	Delta	9174	10000000000.0
+2021-12-02	United Kingdom	Delta	8160	10000000000.0
+2021-12-03	United Kingdom	Delta	7502	10000000000.0
+2021-12-04	United Kingdom	Delta	6461	10000000000.0
+2021-12-05	United Kingdom	Delta	7731	10000000000.0
+2021-12-06	United Kingdom	Delta	10985	10000000000.0
+2021-12-07	United Kingdom	Delta	11373	10000000000.0
+2021-12-08	United Kingdom	Delta	9097	10000000000.0
+2021-12-09	United Kingdom	Delta	6906	10000000000.0
+2021-12-10	United Kingdom	Delta	5872	10000000000.0
+2021-12-11	United Kingdom	Delta	4962	10000000000.0
+2021-12-12	United Kingdom	Delta	5157	10000000000.0
+2021-12-13	United Kingdom	Delta	5802	10000000000.0
+2021-12-14	United Kingdom	Delta	4881	10000000000.0
+2021-12-15	United Kingdom	Delta	4792	10000000000.0
+2021-12-16	United Kingdom	Delta	3823	10000000000.0
+2021-12-17	United Kingdom	Delta	2636	10000000000.0
+2021-12-18	United Kingdom	Delta	2806	10000000000.0
+2021-12-19	United Kingdom	Delta	1896	10000000000.0
+2021-12-20	United Kingdom	Delta	2116	10000000000.0
+2021-12-21	United Kingdom	Delta	1177	10000000000.0
+2021-12-22	United Kingdom	Delta	894	10000000000.0
+2021-12-23	United Kingdom	Delta	1111	10000000000.0
+2021-12-24	United Kingdom	Delta	359	10000000000.0
+2021-12-25	United Kingdom	Delta	230	10000000000.0
+2021-12-26	United Kingdom	Delta	457	10000000000.0
+2021-12-27	United Kingdom	Delta	661	10000000000.0
+2021-12-28	United Kingdom	Delta	491	10000000000.0
+2021-12-29	United Kingdom	Delta	614	10000000000.0
+2021-12-30	United Kingdom	Delta	424	10000000000.0
+2021-12-31	United Kingdom	Delta	252	10000000000.0
+2022-01-01	United Kingdom	Delta	153	10000000000.0
+2022-01-02	United Kingdom	Delta	232	10000000000.0
+2022-01-03	United Kingdom	Delta	242	10000000000.0
+2022-01-04	United Kingdom	Delta	280	10000000000.0
+2022-01-05	United Kingdom	Delta	192	10000000000.0
+2022-01-06	United Kingdom	Delta	190	10000000000.0
+2022-01-07	United Kingdom	Delta	126	10000000000.0
+2022-01-08	United Kingdom	Delta	81	10000000000.0
+2022-01-09	United Kingdom	Delta	46	10000000000.0
+2022-01-10	United Kingdom	Delta	87	10000000000.0
+2022-01-11	United Kingdom	Delta	60	10000000000.0
+2022-01-12	United Kingdom	Delta	42	10000000000.0
+2022-01-13	United Kingdom	Delta	57	10000000000.0
+2022-01-14	United Kingdom	Delta	54	10000000000.0
+2022-01-15	United Kingdom	Delta	35	10000000000.0
+2022-01-16	United Kingdom	Delta	16	10000000000.0
+2022-01-17	United Kingdom	Delta	23	10000000000.0
+2022-01-18	United Kingdom	Delta	28	10000000000.0
+2022-01-19	United Kingdom	Delta	27	10000000000.0
+2022-01-20	United Kingdom	Delta	14	10000000000.0
+2022-01-21	United Kingdom	Delta	20	10000000000.0
+2022-01-22	United Kingdom	Delta	14	10000000000.0
+2022-01-23	United Kingdom	Delta	10	10000000000.0
+2022-01-24	United Kingdom	Delta	4	10000000000.0
+2022-01-25	United Kingdom	Delta	2	10000000000.0
+2021-10-07	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-03	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-14	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-15	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-17	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-18	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-20	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-21	United Kingdom	Omicron 21K	1	10000000000.0
+2021-11-22	United Kingdom	Omicron 21K	6	10000000000.0
+2021-11-23	United Kingdom	Omicron 21K	8	10000000000.0
+2021-11-24	United Kingdom	Omicron 21K	8	10000000000.0
+2021-11-25	United Kingdom	Omicron 21K	19	10000000000.0
+2021-11-26	United Kingdom	Omicron 21K	43	10000000000.0
+2021-11-27	United Kingdom	Omicron 21K	71	10000000000.0
+2021-11-28	United Kingdom	Omicron 21K	32	10000000000.0
+2021-11-29	United Kingdom	Omicron 21K	89	10000000000.0
+2021-11-30	United Kingdom	Omicron 21K	105	10000000000.0
+2021-12-01	United Kingdom	Omicron 21K	122	10000000000.0
+2021-12-02	United Kingdom	Omicron 21K	165	10000000000.0
+2021-12-03	United Kingdom	Omicron 21K	190	10000000000.0
+2021-12-04	United Kingdom	Omicron 21K	264	10000000000.0
+2021-12-05	United Kingdom	Omicron 21K	325	10000000000.0
+2021-12-06	United Kingdom	Omicron 21K	774	10000000000.0
+2021-12-07	United Kingdom	Omicron 21K	1106	10000000000.0
+2021-12-08	United Kingdom	Omicron 21K	1097	10000000000.0
+2021-12-09	United Kingdom	Omicron 21K	1299	10000000000.0
+2021-12-10	United Kingdom	Omicron 21K	1987	10000000000.0
+2021-12-11	United Kingdom	Omicron 21K	1633	10000000000.0
+2021-12-12	United Kingdom	Omicron 21K	3046	10000000000.0
+2021-12-13	United Kingdom	Omicron 21K	4677	10000000000.0
+2021-12-14	United Kingdom	Omicron 21K	5747	10000000000.0
+2021-12-15	United Kingdom	Omicron 21K	7713	10000000000.0
+2021-12-16	United Kingdom	Omicron 21K	5274	10000000000.0
+2021-12-17	United Kingdom	Omicron 21K	4863	10000000000.0
+2021-12-18	United Kingdom	Omicron 21K	7783	10000000000.0
+2021-12-19	United Kingdom	Omicron 21K	5827	10000000000.0
+2021-12-20	United Kingdom	Omicron 21K	7211	10000000000.0
+2021-12-21	United Kingdom	Omicron 21K	5269	10000000000.0
+2021-12-22	United Kingdom	Omicron 21K	4659	10000000000.0
+2021-12-23	United Kingdom	Omicron 21K	5097	10000000000.0
+2021-12-24	United Kingdom	Omicron 21K	3150	10000000000.0
+2021-12-25	United Kingdom	Omicron 21K	2052	10000000000.0
+2021-12-26	United Kingdom	Omicron 21K	5623	10000000000.0
+2021-12-27	United Kingdom	Omicron 21K	7843	10000000000.0
+2021-12-28	United Kingdom	Omicron 21K	9856	10000000000.0
+2021-12-29	United Kingdom	Omicron 21K	11954	10000000000.0
+2021-12-30	United Kingdom	Omicron 21K	10527	10000000000.0
+2021-12-31	United Kingdom	Omicron 21K	7297	10000000000.0
+2022-01-01	United Kingdom	Omicron 21K	5045	10000000000.0
+2022-01-02	United Kingdom	Omicron 21K	7848	10000000000.0
+2022-01-03	United Kingdom	Omicron 21K	10698	10000000000.0
+2022-01-04	United Kingdom	Omicron 21K	12896	10000000000.0
+2022-01-05	United Kingdom	Omicron 21K	10131	10000000000.0
+2022-01-06	United Kingdom	Omicron 21K	11004	10000000000.0
+2022-01-07	United Kingdom	Omicron 21K	5998	10000000000.0
+2022-01-08	United Kingdom	Omicron 21K	5890	10000000000.0
+2022-01-09	United Kingdom	Omicron 21K	4748	10000000000.0
+2022-01-10	United Kingdom	Omicron 21K	8476	10000000000.0
+2022-01-11	United Kingdom	Omicron 21K	8395	10000000000.0
+2022-01-12	United Kingdom	Omicron 21K	6573	10000000000.0
+2022-01-13	United Kingdom	Omicron 21K	6486	10000000000.0
+2022-01-14	United Kingdom	Omicron 21K	7939	10000000000.0
+2022-01-15	United Kingdom	Omicron 21K	5485	10000000000.0
+2022-01-16	United Kingdom	Omicron 21K	5246	10000000000.0
+2022-01-17	United Kingdom	Omicron 21K	8148	10000000000.0
+2022-01-18	United Kingdom	Omicron 21K	7984	10000000000.0
+2022-01-19	United Kingdom	Omicron 21K	7557	10000000000.0
+2022-01-20	United Kingdom	Omicron 21K	6900	10000000000.0
+2022-01-21	United Kingdom	Omicron 21K	8893	10000000000.0
+2022-01-22	United Kingdom	Omicron 21K	5143	10000000000.0
+2022-01-23	United Kingdom	Omicron 21K	4226	10000000000.0
+2022-01-24	United Kingdom	Omicron 21K	4439	10000000000.0
+2022-01-25	United Kingdom	Omicron 21K	896	10000000000.0
+2022-01-26	United Kingdom	Omicron 21K	4	10000000000.0
+2022-01-27	United Kingdom	Omicron 21K	3	10000000000.0
+2022-01-28	United Kingdom	Omicron 21K	1	10000000000.0
+2021-12-06	United Kingdom	Omicron 21L	1	10000000000.0
+2021-12-09	United Kingdom	Omicron 21L	1	10000000000.0
+2021-12-25	United Kingdom	Omicron 21L	2	10000000000.0
+2021-12-26	United Kingdom	Omicron 21L	1	10000000000.0
+2021-12-27	United Kingdom	Omicron 21L	1	10000000000.0
+2021-12-28	United Kingdom	Omicron 21L	4	10000000000.0
+2021-12-29	United Kingdom	Omicron 21L	3	10000000000.0
+2021-12-30	United Kingdom	Omicron 21L	1	10000000000.0
+2021-12-31	United Kingdom	Omicron 21L	4	10000000000.0
+2022-01-01	United Kingdom	Omicron 21L	6	10000000000.0
+2022-01-02	United Kingdom	Omicron 21L	6	10000000000.0
+2022-01-03	United Kingdom	Omicron 21L	9	10000000000.0
+2022-01-04	United Kingdom	Omicron 21L	28	10000000000.0
+2022-01-05	United Kingdom	Omicron 21L	11	10000000000.0
+2022-01-06	United Kingdom	Omicron 21L	18	10000000000.0
+2022-01-07	United Kingdom	Omicron 21L	22	10000000000.0
+2022-01-08	United Kingdom	Omicron 21L	40	10000000000.0
+2022-01-09	United Kingdom	Omicron 21L	27	10000000000.0
+2022-01-10	United Kingdom	Omicron 21L	67	10000000000.0
+2022-01-11	United Kingdom	Omicron 21L	67	10000000000.0
+2022-01-12	United Kingdom	Omicron 21L	85	10000000000.0
+2022-01-13	United Kingdom	Omicron 21L	88	10000000000.0
+2022-01-14	United Kingdom	Omicron 21L	127	10000000000.0
+2022-01-15	United Kingdom	Omicron 21L	128	10000000000.0
+2022-01-16	United Kingdom	Omicron 21L	139	10000000000.0
+2022-01-17	United Kingdom	Omicron 21L	253	10000000000.0
+2022-01-18	United Kingdom	Omicron 21L	260	10000000000.0
+2022-01-19	United Kingdom	Omicron 21L	239	10000000000.0
+2022-01-20	United Kingdom	Omicron 21L	225	10000000000.0
+2022-01-21	United Kingdom	Omicron 21L	337	10000000000.0
+2022-01-22	United Kingdom	Omicron 21L	263	10000000000.0
+2022-01-23	United Kingdom	Omicron 21L	241	10000000000.0
+2022-01-24	United Kingdom	Omicron 21L	314	10000000000.0
+2022-01-25	United Kingdom	Omicron 21L	70	10000000000.0
+2021-09-01	United Kingdom	other	10	10000000000.0
+2021-09-02	United Kingdom	other	1	10000000000.0
+2021-09-03	United Kingdom	other	1	10000000000.0
+2021-09-05	United Kingdom	other	1	10000000000.0
+2021-09-06	United Kingdom	other	5	10000000000.0
+2021-09-07	United Kingdom	other	2	10000000000.0
+2021-09-09	United Kingdom	other	3	10000000000.0
+2021-09-12	United Kingdom	other	1	10000000000.0
+2021-09-13	United Kingdom	other	3	10000000000.0
+2021-09-14	United Kingdom	other	1	10000000000.0
+2021-09-15	United Kingdom	other	3	10000000000.0
+2021-09-16	United Kingdom	other	1	10000000000.0
+2021-09-17	United Kingdom	other	3	10000000000.0
+2021-09-19	United Kingdom	other	2	10000000000.0
+2021-09-20	United Kingdom	other	1	10000000000.0
+2021-09-21	United Kingdom	other	2	10000000000.0
+2021-09-22	United Kingdom	other	10	10000000000.0
+2021-09-23	United Kingdom	other	23	10000000000.0
+2021-09-24	United Kingdom	other	8	10000000000.0
+2021-09-26	United Kingdom	other	3	10000000000.0
+2021-09-29	United Kingdom	other	27	10000000000.0
+2021-10-01	United Kingdom	other	1	10000000000.0
+2021-10-02	United Kingdom	other	2	10000000000.0
+2021-10-04	United Kingdom	other	3	10000000000.0
+2021-10-05	United Kingdom	other	1	10000000000.0
+2021-10-06	United Kingdom	other	2	10000000000.0
+2021-10-07	United Kingdom	other	2	10000000000.0
+2021-10-08	United Kingdom	other	4	10000000000.0
+2021-10-09	United Kingdom	other	2	10000000000.0
+2021-10-10	United Kingdom	other	1	10000000000.0
+2021-10-11	United Kingdom	other	3	10000000000.0
+2021-10-12	United Kingdom	other	3	10000000000.0
+2021-10-13	United Kingdom	other	13	10000000000.0
+2021-10-18	United Kingdom	other	4	10000000000.0
+2021-10-19	United Kingdom	other	1	10000000000.0
+2021-10-20	United Kingdom	other	1	10000000000.0
+2021-10-22	United Kingdom	other	1	10000000000.0
+2021-10-26	United Kingdom	other	2	10000000000.0
+2021-10-27	United Kingdom	other	2	10000000000.0
+2021-10-28	United Kingdom	other	5	10000000000.0
+2021-10-30	United Kingdom	other	1	10000000000.0
+2021-11-04	United Kingdom	other	1	10000000000.0
+2021-11-08	United Kingdom	other	2	10000000000.0
+2021-11-10	United Kingdom	other	4	10000000000.0
+2021-11-12	United Kingdom	other	4	10000000000.0
+2021-11-17	United Kingdom	other	3	10000000000.0
+2021-11-19	United Kingdom	other	1	10000000000.0
+2021-11-20	United Kingdom	other	3	10000000000.0
+2021-11-22	United Kingdom	other	4	10000000000.0
+2021-11-23	United Kingdom	other	2	10000000000.0
+2021-11-24	United Kingdom	other	3	10000000000.0
+2021-11-26	United Kingdom	other	5	10000000000.0
+2021-11-27	United Kingdom	other	2	10000000000.0
+2021-11-28	United Kingdom	other	1	10000000000.0
+2021-11-29	United Kingdom	other	1	10000000000.0
+2021-11-30	United Kingdom	other	1	10000000000.0
+2021-12-01	United Kingdom	other	2	10000000000.0
+2021-12-02	United Kingdom	other	3	10000000000.0
+2021-12-03	United Kingdom	other	2	10000000000.0
+2021-12-04	United Kingdom	other	1	10000000000.0
+2021-12-05	United Kingdom	other	3	10000000000.0
+2021-12-06	United Kingdom	other	9	10000000000.0
+2021-12-07	United Kingdom	other	5	10000000000.0
+2021-12-08	United Kingdom	other	4	10000000000.0
+2021-12-09	United Kingdom	other	7	10000000000.0
+2021-12-10	United Kingdom	other	9	10000000000.0
+2021-12-11	United Kingdom	other	6	10000000000.0
+2021-12-12	United Kingdom	other	9	10000000000.0
+2021-12-13	United Kingdom	other	12	10000000000.0
+2021-12-14	United Kingdom	other	24	10000000000.0
+2021-12-15	United Kingdom	other	23	10000000000.0
+2021-12-16	United Kingdom	other	11	10000000000.0
+2021-12-17	United Kingdom	other	4	10000000000.0
+2021-12-18	United Kingdom	other	9	10000000000.0
+2021-12-19	United Kingdom	other	9	10000000000.0
+2021-12-20	United Kingdom	other	12	10000000000.0
+2021-12-21	United Kingdom	other	13	10000000000.0
+2021-12-22	United Kingdom	other	8	10000000000.0
+2021-12-23	United Kingdom	other	8	10000000000.0
+2021-12-24	United Kingdom	other	12	10000000000.0
+2021-12-25	United Kingdom	other	2	10000000000.0
+2021-12-26	United Kingdom	other	8	10000000000.0
+2021-12-27	United Kingdom	other	8	10000000000.0
+2021-12-28	United Kingdom	other	7	10000000000.0
+2021-12-29	United Kingdom	other	6	10000000000.0
+2021-12-30	United Kingdom	other	12	10000000000.0
+2021-12-31	United Kingdom	other	6	10000000000.0
+2022-01-01	United Kingdom	other	2	10000000000.0
+2022-01-02	United Kingdom	other	6	10000000000.0
+2022-01-03	United Kingdom	other	3	10000000000.0
+2022-01-04	United Kingdom	other	8	10000000000.0
+2022-01-05	United Kingdom	other	4	10000000000.0
+2022-01-06	United Kingdom	other	8	10000000000.0
+2022-01-07	United Kingdom	other	2	10000000000.0
+2022-01-08	United Kingdom	other	3	10000000000.0
+2022-01-10	United Kingdom	other	4	10000000000.0
+2022-01-11	United Kingdom	other	4	10000000000.0
+2022-01-12	United Kingdom	other	1	10000000000.0
+2022-01-13	United Kingdom	other	2	10000000000.0
+2022-01-14	United Kingdom	other	2	10000000000.0
+2022-01-15	United Kingdom	other	5	10000000000.0
+2022-01-16	United Kingdom	other	3	10000000000.0
+2022-01-17	United Kingdom	other	7	10000000000.0
+2022-01-18	United Kingdom	other	10	10000000000.0
+2022-01-19	United Kingdom	other	8	10000000000.0
+2022-01-20	United Kingdom	other	4	10000000000.0
+2022-01-21	United Kingdom	other	12	10000000000.0
+2022-01-22	United Kingdom	other	7	10000000000.0
+2022-01-23	United Kingdom	other	5	10000000000.0
+2022-01-24	United Kingdom	other	7	10000000000.0
+2022-01-25	United Kingdom	other	1	10000000000.0
