@@ -11,6 +11,8 @@ This script computes model errors for different evolutionary forecasting models 
 5. Generates an output DataFrame containing the error metrics and additional frequency columns.
 6. Saves the error metrics to a CSV file.
 
+This process can be found in the script ./modelcomp_scores.py.
+
 ## Formatting growth advantages from `evofr` models
 
 This script formats growth advantages from evolutionary forecasting models for different locations and models. It calculates the growth advantage of variants for all specified pivot dates.
@@ -20,3 +22,5 @@ It does that by performing the following functions:
 2. Defines the list of locations and models to process.
 3. Calls the formatting function to create a formatted DataFrame for each combination of model, location, and pivot date.
 4. Saves the formatted growth advantage data for all locations, models, and variants for each pivot date to a CSV file.
+
+This process can be found in the script ./tidy_growth_adv.py.
