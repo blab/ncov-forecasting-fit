@@ -1,7 +1,8 @@
 
 
 
-# Model Run Notebook
+
+## Running the Models
 
 This notebook provides code for variant frequency forecasting and growth advantage estimation using different models ['GARW','MLR', 'Piantham', 'FGA'] and provides specification
 for a naive model. It does that by performing the following functions:
