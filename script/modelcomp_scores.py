@@ -18,7 +18,7 @@ def smooth_freq(df):
 def load_data(filepath):
     # Check if file exists and continue if not
     if not os.path.exists(filepath):
-        return None  # Fix this
+        return None  
     # read models and add to dict
 
     raw_pred = pd.read_csv(filepath)
@@ -67,8 +67,7 @@ def prep_freq_data(final_set):
 
     # convert frequencies to arrays
     raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy())
-    # print(np.isnan(raw_freq))
-    # print(final_set[["truth_freq"]])
+
 
     if len(raw_freq) == 0:
         return (None,) * 5
@@ -77,7 +76,6 @@ def prep_freq_data(final_set):
     smoothed_freq = np.squeeze(final_set[["smoothed_freq"]].to_numpy())
     smoothed_freq[np.isnan(smoothed_freq)] = 0
 
-    # print(np.isnan(smoothed_freq))
 
     # return seq_total
     seq_count = np.squeeze(final_set[["sequences"]].to_numpy())
@@ -93,20 +91,7 @@ def prep_freq_data(final_set):
 
 def merge_truth_pred(df, location_truth):
 
-    # print(location_truth)
-    # print(np.sum(np.isnan(location_truth["smoothed_freq"].values)))
-
-    # print(location_truth["smoothed_freq"].isnull())
-    print(location_truth[location_truth.isna().any(axis=1)])
-    print(np.sum(location_truth[location_truth.isna().any(axis=1)]))
-
-    # which dates the nans show up?why?
-    # Nans generated in merged set (Brazil missing 21 days of sequences)
     merged_set = pd.merge(df, location_truth, how="left")
-
-    # print(df)
-    # look into df dates vs location truth dates
-    # why is this merge giving np.nans
     merged_set["sequences"] = merged_set["sequences"].fillna(0)
     # sum sequences of each location and date
     merged_set["total_seq"] = merged_set.groupby(["date", "location"])[
@@ -114,18 +99,7 @@ def merge_truth_pred(df, location_truth):
     ].transform("sum")
     # compute truth frequencies for each variant
     merged_set["truth_freq"] = (
-        merged_set["sequences"] / merged_set["total_seq"]
-    )
-    # print(merged_set[merged_set["pred_freq"].notnull()])
-
-    # print(np.sum(np.isnan(new_truth["truth_freq"].values)))
-    # print(np.sum(new_truth["total_seq"].values == 0))
-    # print(np.sum(np.isnan(new_truth["smoothed_freq"].values)))
-
-    # print(df[])
-    # print(np.sum(np.isnan(merged_set["smoothed_freq"].values)))
-    # print(len(df.date.unique()))
-    # print(len(location_truth.date.unique()))
+        merged_set["sequences"] / merged_set["total_seq"])
     return merged_set[merged_set["pred_freq"].notnull()]
 
 
@@ -252,8 +226,7 @@ if __name__ == "__main__":
             pred_dic = {}
             # filtering final_truth dataset to run location
             location_truth = truth_set[truth_set["location"] == location]
-            # location_truth = location_truth[['date','location','variant','sequences']]
-            # print(location_truth)
+            # for all specified pivot dates
             for pivot_date in dates:
 
                 filepath = f"../plot-est2/cast_estimates_full_{model}/{location}/freq_full_{pivot_date}.csv"
@@ -263,7 +236,6 @@ if __name__ == "__main__":
                 print(raw_pred)
                 if raw_pred is None:
                     continue
-                # raw_pred['pred_freq'] = raw_pred['median_freq_forecast'].combine_first(raw_pred['median_freq_nowcast'])
 
                 # Merge predictions and truth set
                 merged = merge_truth_pred(raw_pred, location_truth)
@@ -280,4 +252,4 @@ if __name__ == "__main__":
     score_df = pd.concat(score_df_list)
 
     # save score output to a csv file
-    score_df.to_csv(f"../estimates/model_scores_output4.csv", index=False)
+    score_df.to_csv(f"../estimates/model_scores_output.csv", index=False)
