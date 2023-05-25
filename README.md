@@ -27,12 +27,12 @@ The **#ncov-forecasting-fit** repository hosts a data curation and a live-foreca
 
 ### Data
 
-Script to obtain raw data can be found `script/get_versioned_data.py`, please refer to `script/README.md` for more information on how to obtain the data.
+Notebook to obtain raw data can be found `notebooks/creating-data-sets.ipynb`, please refer to `notebooks/README.md` for more information on how to obtain the data.
 
 
 ### Running the models
 
-`notebooks/auto_renewal_accuracy.ipynb` notebook contains code to generate time-stamped estimates of variant frequencies, growth advantages, and cases for a specified number of countries using five different models that vary in complexity. 
+`notebooks/models_run.ipynb` notebook contains code to generate time-stamped estimates of variant frequencies, growth advantages, and cases for a specified number of countries using five different models that vary in complexity. 
 
 
 
