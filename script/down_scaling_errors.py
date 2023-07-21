@@ -21,7 +21,6 @@ def load_data(filepath):
     # read models and add to dict
 
     raw_pred = pd.read_csv(filepath)
-    # print(model,location,date)
     raw_pred["pred_freq"] = raw_pred["median_freq_forecast"]
     if "median_freq_nowcast" in raw_pred.columns:
         raw_pred["pred_freq"] = raw_pred["pred_freq"].fillna(
@@ -208,6 +207,7 @@ OBS_DATES = [
     "2022-11-01",
     "2022-12-01",
 ]
+THRESES = [100, 500, 1000, 2000, 5000, 1e10]
 TRUTHSET_PATH = "../data/time_stamped/truth/seq_counts_truth.tsv"
 EXPORT_PATH = "../errors/down_scaled_errors.tsv"
 
@@ -226,7 +226,7 @@ if __name__ == "__main__":
             for pivot_date in OBS_DATES:
                 filepath = (
                     "../estimates/down_scaled/thresholding/"
-                    + f"{model}/{location}/frequences_{pivot_date}.tsv"
+                    + f"{model}/{location}/frequences_{pivot_date}_{thres}.tsv"
                 )
 
                 # Load data
