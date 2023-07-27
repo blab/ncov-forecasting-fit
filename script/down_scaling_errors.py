@@ -108,6 +108,7 @@ def calculate_errors(merged, pivot_date, model, location, thres):
         {
             "location": location,
             "model": model,
+            "thres": thres,
             "pivot_date": pd.to_datetime(pivot_date),
             "lead": lead,
             "variant": merged["variant"],
