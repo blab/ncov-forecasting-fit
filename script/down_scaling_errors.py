@@ -20,7 +20,7 @@ def load_data(filepath):
         return None  # Fix this
     # read models and add to dict
 
-    raw_pred = pd.read_csv(filepath)
+    raw_pred = pd.read_csv(filepath, sep="\t")
     raw_pred["pred_freq"] = raw_pred["median_freq_forecast"]
     if "median_freq_nowcast" in raw_pred.columns:
         raw_pred["pred_freq"] = raw_pred["pred_freq"].fillna(
@@ -99,7 +99,7 @@ def merge_truth_pred(df, location_truth):
     return merged_set[merged_set["pred_freq"].notnull()]
 
 
-def calculate_errors(merged, pivot_date):
+def calculate_errors(merged, pivot_date, model, location, thres):
     # Compute model dates and leads from pivot_date
     model_dates = pd.to_datetime(merged["date"])
     lead = (model_dates - pd.to_datetime(pivot_date)).dt.days
@@ -192,7 +192,7 @@ class LogLoss(Scores):
 
 
 LOCATIONS = ["United Kingdom"]
-MODELS = ["MLR"]
+MODEL = "MLR"
 OBS_DATES = [
     "2022-01-01",
     "2022-02-01",
@@ -219,14 +219,14 @@ if __name__ == "__main__":
     score_df_list = []
 
     # Compute error for each model and location
-    for model in MODELS:
-        for location in LOCATIONS:
+    for location in LOCATIONS:
+        for thres in THRESES:
             # filtering final_truth dataset to run location
             location_truth = truth_set[truth_set["location"] == location]
             for pivot_date in OBS_DATES:
                 filepath = (
                     "../estimates/down_scaled/thresholding/"
-                    + f"{model}/{location}/frequences_{pivot_date}_{thres}.tsv"
+                    + f"{MODEL}/{location}/frequencies_{pivot_date}_{thres}.tsv"
                 )
 
                 # Load data
@@ -238,7 +238,9 @@ if __name__ == "__main__":
                 merged = merge_truth_pred(raw_pred, location_truth)
 
                 # Make dataframe containing the errors
-                error_df = calculate_errors(merged, pivot_date)
+                error_df = calculate_errors(
+                    merged, pivot_date, MODEL, location, thres
+                )
                 if error_df is None:
                     continue
 
