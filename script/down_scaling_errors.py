@@ -208,7 +208,20 @@ OBS_DATES = [
     "2022-11-01",
     "2022-12-01",
 ]
-THRESES = [100, 500, 1000, 2000, 5000, 1e10]
+THRESES = [
+    100,
+    500,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000,
+    1e10,
+]
 TRUTHSET_PATH = "../data/time_stamped/truth/seq_counts_truth.tsv"
 EXPORT_PATH = "../errors/down_scaled_errors.tsv"
 
