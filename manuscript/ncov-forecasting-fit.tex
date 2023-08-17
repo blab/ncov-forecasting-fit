@@ -241,6 +241,24 @@ This discrepancy may be attributed to Japan's limited availability of sequence d
 	\label{Figure 3}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=1.1\textwidth]{figures/Var_of_interest.png}
+	\caption{\textbf{Variables of interest in predicting forecasting error}
+	Further legend here.
+	}
+	\label{Figure 4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/downscaling_sequencing.png}
+    \caption{\textbf{Sequencing intensity affects forecast error.}
+    (A) Mean sequences collected per week for selected country. Error bars denote 95\% confidence intervals of the mean. 
+    (B) Average MAE as a function of sequences collected per week colored by forecast horizon. Here, ``0 days'' refers to nowcast error. 
+    (C) Proportion of forecasts within 5\% of retrospective frequency as a function of sequences collected for week.  }%
+    \label{fig:downscaling}
+\end{figure}
 % \paragraph{Variation in frequency error}\
 %
 % In order to investigate the variability among different countries and models and explain the emergence of error patterns in the forecasts, we employed a step-wise regression model to identify various variables that may contribute to errors in mean absolute error (MAE) of the models.
@@ -380,14 +398,6 @@ These variables are defined as fraction of sequences available within 14 days of
 To calculate these variables, we selected a 14-day window of data before each and every observation date and used the collection and submission dates to determine their availability in addition to the period of discrepancy between the collection and submission for each country.
 All variables were calculated using Rstudio statistical software.
 
-\begin{figure}[H]
-	\centering
-    \includegraphics[width=1.1\textwidth]{figures/Var_of_interest.png}
-	\caption{\textbf{Variables of interest in predicting forecasting error}
-	Further legend here.
-	}
-	\label{Figure 4}
-\end{figure}
 
 \paragraph{Downscaling historical sequencing effort}
 
