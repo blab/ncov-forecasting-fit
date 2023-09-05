@@ -113,10 +113,10 @@ Thereby, it is essential to take these factors (data-wise and systematic) into a
 
 Mathematical models elucidate disease processes and have been sought to assess the risk and framing the response to emerging pathogens. 
 %not mechanisms% 
-Representation of disease spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population [Metcalf et al., 2019].
+Representation of disease spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population \cite{metcalf_opportunities_2017}.
 %mention importance of forecasting variant frequences and estimating growth advantage
-In particular, forecasting variant frequencies allows us to understand the impact of mutation accumulation and viral diversity on the spread and competition of different variants in the population.. 
-Furthermore, by estimating variants growth advantages allows us to draw inferences regarding a biological selective advantage of specific variants which could potentially result in increased transmissibility or immune evasion \cite{tegally_detection_2021}. 
+In particular, forecasting variant frequencies allows us to understand the impact of mutation accumulation and viral diversity on the spread and competition of different variants in the population.
+Furthermore, estimating variants growth advantages allows us to draw inferences regarding a biological selective advantage of specific variants which could potentially result in increased transmissibility or immune evasion \cite{tegally_detection_2021}. 
 The validity and reliability of these mathematical models are dependent on the quality and quantity of data used for the model \cite{tao_biological_2021}.
 With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts and also nowcasts, i.e forecasting on a short-term scale, as it leads to 
 increased uncertainty in identifying and forecasting epidemic trends \cite{metcalf_opportunities_2017}.
@@ -126,8 +126,9 @@ increased uncertainty in identifying and forecasting epidemic trends \cite{metca
 In our efforts to investigate how modelling approaches handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 variant frequencies.
 %what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
 In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 variants genomic sequence data as a input data for model comparison and evaluation.
-%Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python. 
-To assess the performance of these models, we used several metrics such as MAE, RMSE, and Sequence log likelihood to compare the predicted frequencies to a set of known true values (Smoothed raw frequency values of SARS-CoV-2 variants). %what is truth set (Smoothed raw_freq)
+%Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python.
+%several metrics such as , RMSE, and Sequence log likelihood
+To assess the performance of these models, we used metrics such as Mean Absolute Error (MAE) to compare the predicted frequencies to a set of known true values (Smoothed raw frequency values of SARS-CoV-2 variants). %what is truth set (Smoothed raw_freq)
 This allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
 
 %What explains our errors
@@ -135,7 +136,8 @@ This allowed us to evaluate the accuracy and reliability of the models and to id
 In our study, we aimed to investigate the persistent patterns of errors in the different models used for nowcasting and forecasting the emergence of SARS-CoV-2 variants. 
 To do so, we examined a variety of variables that may contribute to the emergence of errors in these models. 
 Our goal was to identify the most important variables that play a role in our ability to forecast variant frequencies.
-Through this analysis, we hope to gain a deeper understanding of the factors that contribute to errors in nowcasting and forecasting, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these models.
+Furthermore, we explored the role of sequence availability on nowcast and forecast errors through scaling back sequencing efforts for a sample location.
+Through these analyses, we hope to gain a deeper understanding of the factors that contribute to errors in nowcasting and forecasting, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these models.
 %limits of their use-ability 
 
 %I use Google Scholar format for citation style with first author, year and first word of title, ala \cite{hadfield2018nextstrain}.
@@ -187,9 +189,9 @@ This approach provides a reference for understanding how the models perform as t
 This enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
 
 We applied a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries spanning across different continents (Australia, Brazil, Japan, South Africa, United Kingdom, United States).
-The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary forecasting models... %write about whats common
+The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary forecasting models varying in complexity, refer to methods for more details. 
 We compare the above 4 models to a naive model to serve as a reference model for comparison.
-It is a baseline model which uses simple assumptions to make predictions. %todo mention that this model is worse and that is based on a moving average
+It is a baseline model which uses simple assumptions to make predictions. %todo mention that this model is worse and that is based on a moving average % mentioned in methods
 
 The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 In particular, the use of multiple models allows us to examine if more complex models may be better at capturing epidemiological variant patterns. 
@@ -210,7 +212,7 @@ In contrast, the Piantham model performed worst on average among the models test
 	\caption{\textbf{MAE estimates based on observation date.}
 	Figure 2 represents a demonstration of evaluation score (MAE) comparison. 
 	(A) comparison of progression of error from nowcasting (-30 days) to forecasting (+30 days) among the five candidate models in six different countries.
-	(B) closer look into model performance across three lag times (-30, 0, 30) showing increase in error with farther lag times. 
+	(B) closer look into model performance across all countries for three lag times (-30, 0, 30) showing consistent increase in error with farther lag times. 
 	}
 	\label{fig:model_comp_fig}
 \end{figure}
