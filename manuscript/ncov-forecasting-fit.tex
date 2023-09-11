@@ -275,7 +275,15 @@ This discrepancy may be attributed to Japan's limited availability of sequence d
 
 \paragraph{Effects of changing sequencing intensity of nowcast error}%
 
-\ref{fig:downscaling}
+We expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
+
+In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sentences from the United Kingdom.
+We select the United Kingdom due to its… and subsample the collected sequences in the United Kingdom with some threshold for number of sequences per week.
+We then fit the MLR model to each of the resulting data sets to see how the forecast accuracy varies with sampling intensity.
+We notice that increasing the number of sequences per week generally decreases the average error, but there are dimensioning returns. 
+Additionally, the effect appears to saturate at different values depending on the forecast length. 
+We find that for 14 and 30 day forecasts sampling at least 1000-2000 sequences per week is appropriate for minimizing forecast error \ref{fig:downscaling}.
+
 
 \begin{figure}[H]
     \centering
@@ -323,7 +331,7 @@ Importantly, we find that our multinomial logistic regression model (MLR) demons
 %Japan: Cornelius > It could be that they have a lot of bunching/overdispersion due to the way labs upload, e.g. one day it’s all North, other day all South etc.
 
 From our analysis of transmission dynamics, we find that it takes a shorter amount of time for different variant clades to stabilizer in countries with more robust sequencing efforts. 
-Our analysis also suggest that the variability between different countries' growth advantage estimates for different clades may not necessarily be biological but due to data limitations that we show here.
+Our analysis also suggests that the variability between different countries' growth advantage estimates for different clades may not necessarily be biological but due to data limitations that we show here.
 To understand why different countries dial in quicker, We find that at higher frequencies the growth advantage estimates for the clades begin to stabilize. 
 %temporal resolution is also important here, why at lower freq US and UK are still doing good
 
@@ -333,6 +341,11 @@ To understand why different countries dial in quicker, We find that at higher fr
 * from investigating variables of interest (which quantify sequencing efforts) we saw that it plays a role in explaining the variation in error
 * Non sequencing heterogeneity may also explain error
 
+We find that there are diminishing returns to increasing sequencing efforts however maintaining consistent sequencing efforts for pathogen surveillance can be done with 1000-2000 sequences per week. 
+This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
+Though, we are able to see the overall utility of these methods for providing short-term forecasts, we additionally find that no matter how many sequences are obtained some forecast error is maintained with standard methods for frequency forecasts. 
+
+We also find that naive forecast methods using moving averages are not sufficient for forecasting variant frequencies in the short-term and are even lacking in their common use case, reconstructing past frequencies.
 
 %TODO: Interpretation and caveats of downscaling analysis
 
