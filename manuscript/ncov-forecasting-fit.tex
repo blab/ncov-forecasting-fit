@@ -201,8 +201,9 @@ We used our predictions and used several metrics from the framework, specificall
 The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants.
 The model with the lowest mean MAE error for each country is highlighted as it indicates the best performance among all models (Table~\ref{table:model_comp_table}). 
 The results showed that there was a range of values among the models for different leads.
-In this analysis, the GARW model performed the best, on average, for -30 and 0 days from the date of estimation.
-Notably, for 30 days from the date of estimation, the MLR and GARW models both performed similarly well, with the MLR model exhibiting better performance in Australia, Brazil, and Japan, while the GARW model demonstrated better performance in South Africa, the United Kingdom, and the United States.
+In this analysis, the GARW model performed the best, on average, for -30 days from the date of estimation.
+Notably, for 0 and 30 days from the date of estimation, the MLR outperformed, on average, all other models. 
+For 0 and 30 days, GARW model performed similarly well, with the MLR model exhibiting better performance in United Kingdom, Brazil, and Japan, while the GARW model demonstrated better performance in South Africa. 
 These findings indicate that the GARW model exhibited the best performance, as measured by mean absolute error (MAE), among the models evaluated, excluding the naive reference model.
 In contrast, the Piantham model performed worst on average among the models tested.
 
@@ -228,15 +229,13 @@ In other words, as forecasting step increases, the prediction accuracy for all m
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/model_comp_table.png}
 	\caption{\textbf{Mean Absolute Error}
-	Further legend here.
+	Table 1 demonstrates values of Mean Absolute Error (MAE) for all investigated models at 3 different lead time from the date of estimation (-30, 0, 30). 
+	Values highlighted exhibit the lowest estimated score allowing for comparisons between models and locations.
 	}
 	\label{table:model_comp_table}
 \end{table}
 
-\paragraph{Comparison of Growth Advantages}\
-
-Furthermore, In this study, we investigated the behavior of the growth advantage of different variants in various countries.
-
+\paragraph{Comparison of Growth Advantages}\ We investigated the behavior of the growth advantage of different variants in various countries.
 Using GARW, MLR, and Piantham models, we standardized the varying growth advantage by estimating the median Growth Advantage values as of that date, we were able to observe when and which variants stabilized in each country (Figure~\ref{fig:ga_estimates}). 
 The results of the analysis revealed that the majority of countries displayed stabilization with regard to the Omicron 22A, B, and C variants, with the exception of Japan.
 This discrepancy may be attributed to Japan's limited availability of sequence data or other imperfections in the data.
@@ -254,7 +253,11 @@ This discrepancy may be attributed to Japan's limited availability of sequence d
 	\label{fig:ga_estimates}
 \end{figure}
 
-\paragraph{Correlates of nowcast error}%
+\paragraph{Correlates of nowcast error} We further explore the relationship between variables of interest and the Median mean absolute error across all locations with estimated Spearman correlation.
+Variables included are observation dates, median submission delay, fraction of sequences at observation, and sequences available at observation. 
+We expect that a positive correlation between median submission delay and median MAE such that countries with longer delay exhibit higher errors and a negative correlation between fraction of sequences and sequences available at observation and median MAE such that countries with more robust sequencing efforts show lower errors. 
+While inter-country variability and other unexplored variables may weaken the correlation, we aimed to uncover meaningful trends into this complex phenomena. 
+The results obtained align to initial expectations regarding the trends between the sequencing data and MAE providing insights about the role of sequence submission rate. 
 
 \ref{fig:vars_of_interest}
 
