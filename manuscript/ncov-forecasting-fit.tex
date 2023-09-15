@@ -99,13 +99,13 @@ Finally, we analyze the effect of varying sequencing intensity on forecasting ac
 Mathematical and statistical modeling of infectious diseases plays a key role in predicting the growth of epidemics.
 Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread \cite{ding_value_2021}. 
 Epidemiologists face a multitude of challenges in order to provide accurate and timely predictions of disease spread.
-With the increased availability of genomic sequencing, there has been efforts and potential in using sequences as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens \cite{gire_genomic_2014,zhou_pneumonia_2020}. 
-More recently, with the deluge of data from various sources, issues with data arise regarding quantity, near-real-time accessibility, and quality.
+With the increased availability of genomic sequencing, there have been efforts to use sequencing as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens \cite{gire_genomic_2014,zhou_pneumonia_2020}. 
+More recently, with the deluge of data from various sources, issues with data arise regarding quantity, near-real-time accessibility, and quality of sequences.
 %Integration of these data sources 
-Data collected from different geographical locations and time-points exhibit varying degrees of issues with missing data, submission delays, and back-filling of disease occurrence especially with a larger geographical scale \cite{crepey_challenges_2022}.
+Data collected from different geographical locations and time-points exhibit varying degrees of issues with missing data, submission delays, and back-filling of disease occurrence especially on larger geographic scales \cite{crepey_challenges_2022}.
 %preforming real-time analysis 
-Thus, the quantities and the availability of genomic sequencing data differ depending on the date of observation and forecasting in varying geographical regions being studied.
-This variability in sequences availability can have a significant impact on the accuracy and reliability of forecasting efforts using mathematical models \cite{suchard_bayesian_2018}.
+Thus, the quantities and the availability of genomic sequencing data differ depending on the date of observation and analysis across geographies.
+This variability in sequence availability can have a significant impact on the accuracy and reliability of forecasting efforts using mathematical models \cite{suchard_bayesian_2018}.
 Furthermore, different modeling approaches may have varying levels of sensitivity to imperfections or limitations in the data.
 Even when data is complete and accurate, the chosen model may not be suitable for the problem being analyzed, resulting in inability to capture target trends \cite{gelman_bayesian_2013}.
 Thereby, it is essential to take these factors (data-wise and systematic) into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output \cite{crepey_challenges_2022}.
@@ -115,20 +115,20 @@ Mathematical models elucidate disease processes and have been sought to assess t
 %not mechanisms% 
 Representation of disease spread from genomic sequences can not only help us forecast disease occurrence and pathogen frequencies, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population \cite{metcalf_opportunities_2017}.
 %mention importance of forecasting variant frequences and estimating growth advantage
-In particular, forecasting variant frequencies allows us to understand the impact of mutation accumulation and viral diversity on the spread and competition of different variants in the population.
-Furthermore, estimating variants growth advantages allows us to draw inferences regarding a biological selective advantage of specific variants which could potentially result in increased transmissibility or immune evasion \cite{tegally_detection_2021}. 
+In particular, forecasting variant frequencies allows us to understand the impact of mutation accumulation and viral diversity on the spread of and competition between different variants in the population.
+Furthermore, estimating variants' growth advantages allows us to draw inferences regarding a biological selective advantage of specific variants which could potentially result in increased transmissibility or immune evasion \cite{tegally_detection_2021}. 
 The validity and reliability of these mathematical models are dependent on the quality and quantity of data used for the model \cite{tao_biological_2021}.
-With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts and also nowcasts, i.e forecasting on a short-term scale, as it leads to 
+With the emergence of novel pathogens, real-time data scarcity represent a real challenge to accurate forecasts and also nowcasts i.e. forecasting on a short-term scale, as it leads to 
 increased uncertainty in identifying and forecasting epidemic trends \cite{metcalf_opportunities_2017}.
 
 %what we actually did (high level)
 
-In our efforts to investigate how modelling approaches handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 variant frequencies.
+In our efforts to investigate how modeling approaches handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 variant frequencies within several countries.
 %what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
-In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 variants genomic sequence data as a input data for model comparison and evaluation.
+In order to investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 genomic sequence data and several models of frequency change for model comparison and evaluation.
 %Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python.
 %several metrics such as , RMSE, and Sequence log likelihood
-To assess the performance of these models, we used metrics such as Mean Absolute Error (MAE) to compare the predicted frequencies to a set of known true values (Smoothed raw frequency values of SARS-CoV-2 variants). %what is truth set (Smoothed raw_freq)
+To assess the performance of these models, we used metrics such as Mean Absolute Error (MAE) to compare the predicted frequencies to a set of known true values (smoothed raw frequency values of SARS-CoV-2 variants). %what is truth set (Smoothed raw_freq)
 This allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
 
 %What explains our errors
@@ -137,7 +137,8 @@ In our study, we aimed to investigate the persistent patterns of errors in the d
 To do so, we examined a variety of variables that may contribute to the emergence of errors in these models. 
 Our goal was to identify the most important variables that play a role in our ability to forecast variant frequencies.
 Furthermore, we explored the role of sequence availability on nowcast and forecast errors through scaling back sequencing efforts for a sample location.
-Through these analyses, we hope to gain a deeper understanding of the factors that contribute to errors in nowcasting and forecasting, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these models.
+
+Through these analyses, we develop a deeper understanding of the factors that contribute to errors in nowcasting and forecasting on genomic surveillance data for pathogens, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these evolutionary forecasting models.
 %limits of their use-ability 
 
 %I use Google Scholar format for citation style with first author, year and first word of title, ala \cite{hadfield2018nextstrain}.
@@ -150,16 +151,20 @@ Through these analyses, we hope to gain a deeper understanding of the factors th
 
 \paragraph{Live Forecasting Environment}\
 
+%TODO: What do we mean by live forecasting...
+%Due to the ...., sequecnes are submitted ... Basically give a bit of detail to ground reader in what environment we're wroking in
+Nowcasting variant frequencies is complicated by the continuous nature of the data submission process.
 Figures presented in 1A and 1B offers a visual representation of the live nowcasting environment, illustrating the significance of incorporating observational data in our forecasting models and the variations that exist among countries in terms of the utilization and impact of such data.
-We utilized the GARW model within the framework to demonstrate the dynamics of the live-estimation environment for five different SARS-CoV-2 variants specifically Omicron 21K, 21L, 21A, 22B, 22C (Figure 1A).
 %MF:Being specific about the model isn't necessary here and which model can be mentioned in the caption alone. If we're talking about what's going on in Figure 1, I would say that directly and cite it \ref{fig:Figure1}
-Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of April 22nd to June 15th, 2022 (Figure~\ref{fig:dynamic_forecast_env}.A).
+Utilizing sequencing data for these variants, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States as observed for different observation dates along the period of February 15th to December 1st, 2022 (Figure~\ref{fig:dynamic_forecast_env}.A).
 
-Throughout the observation period, the United States had a higher average availability of SARS-CoV-2 sequences compared to Japan. 
+
+Throughout the observation period, the United States had a higher availability of SARS-CoV-2 sequences compared to Japan. 
 Nonetheless, both country exhibit variability in sequence availability count for the same dates depending on observation dates. 
 
 
-We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
+% We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
+We fit the GARW model within the framework at each of these observation dates to demonstrate the nature of the real-time forecasting environment for five different SARS-CoV-2 variants (Omicron 21K, 21L, 21A, 22B, 22C) (Figure \ref{fig:dynamic_forecast_env}.B).
 We used this data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (Figure~\ref{fig:dynamic_forecast_env}.B).
 However, it was observed that the model predictions for Japan were more frequently misestimated compared to United States.
 
@@ -172,7 +177,6 @@ However, it was observed that the model predictions for Japan were more frequent
 	\includegraphics[width=0.8\textwidth=0.01]{figures/Dynamic_est_env.png}
 	\caption{\textbf{Example data and predictions for Japan and USA.}
 	Figure 1 represents a schematic of the dynamic estimation environment.
-	Nowcasting variant frequencies is complicated by the continuous nature of the data submission process.
 	(A) Variant sequence counts from Japan and United States are shown at 3 different observation dates.
 	Notice varying sequence availability at different observation dates. 
 	(B) Various frequency nowcasts which depends on the data are shown to vary predictions for different observation dates. 
@@ -193,7 +197,7 @@ The first four models are GARW, FGA, MLR, and Piantham, which are evolutionary f
 We compare the above 4 models to a naive model to serve as a reference model for comparison.
 It is a baseline model which uses simple assumptions to make predictions. %todo mention that this model is worse and that is based on a moving average % mentioned in methods
 
-The use of multiple models that ranges in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
+The use of multiple models that range in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 In particular, the use of multiple models allows us to examine if more complex models may be better at capturing epidemiological variant patterns. 
 
 %Mention which models performed best in each lead (no need to mention numbers)
@@ -253,25 +257,25 @@ This discrepancy may be attributed to Japan's limited availability of sequence d
 	\label{fig:ga_estimates}
 \end{figure}
 
-\paragraph{Correlates of nowcast error} We further explore the relationship between variables of interest and the Median mean absolute error across all locations with estimated Spearman correlation.
+\paragraph{Correlates of nowcast error} 
+We further explore the relationship between variables of interest and the median mean absolute error across all locations with estimated Spearman correlation.
 Variables included are observation dates, median submission delay, fraction of sequences at observation, and sequences available at observation. 
 We expect that a positive correlation between median submission delay and median MAE such that countries with longer delay exhibit higher errors and a negative correlation between fraction of sequences and sequences available at observation and median MAE such that countries with more robust sequencing efforts show lower errors. 
 While inter-country variability and other unexplored variables may weaken the correlation, we aimed to uncover meaningful trends into this complex phenomena. 
-The results obtained align to initial expectations regarding the trends between the sequencing data and MAE providing insights about the role of sequence submission rate. 
+%TODO: Add a sentence summarizing results of the figure
+The results obtained align to initial expectations regarding the trends between the sequencing data and MAE providing insights about the role of sequence submission rate (Figure \ref{fig:vars_of_interest}).
 
-\ref{fig:vars_of_interest}
 
 \begin{figure}[H]
 	\centering
     \includegraphics[width=1.1\textwidth]{figures/Var_of_interest.png}
 	\caption{\textbf{Variables of interest in predicting forecasting error}
-    (A) Forecast MAEs visualized by country. Points are medians of ....
+    (A) Forecast MAEs visualized by country. %TODO: Points are medians of ....
     Median MAEs are visualized with observation date (B), 
     median submission delay (C), 
     fraction of sequences available at time of observation (D), 
     and the total number of sequences available at observation (E).
     For (C-E), we estimate the Spearman correlation between variables of interest and median MAE.
-    %MF: Add thorough description of what these points correspond to in methods and brief description here.
 	}
 	\label{fig:vars_of_interest}
 \end{figure}
@@ -279,13 +283,13 @@ The results obtained align to initial expectations regarding the trends between 
 \paragraph{Effects of changing sequencing intensity of nowcast error}%
 
 We expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
-
-In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sentences from the United Kingdom.
-We select the United Kingdom due to its… and subsample the collected sequences in the United Kingdom with some threshold for number of sequences per week.
-We then fit the MLR model to each of the resulting data sets to see how the forecast accuracy varies with sampling intensity.
-We notice that increasing the number of sequences per week generally decreases the average error, but there are dimensioning returns. 
+In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sequences from the United Kingdom.
+For context, we also compute the weekly sequences collected weekly for selected countries globally (Figure \ref{fig:downscaling}.A).
+We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low nowcast error (Figure \ref{fig:vars_of_interest}.A,C,E).
+We simulate several downscaled data sets by subsampling the collected sequences in the United Kingdom with some threshold for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how the forecast accuracy varies with sampling intensity.
+From this analysis, we find that ncreasing the number of sequences per week generally decreases the average error, but there are dimensioning returns (Figure \ref{fig:downscaling}). 
 Additionally, the effect appears to saturate at different values depending on the forecast length. 
-We find that for 14 and 30 day forecasts sampling at least 1000-2000 sequences per week is appropriate for minimizing forecast error \ref{fig:downscaling}.
+We find that for 14 and 30 day forecasts sampling at least 1000-2000 sequences per week is appropriate for minimizing forecast error (Figure \ref{fig:downscaling}).
 
 
 \begin{figure}[H]
@@ -309,9 +313,9 @@ We find that for 14 and 30 day forecasts sampling at least 1000-2000 sequences p
 
 By developing a framework for comparing models of SARS-CoV-2 variant frequency and their forecasts, we find that most models of variant frequency perform well and are able to produce reasonable forecasts.
 However, we find that naive models such as a 7-day moving average may not perform well due to the live nature of sequencing efforts e.g. delays between collection and availability of new samples.
-Overall, [insert fact here] it appears that differences in model accuracy can be attributed to differences in the surveillance and sequencing efforts themselves.
+Overall, it appears that differences in model accuracy are partially attributable to differences in the surveillance and sequencing efforts.
 
-Consistent with most time series models, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
+Consistent with evidence from time series analysis, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
 These long-term forecasts also appear to have heavier tails which indicate increase in extreme values and may be attributable to model break down or the emergence of new variants.  
 
 % Through our present framework, we modeled SARS-CoV-2 variant frequencies which allowed us to estimate transmission differences between clades.
@@ -325,36 +329,33 @@ These long-term forecasts also appear to have heavier tails which indicate incre
 %Something may be wrong with them > next analysis?
 
 
-% Our findings suggest that the variations in error patterns observed are likely attributable to the way in which the models handle data issues across different countries. 
-As such inferences from forecasting models with underlying poor sequencing efforts may not be a reliable approach for such instances without a more contextual understanding of the limitations.
-Additionally, standard modeling practices involve presenting the frequency of variants from 30 days prior as the ``truth'' (Reference? using outbreak.info?); however, our analysis of the naive model reveals a substantial discrepancy between the naive frequencies and the retrospective truth for all countries, except for the US and UK, where a rigorous sequencing effort is in place. 
-Importantly, we find that our multinomial logistic regression model (MLR) demonstrates a tangible improvement in accuracy for Australia, Brazil, Japan, and South Africa.
+Our findings suggest that the variations in error patterns observed are likely attributable to the way in which the models handle data issues across different countries. 
+As such inferences from forecasting models with underlying poor sequencing efforts may not be reliable without a contextual understanding of these limitations.
+Additionally, standard modeling practices often involve presenting moving averages of retrospective frequencies of variants as the ``truth''.
+However, our analysis of the naive model reveals a substantial discrepancy between the averages of past frequencies and the retrospective truth for all countries, except for the US and UK, where a rigorous sequencing effort is in place. 
+Importantly, we find that the multinomial logistic regression model (MLR) provides an improvement in accuracy over the naive model for Australia, Brazil, Japan, and South Africa.
 
 %Trevors point about naive model that last 30 days is not actually truth
 %Japan: Cornelius > It could be that they have a lot of bunching/overdispersion due to the way labs upload, e.g. one day it’s all North, other day all South etc.
 
-From our analysis of transmission dynamics, we find that it takes a shorter amount of time for different variant clades to stabilizer in countries with more robust sequencing efforts. 
+From our analysis of transmission dynamics, we find that it takes a shorter amount of time for different variant clades to stabilize in countries with more robust sequencing efforts. 
 Our analysis also suggests that the variability between different countries' growth advantage estimates for different clades may not necessarily be biological but due to data limitations that we show here.
-To understand why different countries dial in quicker, We find that at higher frequencies the growth advantage estimates for the clades begin to stabilize. 
+We find that at higher frequencies the growth advantage estimates for the clades begin to stabilize though the frequency at which this begins to occur appears to differ by country.
+ % To understand why different countries dial in quicker,
 %temporal resolution is also important here, why at lower freq US and UK are still doing good
 
-* these errors affect growth advantage estimates  (figure 3)
-* different variant dynamics happening in different countries which explain why some countries (SA)
-* point about frequency needed for good estimates
-* from investigating variables of interest (which quantify sequencing efforts) we saw that it plays a role in explaining the variation in error
-* Non sequencing heterogeneity may also explain error
+% * these errors affect growth advantage estimates  (figure 3)
+% * different variant dynamics happening in different countries which explain why some countries (SA)
+% * point about frequency needed for good estimates
+% * from investigating variables of interest (which quantify sequencing efforts) we saw that it plays a role in explaining the variation in error
 
-We find that there are diminishing returns to increasing sequencing efforts however maintaining consistent sequencing efforts for pathogen surveillance can be done with 1000-2000 sequences per week. 
+Though our analyses highlight the role of sequencing effort and intensity in reducing forecast error, it is important to note that non-sequencing heterogeneity through the transmission process and pathogen evolution may also explain error.
+This could explain why South Africa did not show stabilization in growth advantages due to potentially differing variant dynamics or differences in the sequences effort itself.
+
+We find that there are diminishing returns to increasing sequencing efforts however maintaining consistent sequencing efforts for pathogen surveillance can be done with 1,000-2,000 sequences per week. 
 This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
 Though, we are able to see the overall utility of these methods for providing short-term forecasts, we additionally find that no matter how many sequences are obtained some forecast error is maintained with standard methods for frequency forecasts. 
 
-We also find that naive forecast methods using moving averages are not sufficient for forecasting variant frequencies in the short-term and are even lacking in their common use case, reconstructing past frequencies.
-
-%TODO: Interpretation and caveats of downscaling analysis
-
-%Limitations
-
-%Future research
 
 %%% METHODS %%%
 \section*{Methods}
@@ -365,8 +366,8 @@ We prepare sequence count datasets in order to mirror a live nowcasting environm
 For a given pivot or observation date, we filter to all sequences which were collected 90 days before the observation date. 
 In order to properly account for submission delays in this collection process, we additionally filter to those sequences which were submitted before the observation day.
 These sequences are then counted according to their Nextstrain clade assignment to produce sequence counts for each Nextstrain clade each day over the period of interest. 
-These sequence counts are produced independently for … countries including Australia, Brazil, Japan, the United States, the United Kingdom, and South Africa.
-We repeat this process for a series of observations days which are every 7 days starting with … and ending with … giving a total of … datasets for each country.
+These sequence counts are produced independently for 6 countries including Australia, Brazil, Japan, the United States, the United Kingdom, and South Africa.
+We repeat this process for a series of observations days which are the 1st and 15th of each month starting with  Janurary 1st, 2022 and ending with December 15th, 2022 giving a total of 24 datasets for each country.
 Since two models (FGA and GARW) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data.
 
 \paragraph{Frequency dynamics and transmission advantages}%
