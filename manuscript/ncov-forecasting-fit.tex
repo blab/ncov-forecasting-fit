@@ -103,47 +103,42 @@ Mathematical and statistical modeling of infectious diseases plays a key role in
 Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread \cite{ding_value_2021}.
 Epidemiologists face a multitude of challenges in order to \jhc{cut phrases like these} provide accurate and timely predictions of disease spread.
 With the increased availability of genomic sequencing, there have been efforts to use sequencing as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens \cite{gire_genomic_2014,zhou_pneumonia_2020}.
-More recently, with the deluge of data from various sources \jhc{which sources?}, issues with data arise regarding quantity \jhc{issue is scaling analyses/storage with increasing data. what else?}, near-real-time accessibility \jhc{availability}, and quality of sequences.
+More recently, with the upscaling and deluge of sequence data from various testing centers, issues with data arise regarding quantity \jhc{issue is scaling analyses/storage with increasing data. what else?}, near-real-time accessibility, availability, and quality of sequences.
 %Integration of these data sources
-Data collected from different geographical locations and time-points exhibit varying degrees of missing data, submission delays, and back-filling of disease occurrence especially on larger geographic scales \jhc{What does ``larger geographic scales'' mean here?} \cite{crepey_challenges_2022}.
-%preforming real-time analysis
-Thus, the quantities and the availability of genomic sequencing data differ depending on the date of observation and geographic region \jhc{This sentence seems redundant with the previous one. Both make great points, but maybe you can condense them into one?}.
+Data collected from different geographical locations and time-points exhibit varying degrees of missing data, submission delays, and back-filling of disease occurrence which leads to differences in the quantities and availability of sequencing data on different observation dates \cite{crepey_challenges_2022}.
 This variability in sequence availability can adversely impact the accuracy and reliability of forecasting efforts using mathematical models \cite{suchard_bayesian_2018}.
 Different modeling approaches may have varying levels of sensitivity to imperfections or limitations in the data.
 Even when data are complete and accurate, the chosen model may not be suitable for the problem being analyzed, resulting in inability to capture target trends \cite{gelman_bayesian_2013}.
-Thereby, it is essential to take these factors (data-wise and systematic \jhc{What does this mean?}) into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output \cite{crepey_challenges_2022}.
+Thereby, it is essential to take these factors, both data-wise and with regard to systematic methodological errors or biases into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output \cite{crepey_challenges_2022}.
 
 
-Mathematical models elucidate disease processes and have been sought to assess the risk \jhc{of} and frame the response to emerging pathogens.
-%not mechanisms%
-Representation of disease spread from genomic sequences can not \jhc{rephrase as a positive statement?} only forecast disease occurrence and pathogen frequencies \jhc{What are ``pathogen frequencies'' and why do they matter?}, but also uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population \cite{metcalf_opportunities_2017}.
+Mathematical models elucidate disease processes and have been sought to assess the risk of and frame the response to emerging pathogens.
+Representation of disease spread from genomic sequences can forecast disease occurrence and pathogen frequencies, which refer to the relative abundance or prevalence of specific pathogens within a population, that allows to uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population \cite{metcalf_opportunities_2017}.
 %mention importance of forecasting variant frequences and estimating growth advantage
-In particular, forecasting variant frequencies allows us to understand \jhc{perhaps ``interrogate'' instead of ``understand''} the impact of mutation accumulation and viral diversity on the spread of and competition between different variants in the population.
-Furthermore, estimating variants' growth advantages allows us to draw inferences regarding a biological selective advantage of specific variants which could potentially result in increased transmissibility or immune evasion \jhc{This statement felt backwards: the increased transmissbility or immune evasion confers the selective advantage not the other way around.} \cite{tegally_detection_2021}.
+In particular, forecasting variant frequencies allows us to interrogate the impact of mutation accumulation and viral diversity on the spread of and competition between different variants in the population.
+The biological selective advantage of specific variants results in increased transmissibility or immune evasion which confers variants' growth advantages in which enable us to make inferences by estimating their variability \cite{tegally_detection_2021}.
 The validity and reliability of these mathematical models depend on the quality and quantity of data used for the model \cite{tao_biological_2021}.
-With the emergence of novel pathogens, real-time data scarcity represents a real challenge to accurate forecasts and also nowcasts \jhc{Rewrite the next bit as part of a complete sentence explaining what nowcasts are and how they differ from forecasts.} i.e. forecasting on a short-term scale, as it leads to
-increased uncertainty in identifying and forecasting epidemic trends \cite{metcalf_opportunities_2017}.
+With the emergence of novel pathogens, real-time data scarcity represents a real challenge to accurate forecasts and nowcasts, which are short-term forecasts that differ from traditional long-term forecasts, as it leads to increased uncertainty in identifying and forecasting epidemic trends \cite{metcalf_opportunities_2017}. 
+
 
 %what we actually did (high level)
 
-To investigate how modeling approaches \jhc{Which modeling approaches? Need more background on the models before you describe how you evaluate them.} handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 \jhc{Why SC2?} variant frequencies within several \jhc{Which?} countries.
+To investigate how modeling approaches \jhc{Which modeling approaches? Need more background on the models before you describe how you evaluate them.} handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 variant frequencies, due to their high data availability and diversity, within several countries including (Australia, Brazil, Japan, South Africa, the
+United Kingdom, and the United States).
 %what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
 To investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 genomic sequence data and several \jhc{Which} models of frequency change for model comparison and evaluation.
 %Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python.
 %several metrics such as , RMSE, and Sequence log likelihood
-To assess the performance of these models, we used metrics such as \jhc{I didn't see any other metrics besides MAE emphasized in the current draft} mean absolute error (MAE) to compare the predicted frequencies to a set of known true values (smoothed raw frequency values of SARS-CoV-2 variants \jhc{This parenthetical is a little too detailed for the introduction but is great for the methods}). %what is truth set (Smoothed raw_freq)
-This \jhc{what?} allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
-
+To assess the performance of these models, we used mean absolute error (MAE) as a metric to compare the predicted frequencies to a set of known true values (smoothed raw frequency values of SARS-CoV-2 variants \jhc{This parenthetical is a little too detailed for the introduction but is great for the methods}). %what is truth set (Smoothed raw_freq)
+This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
+We also examined a variety of variables that may contribute to the emergence of errors in these models.
+Our aim was to identify the variables that play a role in our ability to forecast variant frequencies.
+We explored the role of sequence availability on nowcast and forecast errors through scaling back sequencing efforts for a sample location. 
+Through these analyses, we develop a deeper understanding of the factors that contribute to errors in nowcasting and forecasting on genomic surveillance data for pathogens, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these evolutionary forecasting models.
 %What explains our errors
 %try to explain the persistent patterns in the errors
-\jhc{The following paragraph read as redundant with the prior paragraph. Could you merge the two into a single paragraph?}
-Here, we investigated the persistent patterns of errors in the different models used for nowcasting and forecasting the emergence of SARS-CoV-2 variants.
-To do so, we examined a variety of variables that may contribute to the emergence of errors in these models.
-Our goal was to identify the most important variables that play a role in our ability to forecast variant frequencies.
-Furthermore, we explored the role of sequence availability on nowcast and forecast errors through scaling back sequencing efforts for a sample location.
 
-\jhc{If you delete/merge the prior paragraph, then you could merge this sentence with the last remaining paragraph as a closing thought.}
-Through these analyses, we develop a deeper understanding of the factors that contribute to errors in nowcasting and forecasting on genomic surveillance data for pathogens, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these evolutionary forecasting models.
+
 %limits of their use-ability
 
 %I use Google Scholar format for citation style with first author, year and first word of title, ala \cite{hadfield2018nextstrain}.
