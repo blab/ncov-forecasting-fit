@@ -153,21 +153,20 @@ Through these analyses, we develop a deeper understanding of the factors that co
 
 %TODO: What do we mean by live forecasting...
 %Due to the ...., sequecnes are submitted ... Basically give a bit of detail to ground reader in what environment we're wroking in
-Nowcasting variant frequencies is complicated by the continuous \jhc{I think you mean ``ongoing'' here? Continuous sounds like data are continously coming in without any gaps in availability when the reality is a much more discrete and batched submission process for most countries} nature of the data submission process.
+Nowcasting variant frequencies is complicated by the ongoing nature of the data submission process.
 \jhc{Can you rewrite the following sentence to summarize the data in Figure 1 that illustrate the effects of variation across countries? The current sentence leaves the reader to figure out what the meaningful results are.}
 Figures presented in 1A and 1B offers a visual representation of the live nowcasting environment, illustrating the significance of incorporating observational data in our forecasting models and the variations that exist among countries in terms of the utilization and impact of such data.
+The representation emphasizes the variability and back-filling of sequencing data at different observation dates for both the US and Japan. 
 %MF:Being specific about the model isn't necessary here and which model can be mentioned in the caption alone. If we're talking about what's going on in Figure 1, I would say that directly and cite it \ref{fig:Figure1}
-Utilizing sequencing data for these variants \jhc{Which variants and why?}, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States \jhc{Why focus on these two countries?} as observed for different observation dates along the period of February 15th to December 1st, 2022 \jhc{Why focus on this date range?} (Figure~\ref{fig:dynamic_forecast_env}A).
-
-\jhc{Merge this paragraph with the preceding?}
+Utilizing sequencing data for these variants \jhc{Which variants and why?}, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States \jhc{Why focus on these two countries?} as observed for different observation dates along the period of February 15th to December 1st, 2022 which was chosen due to the its prominent dynamic behavior with multiple clade replacement for SARS-CoV-2 \cite{:ck_markov_covid}  (Figure~\ref{fig:dynamic_forecast_env}A).
 Throughout the observation period, the United States had a higher availability of SARS-CoV-2 sequences compared to Japan.
-Nonetheless, both countries exhibited variability in sequence availability count for the same dates depending on observation dates \jhc{I didn't follow the last part of this sentence. I generally couldn't tell the difference between observation dates and estimation dates. Are they synonymous?}.
+Nonetheless, both countries exhibited variability in sequence availability count for the same dates depending on observation dates. 
 
 
 % We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
-We fit the GARW model \jhc{Need to introduce this model by its full name first and also explain what it is. This explanation could go in the introduction.} within the framework \jhc{I didn't understand what ``the framework'' meant. Maybe you can drop the reference?} at each of these observation dates to demonstrate the nature of the real-time forecasting environment for five different SARS-CoV-2 variants (Omicron 21K, 21L, 21A, 22B, 22C) (Figure \ref{fig:dynamic_forecast_env}.B).
-We used these data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (Figure~\ref{fig:dynamic_forecast_env}.B).
-However, we observed that the model predictions for Japan were more frequently misestimated compared to United States \jhc{Which data support this statement? The nowcasts shown in Figure 1B look generally similar between the two countries. Maybe you could expand on a couple of specific examples from the figure here to support this statement. For example, compare frequency estimates for clades 22B and 22E.}.
+We fit the Growth Advantage Random Walk (GARW) model within our framework at each of these observation dates to demonstrate the nature of the real-time forecasting environment for five different SARS-CoV-2 variants (Omicron 21K, 21L, 21A, 22B, 22C) (Figure \ref{fig:dynamic_forecast_env}.B).
+We used these data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (Figure~\ref{fig:dynamic_forecast_env}B).
+However, we observed that the model predictions for Japan were more frequently misestimated compared to United States, this is presented in frequency estimates for clades 22B and 22E (Figure~\ref{fig:dynamic_forecast_env}B).
 
 
 
@@ -176,14 +175,13 @@ However, we observed that the model predictions for Japan were more frequently m
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth=0.01]{figures/Dynamic_est_env.png}
-	\caption{\textbf{Example \jhc{``Representative'' might be a better word here. ``Example'' suggests toy or simulated data.} data and predictions for Japan and USA.}
+	\caption{\textbf{Representative data and predictions for Japan and USA.}
     Figure 1 represents a schematic of the real-time forecasting environment.
     \jhc{The goal of this figure was to compare Japan and the USA, but the difference in scales on the y-axis between the two countries complicates that comparison. Have you tried plotting both countries on the same scale? Alternately, scaling the number of sequences by the number of cases or people in the country could place the two rows of part A on the same scale.}
 	(A) Variant sequence counts from Japan and United States are shown at 3 different observation dates.
 	Notice varying sequence availability at different observation dates.
-	(B) Various \jhc{Which?} frequency nowcasts, which depends on the data, vary by observation date.
-    \jhc{Consider adding a legend title of ``Nextstrain clade'' and then you can drop the ``Clade'' prefix from all of the clade labels. Also, I couldn't tell what the different lines in each panel of part B represented. Can you describe what those are in the caption?}
-    }
+	(B) Frequency nowcasts for variants Nextstrain clades (21K, 21L, 22A, 22B, 22C, 22D, 22E), which depends on the data, vary by observation date. 
+	Truth smoothed frequency is represented in black, nowcasts are estimated for each clade with the data available at different observation dates. }
 	\label{fig:dynamic_forecast_env}
   %MF: Figure filenames and labels we typically want to describe what's in the figure itself since the order is usually subject to change.
 \end{figure}
@@ -191,13 +189,12 @@ However, we observed that the model predictions for Japan were more frequently m
 
 \paragraph{Model Error Comparison}\
 
-We began our \jhc{model} comparison by calculating the lag times \jhc{define these first and then name them instead of placing definition in a parenthetical} (difference in days between the date of observation and the date of estimation) as a means of evaluating the performance of the models over time.
-\jhc{Model comparison is per model, per variant, per country, per observation/estimation date, right?}
-This approach provides a reference for understanding how the models perform as the lag time \jhc{Here you refer to ``lag time'', but later in the paper it is ``lead time''.} decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of estimation), specifically from [-30,30] \jhc{What does this range mean? Specifically, what does a lag/lead time of ``-30'' mean in practical terms?}.
-This \jhc{What?} enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
+We began our model comparison by calculating the difference in days between the date of observation and the date of estimation (lag times) as a means of evaluating the performance of the models per each variant, country, and observation date.
+This approach provides a reference for understanding how the models perform as the lag time decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of observation), specifically from 30 days before the date of observation and 30 days after the date of observation [-30,30].
+This method enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
 
 We applied a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries representing six continents (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
-The first four models are GARW, FGA, MLR, and Piantham \jhc{define these earlier without acronyms and include citations}, which are evolutionary forecasting models varying in complexity, refer to methods for more details.
+The first four models are Growth Advantage Random Walk (GARW) \cite{figgins_bedford_freq_dyn}, Fixed Growth Advantage (FGA) \cite{figgins_bedford_freq_dyn}, Multinomial Logistic Regression (MLR), and Piantham \cite{piantham2021estimating}, which are evolutionary forecasting models varying in complexity, refer to methods for more details.
 We compare the above 4 models to a naive model to serve as a reference model for comparison \jhc{Need a definition of the naive model here esp. since it is a baseline model.}.
 It is a baseline model which uses simple assumptions to make predictions. %todo mention that this model is worse and that is based on a moving average % mentioned in methods
 
@@ -205,10 +202,10 @@ The use of multiple models that range in complexity allows for a comprehensive e
 In particular, the use of multiple models allows us to examine if more complex models may be better at capturing epidemiological variant patterns.
 
 %Mention which models performed best in each lead (no need to mention numbers)
-We used our predictions and used several \jhc{Which?} metrics from the framework, specifically mean absolute error (MAE), to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
+We used our predictions and used a metric from the framework, specifically mean absolute error (MAE), to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
 The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants \jhc{Tighten up}.
 The model with the lowest mean MAE error for each country is highlighted as it indicates the best performance among all models (Table~\ref{table:model_comp_table}).
-There was a range of values \jhc{What was the range?} among the models for different leads.
+There was a range of values \jhc{What was the range?} among the models for different lags.
 In this analysis, the GARW model performed the best, on average, for -30 days from the date of estimation.
 For 0 and 30 days from the date of estimation, the MLR outperformed, on average, all other models.
 For 0 and 30 days, GARW model performed similarly well \jhc{How well? Report the relevant numbers that support your statement}, with the MLR model exhibiting better performance in United Kingdom, Brazil, and Japan, while the GARW model demonstrated better performance in South Africa.
@@ -233,22 +230,22 @@ Models were then compared side by side using error quantiles (25,50, and 75th pe
 The majority of the models evaluated in this study exhibited median error values within the range of 0 to 10 percent of logarithm of mean absolute error (log(MAE)) \jhc{I had trouble wrapping my head around the percent of the log MAE here.} (Figure~\ref{fig:model_comp_fig}A).
 Furthermore, we compared the MAE score distribution between models for all countries (Figure~\ref{fig:model_comp_fig}B).
 As expected, the results of the analysis show an increase in MAE error for all models as lag or day from estimation increases.
-In other words, as forecasting step increases, the prediction accuracy for all models decreased \jhc{Maybe ok to drop this sentence as a bit redundant?}.
 
 \begin{table}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/model_comp_table.png}
 	\caption{\textbf{Mean Absolute Error}
-	Table 1 demonstrates values of mean absolute error (MAE) for all investigated models at 3 different lead time from the date of estimation (-30, 0, 30).
+	Table 1 demonstrates values of mean absolute error (MAE) for all investigated models at 3 different lag times from the date of estimation (-30, 0, 30).
 	Values highlighted exhibit the lowest estimated score allowing for comparisons between models and locations.
     \jhc{Drop the table caption from the PNG figure, since you already have a caption in the text here.}
 	}
 	\label{table:model_comp_table}
 \end{table}
 
-\paragraph{Comparison of Growth Advantages}\ We investigated the behavior of the growth advantage of different variants in various \jhc{Which?} countries.
-Using GARW, MLR, and Piantham models \jhc{Why these?}, we standardized the varying growth advantage by estimating the median growth advantage values as of that date, \jhc{The following should be a separate sentence.} we were able to observe when and which variants stabilized in each country (Figure~\ref{fig:ga_estimates}).
-The majority of countries displayed stabilization with regard to the Omicron 22A, B, and C variants \jhc{Mixing Nextstrain clades with WHO nomenclature here}, with the exception of Japan.
+\paragraph{Comparison of Growth Advantages}\ We investigated the behavior of the growth advantage of different variants in different countries including Australia, Brazil, Japan, South Africa, United Kingdom, United States.
+Using GARW, MLR, and Piantham models \jhc{Why these?}, we standardized the varying growth advantage by estimating the median growth advantage values as of that date.
+We observed when and which variants stabilized in each country (Figure~\ref{fig:ga_estimates}).
+The majority of countries displayed stabilization with regard to the clades 22A, 22B, and 22C variants, with the exception of Japan.
 This discrepancy may be attributed to Japan's limited availability of sequence data or other imperfections in the data \jhc{What kinds of imperfections?}.
 %they mostly stabilized except Japan % and why (motivated us to next step of analysis)
 
@@ -293,7 +290,7 @@ The results obtained align to initial expectations regarding the trends between 
 	\label{fig:vars_of_interest}
 \end{figure}
 
-\paragraph{Effects of changing sequencing intensity of \jhc{on?} nowcast error}%
+\paragraph{Effects of changing sequencing intensity on nowcast error}%
 
 \jhc{This section is also in the present tense. Also, the section heading says ``nowcast error'' but the contents below describe forecasting error.}
 We expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
@@ -397,7 +394,7 @@ Since two models (FGA and GARW) also use case counts for their estimates, we add
 We implement and evaluate several models of variant frequencies.
 Each of these methods estimate variant frequencies over time and as well as estimate the transmission advantage of given variant relative to a baseline variant $R_{t}^{v} / R_{t}^{u}$.
 
-The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model (cite), a fixed growth advantage model (FGA), and a growth advantage random walk model (GARW).
+The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model \cite{piantham2021estimating}, a fixed growth advantage model (FGA)  \cite{figgins_bedford_freq_dyn}, and a growth advantage random walk model (GARW)  \cite{figgins_bedford_freq_dyn}.
 Details for each of these models can be found in the corresponding citations above.
 \jhc{Missing citations for models. Generally, the methods need a bit more description of how the different models work including how they are the same and how they differ.}
 
@@ -427,8 +424,8 @@ We evaluate the error between the model predicted frequencies and the truth set 
 
 \paragraph{Generating predictors of error}
 
-We explore four key variables to better encompass \jhc{?} the effect of sequencing efforts which are fraction of sequences available, sequences available, median delay and lead time.
-These variables are defined as fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time, median delay of sequence submission, and lead time from prediction day subsequently for each location (Figure~\ref{fig:vars_of_interest}).
+We explore four key variables to better encompass \jhc{?} the effect of sequencing efforts which are fraction of sequences available, sequences available, median delay and lag time.
+These variables are defined as fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time, median delay of sequence submission, and lag time from prediction day subsequently for each location (Figure~\ref{fig:vars_of_interest}).
 To calculate these variables, we selected a 14-day window of data before each and every observation date and used the collection and submission dates to determine their availability in addition to the period of discrepancy between the collection and submission for each country.
 All variables were calculated using Rstudio statistical software \jhc{Cite RStudio.}.
 
@@ -443,7 +440,7 @@ Using sequences from the United Kingdom, we subsample existing sequences at a ra
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
 We then compare these forecasts to the truth set in previous sections to compute the forecast error for each model.
 
-To better understand how the forecast error varies with sequencing intensity and forecast length, we compute the fraction of forecasts within a certain ``acceptable'' \jhc{maybe drop ``acceptable'' here, since the 5\% threshold is arbitrary.} error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lead times.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we compute the fraction of forecasts within a certain ``acceptable'' \jhc{maybe drop ``acceptable'' here, since the 5\% threshold is arbitrary.} error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lag times.
 
 
 \section*{Data and code accessibility}
