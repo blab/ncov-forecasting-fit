@@ -382,16 +382,16 @@ Though, we are able to see the overall utility of these methods for providing sh
 
 \jhc{Methods appear in present tense, but past tense would be appropriate.}
 We prepared sequence count datasets to replicate a live nowcasting environment using the Nextstrain-curated SARS-CoV-2 sequence metadata which is created using the GISAID database.
-For a given observation date, we filter to all sequences which were collected 90 days before the observation date.
-To properly account for submission delays in this collection process, we additionally filter to those sequences which were submitted before the observation day.
+For a given observation date, we filtered to all sequences which were collected 90 days before the observation date.
+To properly account for submission delays in this collection process, we additionally filtered to those sequences which were submitted before the observation day.
 These sequences are then counted according to their Nextstrain clade to produce sequence counts for each clade each day over the period of interest.
 These sequence counts are produced independently for 6 countries including Australia, Brazil, Japan, the United States, the United Kingdom, and South Africa.
-We repeat this process for a series of observations days which are the 1st and 15th of each month starting with  Janurary 1st, 2022 and ending with December 15th, 2022 giving a total of 24 datasets for each country.
+We repeated this process for a series of observations days which are the 1st and 15th of each month starting with  Janurary 1st, 2022 and ending with December 15th, 2022 giving a total of 24 datasets for each country.
 Since two models (FGA and GARW) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data.
 
 \paragraph{Frequency dynamics and transmission advantages}%
 
-We implement and evaluate several models of variant frequencies.
+We implemented and evaluated several models of variant frequencies.
 Each of these methods estimate variant frequencies over time and as well as estimate the transmission advantage of given variant relative to a baseline variant $R_{t}^{v} / R_{t}^{u}$.
 
 The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model \cite{piantham2021estimating}, a fixed growth advantage model (FGA)  \cite{figgins_bedford_freq_dyn}, and a growth advantage random walk model (GARW)  \cite{figgins_bedford_freq_dyn}.
@@ -428,7 +428,7 @@ We evaluate the error between the model predicted frequencies and the truth set 
 
 \paragraph{Generating predictors of error}
 
-We explore four key variables to describe the effect of sequencing efforts on nowcast errors and found their Spearman correlations with the nowcast errors.
+We explored four key variables to describe the effect of sequencing efforts on nowcast errors and found their Spearman correlations with the nowcast errors.
 These variables are defined as fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time, median delay of sequence submission, and lag time from prediction day subsequently for each location (Figure~\ref{fig:vars_of_interest}).
 To calculate these variables, we selected a 14-day window of data before each and every observation date and used the collection and submission dates to determine their availability in addition to the period of discrepancy between the collection and submission for each country.
 All variables were calculated using Rstudio statistical software \jhc{Cite RStudio.}.
@@ -438,12 +438,12 @@ All variables were calculated using Rstudio statistical software \jhc{Cite RStud
 
 \paragraph{Downscaling historical sequencing effort}
 
-We explore the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
-Using sequences from the United Kingdom, we subsample existing sequences at a rate of 100, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 sequences per week at various \jhc{which?} observation dates throughout the pandemic.
+We explored the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
+Using sequences from the United Kingdom, we subsampled existing sequences at a rate of 100, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 sequences per week at various \jhc{which?} observation dates throughout the pandemic.
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
-We then compare these forecasts to the truth set in previous sections to compute the forecast error for each model.
+We then compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
 
-To better understand how the forecast error varies with sequencing intensity and forecast length, we compute the fraction of forecasts within a certain ``acceptable'' \jhc{maybe drop ``acceptable'' here, since the 5\% threshold is arbitrary.} error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lag times.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a certain ``acceptable'' \jhc{maybe drop ``acceptable'' here, since the 5\% threshold is arbitrary.} error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lag times.
 
 
 \section*{Data and code accessibility}
