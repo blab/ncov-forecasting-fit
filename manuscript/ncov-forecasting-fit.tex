@@ -381,10 +381,10 @@ Though, we are able to see the overall utility of these methods for providing sh
 \paragraph{Preparing sequence counts and case counts}
 
 \jhc{Methods appear in present tense, but past tense would be appropriate.}
-We prepare sequence count datasets to replicate a live nowcasting environment.
-For a given pivot \jhc{define ``pivot'' or drop in favor of ``observation date'' alone} or observation date, we filter to all sequences \jhc{from which database(s)} which were collected 90 days before the observation date.
+We prepared sequence count datasets to replicate a live nowcasting environment using the Nextstrain-curated SARS-CoV-2 sequence metadata which is created using the GISAID database.
+For a given observation date, we filter to all sequences which were collected 90 days before the observation date.
 To properly account for submission delays in this collection process, we additionally filter to those sequences which were submitted before the observation day.
-These sequences are then counted according to their Nextstrain clade assignment \jhc{cite Nextstrain clade definitions here. How did you assign clades for this project?} to produce sequence counts for each Nextstrain clade each day over the period of interest.
+These sequences are then counted according to their Nextstrain clade to produce sequence counts for each clade each day over the period of interest.
 These sequence counts are produced independently for 6 countries including Australia, Brazil, Japan, the United States, the United Kingdom, and South Africa.
 We repeat this process for a series of observations days which are the 1st and 15th of each month starting with  Janurary 1st, 2022 and ending with December 15th, 2022 giving a total of 24 datasets for each country.
 Since two models (FGA and GARW) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data.
@@ -402,29 +402,33 @@ We provide a brief mathematical overview of these methods below.
 
 The models mentioned above estimate the frequency  $f_{v}(t)$ of variant $v$ at time $t$ using sequence counts and/or case counts of the form described in the previous section.
 All models simultaneously estimate the variant transmission advantages $\Delta_{v} = \frac{R_{t}^{v}}{R_{t}^{\text{pivot}}}$ where $R_{t}^{v}$ is the effective reproduction number for variant $v$.
-We can interpret these transmission advantages as the relative effective reproduction number of a variant against a given pivot \jhc{Pivot used here with a different meaning than the previous methods section.} variant.
-Growth advantages presented in this manuscript are relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time.
-The models differ in assumptions in computing this quantity \jhc{Write out as a full sentence} i.e. MLR depends on an assumption of a fixed generation time, Piantham assumes the total prevalence is fixed in time, while GARW / FGA additionally model the transmission process using case count data.
+We can interpret these transmission advantages as the relative effective reproduction number of a variant relative to some reference variant.
+
+The multinomial logistic regression model estimates a fixed growth advantage using logistic regression with a variant-specific intercept and time coefficient, so that the frequency of variant $v$ at time $t$ can be modeled as
+\begin{align*}
+    f_{v}(t) = \frac{\exp(\alpha_{v} + \delta_{v} t)}{\sum_{u} \exp(\alpha_{u} + \delta_{u} t)},
+\end{align*}
+where $\Delta_{v} = \exp(\delta_{v} \tau)$ for some fixed generation time $\tau$.
+The Piantham model relies on an approximation to the renewal equation wherein new infections do not vary greatly over the generation time of the virus.
+This model generalizes the MLR in that it accounts for non-fixed generation time though it assumes little overall case growth. \cite{piantham2021estimating}
+
+The fixed growth advantage model uses a renewal equation model based on both case counts and sequence counts, but assumes that the growth advantage $\Delta_{v}$ is constant in time. \cite{figgins_bedford_freq_dyn}
+The growth advantage random walk model also uses a renewal equation model based on both case counts and sequences, but allows variant growth advantages to vary smoothly in time. \cite{figgins_bedford_freq_dyn}
+
+The models used all differ in the complexity of their assumptions in computing the variant growth advantage which may affect forecasting accuracy.
+Growth advantages presented in this manuscript are estimated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time.
 Further details on the model formats can be found in their respective citations.
-All models were implemented using the evofr (evolutionary forecasting) software package in Python \jhc{Add link to PyPI package?} using Numpyro for inference.
+All models were implemented using the evofr (evolutionary forecasting) software package in Python (https://pypi.org/project/evofr/) using Numpyro for inference.
+
 We compare the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies.
-
-% * Framework
-%
-% In our efforts to investigate how modeling approaches handle data issues, we developed a novel framework for standardizing and accurately estimating real-time nowcast and forecast targets, and to facilitate comparisons of forecasting and nowcasting accuracy between various statistical models.
-% This framework utilizes live surveillance data to examine the empirical aspects of evolutionary forecasting by forecasting targets which includes viral pathogen frequencies, pathogen growth advantages, and incidence estimates.
-% Additionally, the framework provides a statistical scoring rule system for evaluating the effectiveness of different modeling approaches.
-% The purpose of this study is to investigate the utility of this framework in the context of evolutionary forecasting and to improve our understanding of the factors that influence the accuracy of nowcast and forecast targets.
-
 
 \paragraph{Evaluation Criteria}
 
-We evaluate the error between the model predicted frequencies and the truth set averaged across each variant at a given time point using three metrics: root mean squared error (RMSE), mean absolute error (MAE), and a multinomial log-likelihood.
-\jhc{I never saw RMSE or LL used in the paper. Drop these here and elsewhere?}
+We evaluate the error between the model predicted frequencies and the truth set averaged across each variant at a given time point using the mean absolute error (MAE).
 
 \paragraph{Generating predictors of error}
 
-We explore four key variables to better encompass \jhc{?} the effect of sequencing efforts which are fraction of sequences available, sequences available, median delay and lag time.
+We explore four key variables to describe the effect of sequencing efforts on nowcast errors and found their Spearman correlations with the nowcast errors.
 These variables are defined as fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time, median delay of sequence submission, and lag time from prediction day subsequently for each location (Figure~\ref{fig:vars_of_interest}).
 To calculate these variables, we selected a 14-day window of data before each and every observation date and used the collection and submission dates to determine their availability in addition to the period of discrepancy between the collection and submission for each country.
 All variables were calculated using Rstudio statistical software \jhc{Cite RStudio.}.
@@ -434,7 +438,6 @@ All variables were calculated using Rstudio statistical software \jhc{Cite RStud
 
 \paragraph{Downscaling historical sequencing effort}
 
-\jhc{Throughout the paper you use ``downscale'' and ``subsample''. Maybe ``downsample'' is more appropriate instead?}
 We explore the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
 Using sequences from the United Kingdom, we subsample existing sequences at a rate of 100, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 sequences per week at various \jhc{which?} observation dates throughout the pandemic.
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
