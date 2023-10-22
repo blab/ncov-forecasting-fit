@@ -56,7 +56,7 @@
 
 %%% TITLE %%%
 \title{\vspace{1.0cm} \Large \bf
-Sequencing hetergenity affect nowcast and forecast/prediction error for SARS-CoV-2 Variants? \jhc{What is your primary result? That is your title.}
+Sequencing hetergenity affect real-time nowcast and forecast/prediction error for SARS-CoV-2 Variants? \jhc{What is your primary result? That is your title.}
 }
 %
 \author[1,2]{Eslam Abousamra*}
@@ -218,9 +218,7 @@ In contrast, the Piantham model performed worst on average among the models test
 	\caption{\textbf{MAE estimates based on observation date.}
 	Figure 2 represents a demonstration of evaluation score (MAE) comparison.
 	(A) comparison of progression of error from nowcasting (-30 days) \jhc{Is ``-30 days'' nowcasting or pastcasting?} to forecasting (+30 days) among the five candidate models in six different countries.
-    \jhc{Can you update the x-axis labels to show ticks at -30, 0, and 30? These are values referenced in the text, so the current labels of -20 and 20 were confusing. Also, is there any way to avoid the log scale on the y-axis? It strongly distorts the MAEs across models and countries, making relatively large differences in error at the upper end look similar and smaller differences at the lower end look dramatic.}
 	(B) closer look into model performance across all countries for three lag times (-30, 0, 30) showing consistent increase in error with farther lag times.
-    \jhc{Can you reverse the order of the models in the legends so the order matches the x-axis of panel B (with naive as the first model)?}
 	}
 	\label{fig:model_comp_fig}
 \end{figure}
@@ -329,7 +327,7 @@ By developing a framework for comparing models of SARS-CoV-2 variant frequency a
 However, we find that naive models such as a 7-day moving average may not perform well due to the live nature of sequencing efforts e.g. delays between collection and availability of new samples.
 Overall, it appears that differences in model accuracy are partially attributable to differences in the surveillance and sequencing efforts.
 
-Consistent with evidence from time series analysis \jhc{which time series analysis? Include citations here.}, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
+Consistent with evidence from SARS-CoV-2 time series forecasting analysis \cite{cramer2022unitedforecastinghub}, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
 These long-term forecasts also appear to have heavier tails which indicate increase in extreme values and may be attributable to model break down or the emergence of new variants.
 
 % Through our present framework, we modeled SARS-CoV-2 variant frequencies which allowed us to estimate transmission differences between clades.
