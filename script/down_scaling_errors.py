@@ -192,7 +192,7 @@ class LogLoss(Scores):
         return loglik
 
 
-LOCATIONS = ["United Kingdom"]
+LOCATIONS = ["United Kingdom", "Denmark", "Monaco"]
 MODEL = "MLR"
 OBS_DATES = [
     "2022-01-01",
