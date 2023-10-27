@@ -1,4 +1,4529 @@
 date	location	variant	sequences
+2021-09-01	Denmark	Delta	630
+2021-09-02	Denmark	Delta	521
+2021-09-03	Denmark	Delta	427
+2021-09-04	Denmark	Delta	368
+2021-09-05	Denmark	Delta	405
+2021-09-06	Denmark	Delta	477
+2021-09-07	Denmark	Delta	523
+2021-09-08	Denmark	Delta	411
+2021-09-09	Denmark	Delta	437
+2021-09-10	Denmark	Delta	326
+2021-09-11	Denmark	Delta	221
+2021-09-12	Denmark	Delta	281
+2021-09-13	Denmark	Delta	352
+2021-09-14	Denmark	Delta	306
+2021-09-15	Denmark	Delta	282
+2021-09-16	Denmark	Delta	275
+2021-09-17	Denmark	Delta	263
+2021-09-18	Denmark	Delta	187
+2021-09-19	Denmark	Delta	242
+2021-09-20	Denmark	Delta	338
+2021-09-21	Denmark	Delta	307
+2021-09-22	Denmark	Delta	321
+2021-09-23	Denmark	Delta	323
+2021-09-24	Denmark	Delta	325
+2021-09-25	Denmark	Delta	311
+2021-09-26	Denmark	Delta	307
+2021-09-27	Denmark	Delta	364
+2021-09-28	Denmark	Delta	471
+2021-09-29	Denmark	Delta	376
+2021-09-30	Denmark	Delta	396
+2021-10-01	Denmark	Delta	359
+2021-10-02	Denmark	Delta	311
+2021-10-03	Denmark	Delta	368
+2021-10-04	Denmark	Delta	469
+2021-10-05	Denmark	Delta	451
+2021-10-06	Denmark	Delta	559
+2021-10-07	Denmark	Delta	478
+2021-10-08	Denmark	Delta	545
+2021-10-09	Denmark	Delta	408
+2021-10-10	Denmark	Delta	508
+2021-10-11	Denmark	Delta	610
+2021-10-12	Denmark	Delta	666
+2021-10-13	Denmark	Delta	660
+2021-10-14	Denmark	Delta	655
+2021-10-15	Denmark	Delta	583
+2021-10-16	Denmark	Delta	393
+2021-10-17	Denmark	Delta	677
+2021-10-18	Denmark	Delta	781
+2021-10-19	Denmark	Delta	887
+2021-10-20	Denmark	Delta	1056
+2021-10-21	Denmark	Delta	1257
+2021-10-22	Denmark	Delta	1045
+2021-10-23	Denmark	Delta	1089
+2021-10-24	Denmark	Delta	1147
+2021-10-25	Denmark	Delta	1263
+2021-10-26	Denmark	Delta	1078
+2021-10-27	Denmark	Delta	1494
+2021-10-28	Denmark	Delta	1306
+2021-10-29	Denmark	Delta	1157
+2021-10-30	Denmark	Delta	838
+2021-10-31	Denmark	Delta	1117
+2021-11-01	Denmark	Delta	1232
+2021-11-02	Denmark	Delta	1605
+2021-11-03	Denmark	Delta	1760
+2021-11-04	Denmark	Delta	1540
+2021-11-05	Denmark	Delta	1641
+2021-11-06	Denmark	Delta	1351
+2021-11-07	Denmark	Delta	1886
+2021-11-08	Denmark	Delta	1830
+2021-11-09	Denmark	Delta	2314
+2021-11-10	Denmark	Delta	2248
+2021-11-11	Denmark	Delta	1661
+2021-11-12	Denmark	Delta	1016
+2021-11-13	Denmark	Delta	1083
+2021-11-14	Denmark	Delta	1149
+2021-11-15	Denmark	Delta	2043
+2021-11-16	Denmark	Delta	1445
+2021-11-17	Denmark	Delta	1439
+2021-11-18	Denmark	Delta	1554
+2021-11-19	Denmark	Delta	1834
+2021-11-20	Denmark	Delta	1605
+2021-11-21	Denmark	Delta	1550
+2021-11-22	Denmark	Delta	2152
+2021-11-23	Denmark	Delta	2133
+2021-11-24	Denmark	Delta	1747
+2021-11-25	Denmark	Delta	1744
+2021-11-26	Denmark	Delta	1625
+2021-11-27	Denmark	Delta	1459
+2021-11-28	Denmark	Delta	1518
+2021-11-29	Denmark	Delta	1829
+2021-11-30	Denmark	Delta	1635
+2021-12-01	Denmark	Delta	2308
+2021-12-02	Denmark	Delta	2698
+2021-12-03	Denmark	Delta	2415
+2021-12-04	Denmark	Delta	2942
+2021-12-05	Denmark	Delta	3456
+2021-12-06	Denmark	Delta	4251
+2021-12-07	Denmark	Delta	1777
+2021-12-08	Denmark	Delta	1499
+2021-12-09	Denmark	Delta	1023
+2021-12-10	Denmark	Delta	1452
+2021-12-11	Denmark	Delta	975
+2021-12-12	Denmark	Delta	915
+2021-12-13	Denmark	Delta	985
+2021-12-14	Denmark	Delta	524
+2021-12-15	Denmark	Delta	571
+2021-12-16	Denmark	Delta	549
+2021-12-17	Denmark	Delta	216
+2021-12-18	Denmark	Delta	399
+2021-12-19	Denmark	Delta	485
+2021-12-20	Denmark	Delta	439
+2021-12-21	Denmark	Delta	296
+2021-12-22	Denmark	Delta	188
+2021-12-23	Denmark	Delta	197
+2021-12-24	Denmark	Delta	105
+2021-12-25	Denmark	Delta	79
+2021-12-26	Denmark	Delta	114
+2021-12-27	Denmark	Delta	250
+2021-12-28	Denmark	Delta	171
+2021-12-29	Denmark	Delta	65
+2021-12-30	Denmark	Delta	102
+2021-12-31	Denmark	Delta	37
+2022-01-01	Denmark	Delta	33
+2022-01-02	Denmark	Delta	268
+2022-01-03	Denmark	Delta	121
+2022-01-04	Denmark	Delta	24
+2022-01-05	Denmark	Delta	68
+2022-01-06	Denmark	Delta	35
+2022-01-07	Denmark	Delta	58
+2022-01-08	Denmark	Delta	16
+2022-01-09	Denmark	Delta	18
+2022-01-10	Denmark	Delta	29
+2022-01-11	Denmark	Delta	21
+2022-01-12	Denmark	Delta	17
+2022-01-13	Denmark	Delta	20
+2022-01-14	Denmark	Delta	11
+2022-01-15	Denmark	Delta	9
+2022-01-16	Denmark	Delta	8
+2022-01-17	Denmark	Delta	11
+2022-01-18	Denmark	Delta	13
+2022-01-19	Denmark	Delta	5
+2022-01-20	Denmark	Delta	5
+2022-01-21	Denmark	Delta	4
+2022-01-22	Denmark	Delta	6
+2022-01-23	Denmark	Delta	5
+2022-01-24	Denmark	Delta	4
+2022-01-25	Denmark	Delta	3
+2022-01-27	Denmark	Delta	2
+2022-01-28	Denmark	Delta	1
+2022-01-29	Denmark	Delta	1
+2022-01-31	Denmark	Delta	1
+2022-02-01	Denmark	Delta	2
+2022-02-02	Denmark	Delta	1
+2022-02-08	Denmark	Delta	1
+2022-02-17	Denmark	Delta	1
+2022-02-26	Denmark	Delta	1
+2022-02-27	Denmark	Delta	1
+2022-03-09	Denmark	Delta	1
+2022-06-14	Denmark	Delta	1
+2023-01-14	Denmark	Delta	1
+2021-11-22	Denmark	Omicron 21K	1
+2021-11-23	Denmark	Omicron 21K	1
+2021-11-25	Denmark	Omicron 21K	3
+2021-11-26	Denmark	Omicron 21K	3
+2021-11-27	Denmark	Omicron 21K	2
+2021-11-28	Denmark	Omicron 21K	8
+2021-11-29	Denmark	Omicron 21K	6
+2021-11-30	Denmark	Omicron 21K	20
+2021-12-01	Denmark	Omicron 21K	57
+2021-12-02	Denmark	Omicron 21K	43
+2021-12-03	Denmark	Omicron 21K	33
+2021-12-04	Denmark	Omicron 21K	61
+2021-12-05	Denmark	Omicron 21K	103
+2021-12-06	Denmark	Omicron 21K	204
+2021-12-07	Denmark	Omicron 21K	155
+2021-12-08	Denmark	Omicron 21K	172
+2021-12-09	Denmark	Omicron 21K	160
+2021-12-10	Denmark	Omicron 21K	191
+2021-12-11	Denmark	Omicron 21K	196
+2021-12-12	Denmark	Omicron 21K	243
+2021-12-13	Denmark	Omicron 21K	381
+2021-12-14	Denmark	Omicron 21K	381
+2021-12-15	Denmark	Omicron 21K	496
+2021-12-16	Denmark	Omicron 21K	428
+2021-12-17	Denmark	Omicron 21K	231
+2021-12-18	Denmark	Omicron 21K	546
+2021-12-19	Denmark	Omicron 21K	716
+2021-12-20	Denmark	Omicron 21K	702
+2021-12-21	Denmark	Omicron 21K	579
+2021-12-22	Denmark	Omicron 21K	502
+2021-12-23	Denmark	Omicron 21K	526
+2021-12-24	Denmark	Omicron 21K	174
+2021-12-25	Denmark	Omicron 21K	196
+2021-12-26	Denmark	Omicron 21K	486
+2021-12-27	Denmark	Omicron 21K	1358
+2021-12-28	Denmark	Omicron 21K	1032
+2021-12-29	Denmark	Omicron 21K	379
+2021-12-30	Denmark	Omicron 21K	704
+2021-12-31	Denmark	Omicron 21K	318
+2022-01-01	Denmark	Omicron 21K	294
+2022-01-02	Denmark	Omicron 21K	3548
+2022-01-03	Denmark	Omicron 21K	1585
+2022-01-04	Denmark	Omicron 21K	329
+2022-01-05	Denmark	Omicron 21K	1124
+2022-01-06	Denmark	Omicron 21K	626
+2022-01-07	Denmark	Omicron 21K	1538
+2022-01-08	Denmark	Omicron 21K	503
+2022-01-09	Denmark	Omicron 21K	301
+2022-01-10	Denmark	Omicron 21K	847
+2022-01-11	Denmark	Omicron 21K	1042
+2022-01-12	Denmark	Omicron 21K	871
+2022-01-13	Denmark	Omicron 21K	981
+2022-01-14	Denmark	Omicron 21K	942
+2022-01-15	Denmark	Omicron 21K	712
+2022-01-16	Denmark	Omicron 21K	573
+2022-01-17	Denmark	Omicron 21K	820
+2022-01-18	Denmark	Omicron 21K	843
+2022-01-19	Denmark	Omicron 21K	665
+2022-01-20	Denmark	Omicron 21K	624
+2022-01-21	Denmark	Omicron 21K	701
+2022-01-22	Denmark	Omicron 21K	545
+2022-01-23	Denmark	Omicron 21K	489
+2022-01-24	Denmark	Omicron 21K	546
+2022-01-25	Denmark	Omicron 21K	535
+2022-01-26	Denmark	Omicron 21K	359
+2022-01-27	Denmark	Omicron 21K	354
+2022-01-28	Denmark	Omicron 21K	199
+2022-01-29	Denmark	Omicron 21K	216
+2022-01-30	Denmark	Omicron 21K	340
+2022-01-31	Denmark	Omicron 21K	398
+2022-02-01	Denmark	Omicron 21K	114
+2022-02-02	Denmark	Omicron 21K	130
+2022-02-03	Denmark	Omicron 21K	131
+2022-02-04	Denmark	Omicron 21K	160
+2022-02-05	Denmark	Omicron 21K	198
+2022-02-06	Denmark	Omicron 21K	144
+2022-02-07	Denmark	Omicron 21K	157
+2022-02-08	Denmark	Omicron 21K	147
+2022-02-09	Denmark	Omicron 21K	96
+2022-02-10	Denmark	Omicron 21K	96
+2022-02-11	Denmark	Omicron 21K	133
+2022-02-12	Denmark	Omicron 21K	139
+2022-02-13	Denmark	Omicron 21K	130
+2022-02-14	Denmark	Omicron 21K	123
+2022-02-15	Denmark	Omicron 21K	116
+2022-02-16	Denmark	Omicron 21K	67
+2022-02-17	Denmark	Omicron 21K	76
+2022-02-18	Denmark	Omicron 21K	101
+2022-02-19	Denmark	Omicron 21K	52
+2022-02-20	Denmark	Omicron 21K	44
+2022-02-21	Denmark	Omicron 21K	74
+2022-02-22	Denmark	Omicron 21K	57
+2022-02-23	Denmark	Omicron 21K	44
+2022-02-24	Denmark	Omicron 21K	48
+2022-02-25	Denmark	Omicron 21K	49
+2022-02-26	Denmark	Omicron 21K	59
+2022-02-27	Denmark	Omicron 21K	45
+2022-02-28	Denmark	Omicron 21K	36
+2022-03-01	Denmark	Omicron 21K	37
+2022-03-02	Denmark	Omicron 21K	49
+2022-03-03	Denmark	Omicron 21K	42
+2022-03-04	Denmark	Omicron 21K	38
+2022-03-05	Denmark	Omicron 21K	39
+2022-03-06	Denmark	Omicron 21K	25
+2022-03-07	Denmark	Omicron 21K	28
+2022-03-08	Denmark	Omicron 21K	31
+2022-03-09	Denmark	Omicron 21K	28
+2022-03-10	Denmark	Omicron 21K	25
+2022-03-11	Denmark	Omicron 21K	25
+2022-03-12	Denmark	Omicron 21K	14
+2022-03-13	Denmark	Omicron 21K	41
+2022-03-14	Denmark	Omicron 21K	29
+2022-03-15	Denmark	Omicron 21K	13
+2022-03-16	Denmark	Omicron 21K	27
+2022-03-17	Denmark	Omicron 21K	23
+2022-03-18	Denmark	Omicron 21K	15
+2022-03-19	Denmark	Omicron 21K	12
+2022-03-20	Denmark	Omicron 21K	19
+2022-03-21	Denmark	Omicron 21K	22
+2022-03-22	Denmark	Omicron 21K	29
+2022-03-23	Denmark	Omicron 21K	11
+2022-03-24	Denmark	Omicron 21K	14
+2022-03-25	Denmark	Omicron 21K	10
+2022-03-26	Denmark	Omicron 21K	29
+2022-03-27	Denmark	Omicron 21K	12
+2022-03-28	Denmark	Omicron 21K	19
+2022-03-29	Denmark	Omicron 21K	11
+2022-03-30	Denmark	Omicron 21K	15
+2022-03-31	Denmark	Omicron 21K	12
+2022-04-01	Denmark	Omicron 21K	8
+2022-04-02	Denmark	Omicron 21K	10
+2022-04-03	Denmark	Omicron 21K	8
+2022-04-04	Denmark	Omicron 21K	10
+2022-04-05	Denmark	Omicron 21K	7
+2022-04-06	Denmark	Omicron 21K	5
+2022-04-07	Denmark	Omicron 21K	8
+2022-04-08	Denmark	Omicron 21K	5
+2022-04-09	Denmark	Omicron 21K	5
+2022-04-10	Denmark	Omicron 21K	3
+2022-04-11	Denmark	Omicron 21K	3
+2022-04-12	Denmark	Omicron 21K	9
+2022-04-13	Denmark	Omicron 21K	2
+2022-04-14	Denmark	Omicron 21K	3
+2022-04-15	Denmark	Omicron 21K	4
+2022-04-16	Denmark	Omicron 21K	6
+2022-04-17	Denmark	Omicron 21K	2
+2022-04-18	Denmark	Omicron 21K	1
+2022-04-19	Denmark	Omicron 21K	1
+2022-04-20	Denmark	Omicron 21K	1
+2022-04-21	Denmark	Omicron 21K	3
+2022-04-22	Denmark	Omicron 21K	2
+2022-04-23	Denmark	Omicron 21K	4
+2022-04-25	Denmark	Omicron 21K	5
+2022-04-26	Denmark	Omicron 21K	2
+2022-04-27	Denmark	Omicron 21K	1
+2022-04-28	Denmark	Omicron 21K	1
+2022-04-29	Denmark	Omicron 21K	3
+2022-04-30	Denmark	Omicron 21K	2
+2022-05-05	Denmark	Omicron 21K	1
+2022-05-06	Denmark	Omicron 21K	2
+2022-05-08	Denmark	Omicron 21K	1
+2022-05-09	Denmark	Omicron 21K	1
+2022-05-11	Denmark	Omicron 21K	1
+2022-05-15	Denmark	Omicron 21K	1
+2022-05-19	Denmark	Omicron 21K	1
+2022-05-20	Denmark	Omicron 21K	1
+2022-06-13	Denmark	Omicron 21K	1
+2021-12-05	Denmark	Omicron 21L	1
+2021-12-10	Denmark	Omicron 21L	2
+2021-12-12	Denmark	Omicron 21L	2
+2021-12-13	Denmark	Omicron 21L	11
+2021-12-14	Denmark	Omicron 21L	13
+2021-12-15	Denmark	Omicron 21L	12
+2021-12-16	Denmark	Omicron 21L	17
+2021-12-17	Denmark	Omicron 21L	18
+2021-12-18	Denmark	Omicron 21L	33
+2021-12-19	Denmark	Omicron 21L	50
+2021-12-20	Denmark	Omicron 21L	73
+2021-12-21	Denmark	Omicron 21L	69
+2021-12-22	Denmark	Omicron 21L	63
+2021-12-23	Denmark	Omicron 21L	68
+2021-12-24	Denmark	Omicron 21L	26
+2021-12-25	Denmark	Omicron 21L	40
+2021-12-26	Denmark	Omicron 21L	87
+2021-12-27	Denmark	Omicron 21L	315
+2021-12-28	Denmark	Omicron 21L	225
+2021-12-29	Denmark	Omicron 21L	93
+2021-12-30	Denmark	Omicron 21L	149
+2021-12-31	Denmark	Omicron 21L	91
+2022-01-01	Denmark	Omicron 21L	105
+2022-01-02	Denmark	Omicron 21L	1090
+2022-01-03	Denmark	Omicron 21L	528
+2022-01-04	Denmark	Omicron 21L	115
+2022-01-05	Denmark	Omicron 21L	422
+2022-01-06	Denmark	Omicron 21L	297
+2022-01-07	Denmark	Omicron 21L	838
+2022-01-08	Denmark	Omicron 21L	275
+2022-01-09	Denmark	Omicron 21L	226
+2022-01-10	Denmark	Omicron 21L	722
+2022-01-11	Denmark	Omicron 21L	1001
+2022-01-12	Denmark	Omicron 21L	886
+2022-01-13	Denmark	Omicron 21L	1155
+2022-01-14	Denmark	Omicron 21L	1273
+2022-01-15	Denmark	Omicron 21L	1018
+2022-01-16	Denmark	Omicron 21L	998
+2022-01-17	Denmark	Omicron 21L	1540
+2022-01-18	Denmark	Omicron 21L	1704
+2022-01-19	Denmark	Omicron 21L	1497
+2022-01-20	Denmark	Omicron 21L	1460
+2022-01-21	Denmark	Omicron 21L	1927
+2022-01-22	Denmark	Omicron 21L	1524
+2022-01-23	Denmark	Omicron 21L	1665
+2022-01-24	Denmark	Omicron 21L	2008
+2022-01-25	Denmark	Omicron 21L	2070
+2022-01-26	Denmark	Omicron 21L	1417
+2022-01-27	Denmark	Omicron 21L	1422
+2022-01-28	Denmark	Omicron 21L	1023
+2022-01-29	Denmark	Omicron 21L	1290
+2022-01-30	Denmark	Omicron 21L	2138
+2022-01-31	Denmark	Omicron 21L	2394
+2022-02-01	Denmark	Omicron 21L	707
+2022-02-02	Denmark	Omicron 21L	809
+2022-02-03	Denmark	Omicron 21L	1487
+2022-02-04	Denmark	Omicron 21L	1750
+2022-02-05	Denmark	Omicron 21L	1812
+2022-02-06	Denmark	Omicron 21L	1427
+2022-02-07	Denmark	Omicron 21L	1732
+2022-02-08	Denmark	Omicron 21L	1864
+2022-02-09	Denmark	Omicron 21L	1284
+2022-02-10	Denmark	Omicron 21L	1256
+2022-02-11	Denmark	Omicron 21L	1849
+2022-02-12	Denmark	Omicron 21L	2178
+2022-02-13	Denmark	Omicron 21L	2356
+2022-02-14	Denmark	Omicron 21L	2659
+2022-02-15	Denmark	Omicron 21L	2717
+2022-02-16	Denmark	Omicron 21L	1433
+2022-02-17	Denmark	Omicron 21L	1741
+2022-02-18	Denmark	Omicron 21L	2648
+2022-02-19	Denmark	Omicron 21L	1518
+2022-02-20	Denmark	Omicron 21L	1267
+2022-02-21	Denmark	Omicron 21L	2267
+2022-02-22	Denmark	Omicron 21L	2116
+2022-02-23	Denmark	Omicron 21L	1152
+2022-02-24	Denmark	Omicron 21L	1821
+2022-02-25	Denmark	Omicron 21L	2067
+2022-02-26	Denmark	Omicron 21L	2408
+2022-02-27	Denmark	Omicron 21L	1924
+2022-02-28	Denmark	Omicron 21L	1599
+2022-03-01	Denmark	Omicron 21L	1822
+2022-03-02	Denmark	Omicron 21L	2331
+2022-03-03	Denmark	Omicron 21L	1679
+2022-03-04	Denmark	Omicron 21L	1832
+2022-03-05	Denmark	Omicron 21L	1789
+2022-03-06	Denmark	Omicron 21L	1799
+2022-03-07	Denmark	Omicron 21L	1964
+2022-03-08	Denmark	Omicron 21L	2396
+2022-03-09	Denmark	Omicron 21L	2207
+2022-03-10	Denmark	Omicron 21L	1993
+2022-03-11	Denmark	Omicron 21L	1623
+2022-03-12	Denmark	Omicron 21L	939
+2022-03-13	Denmark	Omicron 21L	2195
+2022-03-14	Denmark	Omicron 21L	2911
+2022-03-15	Denmark	Omicron 21L	1497
+2022-03-16	Denmark	Omicron 21L	1807
+2022-03-17	Denmark	Omicron 21L	1973
+2022-03-18	Denmark	Omicron 21L	1833
+2022-03-19	Denmark	Omicron 21L	1439
+2022-03-20	Denmark	Omicron 21L	1677
+2022-03-21	Denmark	Omicron 21L	2329
+2022-03-22	Denmark	Omicron 21L	2338
+2022-03-23	Denmark	Omicron 21L	1245
+2022-03-24	Denmark	Omicron 21L	1408
+2022-03-25	Denmark	Omicron 21L	1262
+2022-03-26	Denmark	Omicron 21L	2056
+2022-03-27	Denmark	Omicron 21L	1728
+2022-03-28	Denmark	Omicron 21L	2074
+2022-03-29	Denmark	Omicron 21L	1529
+2022-03-30	Denmark	Omicron 21L	2144
+2022-03-31	Denmark	Omicron 21L	1867
+2022-04-01	Denmark	Omicron 21L	1927
+2022-04-02	Denmark	Omicron 21L	1354
+2022-04-03	Denmark	Omicron 21L	1658
+2022-04-04	Denmark	Omicron 21L	2301
+2022-04-05	Denmark	Omicron 21L	2102
+2022-04-06	Denmark	Omicron 21L	1730
+2022-04-07	Denmark	Omicron 21L	1817
+2022-04-08	Denmark	Omicron 21L	1647
+2022-04-09	Denmark	Omicron 21L	1232
+2022-04-10	Denmark	Omicron 21L	974
+2022-04-11	Denmark	Omicron 21L	1875
+2022-04-12	Denmark	Omicron 21L	1525
+2022-04-13	Denmark	Omicron 21L	1673
+2022-04-14	Denmark	Omicron 21L	874
+2022-04-15	Denmark	Omicron 21L	970
+2022-04-16	Denmark	Omicron 21L	941
+2022-04-17	Denmark	Omicron 21L	940
+2022-04-18	Denmark	Omicron 21L	1393
+2022-04-19	Denmark	Omicron 21L	1634
+2022-04-20	Denmark	Omicron 21L	1286
+2022-04-21	Denmark	Omicron 21L	952
+2022-04-22	Denmark	Omicron 21L	920
+2022-04-23	Denmark	Omicron 21L	677
+2022-04-24	Denmark	Omicron 21L	741
+2022-04-25	Denmark	Omicron 21L	802
+2022-04-26	Denmark	Omicron 21L	840
+2022-04-27	Denmark	Omicron 21L	800
+2022-04-28	Denmark	Omicron 21L	691
+2022-04-29	Denmark	Omicron 21L	532
+2022-04-30	Denmark	Omicron 21L	452
+2022-05-01	Denmark	Omicron 21L	526
+2022-05-02	Denmark	Omicron 21L	609
+2022-05-03	Denmark	Omicron 21L	674
+2022-05-04	Denmark	Omicron 21L	621
+2022-05-05	Denmark	Omicron 21L	672
+2022-05-06	Denmark	Omicron 21L	504
+2022-05-07	Denmark	Omicron 21L	388
+2022-05-08	Denmark	Omicron 21L	469
+2022-05-09	Denmark	Omicron 21L	629
+2022-05-10	Denmark	Omicron 21L	579
+2022-05-11	Denmark	Omicron 21L	490
+2022-05-12	Denmark	Omicron 21L	542
+2022-05-13	Denmark	Omicron 21L	266
+2022-05-14	Denmark	Omicron 21L	318
+2022-05-15	Denmark	Omicron 21L	399
+2022-05-16	Denmark	Omicron 21L	514
+2022-05-17	Denmark	Omicron 21L	441
+2022-05-18	Denmark	Omicron 21L	441
+2022-05-19	Denmark	Omicron 21L	351
+2022-05-20	Denmark	Omicron 21L	311
+2022-05-21	Denmark	Omicron 21L	228
+2022-05-22	Denmark	Omicron 21L	269
+2022-05-23	Denmark	Omicron 21L	319
+2022-05-24	Denmark	Omicron 21L	297
+2022-05-25	Denmark	Omicron 21L	266
+2022-05-26	Denmark	Omicron 21L	156
+2022-05-27	Denmark	Omicron 21L	229
+2022-05-28	Denmark	Omicron 21L	124
+2022-05-29	Denmark	Omicron 21L	162
+2022-05-30	Denmark	Omicron 21L	292
+2022-05-31	Denmark	Omicron 21L	242
+2022-06-01	Denmark	Omicron 21L	188
+2022-06-02	Denmark	Omicron 21L	124
+2022-06-03	Denmark	Omicron 21L	193
+2022-06-04	Denmark	Omicron 21L	73
+2022-06-05	Denmark	Omicron 21L	86
+2022-06-06	Denmark	Omicron 21L	160
+2022-06-07	Denmark	Omicron 21L	192
+2022-06-08	Denmark	Omicron 21L	207
+2022-06-09	Denmark	Omicron 21L	178
+2022-06-10	Denmark	Omicron 21L	153
+2022-06-11	Denmark	Omicron 21L	120
+2022-06-12	Denmark	Omicron 21L	146
+2022-06-13	Denmark	Omicron 21L	195
+2022-06-14	Denmark	Omicron 21L	206
+2022-06-15	Denmark	Omicron 21L	154
+2022-06-16	Denmark	Omicron 21L	173
+2022-06-17	Denmark	Omicron 21L	172
+2022-06-18	Denmark	Omicron 21L	104
+2022-06-19	Denmark	Omicron 21L	137
+2022-06-20	Denmark	Omicron 21L	179
+2022-06-21	Denmark	Omicron 21L	81
+2022-06-22	Denmark	Omicron 21L	68
+2022-06-23	Denmark	Omicron 21L	48
+2022-06-24	Denmark	Omicron 21L	42
+2022-06-25	Denmark	Omicron 21L	44
+2022-06-26	Denmark	Omicron 21L	67
+2022-06-27	Denmark	Omicron 21L	64
+2022-06-28	Denmark	Omicron 21L	26
+2022-06-29	Denmark	Omicron 21L	31
+2022-06-30	Denmark	Omicron 21L	27
+2022-07-01	Denmark	Omicron 21L	54
+2022-07-02	Denmark	Omicron 21L	21
+2022-07-03	Denmark	Omicron 21L	26
+2022-07-04	Denmark	Omicron 21L	18
+2022-07-05	Denmark	Omicron 21L	32
+2022-07-06	Denmark	Omicron 21L	28
+2022-07-07	Denmark	Omicron 21L	36
+2022-07-08	Denmark	Omicron 21L	22
+2022-07-09	Denmark	Omicron 21L	17
+2022-07-10	Denmark	Omicron 21L	17
+2022-07-11	Denmark	Omicron 21L	19
+2022-07-12	Denmark	Omicron 21L	17
+2022-07-13	Denmark	Omicron 21L	14
+2022-07-14	Denmark	Omicron 21L	9
+2022-07-15	Denmark	Omicron 21L	10
+2022-07-16	Denmark	Omicron 21L	2
+2022-07-17	Denmark	Omicron 21L	1
+2022-07-18	Denmark	Omicron 21L	15
+2022-07-19	Denmark	Omicron 21L	7
+2022-07-20	Denmark	Omicron 21L	6
+2022-07-21	Denmark	Omicron 21L	6
+2022-07-22	Denmark	Omicron 21L	6
+2022-07-23	Denmark	Omicron 21L	8
+2022-07-24	Denmark	Omicron 21L	6
+2022-07-25	Denmark	Omicron 21L	4
+2022-07-26	Denmark	Omicron 21L	4
+2022-07-27	Denmark	Omicron 21L	15
+2022-07-29	Denmark	Omicron 21L	5
+2022-07-30	Denmark	Omicron 21L	5
+2022-07-31	Denmark	Omicron 21L	2
+2022-08-01	Denmark	Omicron 21L	2
+2022-08-02	Denmark	Omicron 21L	4
+2022-08-03	Denmark	Omicron 21L	4
+2022-08-04	Denmark	Omicron 21L	2
+2022-08-05	Denmark	Omicron 21L	1
+2022-08-07	Denmark	Omicron 21L	4
+2022-08-08	Denmark	Omicron 21L	2
+2022-08-09	Denmark	Omicron 21L	1
+2022-08-10	Denmark	Omicron 21L	3
+2022-08-11	Denmark	Omicron 21L	3
+2022-08-12	Denmark	Omicron 21L	1
+2022-08-13	Denmark	Omicron 21L	1
+2022-08-14	Denmark	Omicron 21L	2
+2022-08-15	Denmark	Omicron 21L	2
+2022-08-16	Denmark	Omicron 21L	2
+2022-08-18	Denmark	Omicron 21L	1
+2022-08-19	Denmark	Omicron 21L	2
+2022-08-20	Denmark	Omicron 21L	1
+2022-08-28	Denmark	Omicron 21L	1
+2022-08-29	Denmark	Omicron 21L	2
+2022-08-31	Denmark	Omicron 21L	1
+2022-09-01	Denmark	Omicron 21L	3
+2022-09-05	Denmark	Omicron 21L	2
+2022-09-06	Denmark	Omicron 21L	1
+2022-09-07	Denmark	Omicron 21L	2
+2022-09-08	Denmark	Omicron 21L	1
+2022-09-09	Denmark	Omicron 21L	3
+2022-09-10	Denmark	Omicron 21L	2
+2022-09-12	Denmark	Omicron 21L	4
+2022-09-13	Denmark	Omicron 21L	7
+2022-09-14	Denmark	Omicron 21L	2
+2022-09-15	Denmark	Omicron 21L	5
+2022-09-16	Denmark	Omicron 21L	4
+2022-09-17	Denmark	Omicron 21L	2
+2022-09-21	Denmark	Omicron 21L	2
+2022-09-23	Denmark	Omicron 21L	2
+2022-09-24	Denmark	Omicron 21L	1
+2022-09-25	Denmark	Omicron 21L	2
+2022-09-26	Denmark	Omicron 21L	4
+2022-09-27	Denmark	Omicron 21L	1
+2022-09-28	Denmark	Omicron 21L	2
+2022-09-29	Denmark	Omicron 21L	1
+2022-10-01	Denmark	Omicron 21L	4
+2022-10-02	Denmark	Omicron 21L	3
+2022-10-03	Denmark	Omicron 21L	2
+2022-10-04	Denmark	Omicron 21L	2
+2022-10-05	Denmark	Omicron 21L	3
+2022-10-06	Denmark	Omicron 21L	2
+2022-10-07	Denmark	Omicron 21L	5
+2022-10-10	Denmark	Omicron 21L	4
+2022-10-11	Denmark	Omicron 21L	1
+2022-10-12	Denmark	Omicron 21L	3
+2022-10-13	Denmark	Omicron 21L	3
+2022-10-14	Denmark	Omicron 21L	5
+2022-10-15	Denmark	Omicron 21L	1
+2022-10-16	Denmark	Omicron 21L	4
+2022-10-17	Denmark	Omicron 21L	5
+2022-10-18	Denmark	Omicron 21L	1
+2022-10-19	Denmark	Omicron 21L	6
+2022-10-20	Denmark	Omicron 21L	2
+2022-10-23	Denmark	Omicron 21L	1
+2022-10-24	Denmark	Omicron 21L	1
+2022-10-26	Denmark	Omicron 21L	4
+2022-10-27	Denmark	Omicron 21L	1
+2022-10-28	Denmark	Omicron 21L	1
+2022-10-29	Denmark	Omicron 21L	7
+2022-10-30	Denmark	Omicron 21L	2
+2022-10-31	Denmark	Omicron 21L	1
+2022-11-01	Denmark	Omicron 21L	3
+2022-11-02	Denmark	Omicron 21L	1
+2022-11-04	Denmark	Omicron 21L	5
+2022-11-05	Denmark	Omicron 21L	2
+2022-11-06	Denmark	Omicron 21L	2
+2022-11-07	Denmark	Omicron 21L	1
+2022-11-08	Denmark	Omicron 21L	7
+2022-11-09	Denmark	Omicron 21L	2
+2022-11-10	Denmark	Omicron 21L	5
+2022-11-11	Denmark	Omicron 21L	6
+2022-11-12	Denmark	Omicron 21L	7
+2022-11-13	Denmark	Omicron 21L	4
+2022-11-14	Denmark	Omicron 21L	4
+2022-11-15	Denmark	Omicron 21L	6
+2022-11-16	Denmark	Omicron 21L	4
+2022-11-17	Denmark	Omicron 21L	6
+2022-11-18	Denmark	Omicron 21L	3
+2022-11-19	Denmark	Omicron 21L	2
+2022-11-20	Denmark	Omicron 21L	3
+2022-11-21	Denmark	Omicron 21L	3
+2022-11-22	Denmark	Omicron 21L	5
+2022-11-23	Denmark	Omicron 21L	2
+2022-11-24	Denmark	Omicron 21L	4
+2022-11-25	Denmark	Omicron 21L	3
+2022-11-26	Denmark	Omicron 21L	1
+2022-11-27	Denmark	Omicron 21L	7
+2022-11-28	Denmark	Omicron 21L	5
+2022-11-29	Denmark	Omicron 21L	2
+2022-11-30	Denmark	Omicron 21L	5
+2022-12-01	Denmark	Omicron 21L	4
+2022-12-02	Denmark	Omicron 21L	4
+2022-12-05	Denmark	Omicron 21L	3
+2022-12-06	Denmark	Omicron 21L	6
+2022-12-07	Denmark	Omicron 21L	5
+2022-12-08	Denmark	Omicron 21L	4
+2022-12-09	Denmark	Omicron 21L	2
+2022-12-12	Denmark	Omicron 21L	1
+2022-12-13	Denmark	Omicron 21L	4
+2022-12-14	Denmark	Omicron 21L	2
+2022-12-15	Denmark	Omicron 21L	1
+2022-12-16	Denmark	Omicron 21L	2
+2022-12-17	Denmark	Omicron 21L	1
+2022-12-18	Denmark	Omicron 21L	4
+2022-12-19	Denmark	Omicron 21L	2
+2022-12-22	Denmark	Omicron 21L	1
+2022-12-24	Denmark	Omicron 21L	1
+2022-12-26	Denmark	Omicron 21L	5
+2022-12-28	Denmark	Omicron 21L	1
+2022-12-29	Denmark	Omicron 21L	2
+2022-12-30	Denmark	Omicron 21L	3
+2022-12-31	Denmark	Omicron 21L	1
+2023-01-02	Denmark	Omicron 21L	2
+2023-01-03	Denmark	Omicron 21L	2
+2023-01-05	Denmark	Omicron 21L	2
+2023-01-08	Denmark	Omicron 21L	1
+2023-01-11	Denmark	Omicron 21L	2
+2023-01-12	Denmark	Omicron 21L	1
+2023-01-22	Denmark	Omicron 21L	1
+2022-03-02	Denmark	Omicron 22A	1
+2022-03-14	Denmark	Omicron 22A	1
+2022-03-24	Denmark	Omicron 22A	1
+2022-04-02	Denmark	Omicron 22A	3
+2022-04-04	Denmark	Omicron 22A	1
+2022-04-05	Denmark	Omicron 22A	1
+2022-04-09	Denmark	Omicron 22A	1
+2022-04-11	Denmark	Omicron 22A	1
+2022-04-18	Denmark	Omicron 22A	1
+2022-04-19	Denmark	Omicron 22A	1
+2022-04-22	Denmark	Omicron 22A	1
+2022-04-24	Denmark	Omicron 22A	1
+2022-04-25	Denmark	Omicron 22A	3
+2022-04-26	Denmark	Omicron 22A	3
+2022-04-27	Denmark	Omicron 22A	2
+2022-04-28	Denmark	Omicron 22A	1
+2022-04-29	Denmark	Omicron 22A	3
+2022-05-01	Denmark	Omicron 22A	3
+2022-05-02	Denmark	Omicron 22A	2
+2022-05-03	Denmark	Omicron 22A	6
+2022-05-04	Denmark	Omicron 22A	2
+2022-05-05	Denmark	Omicron 22A	5
+2022-05-06	Denmark	Omicron 22A	2
+2022-05-07	Denmark	Omicron 22A	3
+2022-05-08	Denmark	Omicron 22A	5
+2022-05-09	Denmark	Omicron 22A	2
+2022-05-10	Denmark	Omicron 22A	5
+2022-05-11	Denmark	Omicron 22A	11
+2022-05-12	Denmark	Omicron 22A	6
+2022-05-13	Denmark	Omicron 22A	3
+2022-05-14	Denmark	Omicron 22A	2
+2022-05-15	Denmark	Omicron 22A	2
+2022-05-16	Denmark	Omicron 22A	2
+2022-05-17	Denmark	Omicron 22A	5
+2022-05-18	Denmark	Omicron 22A	8
+2022-05-19	Denmark	Omicron 22A	12
+2022-05-20	Denmark	Omicron 22A	10
+2022-05-21	Denmark	Omicron 22A	5
+2022-05-22	Denmark	Omicron 22A	9
+2022-05-23	Denmark	Omicron 22A	9
+2022-05-24	Denmark	Omicron 22A	14
+2022-05-25	Denmark	Omicron 22A	6
+2022-05-26	Denmark	Omicron 22A	19
+2022-05-27	Denmark	Omicron 22A	16
+2022-05-28	Denmark	Omicron 22A	6
+2022-05-29	Denmark	Omicron 22A	12
+2022-05-30	Denmark	Omicron 22A	18
+2022-05-31	Denmark	Omicron 22A	11
+2022-06-01	Denmark	Omicron 22A	35
+2022-06-02	Denmark	Omicron 22A	20
+2022-06-03	Denmark	Omicron 22A	15
+2022-06-04	Denmark	Omicron 22A	9
+2022-06-05	Denmark	Omicron 22A	9
+2022-06-06	Denmark	Omicron 22A	16
+2022-06-07	Denmark	Omicron 22A	29
+2022-06-08	Denmark	Omicron 22A	52
+2022-06-09	Denmark	Omicron 22A	42
+2022-06-10	Denmark	Omicron 22A	41
+2022-06-11	Denmark	Omicron 22A	36
+2022-06-12	Denmark	Omicron 22A	49
+2022-06-13	Denmark	Omicron 22A	60
+2022-06-14	Denmark	Omicron 22A	60
+2022-06-15	Denmark	Omicron 22A	83
+2022-06-16	Denmark	Omicron 22A	86
+2022-06-17	Denmark	Omicron 22A	53
+2022-06-18	Denmark	Omicron 22A	51
+2022-06-19	Denmark	Omicron 22A	60
+2022-06-20	Denmark	Omicron 22A	98
+2022-06-21	Denmark	Omicron 22A	54
+2022-06-22	Denmark	Omicron 22A	43
+2022-06-23	Denmark	Omicron 22A	29
+2022-06-24	Denmark	Omicron 22A	25
+2022-06-25	Denmark	Omicron 22A	48
+2022-06-26	Denmark	Omicron 22A	60
+2022-06-27	Denmark	Omicron 22A	39
+2022-06-28	Denmark	Omicron 22A	25
+2022-06-29	Denmark	Omicron 22A	39
+2022-06-30	Denmark	Omicron 22A	45
+2022-07-01	Denmark	Omicron 22A	57
+2022-07-02	Denmark	Omicron 22A	44
+2022-07-03	Denmark	Omicron 22A	40
+2022-07-04	Denmark	Omicron 22A	29
+2022-07-05	Denmark	Omicron 22A	59
+2022-07-06	Denmark	Omicron 22A	44
+2022-07-07	Denmark	Omicron 22A	42
+2022-07-08	Denmark	Omicron 22A	50
+2022-07-09	Denmark	Omicron 22A	44
+2022-07-10	Denmark	Omicron 22A	38
+2022-07-11	Denmark	Omicron 22A	42
+2022-07-12	Denmark	Omicron 22A	60
+2022-07-13	Denmark	Omicron 22A	42
+2022-07-14	Denmark	Omicron 22A	43
+2022-07-15	Denmark	Omicron 22A	38
+2022-07-16	Denmark	Omicron 22A	11
+2022-07-17	Denmark	Omicron 22A	12
+2022-07-18	Denmark	Omicron 22A	59
+2022-07-19	Denmark	Omicron 22A	22
+2022-07-20	Denmark	Omicron 22A	33
+2022-07-21	Denmark	Omicron 22A	22
+2022-07-22	Denmark	Omicron 22A	38
+2022-07-23	Denmark	Omicron 22A	21
+2022-07-24	Denmark	Omicron 22A	58
+2022-07-25	Denmark	Omicron 22A	26
+2022-07-26	Denmark	Omicron 22A	33
+2022-07-27	Denmark	Omicron 22A	37
+2022-07-28	Denmark	Omicron 22A	19
+2022-07-29	Denmark	Omicron 22A	38
+2022-07-30	Denmark	Omicron 22A	44
+2022-07-31	Denmark	Omicron 22A	37
+2022-08-01	Denmark	Omicron 22A	19
+2022-08-02	Denmark	Omicron 22A	36
+2022-08-03	Denmark	Omicron 22A	18
+2022-08-04	Denmark	Omicron 22A	18
+2022-08-05	Denmark	Omicron 22A	23
+2022-08-06	Denmark	Omicron 22A	6
+2022-08-07	Denmark	Omicron 22A	15
+2022-08-08	Denmark	Omicron 22A	32
+2022-08-09	Denmark	Omicron 22A	25
+2022-08-10	Denmark	Omicron 22A	25
+2022-08-11	Denmark	Omicron 22A	24
+2022-08-12	Denmark	Omicron 22A	27
+2022-08-13	Denmark	Omicron 22A	19
+2022-08-14	Denmark	Omicron 22A	25
+2022-08-15	Denmark	Omicron 22A	31
+2022-08-16	Denmark	Omicron 22A	22
+2022-08-17	Denmark	Omicron 22A	25
+2022-08-18	Denmark	Omicron 22A	16
+2022-08-19	Denmark	Omicron 22A	12
+2022-08-20	Denmark	Omicron 22A	16
+2022-08-21	Denmark	Omicron 22A	20
+2022-08-22	Denmark	Omicron 22A	19
+2022-08-23	Denmark	Omicron 22A	31
+2022-08-24	Denmark	Omicron 22A	19
+2022-08-25	Denmark	Omicron 22A	12
+2022-08-26	Denmark	Omicron 22A	14
+2022-08-27	Denmark	Omicron 22A	18
+2022-08-28	Denmark	Omicron 22A	10
+2022-08-29	Denmark	Omicron 22A	31
+2022-08-30	Denmark	Omicron 22A	18
+2022-08-31	Denmark	Omicron 22A	27
+2022-09-01	Denmark	Omicron 22A	22
+2022-09-02	Denmark	Omicron 22A	15
+2022-09-03	Denmark	Omicron 22A	19
+2022-09-04	Denmark	Omicron 22A	12
+2022-09-05	Denmark	Omicron 22A	45
+2022-09-06	Denmark	Omicron 22A	31
+2022-09-07	Denmark	Omicron 22A	35
+2022-09-08	Denmark	Omicron 22A	44
+2022-09-09	Denmark	Omicron 22A	21
+2022-09-10	Denmark	Omicron 22A	19
+2022-09-11	Denmark	Omicron 22A	21
+2022-09-12	Denmark	Omicron 22A	28
+2022-09-13	Denmark	Omicron 22A	29
+2022-09-14	Denmark	Omicron 22A	26
+2022-09-15	Denmark	Omicron 22A	17
+2022-09-16	Denmark	Omicron 22A	27
+2022-09-17	Denmark	Omicron 22A	16
+2022-09-18	Denmark	Omicron 22A	21
+2022-09-19	Denmark	Omicron 22A	28
+2022-09-20	Denmark	Omicron 22A	9
+2022-09-21	Denmark	Omicron 22A	33
+2022-09-22	Denmark	Omicron 22A	34
+2022-09-23	Denmark	Omicron 22A	15
+2022-09-24	Denmark	Omicron 22A	14
+2022-09-25	Denmark	Omicron 22A	23
+2022-09-26	Denmark	Omicron 22A	25
+2022-09-27	Denmark	Omicron 22A	24
+2022-09-28	Denmark	Omicron 22A	13
+2022-09-29	Denmark	Omicron 22A	14
+2022-09-30	Denmark	Omicron 22A	10
+2022-10-01	Denmark	Omicron 22A	28
+2022-10-02	Denmark	Omicron 22A	19
+2022-10-03	Denmark	Omicron 22A	13
+2022-10-04	Denmark	Omicron 22A	9
+2022-10-05	Denmark	Omicron 22A	20
+2022-10-06	Denmark	Omicron 22A	7
+2022-10-07	Denmark	Omicron 22A	5
+2022-10-08	Denmark	Omicron 22A	14
+2022-10-09	Denmark	Omicron 22A	22
+2022-10-10	Denmark	Omicron 22A	20
+2022-10-11	Denmark	Omicron 22A	21
+2022-10-12	Denmark	Omicron 22A	10
+2022-10-13	Denmark	Omicron 22A	9
+2022-10-14	Denmark	Omicron 22A	11
+2022-10-15	Denmark	Omicron 22A	9
+2022-10-16	Denmark	Omicron 22A	8
+2022-10-17	Denmark	Omicron 22A	18
+2022-10-18	Denmark	Omicron 22A	15
+2022-10-19	Denmark	Omicron 22A	13
+2022-10-20	Denmark	Omicron 22A	13
+2022-10-21	Denmark	Omicron 22A	9
+2022-10-22	Denmark	Omicron 22A	10
+2022-10-23	Denmark	Omicron 22A	11
+2022-10-24	Denmark	Omicron 22A	18
+2022-10-25	Denmark	Omicron 22A	17
+2022-10-26	Denmark	Omicron 22A	22
+2022-10-27	Denmark	Omicron 22A	16
+2022-10-28	Denmark	Omicron 22A	7
+2022-10-29	Denmark	Omicron 22A	8
+2022-10-30	Denmark	Omicron 22A	13
+2022-10-31	Denmark	Omicron 22A	12
+2022-11-01	Denmark	Omicron 22A	13
+2022-11-02	Denmark	Omicron 22A	9
+2022-11-03	Denmark	Omicron 22A	7
+2022-11-04	Denmark	Omicron 22A	8
+2022-11-05	Denmark	Omicron 22A	7
+2022-11-06	Denmark	Omicron 22A	9
+2022-11-07	Denmark	Omicron 22A	13
+2022-11-08	Denmark	Omicron 22A	13
+2022-11-09	Denmark	Omicron 22A	16
+2022-11-10	Denmark	Omicron 22A	10
+2022-11-11	Denmark	Omicron 22A	4
+2022-11-12	Denmark	Omicron 22A	8
+2022-11-13	Denmark	Omicron 22A	8
+2022-11-14	Denmark	Omicron 22A	11
+2022-11-15	Denmark	Omicron 22A	11
+2022-11-16	Denmark	Omicron 22A	9
+2022-11-17	Denmark	Omicron 22A	6
+2022-11-18	Denmark	Omicron 22A	10
+2022-11-19	Denmark	Omicron 22A	7
+2022-11-20	Denmark	Omicron 22A	6
+2022-11-21	Denmark	Omicron 22A	8
+2022-11-22	Denmark	Omicron 22A	10
+2022-11-23	Denmark	Omicron 22A	14
+2022-11-24	Denmark	Omicron 22A	21
+2022-11-25	Denmark	Omicron 22A	7
+2022-11-26	Denmark	Omicron 22A	5
+2022-11-27	Denmark	Omicron 22A	9
+2022-11-28	Denmark	Omicron 22A	11
+2022-11-29	Denmark	Omicron 22A	10
+2022-11-30	Denmark	Omicron 22A	11
+2022-12-01	Denmark	Omicron 22A	14
+2022-12-02	Denmark	Omicron 22A	11
+2022-12-03	Denmark	Omicron 22A	6
+2022-12-04	Denmark	Omicron 22A	2
+2022-12-05	Denmark	Omicron 22A	14
+2022-12-06	Denmark	Omicron 22A	14
+2022-12-07	Denmark	Omicron 22A	11
+2022-12-08	Denmark	Omicron 22A	11
+2022-12-09	Denmark	Omicron 22A	7
+2022-12-10	Denmark	Omicron 22A	5
+2022-12-11	Denmark	Omicron 22A	3
+2022-12-12	Denmark	Omicron 22A	8
+2022-12-13	Denmark	Omicron 22A	5
+2022-12-14	Denmark	Omicron 22A	7
+2022-12-15	Denmark	Omicron 22A	5
+2022-12-16	Denmark	Omicron 22A	3
+2022-12-17	Denmark	Omicron 22A	4
+2022-12-18	Denmark	Omicron 22A	6
+2022-12-19	Denmark	Omicron 22A	9
+2022-12-20	Denmark	Omicron 22A	5
+2022-12-21	Denmark	Omicron 22A	2
+2022-12-22	Denmark	Omicron 22A	6
+2022-12-23	Denmark	Omicron 22A	6
+2022-12-24	Denmark	Omicron 22A	2
+2022-12-25	Denmark	Omicron 22A	1
+2022-12-26	Denmark	Omicron 22A	8
+2022-12-27	Denmark	Omicron 22A	5
+2022-12-28	Denmark	Omicron 22A	10
+2022-12-29	Denmark	Omicron 22A	4
+2022-12-30	Denmark	Omicron 22A	5
+2022-12-31	Denmark	Omicron 22A	6
+2023-01-01	Denmark	Omicron 22A	5
+2023-01-02	Denmark	Omicron 22A	10
+2023-01-03	Denmark	Omicron 22A	3
+2023-01-04	Denmark	Omicron 22A	6
+2023-01-05	Denmark	Omicron 22A	3
+2023-01-06	Denmark	Omicron 22A	2
+2023-01-07	Denmark	Omicron 22A	1
+2023-01-08	Denmark	Omicron 22A	1
+2023-01-09	Denmark	Omicron 22A	2
+2023-01-10	Denmark	Omicron 22A	1
+2023-01-12	Denmark	Omicron 22A	2
+2023-01-13	Denmark	Omicron 22A	1
+2023-01-14	Denmark	Omicron 22A	1
+2023-01-15	Denmark	Omicron 22A	1
+2023-01-16	Denmark	Omicron 22A	4
+2023-01-18	Denmark	Omicron 22A	1
+2023-01-20	Denmark	Omicron 22A	1
+2023-01-22	Denmark	Omicron 22A	2
+2023-01-24	Denmark	Omicron 22A	1
+2023-01-27	Denmark	Omicron 22A	2
+2023-01-30	Denmark	Omicron 22A	1
+2023-01-31	Denmark	Omicron 22A	1
+2022-04-15	Denmark	Omicron 22B	1
+2022-04-18	Denmark	Omicron 22B	1
+2022-04-21	Denmark	Omicron 22B	1
+2022-04-22	Denmark	Omicron 22B	1
+2022-04-24	Denmark	Omicron 22B	1
+2022-04-26	Denmark	Omicron 22B	3
+2022-04-27	Denmark	Omicron 22B	2
+2022-04-28	Denmark	Omicron 22B	2
+2022-04-29	Denmark	Omicron 22B	1
+2022-05-02	Denmark	Omicron 22B	1
+2022-05-03	Denmark	Omicron 22B	3
+2022-05-04	Denmark	Omicron 22B	3
+2022-05-05	Denmark	Omicron 22B	3
+2022-05-06	Denmark	Omicron 22B	4
+2022-05-07	Denmark	Omicron 22B	4
+2022-05-08	Denmark	Omicron 22B	4
+2022-05-09	Denmark	Omicron 22B	6
+2022-05-10	Denmark	Omicron 22B	5
+2022-05-11	Denmark	Omicron 22B	3
+2022-05-12	Denmark	Omicron 22B	12
+2022-05-13	Denmark	Omicron 22B	2
+2022-05-14	Denmark	Omicron 22B	3
+2022-05-15	Denmark	Omicron 22B	14
+2022-05-16	Denmark	Omicron 22B	13
+2022-05-17	Denmark	Omicron 22B	12
+2022-05-18	Denmark	Omicron 22B	13
+2022-05-19	Denmark	Omicron 22B	13
+2022-05-20	Denmark	Omicron 22B	20
+2022-05-21	Denmark	Omicron 22B	18
+2022-05-22	Denmark	Omicron 22B	25
+2022-05-23	Denmark	Omicron 22B	46
+2022-05-24	Denmark	Omicron 22B	41
+2022-05-25	Denmark	Omicron 22B	67
+2022-05-26	Denmark	Omicron 22B	31
+2022-05-27	Denmark	Omicron 22B	51
+2022-05-28	Denmark	Omicron 22B	26
+2022-05-29	Denmark	Omicron 22B	55
+2022-05-30	Denmark	Omicron 22B	96
+2022-05-31	Denmark	Omicron 22B	125
+2022-06-01	Denmark	Omicron 22B	130
+2022-06-02	Denmark	Omicron 22B	67
+2022-06-03	Denmark	Omicron 22B	144
+2022-06-04	Denmark	Omicron 22B	45
+2022-06-05	Denmark	Omicron 22B	96
+2022-06-06	Denmark	Omicron 22B	137
+2022-06-07	Denmark	Omicron 22B	203
+2022-06-08	Denmark	Omicron 22B	256
+2022-06-09	Denmark	Omicron 22B	298
+2022-06-10	Denmark	Omicron 22B	265
+2022-06-11	Denmark	Omicron 22B	232
+2022-06-12	Denmark	Omicron 22B	292
+2022-06-13	Denmark	Omicron 22B	426
+2022-06-14	Denmark	Omicron 22B	538
+2022-06-15	Denmark	Omicron 22B	496
+2022-06-16	Denmark	Omicron 22B	549
+2022-06-17	Denmark	Omicron 22B	534
+2022-06-18	Denmark	Omicron 22B	455
+2022-06-19	Denmark	Omicron 22B	579
+2022-06-20	Denmark	Omicron 22B	755
+2022-06-21	Denmark	Omicron 22B	539
+2022-06-22	Denmark	Omicron 22B	404
+2022-06-23	Denmark	Omicron 22B	277
+2022-06-24	Denmark	Omicron 22B	364
+2022-06-25	Denmark	Omicron 22B	356
+2022-06-26	Denmark	Omicron 22B	605
+2022-06-27	Denmark	Omicron 22B	547
+2022-06-28	Denmark	Omicron 22B	340
+2022-06-29	Denmark	Omicron 22B	437
+2022-06-30	Denmark	Omicron 22B	498
+2022-07-01	Denmark	Omicron 22B	586
+2022-07-02	Denmark	Omicron 22B	476
+2022-07-03	Denmark	Omicron 22B	503
+2022-07-04	Denmark	Omicron 22B	369
+2022-07-05	Denmark	Omicron 22B	648
+2022-07-06	Denmark	Omicron 22B	530
+2022-07-07	Denmark	Omicron 22B	457
+2022-07-08	Denmark	Omicron 22B	501
+2022-07-09	Denmark	Omicron 22B	450
+2022-07-10	Denmark	Omicron 22B	405
+2022-07-11	Denmark	Omicron 22B	551
+2022-07-12	Denmark	Omicron 22B	695
+2022-07-13	Denmark	Omicron 22B	603
+2022-07-14	Denmark	Omicron 22B	608
+2022-07-15	Denmark	Omicron 22B	625
+2022-07-16	Denmark	Omicron 22B	203
+2022-07-17	Denmark	Omicron 22B	280
+2022-07-18	Denmark	Omicron 22B	755
+2022-07-19	Denmark	Omicron 22B	386
+2022-07-20	Denmark	Omicron 22B	423
+2022-07-21	Denmark	Omicron 22B	633
+2022-07-22	Denmark	Omicron 22B	564
+2022-07-23	Denmark	Omicron 22B	554
+2022-07-24	Denmark	Omicron 22B	679
+2022-07-25	Denmark	Omicron 22B	463
+2022-07-26	Denmark	Omicron 22B	534
+2022-07-27	Denmark	Omicron 22B	546
+2022-07-28	Denmark	Omicron 22B	321
+2022-07-29	Denmark	Omicron 22B	543
+2022-07-30	Denmark	Omicron 22B	659
+2022-07-31	Denmark	Omicron 22B	455
+2022-08-01	Denmark	Omicron 22B	363
+2022-08-02	Denmark	Omicron 22B	579
+2022-08-03	Denmark	Omicron 22B	500
+2022-08-04	Denmark	Omicron 22B	459
+2022-08-05	Denmark	Omicron 22B	461
+2022-08-06	Denmark	Omicron 22B	206
+2022-08-07	Denmark	Omicron 22B	465
+2022-08-08	Denmark	Omicron 22B	672
+2022-08-09	Denmark	Omicron 22B	555
+2022-08-10	Denmark	Omicron 22B	459
+2022-08-11	Denmark	Omicron 22B	324
+2022-08-12	Denmark	Omicron 22B	475
+2022-08-13	Denmark	Omicron 22B	445
+2022-08-14	Denmark	Omicron 22B	461
+2022-08-15	Denmark	Omicron 22B	527
+2022-08-16	Denmark	Omicron 22B	327
+2022-08-17	Denmark	Omicron 22B	401
+2022-08-18	Denmark	Omicron 22B	334
+2022-08-19	Denmark	Omicron 22B	241
+2022-08-20	Denmark	Omicron 22B	303
+2022-08-21	Denmark	Omicron 22B	329
+2022-08-22	Denmark	Omicron 22B	397
+2022-08-23	Denmark	Omicron 22B	465
+2022-08-24	Denmark	Omicron 22B	421
+2022-08-25	Denmark	Omicron 22B	260
+2022-08-26	Denmark	Omicron 22B	386
+2022-08-27	Denmark	Omicron 22B	333
+2022-08-28	Denmark	Omicron 22B	213
+2022-08-29	Denmark	Omicron 22B	576
+2022-08-30	Denmark	Omicron 22B	426
+2022-08-31	Denmark	Omicron 22B	469
+2022-09-01	Denmark	Omicron 22B	425
+2022-09-02	Denmark	Omicron 22B	363
+2022-09-03	Denmark	Omicron 22B	268
+2022-09-04	Denmark	Omicron 22B	355
+2022-09-05	Denmark	Omicron 22B	665
+2022-09-06	Denmark	Omicron 22B	452
+2022-09-07	Denmark	Omicron 22B	525
+2022-09-08	Denmark	Omicron 22B	421
+2022-09-09	Denmark	Omicron 22B	419
+2022-09-10	Denmark	Omicron 22B	398
+2022-09-11	Denmark	Omicron 22B	294
+2022-09-12	Denmark	Omicron 22B	502
+2022-09-13	Denmark	Omicron 22B	503
+2022-09-14	Denmark	Omicron 22B	497
+2022-09-15	Denmark	Omicron 22B	565
+2022-09-16	Denmark	Omicron 22B	455
+2022-09-17	Denmark	Omicron 22B	293
+2022-09-18	Denmark	Omicron 22B	417
+2022-09-19	Denmark	Omicron 22B	559
+2022-09-20	Denmark	Omicron 22B	418
+2022-09-21	Denmark	Omicron 22B	649
+2022-09-22	Denmark	Omicron 22B	589
+2022-09-23	Denmark	Omicron 22B	429
+2022-09-24	Denmark	Omicron 22B	345
+2022-09-25	Denmark	Omicron 22B	499
+2022-09-26	Denmark	Omicron 22B	690
+2022-09-27	Denmark	Omicron 22B	517
+2022-09-28	Denmark	Omicron 22B	324
+2022-09-29	Denmark	Omicron 22B	347
+2022-09-30	Denmark	Omicron 22B	367
+2022-10-01	Denmark	Omicron 22B	553
+2022-10-02	Denmark	Omicron 22B	462
+2022-10-03	Denmark	Omicron 22B	693
+2022-10-04	Denmark	Omicron 22B	564
+2022-10-05	Denmark	Omicron 22B	592
+2022-10-06	Denmark	Omicron 22B	371
+2022-10-07	Denmark	Omicron 22B	418
+2022-10-08	Denmark	Omicron 22B	406
+2022-10-09	Denmark	Omicron 22B	537
+2022-10-10	Denmark	Omicron 22B	504
+2022-10-11	Denmark	Omicron 22B	510
+2022-10-12	Denmark	Omicron 22B	507
+2022-10-13	Denmark	Omicron 22B	377
+2022-10-14	Denmark	Omicron 22B	525
+2022-10-15	Denmark	Omicron 22B	344
+2022-10-16	Denmark	Omicron 22B	400
+2022-10-17	Denmark	Omicron 22B	587
+2022-10-18	Denmark	Omicron 22B	493
+2022-10-19	Denmark	Omicron 22B	466
+2022-10-20	Denmark	Omicron 22B	314
+2022-10-21	Denmark	Omicron 22B	331
+2022-10-22	Denmark	Omicron 22B	291
+2022-10-23	Denmark	Omicron 22B	443
+2022-10-24	Denmark	Omicron 22B	415
+2022-10-25	Denmark	Omicron 22B	313
+2022-10-26	Denmark	Omicron 22B	505
+2022-10-27	Denmark	Omicron 22B	351
+2022-10-28	Denmark	Omicron 22B	292
+2022-10-29	Denmark	Omicron 22B	203
+2022-10-30	Denmark	Omicron 22B	229
+2022-10-31	Denmark	Omicron 22B	333
+2022-11-01	Denmark	Omicron 22B	286
+2022-11-02	Denmark	Omicron 22B	256
+2022-11-03	Denmark	Omicron 22B	199
+2022-11-04	Denmark	Omicron 22B	215
+2022-11-05	Denmark	Omicron 22B	147
+2022-11-06	Denmark	Omicron 22B	205
+2022-11-07	Denmark	Omicron 22B	224
+2022-11-08	Denmark	Omicron 22B	243
+2022-11-09	Denmark	Omicron 22B	224
+2022-11-10	Denmark	Omicron 22B	204
+2022-11-11	Denmark	Omicron 22B	177
+2022-11-12	Denmark	Omicron 22B	130
+2022-11-13	Denmark	Omicron 22B	132
+2022-11-14	Denmark	Omicron 22B	192
+2022-11-15	Denmark	Omicron 22B	182
+2022-11-16	Denmark	Omicron 22B	159
+2022-11-17	Denmark	Omicron 22B	132
+2022-11-18	Denmark	Omicron 22B	132
+2022-11-19	Denmark	Omicron 22B	89
+2022-11-20	Denmark	Omicron 22B	125
+2022-11-21	Denmark	Omicron 22B	147
+2022-11-22	Denmark	Omicron 22B	118
+2022-11-23	Denmark	Omicron 22B	151
+2022-11-24	Denmark	Omicron 22B	181
+2022-11-25	Denmark	Omicron 22B	125
+2022-11-26	Denmark	Omicron 22B	104
+2022-11-27	Denmark	Omicron 22B	138
+2022-11-28	Denmark	Omicron 22B	193
+2022-11-29	Denmark	Omicron 22B	141
+2022-11-30	Denmark	Omicron 22B	192
+2022-12-01	Denmark	Omicron 22B	153
+2022-12-02	Denmark	Omicron 22B	153
+2022-12-03	Denmark	Omicron 22B	79
+2022-12-04	Denmark	Omicron 22B	35
+2022-12-05	Denmark	Omicron 22B	202
+2022-12-06	Denmark	Omicron 22B	166
+2022-12-07	Denmark	Omicron 22B	133
+2022-12-08	Denmark	Omicron 22B	205
+2022-12-09	Denmark	Omicron 22B	56
+2022-12-10	Denmark	Omicron 22B	46
+2022-12-11	Denmark	Omicron 22B	57
+2022-12-12	Denmark	Omicron 22B	78
+2022-12-13	Denmark	Omicron 22B	59
+2022-12-14	Denmark	Omicron 22B	120
+2022-12-15	Denmark	Omicron 22B	112
+2022-12-16	Denmark	Omicron 22B	94
+2022-12-17	Denmark	Omicron 22B	81
+2022-12-18	Denmark	Omicron 22B	131
+2022-12-19	Denmark	Omicron 22B	196
+2022-12-20	Denmark	Omicron 22B	99
+2022-12-21	Denmark	Omicron 22B	65
+2022-12-22	Denmark	Omicron 22B	96
+2022-12-23	Denmark	Omicron 22B	108
+2022-12-24	Denmark	Omicron 22B	42
+2022-12-25	Denmark	Omicron 22B	50
+2022-12-26	Denmark	Omicron 22B	74
+2022-12-27	Denmark	Omicron 22B	89
+2022-12-28	Denmark	Omicron 22B	115
+2022-12-29	Denmark	Omicron 22B	91
+2022-12-30	Denmark	Omicron 22B	112
+2022-12-31	Denmark	Omicron 22B	38
+2023-01-01	Denmark	Omicron 22B	46
+2023-01-02	Denmark	Omicron 22B	119
+2023-01-03	Denmark	Omicron 22B	61
+2023-01-04	Denmark	Omicron 22B	67
+2023-01-05	Denmark	Omicron 22B	30
+2023-01-06	Denmark	Omicron 22B	30
+2023-01-07	Denmark	Omicron 22B	11
+2023-01-08	Denmark	Omicron 22B	35
+2023-01-09	Denmark	Omicron 22B	38
+2023-01-10	Denmark	Omicron 22B	44
+2023-01-11	Denmark	Omicron 22B	34
+2023-01-12	Denmark	Omicron 22B	26
+2023-01-13	Denmark	Omicron 22B	24
+2023-01-14	Denmark	Omicron 22B	14
+2023-01-15	Denmark	Omicron 22B	6
+2023-01-16	Denmark	Omicron 22B	18
+2023-01-17	Denmark	Omicron 22B	18
+2023-01-18	Denmark	Omicron 22B	19
+2023-01-19	Denmark	Omicron 22B	14
+2023-01-20	Denmark	Omicron 22B	11
+2023-01-21	Denmark	Omicron 22B	6
+2023-01-22	Denmark	Omicron 22B	8
+2023-01-23	Denmark	Omicron 22B	15
+2023-01-24	Denmark	Omicron 22B	3
+2023-01-25	Denmark	Omicron 22B	14
+2023-01-26	Denmark	Omicron 22B	8
+2023-01-27	Denmark	Omicron 22B	15
+2023-01-28	Denmark	Omicron 22B	9
+2023-01-29	Denmark	Omicron 22B	18
+2023-01-30	Denmark	Omicron 22B	9
+2023-01-31	Denmark	Omicron 22B	11
+2022-04-07	Denmark	Omicron 22C	1
+2022-04-08	Denmark	Omicron 22C	3
+2022-04-10	Denmark	Omicron 22C	3
+2022-04-11	Denmark	Omicron 22C	1
+2022-04-12	Denmark	Omicron 22C	3
+2022-04-13	Denmark	Omicron 22C	2
+2022-04-14	Denmark	Omicron 22C	1
+2022-04-17	Denmark	Omicron 22C	1
+2022-04-18	Denmark	Omicron 22C	2
+2022-04-19	Denmark	Omicron 22C	6
+2022-04-20	Denmark	Omicron 22C	5
+2022-04-21	Denmark	Omicron 22C	6
+2022-04-22	Denmark	Omicron 22C	5
+2022-04-23	Denmark	Omicron 22C	6
+2022-04-24	Denmark	Omicron 22C	3
+2022-04-25	Denmark	Omicron 22C	2
+2022-04-26	Denmark	Omicron 22C	10
+2022-04-27	Denmark	Omicron 22C	6
+2022-04-28	Denmark	Omicron 22C	6
+2022-04-29	Denmark	Omicron 22C	5
+2022-04-30	Denmark	Omicron 22C	2
+2022-05-01	Denmark	Omicron 22C	5
+2022-05-02	Denmark	Omicron 22C	10
+2022-05-03	Denmark	Omicron 22C	9
+2022-05-04	Denmark	Omicron 22C	8
+2022-05-05	Denmark	Omicron 22C	9
+2022-05-06	Denmark	Omicron 22C	11
+2022-05-07	Denmark	Omicron 22C	14
+2022-05-08	Denmark	Omicron 22C	13
+2022-05-09	Denmark	Omicron 22C	13
+2022-05-10	Denmark	Omicron 22C	20
+2022-05-11	Denmark	Omicron 22C	18
+2022-05-12	Denmark	Omicron 22C	17
+2022-05-13	Denmark	Omicron 22C	10
+2022-05-14	Denmark	Omicron 22C	7
+2022-05-15	Denmark	Omicron 22C	20
+2022-05-16	Denmark	Omicron 22C	33
+2022-05-17	Denmark	Omicron 22C	16
+2022-05-18	Denmark	Omicron 22C	27
+2022-05-19	Denmark	Omicron 22C	22
+2022-05-20	Denmark	Omicron 22C	29
+2022-05-21	Denmark	Omicron 22C	17
+2022-05-22	Denmark	Omicron 22C	22
+2022-05-23	Denmark	Omicron 22C	42
+2022-05-24	Denmark	Omicron 22C	39
+2022-05-25	Denmark	Omicron 22C	45
+2022-05-26	Denmark	Omicron 22C	18
+2022-05-27	Denmark	Omicron 22C	35
+2022-05-28	Denmark	Omicron 22C	29
+2022-05-29	Denmark	Omicron 22C	45
+2022-05-30	Denmark	Omicron 22C	65
+2022-05-31	Denmark	Omicron 22C	57
+2022-06-01	Denmark	Omicron 22C	33
+2022-06-02	Denmark	Omicron 22C	34
+2022-06-03	Denmark	Omicron 22C	55
+2022-06-04	Denmark	Omicron 22C	20
+2022-06-05	Denmark	Omicron 22C	17
+2022-06-06	Denmark	Omicron 22C	58
+2022-06-07	Denmark	Omicron 22C	59
+2022-06-08	Denmark	Omicron 22C	92
+2022-06-09	Denmark	Omicron 22C	79
+2022-06-10	Denmark	Omicron 22C	77
+2022-06-11	Denmark	Omicron 22C	45
+2022-06-12	Denmark	Omicron 22C	70
+2022-06-13	Denmark	Omicron 22C	82
+2022-06-14	Denmark	Omicron 22C	87
+2022-06-15	Denmark	Omicron 22C	78
+2022-06-16	Denmark	Omicron 22C	90
+2022-06-17	Denmark	Omicron 22C	68
+2022-06-18	Denmark	Omicron 22C	62
+2022-06-19	Denmark	Omicron 22C	74
+2022-06-20	Denmark	Omicron 22C	103
+2022-06-21	Denmark	Omicron 22C	52
+2022-06-22	Denmark	Omicron 22C	27
+2022-06-23	Denmark	Omicron 22C	20
+2022-06-24	Denmark	Omicron 22C	28
+2022-06-25	Denmark	Omicron 22C	36
+2022-06-26	Denmark	Omicron 22C	52
+2022-06-27	Denmark	Omicron 22C	31
+2022-06-28	Denmark	Omicron 22C	20
+2022-06-29	Denmark	Omicron 22C	35
+2022-06-30	Denmark	Omicron 22C	29
+2022-07-01	Denmark	Omicron 22C	26
+2022-07-02	Denmark	Omicron 22C	20
+2022-07-03	Denmark	Omicron 22C	25
+2022-07-04	Denmark	Omicron 22C	15
+2022-07-05	Denmark	Omicron 22C	16
+2022-07-06	Denmark	Omicron 22C	16
+2022-07-07	Denmark	Omicron 22C	12
+2022-07-08	Denmark	Omicron 22C	16
+2022-07-09	Denmark	Omicron 22C	10
+2022-07-10	Denmark	Omicron 22C	9
+2022-07-11	Denmark	Omicron 22C	7
+2022-07-12	Denmark	Omicron 22C	9
+2022-07-13	Denmark	Omicron 22C	15
+2022-07-14	Denmark	Omicron 22C	12
+2022-07-15	Denmark	Omicron 22C	7
+2022-07-16	Denmark	Omicron 22C	4
+2022-07-17	Denmark	Omicron 22C	3
+2022-07-18	Denmark	Omicron 22C	6
+2022-07-19	Denmark	Omicron 22C	3
+2022-07-20	Denmark	Omicron 22C	5
+2022-07-21	Denmark	Omicron 22C	3
+2022-07-22	Denmark	Omicron 22C	5
+2022-07-23	Denmark	Omicron 22C	3
+2022-07-24	Denmark	Omicron 22C	1
+2022-07-25	Denmark	Omicron 22C	6
+2022-07-26	Denmark	Omicron 22C	6
+2022-07-27	Denmark	Omicron 22C	6
+2022-07-28	Denmark	Omicron 22C	2
+2022-07-29	Denmark	Omicron 22C	2
+2022-07-30	Denmark	Omicron 22C	6
+2022-07-31	Denmark	Omicron 22C	4
+2022-08-02	Denmark	Omicron 22C	1
+2022-08-04	Denmark	Omicron 22C	4
+2022-08-05	Denmark	Omicron 22C	2
+2022-08-07	Denmark	Omicron 22C	6
+2022-08-08	Denmark	Omicron 22C	6
+2022-08-10	Denmark	Omicron 22C	3
+2022-08-11	Denmark	Omicron 22C	1
+2022-08-12	Denmark	Omicron 22C	3
+2022-08-15	Denmark	Omicron 22C	2
+2022-08-17	Denmark	Omicron 22C	1
+2022-08-22	Denmark	Omicron 22C	2
+2022-08-23	Denmark	Omicron 22C	2
+2022-08-24	Denmark	Omicron 22C	2
+2022-08-27	Denmark	Omicron 22C	1
+2022-08-29	Denmark	Omicron 22C	1
+2022-09-05	Denmark	Omicron 22C	1
+2022-07-08	Denmark	Omicron 22D	2
+2022-07-12	Denmark	Omicron 22D	1
+2022-07-13	Denmark	Omicron 22D	1
+2022-07-14	Denmark	Omicron 22D	1
+2022-07-15	Denmark	Omicron 22D	1
+2022-07-17	Denmark	Omicron 22D	1
+2022-07-18	Denmark	Omicron 22D	1
+2022-07-19	Denmark	Omicron 22D	2
+2022-07-20	Denmark	Omicron 22D	2
+2022-07-27	Denmark	Omicron 22D	1
+2022-07-29	Denmark	Omicron 22D	1
+2022-07-30	Denmark	Omicron 22D	1
+2022-07-31	Denmark	Omicron 22D	1
+2022-08-02	Denmark	Omicron 22D	3
+2022-08-03	Denmark	Omicron 22D	1
+2022-08-04	Denmark	Omicron 22D	3
+2022-08-07	Denmark	Omicron 22D	2
+2022-08-08	Denmark	Omicron 22D	1
+2022-08-09	Denmark	Omicron 22D	2
+2022-08-11	Denmark	Omicron 22D	3
+2022-08-12	Denmark	Omicron 22D	4
+2022-08-13	Denmark	Omicron 22D	1
+2022-08-14	Denmark	Omicron 22D	1
+2022-08-16	Denmark	Omicron 22D	1
+2022-08-18	Denmark	Omicron 22D	2
+2022-08-20	Denmark	Omicron 22D	1
+2022-08-22	Denmark	Omicron 22D	3
+2022-08-23	Denmark	Omicron 22D	3
+2022-08-24	Denmark	Omicron 22D	2
+2022-08-25	Denmark	Omicron 22D	1
+2022-08-26	Denmark	Omicron 22D	5
+2022-08-27	Denmark	Omicron 22D	4
+2022-08-28	Denmark	Omicron 22D	1
+2022-08-29	Denmark	Omicron 22D	3
+2022-08-30	Denmark	Omicron 22D	3
+2022-08-31	Denmark	Omicron 22D	6
+2022-09-01	Denmark	Omicron 22D	2
+2022-09-02	Denmark	Omicron 22D	8
+2022-09-03	Denmark	Omicron 22D	2
+2022-09-04	Denmark	Omicron 22D	1
+2022-09-05	Denmark	Omicron 22D	7
+2022-09-06	Denmark	Omicron 22D	1
+2022-09-07	Denmark	Omicron 22D	7
+2022-09-08	Denmark	Omicron 22D	2
+2022-09-09	Denmark	Omicron 22D	7
+2022-09-10	Denmark	Omicron 22D	5
+2022-09-11	Denmark	Omicron 22D	1
+2022-09-12	Denmark	Omicron 22D	8
+2022-09-13	Denmark	Omicron 22D	5
+2022-09-14	Denmark	Omicron 22D	13
+2022-09-15	Denmark	Omicron 22D	8
+2022-09-16	Denmark	Omicron 22D	12
+2022-09-17	Denmark	Omicron 22D	7
+2022-09-18	Denmark	Omicron 22D	9
+2022-09-19	Denmark	Omicron 22D	13
+2022-09-20	Denmark	Omicron 22D	7
+2022-09-21	Denmark	Omicron 22D	14
+2022-09-22	Denmark	Omicron 22D	11
+2022-09-23	Denmark	Omicron 22D	4
+2022-09-24	Denmark	Omicron 22D	7
+2022-09-25	Denmark	Omicron 22D	5
+2022-09-26	Denmark	Omicron 22D	20
+2022-09-27	Denmark	Omicron 22D	14
+2022-09-28	Denmark	Omicron 22D	6
+2022-09-29	Denmark	Omicron 22D	10
+2022-09-30	Denmark	Omicron 22D	10
+2022-10-01	Denmark	Omicron 22D	9
+2022-10-02	Denmark	Omicron 22D	5
+2022-10-03	Denmark	Omicron 22D	22
+2022-10-04	Denmark	Omicron 22D	24
+2022-10-05	Denmark	Omicron 22D	10
+2022-10-06	Denmark	Omicron 22D	10
+2022-10-07	Denmark	Omicron 22D	9
+2022-10-08	Denmark	Omicron 22D	9
+2022-10-09	Denmark	Omicron 22D	15
+2022-10-10	Denmark	Omicron 22D	11
+2022-10-11	Denmark	Omicron 22D	15
+2022-10-12	Denmark	Omicron 22D	13
+2022-10-13	Denmark	Omicron 22D	8
+2022-10-14	Denmark	Omicron 22D	20
+2022-10-15	Denmark	Omicron 22D	12
+2022-10-16	Denmark	Omicron 22D	11
+2022-10-17	Denmark	Omicron 22D	15
+2022-10-18	Denmark	Omicron 22D	22
+2022-10-19	Denmark	Omicron 22D	26
+2022-10-20	Denmark	Omicron 22D	18
+2022-10-21	Denmark	Omicron 22D	16
+2022-10-22	Denmark	Omicron 22D	22
+2022-10-23	Denmark	Omicron 22D	20
+2022-10-24	Denmark	Omicron 22D	15
+2022-10-25	Denmark	Omicron 22D	23
+2022-10-26	Denmark	Omicron 22D	22
+2022-10-27	Denmark	Omicron 22D	27
+2022-10-28	Denmark	Omicron 22D	19
+2022-10-29	Denmark	Omicron 22D	14
+2022-10-30	Denmark	Omicron 22D	18
+2022-10-31	Denmark	Omicron 22D	29
+2022-11-01	Denmark	Omicron 22D	25
+2022-11-02	Denmark	Omicron 22D	36
+2022-11-03	Denmark	Omicron 22D	27
+2022-11-04	Denmark	Omicron 22D	35
+2022-11-05	Denmark	Omicron 22D	9
+2022-11-06	Denmark	Omicron 22D	37
+2022-11-07	Denmark	Omicron 22D	52
+2022-11-08	Denmark	Omicron 22D	60
+2022-11-09	Denmark	Omicron 22D	56
+2022-11-10	Denmark	Omicron 22D	65
+2022-11-11	Denmark	Omicron 22D	51
+2022-11-12	Denmark	Omicron 22D	36
+2022-11-13	Denmark	Omicron 22D	41
+2022-11-14	Denmark	Omicron 22D	69
+2022-11-15	Denmark	Omicron 22D	52
+2022-11-16	Denmark	Omicron 22D	63
+2022-11-17	Denmark	Omicron 22D	45
+2022-11-18	Denmark	Omicron 22D	38
+2022-11-19	Denmark	Omicron 22D	36
+2022-11-20	Denmark	Omicron 22D	44
+2022-11-21	Denmark	Omicron 22D	56
+2022-11-22	Denmark	Omicron 22D	42
+2022-11-23	Denmark	Omicron 22D	72
+2022-11-24	Denmark	Omicron 22D	86
+2022-11-25	Denmark	Omicron 22D	63
+2022-11-26	Denmark	Omicron 22D	41
+2022-11-27	Denmark	Omicron 22D	87
+2022-11-28	Denmark	Omicron 22D	107
+2022-11-29	Denmark	Omicron 22D	106
+2022-11-30	Denmark	Omicron 22D	106
+2022-12-01	Denmark	Omicron 22D	90
+2022-12-02	Denmark	Omicron 22D	101
+2022-12-03	Denmark	Omicron 22D	55
+2022-12-04	Denmark	Omicron 22D	20
+2022-12-05	Denmark	Omicron 22D	142
+2022-12-06	Denmark	Omicron 22D	131
+2022-12-07	Denmark	Omicron 22D	115
+2022-12-08	Denmark	Omicron 22D	161
+2022-12-09	Denmark	Omicron 22D	67
+2022-12-10	Denmark	Omicron 22D	30
+2022-12-11	Denmark	Omicron 22D	49
+2022-12-12	Denmark	Omicron 22D	79
+2022-12-13	Denmark	Omicron 22D	54
+2022-12-14	Denmark	Omicron 22D	102
+2022-12-15	Denmark	Omicron 22D	102
+2022-12-16	Denmark	Omicron 22D	107
+2022-12-17	Denmark	Omicron 22D	77
+2022-12-18	Denmark	Omicron 22D	127
+2022-12-19	Denmark	Omicron 22D	189
+2022-12-20	Denmark	Omicron 22D	98
+2022-12-21	Denmark	Omicron 22D	59
+2022-12-22	Denmark	Omicron 22D	82
+2022-12-23	Denmark	Omicron 22D	123
+2022-12-24	Denmark	Omicron 22D	44
+2022-12-25	Denmark	Omicron 22D	53
+2022-12-26	Denmark	Omicron 22D	100
+2022-12-27	Denmark	Omicron 22D	139
+2022-12-28	Denmark	Omicron 22D	184
+2022-12-29	Denmark	Omicron 22D	137
+2022-12-30	Denmark	Omicron 22D	148
+2022-12-31	Denmark	Omicron 22D	65
+2023-01-01	Denmark	Omicron 22D	65
+2023-01-02	Denmark	Omicron 22D	186
+2023-01-03	Denmark	Omicron 22D	79
+2023-01-04	Denmark	Omicron 22D	102
+2023-01-05	Denmark	Omicron 22D	69
+2023-01-06	Denmark	Omicron 22D	53
+2023-01-07	Denmark	Omicron 22D	40
+2023-01-08	Denmark	Omicron 22D	56
+2023-01-09	Denmark	Omicron 22D	94
+2023-01-10	Denmark	Omicron 22D	47
+2023-01-11	Denmark	Omicron 22D	63
+2023-01-12	Denmark	Omicron 22D	62
+2023-01-13	Denmark	Omicron 22D	42
+2023-01-14	Denmark	Omicron 22D	22
+2023-01-15	Denmark	Omicron 22D	41
+2023-01-16	Denmark	Omicron 22D	47
+2023-01-17	Denmark	Omicron 22D	37
+2023-01-18	Denmark	Omicron 22D	34
+2023-01-19	Denmark	Omicron 22D	33
+2023-01-20	Denmark	Omicron 22D	23
+2023-01-21	Denmark	Omicron 22D	17
+2023-01-22	Denmark	Omicron 22D	27
+2023-01-23	Denmark	Omicron 22D	31
+2023-01-24	Denmark	Omicron 22D	29
+2023-01-25	Denmark	Omicron 22D	41
+2023-01-26	Denmark	Omicron 22D	31
+2023-01-27	Denmark	Omicron 22D	28
+2023-01-28	Denmark	Omicron 22D	22
+2023-01-29	Denmark	Omicron 22D	28
+2023-01-30	Denmark	Omicron 22D	36
+2023-01-31	Denmark	Omicron 22D	36
+2022-08-26	Denmark	Omicron 22E	2
+2022-08-30	Denmark	Omicron 22E	1
+2022-08-31	Denmark	Omicron 22E	1
+2022-09-05	Denmark	Omicron 22E	2
+2022-09-06	Denmark	Omicron 22E	1
+2022-09-07	Denmark	Omicron 22E	6
+2022-09-09	Denmark	Omicron 22E	4
+2022-09-10	Denmark	Omicron 22E	2
+2022-09-13	Denmark	Omicron 22E	3
+2022-09-14	Denmark	Omicron 22E	3
+2022-09-15	Denmark	Omicron 22E	8
+2022-09-16	Denmark	Omicron 22E	6
+2022-09-18	Denmark	Omicron 22E	9
+2022-09-19	Denmark	Omicron 22E	9
+2022-09-20	Denmark	Omicron 22E	3
+2022-09-21	Denmark	Omicron 22E	11
+2022-09-22	Denmark	Omicron 22E	6
+2022-09-23	Denmark	Omicron 22E	6
+2022-09-24	Denmark	Omicron 22E	6
+2022-09-25	Denmark	Omicron 22E	8
+2022-09-26	Denmark	Omicron 22E	16
+2022-09-27	Denmark	Omicron 22E	19
+2022-09-28	Denmark	Omicron 22E	7
+2022-09-29	Denmark	Omicron 22E	11
+2022-09-30	Denmark	Omicron 22E	20
+2022-10-01	Denmark	Omicron 22E	15
+2022-10-02	Denmark	Omicron 22E	22
+2022-10-03	Denmark	Omicron 22E	41
+2022-10-04	Denmark	Omicron 22E	25
+2022-10-05	Denmark	Omicron 22E	29
+2022-10-06	Denmark	Omicron 22E	23
+2022-10-07	Denmark	Omicron 22E	25
+2022-10-08	Denmark	Omicron 22E	32
+2022-10-09	Denmark	Omicron 22E	52
+2022-10-10	Denmark	Omicron 22E	55
+2022-10-11	Denmark	Omicron 22E	53
+2022-10-12	Denmark	Omicron 22E	49
+2022-10-13	Denmark	Omicron 22E	33
+2022-10-14	Denmark	Omicron 22E	50
+2022-10-15	Denmark	Omicron 22E	30
+2022-10-16	Denmark	Omicron 22E	58
+2022-10-17	Denmark	Omicron 22E	57
+2022-10-18	Denmark	Omicron 22E	66
+2022-10-19	Denmark	Omicron 22E	74
+2022-10-20	Denmark	Omicron 22E	59
+2022-10-21	Denmark	Omicron 22E	58
+2022-10-22	Denmark	Omicron 22E	62
+2022-10-23	Denmark	Omicron 22E	124
+2022-10-24	Denmark	Omicron 22E	96
+2022-10-25	Denmark	Omicron 22E	86
+2022-10-26	Denmark	Omicron 22E	145
+2022-10-27	Denmark	Omicron 22E	119
+2022-10-28	Denmark	Omicron 22E	104
+2022-10-29	Denmark	Omicron 22E	88
+2022-10-30	Denmark	Omicron 22E	83
+2022-10-31	Denmark	Omicron 22E	127
+2022-11-01	Denmark	Omicron 22E	106
+2022-11-02	Denmark	Omicron 22E	101
+2022-11-03	Denmark	Omicron 22E	116
+2022-11-04	Denmark	Omicron 22E	128
+2022-11-05	Denmark	Omicron 22E	94
+2022-11-06	Denmark	Omicron 22E	115
+2022-11-07	Denmark	Omicron 22E	141
+2022-11-08	Denmark	Omicron 22E	177
+2022-11-09	Denmark	Omicron 22E	181
+2022-11-10	Denmark	Omicron 22E	166
+2022-11-11	Denmark	Omicron 22E	140
+2022-11-12	Denmark	Omicron 22E	110
+2022-11-13	Denmark	Omicron 22E	128
+2022-11-14	Denmark	Omicron 22E	164
+2022-11-15	Denmark	Omicron 22E	177
+2022-11-16	Denmark	Omicron 22E	154
+2022-11-17	Denmark	Omicron 22E	125
+2022-11-18	Denmark	Omicron 22E	150
+2022-11-19	Denmark	Omicron 22E	102
+2022-11-20	Denmark	Omicron 22E	128
+2022-11-21	Denmark	Omicron 22E	162
+2022-11-22	Denmark	Omicron 22E	153
+2022-11-23	Denmark	Omicron 22E	202
+2022-11-24	Denmark	Omicron 22E	254
+2022-11-25	Denmark	Omicron 22E	196
+2022-11-26	Denmark	Omicron 22E	148
+2022-11-27	Denmark	Omicron 22E	219
+2022-11-28	Denmark	Omicron 22E	316
+2022-11-29	Denmark	Omicron 22E	252
+2022-11-30	Denmark	Omicron 22E	262
+2022-12-01	Denmark	Omicron 22E	241
+2022-12-02	Denmark	Omicron 22E	253
+2022-12-03	Denmark	Omicron 22E	142
+2022-12-04	Denmark	Omicron 22E	41
+2022-12-05	Denmark	Omicron 22E	355
+2022-12-06	Denmark	Omicron 22E	309
+2022-12-07	Denmark	Omicron 22E	234
+2022-12-08	Denmark	Omicron 22E	385
+2022-12-09	Denmark	Omicron 22E	152
+2022-12-10	Denmark	Omicron 22E	82
+2022-12-11	Denmark	Omicron 22E	119
+2022-12-12	Denmark	Omicron 22E	258
+2022-12-13	Denmark	Omicron 22E	159
+2022-12-14	Denmark	Omicron 22E	272
+2022-12-15	Denmark	Omicron 22E	294
+2022-12-16	Denmark	Omicron 22E	249
+2022-12-17	Denmark	Omicron 22E	239
+2022-12-18	Denmark	Omicron 22E	320
+2022-12-19	Denmark	Omicron 22E	553
+2022-12-20	Denmark	Omicron 22E	253
+2022-12-21	Denmark	Omicron 22E	161
+2022-12-22	Denmark	Omicron 22E	248
+2022-12-23	Denmark	Omicron 22E	293
+2022-12-24	Denmark	Omicron 22E	97
+2022-12-25	Denmark	Omicron 22E	121
+2022-12-26	Denmark	Omicron 22E	200
+2022-12-27	Denmark	Omicron 22E	295
+2022-12-28	Denmark	Omicron 22E	347
+2022-12-29	Denmark	Omicron 22E	257
+2022-12-30	Denmark	Omicron 22E	244
+2022-12-31	Denmark	Omicron 22E	133
+2023-01-01	Denmark	Omicron 22E	134
+2023-01-02	Denmark	Omicron 22E	335
+2023-01-03	Denmark	Omicron 22E	176
+2023-01-04	Denmark	Omicron 22E	199
+2023-01-05	Denmark	Omicron 22E	150
+2023-01-06	Denmark	Omicron 22E	116
+2023-01-07	Denmark	Omicron 22E	71
+2023-01-08	Denmark	Omicron 22E	89
+2023-01-09	Denmark	Omicron 22E	142
+2023-01-10	Denmark	Omicron 22E	90
+2023-01-11	Denmark	Omicron 22E	99
+2023-01-12	Denmark	Omicron 22E	99
+2023-01-13	Denmark	Omicron 22E	68
+2023-01-14	Denmark	Omicron 22E	42
+2023-01-15	Denmark	Omicron 22E	44
+2023-01-16	Denmark	Omicron 22E	59
+2023-01-17	Denmark	Omicron 22E	63
+2023-01-18	Denmark	Omicron 22E	51
+2023-01-19	Denmark	Omicron 22E	34
+2023-01-20	Denmark	Omicron 22E	37
+2023-01-21	Denmark	Omicron 22E	35
+2023-01-22	Denmark	Omicron 22E	31
+2023-01-23	Denmark	Omicron 22E	47
+2023-01-24	Denmark	Omicron 22E	40
+2023-01-25	Denmark	Omicron 22E	34
+2023-01-26	Denmark	Omicron 22E	31
+2023-01-27	Denmark	Omicron 22E	21
+2023-01-28	Denmark	Omicron 22E	21
+2023-01-29	Denmark	Omicron 22E	21
+2023-01-30	Denmark	Omicron 22E	37
+2023-01-31	Denmark	Omicron 22E	20
+2022-11-16	Denmark	Omicron 23A	1
+2022-11-27	Denmark	Omicron 23A	1
+2022-11-28	Denmark	Omicron 23A	2
+2022-12-01	Denmark	Omicron 23A	1
+2022-12-02	Denmark	Omicron 23A	1
+2022-12-03	Denmark	Omicron 23A	1
+2022-12-04	Denmark	Omicron 23A	1
+2022-12-05	Denmark	Omicron 23A	2
+2022-12-06	Denmark	Omicron 23A	1
+2022-12-08	Denmark	Omicron 23A	4
+2022-12-10	Denmark	Omicron 23A	1
+2022-12-11	Denmark	Omicron 23A	1
+2022-12-14	Denmark	Omicron 23A	3
+2022-12-15	Denmark	Omicron 23A	3
+2022-12-16	Denmark	Omicron 23A	1
+2022-12-17	Denmark	Omicron 23A	2
+2022-12-18	Denmark	Omicron 23A	2
+2022-12-19	Denmark	Omicron 23A	5
+2022-12-20	Denmark	Omicron 23A	2
+2022-12-21	Denmark	Omicron 23A	3
+2022-12-22	Denmark	Omicron 23A	12
+2022-12-23	Denmark	Omicron 23A	4
+2022-12-24	Denmark	Omicron 23A	1
+2022-12-25	Denmark	Omicron 23A	2
+2022-12-26	Denmark	Omicron 23A	5
+2022-12-27	Denmark	Omicron 23A	7
+2022-12-28	Denmark	Omicron 23A	7
+2022-12-29	Denmark	Omicron 23A	6
+2022-12-30	Denmark	Omicron 23A	5
+2022-12-31	Denmark	Omicron 23A	7
+2023-01-01	Denmark	Omicron 23A	6
+2023-01-02	Denmark	Omicron 23A	19
+2023-01-03	Denmark	Omicron 23A	13
+2023-01-04	Denmark	Omicron 23A	9
+2023-01-05	Denmark	Omicron 23A	5
+2023-01-06	Denmark	Omicron 23A	13
+2023-01-07	Denmark	Omicron 23A	5
+2023-01-08	Denmark	Omicron 23A	2
+2023-01-09	Denmark	Omicron 23A	7
+2023-01-10	Denmark	Omicron 23A	6
+2023-01-11	Denmark	Omicron 23A	8
+2023-01-12	Denmark	Omicron 23A	6
+2023-01-13	Denmark	Omicron 23A	2
+2023-01-14	Denmark	Omicron 23A	1
+2023-01-15	Denmark	Omicron 23A	4
+2023-01-16	Denmark	Omicron 23A	8
+2023-01-17	Denmark	Omicron 23A	5
+2023-01-18	Denmark	Omicron 23A	10
+2023-01-19	Denmark	Omicron 23A	3
+2023-01-20	Denmark	Omicron 23A	8
+2023-01-21	Denmark	Omicron 23A	3
+2023-01-22	Denmark	Omicron 23A	6
+2023-01-23	Denmark	Omicron 23A	8
+2023-01-24	Denmark	Omicron 23A	8
+2023-01-25	Denmark	Omicron 23A	19
+2023-01-26	Denmark	Omicron 23A	12
+2023-01-27	Denmark	Omicron 23A	11
+2023-01-28	Denmark	Omicron 23A	7
+2023-01-29	Denmark	Omicron 23A	15
+2023-01-30	Denmark	Omicron 23A	16
+2023-01-31	Denmark	Omicron 23A	16
+2021-09-06	Denmark	other	1
+2021-09-13	Denmark	other	1
+2021-09-22	Denmark	other	1
+2021-11-27	Denmark	other	1
+2021-12-02	Denmark	other	2
+2021-12-08	Denmark	other	1
+2021-12-18	Denmark	other	1
+2021-12-22	Denmark	other	1
+2021-12-27	Denmark	other	1
+2021-12-30	Denmark	other	1
+2022-01-02	Denmark	other	1
+2022-01-03	Denmark	other	1
+2022-01-06	Denmark	other	1
+2022-01-07	Denmark	other	1
+2022-01-08	Denmark	other	4
+2022-01-09	Denmark	other	2
+2022-01-10	Denmark	other	2
+2022-01-11	Denmark	other	3
+2022-01-12	Denmark	other	4
+2022-01-13	Denmark	other	1
+2022-01-14	Denmark	other	4
+2022-01-16	Denmark	other	3
+2022-01-17	Denmark	other	5
+2022-01-18	Denmark	other	2
+2022-01-19	Denmark	other	7
+2022-01-20	Denmark	other	3
+2022-01-21	Denmark	other	4
+2022-01-22	Denmark	other	3
+2022-01-23	Denmark	other	3
+2022-01-24	Denmark	other	6
+2022-01-25	Denmark	other	1
+2022-01-27	Denmark	other	4
+2022-01-28	Denmark	other	5
+2022-01-29	Denmark	other	4
+2022-01-30	Denmark	other	8
+2022-01-31	Denmark	other	8
+2022-02-01	Denmark	other	2
+2022-02-02	Denmark	other	6
+2022-02-03	Denmark	other	2
+2022-02-04	Denmark	other	8
+2022-02-05	Denmark	other	8
+2022-02-06	Denmark	other	5
+2022-02-07	Denmark	other	7
+2022-02-08	Denmark	other	4
+2022-02-09	Denmark	other	3
+2022-02-10	Denmark	other	6
+2022-02-11	Denmark	other	5
+2022-02-12	Denmark	other	6
+2022-02-13	Denmark	other	8
+2022-02-14	Denmark	other	10
+2022-02-15	Denmark	other	11
+2022-02-16	Denmark	other	6
+2022-02-17	Denmark	other	7
+2022-02-18	Denmark	other	8
+2022-02-19	Denmark	other	11
+2022-02-20	Denmark	other	1
+2022-02-21	Denmark	other	11
+2022-02-22	Denmark	other	7
+2022-02-23	Denmark	other	4
+2022-02-24	Denmark	other	10
+2022-02-25	Denmark	other	10
+2022-02-26	Denmark	other	7
+2022-02-27	Denmark	other	10
+2022-02-28	Denmark	other	7
+2022-03-01	Denmark	other	8
+2022-03-02	Denmark	other	10
+2022-03-03	Denmark	other	1
+2022-03-04	Denmark	other	7
+2022-03-05	Denmark	other	5
+2022-03-06	Denmark	other	11
+2022-03-07	Denmark	other	8
+2022-03-08	Denmark	other	8
+2022-03-09	Denmark	other	11
+2022-03-10	Denmark	other	6
+2022-03-11	Denmark	other	6
+2022-03-12	Denmark	other	3
+2022-03-13	Denmark	other	9
+2022-03-14	Denmark	other	7
+2022-03-15	Denmark	other	7
+2022-03-16	Denmark	other	7
+2022-03-17	Denmark	other	10
+2022-03-18	Denmark	other	13
+2022-03-19	Denmark	other	5
+2022-03-20	Denmark	other	8
+2022-03-21	Denmark	other	9
+2022-03-22	Denmark	other	10
+2022-03-23	Denmark	other	6
+2022-03-24	Denmark	other	7
+2022-03-25	Denmark	other	2
+2022-03-26	Denmark	other	12
+2022-03-27	Denmark	other	3
+2022-03-28	Denmark	other	6
+2022-03-29	Denmark	other	3
+2022-03-30	Denmark	other	13
+2022-03-31	Denmark	other	7
+2022-04-01	Denmark	other	6
+2022-04-02	Denmark	other	9
+2022-04-03	Denmark	other	12
+2022-04-04	Denmark	other	17
+2022-04-05	Denmark	other	9
+2022-04-06	Denmark	other	6
+2022-04-07	Denmark	other	4
+2022-04-08	Denmark	other	6
+2022-04-09	Denmark	other	5
+2022-04-10	Denmark	other	2
+2022-04-11	Denmark	other	17
+2022-04-12	Denmark	other	5
+2022-04-13	Denmark	other	9
+2022-04-14	Denmark	other	3
+2022-04-15	Denmark	other	5
+2022-04-16	Denmark	other	7
+2022-04-17	Denmark	other	6
+2022-04-18	Denmark	other	9
+2022-04-19	Denmark	other	12
+2022-04-20	Denmark	other	6
+2022-04-21	Denmark	other	21
+2022-04-22	Denmark	other	10
+2022-04-23	Denmark	other	2
+2022-04-24	Denmark	other	7
+2022-04-25	Denmark	other	11
+2022-04-26	Denmark	other	5
+2022-04-27	Denmark	other	4
+2022-04-28	Denmark	other	6
+2022-04-29	Denmark	other	3
+2022-04-30	Denmark	other	5
+2022-05-01	Denmark	other	7
+2022-05-02	Denmark	other	4
+2022-05-03	Denmark	other	5
+2022-05-04	Denmark	other	6
+2022-05-05	Denmark	other	9
+2022-05-06	Denmark	other	9
+2022-05-07	Denmark	other	5
+2022-05-08	Denmark	other	6
+2022-05-09	Denmark	other	7
+2022-05-10	Denmark	other	2
+2022-05-11	Denmark	other	5
+2022-05-12	Denmark	other	13
+2022-05-13	Denmark	other	5
+2022-05-14	Denmark	other	4
+2022-05-15	Denmark	other	7
+2022-05-16	Denmark	other	4
+2022-05-17	Denmark	other	1
+2022-05-18	Denmark	other	6
+2022-05-19	Denmark	other	4
+2022-05-20	Denmark	other	1
+2022-05-21	Denmark	other	2
+2022-05-22	Denmark	other	4
+2022-05-23	Denmark	other	6
+2022-05-24	Denmark	other	5
+2022-05-25	Denmark	other	4
+2022-05-26	Denmark	other	2
+2022-05-27	Denmark	other	5
+2022-05-28	Denmark	other	3
+2022-05-29	Denmark	other	6
+2022-05-30	Denmark	other	1
+2022-06-01	Denmark	other	4
+2022-06-02	Denmark	other	2
+2022-06-03	Denmark	other	1
+2022-06-04	Denmark	other	1
+2022-06-06	Denmark	other	1
+2022-06-07	Denmark	other	2
+2022-06-09	Denmark	other	1
+2022-06-10	Denmark	other	2
+2022-06-12	Denmark	other	1
+2022-06-13	Denmark	other	3
+2022-06-14	Denmark	other	2
+2022-06-15	Denmark	other	4
+2022-06-16	Denmark	other	4
+2022-06-17	Denmark	other	1
+2022-06-18	Denmark	other	1
+2022-06-19	Denmark	other	3
+2022-06-20	Denmark	other	10
+2022-06-21	Denmark	other	6
+2022-06-22	Denmark	other	4
+2022-06-24	Denmark	other	2
+2022-06-25	Denmark	other	1
+2022-06-26	Denmark	other	1
+2022-06-29	Denmark	other	1
+2022-06-30	Denmark	other	2
+2022-07-02	Denmark	other	5
+2022-07-03	Denmark	other	1
+2022-07-05	Denmark	other	1
+2022-07-06	Denmark	other	4
+2022-07-07	Denmark	other	2
+2022-07-08	Denmark	other	5
+2022-07-09	Denmark	other	1
+2022-07-10	Denmark	other	1
+2022-07-12	Denmark	other	1
+2022-07-13	Denmark	other	3
+2022-07-14	Denmark	other	2
+2022-07-15	Denmark	other	5
+2022-07-17	Denmark	other	1
+2022-07-18	Denmark	other	2
+2022-07-20	Denmark	other	2
+2022-07-21	Denmark	other	1
+2022-07-23	Denmark	other	1
+2022-07-24	Denmark	other	1
+2022-07-25	Denmark	other	2
+2022-07-26	Denmark	other	2
+2022-07-28	Denmark	other	1
+2022-07-30	Denmark	other	2
+2022-07-31	Denmark	other	3
+2022-08-01	Denmark	other	1
+2022-08-02	Denmark	other	3
+2022-08-03	Denmark	other	2
+2022-08-04	Denmark	other	1
+2022-08-06	Denmark	other	1
+2022-08-07	Denmark	other	1
+2022-08-08	Denmark	other	2
+2022-08-09	Denmark	other	3
+2022-08-10	Denmark	other	3
+2022-08-13	Denmark	other	2
+2022-08-14	Denmark	other	1
+2022-08-15	Denmark	other	1
+2022-08-17	Denmark	other	2
+2022-08-18	Denmark	other	2
+2022-08-19	Denmark	other	1
+2022-08-20	Denmark	other	2
+2022-08-23	Denmark	other	2
+2022-08-27	Denmark	other	1
+2022-08-29	Denmark	other	1
+2022-09-01	Denmark	other	1
+2022-09-05	Denmark	other	1
+2022-09-07	Denmark	other	1
+2022-09-10	Denmark	other	1
+2022-09-11	Denmark	other	2
+2022-09-13	Denmark	other	1
+2022-09-15	Denmark	other	3
+2022-09-17	Denmark	other	1
+2022-09-19	Denmark	other	4
+2022-09-21	Denmark	other	1
+2022-09-22	Denmark	other	3
+2022-09-23	Denmark	other	2
+2022-09-25	Denmark	other	2
+2022-09-26	Denmark	other	5
+2022-09-27	Denmark	other	2
+2022-09-28	Denmark	other	2
+2022-09-29	Denmark	other	1
+2022-09-30	Denmark	other	5
+2022-10-01	Denmark	other	1
+2022-10-02	Denmark	other	3
+2022-10-03	Denmark	other	7
+2022-10-04	Denmark	other	2
+2022-10-05	Denmark	other	4
+2022-10-07	Denmark	other	5
+2022-10-08	Denmark	other	3
+2022-10-09	Denmark	other	2
+2022-10-10	Denmark	other	4
+2022-10-11	Denmark	other	7
+2022-10-12	Denmark	other	4
+2022-10-13	Denmark	other	4
+2022-10-14	Denmark	other	7
+2022-10-15	Denmark	other	4
+2022-10-16	Denmark	other	3
+2022-10-17	Denmark	other	3
+2022-10-18	Denmark	other	5
+2022-10-19	Denmark	other	6
+2022-10-20	Denmark	other	6
+2022-10-21	Denmark	other	4
+2022-10-22	Denmark	other	2
+2022-10-23	Denmark	other	11
+2022-10-24	Denmark	other	12
+2022-10-25	Denmark	other	7
+2022-10-26	Denmark	other	11
+2022-10-27	Denmark	other	12
+2022-10-28	Denmark	other	11
+2022-10-29	Denmark	other	8
+2022-10-30	Denmark	other	10
+2022-10-31	Denmark	other	20
+2022-11-01	Denmark	other	20
+2022-11-02	Denmark	other	15
+2022-11-03	Denmark	other	18
+2022-11-04	Denmark	other	13
+2022-11-05	Denmark	other	14
+2022-11-06	Denmark	other	21
+2022-11-07	Denmark	other	21
+2022-11-08	Denmark	other	27
+2022-11-09	Denmark	other	21
+2022-11-10	Denmark	other	16
+2022-11-11	Denmark	other	16
+2022-11-12	Denmark	other	22
+2022-11-13	Denmark	other	13
+2022-11-14	Denmark	other	18
+2022-11-15	Denmark	other	20
+2022-11-16	Denmark	other	28
+2022-11-17	Denmark	other	17
+2022-11-18	Denmark	other	22
+2022-11-19	Denmark	other	12
+2022-11-20	Denmark	other	13
+2022-11-21	Denmark	other	22
+2022-11-22	Denmark	other	26
+2022-11-23	Denmark	other	27
+2022-11-24	Denmark	other	32
+2022-11-25	Denmark	other	28
+2022-11-26	Denmark	other	16
+2022-11-27	Denmark	other	47
+2022-11-28	Denmark	other	56
+2022-11-29	Denmark	other	46
+2022-11-30	Denmark	other	43
+2022-12-01	Denmark	other	44
+2022-12-02	Denmark	other	36
+2022-12-03	Denmark	other	19
+2022-12-04	Denmark	other	12
+2022-12-05	Denmark	other	79
+2022-12-06	Denmark	other	71
+2022-12-07	Denmark	other	46
+2022-12-08	Denmark	other	75
+2022-12-09	Denmark	other	37
+2022-12-10	Denmark	other	22
+2022-12-11	Denmark	other	25
+2022-12-12	Denmark	other	45
+2022-12-13	Denmark	other	19
+2022-12-14	Denmark	other	40
+2022-12-15	Denmark	other	53
+2022-12-16	Denmark	other	40
+2022-12-17	Denmark	other	37
+2022-12-18	Denmark	other	59
+2022-12-19	Denmark	other	69
+2022-12-20	Denmark	other	52
+2022-12-21	Denmark	other	31
+2022-12-22	Denmark	other	37
+2022-12-23	Denmark	other	56
+2022-12-24	Denmark	other	13
+2022-12-25	Denmark	other	19
+2022-12-26	Denmark	other	47
+2022-12-27	Denmark	other	69
+2022-12-28	Denmark	other	64
+2022-12-29	Denmark	other	47
+2022-12-30	Denmark	other	62
+2022-12-31	Denmark	other	34
+2023-01-01	Denmark	other	17
+2023-01-02	Denmark	other	66
+2023-01-03	Denmark	other	29
+2023-01-04	Denmark	other	36
+2023-01-05	Denmark	other	28
+2023-01-06	Denmark	other	16
+2023-01-07	Denmark	other	11
+2023-01-08	Denmark	other	9
+2023-01-09	Denmark	other	21
+2023-01-10	Denmark	other	21
+2023-01-11	Denmark	other	19
+2023-01-12	Denmark	other	5
+2023-01-13	Denmark	other	19
+2023-01-14	Denmark	other	9
+2023-01-15	Denmark	other	8
+2023-01-16	Denmark	other	20
+2023-01-17	Denmark	other	14
+2023-01-18	Denmark	other	13
+2023-01-19	Denmark	other	17
+2023-01-20	Denmark	other	9
+2023-01-21	Denmark	other	5
+2023-01-22	Denmark	other	8
+2023-01-23	Denmark	other	8
+2023-01-24	Denmark	other	7
+2023-01-25	Denmark	other	18
+2023-01-26	Denmark	other	18
+2023-01-27	Denmark	other	10
+2023-01-28	Denmark	other	11
+2023-01-29	Denmark	other	15
+2023-01-30	Denmark	other	14
+2023-01-31	Denmark	other	15
+2021-09-01	Germany	Delta	1701
+2021-09-02	Germany	Delta	1772
+2021-09-03	Germany	Delta	1579
+2021-09-04	Germany	Delta	1149
+2021-09-05	Germany	Delta	398
+2021-09-06	Germany	Delta	1611
+2021-09-07	Germany	Delta	2065
+2021-09-08	Germany	Delta	2440
+2021-09-09	Germany	Delta	1671
+2021-09-10	Germany	Delta	1647
+2021-09-11	Germany	Delta	1014
+2021-09-12	Germany	Delta	388
+2021-09-13	Germany	Delta	1698
+2021-09-14	Germany	Delta	1989
+2021-09-15	Germany	Delta	1328
+2021-09-16	Germany	Delta	1608
+2021-09-17	Germany	Delta	1490
+2021-09-18	Germany	Delta	789
+2021-09-19	Germany	Delta	357
+2021-09-20	Germany	Delta	2207
+2021-09-21	Germany	Delta	1515
+2021-09-22	Germany	Delta	1150
+2021-09-23	Germany	Delta	1079
+2021-09-24	Germany	Delta	1659
+2021-09-25	Germany	Delta	736
+2021-09-26	Germany	Delta	272
+2021-09-27	Germany	Delta	1510
+2021-09-28	Germany	Delta	1772
+2021-09-29	Germany	Delta	949
+2021-09-30	Germany	Delta	1283
+2021-10-01	Germany	Delta	1010
+2021-10-02	Germany	Delta	457
+2021-10-03	Germany	Delta	328
+2021-10-04	Germany	Delta	1474
+2021-10-05	Germany	Delta	1560
+2021-10-06	Germany	Delta	805
+2021-10-07	Germany	Delta	1087
+2021-10-08	Germany	Delta	1066
+2021-10-09	Germany	Delta	545
+2021-10-10	Germany	Delta	192
+2021-10-11	Germany	Delta	1438
+2021-10-12	Germany	Delta	1390
+2021-10-13	Germany	Delta	887
+2021-10-14	Germany	Delta	1196
+2021-10-15	Germany	Delta	948
+2021-10-16	Germany	Delta	653
+2021-10-17	Germany	Delta	483
+2021-10-18	Germany	Delta	1567
+2021-10-19	Germany	Delta	1896
+2021-10-20	Germany	Delta	1140
+2021-10-21	Germany	Delta	966
+2021-10-22	Germany	Delta	1171
+2021-10-23	Germany	Delta	1133
+2021-10-24	Germany	Delta	263
+2021-10-25	Germany	Delta	1558
+2021-10-26	Germany	Delta	1742
+2021-10-27	Germany	Delta	993
+2021-10-28	Germany	Delta	1296
+2021-10-29	Germany	Delta	1203
+2021-10-30	Germany	Delta	520
+2021-10-31	Germany	Delta	475
+2021-11-01	Germany	Delta	676
+2021-11-02	Germany	Delta	1221
+2021-11-03	Germany	Delta	1763
+2021-11-04	Germany	Delta	1745
+2021-11-05	Germany	Delta	1808
+2021-11-06	Germany	Delta	1004
+2021-11-07	Germany	Delta	193
+2021-11-08	Germany	Delta	2707
+2021-11-09	Germany	Delta	1935
+2021-11-10	Germany	Delta	1425
+2021-11-11	Germany	Delta	1551
+2021-11-12	Germany	Delta	1170
+2021-11-13	Germany	Delta	808
+2021-11-14	Germany	Delta	317
+2021-11-15	Germany	Delta	2480
+2021-11-16	Germany	Delta	2825
+2021-11-17	Germany	Delta	1391
+2021-11-18	Germany	Delta	2832
+2021-11-19	Germany	Delta	1239
+2021-11-20	Germany	Delta	977
+2021-11-21	Germany	Delta	333
+2021-11-22	Germany	Delta	2307
+2021-11-23	Germany	Delta	1835
+2021-11-24	Germany	Delta	1831
+2021-11-25	Germany	Delta	2367
+2021-11-26	Germany	Delta	2213
+2021-11-27	Germany	Delta	753
+2021-11-28	Germany	Delta	340
+2021-11-29	Germany	Delta	2888
+2021-11-30	Germany	Delta	2450
+2021-12-01	Germany	Delta	1543
+2021-12-02	Germany	Delta	1951
+2021-12-03	Germany	Delta	1580
+2021-12-04	Germany	Delta	1233
+2021-12-05	Germany	Delta	376
+2021-12-06	Germany	Delta	3274
+2021-12-07	Germany	Delta	1754
+2021-12-08	Germany	Delta	1381
+2021-12-09	Germany	Delta	2687
+2021-12-10	Germany	Delta	2162
+2021-12-11	Germany	Delta	990
+2021-12-12	Germany	Delta	377
+2021-12-13	Germany	Delta	2450
+2021-12-14	Germany	Delta	2415
+2021-12-15	Germany	Delta	1751
+2021-12-16	Germany	Delta	2680
+2021-12-17	Germany	Delta	1195
+2021-12-18	Germany	Delta	1080
+2021-12-19	Germany	Delta	217
+2021-12-20	Germany	Delta	2280
+2021-12-21	Germany	Delta	1655
+2021-12-22	Germany	Delta	1587
+2021-12-23	Germany	Delta	1617
+2021-12-24	Germany	Delta	827
+2021-12-25	Germany	Delta	281
+2021-12-26	Germany	Delta	661
+2021-12-27	Germany	Delta	1238
+2021-12-28	Germany	Delta	733
+2021-12-29	Germany	Delta	952
+2021-12-30	Germany	Delta	1397
+2021-12-31	Germany	Delta	452
+2022-01-01	Germany	Delta	196
+2022-01-02	Germany	Delta	398
+2022-01-03	Germany	Delta	1292
+2022-01-04	Germany	Delta	570
+2022-01-05	Germany	Delta	481
+2022-01-06	Germany	Delta	546
+2022-01-07	Germany	Delta	539
+2022-01-08	Germany	Delta	133
+2022-01-09	Germany	Delta	53
+2022-01-10	Germany	Delta	571
+2022-01-11	Germany	Delta	480
+2022-01-12	Germany	Delta	299
+2022-01-13	Germany	Delta	360
+2022-01-14	Germany	Delta	252
+2022-01-15	Germany	Delta	50
+2022-01-16	Germany	Delta	42
+2022-01-17	Germany	Delta	255
+2022-01-18	Germany	Delta	302
+2022-01-19	Germany	Delta	140
+2022-01-20	Germany	Delta	113
+2022-01-21	Germany	Delta	62
+2022-01-22	Germany	Delta	53
+2022-01-23	Germany	Delta	15
+2022-01-24	Germany	Delta	117
+2022-01-25	Germany	Delta	131
+2022-01-26	Germany	Delta	35
+2022-01-27	Germany	Delta	59
+2022-01-28	Germany	Delta	46
+2022-01-29	Germany	Delta	12
+2022-01-30	Germany	Delta	9
+2022-01-31	Germany	Delta	30
+2022-02-01	Germany	Delta	38
+2022-02-02	Germany	Delta	23
+2022-02-03	Germany	Delta	21
+2022-02-04	Germany	Delta	21
+2022-02-05	Germany	Delta	3
+2022-02-06	Germany	Delta	5
+2022-02-07	Germany	Delta	26
+2022-02-08	Germany	Delta	14
+2022-02-09	Germany	Delta	10
+2022-02-10	Germany	Delta	8
+2022-02-11	Germany	Delta	11
+2022-02-12	Germany	Delta	1
+2022-02-13	Germany	Delta	4
+2022-02-14	Germany	Delta	13
+2022-02-15	Germany	Delta	6
+2022-02-16	Germany	Delta	2
+2022-02-17	Germany	Delta	5
+2022-02-18	Germany	Delta	1
+2022-02-20	Germany	Delta	3
+2022-02-21	Germany	Delta	4
+2022-02-22	Germany	Delta	1
+2022-02-23	Germany	Delta	3
+2022-02-24	Germany	Delta	2
+2022-02-25	Germany	Delta	1
+2022-02-28	Germany	Delta	1
+2022-03-01	Germany	Delta	1
+2022-03-02	Germany	Delta	2
+2022-03-03	Germany	Delta	3
+2022-03-04	Germany	Delta	1
+2022-03-07	Germany	Delta	1
+2022-03-08	Germany	Delta	1
+2022-03-15	Germany	Delta	2
+2022-03-18	Germany	Delta	2
+2022-03-22	Germany	Delta	1
+2022-03-24	Germany	Delta	1
+2022-03-26	Germany	Delta	1
+2022-04-04	Germany	Delta	1
+2022-04-08	Germany	Delta	1
+2022-04-09	Germany	Delta	5
+2022-04-25	Germany	Delta	1
+2022-05-07	Germany	Delta	1
+2022-05-08	Germany	Delta	2
+2022-05-09	Germany	Delta	7
+2022-06-01	Germany	Delta	2
+2022-06-13	Germany	Delta	2
+2022-06-24	Germany	Delta	1
+2022-08-25	Germany	Delta	1
+2022-09-06	Germany	Delta	1
+2022-11-24	Germany	Delta	1
+2021-11-17	Germany	Omicron 21K	1
+2021-11-21	Germany	Omicron 21K	1
+2021-11-22	Germany	Omicron 21K	1
+2021-11-23	Germany	Omicron 21K	1
+2021-11-24	Germany	Omicron 21K	4
+2021-11-25	Germany	Omicron 21K	2
+2021-11-26	Germany	Omicron 21K	10
+2021-11-27	Germany	Omicron 21K	13
+2021-11-28	Germany	Omicron 21K	16
+2021-11-29	Germany	Omicron 21K	50
+2021-11-30	Germany	Omicron 21K	25
+2021-12-01	Germany	Omicron 21K	30
+2021-12-02	Germany	Omicron 21K	30
+2021-12-03	Germany	Omicron 21K	23
+2021-12-04	Germany	Omicron 21K	37
+2021-12-05	Germany	Omicron 21K	17
+2021-12-06	Germany	Omicron 21K	66
+2021-12-07	Germany	Omicron 21K	70
+2021-12-08	Germany	Omicron 21K	72
+2021-12-09	Germany	Omicron 21K	83
+2021-12-10	Germany	Omicron 21K	99
+2021-12-11	Germany	Omicron 21K	62
+2021-12-12	Germany	Omicron 21K	35
+2021-12-13	Germany	Omicron 21K	214
+2021-12-14	Germany	Omicron 21K	254
+2021-12-15	Germany	Omicron 21K	325
+2021-12-16	Germany	Omicron 21K	375
+2021-12-17	Germany	Omicron 21K	342
+2021-12-18	Germany	Omicron 21K	155
+2021-12-19	Germany	Omicron 21K	65
+2021-12-20	Germany	Omicron 21K	619
+2021-12-21	Germany	Omicron 21K	556
+2021-12-22	Germany	Omicron 21K	633
+2021-12-23	Germany	Omicron 21K	592
+2021-12-24	Germany	Omicron 21K	400
+2021-12-25	Germany	Omicron 21K	210
+2021-12-26	Germany	Omicron 21K	344
+2021-12-27	Germany	Omicron 21K	1070
+2021-12-28	Germany	Omicron 21K	1060
+2021-12-29	Germany	Omicron 21K	1584
+2021-12-30	Germany	Omicron 21K	1826
+2021-12-31	Germany	Omicron 21K	851
+2022-01-01	Germany	Omicron 21K	391
+2022-01-02	Germany	Omicron 21K	456
+2022-01-03	Germany	Omicron 21K	1980
+2022-01-04	Germany	Omicron 21K	1821
+2022-01-05	Germany	Omicron 21K	1804
+2022-01-06	Germany	Omicron 21K	1386
+2022-01-07	Germany	Omicron 21K	1344
+2022-01-08	Germany	Omicron 21K	830
+2022-01-09	Germany	Omicron 21K	288
+2022-01-10	Germany	Omicron 21K	1943
+2022-01-11	Germany	Omicron 21K	2273
+2022-01-12	Germany	Omicron 21K	1893
+2022-01-13	Germany	Omicron 21K	1814
+2022-01-14	Germany	Omicron 21K	1649
+2022-01-15	Germany	Omicron 21K	909
+2022-01-16	Germany	Omicron 21K	423
+2022-01-17	Germany	Omicron 21K	2655
+2022-01-18	Germany	Omicron 21K	3085
+2022-01-19	Germany	Omicron 21K	2543
+2022-01-20	Germany	Omicron 21K	2869
+2022-01-21	Germany	Omicron 21K	2049
+2022-01-22	Germany	Omicron 21K	991
+2022-01-23	Germany	Omicron 21K	345
+2022-01-24	Germany	Omicron 21K	2880
+2022-01-25	Germany	Omicron 21K	3458
+2022-01-26	Germany	Omicron 21K	2054
+2022-01-27	Germany	Omicron 21K	2595
+2022-01-28	Germany	Omicron 21K	2264
+2022-01-29	Germany	Omicron 21K	999
+2022-01-30	Germany	Omicron 21K	333
+2022-01-31	Germany	Omicron 21K	2301
+2022-02-01	Germany	Omicron 21K	2685
+2022-02-02	Germany	Omicron 21K	2257
+2022-02-03	Germany	Omicron 21K	4118
+2022-02-04	Germany	Omicron 21K	2832
+2022-02-05	Germany	Omicron 21K	718
+2022-02-06	Germany	Omicron 21K	1209
+2022-02-07	Germany	Omicron 21K	2387
+2022-02-08	Germany	Omicron 21K	2756
+2022-02-09	Germany	Omicron 21K	2506
+2022-02-10	Germany	Omicron 21K	2642
+2022-02-11	Germany	Omicron 21K	2093
+2022-02-12	Germany	Omicron 21K	1289
+2022-02-13	Germany	Omicron 21K	374
+2022-02-14	Germany	Omicron 21K	2835
+2022-02-15	Germany	Omicron 21K	2755
+2022-02-16	Germany	Omicron 21K	1421
+2022-02-17	Germany	Omicron 21K	2701
+2022-02-18	Germany	Omicron 21K	1658
+2022-02-19	Germany	Omicron 21K	695
+2022-02-20	Germany	Omicron 21K	646
+2022-02-21	Germany	Omicron 21K	1496
+2022-02-22	Germany	Omicron 21K	1909
+2022-02-23	Germany	Omicron 21K	1561
+2022-02-24	Germany	Omicron 21K	1563
+2022-02-25	Germany	Omicron 21K	1020
+2022-02-26	Germany	Omicron 21K	506
+2022-02-27	Germany	Omicron 21K	297
+2022-02-28	Germany	Omicron 21K	973
+2022-03-01	Germany	Omicron 21K	1142
+2022-03-02	Germany	Omicron 21K	1583
+2022-03-03	Germany	Omicron 21K	1227
+2022-03-04	Germany	Omicron 21K	840
+2022-03-05	Germany	Omicron 21K	557
+2022-03-06	Germany	Omicron 21K	525
+2022-03-07	Germany	Omicron 21K	1054
+2022-03-08	Germany	Omicron 21K	996
+2022-03-09	Germany	Omicron 21K	1160
+2022-03-10	Germany	Omicron 21K	823
+2022-03-11	Germany	Omicron 21K	613
+2022-03-12	Germany	Omicron 21K	388
+2022-03-13	Germany	Omicron 21K	203
+2022-03-14	Germany	Omicron 21K	629
+2022-03-15	Germany	Omicron 21K	572
+2022-03-16	Germany	Omicron 21K	676
+2022-03-17	Germany	Omicron 21K	596
+2022-03-18	Germany	Omicron 21K	461
+2022-03-19	Germany	Omicron 21K	254
+2022-03-20	Germany	Omicron 21K	274
+2022-03-21	Germany	Omicron 21K	413
+2022-03-22	Germany	Omicron 21K	368
+2022-03-23	Germany	Omicron 21K	249
+2022-03-24	Germany	Omicron 21K	346
+2022-03-25	Germany	Omicron 21K	134
+2022-03-26	Germany	Omicron 21K	154
+2022-03-27	Germany	Omicron 21K	57
+2022-03-28	Germany	Omicron 21K	220
+2022-03-29	Germany	Omicron 21K	285
+2022-03-30	Germany	Omicron 21K	211
+2022-03-31	Germany	Omicron 21K	184
+2022-04-01	Germany	Omicron 21K	87
+2022-04-02	Germany	Omicron 21K	63
+2022-04-03	Germany	Omicron 21K	20
+2022-04-04	Germany	Omicron 21K	158
+2022-04-05	Germany	Omicron 21K	184
+2022-04-06	Germany	Omicron 21K	112
+2022-04-07	Germany	Omicron 21K	117
+2022-04-08	Germany	Omicron 21K	75
+2022-04-09	Germany	Omicron 21K	41
+2022-04-10	Germany	Omicron 21K	37
+2022-04-11	Germany	Omicron 21K	80
+2022-04-12	Germany	Omicron 21K	131
+2022-04-13	Germany	Omicron 21K	72
+2022-04-14	Germany	Omicron 21K	38
+2022-04-15	Germany	Omicron 21K	49
+2022-04-16	Germany	Omicron 21K	19
+2022-04-17	Germany	Omicron 21K	18
+2022-04-18	Germany	Omicron 21K	23
+2022-04-19	Germany	Omicron 21K	79
+2022-04-20	Germany	Omicron 21K	36
+2022-04-21	Germany	Omicron 21K	56
+2022-04-22	Germany	Omicron 21K	26
+2022-04-23	Germany	Omicron 21K	20
+2022-04-24	Germany	Omicron 21K	13
+2022-04-25	Germany	Omicron 21K	57
+2022-04-26	Germany	Omicron 21K	28
+2022-04-27	Germany	Omicron 21K	18
+2022-04-28	Germany	Omicron 21K	25
+2022-04-29	Germany	Omicron 21K	19
+2022-04-30	Germany	Omicron 21K	12
+2022-05-01	Germany	Omicron 21K	5
+2022-05-02	Germany	Omicron 21K	25
+2022-05-03	Germany	Omicron 21K	20
+2022-05-04	Germany	Omicron 21K	14
+2022-05-05	Germany	Omicron 21K	8
+2022-05-06	Germany	Omicron 21K	6
+2022-05-07	Germany	Omicron 21K	2
+2022-05-08	Germany	Omicron 21K	2
+2022-05-09	Germany	Omicron 21K	7
+2022-05-10	Germany	Omicron 21K	5
+2022-05-11	Germany	Omicron 21K	12
+2022-05-12	Germany	Omicron 21K	9
+2022-05-13	Germany	Omicron 21K	2
+2022-05-14	Germany	Omicron 21K	1
+2022-05-16	Germany	Omicron 21K	13
+2022-05-17	Germany	Omicron 21K	2
+2022-05-18	Germany	Omicron 21K	12
+2022-05-20	Germany	Omicron 21K	1
+2022-05-21	Germany	Omicron 21K	2
+2022-05-23	Germany	Omicron 21K	9
+2022-05-24	Germany	Omicron 21K	1
+2022-05-25	Germany	Omicron 21K	10
+2022-05-26	Germany	Omicron 21K	1
+2022-05-27	Germany	Omicron 21K	3
+2022-05-28	Germany	Omicron 21K	3
+2022-05-30	Germany	Omicron 21K	13
+2022-05-31	Germany	Omicron 21K	3
+2022-06-01	Germany	Omicron 21K	8
+2022-06-08	Germany	Omicron 21K	3
+2022-06-09	Germany	Omicron 21K	1
+2022-06-13	Germany	Omicron 21K	2
+2022-06-14	Germany	Omicron 21K	2
+2022-06-15	Germany	Omicron 21K	1
+2022-06-22	Germany	Omicron 21K	1
+2022-06-24	Germany	Omicron 21K	2
+2022-07-11	Germany	Omicron 21K	1
+2022-07-14	Germany	Omicron 21K	1
+2022-07-20	Germany	Omicron 21K	1
+2022-07-21	Germany	Omicron 21K	1
+2022-07-26	Germany	Omicron 21K	1
+2022-07-29	Germany	Omicron 21K	1
+2022-08-31	Germany	Omicron 21K	1
+2022-09-06	Germany	Omicron 21K	1
+2022-09-07	Germany	Omicron 21K	4
+2022-09-09	Germany	Omicron 21K	1
+2022-09-14	Germany	Omicron 21K	3
+2022-09-15	Germany	Omicron 21K	1
+2022-09-20	Germany	Omicron 21K	1
+2022-10-07	Germany	Omicron 21K	1
+2022-10-27	Germany	Omicron 21K	1
+2022-11-22	Germany	Omicron 21K	1
+2021-12-01	Germany	Omicron 21L	1
+2021-12-02	Germany	Omicron 21L	1
+2021-12-07	Germany	Omicron 21L	1
+2021-12-08	Germany	Omicron 21L	2
+2021-12-13	Germany	Omicron 21L	1
+2021-12-14	Germany	Omicron 21L	2
+2021-12-15	Germany	Omicron 21L	4
+2021-12-16	Germany	Omicron 21L	3
+2021-12-20	Germany	Omicron 21L	2
+2021-12-21	Germany	Omicron 21L	1
+2021-12-22	Germany	Omicron 21L	1
+2021-12-23	Germany	Omicron 21L	1
+2021-12-24	Germany	Omicron 21L	2
+2021-12-26	Germany	Omicron 21L	2
+2021-12-27	Germany	Omicron 21L	5
+2021-12-28	Germany	Omicron 21L	5
+2021-12-29	Germany	Omicron 21L	12
+2021-12-30	Germany	Omicron 21L	9
+2021-12-31	Germany	Omicron 21L	2
+2022-01-01	Germany	Omicron 21L	1
+2022-01-02	Germany	Omicron 21L	4
+2022-01-03	Germany	Omicron 21L	47
+2022-01-04	Germany	Omicron 21L	41
+2022-01-05	Germany	Omicron 21L	45
+2022-01-06	Germany	Omicron 21L	31
+2022-01-07	Germany	Omicron 21L	57
+2022-01-08	Germany	Omicron 21L	32
+2022-01-09	Germany	Omicron 21L	10
+2022-01-10	Germany	Omicron 21L	128
+2022-01-11	Germany	Omicron 21L	94
+2022-01-12	Germany	Omicron 21L	89
+2022-01-13	Germany	Omicron 21L	78
+2022-01-14	Germany	Omicron 21L	102
+2022-01-15	Germany	Omicron 21L	62
+2022-01-16	Germany	Omicron 21L	45
+2022-01-17	Germany	Omicron 21L	252
+2022-01-18	Germany	Omicron 21L	258
+2022-01-19	Germany	Omicron 21L	265
+2022-01-20	Germany	Omicron 21L	252
+2022-01-21	Germany	Omicron 21L	242
+2022-01-22	Germany	Omicron 21L	158
+2022-01-23	Germany	Omicron 21L	39
+2022-01-24	Germany	Omicron 21L	431
+2022-01-25	Germany	Omicron 21L	417
+2022-01-26	Germany	Omicron 21L	337
+2022-01-27	Germany	Omicron 21L	476
+2022-01-28	Germany	Omicron 21L	420
+2022-01-29	Germany	Omicron 21L	175
+2022-01-30	Germany	Omicron 21L	69
+2022-01-31	Germany	Omicron 21L	501
+2022-02-01	Germany	Omicron 21L	575
+2022-02-02	Germany	Omicron 21L	527
+2022-02-03	Germany	Omicron 21L	1144
+2022-02-04	Germany	Omicron 21L	610
+2022-02-05	Germany	Omicron 21L	200
+2022-02-06	Germany	Omicron 21L	430
+2022-02-07	Germany	Omicron 21L	861
+2022-02-08	Germany	Omicron 21L	808
+2022-02-09	Germany	Omicron 21L	847
+2022-02-10	Germany	Omicron 21L	1078
+2022-02-11	Germany	Omicron 21L	885
+2022-02-12	Germany	Omicron 21L	573
+2022-02-13	Germany	Omicron 21L	207
+2022-02-14	Germany	Omicron 21L	1904
+2022-02-15	Germany	Omicron 21L	1430
+2022-02-16	Germany	Omicron 21L	943
+2022-02-17	Germany	Omicron 21L	2146
+2022-02-18	Germany	Omicron 21L	1369
+2022-02-19	Germany	Omicron 21L	669
+2022-02-20	Germany	Omicron 21L	601
+2022-02-21	Germany	Omicron 21L	1469
+2022-02-22	Germany	Omicron 21L	1626
+2022-02-23	Germany	Omicron 21L	1625
+2022-02-24	Germany	Omicron 21L	2581
+2022-02-25	Germany	Omicron 21L	1684
+2022-02-26	Germany	Omicron 21L	682
+2022-02-27	Germany	Omicron 21L	494
+2022-02-28	Germany	Omicron 21L	1789
+2022-03-01	Germany	Omicron 21L	2064
+2022-03-02	Germany	Omicron 21L	2684
+2022-03-03	Germany	Omicron 21L	3055
+2022-03-04	Germany	Omicron 21L	1775
+2022-03-05	Germany	Omicron 21L	1297
+2022-03-06	Germany	Omicron 21L	1420
+2022-03-07	Germany	Omicron 21L	2579
+2022-03-08	Germany	Omicron 21L	2783
+2022-03-09	Germany	Omicron 21L	3191
+2022-03-10	Germany	Omicron 21L	2770
+2022-03-11	Germany	Omicron 21L	2130
+2022-03-12	Germany	Omicron 21L	1422
+2022-03-13	Germany	Omicron 21L	875
+2022-03-14	Germany	Omicron 21L	2964
+2022-03-15	Germany	Omicron 21L	2642
+2022-03-16	Germany	Omicron 21L	3097
+2022-03-17	Germany	Omicron 21L	3086
+2022-03-18	Germany	Omicron 21L	2216
+2022-03-19	Germany	Omicron 21L	1505
+2022-03-20	Germany	Omicron 21L	1921
+2022-03-21	Germany	Omicron 21L	2891
+2022-03-22	Germany	Omicron 21L	2952
+2022-03-23	Germany	Omicron 21L	2361
+2022-03-24	Germany	Omicron 21L	2241
+2022-03-25	Germany	Omicron 21L	1531
+2022-03-26	Germany	Omicron 21L	1399
+2022-03-27	Germany	Omicron 21L	663
+2022-03-28	Germany	Omicron 21L	2642
+2022-03-29	Germany	Omicron 21L	2585
+2022-03-30	Germany	Omicron 21L	2387
+2022-03-31	Germany	Omicron 21L	2510
+2022-04-01	Germany	Omicron 21L	1476
+2022-04-02	Germany	Omicron 21L	1108
+2022-04-03	Germany	Omicron 21L	578
+2022-04-04	Germany	Omicron 21L	2376
+2022-04-05	Germany	Omicron 21L	2704
+2022-04-06	Germany	Omicron 21L	2096
+2022-04-07	Germany	Omicron 21L	2271
+2022-04-08	Germany	Omicron 21L	1621
+2022-04-09	Germany	Omicron 21L	1662
+2022-04-10	Germany	Omicron 21L	827
+2022-04-11	Germany	Omicron 21L	2685
+2022-04-12	Germany	Omicron 21L	3356
+2022-04-13	Germany	Omicron 21L	2347
+2022-04-14	Germany	Omicron 21L	1859
+2022-04-15	Germany	Omicron 21L	1878
+2022-04-16	Germany	Omicron 21L	1337
+2022-04-17	Germany	Omicron 21L	1027
+2022-04-18	Germany	Omicron 21L	1250
+2022-04-19	Germany	Omicron 21L	2856
+2022-04-20	Germany	Omicron 21L	1798
+2022-04-21	Germany	Omicron 21L	2160
+2022-04-22	Germany	Omicron 21L	2061
+2022-04-23	Germany	Omicron 21L	1815
+2022-04-24	Germany	Omicron 21L	831
+2022-04-25	Germany	Omicron 21L	2556
+2022-04-26	Germany	Omicron 21L	2155
+2022-04-27	Germany	Omicron 21L	2048
+2022-04-28	Germany	Omicron 21L	1967
+2022-04-29	Germany	Omicron 21L	1859
+2022-04-30	Germany	Omicron 21L	1221
+2022-05-01	Germany	Omicron 21L	388
+2022-05-02	Germany	Omicron 21L	2121
+2022-05-03	Germany	Omicron 21L	1961
+2022-05-04	Germany	Omicron 21L	1699
+2022-05-05	Germany	Omicron 21L	1793
+2022-05-06	Germany	Omicron 21L	1420
+2022-05-07	Germany	Omicron 21L	989
+2022-05-08	Germany	Omicron 21L	521
+2022-05-09	Germany	Omicron 21L	1888
+2022-05-10	Germany	Omicron 21L	1569
+2022-05-11	Germany	Omicron 21L	1285
+2022-05-12	Germany	Omicron 21L	1632
+2022-05-13	Germany	Omicron 21L	1451
+2022-05-14	Germany	Omicron 21L	876
+2022-05-15	Germany	Omicron 21L	308
+2022-05-16	Germany	Omicron 21L	1624
+2022-05-17	Germany	Omicron 21L	1384
+2022-05-18	Germany	Omicron 21L	1271
+2022-05-19	Germany	Omicron 21L	1304
+2022-05-20	Germany	Omicron 21L	1059
+2022-05-21	Germany	Omicron 21L	572
+2022-05-22	Germany	Omicron 21L	311
+2022-05-23	Germany	Omicron 21L	1395
+2022-05-24	Germany	Omicron 21L	893
+2022-05-25	Germany	Omicron 21L	973
+2022-05-26	Germany	Omicron 21L	593
+2022-05-27	Germany	Omicron 21L	886
+2022-05-28	Germany	Omicron 21L	525
+2022-05-29	Germany	Omicron 21L	284
+2022-05-30	Germany	Omicron 21L	1160
+2022-05-31	Germany	Omicron 21L	764
+2022-06-01	Germany	Omicron 21L	760
+2022-06-02	Germany	Omicron 21L	695
+2022-06-03	Germany	Omicron 21L	523
+2022-06-04	Germany	Omicron 21L	302
+2022-06-05	Germany	Omicron 21L	228
+2022-06-06	Germany	Omicron 21L	211
+2022-06-07	Germany	Omicron 21L	737
+2022-06-08	Germany	Omicron 21L	619
+2022-06-09	Germany	Omicron 21L	601
+2022-06-10	Germany	Omicron 21L	343
+2022-06-11	Germany	Omicron 21L	260
+2022-06-12	Germany	Omicron 21L	161
+2022-06-13	Germany	Omicron 21L	653
+2022-06-14	Germany	Omicron 21L	489
+2022-06-15	Germany	Omicron 21L	687
+2022-06-16	Germany	Omicron 21L	295
+2022-06-17	Germany	Omicron 21L	336
+2022-06-18	Germany	Omicron 21L	204
+2022-06-19	Germany	Omicron 21L	103
+2022-06-20	Germany	Omicron 21L	432
+2022-06-21	Germany	Omicron 21L	382
+2022-06-22	Germany	Omicron 21L	351
+2022-06-23	Germany	Omicron 21L	423
+2022-06-24	Germany	Omicron 21L	278
+2022-06-25	Germany	Omicron 21L	140
+2022-06-26	Germany	Omicron 21L	45
+2022-06-27	Germany	Omicron 21L	243
+2022-06-28	Germany	Omicron 21L	186
+2022-06-29	Germany	Omicron 21L	147
+2022-06-30	Germany	Omicron 21L	182
+2022-07-01	Germany	Omicron 21L	90
+2022-07-02	Germany	Omicron 21L	40
+2022-07-03	Germany	Omicron 21L	35
+2022-07-04	Germany	Omicron 21L	93
+2022-07-05	Germany	Omicron 21L	64
+2022-07-06	Germany	Omicron 21L	60
+2022-07-07	Germany	Omicron 21L	67
+2022-07-08	Germany	Omicron 21L	39
+2022-07-09	Germany	Omicron 21L	16
+2022-07-10	Germany	Omicron 21L	16
+2022-07-11	Germany	Omicron 21L	42
+2022-07-12	Germany	Omicron 21L	44
+2022-07-13	Germany	Omicron 21L	32
+2022-07-14	Germany	Omicron 21L	45
+2022-07-15	Germany	Omicron 21L	38
+2022-07-16	Germany	Omicron 21L	11
+2022-07-17	Germany	Omicron 21L	7
+2022-07-18	Germany	Omicron 21L	29
+2022-07-19	Germany	Omicron 21L	35
+2022-07-20	Germany	Omicron 21L	18
+2022-07-21	Germany	Omicron 21L	27
+2022-07-22	Germany	Omicron 21L	14
+2022-07-23	Germany	Omicron 21L	7
+2022-07-24	Germany	Omicron 21L	4
+2022-07-25	Germany	Omicron 21L	18
+2022-07-26	Germany	Omicron 21L	9
+2022-07-27	Germany	Omicron 21L	7
+2022-07-28	Germany	Omicron 21L	10
+2022-07-29	Germany	Omicron 21L	6
+2022-07-30	Germany	Omicron 21L	4
+2022-07-31	Germany	Omicron 21L	2
+2022-08-01	Germany	Omicron 21L	3
+2022-08-02	Germany	Omicron 21L	6
+2022-08-03	Germany	Omicron 21L	9
+2022-08-04	Germany	Omicron 21L	4
+2022-08-05	Germany	Omicron 21L	8
+2022-08-06	Germany	Omicron 21L	2
+2022-08-07	Germany	Omicron 21L	1
+2022-08-08	Germany	Omicron 21L	10
+2022-08-09	Germany	Omicron 21L	4
+2022-08-10	Germany	Omicron 21L	2
+2022-08-11	Germany	Omicron 21L	7
+2022-08-12	Germany	Omicron 21L	4
+2022-08-13	Germany	Omicron 21L	1
+2022-08-14	Germany	Omicron 21L	4
+2022-08-15	Germany	Omicron 21L	5
+2022-08-16	Germany	Omicron 21L	6
+2022-08-17	Germany	Omicron 21L	1
+2022-08-18	Germany	Omicron 21L	5
+2022-08-22	Germany	Omicron 21L	9
+2022-08-23	Germany	Omicron 21L	5
+2022-08-24	Germany	Omicron 21L	6
+2022-08-25	Germany	Omicron 21L	2
+2022-08-26	Germany	Omicron 21L	3
+2022-08-29	Germany	Omicron 21L	5
+2022-08-30	Germany	Omicron 21L	3
+2022-08-31	Germany	Omicron 21L	5
+2022-09-01	Germany	Omicron 21L	4
+2022-09-02	Germany	Omicron 21L	1
+2022-09-03	Germany	Omicron 21L	3
+2022-09-04	Germany	Omicron 21L	3
+2022-09-05	Germany	Omicron 21L	3
+2022-09-06	Germany	Omicron 21L	3
+2022-09-08	Germany	Omicron 21L	3
+2022-09-09	Germany	Omicron 21L	2
+2022-09-12	Germany	Omicron 21L	2
+2022-09-13	Germany	Omicron 21L	2
+2022-09-14	Germany	Omicron 21L	5
+2022-09-15	Germany	Omicron 21L	2
+2022-09-16	Germany	Omicron 21L	1
+2022-09-19	Germany	Omicron 21L	1
+2022-09-20	Germany	Omicron 21L	6
+2022-09-21	Germany	Omicron 21L	2
+2022-09-22	Germany	Omicron 21L	3
+2022-09-23	Germany	Omicron 21L	7
+2022-09-24	Germany	Omicron 21L	3
+2022-09-25	Germany	Omicron 21L	2
+2022-09-26	Germany	Omicron 21L	6
+2022-09-27	Germany	Omicron 21L	6
+2022-09-28	Germany	Omicron 21L	2
+2022-09-29	Germany	Omicron 21L	2
+2022-09-30	Germany	Omicron 21L	2
+2022-10-01	Germany	Omicron 21L	3
+2022-10-02	Germany	Omicron 21L	1
+2022-10-03	Germany	Omicron 21L	5
+2022-10-04	Germany	Omicron 21L	7
+2022-10-05	Germany	Omicron 21L	3
+2022-10-06	Germany	Omicron 21L	5
+2022-10-08	Germany	Omicron 21L	4
+2022-10-09	Germany	Omicron 21L	2
+2022-10-10	Germany	Omicron 21L	5
+2022-10-11	Germany	Omicron 21L	4
+2022-10-12	Germany	Omicron 21L	4
+2022-10-13	Germany	Omicron 21L	4
+2022-10-14	Germany	Omicron 21L	5
+2022-10-15	Germany	Omicron 21L	2
+2022-10-16	Germany	Omicron 21L	2
+2022-10-17	Germany	Omicron 21L	7
+2022-10-18	Germany	Omicron 21L	3
+2022-10-19	Germany	Omicron 21L	6
+2022-10-20	Germany	Omicron 21L	4
+2022-10-21	Germany	Omicron 21L	2
+2022-10-22	Germany	Omicron 21L	1
+2022-10-23	Germany	Omicron 21L	1
+2022-10-24	Germany	Omicron 21L	5
+2022-10-25	Germany	Omicron 21L	3
+2022-10-26	Germany	Omicron 21L	4
+2022-10-27	Germany	Omicron 21L	6
+2022-10-28	Germany	Omicron 21L	1
+2022-10-29	Germany	Omicron 21L	3
+2022-10-31	Germany	Omicron 21L	2
+2022-11-01	Germany	Omicron 21L	1
+2022-11-02	Germany	Omicron 21L	4
+2022-11-03	Germany	Omicron 21L	3
+2022-11-04	Germany	Omicron 21L	6
+2022-11-05	Germany	Omicron 21L	1
+2022-11-07	Germany	Omicron 21L	5
+2022-11-08	Germany	Omicron 21L	5
+2022-11-09	Germany	Omicron 21L	2
+2022-11-10	Germany	Omicron 21L	4
+2022-11-11	Germany	Omicron 21L	9
+2022-11-13	Germany	Omicron 21L	4
+2022-11-14	Germany	Omicron 21L	2
+2022-11-15	Germany	Omicron 21L	4
+2022-11-16	Germany	Omicron 21L	5
+2022-11-17	Germany	Omicron 21L	9
+2022-11-18	Germany	Omicron 21L	3
+2022-11-19	Germany	Omicron 21L	2
+2022-11-20	Germany	Omicron 21L	2
+2022-11-21	Germany	Omicron 21L	3
+2022-11-22	Germany	Omicron 21L	1
+2022-11-23	Germany	Omicron 21L	2
+2022-11-24	Germany	Omicron 21L	11
+2022-11-25	Germany	Omicron 21L	4
+2022-11-27	Germany	Omicron 21L	2
+2022-11-28	Germany	Omicron 21L	4
+2022-11-29	Germany	Omicron 21L	2
+2022-11-30	Germany	Omicron 21L	2
+2022-12-01	Germany	Omicron 21L	1
+2022-12-03	Germany	Omicron 21L	1
+2022-12-04	Germany	Omicron 21L	3
+2022-12-05	Germany	Omicron 21L	13
+2022-12-07	Germany	Omicron 21L	3
+2022-12-08	Germany	Omicron 21L	2
+2022-12-09	Germany	Omicron 21L	8
+2022-12-10	Germany	Omicron 21L	4
+2022-12-11	Germany	Omicron 21L	2
+2022-12-12	Germany	Omicron 21L	3
+2022-12-13	Germany	Omicron 21L	3
+2022-12-14	Germany	Omicron 21L	7
+2022-12-15	Germany	Omicron 21L	6
+2022-12-16	Germany	Omicron 21L	5
+2022-12-17	Germany	Omicron 21L	2
+2022-12-18	Germany	Omicron 21L	5
+2022-12-19	Germany	Omicron 21L	3
+2022-12-20	Germany	Omicron 21L	1
+2022-12-21	Germany	Omicron 21L	2
+2022-12-22	Germany	Omicron 21L	5
+2022-12-24	Germany	Omicron 21L	2
+2022-12-25	Germany	Omicron 21L	3
+2022-12-27	Germany	Omicron 21L	4
+2022-12-28	Germany	Omicron 21L	2
+2022-12-30	Germany	Omicron 21L	4
+2022-12-31	Germany	Omicron 21L	5
+2023-01-02	Germany	Omicron 21L	3
+2023-01-03	Germany	Omicron 21L	4
+2023-01-04	Germany	Omicron 21L	2
+2023-01-05	Germany	Omicron 21L	5
+2023-01-06	Germany	Omicron 21L	3
+2023-01-07	Germany	Omicron 21L	1
+2023-01-09	Germany	Omicron 21L	4
+2023-01-10	Germany	Omicron 21L	5
+2023-01-11	Germany	Omicron 21L	1
+2023-01-12	Germany	Omicron 21L	3
+2023-01-13	Germany	Omicron 21L	5
+2023-01-15	Germany	Omicron 21L	1
+2023-01-16	Germany	Omicron 21L	3
+2023-01-17	Germany	Omicron 21L	2
+2023-01-18	Germany	Omicron 21L	2
+2023-01-19	Germany	Omicron 21L	2
+2023-01-20	Germany	Omicron 21L	2
+2023-01-23	Germany	Omicron 21L	4
+2023-01-24	Germany	Omicron 21L	3
+2023-01-25	Germany	Omicron 21L	3
+2023-01-26	Germany	Omicron 21L	3
+2023-01-27	Germany	Omicron 21L	6
+2023-01-28	Germany	Omicron 21L	8
+2023-01-29	Germany	Omicron 21L	1
+2023-01-30	Germany	Omicron 21L	6
+2023-01-31	Germany	Omicron 21L	4
+2022-04-07	Germany	Omicron 22A	2
+2022-04-11	Germany	Omicron 22A	1
+2022-04-12	Germany	Omicron 22A	2
+2022-04-14	Germany	Omicron 22A	1
+2022-04-16	Germany	Omicron 22A	1
+2022-04-17	Germany	Omicron 22A	3
+2022-04-20	Germany	Omicron 22A	1
+2022-04-21	Germany	Omicron 22A	1
+2022-04-22	Germany	Omicron 22A	2
+2022-04-23	Germany	Omicron 22A	7
+2022-04-24	Germany	Omicron 22A	2
+2022-04-25	Germany	Omicron 22A	5
+2022-04-26	Germany	Omicron 22A	3
+2022-04-27	Germany	Omicron 22A	3
+2022-04-28	Germany	Omicron 22A	8
+2022-04-30	Germany	Omicron 22A	3
+2022-05-02	Germany	Omicron 22A	5
+2022-05-03	Germany	Omicron 22A	9
+2022-05-04	Germany	Omicron 22A	5
+2022-05-05	Germany	Omicron 22A	10
+2022-05-06	Germany	Omicron 22A	4
+2022-05-07	Germany	Omicron 22A	2
+2022-05-08	Germany	Omicron 22A	4
+2022-05-09	Germany	Omicron 22A	8
+2022-05-10	Germany	Omicron 22A	16
+2022-05-11	Germany	Omicron 22A	7
+2022-05-12	Germany	Omicron 22A	14
+2022-05-13	Germany	Omicron 22A	13
+2022-05-14	Germany	Omicron 22A	8
+2022-05-15	Germany	Omicron 22A	5
+2022-05-16	Germany	Omicron 22A	24
+2022-05-17	Germany	Omicron 22A	25
+2022-05-18	Germany	Omicron 22A	21
+2022-05-19	Germany	Omicron 22A	19
+2022-05-20	Germany	Omicron 22A	15
+2022-05-21	Germany	Omicron 22A	4
+2022-05-22	Germany	Omicron 22A	11
+2022-05-23	Germany	Omicron 22A	33
+2022-05-24	Germany	Omicron 22A	24
+2022-05-25	Germany	Omicron 22A	25
+2022-05-26	Germany	Omicron 22A	27
+2022-05-27	Germany	Omicron 22A	36
+2022-05-28	Germany	Omicron 22A	26
+2022-05-29	Germany	Omicron 22A	16
+2022-05-30	Germany	Omicron 22A	67
+2022-05-31	Germany	Omicron 22A	48
+2022-06-01	Germany	Omicron 22A	53
+2022-06-02	Germany	Omicron 22A	64
+2022-06-03	Germany	Omicron 22A	42
+2022-06-04	Germany	Omicron 22A	37
+2022-06-05	Germany	Omicron 22A	21
+2022-06-06	Germany	Omicron 22A	33
+2022-06-07	Germany	Omicron 22A	92
+2022-06-08	Germany	Omicron 22A	74
+2022-06-09	Germany	Omicron 22A	124
+2022-06-10	Germany	Omicron 22A	78
+2022-06-11	Germany	Omicron 22A	53
+2022-06-12	Germany	Omicron 22A	47
+2022-06-13	Germany	Omicron 22A	180
+2022-06-14	Germany	Omicron 22A	124
+2022-06-15	Germany	Omicron 22A	208
+2022-06-16	Germany	Omicron 22A	94
+2022-06-17	Germany	Omicron 22A	159
+2022-06-18	Germany	Omicron 22A	79
+2022-06-19	Germany	Omicron 22A	56
+2022-06-20	Germany	Omicron 22A	150
+2022-06-21	Germany	Omicron 22A	222
+2022-06-22	Germany	Omicron 22A	132
+2022-06-23	Germany	Omicron 22A	193
+2022-06-24	Germany	Omicron 22A	149
+2022-06-25	Germany	Omicron 22A	68
+2022-06-26	Germany	Omicron 22A	29
+2022-06-27	Germany	Omicron 22A	163
+2022-06-28	Germany	Omicron 22A	162
+2022-06-29	Germany	Omicron 22A	137
+2022-06-30	Germany	Omicron 22A	161
+2022-07-01	Germany	Omicron 22A	83
+2022-07-02	Germany	Omicron 22A	72
+2022-07-03	Germany	Omicron 22A	60
+2022-07-04	Germany	Omicron 22A	90
+2022-07-05	Germany	Omicron 22A	105
+2022-07-06	Germany	Omicron 22A	84
+2022-07-07	Germany	Omicron 22A	77
+2022-07-08	Germany	Omicron 22A	82
+2022-07-09	Germany	Omicron 22A	36
+2022-07-10	Germany	Omicron 22A	30
+2022-07-11	Germany	Omicron 22A	84
+2022-07-12	Germany	Omicron 22A	73
+2022-07-13	Germany	Omicron 22A	69
+2022-07-14	Germany	Omicron 22A	88
+2022-07-15	Germany	Omicron 22A	46
+2022-07-16	Germany	Omicron 22A	47
+2022-07-17	Germany	Omicron 22A	36
+2022-07-18	Germany	Omicron 22A	67
+2022-07-19	Germany	Omicron 22A	88
+2022-07-20	Germany	Omicron 22A	61
+2022-07-21	Germany	Omicron 22A	76
+2022-07-22	Germany	Omicron 22A	47
+2022-07-23	Germany	Omicron 22A	24
+2022-07-24	Germany	Omicron 22A	20
+2022-07-25	Germany	Omicron 22A	66
+2022-07-26	Germany	Omicron 22A	35
+2022-07-27	Germany	Omicron 22A	38
+2022-07-28	Germany	Omicron 22A	36
+2022-07-29	Germany	Omicron 22A	34
+2022-07-30	Germany	Omicron 22A	23
+2022-07-31	Germany	Omicron 22A	14
+2022-08-01	Germany	Omicron 22A	47
+2022-08-02	Germany	Omicron 22A	31
+2022-08-03	Germany	Omicron 22A	27
+2022-08-04	Germany	Omicron 22A	28
+2022-08-05	Germany	Omicron 22A	26
+2022-08-06	Germany	Omicron 22A	17
+2022-08-07	Germany	Omicron 22A	6
+2022-08-08	Germany	Omicron 22A	28
+2022-08-09	Germany	Omicron 22A	27
+2022-08-10	Germany	Omicron 22A	9
+2022-08-11	Germany	Omicron 22A	25
+2022-08-12	Germany	Omicron 22A	24
+2022-08-13	Germany	Omicron 22A	14
+2022-08-14	Germany	Omicron 22A	5
+2022-08-15	Germany	Omicron 22A	29
+2022-08-16	Germany	Omicron 22A	21
+2022-08-17	Germany	Omicron 22A	26
+2022-08-18	Germany	Omicron 22A	23
+2022-08-19	Germany	Omicron 22A	18
+2022-08-20	Germany	Omicron 22A	13
+2022-08-21	Germany	Omicron 22A	4
+2022-08-22	Germany	Omicron 22A	28
+2022-08-23	Germany	Omicron 22A	21
+2022-08-24	Germany	Omicron 22A	21
+2022-08-25	Germany	Omicron 22A	18
+2022-08-26	Germany	Omicron 22A	14
+2022-08-27	Germany	Omicron 22A	9
+2022-08-28	Germany	Omicron 22A	12
+2022-08-29	Germany	Omicron 22A	30
+2022-08-30	Germany	Omicron 22A	25
+2022-08-31	Germany	Omicron 22A	28
+2022-09-01	Germany	Omicron 22A	22
+2022-09-02	Germany	Omicron 22A	26
+2022-09-03	Germany	Omicron 22A	12
+2022-09-04	Germany	Omicron 22A	6
+2022-09-05	Germany	Omicron 22A	37
+2022-09-06	Germany	Omicron 22A	31
+2022-09-07	Germany	Omicron 22A	31
+2022-09-08	Germany	Omicron 22A	23
+2022-09-09	Germany	Omicron 22A	27
+2022-09-10	Germany	Omicron 22A	16
+2022-09-11	Germany	Omicron 22A	10
+2022-09-12	Germany	Omicron 22A	41
+2022-09-13	Germany	Omicron 22A	39
+2022-09-14	Germany	Omicron 22A	35
+2022-09-15	Germany	Omicron 22A	32
+2022-09-16	Germany	Omicron 22A	37
+2022-09-17	Germany	Omicron 22A	12
+2022-09-18	Germany	Omicron 22A	5
+2022-09-19	Germany	Omicron 22A	31
+2022-09-20	Germany	Omicron 22A	23
+2022-09-21	Germany	Omicron 22A	11
+2022-09-22	Germany	Omicron 22A	12
+2022-09-23	Germany	Omicron 22A	18
+2022-09-24	Germany	Omicron 22A	16
+2022-09-25	Germany	Omicron 22A	1
+2022-09-26	Germany	Omicron 22A	15
+2022-09-27	Germany	Omicron 22A	19
+2022-09-28	Germany	Omicron 22A	12
+2022-09-29	Germany	Omicron 22A	13
+2022-09-30	Germany	Omicron 22A	15
+2022-10-01	Germany	Omicron 22A	15
+2022-10-02	Germany	Omicron 22A	9
+2022-10-03	Germany	Omicron 22A	8
+2022-10-04	Germany	Omicron 22A	30
+2022-10-05	Germany	Omicron 22A	25
+2022-10-06	Germany	Omicron 22A	14
+2022-10-07	Germany	Omicron 22A	16
+2022-10-08	Germany	Omicron 22A	11
+2022-10-09	Germany	Omicron 22A	6
+2022-10-10	Germany	Omicron 22A	17
+2022-10-11	Germany	Omicron 22A	14
+2022-10-12	Germany	Omicron 22A	15
+2022-10-13	Germany	Omicron 22A	20
+2022-10-14	Germany	Omicron 22A	8
+2022-10-15	Germany	Omicron 22A	5
+2022-10-16	Germany	Omicron 22A	3
+2022-10-17	Germany	Omicron 22A	22
+2022-10-18	Germany	Omicron 22A	7
+2022-10-19	Germany	Omicron 22A	9
+2022-10-20	Germany	Omicron 22A	16
+2022-10-21	Germany	Omicron 22A	9
+2022-10-22	Germany	Omicron 22A	8
+2022-10-23	Germany	Omicron 22A	4
+2022-10-24	Germany	Omicron 22A	12
+2022-10-25	Germany	Omicron 22A	7
+2022-10-26	Germany	Omicron 22A	9
+2022-10-27	Germany	Omicron 22A	8
+2022-10-28	Germany	Omicron 22A	4
+2022-10-29	Germany	Omicron 22A	6
+2022-10-30	Germany	Omicron 22A	2
+2022-10-31	Germany	Omicron 22A	5
+2022-11-01	Germany	Omicron 22A	6
+2022-11-02	Germany	Omicron 22A	8
+2022-11-03	Germany	Omicron 22A	8
+2022-11-04	Germany	Omicron 22A	7
+2022-11-05	Germany	Omicron 22A	2
+2022-11-06	Germany	Omicron 22A	1
+2022-11-07	Germany	Omicron 22A	7
+2022-11-08	Germany	Omicron 22A	3
+2022-11-09	Germany	Omicron 22A	8
+2022-11-10	Germany	Omicron 22A	6
+2022-11-11	Germany	Omicron 22A	7
+2022-11-12	Germany	Omicron 22A	5
+2022-11-13	Germany	Omicron 22A	6
+2022-11-14	Germany	Omicron 22A	8
+2022-11-15	Germany	Omicron 22A	5
+2022-11-16	Germany	Omicron 22A	7
+2022-11-17	Germany	Omicron 22A	18
+2022-11-18	Germany	Omicron 22A	9
+2022-11-19	Germany	Omicron 22A	9
+2022-11-20	Germany	Omicron 22A	6
+2022-11-21	Germany	Omicron 22A	17
+2022-11-22	Germany	Omicron 22A	12
+2022-11-23	Germany	Omicron 22A	5
+2022-11-24	Germany	Omicron 22A	8
+2022-11-25	Germany	Omicron 22A	8
+2022-11-26	Germany	Omicron 22A	3
+2022-11-27	Germany	Omicron 22A	1
+2022-11-28	Germany	Omicron 22A	6
+2022-11-29	Germany	Omicron 22A	3
+2022-11-30	Germany	Omicron 22A	5
+2022-12-01	Germany	Omicron 22A	7
+2022-12-02	Germany	Omicron 22A	4
+2022-12-03	Germany	Omicron 22A	3
+2022-12-04	Germany	Omicron 22A	2
+2022-12-05	Germany	Omicron 22A	12
+2022-12-06	Germany	Omicron 22A	5
+2022-12-07	Germany	Omicron 22A	7
+2022-12-08	Germany	Omicron 22A	9
+2022-12-09	Germany	Omicron 22A	3
+2022-12-10	Germany	Omicron 22A	3
+2022-12-11	Germany	Omicron 22A	2
+2022-12-12	Germany	Omicron 22A	12
+2022-12-13	Germany	Omicron 22A	12
+2022-12-14	Germany	Omicron 22A	3
+2022-12-15	Germany	Omicron 22A	8
+2022-12-16	Germany	Omicron 22A	6
+2022-12-17	Germany	Omicron 22A	6
+2022-12-19	Germany	Omicron 22A	6
+2022-12-20	Germany	Omicron 22A	3
+2022-12-21	Germany	Omicron 22A	5
+2022-12-28	Germany	Omicron 22A	1
+2022-12-29	Germany	Omicron 22A	6
+2022-12-31	Germany	Omicron 22A	1
+2023-01-03	Germany	Omicron 22A	3
+2023-01-04	Germany	Omicron 22A	2
+2023-01-05	Germany	Omicron 22A	1
+2023-01-06	Germany	Omicron 22A	2
+2023-01-09	Germany	Omicron 22A	2
+2023-01-10	Germany	Omicron 22A	1
+2023-01-12	Germany	Omicron 22A	3
+2023-01-13	Germany	Omicron 22A	2
+2023-01-16	Germany	Omicron 22A	1
+2023-01-18	Germany	Omicron 22A	1
+2023-01-19	Germany	Omicron 22A	3
+2023-01-23	Germany	Omicron 22A	2
+2023-01-24	Germany	Omicron 22A	1
+2023-01-27	Germany	Omicron 22A	1
+2023-01-29	Germany	Omicron 22A	2
+2023-01-30	Germany	Omicron 22A	1
+2023-01-31	Germany	Omicron 22A	4
+2021-12-20	Germany	Omicron 22B	1
+2022-01-31	Germany	Omicron 22B	1
+2022-02-24	Germany	Omicron 22B	2
+2022-03-06	Germany	Omicron 22B	1
+2022-03-16	Germany	Omicron 22B	1
+2022-03-17	Germany	Omicron 22B	1
+2022-03-19	Germany	Omicron 22B	1
+2022-03-20	Germany	Omicron 22B	1
+2022-03-22	Germany	Omicron 22B	1
+2022-03-28	Germany	Omicron 22B	2
+2022-03-29	Germany	Omicron 22B	6
+2022-03-30	Germany	Omicron 22B	1
+2022-03-31	Germany	Omicron 22B	2
+2022-04-01	Germany	Omicron 22B	1
+2022-04-04	Germany	Omicron 22B	7
+2022-04-05	Germany	Omicron 22B	2
+2022-04-07	Germany	Omicron 22B	77
+2022-04-08	Germany	Omicron 22B	1
+2022-04-09	Germany	Omicron 22B	1
+2022-04-10	Germany	Omicron 22B	2
+2022-04-11	Germany	Omicron 22B	7
+2022-04-12	Germany	Omicron 22B	4
+2022-04-13	Germany	Omicron 22B	2
+2022-04-14	Germany	Omicron 22B	8
+2022-04-15	Germany	Omicron 22B	13
+2022-04-16	Germany	Omicron 22B	3
+2022-04-17	Germany	Omicron 22B	1
+2022-04-18	Germany	Omicron 22B	3
+2022-04-19	Germany	Omicron 22B	13
+2022-04-20	Germany	Omicron 22B	7
+2022-04-21	Germany	Omicron 22B	2
+2022-04-22	Germany	Omicron 22B	7
+2022-04-23	Germany	Omicron 22B	7
+2022-04-24	Germany	Omicron 22B	2
+2022-04-25	Germany	Omicron 22B	11
+2022-04-26	Germany	Omicron 22B	13
+2022-04-27	Germany	Omicron 22B	8
+2022-04-28	Germany	Omicron 22B	15
+2022-04-29	Germany	Omicron 22B	14
+2022-04-30	Germany	Omicron 22B	5
+2022-05-01	Germany	Omicron 22B	12
+2022-05-02	Germany	Omicron 22B	17
+2022-05-03	Germany	Omicron 22B	28
+2022-05-04	Germany	Omicron 22B	33
+2022-05-05	Germany	Omicron 22B	24
+2022-05-06	Germany	Omicron 22B	23
+2022-05-07	Germany	Omicron 22B	21
+2022-05-08	Germany	Omicron 22B	9
+2022-05-09	Germany	Omicron 22B	44
+2022-05-10	Germany	Omicron 22B	45
+2022-05-11	Germany	Omicron 22B	47
+2022-05-12	Germany	Omicron 22B	129
+2022-05-13	Germany	Omicron 22B	37
+2022-05-14	Germany	Omicron 22B	32
+2022-05-15	Germany	Omicron 22B	13
+2022-05-16	Germany	Omicron 22B	87
+2022-05-17	Germany	Omicron 22B	80
+2022-05-18	Germany	Omicron 22B	82
+2022-05-19	Germany	Omicron 22B	72
+2022-05-20	Germany	Omicron 22B	84
+2022-05-21	Germany	Omicron 22B	54
+2022-05-22	Germany	Omicron 22B	33
+2022-05-23	Germany	Omicron 22B	178
+2022-05-24	Germany	Omicron 22B	139
+2022-05-25	Germany	Omicron 22B	164
+2022-05-26	Germany	Omicron 22B	97
+2022-05-27	Germany	Omicron 22B	187
+2022-05-28	Germany	Omicron 22B	131
+2022-05-29	Germany	Omicron 22B	96
+2022-05-30	Germany	Omicron 22B	404
+2022-05-31	Germany	Omicron 22B	350
+2022-06-01	Germany	Omicron 22B	428
+2022-06-02	Germany	Omicron 22B	461
+2022-06-03	Germany	Omicron 22B	404
+2022-06-04	Germany	Omicron 22B	227
+2022-06-05	Germany	Omicron 22B	154
+2022-06-06	Germany	Omicron 22B	250
+2022-06-07	Germany	Omicron 22B	871
+2022-06-08	Germany	Omicron 22B	790
+2022-06-09	Germany	Omicron 22B	858
+2022-06-10	Germany	Omicron 22B	642
+2022-06-11	Germany	Omicron 22B	451
+2022-06-12	Germany	Omicron 22B	305
+2022-06-13	Germany	Omicron 22B	1548
+2022-06-14	Germany	Omicron 22B	1364
+2022-06-15	Germany	Omicron 22B	1784
+2022-06-16	Germany	Omicron 22B	767
+2022-06-17	Germany	Omicron 22B	1179
+2022-06-18	Germany	Omicron 22B	710
+2022-06-19	Germany	Omicron 22B	402
+2022-06-20	Germany	Omicron 22B	1824
+2022-06-21	Germany	Omicron 22B	2124
+2022-06-22	Germany	Omicron 22B	1806
+2022-06-23	Germany	Omicron 22B	2416
+2022-06-24	Germany	Omicron 22B	1763
+2022-06-25	Germany	Omicron 22B	889
+2022-06-26	Germany	Omicron 22B	424
+2022-06-27	Germany	Omicron 22B	2203
+2022-06-28	Germany	Omicron 22B	2057
+2022-06-29	Germany	Omicron 22B	1684
+2022-06-30	Germany	Omicron 22B	1913
+2022-07-01	Germany	Omicron 22B	1208
+2022-07-02	Germany	Omicron 22B	694
+2022-07-03	Germany	Omicron 22B	577
+2022-07-04	Germany	Omicron 22B	1530
+2022-07-05	Germany	Omicron 22B	1412
+2022-07-06	Germany	Omicron 22B	1372
+2022-07-07	Germany	Omicron 22B	1105
+2022-07-08	Germany	Omicron 22B	909
+2022-07-09	Germany	Omicron 22B	467
+2022-07-10	Germany	Omicron 22B	487
+2022-07-11	Germany	Omicron 22B	1202
+2022-07-12	Germany	Omicron 22B	1234
+2022-07-13	Germany	Omicron 22B	1166
+2022-07-14	Germany	Omicron 22B	1467
+2022-07-15	Germany	Omicron 22B	873
+2022-07-16	Germany	Omicron 22B	846
+2022-07-17	Germany	Omicron 22B	380
+2022-07-18	Germany	Omicron 22B	1404
+2022-07-19	Germany	Omicron 22B	1568
+2022-07-20	Germany	Omicron 22B	1274
+2022-07-21	Germany	Omicron 22B	1272
+2022-07-22	Germany	Omicron 22B	1045
+2022-07-23	Germany	Omicron 22B	521
+2022-07-24	Germany	Omicron 22B	435
+2022-07-25	Germany	Omicron 22B	1350
+2022-07-26	Germany	Omicron 22B	972
+2022-07-27	Germany	Omicron 22B	986
+2022-07-28	Germany	Omicron 22B	891
+2022-07-29	Germany	Omicron 22B	854
+2022-07-30	Germany	Omicron 22B	614
+2022-07-31	Germany	Omicron 22B	221
+2022-08-01	Germany	Omicron 22B	1131
+2022-08-02	Germany	Omicron 22B	983
+2022-08-03	Germany	Omicron 22B	678
+2022-08-04	Germany	Omicron 22B	679
+2022-08-05	Germany	Omicron 22B	739
+2022-08-06	Germany	Omicron 22B	446
+2022-08-07	Germany	Omicron 22B	211
+2022-08-08	Germany	Omicron 22B	1207
+2022-08-09	Germany	Omicron 22B	793
+2022-08-10	Germany	Omicron 22B	700
+2022-08-11	Germany	Omicron 22B	826
+2022-08-12	Germany	Omicron 22B	550
+2022-08-13	Germany	Omicron 22B	305
+2022-08-14	Germany	Omicron 22B	355
+2022-08-15	Germany	Omicron 22B	1016
+2022-08-16	Germany	Omicron 22B	749
+2022-08-17	Germany	Omicron 22B	860
+2022-08-18	Germany	Omicron 22B	706
+2022-08-19	Germany	Omicron 22B	606
+2022-08-20	Germany	Omicron 22B	295
+2022-08-21	Germany	Omicron 22B	181
+2022-08-22	Germany	Omicron 22B	1302
+2022-08-23	Germany	Omicron 22B	615
+2022-08-24	Germany	Omicron 22B	605
+2022-08-25	Germany	Omicron 22B	672
+2022-08-26	Germany	Omicron 22B	630
+2022-08-27	Germany	Omicron 22B	330
+2022-08-28	Germany	Omicron 22B	224
+2022-08-29	Germany	Omicron 22B	1032
+2022-08-30	Germany	Omicron 22B	710
+2022-08-31	Germany	Omicron 22B	647
+2022-09-01	Germany	Omicron 22B	670
+2022-09-02	Germany	Omicron 22B	640
+2022-09-03	Germany	Omicron 22B	433
+2022-09-04	Germany	Omicron 22B	306
+2022-09-05	Germany	Omicron 22B	1257
+2022-09-06	Germany	Omicron 22B	1010
+2022-09-07	Germany	Omicron 22B	1021
+2022-09-08	Germany	Omicron 22B	873
+2022-09-09	Germany	Omicron 22B	844
+2022-09-10	Germany	Omicron 22B	542
+2022-09-11	Germany	Omicron 22B	372
+2022-09-12	Germany	Omicron 22B	1132
+2022-09-13	Germany	Omicron 22B	1243
+2022-09-14	Germany	Omicron 22B	1095
+2022-09-15	Germany	Omicron 22B	886
+2022-09-16	Germany	Omicron 22B	964
+2022-09-17	Germany	Omicron 22B	328
+2022-09-18	Germany	Omicron 22B	266
+2022-09-19	Germany	Omicron 22B	1104
+2022-09-20	Germany	Omicron 22B	839
+2022-09-21	Germany	Omicron 22B	615
+2022-09-22	Germany	Omicron 22B	636
+2022-09-23	Germany	Omicron 22B	581
+2022-09-24	Germany	Omicron 22B	382
+2022-09-25	Germany	Omicron 22B	240
+2022-09-26	Germany	Omicron 22B	987
+2022-09-27	Germany	Omicron 22B	700
+2022-09-28	Germany	Omicron 22B	658
+2022-09-29	Germany	Omicron 22B	723
+2022-09-30	Germany	Omicron 22B	538
+2022-10-01	Germany	Omicron 22B	472
+2022-10-02	Germany	Omicron 22B	374
+2022-10-03	Germany	Omicron 22B	615
+2022-10-04	Germany	Omicron 22B	1334
+2022-10-05	Germany	Omicron 22B	884
+2022-10-06	Germany	Omicron 22B	849
+2022-10-07	Germany	Omicron 22B	899
+2022-10-08	Germany	Omicron 22B	534
+2022-10-09	Germany	Omicron 22B	319
+2022-10-10	Germany	Omicron 22B	1372
+2022-10-11	Germany	Omicron 22B	1031
+2022-10-12	Germany	Omicron 22B	766
+2022-10-13	Germany	Omicron 22B	961
+2022-10-14	Germany	Omicron 22B	751
+2022-10-15	Germany	Omicron 22B	462
+2022-10-16	Germany	Omicron 22B	381
+2022-10-17	Germany	Omicron 22B	1402
+2022-10-18	Germany	Omicron 22B	729
+2022-10-19	Germany	Omicron 22B	648
+2022-10-20	Germany	Omicron 22B	982
+2022-10-21	Germany	Omicron 22B	675
+2022-10-22	Germany	Omicron 22B	319
+2022-10-23	Germany	Omicron 22B	212
+2022-10-24	Germany	Omicron 22B	1049
+2022-10-25	Germany	Omicron 22B	603
+2022-10-26	Germany	Omicron 22B	663
+2022-10-27	Germany	Omicron 22B	726
+2022-10-28	Germany	Omicron 22B	570
+2022-10-29	Germany	Omicron 22B	317
+2022-10-30	Germany	Omicron 22B	206
+2022-10-31	Germany	Omicron 22B	458
+2022-11-01	Germany	Omicron 22B	530
+2022-11-02	Germany	Omicron 22B	487
+2022-11-03	Germany	Omicron 22B	660
+2022-11-04	Germany	Omicron 22B	522
+2022-11-05	Germany	Omicron 22B	216
+2022-11-06	Germany	Omicron 22B	192
+2022-11-07	Germany	Omicron 22B	769
+2022-11-08	Germany	Omicron 22B	553
+2022-11-09	Germany	Omicron 22B	511
+2022-11-10	Germany	Omicron 22B	508
+2022-11-11	Germany	Omicron 22B	506
+2022-11-12	Germany	Omicron 22B	249
+2022-11-13	Germany	Omicron 22B	227
+2022-11-14	Germany	Omicron 22B	637
+2022-11-15	Germany	Omicron 22B	494
+2022-11-16	Germany	Omicron 22B	513
+2022-11-17	Germany	Omicron 22B	711
+2022-11-18	Germany	Omicron 22B	366
+2022-11-19	Germany	Omicron 22B	229
+2022-11-20	Germany	Omicron 22B	168
+2022-11-21	Germany	Omicron 22B	906
+2022-11-22	Germany	Omicron 22B	511
+2022-11-23	Germany	Omicron 22B	469
+2022-11-24	Germany	Omicron 22B	536
+2022-11-25	Germany	Omicron 22B	420
+2022-11-26	Germany	Omicron 22B	250
+2022-11-27	Germany	Omicron 22B	195
+2022-11-28	Germany	Omicron 22B	517
+2022-11-29	Germany	Omicron 22B	418
+2022-11-30	Germany	Omicron 22B	469
+2022-12-01	Germany	Omicron 22B	402
+2022-12-02	Germany	Omicron 22B	310
+2022-12-03	Germany	Omicron 22B	113
+2022-12-04	Germany	Omicron 22B	93
+2022-12-05	Germany	Omicron 22B	666
+2022-12-06	Germany	Omicron 22B	358
+2022-12-07	Germany	Omicron 22B	402
+2022-12-08	Germany	Omicron 22B	519
+2022-12-09	Germany	Omicron 22B	332
+2022-12-10	Germany	Omicron 22B	155
+2022-12-11	Germany	Omicron 22B	152
+2022-12-12	Germany	Omicron 22B	597
+2022-12-13	Germany	Omicron 22B	357
+2022-12-14	Germany	Omicron 22B	467
+2022-12-15	Germany	Omicron 22B	419
+2022-12-16	Germany	Omicron 22B	384
+2022-12-17	Germany	Omicron 22B	199
+2022-12-18	Germany	Omicron 22B	137
+2022-12-19	Germany	Omicron 22B	395
+2022-12-20	Germany	Omicron 22B	240
+2022-12-21	Germany	Omicron 22B	431
+2022-12-22	Germany	Omicron 22B	305
+2022-12-23	Germany	Omicron 22B	277
+2022-12-24	Germany	Omicron 22B	107
+2022-12-25	Germany	Omicron 22B	94
+2022-12-26	Germany	Omicron 22B	82
+2022-12-27	Germany	Omicron 22B	303
+2022-12-28	Germany	Omicron 22B	242
+2022-12-29	Germany	Omicron 22B	219
+2022-12-30	Germany	Omicron 22B	182
+2022-12-31	Germany	Omicron 22B	122
+2023-01-01	Germany	Omicron 22B	68
+2023-01-02	Germany	Omicron 22B	253
+2023-01-03	Germany	Omicron 22B	235
+2023-01-04	Germany	Omicron 22B	262
+2023-01-05	Germany	Omicron 22B	179
+2023-01-06	Germany	Omicron 22B	208
+2023-01-07	Germany	Omicron 22B	74
+2023-01-08	Germany	Omicron 22B	63
+2023-01-09	Germany	Omicron 22B	367
+2023-01-10	Germany	Omicron 22B	173
+2023-01-11	Germany	Omicron 22B	143
+2023-01-12	Germany	Omicron 22B	163
+2023-01-13	Germany	Omicron 22B	169
+2023-01-14	Germany	Omicron 22B	83
+2023-01-15	Germany	Omicron 22B	59
+2023-01-16	Germany	Omicron 22B	196
+2023-01-17	Germany	Omicron 22B	136
+2023-01-18	Germany	Omicron 22B	131
+2023-01-19	Germany	Omicron 22B	144
+2023-01-20	Germany	Omicron 22B	125
+2023-01-21	Germany	Omicron 22B	57
+2023-01-22	Germany	Omicron 22B	26
+2023-01-23	Germany	Omicron 22B	204
+2023-01-24	Germany	Omicron 22B	88
+2023-01-25	Germany	Omicron 22B	103
+2023-01-26	Germany	Omicron 22B	86
+2023-01-27	Germany	Omicron 22B	123
+2023-01-28	Germany	Omicron 22B	47
+2023-01-29	Germany	Omicron 22B	21
+2023-01-30	Germany	Omicron 22B	162
+2023-01-31	Germany	Omicron 22B	90
+2022-04-07	Germany	Omicron 22C	1
+2022-04-08	Germany	Omicron 22C	1
+2022-04-09	Germany	Omicron 22C	1
+2022-04-13	Germany	Omicron 22C	1
+2022-04-15	Germany	Omicron 22C	2
+2022-04-17	Germany	Omicron 22C	1
+2022-04-19	Germany	Omicron 22C	2
+2022-04-20	Germany	Omicron 22C	6
+2022-04-21	Germany	Omicron 22C	3
+2022-04-22	Germany	Omicron 22C	2
+2022-04-23	Germany	Omicron 22C	4
+2022-04-24	Germany	Omicron 22C	1
+2022-04-25	Germany	Omicron 22C	4
+2022-04-26	Germany	Omicron 22C	4
+2022-04-27	Germany	Omicron 22C	6
+2022-04-28	Germany	Omicron 22C	8
+2022-04-29	Germany	Omicron 22C	4
+2022-04-30	Germany	Omicron 22C	3
+2022-05-01	Germany	Omicron 22C	3
+2022-05-02	Germany	Omicron 22C	10
+2022-05-03	Germany	Omicron 22C	19
+2022-05-04	Germany	Omicron 22C	12
+2022-05-05	Germany	Omicron 22C	10
+2022-05-06	Germany	Omicron 22C	16
+2022-05-07	Germany	Omicron 22C	11
+2022-05-08	Germany	Omicron 22C	6
+2022-05-09	Germany	Omicron 22C	21
+2022-05-10	Germany	Omicron 22C	23
+2022-05-11	Germany	Omicron 22C	16
+2022-05-12	Germany	Omicron 22C	26
+2022-05-13	Germany	Omicron 22C	19
+2022-05-14	Germany	Omicron 22C	11
+2022-05-15	Germany	Omicron 22C	8
+2022-05-16	Germany	Omicron 22C	30
+2022-05-17	Germany	Omicron 22C	30
+2022-05-18	Germany	Omicron 22C	30
+2022-05-19	Germany	Omicron 22C	44
+2022-05-20	Germany	Omicron 22C	28
+2022-05-21	Germany	Omicron 22C	16
+2022-05-22	Germany	Omicron 22C	7
+2022-05-23	Germany	Omicron 22C	78
+2022-05-24	Germany	Omicron 22C	36
+2022-05-25	Germany	Omicron 22C	51
+2022-05-26	Germany	Omicron 22C	31
+2022-05-27	Germany	Omicron 22C	33
+2022-05-28	Germany	Omicron 22C	36
+2022-05-29	Germany	Omicron 22C	23
+2022-05-30	Germany	Omicron 22C	94
+2022-05-31	Germany	Omicron 22C	77
+2022-06-01	Germany	Omicron 22C	68
+2022-06-02	Germany	Omicron 22C	65
+2022-06-03	Germany	Omicron 22C	43
+2022-06-04	Germany	Omicron 22C	40
+2022-06-05	Germany	Omicron 22C	27
+2022-06-06	Germany	Omicron 22C	36
+2022-06-07	Germany	Omicron 22C	117
+2022-06-08	Germany	Omicron 22C	60
+2022-06-09	Germany	Omicron 22C	110
+2022-06-10	Germany	Omicron 22C	66
+2022-06-11	Germany	Omicron 22C	50
+2022-06-12	Germany	Omicron 22C	39
+2022-06-13	Germany	Omicron 22C	123
+2022-06-14	Germany	Omicron 22C	109
+2022-06-15	Germany	Omicron 22C	106
+2022-06-16	Germany	Omicron 22C	60
+2022-06-17	Germany	Omicron 22C	98
+2022-06-18	Germany	Omicron 22C	30
+2022-06-19	Germany	Omicron 22C	13
+2022-06-20	Germany	Omicron 22C	88
+2022-06-21	Germany	Omicron 22C	107
+2022-06-22	Germany	Omicron 22C	91
+2022-06-23	Germany	Omicron 22C	119
+2022-06-24	Germany	Omicron 22C	76
+2022-06-25	Germany	Omicron 22C	33
+2022-06-26	Germany	Omicron 22C	10
+2022-06-27	Germany	Omicron 22C	95
+2022-06-28	Germany	Omicron 22C	70
+2022-06-29	Germany	Omicron 22C	48
+2022-06-30	Germany	Omicron 22C	78
+2022-07-01	Germany	Omicron 22C	25
+2022-07-02	Germany	Omicron 22C	23
+2022-07-03	Germany	Omicron 22C	15
+2022-07-04	Germany	Omicron 22C	42
+2022-07-05	Germany	Omicron 22C	36
+2022-07-06	Germany	Omicron 22C	38
+2022-07-07	Germany	Omicron 22C	20
+2022-07-08	Germany	Omicron 22C	15
+2022-07-09	Germany	Omicron 22C	8
+2022-07-10	Germany	Omicron 22C	13
+2022-07-11	Germany	Omicron 22C	21
+2022-07-12	Germany	Omicron 22C	23
+2022-07-13	Germany	Omicron 22C	21
+2022-07-14	Germany	Omicron 22C	24
+2022-07-15	Germany	Omicron 22C	10
+2022-07-16	Germany	Omicron 22C	12
+2022-07-17	Germany	Omicron 22C	5
+2022-07-18	Germany	Omicron 22C	10
+2022-07-19	Germany	Omicron 22C	27
+2022-07-20	Germany	Omicron 22C	12
+2022-07-21	Germany	Omicron 22C	16
+2022-07-22	Germany	Omicron 22C	7
+2022-07-23	Germany	Omicron 22C	5
+2022-07-24	Germany	Omicron 22C	1
+2022-07-25	Germany	Omicron 22C	13
+2022-07-26	Germany	Omicron 22C	7
+2022-07-27	Germany	Omicron 22C	5
+2022-07-28	Germany	Omicron 22C	7
+2022-07-30	Germany	Omicron 22C	5
+2022-07-31	Germany	Omicron 22C	1
+2022-08-01	Germany	Omicron 22C	3
+2022-08-02	Germany	Omicron 22C	4
+2022-08-03	Germany	Omicron 22C	2
+2022-08-04	Germany	Omicron 22C	3
+2022-08-05	Germany	Omicron 22C	1
+2022-08-06	Germany	Omicron 22C	5
+2022-08-07	Germany	Omicron 22C	1
+2022-08-08	Germany	Omicron 22C	3
+2022-08-09	Germany	Omicron 22C	3
+2022-08-10	Germany	Omicron 22C	1
+2022-08-11	Germany	Omicron 22C	1
+2022-08-13	Germany	Omicron 22C	1
+2022-08-14	Germany	Omicron 22C	2
+2022-08-16	Germany	Omicron 22C	1
+2022-08-17	Germany	Omicron 22C	1
+2022-08-22	Germany	Omicron 22C	3
+2022-08-24	Germany	Omicron 22C	2
+2022-08-25	Germany	Omicron 22C	2
+2022-08-26	Germany	Omicron 22C	1
+2022-09-02	Germany	Omicron 22C	1
+2022-09-06	Germany	Omicron 22C	3
+2022-09-11	Germany	Omicron 22C	1
+2022-09-15	Germany	Omicron 22C	1
+2022-09-19	Germany	Omicron 22C	1
+2022-11-02	Germany	Omicron 22C	1
+2022-06-03	Germany	Omicron 22D	1
+2022-06-06	Germany	Omicron 22D	1
+2022-06-24	Germany	Omicron 22D	1
+2022-06-26	Germany	Omicron 22D	1
+2022-06-27	Germany	Omicron 22D	2
+2022-07-10	Germany	Omicron 22D	1
+2022-07-18	Germany	Omicron 22D	1
+2022-07-20	Germany	Omicron 22D	1
+2022-07-21	Germany	Omicron 22D	3
+2022-07-25	Germany	Omicron 22D	2
+2022-07-26	Germany	Omicron 22D	1
+2022-07-27	Germany	Omicron 22D	1
+2022-07-28	Germany	Omicron 22D	2
+2022-07-29	Germany	Omicron 22D	2
+2022-07-30	Germany	Omicron 22D	1
+2022-08-03	Germany	Omicron 22D	4
+2022-08-04	Germany	Omicron 22D	1
+2022-08-06	Germany	Omicron 22D	1
+2022-08-07	Germany	Omicron 22D	2
+2022-08-08	Germany	Omicron 22D	3
+2022-08-09	Germany	Omicron 22D	2
+2022-08-10	Germany	Omicron 22D	2
+2022-08-11	Germany	Omicron 22D	1
+2022-08-14	Germany	Omicron 22D	1
+2022-08-15	Germany	Omicron 22D	3
+2022-08-16	Germany	Omicron 22D	2
+2022-08-17	Germany	Omicron 22D	2
+2022-08-18	Germany	Omicron 22D	2
+2022-08-19	Germany	Omicron 22D	1
+2022-08-21	Germany	Omicron 22D	1
+2022-08-22	Germany	Omicron 22D	2
+2022-08-23	Germany	Omicron 22D	3
+2022-08-24	Germany	Omicron 22D	2
+2022-08-25	Germany	Omicron 22D	1
+2022-08-26	Germany	Omicron 22D	3
+2022-08-27	Germany	Omicron 22D	1
+2022-08-28	Germany	Omicron 22D	1
+2022-08-29	Germany	Omicron 22D	7
+2022-08-30	Germany	Omicron 22D	3
+2022-08-31	Germany	Omicron 22D	3
+2022-09-01	Germany	Omicron 22D	2
+2022-09-02	Germany	Omicron 22D	5
+2022-09-03	Germany	Omicron 22D	3
+2022-09-04	Germany	Omicron 22D	2
+2022-09-05	Germany	Omicron 22D	7
+2022-09-06	Germany	Omicron 22D	10
+2022-09-07	Germany	Omicron 22D	10
+2022-09-08	Germany	Omicron 22D	6
+2022-09-09	Germany	Omicron 22D	5
+2022-09-10	Germany	Omicron 22D	2
+2022-09-11	Germany	Omicron 22D	3
+2022-09-12	Germany	Omicron 22D	15
+2022-09-13	Germany	Omicron 22D	18
+2022-09-14	Germany	Omicron 22D	7
+2022-09-15	Germany	Omicron 22D	5
+2022-09-16	Germany	Omicron 22D	10
+2022-09-17	Germany	Omicron 22D	5
+2022-09-18	Germany	Omicron 22D	4
+2022-09-19	Germany	Omicron 22D	9
+2022-09-20	Germany	Omicron 22D	10
+2022-09-21	Germany	Omicron 22D	6
+2022-09-22	Germany	Omicron 22D	7
+2022-09-23	Germany	Omicron 22D	5
+2022-09-24	Germany	Omicron 22D	8
+2022-09-25	Germany	Omicron 22D	1
+2022-09-26	Germany	Omicron 22D	10
+2022-09-27	Germany	Omicron 22D	8
+2022-09-28	Germany	Omicron 22D	8
+2022-09-29	Germany	Omicron 22D	14
+2022-09-30	Germany	Omicron 22D	6
+2022-10-01	Germany	Omicron 22D	6
+2022-10-02	Germany	Omicron 22D	2
+2022-10-03	Germany	Omicron 22D	5
+2022-10-04	Germany	Omicron 22D	18
+2022-10-05	Germany	Omicron 22D	12
+2022-10-06	Germany	Omicron 22D	15
+2022-10-07	Germany	Omicron 22D	18
+2022-10-08	Germany	Omicron 22D	15
+2022-10-09	Germany	Omicron 22D	6
+2022-10-10	Germany	Omicron 22D	40
+2022-10-11	Germany	Omicron 22D	25
+2022-10-12	Germany	Omicron 22D	20
+2022-10-13	Germany	Omicron 22D	14
+2022-10-14	Germany	Omicron 22D	16
+2022-10-15	Germany	Omicron 22D	17
+2022-10-16	Germany	Omicron 22D	6
+2022-10-17	Germany	Omicron 22D	31
+2022-10-18	Germany	Omicron 22D	22
+2022-10-19	Germany	Omicron 22D	19
+2022-10-20	Germany	Omicron 22D	21
+2022-10-21	Germany	Omicron 22D	23
+2022-10-22	Germany	Omicron 22D	7
+2022-10-23	Germany	Omicron 22D	5
+2022-10-24	Germany	Omicron 22D	37
+2022-10-25	Germany	Omicron 22D	16
+2022-10-26	Germany	Omicron 22D	30
+2022-10-27	Germany	Omicron 22D	20
+2022-10-28	Germany	Omicron 22D	22
+2022-10-29	Germany	Omicron 22D	18
+2022-10-30	Germany	Omicron 22D	3
+2022-10-31	Germany	Omicron 22D	23
+2022-11-01	Germany	Omicron 22D	24
+2022-11-02	Germany	Omicron 22D	16
+2022-11-03	Germany	Omicron 22D	27
+2022-11-04	Germany	Omicron 22D	13
+2022-11-05	Germany	Omicron 22D	7
+2022-11-06	Germany	Omicron 22D	10
+2022-11-07	Germany	Omicron 22D	23
+2022-11-08	Germany	Omicron 22D	34
+2022-11-09	Germany	Omicron 22D	29
+2022-11-10	Germany	Omicron 22D	25
+2022-11-11	Germany	Omicron 22D	31
+2022-11-12	Germany	Omicron 22D	16
+2022-11-13	Germany	Omicron 22D	18
+2022-11-14	Germany	Omicron 22D	31
+2022-11-15	Germany	Omicron 22D	31
+2022-11-16	Germany	Omicron 22D	46
+2022-11-17	Germany	Omicron 22D	49
+2022-11-18	Germany	Omicron 22D	29
+2022-11-19	Germany	Omicron 22D	15
+2022-11-20	Germany	Omicron 22D	16
+2022-11-21	Germany	Omicron 22D	82
+2022-11-22	Germany	Omicron 22D	39
+2022-11-23	Germany	Omicron 22D	46
+2022-11-24	Germany	Omicron 22D	49
+2022-11-25	Germany	Omicron 22D	38
+2022-11-26	Germany	Omicron 22D	26
+2022-11-27	Germany	Omicron 22D	12
+2022-11-28	Germany	Omicron 22D	59
+2022-11-29	Germany	Omicron 22D	39
+2022-11-30	Germany	Omicron 22D	61
+2022-12-01	Germany	Omicron 22D	62
+2022-12-02	Germany	Omicron 22D	33
+2022-12-03	Germany	Omicron 22D	25
+2022-12-04	Germany	Omicron 22D	11
+2022-12-05	Germany	Omicron 22D	103
+2022-12-06	Germany	Omicron 22D	53
+2022-12-07	Germany	Omicron 22D	68
+2022-12-08	Germany	Omicron 22D	100
+2022-12-09	Germany	Omicron 22D	51
+2022-12-10	Germany	Omicron 22D	29
+2022-12-11	Germany	Omicron 22D	33
+2022-12-12	Germany	Omicron 22D	108
+2022-12-13	Germany	Omicron 22D	70
+2022-12-14	Germany	Omicron 22D	94
+2022-12-15	Germany	Omicron 22D	88
+2022-12-16	Germany	Omicron 22D	75
+2022-12-17	Germany	Omicron 22D	41
+2022-12-18	Germany	Omicron 22D	25
+2022-12-19	Germany	Omicron 22D	96
+2022-12-20	Germany	Omicron 22D	54
+2022-12-21	Germany	Omicron 22D	72
+2022-12-22	Germany	Omicron 22D	83
+2022-12-23	Germany	Omicron 22D	51
+2022-12-24	Germany	Omicron 22D	29
+2022-12-25	Germany	Omicron 22D	21
+2022-12-26	Germany	Omicron 22D	27
+2022-12-27	Germany	Omicron 22D	89
+2022-12-28	Germany	Omicron 22D	69
+2022-12-29	Germany	Omicron 22D	73
+2022-12-30	Germany	Omicron 22D	47
+2022-12-31	Germany	Omicron 22D	37
+2023-01-01	Germany	Omicron 22D	10
+2023-01-02	Germany	Omicron 22D	91
+2023-01-03	Germany	Omicron 22D	119
+2023-01-04	Germany	Omicron 22D	101
+2023-01-05	Germany	Omicron 22D	85
+2023-01-06	Germany	Omicron 22D	73
+2023-01-07	Germany	Omicron 22D	32
+2023-01-08	Germany	Omicron 22D	20
+2023-01-09	Germany	Omicron 22D	175
+2023-01-10	Germany	Omicron 22D	81
+2023-01-11	Germany	Omicron 22D	64
+2023-01-12	Germany	Omicron 22D	96
+2023-01-13	Germany	Omicron 22D	94
+2023-01-14	Germany	Omicron 22D	38
+2023-01-15	Germany	Omicron 22D	15
+2023-01-16	Germany	Omicron 22D	120
+2023-01-17	Germany	Omicron 22D	111
+2023-01-18	Germany	Omicron 22D	74
+2023-01-19	Germany	Omicron 22D	123
+2023-01-20	Germany	Omicron 22D	79
+2023-01-21	Germany	Omicron 22D	36
+2023-01-22	Germany	Omicron 22D	28
+2023-01-23	Germany	Omicron 22D	147
+2023-01-24	Germany	Omicron 22D	90
+2023-01-25	Germany	Omicron 22D	127
+2023-01-26	Germany	Omicron 22D	100
+2023-01-27	Germany	Omicron 22D	142
+2023-01-28	Germany	Omicron 22D	65
+2023-01-29	Germany	Omicron 22D	15
+2023-01-30	Germany	Omicron 22D	199
+2023-01-31	Germany	Omicron 22D	107
+2022-08-13	Germany	Omicron 22E	1
+2022-08-23	Germany	Omicron 22E	1
+2022-08-24	Germany	Omicron 22E	2
+2022-09-02	Germany	Omicron 22E	1
+2022-09-03	Germany	Omicron 22E	1
+2022-09-05	Germany	Omicron 22E	2
+2022-09-06	Germany	Omicron 22E	1
+2022-09-07	Germany	Omicron 22E	4
+2022-09-08	Germany	Omicron 22E	2
+2022-09-09	Germany	Omicron 22E	6
+2022-09-10	Germany	Omicron 22E	1
+2022-09-11	Germany	Omicron 22E	5
+2022-09-12	Germany	Omicron 22E	5
+2022-09-13	Germany	Omicron 22E	1
+2022-09-14	Germany	Omicron 22E	6
+2022-09-15	Germany	Omicron 22E	6
+2022-09-16	Germany	Omicron 22E	5
+2022-09-17	Germany	Omicron 22E	6
+2022-09-18	Germany	Omicron 22E	5
+2022-09-19	Germany	Omicron 22E	13
+2022-09-20	Germany	Omicron 22E	8
+2022-09-21	Germany	Omicron 22E	5
+2022-09-22	Germany	Omicron 22E	5
+2022-09-23	Germany	Omicron 22E	6
+2022-09-24	Germany	Omicron 22E	6
+2022-09-25	Germany	Omicron 22E	2
+2022-09-26	Germany	Omicron 22E	11
+2022-09-27	Germany	Omicron 22E	13
+2022-09-28	Germany	Omicron 22E	16
+2022-09-29	Germany	Omicron 22E	24
+2022-09-30	Germany	Omicron 22E	12
+2022-10-01	Germany	Omicron 22E	12
+2022-10-02	Germany	Omicron 22E	13
+2022-10-03	Germany	Omicron 22E	25
+2022-10-04	Germany	Omicron 22E	46
+2022-10-05	Germany	Omicron 22E	38
+2022-10-06	Germany	Omicron 22E	28
+2022-10-07	Germany	Omicron 22E	44
+2022-10-08	Germany	Omicron 22E	31
+2022-10-09	Germany	Omicron 22E	15
+2022-10-10	Germany	Omicron 22E	74
+2022-10-11	Germany	Omicron 22E	62
+2022-10-12	Germany	Omicron 22E	32
+2022-10-13	Germany	Omicron 22E	61
+2022-10-14	Germany	Omicron 22E	42
+2022-10-15	Germany	Omicron 22E	29
+2022-10-16	Germany	Omicron 22E	25
+2022-10-17	Germany	Omicron 22E	75
+2022-10-18	Germany	Omicron 22E	73
+2022-10-19	Germany	Omicron 22E	43
+2022-10-20	Germany	Omicron 22E	79
+2022-10-21	Germany	Omicron 22E	58
+2022-10-22	Germany	Omicron 22E	24
+2022-10-23	Germany	Omicron 22E	14
+2022-10-24	Germany	Omicron 22E	86
+2022-10-25	Germany	Omicron 22E	62
+2022-10-26	Germany	Omicron 22E	68
+2022-10-27	Germany	Omicron 22E	63
+2022-10-28	Germany	Omicron 22E	64
+2022-10-29	Germany	Omicron 22E	53
+2022-10-30	Germany	Omicron 22E	41
+2022-10-31	Germany	Omicron 22E	61
+2022-11-01	Germany	Omicron 22E	56
+2022-11-02	Germany	Omicron 22E	73
+2022-11-03	Germany	Omicron 22E	98
+2022-11-04	Germany	Omicron 22E	83
+2022-11-05	Germany	Omicron 22E	38
+2022-11-06	Germany	Omicron 22E	25
+2022-11-07	Germany	Omicron 22E	122
+2022-11-08	Germany	Omicron 22E	128
+2022-11-09	Germany	Omicron 22E	112
+2022-11-10	Germany	Omicron 22E	115
+2022-11-11	Germany	Omicron 22E	115
+2022-11-12	Germany	Omicron 22E	68
+2022-11-13	Germany	Omicron 22E	42
+2022-11-14	Germany	Omicron 22E	179
+2022-11-15	Germany	Omicron 22E	159
+2022-11-16	Germany	Omicron 22E	171
+2022-11-17	Germany	Omicron 22E	186
+2022-11-18	Germany	Omicron 22E	118
+2022-11-19	Germany	Omicron 22E	80
+2022-11-20	Germany	Omicron 22E	58
+2022-11-21	Germany	Omicron 22E	234
+2022-11-22	Germany	Omicron 22E	202
+2022-11-23	Germany	Omicron 22E	210
+2022-11-24	Germany	Omicron 22E	244
+2022-11-25	Germany	Omicron 22E	166
+2022-11-26	Germany	Omicron 22E	114
+2022-11-27	Germany	Omicron 22E	75
+2022-11-28	Germany	Omicron 22E	240
+2022-11-29	Germany	Omicron 22E	229
+2022-11-30	Germany	Omicron 22E	216
+2022-12-01	Germany	Omicron 22E	208
+2022-12-02	Germany	Omicron 22E	172
+2022-12-03	Germany	Omicron 22E	70
+2022-12-04	Germany	Omicron 22E	56
+2022-12-05	Germany	Omicron 22E	386
+2022-12-06	Germany	Omicron 22E	258
+2022-12-07	Germany	Omicron 22E	272
+2022-12-08	Germany	Omicron 22E	317
+2022-12-09	Germany	Omicron 22E	220
+2022-12-10	Germany	Omicron 22E	148
+2022-12-11	Germany	Omicron 22E	103
+2022-12-12	Germany	Omicron 22E	381
+2022-12-13	Germany	Omicron 22E	255
+2022-12-14	Germany	Omicron 22E	344
+2022-12-15	Germany	Omicron 22E	341
+2022-12-16	Germany	Omicron 22E	345
+2022-12-17	Germany	Omicron 22E	157
+2022-12-18	Germany	Omicron 22E	111
+2022-12-19	Germany	Omicron 22E	307
+2022-12-20	Germany	Omicron 22E	279
+2022-12-21	Germany	Omicron 22E	323
+2022-12-22	Germany	Omicron 22E	251
+2022-12-23	Germany	Omicron 22E	253
+2022-12-24	Germany	Omicron 22E	90
+2022-12-25	Germany	Omicron 22E	73
+2022-12-26	Germany	Omicron 22E	76
+2022-12-27	Germany	Omicron 22E	237
+2022-12-28	Germany	Omicron 22E	216
+2022-12-29	Germany	Omicron 22E	221
+2022-12-30	Germany	Omicron 22E	164
+2022-12-31	Germany	Omicron 22E	140
+2023-01-01	Germany	Omicron 22E	60
+2023-01-02	Germany	Omicron 22E	293
+2023-01-03	Germany	Omicron 22E	268
+2023-01-04	Germany	Omicron 22E	257
+2023-01-05	Germany	Omicron 22E	205
+2023-01-06	Germany	Omicron 22E	213
+2023-01-07	Germany	Omicron 22E	76
+2023-01-08	Germany	Omicron 22E	80
+2023-01-09	Germany	Omicron 22E	407
+2023-01-10	Germany	Omicron 22E	256
+2023-01-11	Germany	Omicron 22E	174
+2023-01-12	Germany	Omicron 22E	239
+2023-01-13	Germany	Omicron 22E	209
+2023-01-14	Germany	Omicron 22E	113
+2023-01-15	Germany	Omicron 22E	72
+2023-01-16	Germany	Omicron 22E	252
+2023-01-17	Germany	Omicron 22E	192
+2023-01-18	Germany	Omicron 22E	179
+2023-01-19	Germany	Omicron 22E	241
+2023-01-20	Germany	Omicron 22E	175
+2023-01-21	Germany	Omicron 22E	73
+2023-01-22	Germany	Omicron 22E	50
+2023-01-23	Germany	Omicron 22E	314
+2023-01-24	Germany	Omicron 22E	201
+2023-01-25	Germany	Omicron 22E	239
+2023-01-26	Germany	Omicron 22E	197
+2023-01-27	Germany	Omicron 22E	207
+2023-01-28	Germany	Omicron 22E	117
+2023-01-29	Germany	Omicron 22E	35
+2023-01-30	Germany	Omicron 22E	314
+2023-01-31	Germany	Omicron 22E	219
+2022-11-21	Germany	Omicron 23A	1
+2022-11-28	Germany	Omicron 23A	1
+2022-12-02	Germany	Omicron 23A	1
+2022-12-05	Germany	Omicron 23A	1
+2022-12-06	Germany	Omicron 23A	3
+2022-12-07	Germany	Omicron 23A	2
+2022-12-08	Germany	Omicron 23A	1
+2022-12-10	Germany	Omicron 23A	1
+2022-12-12	Germany	Omicron 23A	3
+2022-12-14	Germany	Omicron 23A	4
+2022-12-15	Germany	Omicron 23A	2
+2022-12-16	Germany	Omicron 23A	6
+2022-12-17	Germany	Omicron 23A	3
+2022-12-18	Germany	Omicron 23A	1
+2022-12-19	Germany	Omicron 23A	1
+2022-12-20	Germany	Omicron 23A	3
+2022-12-21	Germany	Omicron 23A	2
+2022-12-22	Germany	Omicron 23A	4
+2022-12-23	Germany	Omicron 23A	3
+2022-12-24	Germany	Omicron 23A	1
+2022-12-26	Germany	Omicron 23A	2
+2022-12-27	Germany	Omicron 23A	4
+2022-12-28	Germany	Omicron 23A	5
+2022-12-29	Germany	Omicron 23A	8
+2022-12-30	Germany	Omicron 23A	2
+2022-12-31	Germany	Omicron 23A	2
+2023-01-01	Germany	Omicron 23A	6
+2023-01-02	Germany	Omicron 23A	6
+2023-01-03	Germany	Omicron 23A	23
+2023-01-04	Germany	Omicron 23A	12
+2023-01-05	Germany	Omicron 23A	17
+2023-01-06	Germany	Omicron 23A	13
+2023-01-07	Germany	Omicron 23A	8
+2023-01-08	Germany	Omicron 23A	7
+2023-01-09	Germany	Omicron 23A	26
+2023-01-10	Germany	Omicron 23A	28
+2023-01-11	Germany	Omicron 23A	20
+2023-01-12	Germany	Omicron 23A	27
+2023-01-13	Germany	Omicron 23A	21
+2023-01-14	Germany	Omicron 23A	19
+2023-01-15	Germany	Omicron 23A	9
+2023-01-16	Germany	Omicron 23A	42
+2023-01-17	Germany	Omicron 23A	38
+2023-01-18	Germany	Omicron 23A	19
+2023-01-19	Germany	Omicron 23A	34
+2023-01-20	Germany	Omicron 23A	48
+2023-01-21	Germany	Omicron 23A	16
+2023-01-22	Germany	Omicron 23A	6
+2023-01-23	Germany	Omicron 23A	65
+2023-01-24	Germany	Omicron 23A	38
+2023-01-25	Germany	Omicron 23A	61
+2023-01-26	Germany	Omicron 23A	51
+2023-01-27	Germany	Omicron 23A	75
+2023-01-28	Germany	Omicron 23A	33
+2023-01-29	Germany	Omicron 23A	15
+2023-01-30	Germany	Omicron 23A	137
+2023-01-31	Germany	Omicron 23A	79
+2021-09-01	Germany	other	11
+2021-09-02	Germany	other	3
+2021-09-03	Germany	other	9
+2021-09-06	Germany	other	4
+2021-09-07	Germany	other	2
+2021-09-08	Germany	other	3
+2021-09-09	Germany	other	2
+2021-09-10	Germany	other	4
+2021-09-11	Germany	other	1
+2021-09-14	Germany	other	1
+2021-09-16	Germany	other	1
+2021-09-17	Germany	other	1
+2021-09-20	Germany	other	3
+2021-09-21	Germany	other	1
+2021-09-22	Germany	other	4
+2021-09-23	Germany	other	2
+2021-09-24	Germany	other	4
+2021-09-25	Germany	other	1
+2021-09-26	Germany	other	1
+2021-09-27	Germany	other	5
+2021-09-28	Germany	other	1
+2021-09-29	Germany	other	1
+2021-10-01	Germany	other	1
+2021-10-04	Germany	other	2
+2021-10-11	Germany	other	1
+2021-10-12	Germany	other	2
+2021-10-19	Germany	other	1
+2021-10-22	Germany	other	1
+2021-11-04	Germany	other	1
+2021-11-07	Germany	other	1
+2021-11-08	Germany	other	1
+2021-11-10	Germany	other	3
+2021-11-11	Germany	other	3
+2021-11-12	Germany	other	3
+2021-11-17	Germany	other	1
+2021-11-24	Germany	other	2
+2021-11-25	Germany	other	1
+2021-11-26	Germany	other	2
+2021-11-29	Germany	other	1
+2021-12-01	Germany	other	4
+2021-12-02	Germany	other	3
+2021-12-03	Germany	other	8
+2021-12-04	Germany	other	3
+2021-12-05	Germany	other	1
+2021-12-06	Germany	other	6
+2021-12-07	Germany	other	3
+2021-12-08	Germany	other	2
+2021-12-09	Germany	other	3
+2021-12-10	Germany	other	1
+2021-12-11	Germany	other	1
+2021-12-12	Germany	other	1
+2021-12-13	Germany	other	8
+2021-12-14	Germany	other	7
+2021-12-15	Germany	other	1
+2021-12-16	Germany	other	3
+2021-12-17	Germany	other	3
+2021-12-19	Germany	other	2
+2021-12-20	Germany	other	9
+2021-12-21	Germany	other	9
+2021-12-22	Germany	other	7
+2021-12-23	Germany	other	7
+2021-12-24	Germany	other	9
+2021-12-25	Germany	other	6
+2021-12-26	Germany	other	3
+2021-12-27	Germany	other	12
+2021-12-28	Germany	other	3
+2021-12-29	Germany	other	2
+2021-12-30	Germany	other	3
+2021-12-31	Germany	other	4
+2022-01-01	Germany	other	1
+2022-01-03	Germany	other	2
+2022-01-04	Germany	other	4
+2022-01-05	Germany	other	3
+2022-01-06	Germany	other	2
+2022-01-07	Germany	other	1
+2022-01-08	Germany	other	3
+2022-01-09	Germany	other	4
+2022-01-10	Germany	other	5
+2022-01-11	Germany	other	3
+2022-01-12	Germany	other	6
+2022-01-13	Germany	other	5
+2022-01-14	Germany	other	4
+2022-01-15	Germany	other	9
+2022-01-16	Germany	other	4
+2022-01-17	Germany	other	24
+2022-01-18	Germany	other	8
+2022-01-19	Germany	other	4
+2022-01-20	Germany	other	7
+2022-01-21	Germany	other	2
+2022-01-22	Germany	other	4
+2022-01-23	Germany	other	3
+2022-01-24	Germany	other	10
+2022-01-25	Germany	other	2
+2022-01-26	Germany	other	6
+2022-01-27	Germany	other	6
+2022-01-28	Germany	other	3
+2022-01-29	Germany	other	2
+2022-01-30	Germany	other	1
+2022-01-31	Germany	other	7
+2022-02-01	Germany	other	8
+2022-02-02	Germany	other	3
+2022-02-03	Germany	other	23
+2022-02-04	Germany	other	14
+2022-02-05	Germany	other	1
+2022-02-06	Germany	other	1
+2022-02-07	Germany	other	3
+2022-02-08	Germany	other	6
+2022-02-09	Germany	other	13
+2022-02-10	Germany	other	4
+2022-02-12	Germany	other	2
+2022-02-13	Germany	other	2
+2022-02-14	Germany	other	9
+2022-02-15	Germany	other	20
+2022-02-16	Germany	other	1
+2022-02-17	Germany	other	6
+2022-02-18	Germany	other	24
+2022-02-19	Germany	other	9
+2022-02-20	Germany	other	10
+2022-02-21	Germany	other	3
+2022-02-22	Germany	other	7
+2022-02-23	Germany	other	5
+2022-02-24	Germany	other	17
+2022-02-25	Germany	other	8
+2022-02-26	Germany	other	2
+2022-02-27	Germany	other	4
+2022-02-28	Germany	other	14
+2022-03-01	Germany	other	8
+2022-03-02	Germany	other	96
+2022-03-03	Germany	other	26
+2022-03-04	Germany	other	7
+2022-03-05	Germany	other	6
+2022-03-06	Germany	other	8
+2022-03-07	Germany	other	22
+2022-03-08	Germany	other	18
+2022-03-09	Germany	other	13
+2022-03-10	Germany	other	14
+2022-03-11	Germany	other	17
+2022-03-12	Germany	other	20
+2022-03-13	Germany	other	8
+2022-03-14	Germany	other	13
+2022-03-15	Germany	other	18
+2022-03-16	Germany	other	10
+2022-03-17	Germany	other	16
+2022-03-18	Germany	other	23
+2022-03-19	Germany	other	14
+2022-03-20	Germany	other	14
+2022-03-21	Germany	other	25
+2022-03-22	Germany	other	38
+2022-03-23	Germany	other	27
+2022-03-24	Germany	other	44
+2022-03-25	Germany	other	11
+2022-03-26	Germany	other	5
+2022-03-27	Germany	other	6
+2022-03-28	Germany	other	24
+2022-03-29	Germany	other	19
+2022-03-30	Germany	other	19
+2022-03-31	Germany	other	19
+2022-04-01	Germany	other	22
+2022-04-02	Germany	other	7
+2022-04-03	Germany	other	10
+2022-04-04	Germany	other	35
+2022-04-05	Germany	other	19
+2022-04-06	Germany	other	28
+2022-04-07	Germany	other	28
+2022-04-08	Germany	other	19
+2022-04-09	Germany	other	15
+2022-04-10	Germany	other	5
+2022-04-11	Germany	other	14
+2022-04-12	Germany	other	20
+2022-04-13	Germany	other	25
+2022-04-14	Germany	other	17
+2022-04-15	Germany	other	14
+2022-04-16	Germany	other	11
+2022-04-17	Germany	other	7
+2022-04-18	Germany	other	12
+2022-04-19	Germany	other	23
+2022-04-20	Germany	other	21
+2022-04-21	Germany	other	14
+2022-04-22	Germany	other	28
+2022-04-23	Germany	other	19
+2022-04-24	Germany	other	6
+2022-04-25	Germany	other	16
+2022-04-26	Germany	other	13
+2022-04-27	Germany	other	21
+2022-04-28	Germany	other	25
+2022-04-29	Germany	other	14
+2022-04-30	Germany	other	12
+2022-05-01	Germany	other	5
+2022-05-02	Germany	other	12
+2022-05-03	Germany	other	16
+2022-05-04	Germany	other	15
+2022-05-05	Germany	other	12
+2022-05-06	Germany	other	11
+2022-05-07	Germany	other	9
+2022-05-08	Germany	other	4
+2022-05-09	Germany	other	21
+2022-05-10	Germany	other	25
+2022-05-11	Germany	other	12
+2022-05-12	Germany	other	23
+2022-05-13	Germany	other	22
+2022-05-14	Germany	other	8
+2022-05-15	Germany	other	2
+2022-05-16	Germany	other	34
+2022-05-17	Germany	other	7
+2022-05-18	Germany	other	22
+2022-05-19	Germany	other	8
+2022-05-20	Germany	other	27
+2022-05-21	Germany	other	3
+2022-05-22	Germany	other	2
+2022-05-23	Germany	other	18
+2022-05-24	Germany	other	14
+2022-05-25	Germany	other	16
+2022-05-26	Germany	other	3
+2022-05-27	Germany	other	4
+2022-05-28	Germany	other	2
+2022-05-29	Germany	other	6
+2022-05-30	Germany	other	23
+2022-05-31	Germany	other	14
+2022-06-01	Germany	other	12
+2022-06-02	Germany	other	12
+2022-06-03	Germany	other	4
+2022-06-04	Germany	other	3
+2022-06-05	Germany	other	3
+2022-06-06	Germany	other	5
+2022-06-07	Germany	other	16
+2022-06-08	Germany	other	10
+2022-06-09	Germany	other	16
+2022-06-10	Germany	other	10
+2022-06-11	Germany	other	9
+2022-06-12	Germany	other	3
+2022-06-13	Germany	other	14
+2022-06-14	Germany	other	18
+2022-06-15	Germany	other	13
+2022-06-16	Germany	other	6
+2022-06-17	Germany	other	18
+2022-06-18	Germany	other	12
+2022-06-19	Germany	other	1
+2022-06-20	Germany	other	32
+2022-06-21	Germany	other	14
+2022-06-22	Germany	other	12
+2022-06-23	Germany	other	13
+2022-06-24	Germany	other	18
+2022-06-25	Germany	other	4
+2022-06-26	Germany	other	3
+2022-06-27	Germany	other	12
+2022-06-28	Germany	other	12
+2022-06-29	Germany	other	15
+2022-06-30	Germany	other	10
+2022-07-01	Germany	other	6
+2022-07-02	Germany	other	1
+2022-07-03	Germany	other	3
+2022-07-04	Germany	other	6
+2022-07-05	Germany	other	10
+2022-07-06	Germany	other	6
+2022-07-07	Germany	other	3
+2022-07-08	Germany	other	5
+2022-07-09	Germany	other	2
+2022-07-10	Germany	other	2
+2022-07-11	Germany	other	2
+2022-07-12	Germany	other	5
+2022-07-13	Germany	other	7
+2022-07-14	Germany	other	6
+2022-07-15	Germany	other	11
+2022-07-16	Germany	other	7
+2022-07-17	Germany	other	1
+2022-07-18	Germany	other	10
+2022-07-19	Germany	other	5
+2022-07-20	Germany	other	6
+2022-07-21	Germany	other	9
+2022-07-22	Germany	other	3
+2022-07-23	Germany	other	2
+2022-07-24	Germany	other	2
+2022-07-25	Germany	other	11
+2022-07-26	Germany	other	4
+2022-07-27	Germany	other	2
+2022-07-28	Germany	other	4
+2022-07-29	Germany	other	4
+2022-07-30	Germany	other	2
+2022-08-01	Germany	other	4
+2022-08-02	Germany	other	3
+2022-08-03	Germany	other	6
+2022-08-04	Germany	other	1
+2022-08-05	Germany	other	3
+2022-08-06	Germany	other	1
+2022-08-07	Germany	other	1
+2022-08-08	Germany	other	6
+2022-08-09	Germany	other	2
+2022-08-10	Germany	other	1
+2022-08-11	Germany	other	2
+2022-08-12	Germany	other	1
+2022-08-13	Germany	other	1
+2022-08-14	Germany	other	1
+2022-08-15	Germany	other	2
+2022-08-16	Germany	other	3
+2022-08-17	Germany	other	2
+2022-08-18	Germany	other	5
+2022-08-19	Germany	other	1
+2022-08-20	Germany	other	1
+2022-08-21	Germany	other	1
+2022-08-22	Germany	other	2
+2022-08-23	Germany	other	3
+2022-08-24	Germany	other	1
+2022-08-25	Germany	other	3
+2022-08-26	Germany	other	3
+2022-08-28	Germany	other	1
+2022-08-29	Germany	other	4
+2022-08-30	Germany	other	1
+2022-08-31	Germany	other	1
+2022-09-01	Germany	other	3
+2022-09-02	Germany	other	2
+2022-09-03	Germany	other	4
+2022-09-05	Germany	other	8
+2022-09-06	Germany	other	9
+2022-09-07	Germany	other	6
+2022-09-08	Germany	other	3
+2022-09-09	Germany	other	2
+2022-09-10	Germany	other	1
+2022-09-12	Germany	other	4
+2022-09-13	Germany	other	2
+2022-09-14	Germany	other	2
+2022-09-15	Germany	other	2
+2022-09-16	Germany	other	2
+2022-09-18	Germany	other	1
+2022-09-19	Germany	other	2
+2022-09-20	Germany	other	1
+2022-09-21	Germany	other	1
+2022-09-23	Germany	other	3
+2022-09-24	Germany	other	2
+2022-09-26	Germany	other	5
+2022-09-27	Germany	other	3
+2022-09-28	Germany	other	3
+2022-09-29	Germany	other	2
+2022-09-30	Germany	other	1
+2022-10-01	Germany	other	1
+2022-10-02	Germany	other	3
+2022-10-03	Germany	other	4
+2022-10-05	Germany	other	9
+2022-10-06	Germany	other	6
+2022-10-07	Germany	other	5
+2022-10-08	Germany	other	3
+2022-10-09	Germany	other	2
+2022-10-10	Germany	other	4
+2022-10-11	Germany	other	4
+2022-10-12	Germany	other	5
+2022-10-13	Germany	other	11
+2022-10-14	Germany	other	5
+2022-10-15	Germany	other	2
+2022-10-16	Germany	other	2
+2022-10-17	Germany	other	11
+2022-10-18	Germany	other	3
+2022-10-19	Germany	other	1
+2022-10-20	Germany	other	3
+2022-10-21	Germany	other	7
+2022-10-22	Germany	other	3
+2022-10-23	Germany	other	1
+2022-10-24	Germany	other	8
+2022-10-25	Germany	other	4
+2022-10-26	Germany	other	2
+2022-10-27	Germany	other	4
+2022-10-28	Germany	other	3
+2022-10-29	Germany	other	1
+2022-10-30	Germany	other	5
+2022-10-31	Germany	other	3
+2022-11-01	Germany	other	7
+2022-11-02	Germany	other	5
+2022-11-03	Germany	other	4
+2022-11-04	Germany	other	6
+2022-11-05	Germany	other	6
+2022-11-06	Germany	other	3
+2022-11-07	Germany	other	12
+2022-11-08	Germany	other	12
+2022-11-09	Germany	other	10
+2022-11-10	Germany	other	4
+2022-11-11	Germany	other	15
+2022-11-12	Germany	other	8
+2022-11-13	Germany	other	3
+2022-11-14	Germany	other	14
+2022-11-15	Germany	other	16
+2022-11-16	Germany	other	9
+2022-11-17	Germany	other	24
+2022-11-18	Germany	other	10
+2022-11-19	Germany	other	2
+2022-11-20	Germany	other	5
+2022-11-21	Germany	other	26
+2022-11-22	Germany	other	9
+2022-11-23	Germany	other	11
+2022-11-24	Germany	other	16
+2022-11-25	Germany	other	8
+2022-11-26	Germany	other	8
+2022-11-27	Germany	other	4
+2022-11-28	Germany	other	20
+2022-11-29	Germany	other	9
+2022-11-30	Germany	other	13
+2022-12-01	Germany	other	15
+2022-12-02	Germany	other	11
+2022-12-03	Germany	other	2
+2022-12-04	Germany	other	5
+2022-12-05	Germany	other	23
+2022-12-06	Germany	other	16
+2022-12-07	Germany	other	25
+2022-12-08	Germany	other	19
+2022-12-09	Germany	other	13
+2022-12-10	Germany	other	9
+2022-12-11	Germany	other	6
+2022-12-12	Germany	other	24
+2022-12-13	Germany	other	25
+2022-12-14	Germany	other	19
+2022-12-15	Germany	other	20
+2022-12-16	Germany	other	23
+2022-12-17	Germany	other	15
+2022-12-18	Germany	other	6
+2022-12-19	Germany	other	34
+2022-12-20	Germany	other	14
+2022-12-21	Germany	other	17
+2022-12-22	Germany	other	15
+2022-12-23	Germany	other	10
+2022-12-24	Germany	other	4
+2022-12-25	Germany	other	2
+2022-12-26	Germany	other	5
+2022-12-27	Germany	other	12
+2022-12-28	Germany	other	11
+2022-12-29	Germany	other	17
+2022-12-30	Germany	other	10
+2022-12-31	Germany	other	12
+2023-01-01	Germany	other	6
+2023-01-02	Germany	other	19
+2023-01-03	Germany	other	14
+2023-01-04	Germany	other	18
+2023-01-05	Germany	other	12
+2023-01-06	Germany	other	14
+2023-01-07	Germany	other	7
+2023-01-08	Germany	other	9
+2023-01-09	Germany	other	39
+2023-01-10	Germany	other	26
+2023-01-11	Germany	other	14
+2023-01-12	Germany	other	17
+2023-01-13	Germany	other	19
+2023-01-14	Germany	other	10
+2023-01-15	Germany	other	1
+2023-01-16	Germany	other	31
+2023-01-17	Germany	other	30
+2023-01-18	Germany	other	29
+2023-01-19	Germany	other	32
+2023-01-20	Germany	other	39
+2023-01-21	Germany	other	12
+2023-01-22	Germany	other	9
+2023-01-23	Germany	other	46
+2023-01-24	Germany	other	22
+2023-01-25	Germany	other	40
+2023-01-26	Germany	other	21
+2023-01-27	Germany	other	38
+2023-01-28	Germany	other	20
+2023-01-29	Germany	other	3
+2023-01-30	Germany	other	82
+2023-01-31	Germany	other	50
 2021-09-01	United Kingdom	Delta	5954
 2021-09-02	United Kingdom	Delta	6327
 2021-09-03	United Kingdom	Delta	5517

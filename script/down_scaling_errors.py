@@ -87,15 +87,6 @@ def prep_freq_data(final_set):
 
 def merge_truth_pred(df, location_truth):
     merged_set = pd.merge(df, location_truth, how="left")
-    merged_set["sequences"] = merged_set["sequences"].fillna(0)
-    # sum sequences of each location and date
-    merged_set["total_seq"] = merged_set.groupby(["date", "location"])[
-        "sequences"
-    ].transform("sum")
-    # compute truth frequencies for each variant
-    merged_set["truth_freq"] = (
-        merged_set["sequences"] / merged_set["total_seq"]
-    )
     return merged_set[merged_set["pred_freq"].notnull()]
 
 
@@ -192,7 +183,7 @@ class LogLoss(Scores):
         return loglik
 
 
-LOCATIONS = ["United Kingdom", "Denmark", "Monaco"]
+LOCATIONS = ["United Kingdom", "Denmark", "Germany"]
 MODEL = "MLR"
 OBS_DATES = [
     "2022-01-01",
@@ -222,7 +213,7 @@ THRESES = [
     5000,
     1e10,
 ]
-TRUTHSET_PATH = "../data/time_stamped/truth/seq_counts_truth.tsv"
+TRUTHSET_PATH = "../data/down_scaled/truth/seq_counts_truth.tsv"
 EXPORT_PATH = "../errors/down_scaled_errors.tsv"
 
 if __name__ == "__main__":
