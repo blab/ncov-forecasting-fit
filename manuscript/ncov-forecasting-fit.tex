@@ -96,50 +96,42 @@ We conclude that fitness models represent a useful prognostic tool for short-ter
 %%% INTRODUCTION %%%
 \section*{Introduction}
 
+% Overview of SARS-COV-2 genomic surveillance and spread of variant viruses
 Mathematical and statistical modeling of infectious diseases plays a key role in predicting the growth of epidemics.
 Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread \cite{ding_value_2021}.
-Epidemiologists face a multitude of challenges in order to \jhc{cut phrases like these} provide accurate and timely predictions of disease spread.
-With the increased availability of genomic sequencing, there have been efforts to use sequencing as a tool for investigating the genetic diversity, evolution, and transmission of epidemic-causing pathogens \cite{gire_genomic_2014,zhou_pneumonia_2020}.
-More recently, with the upscaling and deluge of sequence data from various testing centers, issues with data arise regarding quantity \jhc{issue is scaling analyses/storage with increasing data. what else?}, near-real-time accessibility, availability, and quality of sequences.
-%Integration of these data sources
+Epidemiologists face a multitude of challenges to provide accurate and timely predictions of disease spread.
+With the increased availability of genomic sequencing, there have been efforts to use sequencing as a tool for investigating the genetic diversity, evolution and transmission of epidemic-causing pathogens \cite{gire_genomic_2014,zhou_pneumonia_2020}.
+More recently, due to the demands of the SARS-CoV-2 pandemic and evolution of variant viruses, the quantity of available sequence data has increased dramatically.
 Data collected from different geographical locations and time-points exhibit varying degrees of missing data, submission delays, and back-filling of disease occurrence which leads to differences in the quantities and availability of sequencing data on different observation dates \cite{crepey_challenges_2022}.
 This variability in sequence availability can adversely impact the accuracy and reliability of forecasting efforts using mathematical models \cite{suchard_bayesian_2018}.
 Different modeling approaches may have varying levels of sensitivity to imperfections or limitations in the data.
 Even when data are complete and accurate, the chosen model may not be suitable for the problem being analyzed, resulting in inability to capture target trends \cite{gelman_bayesian_2013}.
 Thereby, it is essential to take these factors, both data-wise and with regard to systematic methodological errors or biases into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output \cite{crepey_challenges_2022}.
+\tbc{As it stands I can't figure out what this paragraph is trying to accomplish. It reads as `modeling is difficult '. I'd suggest an easy revamp to just discuss SARS-CoV-2 evolution and the ongoing emergence and spread of variant viruses. This is the important biological question that you are addressing with your paper. Worth looking at paragraph 1 of https://bedford.io/papers/kistler-sarscov2-adaptive-evolution/ and paragraph 1 of https://elifesciences.org/articles/82069. This doesn't have to be fancy. It's just giving the reader an overview of the problem you are tackling.}
 
-
+% Previous approaches to evolutionary forecasting via fitness models, first with flu and then with SARS-CoV-2
 Mathematical models elucidate disease processes and have been sought to assess the risk of and frame the response to emerging pathogens.
 Representation of disease spread from genomic sequences can forecast disease occurrence and pathogen frequencies, which refer to the relative abundance or prevalence of specific pathogens within a population, that allows to uncover the inherent characteristics of emerging pathogens and compare potential mechanisms of spread and persistence in the population \cite{metcalf_opportunities_2017}.
 %mention importance of forecasting variant frequences and estimating growth advantage
 In particular, forecasting variant frequencies allows us to interrogate the impact of mutation accumulation and viral diversity on the spread of and competition between different variants in the population.
 The biological selective advantage of specific variants results in increased transmissibility or immune evasion which confers variants' growth advantages in which enable us to make inferences by estimating their variability \cite{tegally_detection_2021}.
 The validity and reliability of these mathematical models depend on the quality and quantity of data used for the model \cite{tao_biological_2021}.
-With the emergence of novel pathogens, real-time data scarcity represents a real challenge to accurate forecasts and nowcasts, which are short-term forecasts that differ from traditional long-term forecasts, as it leads to increased uncertainty in identifying and forecasting epidemic trends \cite{metcalf_opportunities_2017}. 
+With the emergence of novel pathogens, real-time data scarcity represents a real challenge to accurate forecasts and nowcasts, which are short-term forecasts that differ from traditional long-term forecasts, as it leads to increased uncertainty in identifying and forecasting epidemic trends \cite{metcalf_opportunities_2017}.
+\tbc{This paragraph should focus on strain forecasting. It kind of does now but leaves out most of the important literature. This should start with flu literature of \cite{luksza2014predictive}, \cite{morris2018predictive} and \cite{huddleston2020integrating}, which is where `fitness models' originate. Then it should cover previous applications of MLR models to SARS-CoV-2 variants. \cite{annavajhala2021emergence}, \cite{faria2021genomics} and \cite{obermeyer2022analysis} are some good references but there are a large number. I think it's worth including a few here just to show how ubiquitous this strategy has been for SARS-CoV-2. Critically, discuss how forecasting accuracy of these MLR models have not been systematically assessed.}
 
-
-%what we actually did (high level)
-
-To investigate how modeling approaches \jhc{Which modeling approaches? Need more background on the models before you describe how you evaluate them.} handle data issues, we developed a framework for evaluating model nowcast and forecast of real-time SARS-CoV-2 variant frequencies, due to their high data availability and diversity, within several countries including (Australia, Brazil, Japan, South Africa, the
-United Kingdom, and the United States).
+% Broad overview of approach
+To investigate how modeling approaches \jhc{Which modeling approaches? Need more background on the models before you describe how you evaluate them.} handle data issues, we developed a framework for evaluating model nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies, due to their high data availability and diversity, within several countries including (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
 %what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
 To investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 genomic sequence data and several \jhc{Which} models of frequency change for model comparison and evaluation.
 %Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python.
 %several metrics such as , RMSE, and Sequence log likelihood
 To assess the performance of these models, we used mean absolute error (MAE) as a metric to compare the predicted frequencies to a set of known true values (smoothed raw frequency values of SARS-CoV-2 variants \jhc{This parenthetical is a little too detailed for the introduction but is great for the methods}). %what is truth set (Smoothed raw_freq)
 This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
-We also examined a variety of variables that may contribute to the emergence of errors in these models.
-Our aim was to identify the variables that play a role in our ability to forecast variant frequencies.
-We explored the role of sequence availability on nowcast and forecast errors through scaling back sequencing efforts for a sample location. 
-Through these analyses, we develop a deeper understanding of the factors that contribute to errors in nowcasting and forecasting on genomic surveillance data for pathogens, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these evolutionary forecasting models.
+We also examined a variety of variables that contribute to errors in these models and explored the role of sequence availability on nowcast and forecast errors through downsampling sequencing efforts for a sample location.
+% Through these analyses, we develop a deeper understanding of the factors that contribute to errors in nowcasting and forecasting on genomic surveillance data for pathogens, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these evolutionary forecasting models.
 %What explains our errors
 %try to explain the persistent patterns in the errors
-
-
-%limits of their use-ability
-
-%I use Google Scholar format for citation style with first author, year and first word of title, ala \cite{hadfield2018nextstrain}.
-
+\tbc{This paragraph is on the right track. It needs to specify at a broad level which models you compared and it needs to specify broadly what you looked at, ie SARS-CoV-2 clades during 2021.}
 
 %%% RESULTS %%%
 \section*{Results}
