@@ -53,20 +53,23 @@
 
 % Inline comments by initials
 \def\jhc#1{\textcolor{red}{[#1]}}
+\definecolor{purple}{rgb}{0.459,0.109,0.538}
+\def\tbc#1{\textcolor{purple}{[#1]}}
 
 %%% TITLE %%%
 \title{\vspace{1.0cm} \Large \bf
-Sequencing hetergenity affect real-time nowcast and forecast/prediction error for SARS-CoV-2 Variants? \jhc{What is your primary result? That is your title.}
+Fitness models provide accurate short-term forecasts of SARS-CoV-2 variant frequency
 }
 %
-\author[1,2]{Eslam Abousamra*}
-\author[1,3]{Marlin Figgins*}
+\author[1,2,*]{Eslam Abousamra}
+\author[1,3,*]{Marlin Figgins}
 \author[1,2,4]{Trevor Bedford}
 
 \affil[1]{Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center, Seattle, WA, USA}
 \affil[2]{Department of Epidemiology, University of Washington, Seattle, WA, USA}
 \affil[3]{Department of Applied Mathematics, University of Washington, Seattle, WA, USA}
 \affil[4]{Howard Hughes Medical Institute, Seattle, WA, USA}
+\affil[*]{These authors contributed equally to this work.}
 
 
 \date{}
@@ -78,21 +81,15 @@ Sequencing hetergenity affect real-time nowcast and forecast/prediction error fo
 %%% ABSTRACT %%%
 \begin{abstract}
 
-% \textbf{Introduction}:
-Genomic surveillance of pathogen evolution is essential for leading public health responses, treatment, and vaccine development efforts.
-Sequencing data disparities across various geographical locations and time-points exhibit a challenge to produce accurate and reliable forecasts.
-% \textbf{Methods}:
-These sequencing data have been used to predict SARS-CoV-2 variant frequencies and growth advantages to analyze variant turnover over the course of the pandemic.
-% , including Multinomial Logistic Regression (MLR), Fixed Growth Advantage (FGA), Growth Advantage Random Walk (GARW), and Piantham
-We introduce a framework for evaluating real-time forecasts of genetic variant frequencies, emphasizing various data challenges when using publicly available pathogen sequence data.
-Model comparison highlights that most models of variant frequency perform well and are able to produce reasonable forecasts.
-Relatively, MLR emerges as a simple but robust method for estimating variant patterns in Australia, Brazil, Japan, and South Africa.
-Stabilization of variants' growth advantages is observed at higher frequencies and at different rates across countries.
-The impact of aspects of these sequencing efforts, such as sequencing intensity, on frequency forecasts is investigated.
-Finally, we analyze the effect of varying sequencing intensity on forecasting accuracy and find diminishing returns to improvement in nowcast and forecast errors.
-%TODO: Here I would include either the saturation of sequencing on reducing error or the fact that a minimum number of sequences is needed for good reconstruction
-% \textbf{Results}:
-% \textbf{Conclusion}: To do
+Genomic surveillance of pathogen evolution is essential for public health response, treatment strategies, and vaccine development.
+In the context of SARS-COV-2, multiple models have been developed including Multinomial Logistic Regression (MLR), Fixed Growth Advantage (FGA), Growth Advantage Random Walk (GARW) and Piantham that use observed variant sequence counts through time to analyze variant dynamics.
+These models provide estimates of variant fitness and can be used to forecast changes in variant frequency.
+We introduce a framework for evaluating real-time forecasts of variant frequencies, and apply this framework to the evolution of SARS-CoV-2 during 2022 in which multiple new viral variants emerged and rapidly spread through the population.
+We compare models across representative countries with different intensities of genomic surveillance.
+Retrospective assessment of model accuracy highlights that most models of variant frequency perform well and are able to produce reasonable forecasts.
+We find that the simple MLR model provides less than 1\% mean absolute error when forecasting 30 days out for countries with robust genomic surveillence.
+We investigate impacts of sequence quantity and quality across countries on forecast accuracy and conduct systematically downsampling to identify that 1000 sequences per week is fully sufficient for accurate short-term forecasts.
+We conclude that fitness models represent a useful prognostic tool for short-term evolutionary forecasting.
 
 \end{abstract}
 
