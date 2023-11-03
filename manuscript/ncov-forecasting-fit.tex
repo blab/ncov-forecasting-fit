@@ -110,7 +110,7 @@ These models were first introduced for the study of seasonal influenza virus \ci
 In modeling emergence and spread of SARS-CoV-2 variant viruses, the use of Multinomial Logistic Regression (MLR) has become commonplace \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}.
 Here, MLR is analogous to a population genetics model of haploid population in which different variants have a fixed growth advantage and are undergoing Malthusian growth.
 As such, it presents a natural model for describing evolution and spread of SARS-CoV-2 variants.
-Additionally, models introduced by Figgins and Bedford \cite{figgins_bedford_freq_dyn} and by Piantham et al \cite{piantham2021estimating} incorporate case counts and variant-specific Rt, but still can be used to project variant frequencies.
+Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} and by Piantham et al \cite{piantham2021estimating} incorporate case counts and variant-specific Rt, but still can be used to project variant frequencies.
 
 % Broad overview of approach
 Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
@@ -123,45 +123,40 @@ We also examined a variety of variables that contribute to errors in these model
 %%% RESULTS %%%
 \section*{Results}
 
-%TALKING ABOUT PROCESS FIGURES
+\subsection*{Reconstructing real-time forecasts}
 
-\paragraph{Live Forecasting Environment}\
+We focus on SARS-CoV-2 sequence data shared to the GISAID EpiCoV database \cite{shu2017gisaid}.
+Each sequence is annotated with both a collection date (relevant for understanding dynamics) as well as a submission date.
+Here we seek to reconstruct datasets that were actually available on particular dates, and so we use use submission date to filter to sequences that were available at a specific analysis date.
+We additionally filter to sequences collected up to 90 days before the analysis date.
+We categorize each sequence by Nextstrain clade (21K, 21L, etc\dots) as such clades are generally at a reasonable level of granularity for understanding adaptive dynamics \cite{bloom2023fitness}; there are 7 clades circulating during 2022 vs hundreds of Pango lineages.
+Resulting datasets for representative countries Japan and the USA for analysis dates of Apr 1 2022, Jun 1 2022, Sep 1 2022 and Dec 1 2022 are shown in Figure \ref{fig:dynamic_forecast_env}A.
+We see consequential backfill in which genome sequences are not immediately available and instead available after a delay due to the necessary bottlenecks of sample acquisition, testing, sequencing, assembly and data deposition.
+Thus, even estimating variant frequencies on the analysis date as a nowcast requires extrapolating from past week's data.
+Different countries with different genomic surveillance systems have different levels of throughput as well as different amounts of delay between sample collection and sequence submission \cite{brito2022global}.
 
-%TODO: What do we mean by live forecasting...
-%Due to the ...., sequecnes are submitted ... Basically give a bit of detail to ground reader in what environment we're wroking in
-Nowcasting variant frequencies is complicated by the ongoing nature of the data submission process.
-\jhc{Can you rewrite the following sentence to summarize the data in Figure 1 that illustrate the effects of variation across countries? The current sentence leaves the reader to figure out what the meaningful results are.}
-Figures presented in 1A and 1B offers a visual representation of the live nowcasting environment, illustrating the significance of incorporating observational data in our forecasting models and the variations that exist among countries in terms of the utilization and impact of such data.
-The representation emphasizes the variability and back-filling of sequencing data at different observation dates for both the US and Japan.
-%MF:Being specific about the model isn't necessary here and which model can be mentioned in the caption alone. If we're talking about what's going on in Figure 1, I would say that directly and cite it \ref{fig:Figure1}
-Utilizing sequencing data for these variants \jhc{Which variants and why?}, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States \jhc{Why focus on these two countries?} as observed for different observation dates along the period of February 15th to December 1st, 2022 which was chosen due to the its prominent dynamic behavior with multiple clade replacement for SARS-CoV-2 \cite{:ck_markov_covid}  (Figure~\ref{fig:dynamic_forecast_env}A).
-Throughout the observation period, the United States had a higher availability of SARS-CoV-2 sequences compared to Japan.
-Nonetheless, both countries exhibited variability in sequence availability count for the same dates depending on observation dates.
-
-
-% We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
-We fit the Growth Advantage Random Walk (GARW) model within our framework at each of these observation dates to demonstrate the nature of the real-time forecasting environment for five different SARS-CoV-2 variants (Omicron 21K, 21L, 21A, 22B, 22C) (Figure \ref{fig:dynamic_forecast_env}.B).
-We used these data to predict the frequencies of SARS-CoV-2 variants in these countries, and compared these predictions to 7-day smoothed frequencies of variant occurrence (Figure~\ref{fig:dynamic_forecast_env}B).
-However, we observed that the model predictions for Japan were more frequently misestimated compared to United States, this is presented in frequency estimates for clades 22B and 22E (Figure~\ref{fig:dynamic_forecast_env}B).
-
-
-
-%MF: In general, we want to be a bit more direct. These are not just the data there are predictions here as well. Really this figure is about a "Live nowcasting environment".
-%%% map %%%
-\begin{figure}[H]
+%%% dynamic_forecast_env %%%
+\begin{figure}[htb!]
 	\centering
-	\includegraphics[width=0.8\textwidth=0.01]{figures/Dynamic_est_env.png}
-	\caption{\textbf{Representative data and predictions for Japan and USA.}
-    Figure 1 represents a schematic of the real-time forecasting environment.
-    \jhc{The goal of this figure was to compare Japan and the USA, but the difference in scales on the y-axis between the two countries complicates that comparison. Have you tried plotting both countries on the same scale? Alternately, scaling the number of sequences by the number of cases or people in the country could place the two rows of part A on the same scale.}
-	(A) Variant sequence counts from Japan and United States are shown at 3 different observation dates.
-	Notice varying sequence availability at different observation dates.
-	(B) Frequency nowcasts for variants Nextstrain clades (21K, 21L, 22A, 22B, 22C, 22D, 22E), which depends on the data, vary by observation date.
-	Retrospective smoothed frequency is represented in black, nowcasts are estimated for each clade with the data available at different observation dates. }
+	\includegraphics[width=0.9\textwidth=0.01]{figures/Dynamic_est_env.png}
+	\caption{
+		\textbf{Reconstructing available datasets and corresponding predictions for Japan and USA.}
+		(A) Variant sequence counts categorized by Nextstrain clade from Japan and United States at 3 different analysis dates.
+		Notice varying sequence availability at different observation dates.
+		(B) Frequency nowcasts for variants in bimonthly intervals using the GARW variant Rt model.
+		Each nowcast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
 	\label{fig:dynamic_forecast_env}
-  %MF: Figure filenames and labels we typically want to describe what's in the figure itself since the order is usually subject to change.
 \end{figure}
 
+We employ a sliding window in which we conduct an analysis twice each month (on the 1st and the 15th) and estimate variant frequencies from -90 days to +30 days relative to each analysis date.
+For this projection we use the variant Rt model \cite{figgins2022sars} parameterized as a Growth Advantage Random Walk (GARW) to estimate variant-specific Rt and and from this changes in variant frequency through time.
+Figure \ref{fig:dynamic_forecast_env}B shows resulting trajectories as colored lines.
+Sometimes we see initial over-shoot or under-shoot as variant growth and decline, but there is general consistency across trajectories.
+Additionally, we retrospectively reconstructed the simple 7-day smoothed frequency for across variants and present these trajectories as solid black lines.
+We treat this retrospective trajectory as `truth' and thus deviations from model projections and retrospective truth can be assessed to determine nowcast and short-term forecasting accuracy.
+Consistent with less available data, we observe that the model predictions for Japan were more frequently misestimated compared to the United States with particularly large differences for clades 22B (lineage BA.5) and 22E (lineage BQ.1) (Fig.~\ref{fig:dynamic_forecast_env}B).
 
 \paragraph{Model Error Comparison}\
 
@@ -170,7 +165,7 @@ This approach provides a reference for understanding how the models perform as t
 This method enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
 
 We applied a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries representing six continents (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
-The first four models are Growth Advantage Random Walk (GARW) \cite{figgins_bedford_freq_dyn}, Fixed Growth Advantage (FGA) \cite{figgins_bedford_freq_dyn}, Multinomial Logistic Regression (MLR), and Piantham \cite{piantham2021estimating}, which are evolutionary forecasting models varying in complexity, refer to methods for more details.
+The first four models are Growth Advantage Random Walk (GARW) \cite{figgins2022sars}, Fixed Growth Advantage (FGA) \cite{figgins2022sars}, Multinomial Logistic Regression (MLR), and Piantham \cite{piantham2021estimating}, which are evolutionary forecasting models varying in complexity, refer to methods for more details.
 We compare the above 4 models to a naive model to serve as a reference model for comparison \jhc{Need a definition of the naive model here esp. since it is a baseline model.}.
 It is a baseline model which uses simple assumptions to make predictions. %todo mention that this model is worse and that is based on a moving average % mentioned in methods
 
@@ -366,7 +361,7 @@ Since two models (FGA and GARW) also use case counts for their estimates, we add
 We implemented and evaluated several models of variant frequencies.
 Each of these methods estimate variant frequencies over time and as well as estimate the transmission advantage of given variant relative to a baseline variant $R_{t}^{v} / R_{t}^{u}$.
 
-The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model \cite{piantham2021estimating}, a fixed growth advantage model (FGA)  \cite{figgins_bedford_freq_dyn}, and a growth advantage random walk model (GARW)  \cite{figgins_bedford_freq_dyn}.
+The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model \cite{piantham2021estimating}, a fixed growth advantage model (FGA)  \cite{figgins2022sars}, and a growth advantage random walk model (GARW)  \cite{figgins2022sars}.
 Details for each of these models can be found in the corresponding citations above.
 \jhc{Missing citations for models. Generally, the methods need a bit more description of how the different models work including how they are the same and how they differ.}
 
@@ -384,8 +379,8 @@ where $\Delta_{v} = \exp(\delta_{v} \tau)$ for some fixed generation time $\tau$
 The Piantham model relies on an approximation to the renewal equation wherein new infections do not vary greatly over the generation time of the virus.
 This model generalizes the MLR in that it accounts for non-fixed generation time though it assumes little overall case growth. \cite{piantham2021estimating}
 
-The fixed growth advantage model uses a renewal equation model based on both case counts and sequence counts, but assumes that the growth advantage $\Delta_{v}$ is constant in time. \cite{figgins_bedford_freq_dyn}
-The growth advantage random walk model also uses a renewal equation model based on both case counts and sequences, but allows variant growth advantages to vary smoothly in time. \cite{figgins_bedford_freq_dyn}
+The fixed growth advantage model uses a renewal equation model based on both case counts and sequence counts, but assumes that the growth advantage $\Delta_{v}$ is constant in time. \cite{figgins2022sars}
+The growth advantage random walk model also uses a renewal equation model based on both case counts and sequences, but allows variant growth advantages to vary smoothly in time. \cite{figgins2022sars}
 
 The models used all differ in the complexity of their assumptions in computing the variant growth advantage which may affect forecasting accuracy.
 Growth advantages presented in this manuscript are estimated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time.
