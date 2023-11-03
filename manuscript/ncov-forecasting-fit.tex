@@ -96,48 +96,29 @@ We conclude that fitness models represent a useful prognostic tool for short-ter
 %%% INTRODUCTION %%%
 \section*{Introduction}
 
-% Overview of SARS-COV-2 genomic surveillance and spread of variant viruses
-Mathematical and statistical modeling of infectious diseases plays a key role in predicting the growth of epidemics.
-Understanding the trends and characteristics of emerging epidemics can guide public health officials to control their spread \cite{ding_value_2021}.
-SARS-CoV-2 has undergone a significant transformation, with the original strains of the virus being largely replaced by a variety of descendant lineages.
-These lineages, classified by the World Health Organization as Variants of Concern (VOCs) or Variants of Interest (VOIs), display differences in genetic composition, phenotypic characteristics, and epidemiological behavior \cite{konings2021sarscov2}.
-There have been numerous efforts to use sequencing as a tool for investigating the genetic diversity, evolutionary dynamics, and transmission of epidemic-causing pathogens \cite{gire_genomic_2014,zhou_pneumonia_2020}.
-More recently, with the increased availability of genomic sequencing for SARS-CoV-2, notably through the GISAID EpiCoV database, which currently contains over 2.5 million sequences and continues to grow as of July 2021 \cite{shu2017gisaid}.
+% Paragraph giving overview of SARS-COV-2 genomic surveillance and spread of variant viruses
+\tbc{Sentence introducing SARS-CoV-2 and the impact of the pandemic}
+\tbc{Sentence describing the initial emergence of variant viruses and the impact of Omicron}
+% SARS-CoV-2 has undergone a significant transformation, with the original strains of the virus being largely replaced by a variety of descendant lineages.
+% These lineages, classified by the World Health Organization as Variants of Concern (VOCs) or Variants of Interest (VOIs), display differences in genetic composition, phenotypic characteristics, and epidemiological behavior \cite{konings2021sarscov2}.
+\tbc{Sentence describing continuing evolution post Omicron}
+\tbc{Final sentence stating importance of understanding and forecasting variant dynamics (for vaccine strain selection, for projecting variant-driven epidemics).}
 
-
-Data collected from different geographical locations and time-points exhibit varying degrees of missing data, submission delays, and back-filling of disease occurrence which leads to differences in the quantities and availability of sequencing data on different observation dates \cite{crepey_challenges_2022}.
-This variability in sequence availability can adversely impact the accuracy and reliability of forecasting efforts using mathematical models \cite{suchard_bayesian_2018}.
-Different modeling approaches may have varying levels of sensitivity to imperfections or limitations in the data.
-Even when data are complete and accurate, the chosen model may not be suitable for the problem being analyzed, resulting in inability to capture target trends \cite{gelman_bayesian_2013}.
-Thereby, it is essential to take these factors, both data-wise and with regard to systematic methodological errors or biases into account when using mathematical models to make predictions, as they can impact the accuracy and reliability of the model's output \cite{crepey_challenges_2022}.
-
-
-Mathematical models play a crucial role in elucidating disease processes, especially in the context of strain forecasting, and have been widely used to assess the risk of emerging pathogens.
-These models, first observed in the study of influenza strains \cite{luksza2014predictive, morris2018predictive, huddleston2020integrating}, provide valuable insights into disease spread by utilizing genomic sequences to forecast disease occurrence and understand pathogen frequencies, which refer to the relative abundance or prevalence of specific pathogens within a population.
-This approach allows us to uncover the intrinsic characteristics of emerging pathogens and compare potential mechanisms of their spread and persistence within the population \cite{metcalf_opportunities_2017}.
-In particular, these models enable us to forecast variant frequencies and interrogate the impact of mutation accumulation and viral diversity on the spread and competition between different variants.
-Variants that exhibit a biological selective advantage, such as increased transmissibility or immune evasion  \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}, confers variants' growth advantages in which enable us to make inferences by estimating their variability \cite{tegally_detection_2021}.
-However, with the emergence of novel pathogens, real-time data scarcity poses a significant challenge to accurate strain forecasting, leading to increased uncertainty in identifying and forecasting epidemic trends.
-
-
-% Previous approaches to evolutionary forecasting via fitness models, first with flu and then with SARS-CoV-2
-%mention importance of forecasting variant frequences and estimating growth advantage
-
-\tbc{This paragraph should focus on strain forecasting. It kind of does now but leaves out most of the important literature. This should start with flu literature of \cite{luksza2014predictive}, \cite{morris2018predictive} and \cite{huddleston2020integrating}, which is where `fitness models' originate. Then it should cover previous applications of MLR models to SARS-CoV-2 variants. \cite{annavajhala2021emergence}, \cite{faria2021genomics} and \cite{obermeyer2022analysis} are some good references but there are a large number. I think it's worth including a few here just to show how ubiquitous this strategy has been for SARS-CoV-2. Critically, discuss how forecasting accuracy of these MLR models have not been systematically assessed.}
+% Paragraph giving overview of previous application of fitness models (flu and SARS-CoV-2)
+Fitness models are a key resource for forecasting changes in variant frequency or strain frequency through time.
+These models were first introduced for the study of seasonal influenza virus \cite{luksza2014predictive, morris2018predictive, huddleston2020integrating} and there have relied on correlates of viral fitness such as mutations to epitope sites on influenza's surface proteins.
+In modeling emergence and spread of SARS-CoV-2 variant viruses, the use of Multinomial Logistic Regression (MLR) has become commonplace \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}.
+Here, MLR is analogous to a population genetics model of haploid population in which different variants have a fixed growth advantage and are undergoing Malthusian growth.
+As such, it presents a natural model for describing evolution and spread of SARS-CoV-2 variants.
+Additionally, models introduced by Figgins and Bedford \cite{figgins_bedford_freq_dyn} and by Piantham et al \cite{piantham2021estimating} incorporate case counts and variant-specific Rt, but still can be used to project variant frequencies.
 
 % Broad overview of approach
-To investigate how modeling approaches \jhc{Which modeling approaches? Need more background on the models before you describe how you evaluate them.} handle data issues, we developed a framework for evaluating model nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies, due to their high data availability and diversity, within several countries including (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
-%what is interesting about the framework (key points) comparing various models > applicable to real-time surveillance
-To investigate the effectiveness of these different modeling approaches in the context of infectious disease prediction, we implemented the framework utilizing SARS-CoV-2 genomic sequence data and several \jhc{Which} models of frequency change for model comparison and evaluation.
-%Specifically, we focused on models of increasing complexity, which were fitted using the evofr (evolutionary forecasting) software package in Python.
-%several metrics such as , RMSE, and Sequence log likelihood
-To assess the performance of these models, we used mean absolute error (MAE) as a metric to compare the predicted frequencies to a set of known true values (smoothed raw frequency values of SARS-CoV-2 variants \jhc{This parenthetical is a little too detailed for the introduction but is great for the methods}). %what is truth set (Smoothed raw_freq)
+Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
+We focus on variants dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
+We compare across several countries including Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States to assess genomic surveillance systems with different levels of throughput and timeliness.
+To assess the performance of these models, we used mean absolute error (MAE) as a metric to compare the predicted frequencies to retrospective truth.
 This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
 We also examined a variety of variables that contribute to errors in these models and explored the role of sequence availability on nowcast and forecast errors through downsampling sequencing efforts for a sample location.
-% Through these analyses, we develop a deeper understanding of the factors that contribute to errors in nowcasting and forecasting on genomic surveillance data for pathogens, and ultimately contribute to the ongoing efforts to understand and improve the accuracy of these evolutionary forecasting models.
-%What explains our errors
-%try to explain the persistent patterns in the errors
-\tbc{This paragraph is on the right track. It needs to specify at a broad level which models you compared and it needs to specify broadly what you looked at, ie SARS-CoV-2 clades during 2021.}
 
 %%% RESULTS %%%
 \section*{Results}
