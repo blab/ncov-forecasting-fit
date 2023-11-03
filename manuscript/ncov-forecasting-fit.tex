@@ -151,11 +151,11 @@ We also examined a variety of variables that contribute to errors in these model
 Nowcasting variant frequencies is complicated by the ongoing nature of the data submission process.
 \jhc{Can you rewrite the following sentence to summarize the data in Figure 1 that illustrate the effects of variation across countries? The current sentence leaves the reader to figure out what the meaningful results are.}
 Figures presented in 1A and 1B offers a visual representation of the live nowcasting environment, illustrating the significance of incorporating observational data in our forecasting models and the variations that exist among countries in terms of the utilization and impact of such data.
-The representation emphasizes the variability and back-filling of sequencing data at different observation dates for both the US and Japan. 
+The representation emphasizes the variability and back-filling of sequencing data at different observation dates for both the US and Japan.
 %MF:Being specific about the model isn't necessary here and which model can be mentioned in the caption alone. If we're talking about what's going on in Figure 1, I would say that directly and cite it \ref{fig:Figure1}
 Utilizing sequencing data for these variants \jhc{Which variants and why?}, we conducted a comparative analysis of the availability of SARS-CoV-2 variants sequences in Japan and the United States \jhc{Why focus on these two countries?} as observed for different observation dates along the period of February 15th to December 1st, 2022 which was chosen due to the its prominent dynamic behavior with multiple clade replacement for SARS-CoV-2 \cite{:ck_markov_covid}  (Figure~\ref{fig:dynamic_forecast_env}A).
 Throughout the observation period, the United States had a higher availability of SARS-CoV-2 sequences compared to Japan.
-Nonetheless, both countries exhibited variability in sequence availability count for the same dates depending on observation dates. 
+Nonetheless, both countries exhibited variability in sequence availability count for the same dates depending on observation dates.
 
 
 % We then evaluated the model performance by analyzing the input sequence data available for Japan and the United States on specific observation dates.
@@ -175,7 +175,7 @@ However, we observed that the model predictions for Japan were more frequently m
     \jhc{The goal of this figure was to compare Japan and the USA, but the difference in scales on the y-axis between the two countries complicates that comparison. Have you tried plotting both countries on the same scale? Alternately, scaling the number of sequences by the number of cases or people in the country could place the two rows of part A on the same scale.}
 	(A) Variant sequence counts from Japan and United States are shown at 3 different observation dates.
 	Notice varying sequence availability at different observation dates.
-	(B) Frequency nowcasts for variants Nextstrain clades (21K, 21L, 22A, 22B, 22C, 22D, 22E), which depends on the data, vary by observation date. 
+	(B) Frequency nowcasts for variants Nextstrain clades (21K, 21L, 22A, 22B, 22C, 22D, 22E), which depends on the data, vary by observation date.
 	Retrospective smoothed frequency is represented in black, nowcasts are estimated for each clade with the data available at different observation dates. }
 	\label{fig:dynamic_forecast_env}
   %MF: Figure filenames and labels we typically want to describe what's in the figure itself since the order is usually subject to change.
