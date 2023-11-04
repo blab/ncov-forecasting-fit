@@ -81,7 +81,7 @@ my_theme() {
 
 #read error datasets
 
-error_dataset = read.csv('../estimates/model_scores_output4.csv') %>%
+error_dataset = read.csv('../estimates/model_scores_output.csv') %>%
   mutate(model = recode(model, dummy = "Naïve")) 
 
 #growth advantage dataset per variant
@@ -156,16 +156,16 @@ freq_plot_US = error_dataset %>%
   ggplot() +
     geom_line(aes(x = as.Date(date), y = smoothed_freq) ,color = "black" ,size = 1.5, alpha = 0.9)+
   geom_line(aes(x = as.Date(date), y = pred_freq,  group = factor(pivot_date),color = factor(variant), fill = factor(pivot_date)),size = 0.8, alpha = 0.7)+
-  facet_wrap(~variant, nrow = 1,
+    facet_wrap(~variant, nrow = 1,
              labeller = labeller(variant = 
-    c("Omicron 21K" = "Clade 21K",
-      "Omicron 21L" = "Clade 21L",
-      "Omicron 22A" = "Clade 22A",
-      "Omicron 22B" = "Clade 22B",
-      "Omicron 22C" = "Clade 22C",
-      "Omicron 22D" = "Clade 22D",
-      "Omicron 22E" = "Clade 22E",
-      "Omicron 23A" = "Clade 23A")))+
+    c("Omicron 21K" = "21K (BA.1)",
+      "Omicron 21L" = "21L (BA.2)",
+      "Omicron 22A" = "22A (BA.4)",
+      "Omicron 22B" = "22B (BA.5)",
+      "Omicron 22C" = "22C (BA.2.12.1)",
+      "Omicron 22D" = "22D (BA.2.75)",
+      "Omicron 22E" = "22E (BQ.1)",
+      "Omicron 23A" = "23A (XBB.1.5)")))+
   bbc_style()+
   scale_color_manual(
     values= variant_colors,
@@ -218,16 +218,15 @@ freq_plot_JA = error_dataset %>%
   )+
   facet_wrap(~variant, nrow = 1,
              labeller = labeller(variant = 
-    c("Omicron 21K" = "Clade 21K",
-      "Omicron 21L" = "Clade 21L",
-      "Omicron 22A" = "Clade 22A",
-      "Omicron 22B" = "Clade 22B",
-      "Omicron 22C" = "Clade 22C",
-      "Omicron 22D" = "Clade 22D",
-      "Omicron 22E" = "Clade 22E",
-      "Omicron 23A" = "Clade 23A")))+
+    c("Omicron 21K" = "21K (BA.1)",
+      "Omicron 21L" = "21L (BA.2)",
+      "Omicron 22A" = "22A (BA.4)",
+      "Omicron 22B" = "22B (BA.5)",
+      "Omicron 22C" = "22C (BA.2.12.1)",
+      "Omicron 22D" = "22D (BA.2.75)",
+      "Omicron 22E" = "22E (BQ.1)",
+      "Omicron 23A" = "23A (XBB.1.5)")))+
   bbc_style()+
-
   labs( x = "Date", y= "Frequency",
         caption = "MA smoothed frequency with predicted frequency")+
   theme(axis.title.x = element_blank(),
@@ -313,8 +312,7 @@ Initial_date = seqs_first  %>%
   geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
   bbc_style() +
   scale_fill_manual(values =variant_colors,
-                    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C",
-                               "Clade 22D", "Clade 22E", "Clade 23A"))+
+                    labels = c("Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C",  "Clade 22D", "Clade 22E", "Clade 23A"  ))+
   theme(axis.title.x = element_blank(),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -934,15 +932,16 @@ This plot shows the median RMSE error for each model, this provides a more detai
 
 ```{r}
 
+library(sjmisc)
 
 table1 = error_dataset %>%
-  rename_columns(Location == location ) %>%
-    filter(lead %in% c(0,30,-30)) %>%
-    group_by(lead, model, Location) %>%
-  summarize(Mean = mean(MAE, na.rm = T)) %>%
+  #dplyr::rename(Location == location ) %>%
+  filter(lead %in% c(0,30,-30)) %>%
+  group_by(lead, model, location) %>%
+  summarise(Median = median(MAE, na.rm = T)) %>%
   mutate_if(is.numeric, round, digits=3) %>%
   setDT() %>%
-  pivot_wider(names_from= model, values_from = Mean)
+  pivot_wider(names_from= model, values_from = Median)
 
 
 
@@ -1045,7 +1044,7 @@ table_1 = table1 %>%
     tab_spanner(
     label = "Models",
     columns = c(Naïve,Piantham, MLR, FGA, GARW)) %>%
-  tab_header(title = md("Table 1. Model performance statistics (µ absolute error)"))  %>%
+  #tab_header(title = md("Table 1. Model performance statistics (µ absolute error)"))  %>%
   tab_style(
       style = cell_text(color = "black", size = px(16), weight = 500),
       locations = list(cells_title(groups = "title")))
