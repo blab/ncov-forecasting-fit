@@ -158,58 +158,53 @@ Additionally, we retrospectively reconstructed the simple 7-day smoothed frequen
 We treat this retrospective trajectory as `truth' and thus deviations from model projections and retrospective truth can be assessed to determine nowcast and short-term forecasting accuracy.
 Consistent with less available data, we observe that the model predictions for Japan were more frequently misestimated compared to the United States with particularly large differences for clades 22B (lineage BA.5) and 22E (lineage BQ.1) (Fig.~\ref{fig:dynamic_forecast_env}B).
 
-\paragraph{Model Error Comparison}\
+\subsection*{Model error comparison}
 
-We began our model comparison by calculating the difference in days between the date of observation and the date of estimation (lag times) as a means of evaluating the performance of the models per each variant, country, and observation date.
-This approach provides a reference for understanding how the models perform as the lag time decreases from the forecast period to the nowcast period, where the lag time approaches zero (the date of observation), specifically from 30 days before the date of observation and 30 days after the date of observation [-30,30].
-This method enables us to evaluate the effectiveness of the models as we move closer to and further away from the date of observation.
-
-We applied a total of five models for predicting the frequencies of SARS-CoV-2 variants in six countries representing six continents (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
-The first four models are Growth Advantage Random Walk (GARW) \cite{figgins2022sars}, Fixed Growth Advantage (FGA) \cite{figgins2022sars}, Multinomial Logistic Regression (MLR), and Piantham \cite{piantham2021estimating}, which are evolutionary forecasting models varying in complexity, refer to methods for more details.
-We compare the above 4 models to a naive model to serve as a reference model for comparison \jhc{Need a definition of the naive model here esp. since it is a baseline model.}.
-It is a baseline model which uses simple assumptions to make predictions. %todo mention that this model is worse and that is based on a moving average % mentioned in methods
-
-The use of multiple models that range in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
-In particular, the use of multiple models allows us to examine if more complex models may be better at capturing epidemiological variant patterns.
-
-%Mention which models performed best in each lead (no need to mention numbers)
-We used our predictions and used a metric from the framework, specifically mean absolute error (MAE), to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
-The use of MAE as a metric allows us to quantitatively compare the predictions of different models and determine which model is most accurate in terms of predicting the frequencies of SARS-CoV-2 variants \jhc{Tighten up}.
-The model with the lowest mean MAE error for each country is highlighted as it indicates the best performance among all models (Table~\ref{table:model_comp_table}).
-There was a range of values \jhc{What was the range?} among the models for different lags.
-In this analysis, the GARW model performed the best, on average, for -30 days from the date of estimation.
-For 0 and 30 days from the date of estimation, the MLR outperformed, on average, all other models.
-For 0 and 30 days, GARW model performed similarly well \jhc{How well? Report the relevant numbers that support your statement}, with the MLR model exhibiting better performance in United Kingdom, Brazil, and Japan, while the GARW model demonstrated better performance in South Africa.
-These findings indicate that the GARW model exhibited the best performance \jhc{I was confused to see this conclusion, since the two sentences prior the MLR model outperformed all other models. Then, the more I thought about it, the less I understood how ``best'' is evaluated here. Is the best based on the mean of the MAE across all six countries?}, as measured by mean absolute error (MAE), among the models evaluated, excluding the naive reference model.
-In contrast, the Piantham model performed worst on average among the models tested.
-
-\begin{figure}[H]
+%%% model_comp_table %%%
+\begin{table}[tb!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/model_comp.png}
-	\caption{\textbf{MAE estimates based on observation date.}
-	Figure 2 represents a demonstration of evaluation score (MAE) comparison.
-	(A) comparison of progression of error from nowcasting (-30 days) \jhc{Is ``-30 days'' nowcasting or pastcasting?} to forecasting (+30 days) among the five candidate models in six different countries.
-	(B) closer look into model performance across all countries for three lag times (-30, 0, 30) showing consistent increase in error with farther lag times.
+	\caption{
+		\textbf{Mean absolute error}
+		The model with lowest error for each country / forecasting lag is bolded.
+		}
+	\includegraphics[width=0.6\textwidth]{figures/model_comp_table.png}
+	\label{table:model_comp_table}
+\end{table}
+
+%%% model_comp_fig %%%
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figures/model_comp.png}
+	\caption{\textbf{MAE estimates across models and countries.}
+	(A) Error increases as forecast target moves from hindcasting at -30 days to nowcasting at 0 days to forecasting at +30 days.
+	(B) Distribution of absolute error on a log scale across models and across forecasting lags.
+	This shows that most predictions have little error, while a small subset of predictions have large error.
 	}
 	\label{fig:model_comp_fig}
 \end{figure}
 
+We utilize five models for predicting the frequencies of SARS-CoV-2 variants in six countries (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
+The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
+More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant Rt model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to clade-specific sequence counts.
+The Piantham et al model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific Rt, but differs in model details.
+We compare the these four models to a naive model to serve as a reference model for comparison.
+\jhc{Need a definition of the naive model here esp. since it is a baseline model.}
+\tbc{Echoing this, I don't know how the naive model is implemented. Methods say `implemented as a 7-day moving average on the retrospective raw frequencies', but I don't know how this works when samples don't exist. Do you just use the last day with data? This needs to be described here.}
+The use of multiple models that range in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
+We compare forecasting accuracy across different time lags from -30 days back from date of analysis to target hindcast date, to +0 days from date of analysis to target nowcast date, to +30 days forward from date of analysis to target forecast date.
 
-Models were then compared side by side using error quantiles (25,50, and 75th percentile).
-The majority of the models evaluated in this study exhibited median error values within the range of 0 to 10 percent of logarithm of mean absolute error (log(MAE)) \jhc{I had trouble wrapping my head around the percent of the log MAE here.} (Figure~\ref{fig:model_comp_fig}A).
-Furthermore, we compared the MAE score distribution between models for all countries (Figure~\ref{fig:model_comp_fig}B).
-As expected, the results of the analysis show an increase in MAE error for all models as lag or day from estimation increases.
+We compared our predictions to retrospective truth via 7-day smoothed frequency and calcuated mean absolute error (MAE) to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
+The model with the lowest mean MAE error for each country is highlighted.
+As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
+For example, error increases for the MLR model from 0.1\%--1\% MAE at -30 days to 0.3\%--1.4\% MAE at 0 days, and to 0.4\%--1.4\% MAE at +30 days.
+All four forecasting models performed better than the naive model, with MLR and the variant Rt models FGA and GARW performing slightly better than the Panthiam variant Rt model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% MAE compared to Panthiam.
+Similar results are apparent when examining MAE as a continuous progression from -30 days to +30 days (Fig.~\ref{fig:model_comp_fig}A).
 
-\begin{table}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{figures/model_comp_table.png}
-	\caption{\textbf{Mean Absolute Error}
-	Table 1 demonstrates values of mean absolute error (MAE) for all investigated models at 3 different lag times from the date of estimation (-30, 0, 30).
-	Values highlighted exhibit the lowest estimated score allowing for comparisons between models and locations.
-    \jhc{Drop the table caption from the PNG figure, since you already have a caption in the text here.}
-	}
-	\label{table:model_comp_table}
-\end{table}
+Absolute error varies across predictions for individual analysis dates and variants.
+Its distribution is heterogeneous with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_fig}B)
+Here we use a 5\% absolute error threshold to classify an acceptable prediction vs unacceptable prediction (shown as dashed line).
+At +30 days forecast lag we find that the Panthiam model has X\%, the MLE model has X\%, the FGA model has X\% and the GARW model has X\% of forecasts with error above this threshold.
+This supports previous observation of similar performance across MLR and the FGA and GARW parameterizations of the variant Rt model.
 
 \paragraph{Comparison of Growth Advantages}\ We investigated the behavior of the growth advantage of different variants in the aforementioned countries of interest using the MLR model due to its simplicity and performance.
 We standardized the varying growth advantage by estimating the median growth advantage values as of that date.
