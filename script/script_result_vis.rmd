@@ -93,6 +93,13 @@ seqs1 = read.csv("data/time_stamped/2022-04-22/seq_counts_2022-04-22.tsv", sep =
 seqs2 = read.csv("data/time_stamped/truth/seq_counts_truth.tsv",sep = "\t")
 
 
+
+#Read qc data
+
+seq_qc <- read.csv("../notebooks/seq_counts_qc.tsv")
+
+
+
 #seq by submitted date
 
 seq_date = read.csv("../data/seq_counts_delayed.tsv" ,sep = "\t")
@@ -149,7 +156,8 @@ model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", 
 #plotting MA smoothed frequency with posterior predicted freqs
 
 #USA
-freq_plot_US = error_dataset %>% 
+freq_plot_US = error_dataset %>%
+  #filter(lead > 0) %>% 
   filter(location =="USA" &
            model =="GARW", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta" & variant != "Omicron 23A") %>%
@@ -291,6 +299,9 @@ error_dataset2 %>%
 
 ggsave("freq_plot_us.png", plot = freq_plot_US, width = 20, height = 10, units = "cm", bg = 'transparent')
 
+
+table(error_dataset$lead)
+
 ```
 
 
@@ -415,8 +426,14 @@ later_date =seq_last %>%
   geom_col(aes(x = as.Date(date), y = sequences, fill = variant), alpha = 0.9) +
   bbc_style() +
   scale_fill_manual(values =variant_colors,
-                    labels = c( "Clade 21K", "Clade 21L","Clade 22A",  "Clade 22B", "Clade 22C",
-                               "Clade 22D", "Clade 22E", "Clade 23A", "Other"))+
+                    labels = c( "21K (BA.1)",
+"21L (BA.2)",
+"22A (BA.4)",
+"22B (BA.5)",
+"22C (BA.2.12.1)",
+"22D (BA.2.75)",
+"22E (BQ.1)",
+"23A (XBB.1.5)"))+
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         #axis.title.y = element_text(color="Black", size=14),
@@ -777,6 +794,49 @@ error_quant_30 = error_dataset %>%
              label= "Forecast", size  = 3,
              fontface = 4)
 
+error_quant_30 = error_dataset %>%
+  group_by(lead, location, model) %>%
+  filter(lead > -30 & lead < 30) %>%
+  summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE)) %>%
+  ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")))) +
+  geom_line(aes(y = quant50), size = 0.5) +
+  geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
+  facet_wrap(~location) +
+  bbc_style() +
+  labs(linetype = " ", color = "Model", shape = 1) +
+  scale_color_manual(values = model_colors,
+                     breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
+  labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
+  scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
+  theme(axis.title.x = element_text(color = "Black", size = 14),
+        axis.title.y = element_text(color = "Black", size = 14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(),
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = 12),
+        legend.position = "right",
+        legend.title = element_text(size = 12)) +
+  scale_y_continuous(trans = log_trans(),
+                     breaks = c(0.001, 0.005, 0.1, 1),
+                     labels = label_percent()) +
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 5,
+           color = NA, fill = "#bdc3c7", alpha = 0.15) +
+  annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 5,
+           color = NA, fill = "#2c3e50", alpha = 0.15) +
+  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4) +
+  geom_hline(yintercept = 0.05, linetype = "dashed")
+  
+
+
 ggsave("figure2-30day.png", plot = error_quant_30, width = 25, height = 20, units = "cm", bg = 'transparent')
 
 
@@ -860,7 +920,7 @@ mae_dist = error_dataset %>%
                        breaks = c('Median','Q3','Q1'))+
     scale_colour_manual(name = "Model", 
                     values = model_colors,
-                      breaks=c("GARW", "FGA","MLR" ,"Piantham","Naïve"))+
+                      breaks=c("Naïve", "Piantham", "MLR", "FGA",  "GARW"))+
   #geom_dotplot(binaxis = "y", binwidth = 0.001, stackdir = "center")+
     facet_wrap(~as.factor(lead), labeller = lags)+
   labs(colour="", fill = "")+
@@ -890,10 +950,8 @@ mae_dist = error_dataset %>%
   scale_y_continuous(trans = log_trans(),
                      labels = label_percent(),
                      breaks = c(0.001,0.005,0.5,0.1, 1),
-                     limits = c(0.001,1.2))
-  #scale_y_continuous(limit = c(-0.05,0.45),
-   #                  breaks = c(0,0.2,0.4))
-
+                     limits = c(0.001,1.2)) +
+  geom_hline(yintercept = 0.05, linetype = "dashed")
 
 mae_dist
 
