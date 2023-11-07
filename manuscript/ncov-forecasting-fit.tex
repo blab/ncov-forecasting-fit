@@ -193,7 +193,14 @@ We compare these four models to a naive model to serve as a reference model for 
 The use of multiple models that range in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 We compare forecasting accuracy across different time lags from -30 days back from date of analysis to target hindcast date, to +0 days from date of analysis to target nowcast date, to +30 days forward from date of analysis to target forecast date.
 
-We compare our predictions to retrospective truth via 7-day smoothed frequency and calcuated mean absolute error (MAE) to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
+Throughout the following discussion, we refer to `absolute error (AE)' for a specific model $m$, a specific dataset $d$ and a specific forecasting lag $l$ as the mean absolute difference between predicted frequency and retrospective frequency across timepoints $t$, ie
+\begin{equation}
+\mathrm{AE}_{m, d, l, t} = \frac{1}{n} \sum_{t \in T} |f_{m, d, l, t} - \hat{f}_{m, d, l, t}|,
+\end{equation}
+where $f$ represents retrospective frequency and $\hat{f}$ represents the prospective predicted frequency.
+We summarize these AE values across different models, different datasets and different lags either via taking mean AE or taking median AE.
+
+We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error (MAE) to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
 The model with the lowest mean MAE error for each country is highlighted.
 As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
 For example, error increases for the MLR model from 0.1\%--1\% MAE at -30 days to 0.3\%--1.4\% MAE at 0 days, and to 0.4\%--1.4\% MAE at +30 days.
