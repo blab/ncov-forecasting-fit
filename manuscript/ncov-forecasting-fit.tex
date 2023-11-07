@@ -55,6 +55,8 @@
 \def\jhc#1{\textcolor{red}{[#1]}}
 \definecolor{purple}{rgb}{0.459,0.109,0.538}
 \def\tbc#1{\textcolor{purple}{[#1]}}
+\definecolor{pink}{rgb}{0.8,0.5,0.5}
+\def\mfc#1{\textcolor{pink}{[#1]}}
 
 %%% TITLE %%%
 \title{\vspace{1.0cm} \Large \bf
@@ -154,6 +156,7 @@ We employ a sliding window in which we conduct an analysis twice each month (on 
 For this projection we use the variant Rt model \cite{figgins2022sars} parameterized as a Growth Advantage Random Walk (GARW) to estimate variant-specific Rt and and from this changes in variant frequency through time.
 Figure \ref{fig:dynamic_forecast_env}B shows resulting trajectories as colored lines.
 Sometimes we see initial over-shoot or under-shoot as variant growth and decline, but there is general consistency across trajectories.
+\mfc{We should expand of this more. This to me is the main point of interest.}
 Additionally, we retrospectively reconstructed the simple 7-day smoothed frequency for across variants and present these trajectories as solid black lines.
 We treat this retrospective trajectory as `truth' and thus deviations from model projections and retrospective truth can be assessed to determine nowcast and short-term forecasting accuracy.
 Consistent with less available data, we observe that the model predictions for Japan were more frequently misestimated compared to the United States with particularly large differences for clades 22B (lineage BA.5) and 22E (lineage BQ.1) (Fig.~\ref{fig:dynamic_forecast_env}B).
@@ -245,10 +248,11 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 	\centering
     \includegraphics[width=0.85\textwidth]{figures/Var_of_interest.png}
 	\caption{
-		\textbf{Sequence quantity and quality influence forecasting error}
-    (A) MAE for +30 day forecasts for the MLR model across countries.
-		\tbc{Yes, this was +30 day forecast for the MLR model?}
+		\textbf{Sequence quantity and quality influence nowcasts error}
+    (A) MAE at nowcast for the MLR model across countries.
+		% \tbc{Yes, this was +30 day forecast for the MLR model?}
     \tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
+    \mfc{Points here are as in Figure 2B and represent the MAE absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
 		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
 		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting MAE.
     Correlation strength and significance are calculated via Spearman rank and are inset in each panel.
