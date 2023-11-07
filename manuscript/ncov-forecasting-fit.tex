@@ -187,17 +187,17 @@ We utilize five models for predicting the frequencies of SARS-CoV-2 variants in 
 The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
 More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant Rt model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to clade-specific sequence counts.
 The Piantham et al model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific Rt, but differs in model details.
-We compare the these four models to a naive model to serve as a reference model for comparison.
+We compare these four models to a naive model to serve as a reference model for comparison.
 \jhc{Need a definition of the naive model here esp. since it is a baseline model.}
 \tbc{Echoing this, I don't know how the naive model is implemented. Methods say `implemented as a 7-day moving average on the retrospective raw frequencies', but I don't know how this works when samples don't exist. Do you just use the last day with data? This needs to be described here.}
 The use of multiple models that range in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 We compare forecasting accuracy across different time lags from -30 days back from date of analysis to target hindcast date, to +0 days from date of analysis to target nowcast date, to +30 days forward from date of analysis to target forecast date.
 
-We compared our predictions to retrospective truth via 7-day smoothed frequency and calcuated mean absolute error (MAE) to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
+We compare our predictions to retrospective truth via 7-day smoothed frequency and calcuated mean absolute error (MAE) to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
 The model with the lowest mean MAE error for each country is highlighted.
 As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
 For example, error increases for the MLR model from 0.1\%--1\% MAE at -30 days to 0.3\%--1.4\% MAE at 0 days, and to 0.4\%--1.4\% MAE at +30 days.
-All four forecasting models performed better than the naive model, with MLR and the variant Rt models FGA and GARW performing slightly better than the Panthiam variant Rt model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% MAE compared to Panthiam.
+All four forecasting models perform better than the naive model, with MLR and the variant Rt models FGA and GARW performing slightly better than the Panthiam variant Rt model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% MAE compared to Panthiam.
 Similar results are apparent when examining MAE as a continuous progression from -30 days to +30 days (Fig.~\ref{fig:model_comp_fig}A).
 
 Absolute error varies across predictions for individual analysis dates and variants.
@@ -206,77 +206,69 @@ Here we use a 5\% absolute error threshold to classify an acceptable prediction 
 At +30 days forecast lag we find that the Panthiam model has X\%, the MLE model has X\%, the FGA model has X\% and the GARW model has X\% of forecasts with error above this threshold.
 This supports previous observation of similar performance across MLR and the FGA and GARW parameterizations of the variant Rt model.
 
-\paragraph{Comparison of Growth Advantages}\ We investigated the behavior of the growth advantage of different variants in the aforementioned countries of interest using the MLR model due to its simplicity and performance.
-We standardized the varying growth advantage by estimating the median growth advantage values as of that date.
-We observed when and which variants stabilized in each country (Figure~\ref{fig:ga_estimates}).
-The majority of countries displayed stabilization with regard to the clades 22A, 22B, and 22C variants, with the exception of Japan.
-This discrepancy may be attributed to Japan's limited availability of sequence data and submission delays.
-%they mostly stabilized except Japan % and why (motivated us to next step of analysis)
+In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants when sequence count data is rare.
+We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across by analysis date (Fig.~\ref{fig:ga_estimates}).
+Generally, we see sharp changes in estimated growth advantage in the first 1-3 weeks when a variant is emerging, but then see less pronounced changes.
+Thus it often takes a couple weeks for MLR model to `dial in' estimated growth advantage and accuracy will tend to be poorer in early weeks when variant-specific growth advantage is uncertain.
 
-\begin{figure}[H]
+\begin{figure}[tb!]
 	\centering
-    \includegraphics[width=1.1\textwidth]{figures/ga_estimates.png}
-	\caption{\textbf{Growth advantage of variants over time}
-	Figure 3 demonstrates the stabilization of growth advantage of different clades relative to BA.1 \jhc{This is the first time we see references to Pango lineages which are a third clade nomenclature and not defined elsewhere in the paper.}.
-	(A) Differences among growth advantages among three clades in six different countries.
-	Noticing how quickly variants dial \jhc{?} and stabilize between different countries \jhc{Fragmented sentence}.
-    \jhc{Vertical grid lines don't represent multiples of months or 30 days. Also, Clade 22E in the UK goes off the chart around October.}
-	(B) Observation of stabilization of growth advantages according to the percent of variant frequency at observation.
-    \jhc{I don't see how panel B shows ``stabilization'' of GAs. Maybe using a shared scale on the y-axis across countries and adding a horizontal line at y=1 would help emphasize convergence to a specific value?}
+    \includegraphics[width=1.0\textwidth]{figures/ga_estimates.png}
+	\caption{
+		\textbf{Growth advantage of variants varies with analysis date.}
+		Growth advantage is estimated via the MLR model and is computed relative to clade 21K (lineage BA.1).
 	}
 	\label{fig:ga_estimates}
 \end{figure}
 
-\paragraph{Correlates of nowcast error}
-\jhc{This section uses present tense, while the prior sections use the past tense.}
-We further explore the relationship between variables of interest and the median mean absolute error \jhc{from which model?} across all locations with estimated Spearman correlation.
-Variables included are observation dates, median submission delay, fraction of sequences at observation, and sequences available at observation.
-We expect that a positive correlation between median submission delay and median MAE such that countries with longer delay exhibit higher errors and a negative correlation between fraction of sequences and sequences available at observation and median MAE such that countries with more robust sequencing efforts show lower errors.
-While inter-country variability and other unexplored variables may weaken the correlation, we aimed to uncover meaningful trends into these complex phenomena.
-% TODO: Add a sentence summarizing results of the figure
-\jhc{Add a sentence or two summarizing results of the figure.}
-The results obtained align to initial expectations regarding the trends between the sequencing data and MAE providing insights about the role of sequence submission rate (Figure \ref{fig:vars_of_interest}).
+\subsection*{Genomic surveillance systems and forecast error}
 
-
-\begin{figure}[H]
+\begin{figure}[tb!]
 	\centering
-    \includegraphics[width=1.1\textwidth]{figures/Var_of_interest.png}
-	\caption{\textbf{Variables of interest in predicting forecasting error}
-    (A) Forecast MAEs visualized by country. %TODO: Points are medians of ....
-    \jhc{What does each point represent?}
-    Median MAEs are visualized with observation date (B),
-    \jhc{What are the dates on the x axis of panel B? Is ``01'' the day of the month? Why are these x-axis labels different than similar panels in Figures 1 and 3?)}
-    median submission delay (C),
-    fraction of sequences available at time of observation (D),
-    and the total number of sequences available at observation (E).
-    For (C-E), we estimate the Spearman correlation between variables of interest and median MAE.
+    \includegraphics[width=0.85\textwidth]{figures/Var_of_interest.png}
+	\caption{
+		\textbf{Sequence quantity and quality influence forecasting error}
+    (A) MAE for +30 day forecasts for the MLR model across countries.
+		\tbc{Yes, this was +30 day forecast for the MLR model?}
+    \tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
+		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
+		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting MAE.
+    Correlation strength and significance are calculated via Spearman rank and are inset in each panel.
+		\tbc{Spearman correlation should be labeled with $\rho$ and not $R$.}
 	}
 	\label{fig:vars_of_interest}
 \end{figure}
 
-\paragraph{Effects of changing sequencing intensity on nowcast error}%
+Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
+We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
+Using Spearman rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates moderately with MAE (Fig.~\ref{fig:vars_of_interest}B).
+We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with MAE (Fig.~\ref{fig:vars_of_interest}E).
 
-\jhc{This section is also in the present tense. Also, the section heading says ``nowcast error'' but the contents below describe forecasting error.}
-We expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
-In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sequences from the United Kingdom.
-For context, we also compute the weekly sequences collected for selected countries globally (Figure \ref{fig:downscaling}.A).
-We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low nowcast error (Figure \ref{fig:vars_of_interest}.A,C,E).
-We simulate several downscaled data sets by subsampling the collected sequences in the United Kingdom with some \jhc{which?} threshold for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how the forecast accuracy varies with sampling intensity.
-From this analysis, we find that increasing the number of sequences per week generally decreases the average error, but there are diminishing returns (Figure \ref{fig:downscaling}).
-Additionally, the effect appears to saturate at different values depending on the forecast length.
-We find that for 14 and 30 day forecasts sampling at least 1000-2000 sequences per week is appropriate for minimizing forecast error (Figure \ref{fig:downscaling}).
-
-
-\begin{figure}[H]
+\begin{figure}[tb!]
     \centering
-    \includegraphics[width=0.8\linewidth]{figures/downscaling_sequencing.png}
-    \caption{\textbf{Sequencing intensity affects forecast error.}
-    (A) Mean sequences collected per week for selected country. Error bars denote 95\% confidence intervals of the mean. Dashed lines correspond to sampling rates used in (B-E).
-    (B, C) Average MAE as a function of sequences collected per week colored by forecast horizon for the United Kingdom and Denmark. Here, ``0 days'' refers to nowcast error and the dash line corresponds to 5\% frequency error.
-    (D, E) Proportion of forecasts within 5\% of retrospective frequency as a function of sequences collected for week for the United Kingdom and Denmark.
-  }%
+    \includegraphics[width=1.0\linewidth]{figures/downscaling_sequencing.png}
+    \caption{
+			\textbf{Sequencing intensity reduces forecast error}
+    	(A) Mean sequences collected per week for selected countries in 2022.
+			Error bars denote 95\% confidence intervals of the mean.
+			Dashed lines correspond to sampling rates used in (B-E).
+    	(B, C) Average MAE as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
+			The dash line corresponds to 5\% frequency error.
+    	(D, E) Proportion of forecasts within 5\% of retrospective frequency as a function of sequences collected for week for the United Kingdom and Denmark.
+  	}
     \label{fig:downscaling}
 \end{figure}
+
+As suggested by these correlations across countries and timepoints, we expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
+In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sequences from the United Kingdom.
+For context, we also compute the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
+We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error.
+We simulate several downscaled data sets by subsampling the collected sequences in the United Kingdom at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
+From this analysis, we find that increasing the number of sequences per week generally decreases the average error, but there are diminishing returns (Fig.~\ref{fig:downscaling}B,D).
+Additionally, the effect appears to saturate at different values depending on the forecast length.
+We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is sufficient to minimize forecast error.
+In this analysis we compare the UK to Denmark to explore the difference between paucity of data and stochastic noise due to smaller epidemic size.
+However, we arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark  (Fig.~\ref{fig:downscaling}B-E).
 
 %%% DISCUSSION %%%
 \section*{Discussion}
