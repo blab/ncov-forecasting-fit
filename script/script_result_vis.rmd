@@ -154,7 +154,7 @@ model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", 
 
 #USA
 freq_plot_US = error_dataset %>%
-  #filter(lead > 0) %>% 
+  filter(lead > -30 & lead < 30) %>% 
   filter(location =="USA" &
            model =="MLR", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta" & variant != "Omicron 23A") %>%
@@ -207,6 +207,7 @@ freq_plot_US
 #Japan
 
 freq_plot_JA = error_dataset %>% 
+  filter(lead > -30 & lead < 30) %>% 
   filter(location =="Japan" &
            model =="MLR", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta") %>%
@@ -693,7 +694,7 @@ ggsave("figure2.png", plot = error_quantiles_mae, width = 25, height = 20, units
 library(extrafont)
 
 # make y percent with hline 5% showing the error
-error_quant_30 = error_dataset %>%
+med_log_error_30 = error_dataset %>%
   group_by(lead, location, model) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
@@ -702,16 +703,16 @@ error_quant_30 = error_dataset %>%
             meanMAE = mean(MAE)) %>%
   ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")))) +
   geom_line(aes(y = quant50), size = 0.5) +
-  geom_line(aes(y =meanMAE ), alpha = 0.5)+
-  geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
+  #geom_line(aes(y =meanMAE ), alpha = 0.75)+
+  #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
   facet_wrap(~location) +
   bbc_style() +
   labs(linetype = " ", color = "Model", shape = 1) +
   scale_color_manual(values = model_colors,
                      breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
-  labs(x = "Days from date of estimation", y = "Median Mean Absolute Error") +
+  labs( y = "Median Absolute Error") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
-  theme(axis.title.x = element_text(color = "Black", size = 14),
+  theme(axis.title.x = element_blank(),
         axis.title.y = element_text(color = "Black", size = 14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
@@ -737,6 +738,48 @@ error_quant_30 = error_dataset %>%
   geom_hline(yintercept = 0.05, linetype = "dashed")
   
 
+mae_nat_error_30 =error_dataset %>%
+  group_by(lead, location, model) %>%
+  filter(lead > -30 & lead < 30) %>%
+  summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
+            meanMAE = mean(MAE)) %>%
+  ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")))) +
+  geom_line(aes(y = meanMAE), size = 0.5) +
+  facet_wrap(~location) +
+  bbc_style() +
+  labs(linetype = " ", color = "Model", shape = 1) +
+  scale_color_manual(values = model_colors,
+                     breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
+  labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
+  scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
+    scale_y_continuous(
+    limits = c(0, 0.2), # This sets the limits from 0% to 5%
+    breaks = seq(0, 0.2, by = 0.05), # This sets the breaks at every 1% increment
+    labels = scales::percent(seq(0, 0.2, by = 0.05)) # This sets the labels to show the percentages
+  ) +  # Set y-axis breaks and labels
+  theme(axis.title.x = element_text(color = "Black", size = 14),
+        axis.title.y = element_text(color = "Black", size = 14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(),
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = 12),
+        legend.position = "none",
+        legend.title = element_text(size = 12)) +
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.2,
+           color = NA, fill = "#bdc3c7", alpha = 0.15) +
+  annotate(geom = "text", x = -18, y = 0.18, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.2,
+           color = NA, fill = "#2c3e50", alpha = 0.15) +
+  annotate(geom = "text", x = 18, y = 0.18, label = "Forecast", size = 3, fontface = 4) +
+  geom_hline(yintercept = 0.05, linetype = "dashed")
 
 ggsave("figure2-30day.png", plot = error_quant_30, width = 25, height = 20, units = "cm", bg = 'transparent')
 
@@ -935,49 +978,6 @@ error_dataset %>%
 
 
 
-
-#test
-```{r}
-
-error_dataset %>%
-  filter(location == "Japan") %>%
-  ggplot() +
-  #geom_point(aes(x =  as.Date(date),y = raw_freq, color = variant)) +
-  geom_point(aes(x = as.Date(date), y = pred_freq, color = variant)) +
-  facet_wrap(~model)+
-  theme_classic()
-
-
-testx = error_dataset %>%
-  filter(location == "United Kingdom")
-
-testx %>%
-  sum(is.na(testx$MAE))
-
-sum(is.na(testx$MAE))
-
-sapply(testx, function(x) sum(is.na(MAE)))
-
-
-
-error_dataset %>%                                    # Count NA by group
-  group_by(location) %>%
-  dplyr::summarize(count_non_na = sum(!is.na(MAE)),
-                   count_na = sum(is.na(MAE)))
-
-
-
-
-print("Position of missing values by column wise")
-sapply(error_dataset, function(x) which(is.na(x)))
-
-
-
-```
-
-
-
-
 #Figure 2B: different pivot dates error distribution at important lead time points
 
 
@@ -988,66 +988,190 @@ sapply(error_dataset, function(x) which(is.na(x)))
 lags = as_labeller(c("-30" = "-30 Lag", "0" = "0 Lag","30"= "30 Lag"))
 
 
-mae_dist = error_dataset %>%
-  filter(lead %in% c(0,30,-30)) %>%
-  filter(location == c("USA", "Japan")) %>%
-  group_by(lead, location, model) %>%
-  ggplot(aes(y = MAE, x = factor(model, levels = c("Naïve","Piantham","MLR","FGA","GARW")), color = model)) +
-  #geom_violin(lwd = 0.4,
-  #            trim=F, 
-  #           position = "dodge", 
-  #            alpha = 0.6,
-  #          draw_quantiles = c(.25, .75), 
-  #          show.legend = TRUE,
-  #          inherit.aes = TRUE)+
-  geom_beeswarm(aes(color= model), cex = 0.4, size = 1, alpha = 0.9,
-                priority = "density",
-                show.legend = T)+
-  geom_boxplot(outline=F, alpha = 0.6)+
-  #geom_quasirandom(method = 'quasirandom',alpha = 0.6, width = 0.1, inherit.aes = T, aes(fill=model))+
-  stat_summary(aes(x = factor(model), y = MAE,col = "Median"), fun= median,
-               geom = "crossbar", size = 0.3, alpha = 1, na.rm = TRUE, inherit.aes = FALSE)+
-  scale_colour_manual(
-    values = c("Median" = "black",
-                                 "Q3" = "black",
-                                 "Q1" = "black"),
-                       breaks = c('Median','Q3','Q1'))+
-    scale_colour_manual(name = "Model", 
-                    values = model_colors,
-                      breaks=c("Naïve", "Piantham", "MLR", "FGA",  "GARW"))+
-  #geom_dotplot(binaxis = "y", binwidth = 0.001, stackdir = "center")+
-    facet_wrap(~as.factor(lead), labeller = lags)+
-  labs(colour="", fill = "")+
-   geom_rangeframe(sides = "b", size = 0.5)+
-   coord_cartesian(clip="off", expand = FALSE) +
-  bbc_style()+
-    labs(y = "Mean Absolute Error" )+
-    theme(axis.title.x = element_blank(),
-          axis.title.y = element_text(color="Black", size=14),
-       panel.grid.major = element_line(),
-        #axis.line = element_line(colour = "black"),
-        panel.grid.major.y = element_blank(),
-        strip.text.x = element_text(size = 13),
-        legend.text = element_text(size = 12),
-        axis.text.x = element_text(size = 12, angle = 90, hjust = 1, vjust = 0.5),
-        axis.text.y = element_text(size = 12),
-        axis.ticks = element_line(), 
-        strip.text.y = element_text(size = 11),
-        plot.title = element_text(family = "Helvetica", size = (12)),
-        legend.position = "right",
-        legend.title = element_text(size = 12),
-       axis.ticks.length = unit(5, "pt"),
-       axis.line.y = element_line(color="black", size = 0.5),
-       axis.line.x = element_line(color="black", size = 0.4),
-       aspect.ratio = 1.5)+
- scale_alpha(guide = 'none')  +
-  scale_y_continuous(trans = log_trans(),
-                     labels = label_percent(),
-                     breaks = c(0.001,0.005,0.5,0.1, 1),
-                     limits = c(0.001,1.2)) +
+MAE_fig2_dat = error_dataset %>%
+  filter(lead %in% c(0, 30, -30)) %>%
+  group_by(lead, model)
+
+range(MAE_fig2_dat$MAE)
+
+mae_quant_data = error_dataset %>%
+  filter(lead %in% c(0, 30, -30)) %>%
+  group_by(lead, model) %>%
+  summarise(
+    quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+    quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+    quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
+    meanMAE = mean(MAE)
+  ) %>%
+  group_by(model, lead)
+
+#mae_dist = 
+
+# Function to create the combined plot
+create_combined_plot <- function(mae_quant_data, MAE_fig2_dat) {
+  ggplot() +
+    geom_boxplot(
+      data = mae_quant_data,
+      aes(
+        x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
+        color = model,
+        group = model,
+        y = quant50,
+        ymin = quant25,
+        ymax = quant75,
+        lower = quant25,
+        upper = quant75,
+        middle = quant50
+      ),
+      stat = "identity",
+      position = position_dodge(width = 0.75),
+      alpha = 0.6
+    ) +
+    geom_errorbar(
+      data = mae_quant_data,
+      aes(
+        x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
+        y = meanMAE,
+        ymin = meanMAE,
+        ymax = meanMAE,
+        linetype = "Mean"
+      ),
+      show.legend = TRUE,
+      width = 1,
+      size = 0.7,
+      alpha = 1
+    ) +
+    # Invisible line for separate legend
+    geom_line(data = mae_quant_data, aes(x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")), y = 0.2, linetype = "Median"), size = 0.5, show.legend = TRUE) +
+    scale_color_manual(
+      name = "Model",
+      values = model_colors,
+      breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")
+    ) +
+    scale_linetype_manual(
+      name = "Statistic",
+      values = c("Mean" = "dashed", "Median" = "solid"),
+      breaks = c("Mean", "Median")
+    ) +
+    facet_wrap(~as.factor(lead), labeller = lags) +
+    labs(colour = "", fill = "") +
+    geom_rangeframe(sides = "b", size = 0.5) +
+    coord_cartesian(clip = "off", expand = FALSE) +
+    bbc_style() +
+    labs(y = "Absolute Error") +
+    geom_beeswarm(
+      data = MAE_fig2_dat,
+      aes(
+        x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
+        color = model,
+        group = model,
+        y = MAE
+      ),
+      cex = 0.2,
+      size = 0.7,
+      alpha = 0.15,
+      groupOnX = T,
+      inherit.aes = FALSE
+    ) +
+    theme(
+      axis.title.x = element_blank(),
+      axis.title.y = element_text(color = "Black", size = 14),
+      panel.grid.major = element_line(),
+      panel.grid.major.y = element_blank(),
+      strip.text.x = element_text(size = 13),
+      legend.text = element_text(size = 12),
+      axis.text.x = element_text(size = 12, angle = 90, hjust = 1, vjust = 0.5),
+      axis.text.y = element_text(size = 12),
+      axis.ticks = element_line(),
+      strip.text.y = element_text(size = 11),
+      plot.title = element_text(family = "Helvetica", size = 12),
+      legend.position = "right",
+      legend.title = element_text(size = 12),
+      axis.line.y = element_line(color = "black", size = 0.5),
+      axis.line.x = element_line(color = "black", size = 0.4),
+      aspect.ratio = 1.5
+    ) +
+    scale_alpha(guide = 'none') +
+    scale_y_continuous(
+      trans = log_trans(),
+      breaks = c(0, 0.001, 0.005, 0.05, 0.1, 1),
+      labels = label_percent(),
+      limits = c(0.00001, 1),
+      expand = expansion(mult = c(0, 0.1))
+    ) +
+    geom_hline(yintercept = 0.05, linetype = "dashed")
+}
+
+
+
+
+# Create the combined plot
+figure_2B <- create_combined_plot(mae_quant_data, MAE_fig2_dat)
+figure_2B
+
+
+
+
+```
+
+
+
+```{R}
+
+error_dataset %>%
+  filter(lead %in% c(0, 30, -30)) %>%
+  group_by(lead, model) %>%
+  summarise(MAE = MAE,
+            quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
+            meanMAE = mean(MAE)) %>%
+  ggplot(aes(x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")), y = quant50, color = model)) +
+  geom_violin(width = 0.7, alpha = 0.6, position = position_dodge(width = 0.75)) +
+  #geom_errorbar(aes(y = quant50, ymin = quant25, ymax = quant75), 
+  #              width = 0.4, position = position_dodge(width = 0.75),
+  #              alpha = 0.6, color = "black") +
+  geom_errorbar(aes(y = meanMAE, ymin = meanMAE, ymax = meanMAE, linetype = "Mean"), 
+                show.legend = T, width = 1, size = 0.7, alpha = 1) +
+  scale_color_manual(
+    name = "Model",
+    values = model_colors,
+    breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")
+  ) +
+  facet_wrap(~as.factor(lead), labeller = lags) +
+  labs(colour = "", fill = "") +
+  geom_rangeframe(sides = "b", size = 0.5) +
+  coord_cartesian(clip = "off", expand = FALSE) +
+  bbc_style() +
+  labs(y = "Mean Absolute Error") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(color = "Black", size = 14),
+    panel.grid.major = element_line(),
+    panel.grid.major.y = element_blank(),
+    strip.text.x = element_text(size = 13),
+    legend.text = element_text(size = 12),
+    axis.text.x = element_text(size = 12, angle = 90, hjust = 1, vjust = 0.5),
+    axis.text.y = element_text(size = 12),
+    axis.ticks = element_line(),
+    strip.text.y = element_text(size = 11),
+    plot.title = element_text(family = "Helvetica", size = 12),
+    legend.position = "right",
+    legend.title = element_text(size = 12),
+    axis.ticks.length = unit(5, "pt"),
+    axis.line.y = element_line(color = "black", size = 0.5),
+    axis.line.x = element_line(color = "black", size = 0.4),
+    aspect.ratio = 1.5
+  ) +
+  scale_alpha(guide = 'none') +
+  scale_y_continuous(
+    trans = log_trans(),
+    labels = label_percent(),
+    breaks = c(0.001, 0.005, 0.5, 0.1, 1),
+    limits = c(0.001, 1.2)
+  ) +
   geom_hline(yintercept = 0.05, linetype = "dashed")
 
-mae_dist
 
 
 
@@ -1061,16 +1185,20 @@ ggsave("figure2B.png", plot = mae_dist, width = 25, height = 15, units = "cm", b
 
 ```{r}
 
-library(egg)
-library(cowplot)
+
+
+Figure_2A=  (med_log_error_30 + labs(title = element_text( "A",face = "bold"))) / (mae_nat_error_30 +labs(title = element_text( "A",face = "bold"))) 
 
 
 
-Figure_2 = ggpubr::ggarrange(error_quant_30, mae_dist, ncol = 1,
-                     labels = c("  A", "  B"), hjust=-0.8)
+Figure_2B = (figure_2B + labs(title = element_text( "C",face = "bold"))) +
+  plot_layout( guides = "collect" , ncol = 1) & theme(legend.position = "right") 
+             
+Figure_2= (Figure_2A + theme(plot.margin = unit(c(0,0,0,0), "pt")))  /(Figure_2B+ theme(plot.margin = unit(c(0,0,0,0), "pt")))
 
 
-ggsave("model_comp.png", plot = Figure_2, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+
+ggsave("model_comp.png", plot = Figure_2, width = 30, height = 40, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
 
 ```
 
@@ -1327,8 +1455,8 @@ ga_models = full_ga %>%
 
  # "Omicron 21A" ="#4272CE", "Omicron 21B" = "#006494", "Omicron 21C" ="#D95D39"
   scale_color_manual(values = variant_colorsga,
-                     labels = c("Clade 22A | BA.4","Clade 22B | BA.5", "Clade 22C | BA.2.12.1",
-                                "Clade 22D | BA.2.75", "Clade 22E | BQ.1", "Clade 23A | XBB.1.5"))+
+                     labels = c("22A | BA.4","22B | BA.5", "22C | BA.2.12.1",
+                                "22D | BA.2.75", "22E | BQ.1", "23A | XBB.1.5"))+
   scale_y_continuous(breaks = number_ticks(3))+
   
    #coord_cartesian(clip="off", expand = FALSE) +
@@ -2506,6 +2634,7 @@ correlation_plot("Japan")
 
 #median delay 
 med_del_corr = full_model_data %>%
+  mutate(median_delay = as.numeric(median_delay)) %>%
    #filter(lead==-1) %>%
   #group_by(location, pivot_date) %>%
   #summarise(median_delay = median(median_delay),
@@ -2531,6 +2660,7 @@ med_del_corr = full_model_data %>%
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
         legend.title = element_blank()) 
+
 
 ```
 
@@ -2578,7 +2708,7 @@ seq_avail_corr = full_model_data %>%
   #          meanMAE = median(meanMAE)) %>%
   ggplot(aes(x = seq_available+1, y = MAE, group = location, color = location))+
   geom_point(size = 2)+
-  stat_cor(method = "pearson", aes(x = seq_available+1, y = MAE), label.x = 3.5, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = seq_available+1, y = MAE), label.x = 2.5, inherit.aes = F)+
   theme_minimal()+
         labs( x = "Sequences Available at Observation ", y= "MAE")+
    scale_color_manual(values = loc_color_map)+
@@ -2651,7 +2781,7 @@ country_mae = full_model_data %>%
   #geom_point(size = 2)+
     geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
                 priority = "density",
-                show.legend = T)+
+                show.legend = T, groupOnX = T)+
   geom_boxplot(alpha = 0.3)+
   theme_minimal()+
   scale_color_manual(values = loc_color_map)+
@@ -2686,7 +2816,7 @@ qc_mae = full_model_data %>%
   #geom_point(size = 2)+
     geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
                 priority = "density",
-                show.legend = T)+
+                show.legend = T, groupOnX = T)+
   stat_cor(method = "pearson", aes(x = prop_qc_bad, y = MAE), label.x = 0.2, inherit.aes = F)+
   theme_minimal()+
   scale_color_manual(values = loc_color_map)+
@@ -2715,12 +2845,12 @@ qc_mae = full_model_data %>%
 #Figure 4: Final
 ```{r}
 
-Figure_4A = ggarrange(country_mae + rremove("ylab"),
+Figure_4A = ggpubr::ggarrange(country_mae + rremove("ylab"),
                       labels = c(" A"),
                       ncol = 1, nrow = 1)
 
 
-Figure_4 = ggarrange(qc_mae + rremove("ylab"), med_del_corr + rremove("ylab"), frac_seq_corr + rremove("ylab"),seq_avail_corr + rremove("ylab"),
+Figure_4b = ggpubr::ggarrange(qc_mae + rremove("ylab"), med_del_corr + rremove("ylab"), frac_seq_corr + rremove("ylab"),seq_avail_corr + rremove("ylab"),
                      ncol = 2, nrow = 2,
                      labels = c(" B", "C", "D" ,"E"), vjust=-0.8, 
                      hjust = -1,
@@ -2733,10 +2863,12 @@ Figure_4 = ggarrange(qc_mae + rremove("ylab"), med_del_corr + rremove("ylab"), f
 
 
 
-Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4), left = "Median Mean Absolute Error")
+Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4b), left = "Mean Absolute Error")
 
 
-ggsave("Figure4F.png", plot = Figure_4_full, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+
+
+ggsave("Var_of_interest.png", plot = Figure_4_full, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
 
 
 
@@ -3853,7 +3985,7 @@ ggsave("ga_var_US.png", plot = p1, width = 20, height = 20, units = "cm" )
 
 #Australia
 freq_plot_Aus = error_dataset %>%
-  #filter(lead > 0) %>% 
+  filter(lead > -30 & lead < 30) %>%
   filter(location =="Australia" &
            model =="MLR", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta" & variant != "Omicron 23A") %>%
@@ -3905,6 +4037,7 @@ freq_plot_Aus = error_dataset %>%
 #UK
 
 freq_plot_UK = error_dataset %>% 
+  filter(lead > -30 & lead < 30) %>%
   filter(location =="United Kingdom" &
            model =="MLR", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta") %>%
@@ -3957,6 +4090,7 @@ freq_plot_UK = error_dataset %>%
 # Brazil
 
 freq_plot_Br = error_dataset %>% 
+  filter(lead > -30 & lead < 30) %>%
   filter(location =="Brazil" &
            model =="MLR", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta") %>%
@@ -4008,6 +4142,7 @@ freq_plot_Br = error_dataset %>%
 #South Africa
 
 freq_plot_SA = error_dataset %>% 
+  filter(lead > -30 & lead < 30) %>%
   filter(location =="South Africa" &
            model =="MLR", na.rm= TRUE) %>%
   filter(variant != "other" & variant != "Delta") %>%
@@ -4683,9 +4818,7 @@ Figure_1B_SUPP=  (freq_plot_UK + labs(title = element_text( "B",face = "bold")))
   plot_layout( ncol = 1, nrow = 4) 
 
 
-Figure_1_SUPP= (Figure_1A_SUPP + theme(plot.margin = unit(c(0,20,50,0), "pt")))  /(Figure_1B_SUPP+ theme(plot.margin = unit(c(0,0,0,0), "pt")))+
-  plot_layout( guides = "collect" , ncol = 1) & theme(legend.position = "bottom") 
-  
+Figure_1_SUPP= (Figure_1A_SUPP + theme(plot.margin = unit(c(0,20,50,0), "pt")))  /(Figure_1B_SUPP+ theme(plot.margin = unit(c(0,0,0,0), "pt")))
 
 
 ggsave("dynamic_forecasting_env_supplementary.png", plot = Figure_1_SUPP, width = 40, height = 60, units = "cm", bg = 'transparent',  dpi = 600,  scale = 0.9)
