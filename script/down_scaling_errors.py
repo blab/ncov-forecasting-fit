@@ -199,20 +199,9 @@ OBS_DATES = [
     "2022-11-01",
     "2022-12-01",
 ]
-THRESES = [
-    100,
-    500,
-    1000,
-    1500,
-    2000,
-    2500,
-    3000,
-    3500,
-    4000,
-    4500,
-    5000,
-    1e10,
-]
+THRESES = [100, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000]
+
+NUM_SUBSAMPLES = 10
 TRUTHSET_PATH = "../data/down_scaled/truth/seq_counts_truth.tsv"
 EXPORT_PATH = "../errors/down_scaled_errors.tsv"
 
@@ -226,31 +215,32 @@ if __name__ == "__main__":
     # Compute error for each model and location
     for location in LOCATIONS:
         for thres in THRESES:
-            # filtering final_truth dataset to run location
-            location_truth = truth_set[truth_set["location"] == location]
-            for pivot_date in OBS_DATES:
-                filepath = (
-                    "../estimates/down_scaled/thresholding/"
-                    + f"{MODEL}/{location}/frequencies_{pivot_date}_{thres}.tsv"
-                )
+            for s_id in range(NUM_SUBSAMPLES):
+                # filtering final_truth dataset to run location
+                location_truth = truth_set[truth_set["location"] == location]
+                for pivot_date in OBS_DATES:
+                    filepath = (
+                        "../estimates/down_scaled/thresholding/"
+                        + f"{MODEL}/{location}/frequencies_{pivot_date}_{thres}_{s_id}.tsv"
+                    )
 
-                # Load data
-                raw_pred = load_data(filepath)
-                if raw_pred is None:
-                    continue
+                    # Load data
+                    raw_pred = load_data(filepath)
+                    if raw_pred is None:
+                        continue
 
-                # Merge predictions and truth set
-                merged = merge_truth_pred(raw_pred, location_truth)
+                    # Merge predictions and truth set
+                    merged = merge_truth_pred(raw_pred, location_truth)
 
-                # Make dataframe containing the errors
-                error_df = calculate_errors(
-                    merged, pivot_date, MODEL, location, thres
-                )
-                if error_df is None:
-                    continue
+                    # Make dataframe containing the errors
+                    error_df = calculate_errors(
+                        merged, pivot_date, MODEL, location, thres
+                    )
+                    if error_df is None:
+                        continue
 
-                score_df_list.append(error_df)
-
+                    error_df["id"] = s_id
+                    score_df_list.append(error_df)
     score_df = pd.concat(score_df_list)
 
     # save score output to a csv file
