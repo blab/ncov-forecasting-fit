@@ -1027,6 +1027,20 @@ create_combined_plot <- function(mae_quant_data, MAE_fig2_dat) {
       position = position_dodge(width = 0.75),
       alpha = 0.6
     ) +
+    geom_beeswarm(
+      data = MAE_fig2_dat,
+      aes(
+        x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
+        color = model,
+        group = model,
+        y = MAE
+      ),
+      cex = 0.2,
+      size = 0.7,
+      alpha = 0.15,
+      groupOnX = T,
+      inherit.aes = FALSE
+    )+
     geom_errorbar(
       data = mae_quant_data,
       aes(
@@ -1058,21 +1072,7 @@ create_combined_plot <- function(mae_quant_data, MAE_fig2_dat) {
     geom_rangeframe(sides = "b", size = 0.5) +
     coord_cartesian(clip = "off", expand = FALSE) +
     bbc_style() +
-    labs(y = "Absolute Error") +
-    geom_beeswarm(
-      data = MAE_fig2_dat,
-      aes(
-        x = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
-        color = model,
-        group = model,
-        y = MAE
-      ),
-      cex = 0.2,
-      size = 0.7,
-      alpha = 0.15,
-      groupOnX = T,
-      inherit.aes = FALSE
-    ) +
+    labs(y = "Absolute Error")  +
     theme(
       axis.title.x = element_blank(),
       axis.title.y = element_text(color = "Black", size = 14),
@@ -1098,8 +1098,8 @@ create_combined_plot <- function(mae_quant_data, MAE_fig2_dat) {
       labels = label_percent(),
       limits = c(0.00001, 1),
       expand = expansion(mult = c(0, 0.1))
-    ) +
-    geom_hline(yintercept = 0.05, linetype = "dashed")
+    ) #+
+    #geom_hline(yintercept = 0.05, linetype = "dashed")
 }
 
 
@@ -1212,98 +1212,123 @@ This plot shows the median RMSE error for each model, this provides a more detai
 
 ```{r}
 
-library(sjmisc)
-
 table1 = error_dataset %>%
-  #dplyr::rename(Location == location ) %>%
-  filter(lead %in% c(0,30,-30)) %>%
+  filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model, location) %>%
-  summarise(Median = median(MAE, na.rm = T)) %>%
-  mutate_if(is.numeric, round, digits=3) %>%
+  summarise(Median = median(MAE),
+            Mean = mean(MAE)) %>%
+  mutate_if(is.numeric, round, digits = 3) %>%
   setDT() %>%
-  pivot_wider(names_from= model, values_from = Median)
+  pivot_wider(names_from = model, values_from = c(Median, Mean)) %>% mutate(across(starts_with("Median_") | starts_with("Mean_"), 
+                ~ sprintf("%.1f%%", .*100)))
 
 
-
-table_1 = table1 %>%
+model_comp_table = table1 %>%
       mutate(lead = paste(lead, "Lead from date of estimation")) %>%
     group_by(lead)  %>%
   gt() %>%
+    tab_spanner(
+    label = "Median Absolute Error",
+    columns = c(Median_Naïve,Median_Piantham, Median_MLR, Median_FGA, Median_GARW)
+  ) %>%
+  tab_spanner(
+    label = "Mean Absolute Error",
+    columns = c(Mean_Naïve, Mean_Piantham, Mean_MLR, Mean_FGA, Mean_GARW)
+  ) %>%
+  tab_spanner(
+    label = "Models",
+    columns = c(Median_Naïve,Median_Piantham, Median_MLR, Median_FGA, Median_GARW,
+                Mean_Naïve, Mean_Piantham, Mean_MLR, Mean_FGA, Mean_GARW )
+  ) %>%
+  cols_label(
+    location = "Location",
+    Mean_FGA = "FGA",
+    Mean_GARW = "GARW",
+    Mean_MLR = "MLR",
+    Mean_Naïve = "Naïve",
+    Mean_Piantham = "Piantham",
+    Median_FGA = "FGA",
+    Median_GARW = "GARW",
+    Median_MLR = "MLR",
+    Median_Naïve = "Naïve",
+    Median_Piantham = "Piantham"
+  ) %>%
+
 #-30 LEAD
     tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR, Piantham), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR , Mean_FGA, Mean_GARW, Mean_MLR, Mean_Piantham), 
                                    rows = 1)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(GARW), 
+            locations = cells_body(columns= c(Median_Piantham, Median_MLR, Mean_MLR), 
                                    rows = 2)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Piantham), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_Piantham), 
                                    rows = 3)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(GARW), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW, Mean_FGA, Mean_GARW), 
                                    rows = 4)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(FGA, MLR), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_GARW), 
                                    rows = 5)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(GARW), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR,  Mean_FGA, Mean_GARW, Mean_MLR), 
                                    rows = 6)) %>%
   
 #0 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(FGA), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW,Mean_GARW ), 
                                    rows = 7)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR), 
+            locations = cells_body(columns= c(Median_MLR, Median_FGA, Median_GARW,Mean_GARW  ), 
                                    rows = 8)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR, GARW), 
+            locations = cells_body(columns= c(Median_MLR, Mean_MLR), 
                                    rows = 9)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(GARW), 
+            locations = cells_body(columns= c(Median_MLR, Median_GARW, Mean_MLR), 
                                    rows = 10)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR), 
+            locations = cells_body(columns= c(Median_GARW, Mean_FGA, Mean_GARW), 
                                    rows = 11)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(FGA), 
+            locations = cells_body(columns= c(Median_GARW, Mean_MLR), 
                                    rows = 12)) %>%
 #30 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR), 
+            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
                                    rows = 13)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW, Mean_FGA), 
                                    rows = 14)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(GARW), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW, Median_MLR, Mean_MLR), 
                                    rows = 15)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(GARW), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW, Median_MLR, Median_Piantham, Mean_MLR), 
                                    rows = 16)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Piantham), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW, Median_MLR, Mean_MLR), 
                                    rows = 17)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(MLR), 
+            locations = cells_body(columns= c(Median_MLR, Median_GARW, Mean_MLR), 
                                    rows = 18)) %>%
  gt_theme_guardian()%>%
   tab_options(
@@ -1313,31 +1338,22 @@ table_1 = table1 %>%
       table.border.top.color = "black",
       table_body.border.top.color = "black",
       table.font.size = px(14),
-      #table.layout = "auto",
+      table.layout = "auto",
       heading.background.color = "white",
       heading.border.bottom.color = "grey",
-      column_labels.border.top.color ="grey",
-      data_row.padding = px(7),
+      column_labels.border.top.color ="black",
+      data_row.padding = px(4),
       data_row.padding.horizontal = px(20),
       heading.padding = px(10)) %>%
     opt_align_table_header("center")%>%
-    tab_spanner(
-    label = "Models",
-    columns = c(Naïve,Piantham, MLR, FGA, GARW)) %>%
   #tab_header(title = md("Table 1. Model performance statistics (µ absolute error)"))  %>%
   tab_style(
       style = cell_text(color = "black", size = px(16), weight = 500),
       locations = list(cells_title(groups = "title")))
 
-table_1 %>%
-  gtsave(filename = "table1.png", expand = 10)
-
 
 
 ```
-
-
-
 
 
 
@@ -2642,7 +2658,8 @@ med_del_corr = full_model_data %>%
   ggplot(aes(x = median_delay, y = MAE, group = location, color = location))+
   geom_point(size = 2)+
    scale_color_manual(values = loc_color_map)+
-  stat_cor(method = "pearson", aes(x = median_delay, y = MAE), label.x = 65, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = median_delay, y = MAE), label.x = 65, inherit.aes = F,
+           cor.coef.name = "rho")+
   theme_minimal()+
         labs( x = "Median Submission Delay", y= "MAE")+
   theme(axis.title.x = element_text(color="Black", size=14),
@@ -2676,7 +2693,8 @@ frac_seq_corr = full_model_data %>%
    #         mean_nowcast_mae = median(meanMAE)) %>%
   ggplot(aes(x = frac_seq_avail, y = MAE, group = location, color = location))+
   geom_point(size = 2)+
-  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = MAE), label.x = 0.2, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = MAE), label.x = 0.2, inherit.aes = F,
+           cor.coef.name = "rho")+
   theme_minimal()+
    scale_color_manual(values = loc_color_map)+
         labs( x = "Fraction of Sequences at Observation", y= "MAE")+
@@ -2708,7 +2726,8 @@ seq_avail_corr = full_model_data %>%
   #          meanMAE = median(meanMAE)) %>%
   ggplot(aes(x = seq_available+1, y = MAE, group = location, color = location))+
   geom_point(size = 2)+
-  stat_cor(method = "pearson", aes(x = seq_available+1, y = MAE), label.x = 2.5, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = seq_available+1, y = MAE), label.x = 2.5, inherit.aes = F,
+           cor.coef.name = "rho")+
   theme_minimal()+
         labs( x = "Sequences Available at Observation ", y= "MAE")+
    scale_color_manual(values = loc_color_map)+
@@ -2817,7 +2836,8 @@ qc_mae = full_model_data %>%
     geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
                 priority = "density",
                 show.legend = T, groupOnX = T)+
-  stat_cor(method = "pearson", aes(x = prop_qc_bad, y = MAE), label.x = 0.2, inherit.aes = F)+
+  stat_cor(method = "pearson", aes(x = prop_qc_bad, y = MAE), label.x = 0.2, inherit.aes = F,
+           cor.coef.name = "rho")+
   theme_minimal()+
   scale_color_manual(values = loc_color_map)+
         labs( x = "Proportion of Bad QC sequences", y= "MAE")+
