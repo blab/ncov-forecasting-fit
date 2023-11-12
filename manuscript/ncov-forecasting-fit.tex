@@ -344,7 +344,6 @@ Though, we are able to see the overall utility of these methods for providing sh
 
 \paragraph{Preparing sequence counts and case counts}
 
-\jhc{Methods appear in present tense, but past tense would be appropriate.}
 We prepared sequence count datasets to replicate a live nowcasting environment using the Nextstrain-curated SARS-CoV-2 sequence metadata which is created using the GISAID database.
 For a given observation date, we filtered to all sequences which were collected 90 days before the observation date.
 To properly account for submission delays in this collection process, we additionally filtered to those sequences which were submitted before the observation day.
@@ -360,7 +359,6 @@ Each of these methods estimate variant frequencies over time and as well as esti
 
 The 4 models of interest are: Multinomial Logistic Regression (MLR), Piantham model \cite{piantham2021estimating}, a fixed growth advantage model (FGA)  \cite{figgins2022sars}, and a growth advantage random walk model (GARW)  \cite{figgins2022sars}.
 Details for each of these models can be found in the corresponding citations above.
-\jhc{Missing citations for models. Generally, the methods need a bit more description of how the different models work including how they are the same and how they differ.}
 
 We provide a brief mathematical overview of these methods below.
 
@@ -389,7 +387,7 @@ We compare the four models to a naive model which is implemented as a 7-day movi
 \paragraph{Evaluation Criteria}
 
 We evaluate the error between the model predicted frequencies and the truth set averaged across each variant at a given time point using the mean absolute error (MAE).
-
+%should MAE equation be moved here?
 \paragraph{Generating predictors of error}
 
 We explored four key variables to describe the effect of sequencing efforts on nowcast errors and found their Spearman correlations with the nowcast errors.
@@ -407,7 +405,7 @@ Using sequences from the United Kingdom, we subsampled existing sequences at a r
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
 We then compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
 
-To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a certain ``acceptable'' \jhc{maybe drop ``acceptable'' here, since the 5\% threshold is arbitrary.} error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lag times.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lag times.
 
 
 \section*{Data and code accessibility}

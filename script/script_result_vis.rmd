@@ -1261,7 +1261,7 @@ model_comp_table = table1 %>%
                                    rows = 1)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham, Median_MLR, Mean_MLR), 
+            locations = cells_body(columns= c(Median_Piantham, Median_MLR, Mean_FGA), 
                                    rows = 2)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
@@ -1308,7 +1308,7 @@ model_comp_table = table1 %>%
 #30 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
+            locations = cells_body(columns= c(Median_GARW, Mean_MLR), 
                                    rows = 13)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
@@ -1353,6 +1353,10 @@ model_comp_table = table1 %>%
 
 
 
+model_comp_table %>%
+  gtsave(filename = "model_comp_table.png", expand = 10, vwidth = 1500, vheight = 1200)
+
+library(webshot)
 ```
 
 
