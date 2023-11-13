@@ -163,16 +163,7 @@ Consistent with less available data, we observe that the model predictions for J
 
 \subsection*{Model error comparison}
 
-%%% model_comp_table %%%
-\begin{table}[tb!]
-	\centering
-	\caption{
-		\textbf{Mean absolute error}
-		The model with lowest error for each country / forecasting lag is bolded.
-		}
-	\includegraphics[width=1\textwidth]{figures/model_comp_table.png}
-	\label{table:model_comp_table}
-\end{table}
+
 
 %%% model_comp_fig %%%
 \begin{figure}[tb!]
@@ -185,6 +176,20 @@ Consistent with less available data, we observe that the model predictions for J
 	}
 	\label{fig:model_comp_fig}
 \end{figure}
+
+
+%%% model_comp_table %%%
+\begin{table}[tb!]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/model_comp_table.png}
+	\caption{
+		\textbf{Mean absolute error}
+		The percentages of median and mean absolute errors at three leads (-30, 0, and +30 days) for each model across 6 countries.
+		The values offer a detailed examination of forecast accuracy for these models, highlighting the models with the lowest errors at each forecasting lag, denoted in bold for clarity. 
+		}
+	
+	\label{table:model_comp_table}
+\end{table}
 
 We utilize five models for predicting the frequencies of SARS-CoV-2 variants in six countries (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
 The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
