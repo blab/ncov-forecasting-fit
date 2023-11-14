@@ -196,8 +196,7 @@ The simplest of these models is Multinomial Logistic Regression (MLR) commonly u
 More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant Rt model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to clade-specific sequence counts.
 The Piantham et al model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific Rt, but differs in model details.
 We compare these four models to a naive model to serve as a reference model for comparison.
-The naive model, implemented as a 7-day moving average on the retrospective raw frequencies, provides a straightforward baseline against which the forecasting performances of the more complex models can be evaluated. 
-Specifically, for each analysis date, the naive model considers the most recent seven days for which sequencing data is available.
+The naive model implemented as a 7-day moving average on the retrospective raw frequencies using the most recent seven days for which sequencing data is available.
 The use of multiple models that range in complexity allows for a comprehensive evaluation of the performance and robustness of different forecasting methods.
 We compare forecasting accuracy across different time lags from -30 days back from date of analysis to target hindcast date, to +0 days from date of analysis to target nowcast date, to +30 days forward from date of analysis to target forecast date.
 
