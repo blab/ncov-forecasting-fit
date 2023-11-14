@@ -118,7 +118,7 @@ Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} an
 Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
 We focus on variants dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
 We compare across several countries including Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States to assess genomic surveillance systems with different levels of throughput and timeliness.
-To assess the performance of these models, we used mean absolute error (MAE) as a metric to compare the predicted frequencies to retrospective truth.
+To assess the performance of these models, we used mean and median absolute error (AE) as a metric to compare the predicted frequencies to retrospective truth.
 This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
 We also examined a variety of variables that contribute to errors in these models and explored the role of sequence availability on nowcast and forecast errors through downsampling sequencing efforts for a sample location.
 
@@ -169,7 +169,7 @@ Consistent with less available data, we observe that the model predictions for J
 \begin{figure}[tb!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/model_comp.png}
-	\caption{\textbf{MAE estimates across models and countries.}
+	\caption{\textbf{AE estimates across models and countries.}
 	(A) Error increases as forecast target moves from hindcasting at -30 days to nowcasting at 0 days to forecasting at +30 days.
 	(B) Distribution of absolute error on a log scale across models and across forecasting lags.
 	This shows that most predictions have little error, while a small subset of predictions have large error.
@@ -212,10 +212,10 @@ We compare forecasting accuracy across different time lags from -30 days back fr
 
 
 
-Throughout the following discussion, we refer to the `mean absolute error` (MAE) for a given model $m$ and data set $d$ as the difference between the retrospective raw frequencies and the predicted frequencies as:
+Throughout the following discussion, we refer to the `absolute error` (AE) for a given model $m$ and data set $d$ as the difference between the retrospective raw frequencies and the predicted frequencies as:
 
 \begin{equation}
-    \mathrm{MAE}_{t}^{m,d} = \frac{1}{n} \sum_{v \in V} \left|f_{v}^{d}(t) - \hat{f}^{m,d}_{v}(t) \right|,
+    \mathrm{AE}_{t}^{m,d} = \frac{1}{n} \sum_{v \in V} \left|f_{v}^{d}(t) - \hat{f}^{m,d}_{v}(t) \right|,
 \end{equation}
 
 where $f_{v}^{d}(t)$ and $\hat{f}_{v}^{m,d}(t)$ are the retrospective frequencies and the predicted frequencies for model $m$, data  $d$, variant $v$, and time  $t$.
@@ -223,8 +223,8 @@ where $f_{v}^{d}(t)$ and $\hat{f}_{v}^{m,d}(t)$ are the retrospective frequencie
 Since we work with data sets that vary both in their location and date of forecast, we often work with the lead time which is defined as the difference between date of observation for the data set and the forecasted date: $l = t - T_{\text{obs}}$.
 This enables of us to compare forecasts at different dates within a location.
 
-We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error (MAE) and median absolute error to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
-The model with the lowest mean MAE error for each country is highlighted.
+We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error and median absolute error to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
+The model with the lowest mean absolute error error for each country is highlighted.
 As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
 For example, median absolute error increases for the MLR model from 0.1\%--1\% at -30 days to 0.3\%--1.4\% at 0 days, and to 0.4\%--1.4\% at +30 days.
 While mean absolute error increases for the MLR model from 0.4\%--2.3\% at -30 days to 2.2\%--5.7\% at 0 days, and to 5.8\%--9.6\% at +30 days.
@@ -262,12 +262,12 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
     \includegraphics[width=0.85\textwidth]{figures/Var_of_interest.png}
 	\caption{
 		\textbf{Sequence quantity and quality influence nowcasts error}
-    (A) MAE at nowcast for the MLR model across countries.
+    (A) Mean absolute error at nowcast for the MLR model across countries.
 		% \tbc{Yes, this was +30 day forecast for the MLR model?}
     \tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
-    \mfc{Points here are as in Figure 2B and represent the MAE absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
+    \mfc{Points here are as in Figure 2B and represent the mean absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
 		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
-		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting MAE.
+		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting mean absolute error.
     Correlation strength and significance are calculated via Spearman rank and are inset in each panel.
 	}
 	\label{fig:vars_of_interest}
@@ -275,7 +275,7 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
 We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
-Using Spearman rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with MAE (Fig.~\ref{fig:vars_of_interest}B).
+Using Spearman rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
 We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with MAE (Fig.~\ref{fig:vars_of_interest}E).
 
 \begin{figure}[tb!]
@@ -408,7 +408,7 @@ We compare the four models to a naive model which is implemented as a 7-day movi
 
 \paragraph{Evaluation Criteria}
 
-We evaluate the error between the model predicted frequencies and the truth set averaged across each variant at a given time point using the mean absolute error (MAE).
+We evaluate the error between the model predicted frequencies and the truth set averaged across each variant at a given time point using the mean absolute error and median absolute error.
 %should MAE equation be moved here?
 \paragraph{Generating predictors of error}
 
@@ -427,7 +427,7 @@ Using sequences from the United Kingdom, we subsampled existing sequences at a r
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
 We then compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
 
-To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a error tolerance (5\% MAE) as well as the average error at difference sequence threshold and lag times.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a error tolerance (5\% AE) as well as the average error at difference sequence threshold and lag times.
 
 
 \section*{Data and code accessibility}
