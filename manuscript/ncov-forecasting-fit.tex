@@ -178,18 +178,6 @@ Consistent with less available data, we observe that the model predictions for J
 \end{figure}
 
 
-%%% model_comp_table %%%
-\begin{table}[tb!]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/model_comp_table.png}
-	\caption{
-		\textbf{Mean absolute error}
-		The percentages of median and mean absolute errors at three leads (-30, 0, and +30 days) for each model across 6 countries.
-		The values offer a detailed examination of forecast accuracy for these models, highlighting the models with the lowest errors at each forecasting lag, denoted in bold for clarity. 
-		}
-	
-	\label{table:model_comp_table}
-\end{table}
 
 We utilize five models for predicting the frequencies of SARS-CoV-2 variants in six countries (Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States).
 The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
@@ -207,6 +195,23 @@ We compare forecasting accuracy across different time lags from -30 days back fr
 % where $f$ represents retrospective frequency and $\hat{f}$ represents the prospective predicted frequency.
 % We summarize these AE values across different models, different datasets and different lags either via taking mean AE or taking median AE.
 
+%%% model_comp_table %%%
+\begin{table}[tb!]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/model_comp_table.png}
+	\caption{
+		\textbf{Mean and median absolute error}
+		The percentages of median and mean absolute errors at three leads (-30, 0, and +30 days) for each model across 6 countries.
+		The values offer a detailed examination of forecast accuracy for these models, highlighting the models with the lowest errors at each forecasting lag, denoted in bold for clarity. 
+		}
+	
+	\label{table:model_comp_table}
+\end{table}
+
+
+
+
+
 Throughout the following discussion, we refer to the `mean absolute error` (MAE) for a given model $m$ and data set $d$ as the difference between the retrospective raw frequencies and the predicted frequencies as:
 
 \begin{equation}
@@ -218,18 +223,22 @@ where $f_{v}^{d}(t)$ and $\hat{f}_{v}^{m,d}(t)$ are the retrospective frequencie
 Since we work with data sets that vary both in their location and date of forecast, we often work with the lead time which is defined as the difference between date of observation for the data set and the forecasted date: $l = t - T_{\text{obs}}$.
 This enables of us to compare forecasts at different dates within a location.
 
-We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error (MAE) to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
+We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error (MAE) and median absolute error to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
 The model with the lowest mean MAE error for each country is highlighted.
 As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
-For example, error increases for the MLR model from 0.1\%--1\% MAE at -30 days to 0.3\%--1.4\% MAE at 0 days, and to 0.4\%--1.4\% MAE at +30 days.
-All four forecasting models perform better than the naive model, with MLR and the variant Rt models FGA and GARW performing slightly better than the Panthiam variant Rt model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% MAE compared to Panthiam.
-Similar results are apparent when examining MAE as a continuous progression from -30 days to +30 days (Fig.~\ref{fig:model_comp_fig}A).
+For example, median absolute error increases for the MLR model from 0.1\%--1\% at -30 days to 0.3\%--1.4\% at 0 days, and to 0.4\%--1.4\% at +30 days.
+While mean absolute error increases for the MLR model from 0.4\%--2.3\% at -30 days to 2.2\%--5.7\% at 0 days, and to 5.8\%--9.6\% at +30 days.
+All four forecasting models perform better than the naive model, with MLR and the variant Rt models FGA and GARW performing slightly better than the Piantham variant Rt model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% median absolute error compared to Piantham.
+MLR perform best in +30 lead with lowest mean absolute errors shown in all coutries with the exception of Brazil where FGA performed better by 0.4\%. 
+Similar results are apparent when examining median and mean absolute error as a continuous progression from -30 days to +30 days (Fig.~\ref{fig:model_comp_fig}A, ~\ref{fig:model_comp_fig}B ).
 
 Absolute error varies across predictions for individual analysis dates and variants.
 Its distribution is heterogeneous with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_fig}B)
-Here we use a 5\% absolute error threshold to classify an acceptable prediction vs unacceptable prediction (shown as dashed line).
-At +30 days forecast lag we find that the Panthiam model has X\%, the MLE model has X\%, the FGA model has X\% and the GARW model has X\% of forecasts with error above this threshold.
+Here we use a 5\% absolute error threshold to classify an acceptable prediction vs unacceptable prediction (shown as dashed line) in both mean and median absolute error calculations.
+At +30 days forecast lag we find that the Piantham model has X\%, the MLE model has X\%, the FGA model has X\% and the GARW model has X\% of forecasts with error above this threshold.
 This supports previous observation of similar performance across MLR and the FGA and GARW parameterizations of the variant Rt model.
+
+
 
 In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants when sequence count data is rare.
 We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across by analysis date (Fig.~\ref{fig:ga_estimates}).
@@ -266,7 +275,7 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
 We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
-Using Spearman rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates moderately with MAE (Fig.~\ref{fig:vars_of_interest}B).
+Using Spearman rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with MAE (Fig.~\ref{fig:vars_of_interest}B).
 We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with MAE (Fig.~\ref{fig:vars_of_interest}E).
 
 \begin{figure}[tb!]
