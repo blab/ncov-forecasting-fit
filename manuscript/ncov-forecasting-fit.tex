@@ -268,14 +268,14 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
     \mfc{Points here are as in Figure 2B and represent the mean absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
 		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
 		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting mean absolute error.
-    Correlation strength and significance are calculated via Spearman rank and are inset in each panel.
+    Correlation strength and significance are calculated via Pearson rank and are inset in each panel.
 	}
 	\label{fig:vars_of_interest}
 \end{figure}
 
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
 We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
-Using Spearman rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
+Using Pearson rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
 We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with MAE (Fig.~\ref{fig:vars_of_interest}E).
 
 \begin{figure}[tb!]
@@ -412,9 +412,13 @@ We evaluate the error between the model predicted frequencies and the truth set 
 %should MAE equation be moved here?
 \paragraph{Generating predictors of error}
 
-We explored four key variables to describe the effect of sequencing efforts on nowcast errors and found their Spearman correlations with the nowcast errors.
-These variables are defined as fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time, median delay of sequence submission, and lag time from prediction day subsequently for each location (Figure~\ref{fig:vars_of_interest}).
-To calculate these variables, we selected a 14-day window of data before each and every observation date and used the collection and submission dates to determine their availability in addition to the period of discrepancy between the collection and submission for each country.
+We explored four key variables to describe the effect of sequencing efforts on nowcast errors and estimated Pearson correlations with the mean absolute nowcast errors.
+These variables are defined as proportion of bad quality control (QC) sequences, fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time, median delay of sequence submission (Figure~\ref{fig:vars_of_interest} B-E).
+To calculate these variables, we selected a 14-day window of data before each and every observation date and used the collection and submission dates to determine their availability.
+Total sequence availability was calculated by dividing the sequences where submission date was before the date of analysis by the total collected sequencies and similarily fraction of sequences at observation was estimated. 
+Sequence submission delay was calculated by taking the difference between the submission date and the date of collection.
+Bad QC sequence proportion was estimated by dividing the sequences with bad Nextstrain classification by the total collected sequences.  
+All estimates were run for all defined dates of analyses across all countries. 
 All variables were calculated using Rstudio statistical software \cite{Rstudio2022}
 
 
