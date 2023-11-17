@@ -89,8 +89,8 @@ These models provide estimates of variant fitness and can be used to forecast ch
 We introduce a framework for evaluating real-time forecasts of variant frequencies, and apply this framework to the evolution of SARS-CoV-2 during 2022 in which multiple new viral variants emerged and rapidly spread through the population.
 We compare models across representative countries with different intensities of genomic surveillance.
 Retrospective assessment of model accuracy highlights that most models of variant frequency perform well and are able to produce reasonable forecasts.
-We find that the simple MLR model provides less than 1\% mean absolute error when forecasting 30 days out for countries with robust genomic surveillence.
-We investigate impacts of sequence quantity and quality across countries on forecast accuracy and conduct systematically downsampling to identify that 1000 sequences per week is fully sufficient for accurate short-term forecasts.
+We find that the simple MLR model provides less than 1\% mean absolute error when forecasting 30 days out for countries with robust genomic surveillance.
+We investigate impacts of sequence quantity and quality across countries on forecast accuracy and conduct systematic downsampling to identify that 1000 sequences per week is fully sufficient for accurate short-term forecasts.
 We conclude that fitness models represent a useful prognostic tool for short-term evolutionary forecasting.
 
 \end{abstract}
@@ -116,7 +116,7 @@ Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} an
 
 % Broad overview of approach
 Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
-We focus on variants dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
+We focus on variant dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
 We compare across several countries including Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States to assess genomic surveillance systems with different levels of throughput and timeliness.
 To assess the performance of these models, we used mean and median absolute error (AE) as a metric to compare the predicted frequencies to retrospective truth.
 This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
@@ -163,13 +163,10 @@ Consistent with less available data, we observe that the model predictions for J
 
 \subsection*{Model error comparison}
 
-
-
-%%% model_comp_fig %%%
 \begin{figure}[tb!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/model_comp.png}
-	\caption{\textbf{AE estimates across models and countries.}
+	\caption{\textbf{Absolute error estimates across models and countries.}
 	(A) Error increases as forecast target moves from hindcasting at -30 days to nowcasting at 0 days to forecasting at +30 days.
 	(B) Distribution of absolute error on a log scale across models and across forecasting lags.
 	This shows that most predictions have little error, while a small subset of predictions have large error.
@@ -208,10 +205,6 @@ We compare forecasting accuracy across different time lags from -30 days back fr
 	\label{table:model_comp_table}
 \end{table}
 
-
-
-
-
 Throughout the following discussion, we refer to the `absolute error` (AE) for a given model $m$ and data set $d$ as the difference between the retrospective raw frequencies and the predicted frequencies as:
 
 \begin{equation}
@@ -224,7 +217,7 @@ Since we work with data sets that vary both in their location and date of foreca
 This enables of us to compare forecasts at different dates within a location.
 
 We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error and median absolute error to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
-The model with the lowest mean absolute error error for each country is highlighted.
+The model with the lowest mean absolute error for each country is highlighted.
 As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
 For example, median absolute error increases for the MLR model from 0.1\%--1\% at -30 days to 0.3\%--1.4\% at 0 days, and to 0.4\%--1.4\% at +30 days.
 While mean absolute error increases for the MLR model from 0.4\%--2.3\% at -30 days to 2.2\%--5.7\% at 0 days, and to 5.8\%--9.6\% at +30 days.
@@ -264,8 +257,8 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 		\textbf{Sequence quantity and quality influence nowcasts error}
     (A) Mean absolute error at nowcast for the MLR model across countries.
 		% \tbc{Yes, this was +30 day forecast for the MLR model?}
-    \tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
-    \mfc{Points here are as in Figure 2B and represent the mean absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
+    %\tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
+    %\mfc{Points here are as in Figure 2B and represent the mean absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
 		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
 		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting mean absolute error.
     Correlation strength and significance are calculated via Pearson rank and are inset in each panel.
@@ -276,32 +269,34 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
 We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
 Using Pearson rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
-We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with MAE (Fig.~\ref{fig:vars_of_interest}E).
+We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with mean absolute error (Fig.~\ref{fig:vars_of_interest}E).
 
 \begin{figure}[tb!]
     \centering
     \includegraphics[width=1.0\linewidth]{figures/downscaling_sequencing.png}
     \caption{
-			\textbf{Sequencing intensity reduces forecast error}
+			\textbf{Increasing sequencing intensity reduces forecast error}
     	(A) Mean sequences collected per week for selected countries in 2022.
-			Error bars denote 95\% confidence intervals of the mean.
+			Intervals are 95\% confidence intervals of the mean.
 			Dashed lines correspond to sampling rates used in (B-E).
-    	(B, C) Average MAE as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
+    	(B, C) Mean absolute error as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
 			The dash line corresponds to 5\% frequency error.
     	(D, E) Proportion of forecasts within 5\% of retrospective frequency as a function of sequences collected for week for the United Kingdom and Denmark.
   	}
     \label{fig:downscaling}
 \end{figure}
 
-As suggested by these correlations across countries and timepoints, we expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
-In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sequences from the United Kingdom.
-For context, we also compute the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
-We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error.
-We simulate several downscaled data sets by subsampling the collected sequences in the United Kingdom at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
+As suggested by these correlations across countries and time points, we expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
+In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsampled existing sequences from the United Kingdom and Denmark.
+For context, we also computed the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
+We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error. 
+Additionally, we include Denmark due to its large counts of available sequences and to explore the possibility of stochastic effect due to within country epidemic differences.
+We simulate several downscaled data sets by subsampling the collected sequences at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
+In order to properly account for variability in the subsampled data sets, we generate 5 subsamples per threshold, location, and analysis date.
+
 From this analysis, we find that increasing the number of sequences per week generally decreases the average error, but there are diminishing returns (Fig.~\ref{fig:downscaling}B,D).
 Additionally, the effect appears to saturate at different values depending on the forecast length.
 We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is sufficient to minimize forecast error.
-In this analysis we compare the UK to Denmark to explore the difference between paucity of data and stochastic noise due to smaller epidemic size.
 However, we arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark  (Fig.~\ref{fig:downscaling}B-E).
 
 %%% DISCUSSION %%%
@@ -312,11 +307,12 @@ However, we arrive at a similar threshold of 1000 sequences per week for both th
 % Discussion: Include discussion of MLR vs FGA vs GARW vs Piantham (Table 1, Figure 2)
 % Discussion: Include error vs lag (Table 1, Figure 2)
 
-By developing a framework for comparing models of SARS-CoV-2 variant frequency and their forecasts, we find that most models of variant frequency perform well and are able to produce reasonable \jhc{how reasonable?} forecasts.
+By developing a framework for comparing models of SARS-CoV-2 variant frequency and their forecasts, we find that most models of variant frequency perform well and are able to produce reasonable forecasts (within 5\% median absolute error).
 However, we find that naive models such as a 7-day moving average may not perform well due to the live nature of sequencing efforts e.g. delays between collection and availability of new samples.
 Overall, it appears that differences in model accuracy are partially attributable to differences in the surveillance and sequencing efforts.
 
 Consistent with evidence from SARS-CoV-2 time series forecasting analysis \cite{cramer2022unitedforecastinghub}, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
+
 These long-term forecasts also appear to have heavier tails which indicate increase in extreme values and may be attributable to model break down or the emergence of new variants.
 
 % Discussion: Include discussion of improvement over naive (Table 1, Figure 2)
@@ -329,22 +325,18 @@ However, our analysis of the naive model reveals a substantial discrepancy betwe
 Importantly, we find that the multinomial logistic regression model (MLR) provides an improvement in accuracy over the naive model for Australia, Brazil, Japan, and South Africa.
 
 % Discussion: We believe the primary source of error is difficulty dealing with the emergence of new variants (Figure 3)
-
-From our analysis of transmission dynamics, we find that it takes a shorter amount of time for different variant clades to stabilize in countries with more robust sequencing efforts.
-\jhc{The previous sentence seems to conflate demographics with sequencing capacity.}
-Our analysis also suggests that the variability between different countries' growth advantage estimates for different clades may not necessarily be biological but due to data limitations that we show here.
-\jhc{What results in the paper support the previous sentence? I don't see where you quantified each country's sequencing capacity and compared that directly to variation in GA.}
-We find that at higher frequencies the growth advantage estimates for the clades begin to stabilize though the frequency at which this begins to occur appears to differ by country.
-
-\jhc{Why isn't the following hypothesis the first one to consider instead of sequencing capacity?}
-Though our analyses highlight the role of sequencing effort and intensity in reducing forecast error, it is important to note that non-sequencing heterogeneity through the transmission process and pathogen evolution may also explain error.
-This could explain why South Africa did not show stabilization in growth advantages due to potentially differing variant dynamics or differences in the sequences effort itself.
-
 % Discussion: Importance of both sequence quantity and sequence quality to forecast accuracy (Figure 4)
 % Discussion: Diminishing returns to increasing sequencing capacity (Figure 5)
 
-We find that there are diminishing returns to increasing sequencing efforts however maintaining consistent sequencing efforts for pathogen surveillance can be done with 1,000-2,000 sequences per week.
-\jhc{I see what you're trying to say in the previous sentence, but you might try rephrasing. For example ``maintaining consistent sequencing efforts'' isn't the outcome you get by collecting 1000 sequences; instead you get consistent nowcasting and forecasting estimates.}
+Our analysis also suggests that the variability between frequency estimates and forecast errors for different clades may not necessarily be entirely biological or epidemiology but also due to data limitations that we show here.
+Analyzing the variation in nowcast and forecast error, we find that overall sequence quality and quantity at time of analysis are associated with nowcast accuracy.
+This further supports the idea that high quality sequencing, high intensity sequencing, and quick submission of sequences are useful for providing high accuracy, real-time estimates of variant fitness and frequency.
+Despite there being high potential for increased nowcast and forecast error at variant emergence, there is still potential for improved short-term forecasts with a high-quality sequencing effort.
+
+Though our analyses highlight the role of sequencing effort and intensity in reducing forecast error, it is important to note that non-sequencing heterogeneity through the transmission process and pathogen evolution may also explain error.
+This could explain why South Africa did not show stabilization in growth advantages due to potentially differing variant dynamics or differences in the sequences effort itself.
+
+Subsampling existing data in high sequencing intensity countries, we find that there are diminishing returns to increasing sequencing efforts however maintaining consistent forecasts for variant frequencies can be done with around 1,000 sequences per week.
 This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
 Though, we are able to see the overall utility of these methods for providing short-term forecasts, we additionally find that no matter how many sequences are obtained some forecast error is maintained with standard methods for frequency forecasts.
 
@@ -353,13 +345,8 @@ Though, we are able to see the overall utility of these methods for providing sh
 % Discussion: Future modeling work should seek to expand forecasting horizon by incorporating experimental data or otherwise estimating biological impact of future mutations
 
 It is important to point out the limitations of these models. 
-While we find simple growth advantage models, such as Multinomial Logistic Regression (MLR), provide robust short-term forecasts.
-These models do not inherently account for mutations leading to limitations in forecasting horizon. 
-To improve future modeling work, we suggest incorporating experimental data otherwise estimating biological impact of future mutations to expand forecasting horizon. 
-
-
-
-
+While we find simple growth advantage models, such as Multinomial Logistic Regression (MLR), provide robust short-term forecasts, these models do not inherently account for potential mutations and their fitness effects leading to limitations in the effective forecasting horizon. 
+To improve future modeling work, we suggest incorporating experimental data to inform fitness change in time including estimating biological impact of future mutations to expand effective forecasting horizon. 
 
 %%% METHODS %%%
 \section*{Methods}
@@ -418,7 +405,7 @@ To calculate these variables, we selected a 14-day window of data before each an
 Total sequence availability was calculated by dividing the sequences where submission date was before the date of analysis by the total collected sequencies and similarily fraction of sequences at observation was estimated. 
 Sequence submission delay was calculated by taking the difference between the submission date and the date of collection.
 Bad QC sequence proportion was estimated by dividing the sequences with bad Nextstrain classification by the total collected sequences.  
-All estimates were run for all defined dates of analyses across all countries. 
+All estimates were run for all defined dates of analysis across all countries. 
 All variables were calculated using Rstudio statistical software \cite{Rstudio2022}
 
 
@@ -428,22 +415,15 @@ All variables were calculated using Rstudio statistical software \cite{Rstudio20
 \paragraph{Downscaling historical sequencing effort}
 
 We explored the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
-Using sequences from the United Kingdom, we subsampled existing sequences at a rate of 100, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 sequences per week at various \jhc{which?} observation dates throughout the pandemic.
-We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
-We then compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
-
-To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a error tolerance (5\% AE) as well as the average error at difference sequence threshold and lag times.
+Using the sequencing data from the United Kingdom and Denmark, we subsampled existing available sequences at the time of analysis at a rate of 100, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, and 2000 sequences per week for the same observation dates and study period used in the previous analyses, generating 5 subsampled data sets for each sequencing rate, location, and analysis date.
+We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date and compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within an error tolerance (5\% AE) as well as the average error at different sequence threshold and lag times.
 
 
 \section*{Data and code accessibility}
 
-Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated
-dataset that pulls data from GISAID database \jhc{Create a GISAID DOI or acknowledgements table for all of the distinct sequences you used in this analysis. They provide a tool now to simplify the DOI creation.}.
-
-
-Derived data of sequence counts and case counts, along with all source code used to analyze
-this data and produce figures is available via the GitHub repository https://github.com/blab/ncov-forecasting-fit
-
+Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated dataset that pulls data from GISAID database. 
+A full list of sequences analyzed with accession numbers, derived data of sequence counts and case counts, along with all source code used to analyze this data and produce figures is available via the GitHub repository https://github.com/blab/ncov-forecasting-fit.
 
 %%% REFERENCES %%%
 \bibliographystyle{plos}
