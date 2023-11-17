@@ -282,9 +282,9 @@ We find that good sequence quantity as measured by total sequences available at 
     \centering
     \includegraphics[width=1.0\linewidth]{figures/downscaling_sequencing.png}
     \caption{
-			\textbf{Sequencing intensity reduces forecast error}
+			\textbf{Increasing sequencing intensity reduces forecast error}
     	(A) Mean sequences collected per week for selected countries in 2022.
-			Error bars denote 95\% confidence intervals of the mean.
+			Intervals are 95\% confidence intervals of the mean.
 			Dashed lines correspond to sampling rates used in (B-E).
     	(B, C) Average MAE as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
 			The dash line corresponds to 5\% frequency error.
@@ -293,15 +293,17 @@ We find that good sequence quantity as measured by total sequences available at 
     \label{fig:downscaling}
 \end{figure}
 
-As suggested by these correlations across countries and timepoints, we expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
-In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsample existing sequences from the United Kingdom.
-For context, we also compute the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
+As suggested by these correlations across countries and time points, we expect that as sequencing intensity decreases, our accuracy in forecasting may vary as we have decreasing levels of resolution in current variant frequencies and estimated growth advantages.
+In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsampled existing sequences from the United Kingdom and Denmark.
+For context, we also computed the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
 We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error.
-We simulate several downscaled data sets by subsampling the collected sequences in the United Kingdom at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
+We simulate several downscaled data sets by subsampling the collected sequences at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
+In order to properly account for variability in the subsampled data sets, we generate 5 subsamples per threshold, location, and analysis date.
+
 From this analysis, we find that increasing the number of sequences per week generally decreases the average error, but there are diminishing returns (Fig.~\ref{fig:downscaling}B,D).
 Additionally, the effect appears to saturate at different values depending on the forecast length.
 We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is sufficient to minimize forecast error.
-In this analysis we compare the UK to Denmark to explore the difference between paucity of data and stochastic noise due to smaller epidemic size.
+In this analysis, we compare the UK to Denmark to explore the difference between paucity of data and stochastic noise due to smaller epidemic size.
 However, we arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark  (Fig.~\ref{fig:downscaling}B-E).
 
 %%% DISCUSSION %%%
@@ -343,8 +345,10 @@ This could explain why South Africa did not show stabilization in growth advanta
 % Discussion: Importance of both sequence quantity and sequence quality to forecast accuracy (Figure 4)
 % Discussion: Diminishing returns to increasing sequencing capacity (Figure 5)
 
-We find that there are diminishing returns to increasing sequencing efforts however maintaining consistent sequencing efforts for pathogen surveillance can be done with 1,000-2,000 sequences per week.
-\jhc{I see what you're trying to say in the previous sentence, but you might try rephrasing. For example ``maintaining consistent sequencing efforts'' isn't the outcome you get by collecting 1000 sequences; instead you get consistent nowcasting and forecasting estimates.}
+Analyzing the variation in nowcast and forecast error, we find that overall sequence quality and quantity at time of analysis are associated with nowcast accuracy.
+This further supports the idea that high quality sequencing, high intensity sequencing, and quick submission of sequences are useful for providing high accuracy, real-time estimates of variant fitness and frequency.
+
+Subsampling existing data in high sequencing intensity countries, we find that there are diminishing returns to increasing sequencing efforts however maintaining consistent forecasts for variant frequencies can be done with around 1,000 sequences per week.
 This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
 Though, we are able to see the overall utility of these methods for providing short-term forecasts, we additionally find that no matter how many sequences are obtained some forecast error is maintained with standard methods for frequency forecasts.
 
@@ -353,13 +357,8 @@ Though, we are able to see the overall utility of these methods for providing sh
 % Discussion: Future modeling work should seek to expand forecasting horizon by incorporating experimental data or otherwise estimating biological impact of future mutations
 
 It is important to point out the limitations of these models. 
-While we find simple growth advantage models, such as Multinomial Logistic Regression (MLR), provide robust short-term forecasts.
-These models do not inherently account for mutations leading to limitations in forecasting horizon. 
-To improve future modeling work, we suggest incorporating experimental data otherwise estimating biological impact of future mutations to expand forecasting horizon. 
-
-
-
-
+While we find simple growth advantage models, such as Multinomial Logistic Regression (MLR), provide robust short-term forecasts, these models do not inherently account for potential mutations and their fitness effects leading to limitations in the effective forecasting horizon. 
+To improve future modeling work, we suggest incorporating experimental data to inform fitness change in time including estimating biological impact of future mutations to expand effective forecasting horizon. 
 
 %%% METHODS %%%
 \section*{Methods}
@@ -428,22 +427,17 @@ All variables were calculated using Rstudio statistical software \cite{Rstudio20
 \paragraph{Downscaling historical sequencing effort}
 
 We explored the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
-Using sequences from the United Kingdom, we subsampled existing sequences at a rate of 100, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 sequences per week at various \jhc{which?} observation dates throughout the pandemic.
-We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date.
-We then compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
-
-To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within a error tolerance (5\% AE) as well as the average error at difference sequence threshold and lag times.
+Using the sequencing data from the United Kingdom and Denmark, we subsampled existing available sequences at the time of analysis at a rate of 100, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, and 2000 sequences per week for the same observation dates and study period used in the previous analyses, generating 5 subsampled data sets for each sequencing rate, location, and analysis date.
+We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after observation date and compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within an error tolerance (5\% AE) as well as the average error at different sequence threshold and lag times.
 
 
 \section*{Data and code accessibility}
 
 Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated
-dataset that pulls data from GISAID database \jhc{Create a GISAID DOI or acknowledgements table for all of the distinct sequences you used in this analysis. They provide a tool now to simplify the DOI creation.}.
-
-
-Derived data of sequence counts and case counts, along with all source code used to analyze
+dataset that pulls data from GISAID database. 
+A full list of sequences analyzed with accession numbers, derived data of sequence counts and case counts, along with all source code used to analyze
 this data and produce figures is available via the GitHub repository https://github.com/blab/ncov-forecasting-fit
-
 
 %%% REFERENCES %%%
 \bibliographystyle{plos}
