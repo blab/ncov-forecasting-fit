@@ -116,7 +116,7 @@ Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} an
 
 % Broad overview of approach
 Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
-We focus on variants dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
+We focus on variant dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
 We compare across several countries including Australia, Brazil, Japan, South Africa, the United Kingdom, and the United States to assess genomic surveillance systems with different levels of throughput and timeliness.
 To assess the performance of these models, we used mean and median absolute error (AE) as a metric to compare the predicted frequencies to retrospective truth.
 This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 circulating variants trends.
@@ -163,13 +163,10 @@ Consistent with less available data, we observe that the model predictions for J
 
 \subsection*{Model error comparison}
 
-
-
-%%% model_comp_fig %%%
 \begin{figure}[tb!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/model_comp.png}
-	\caption{\textbf{AE estimates across models and countries.}
+	\caption{\textbf{Absolute error estimates across models and countries.}
 	(A) Error increases as forecast target moves from hindcasting at -30 days to nowcasting at 0 days to forecasting at +30 days.
 	(B) Distribution of absolute error on a log scale across models and across forecasting lags.
 	This shows that most predictions have little error, while a small subset of predictions have large error.
@@ -208,10 +205,6 @@ We compare forecasting accuracy across different time lags from -30 days back fr
 	\label{table:model_comp_table}
 \end{table}
 
-
-
-
-
 Throughout the following discussion, we refer to the `absolute error` (AE) for a given model $m$ and data set $d$ as the difference between the retrospective raw frequencies and the predicted frequencies as:
 
 \begin{equation}
@@ -224,7 +217,7 @@ Since we work with data sets that vary both in their location and date of foreca
 This enables of us to compare forecasts at different dates within a location.
 
 We compare our predictions to retrospective truth via 7-day smoothed frequency and calculated mean absolute error and median absolute error to assess the relative performance of the models for the six countries (Table~\ref{table:model_comp_table}).
-The model with the lowest mean absolute error error for each country is highlighted.
+The model with the lowest mean absolute error for each country is highlighted.
 As expected we observe decreasing performance across models as lags increase from -30 days, to 0 days to +30 days.
 For example, median absolute error increases for the MLR model from 0.1\%--1\% at -30 days to 0.3\%--1.4\% at 0 days, and to 0.4\%--1.4\% at +30 days.
 While mean absolute error increases for the MLR model from 0.4\%--2.3\% at -30 days to 2.2\%--5.7\% at 0 days, and to 5.8\%--9.6\% at +30 days.
@@ -276,7 +269,7 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
 We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
 Using Pearson rank correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
-We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with MAE (Fig.~\ref{fig:vars_of_interest}E).
+We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with mean absolute error (Fig.~\ref{fig:vars_of_interest}E).
 
 \begin{figure}[tb!]
     \centering
@@ -286,7 +279,7 @@ We find that good sequence quantity as measured by total sequences available at 
     	(A) Mean sequences collected per week for selected countries in 2022.
 			Intervals are 95\% confidence intervals of the mean.
 			Dashed lines correspond to sampling rates used in (B-E).
-    	(B, C) Average MAE as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
+    	(B, C) Mean absolute error as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
 			The dash line corresponds to 5\% frequency error.
     	(D, E) Proportion of forecasts within 5\% of retrospective frequency as a function of sequences collected for week for the United Kingdom and Denmark.
   	}
