@@ -257,8 +257,8 @@ Thus it often takes a couple weeks for MLR model to `dial in' estimated growth a
 		\textbf{Sequence quantity and quality influence nowcasts error}
     (A) Mean absolute error at nowcast for the MLR model across countries.
 		% \tbc{Yes, this was +30 day forecast for the MLR model?}
-    \tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
-    \mfc{Points here are as in Figure 2B and represent the mean absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
+    %\tbc{Points should work exactly like Figure 2B and each point should represent absolute error for a single timepoint and a single variant.}
+    %\mfc{Points here are as in Figure 2B and represent the mean absolute error at 0 lead time. We take the mean across variants for a single model score. Otherwise, there would be $V$ points stretching vertically for each predictor value.}
 		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
 		(B-E) Correlation of sequence quality and sequence quantity metrics for given analysis time and country with resulting mean absolute error.
     Correlation strength and significance are calculated via Pearson rank and are inset in each panel.
@@ -307,11 +307,11 @@ However, we arrive at a similar threshold of 1000 sequences per week for both th
 % Discussion: Include discussion of MLR vs FGA vs GARW vs Piantham (Table 1, Figure 2)
 % Discussion: Include error vs lag (Table 1, Figure 2)
 
-By developing a framework for comparing models of SARS-CoV-2 variant frequency and their forecasts, we find that most models of variant frequency perform well and are able to produce reasonable \jhc{how reasonable?} forecasts.
+By developing a framework for comparing models of SARS-CoV-2 variant frequency and their forecasts, we find that most models of variant frequency perform well and are able to produce reasonable forecasts (within 5\% median absolute error).
 However, we find that naive models such as a 7-day moving average may not perform well due to the live nature of sequencing efforts e.g. delays between collection and availability of new samples.
 Overall, it appears that differences in model accuracy are partially attributable to differences in the surveillance and sequencing efforts.
 
-Consistent with evidence fV-2 time series forecasting analysis \cite{cramer2022unitedforecastinghub}, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
+Consistent with evidence from fV-2 time series forecasting analysis \cite{cramer2022unitedforecastinghub}, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
 
 These long-term forecasts also appear to have heavier tails which indicate increase in extreme values and may be attributable to model break down or the emergence of new variants.
 
@@ -325,19 +325,13 @@ However, our analysis of the naive model reveals a substantial discrepancy betwe
 Importantly, we find that the multinomial logistic regression model (MLR) provides an improvement in accuracy over the naive model for Australia, Brazil, Japan, and South Africa.
 
 % Discussion: We believe the primary source of error is difficulty dealing with the emergence of new variants (Figure 3)
-
-From our analysis of transmission dynamics, we find that it takes a shorter amount of time for different variant clades to stabilize in countries with more robust sequencing efforts.
-\jhc{The previous sentence seems to conflate demographics with sequencing capacity.}
-
 % Discussion: Importance of both sequence quantity and sequence quality to forecast accuracy (Figure 4)
 % Discussion: Diminishing returns to increasing sequencing capacity (Figure 5)
-%TODO: Change this to talk about forecasts and use freuqnecy estimates
-Our analysis also suggests that the variability between different countries' growth advantage estimates for different clades may not necessarily be biological but due to data limitations that we show here.
-\jhc{What results in the paper support the previous sentence? I don't see where you quantified each country's sequencing capacity and compared that directly to variation in GA.}
-We find that at higher frequencies the growth advantage estimates for the clades begin to stabilize though the frequency at which this begins to occur appears to differ by country.
 
+Our analysis also suggests that the variability between frequency estimates and forecast errors for different clades may not necessarily be entirely biological or epidemiology but also due to data limitations that we show here.
 Analyzing the variation in nowcast and forecast error, we find that overall sequence quality and quantity at time of analysis are associated with nowcast accuracy.
 This further supports the idea that high quality sequencing, high intensity sequencing, and quick submission of sequences are useful for providing high accuracy, real-time estimates of variant fitness and frequency.
+Despite there being high potential for increased nowcast and forecast error at variant emergence, there is still potential for improved short-term forecasts with a high-quality sequencing effort.
 
 Though our analyses highlight the role of sequencing effort and intensity in reducing forecast error, it is important to note that non-sequencing heterogeneity through the transmission process and pathogen evolution may also explain error.
 This could explain why South Africa did not show stabilization in growth advantages due to potentially differing variant dynamics or differences in the sequences effort itself.
