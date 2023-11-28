@@ -272,7 +272,7 @@ As suggested by these correlations across countries and time points, we expect t
 In order to investigate what number of sequences need to collected weekly to keep forecast error within acceptable bounds, we subsampled existing sequences from the United Kingdom and Denmark.
 For context, we also computed the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
 We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error.
-Additionally, we include Denmark due to its large counts of available sequences and to explore the possibility of stochastic effects due to relative population sizes (Denmark has 30\% the population of the UK).
+Additionally, we include Denmark due to its large counts of available sequences and to explore the possibility of stochastic effects due to relative population sizes (Denmark has $\sim$9\% the population of the UK).
 We simulate several downscaled data sets by subsampling the collected sequences at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
 In order to properly account for variability in the subsampled data sets, we generate 5 subsamples per threshold, location and analysis date.
 
