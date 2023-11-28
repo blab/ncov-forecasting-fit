@@ -2456,13 +2456,7 @@ nowcast_mae = error_dataset %>%
   filter(model =="MLR") %>%
   group_by(location, pivot_date) %>%
   #summing across all variant getting total model error
-  summarise(MAE = mean(MAE))
-    #%>%
-  #filter(lead < 0 & lead > -14) %>%
-  #group_by(location, pivot_date) #%>%
-  #filter(location =="Japan")%>%
-  #summarize(meanMAE = mean(MAE))
-
+  summarise(AE = mean(MAE))
 
  
 #####Combine Datasets#####
@@ -2470,7 +2464,7 @@ nowcast_mae = error_dataset %>%
 
 #Full model data
 
-mae_seq_full = forecast_mae %>% 
+mae_seq_full = nowcast_mae %>% 
   left_join(frac_seq_pivot, by=c("pivot_date", "location")) %>%
   left_join(delay_seq_pivot, by=c("pivot_date", "location")) %>% 
   left_join(qc_seq_pivot, by=c("pivot_date", "location"))
@@ -2657,13 +2651,13 @@ med_del_corr = full_model_data %>%
   #group_by(location, pivot_date) %>%
   #summarise(median_delay = median(median_delay),
   #          mean_nowcast_MAE = median(meanMAE)) %>%
-  ggplot(aes(x = median_delay, y = MAE, group = location, color = location))+
+  ggplot(aes(x = median_delay, y = AE, group = location, color = location))+
   geom_point(size = 2)+
    scale_color_manual(values = loc_color_map)+
-  stat_cor(method = "pearson", aes(x = median_delay, y = MAE), label.x = 65, inherit.aes = F,
+  stat_cor(method = "pearson", aes(x = median_delay, y = AE), label.x = 65, inherit.aes = F,
            cor.coef.name = "rho")+
   theme_minimal()+
-        labs( x = "Median Submission Delay", y= "MAE")+
+        labs( x = "Median Submission Delay", y= "AE")+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -2694,13 +2688,13 @@ frac_seq_corr = full_model_data %>%
   #group_by(location, pivot_date) %>%
   #summarise(frac_seq_avail = median(frac_seq_avail),
    #         mean_nowcast_mae = median(meanMAE)) %>%
-  ggplot(aes(x = frac_seq_avail, y = MAE, group = location, color = location))+
+  ggplot(aes(x = frac_seq_avail, y = AE, group = location, color = location))+
   geom_point(size = 2)+
-  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = MAE), label.x = 0.2, inherit.aes = F,
+  stat_cor(method = "pearson", aes(x = frac_seq_avail, y = AE), label.x = 0.2, inherit.aes = F,
            cor.coef.name = "rho")+
   theme_minimal()+
    scale_color_manual(values = loc_color_map)+
-        labs( x = "Fraction of Sequences at Observation", y= "MAE")+
+        labs( x = "Fraction of Sequences at Observation", y= "AE")+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -2728,12 +2722,12 @@ seq_avail_corr = full_model_data %>%
   #group_by(location, pivot_date) %>%
   #summarise(seq_available = median(seq_available),
   #          meanMAE = median(meanMAE)) %>%
-  ggplot(aes(x = seq_available+1, y = MAE, group = location, color = location))+
+  ggplot(aes(x = seq_available+1, y = AE, group = location, color = location))+
   geom_point(size = 2)+
-  stat_cor(method = "pearson", aes(x = seq_available+1, y = MAE), label.x = 2.5, inherit.aes = F,
+  stat_cor(method = "pearson", aes(x = seq_available+1, y = AE), label.x = 2.5, inherit.aes = F,
            cor.coef.name = "rho")+
   theme_minimal()+
-        labs( x = "Sequences Available at Observation ", y= "MAE")+
+        labs( x = "Sequences Available at Observation ", y= "AE")+
    scale_color_manual(values = loc_color_map)+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
@@ -2890,7 +2884,7 @@ Figure_4b = ggpubr::ggarrange(qc_mae + rremove("ylab"), med_del_corr + rremove("
 
 
 
-Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4b), left = "Mean Absolute Error")
+Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4b), left = "Absolute Error")
 
 
 
