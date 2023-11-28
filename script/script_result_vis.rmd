@@ -1187,7 +1187,7 @@ ggsave("figure2B.png", plot = mae_dist, width = 25, height = 15, units = "cm", b
 
 
 
-Figure_2A=  (med_log_error_30 + labs(title = element_text( "A",face = "bold"))) / (mae_nat_error_30 +labs(title = element_text( "A",face = "bold"))) 
+Figure_2A=  (med_log_error_30 + labs(title = element_text( "A",face = "bold"))) / (mae_nat_error_30 +labs(title = element_text( "B",face = "bold"))) 
 
 
 
@@ -1199,6 +1199,8 @@ Figure_2= (Figure_2A + theme(plot.margin = unit(c(0,0,0,0), "pt")))  /(Figure_2B
 
 
 ggsave("model_comp.png", plot = Figure_2, width = 30, height = 40, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+
+Version()
 
 ```
 
@@ -2214,10 +2216,6 @@ get_avail_sequences <- function (df, start_date, end_date, k) {
 }
 
 
-#in sequences that were collected in the past 2 weeks, in the next month how many submitted
-
-
-
 
 #function to obtain sequence submission and collected delays
 
@@ -2680,7 +2678,8 @@ med_del_corr = full_model_data %>%
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
-        legend.title = element_blank()) 
+        legend.title = element_blank())  +
+  scale_y_continuous(labels = scales::percent_format(scale = 100))
 
 
 ```
@@ -2716,7 +2715,8 @@ frac_seq_corr = full_model_data %>%
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
-        legend.title = element_blank()) 
+        legend.title = element_blank()) +
+  scale_y_continuous(labels = scales::percent_format(scale = 100))
 ```
 
 
@@ -2754,7 +2754,8 @@ seq_avail_corr = full_model_data %>%
    scale_x_log10(
     breaks = scales::trans_breaks("log10", function(x) 10^x),
     labels = scales::trans_format("log10", scales::math_format(10^.x))
-  ) 
+  ) +
+  scale_y_continuous(labels = scales::percent_format(scale = 100))
 
 ```
 
@@ -2823,7 +2824,8 @@ country_mae = full_model_data %>%
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
-        legend.title = element_blank()) 
+        legend.title = element_blank()) +
+  scale_y_continuous(labels = scales::percent_format(scale = 100))
 ```
 
 
@@ -2859,7 +2861,8 @@ qc_mae = full_model_data %>%
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = (12)),
         legend.position = "top",
-        legend.title = element_blank()) 
+        legend.title = element_blank()) +
+  scale_y_continuous(labels = scales::percent_format(scale = 100))
 
 
 
