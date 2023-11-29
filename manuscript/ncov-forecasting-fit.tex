@@ -287,46 +287,44 @@ We arrive at a similar threshold of 1000 sequences per week for both the UK and 
 % Discussion: Include discussion of MLR vs FGA vs GARW vs Piantham (Table 1, Figure 2)
 % Discussion: Include error vs lag (Table 1, Figure 2)
 
-By developing a framework for comparing models of SARS-CoV-2 variant frequency and their forecasts, we find that most models of variant frequency perform well and are able to produce reasonable forecasts (within 5\% median absolute error).
-However, we find that naive models such as a 7-day moving average may not perform well due to the live nature of sequencing efforts e.g. delays between collection and availability of new samples.
-Overall, it appears that differences in model accuracy are partially attributable to differences in the surveillance and sequencing efforts.
-
-Consistent with evidence from SARS-CoV-2 time series forecasting analysis \cite{cramer2022unitedforecastinghub}, we find an increase in model errors and their variance as estimates go farther in the future from the observation date.
-
-These long-term forecasts also appear to have heavier tails which indicate increase in extreme values and may be attributable to model break down or the emergence of new variants.
+In this manuscript we sought to perform a comprehensive analysis of the accuracy of nowcasts and short-term forecasts from fitness models of SARS-CoV-2 variant frequency.
+We observe substantial differences between median and mean absolute error (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}) with median errors generally quite well contained at 0.4--1.4\% in the $+30$ day forecast, while mean errors are larger at 5.8--9.6\%.
+This difference is due to the highly skewed distribution of model errors (Fig.~\ref{fig:model_comp_fig}C) where most predictions are highly accurate, but a smaller fraction are off-target.
+We find that better performing models more often avoid this failure mode of large errors.
+The Piantham \cite{piantham2021estimating} model is the strongest example here, where it shows a similar profile in terms of median absolute error, but performs substantially worse in terms of mean absolute error (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}).
+Similarly, we observe MLR slightly outperforming FGA and GARW \cite{figgins2022sars} in terms of mean absolute error, but not median absolute error.
+As expected, errors increase as target shifts from $-30$ day hindcast to $+30$ day forecast, but error increases more rapidly for mean absolute error than median absolute error.
 
 % Discussion: Include discussion of improvement over naive (Table 1, Figure 2)
 % Discussion: With specific discussion of improvement over naive model at -30 day hindcast
 
-Our findings suggest that the variations in error patterns observed are likely attributable to the way in which the models handle data issues across different countries.
-As such inferences from forecasting models with underlying poor sequencing efforts may not be reliable without a contextual understanding of these limitations.
-Additionally, standard modeling practices often involve presenting moving averages of retrospective frequencies of variants as the ``truth''.
-However, our analysis of the naive model reveals a substantial discrepancy between the averages of past frequencies and the retrospective truth for all countries, except for the US and UK, where a rigorous sequencing effort is in place.
-Importantly, we find that the multinomial logistic regression model (MLR) provides an improvement in accuracy over the naive model for Australia, Brazil, Japan, and South Africa.
+We find that the MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}).
+For the MLR model, at $+30$ days the improvement in median absolute error over naive is 1.5--14.4\% and the improvement in mean absolute error is 6.9--17.1\%.
+However, we also observe improvements in accuracy for the $-30$ day hindcast of modeled frequency relative to naive frequency with the MLR model showing improvement in median absolute error of 0.1--2.9\% and improvement in mean absolute eror of 0.9--5.2\%.
+These improvements were greatest in countries with lower cadence and throughput of genomic surveillance (Brazil and South Africa).
+Importantly, this suggests that fitness models are useful for hindcasts in addition to short-term forecasts and that $-30$ day retrospective frequency should not be taken as truth; it takes more time than 30 days for backfill to resolve retrospective frequency.
 
 % Discussion: We believe the primary source of error is difficulty dealing with the emergence of new variants (Figure 3)
 % Discussion: Importance of both sequence quantity and sequence quality to forecast accuracy (Figure 4)
 % Discussion: Diminishing returns to increasing sequencing capacity (Figure 5)
 
-Our analysis also suggests that the variability between frequency estimates and forecast errors for different clades may not necessarily be entirely biological or epidemiology but also due to data limitations that we show here.
-Analyzing the variation in nowcast and forecast error, we find that overall sequence quality and quantity at time of analysis are associated with nowcast accuracy.
-This further supports the idea that high quality sequencing, high intensity sequencing, and quick submission of sequences are useful for providing high accuracy, real-time estimates of variant fitness and frequency.
-Despite there being high potential for increased nowcast and forecast error at variant emergence, there is still potential for improved short-term forecasts with a high-quality sequencing effort.
-
-Though our analyses highlight the role of sequencing effort and intensity in reducing forecast error, it is important to note that non-sequencing heterogeneity through the transmission process and pathogen evolution may also explain error.
-This could explain why South Africa did not show stabilization in growth advantages due to potentially differing variant dynamics or differences in the sequences effort itself.
-
-Subsampling existing data in high sequencing intensity countries, we find that there are diminishing returns to increasing sequencing efforts however maintaining consistent forecasts for variant frequencies can be done with around 1,000 sequences per week.
+We find that variability in forecast errors is partially driven by data limitations.
+When new variants are emerging, we lack sequence counts and lack time to observe growth dynamics resulting in initial uncertainty of variant growth rates (Fig.~\ref{fig:ga_estimates}).
+Relatedly, analyzing the variation in nowcast error, we find that overall sequence quality and quantity at time of analysis are associated with model accuracy (Fig.~\ref{fig:vars_of_interest}).
+Thus, as expected, sequence quality, volume and turnaround time are all important for providing accurate, real-time estimates of variant fitness and frequency.
+Subsampling existing data in high sequencing intensity countries, we find that there are diminishing returns to increasing sequencing efforts and that maximum accuracy is achieved at around 1,000 sequences per week (Fig.~\ref{fig:downscaling}).
 This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
-Though, we are able to see the overall utility of these methods for providing short-term forecasts, we additionally find that no matter how many sequences are obtained some forecast error is maintained with standard methods for frequency forecasts.
 
 % Discussion: We find that short-term forecasts are well supported by simple growth advantage models like MLR
 % Discussion: These models fundamentally don't deal with new mutations and thus have limited forecasting horizons
 % Discussion: Future modeling work should seek to expand forecasting horizon by incorporating experimental data or otherwise estimating biological impact of future mutations
 
-It is important to point out the limitations of these models.
-While we find simple growth advantage models, such as Multinomial Logistic Regression (MLR), provide robust short-term forecasts, these models do not inherently account for potential mutations and their fitness effects leading to limitations in the effective forecasting horizon.
-To improve future modeling work, we suggest incorporating experimental data to inform fitness change in time including estimating biological impact of future mutations to expand effective forecasting horizon.
+We find that simple fitness models like MLR provide accurate and robust short-term forecasts of SARS-CoV-2 variant frequency.
+However, these models do not account for future mutations and can only project forwards from circulating viral diversity.
+This intrinsically limits the effective forecasting horizon achievable by these models.
+Future modeling work should seek to incorporate the emergence and spread of `adjacent possible' mutations \cite{kauffman1993origins}.
+Without empirical frequency dynamics to draw upon, the fitness effects of these adjacent possible mutations may be estimated from empirical data such as deep mutational scanning \cite{cao2022ba, greaney2022antibody, dadonaite2023full}.
+Continued timely genomic surveillance and biological characterization along with further model development will be necessary for successful real-time evolutionary forecasting of SARS-CoV-2.
 
 %%% METHODS %%%
 \section*{Methods}
