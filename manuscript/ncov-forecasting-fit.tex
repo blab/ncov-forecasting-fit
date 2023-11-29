@@ -241,15 +241,14 @@ Thus it often takes a couple weeks for the MLR model to `dial in' estimated grow
 		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
 		(B-E) Correlation of sequence quality and sequence quantity metrics with absolute error.
 		Points represent separate data sets at different analysis dates.
-    Correlation strength and significance are calculated via Spearman rank correlation and are inset in each panel.\
-		\tbc{Check if Pearson correlation or Spearman rank. I'm assuming you meant Spearman rank given statement of `Pearson rank' and the use of $\rho$ in the figure.}
+    Correlation strength and significance are calculated via Pearson correlation and are inset in each panel.
 	}
 	\label{fig:vars_of_interest}
 \end{figure}
 
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
 We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
-Using Spearman rank correlations \tbc{Again, check this} we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
+Using Pearson correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
 We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with mean absolute error (Fig.~\ref{fig:vars_of_interest}E).
 \tbc{In commit f0207d393a30125b24646f92cb7e441516ff39e5 the $R$ correlation coefficient for proportion bad QC when from 0.22 to 0.01. What's going on here? I don't know if I can trust these numbers. It matters for how this paragraph is written.}
 
