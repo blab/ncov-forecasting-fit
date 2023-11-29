@@ -87,10 +87,6 @@ error_dataset = read.csv('../estimates/model_scores_output.csv') %>%
 #growth advantage dataset per variant
 growthadv_dataset = read.csv("../estimates/ga_output.csv")
 
-
-#add pivot_date column to each dataset for figure 1 plot 2
-
-
 #Read qc data
 
 seq_qc <- read.csv("../notebooks/seq_counts_qc.tsv", sep =  "\t")
@@ -2140,7 +2136,7 @@ mae_seq_frac_data %>%
 #make simple model and get R^2
 
 
-cor.test(full_test$meanMAE, full_test$sequence_recent, method ="spearman")
+#cor.test(full_test$meanMAE, full_test$sequence_recent, method ="spearman")
 
 #rho = -0.35
 
@@ -2616,8 +2612,8 @@ correlation_plot = function (locations) {
   
 
 # Extract the correlation coefficients
-  corr_coefs <- cor(spec_data[, vars_of_interest], y, use = "pairwise.complete.obs",
-                    method = "spearman")
+#  corr_coefs <- cor(spec_data[, vars_of_interest], y, use = "pairwise.complete.obs",
+#                    method = "spearman")
 
 
 # Plot the correlation coefficients
@@ -2795,7 +2791,7 @@ country_mae = full_model_data %>%
   #group_by(location, pivot_date) %>%
   #summarise(#seq_collected = median(seq_collected),
   #          mean_nowcast_MAE = median(meanMAE)) %>%
-  ggplot(aes(x = location, y = MAE, group = location, color = location))+
+  ggplot(aes(x = location, y = AE, group = location, color = location))+
   #geom_point(size = 2)+
     geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
                 priority = "density",
@@ -2803,7 +2799,7 @@ country_mae = full_model_data %>%
   geom_boxplot(alpha = 0.3)+
   theme_minimal()+
   scale_color_manual(values = loc_color_map)+
-        labs( x = "Location", y= "MAE")+
+        labs( x = "Location", y= "AE")+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
@@ -2831,16 +2827,16 @@ qc_mae = full_model_data %>%
   #group_by(location, pivot_date) %>%
   #summarise(#seq_collected = median(seq_collected),
   #          mean_nowcast_MAE = median(meanMAE)) %>%
-  ggplot(aes(x = prop_qc_bad, y = MAE, group = location, color = location))+
+  ggplot(aes(x = prop_qc_bad, y = AE, group = location, color = location))+
   #geom_point(size = 2)+
     geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
                 priority = "density",
                 show.legend = T, groupOnX = T)+
-  stat_cor(method = "pearson", aes(x = prop_qc_bad, y = MAE), label.x = 0.2, inherit.aes = F,
+  stat_cor(method = "pearson", aes(x = prop_qc_bad, y = AE), label.x = 0.2, inherit.aes = F,
            cor.coef.name = "rho")+
   theme_minimal()+
   scale_color_manual(values = loc_color_map)+
-        labs( x = "Proportion of Bad QC sequences", y= "MAE")+
+        labs( x = "Proportion of Bad QC sequences", y= "AE")+
   theme(axis.title.x = element_text(color="Black", size=14),
         axis.title.y = element_text(color="Black", size=14),
         panel.grid.major = element_line(),
