@@ -348,7 +348,7 @@ The multinomial logistic regression model estimates a fixed growth advantage usi
     f_{v}(t) = \frac{\exp(\alpha_{v} + \delta_{v} t)}{\sum_{u} \exp(\alpha_{u} + \delta_{u} t)},
 \end{equation}
 where $\alpha_v$ is the initial frequency and $\delta_v$ is the growth rate of variant $v$, and the summation in the denominator is over variants 1 to $n$.
-Inferred frequency growth $f_v$ can be converted to a growth advantage (or selective coefficient) as $\Delta_{v} = \exp(\delta_{v} \tau)$ assuming an exponentially distributed generation time of $\tau$.
+Inferred frequency growth $f_v$ can be converted to a growth advantage (or selective coefficient) as $\Delta_{v} = \exp(\delta_{v} \tau)$ assuming a fixed deterministic  generation time of $\tau$.
 
 The model by Piantham et al \cite{piantham2021estimating} relies on an approximation to the renewal equation wherein new infections do not vary greatly over the generation time of the virus.
 This model generalizes the MLR model in that it accounts for non-fixed generation time though it assumes little overall case growth.
