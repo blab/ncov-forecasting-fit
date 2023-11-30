@@ -112,7 +112,7 @@ Forecasting variant dynamics allows us to make informed decisions about vaccines
 % Paragraph giving overview of previous application of fitness models (flu and SARS-CoV-2)
 Fitness models are a key resource for forecasting changes in variant frequency through time.
 These models were first introduced for the study of seasonal influenza virus \cite{luksza2014predictive, morris2018predictive, huddleston2020integrating} and there have relied on correlates of viral fitness such as mutations to epitope sites on influenza's surface proteins.
-In modeling emergence and spread of SARS-CoV-2 variant viruses, the use of Multinomial Logistic Regression (MLR) has become commonplace \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}.
+In modeling emergence and spread of SARS-CoV-2 variant viruses, the use of Multinomial Logistic Regression (MLR) has become commonplace \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}.
 Here, MLR is analogous to a population genetics model of a haploid population in which different variants have a fixed growth advantage and are undergoing Malthusian growth.
 As such, it presents a natural model for describing evolution and spread of SARS-CoV-2 variants.
 Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} and by Piantham et al \cite{piantham2021estimating} incorporate case counts and variant-specific $R_t$, but still can be used to project variant frequencies.
@@ -178,7 +178,7 @@ Consistent with less available data, we observe that the model predictions for J
 \end{figure}
 
 We utilize five models for predicting the frequencies of SARS-CoV-2 variants in six countries (Australia, Brazil, Japan, South Africa, UK and USA).
-The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
+The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
 More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant $R_t$ model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to clade-specific sequence counts.
 The Piantham et al model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific $R_t$, but differs in model details.
 We compare these four models to a naive model to serve as a reference for comparison.
@@ -298,9 +298,12 @@ As expected, errors increase as target shifts from $-30$ day hindcast to $+30$ d
 % Discussion: Include discussion of improvement over naive (Table 1, Figure 2)
 % Discussion: With specific discussion of improvement over naive model at -30 day hindcast
 
+\sloppy % keep long URLs below from overflowing
 We find that the MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}).
 For the MLR model, at $+30$ days the improvement in median absolute error over naive is 1.5--14.4\% and the improvement in mean absolute error is 6.9--17.1\%.
-However, we also observe improvements in accuracy for the $-30$ day hindcast of modeled frequency relative to naive frequency with the MLR model showing improvement in median absolute error of 0.1--2.9\% and improvement in mean absolute eror of 0.9--5.2\%.
+This result supports the use of MLR models in live dashboards like the CDC Variant Proportions nowcast (\href{https://covid.cdc.gov/covid-data-tracker/\#variant-proportions}{covid.cdc.gov/covid-data-tracker/\#variant-proportions}) and the Nextstrain SARS-CoV-2 Forecasts (\href{https://nextstrain.org/sars-cov-2/forecasts/}{nextstrain.org/sars-cov-2/forecasts/}).
+
+We also observe improvements in accuracy for the $-30$ day hindcast of modeled frequency relative to naive frequency with the MLR model showing improvement in median absolute error of 0.1--2.9\% and improvement in mean absolute eror of 0.9--5.2\%.
 These improvements were greatest in countries with lower cadence and throughput of genomic surveillance (Brazil and South Africa).
 Importantly, this suggests that fitness models are useful for hindcasts in addition to short-term forecasts and that $-30$ day retrospective frequency should not be taken as truth; it takes more time than 30 days for backfill to resolve retrospective frequency.
 
@@ -406,8 +409,12 @@ A full list of sequences analyzed with accession numbers, derived data of sequen
 
 \section*{Acknowledgements}
 
+We thank John Huddleston for many helpful comments on the approach and on the manuscript.
 We gratefully acknowledge all data contributors, ie the Authors and their Originating laboratories responsible for obtaining the specimens, and their Submitting laboratories for generating the genetic sequence and metadata and sharing via the GISAID Initiative, on which this research is based.
 We have included an acknowledgements table in the associated GitHub repository under \texttt{data/final\_acknowledgements\_gisaid.tsv.gz}.
+MF is an ARCS Foundation scholar and was supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE1762114.
+TB is a Howard Hughes Medical Institute Investigator.
+This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard Hughes Medical Institute COVID Supplement award to TB.
 
 %%% REFERENCES %%%
 \bibliographystyle{plos}
