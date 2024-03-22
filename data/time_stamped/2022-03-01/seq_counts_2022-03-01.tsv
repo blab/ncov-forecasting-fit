@@ -400,6 +400,75 @@ date	location	variant	sequences
 2022-01-10	Brazil	other	2
 2022-01-20	Brazil	other	2
 2022-02-05	Brazil	other	1
+2021-11-18	Egypt	Delta	2
+2021-11-19	Egypt	Delta	1
+2021-11-20	Egypt	Delta	2
+2021-11-24	Egypt	Delta	1
+2021-11-25	Egypt	Delta	2
+2021-11-28	Egypt	Delta	5
+2021-11-30	Egypt	Delta	1
+2021-12-01	Egypt	Delta	26
+2021-12-02	Egypt	Delta	9
+2021-12-03	Egypt	Delta	5
+2021-12-04	Egypt	Delta	16
+2021-12-05	Egypt	Delta	13
+2021-12-06	Egypt	Delta	6
+2021-12-07	Egypt	Delta	2
+2021-12-08	Egypt	Delta	9
+2021-12-09	Egypt	Delta	2
+2021-12-10	Egypt	Delta	10
+2021-12-11	Egypt	Delta	6
+2021-12-12	Egypt	Delta	7
+2021-12-13	Egypt	Delta	5
+2021-12-14	Egypt	Delta	14
+2021-12-15	Egypt	Delta	14
+2021-12-16	Egypt	Delta	5
+2021-12-17	Egypt	Delta	13
+2021-12-18	Egypt	Delta	5
+2021-12-19	Egypt	Delta	15
+2021-12-20	Egypt	Delta	1
+2021-12-23	Egypt	Delta	4
+2021-12-24	Egypt	Delta	1
+2021-12-27	Egypt	Delta	4
+2021-12-28	Egypt	Delta	8
+2021-12-29	Egypt	Delta	10
+2021-12-30	Egypt	Delta	4
+2021-12-31	Egypt	Delta	48
+2022-01-01	Egypt	Delta	6
+2022-01-02	Egypt	Delta	26
+2022-01-04	Egypt	Delta	1
+2022-01-05	Egypt	Delta	1
+2022-01-06	Egypt	Delta	1
+2022-01-07	Egypt	Delta	4
+2022-01-08	Egypt	Delta	6
+2021-12-01	Egypt	Omicron 21K	6
+2021-12-03	Egypt	Omicron 21K	1
+2021-12-04	Egypt	Omicron 21K	3
+2021-12-05	Egypt	Omicron 21K	2
+2021-12-06	Egypt	Omicron 21K	5
+2021-12-07	Egypt	Omicron 21K	2
+2021-12-09	Egypt	Omicron 21K	3
+2021-12-12	Egypt	Omicron 21K	1
+2021-12-13	Egypt	Omicron 21K	6
+2021-12-14	Egypt	Omicron 21K	1
+2021-12-23	Egypt	Omicron 21K	1
+2021-12-27	Egypt	Omicron 21K	1
+2021-12-28	Egypt	Omicron 21K	1
+2021-12-31	Egypt	Omicron 21K	1
+2022-01-02	Egypt	Omicron 21K	1
+2022-01-03	Egypt	Omicron 21K	1
+2021-11-30	Egypt	other	1
+2021-12-01	Egypt	other	1
+2021-12-04	Egypt	other	4
+2021-12-05	Egypt	other	1
+2021-12-06	Egypt	other	1
+2021-12-08	Egypt	other	1
+2021-12-10	Egypt	other	2
+2021-12-12	Egypt	other	6
+2021-12-13	Egypt	other	5
+2021-12-15	Egypt	other	2
+2021-12-17	Egypt	other	4
+2021-12-28	Egypt	other	1
 2021-11-18	Japan	Delta	17
 2021-11-19	Japan	Delta	28
 2021-11-20	Japan	Delta	18
@@ -563,6 +632,158 @@ date	location	variant	sequences
 2022-02-10	Japan	Omicron 21L	1
 2022-02-14	Japan	Omicron 21L	1
 2022-02-15	Japan	Omicron 21L	2
+2021-11-18	Malaysia	Delta	44
+2021-11-19	Malaysia	Delta	12
+2021-11-20	Malaysia	Delta	27
+2021-11-21	Malaysia	Delta	16
+2021-11-22	Malaysia	Delta	22
+2021-11-23	Malaysia	Delta	36
+2021-11-24	Malaysia	Delta	31
+2021-11-25	Malaysia	Delta	25
+2021-11-26	Malaysia	Delta	46
+2021-11-27	Malaysia	Delta	20
+2021-11-28	Malaysia	Delta	36
+2021-11-29	Malaysia	Delta	52
+2021-11-30	Malaysia	Delta	41
+2021-12-01	Malaysia	Delta	38
+2021-12-02	Malaysia	Delta	35
+2021-12-03	Malaysia	Delta	30
+2021-12-04	Malaysia	Delta	19
+2021-12-05	Malaysia	Delta	23
+2021-12-06	Malaysia	Delta	34
+2021-12-07	Malaysia	Delta	40
+2021-12-08	Malaysia	Delta	19
+2021-12-09	Malaysia	Delta	18
+2021-12-10	Malaysia	Delta	25
+2021-12-11	Malaysia	Delta	26
+2021-12-12	Malaysia	Delta	13
+2021-12-13	Malaysia	Delta	30
+2021-12-14	Malaysia	Delta	30
+2021-12-15	Malaysia	Delta	13
+2021-12-16	Malaysia	Delta	21
+2021-12-17	Malaysia	Delta	31
+2021-12-18	Malaysia	Delta	23
+2021-12-19	Malaysia	Delta	22
+2021-12-20	Malaysia	Delta	19
+2021-12-21	Malaysia	Delta	19
+2021-12-22	Malaysia	Delta	28
+2021-12-23	Malaysia	Delta	21
+2021-12-24	Malaysia	Delta	15
+2021-12-25	Malaysia	Delta	10
+2021-12-26	Malaysia	Delta	5
+2021-12-27	Malaysia	Delta	13
+2021-12-28	Malaysia	Delta	8
+2021-12-29	Malaysia	Delta	18
+2021-12-30	Malaysia	Delta	9
+2021-12-31	Malaysia	Delta	7
+2022-01-01	Malaysia	Delta	7
+2022-01-02	Malaysia	Delta	5
+2022-01-03	Malaysia	Delta	18
+2022-01-04	Malaysia	Delta	12
+2022-01-05	Malaysia	Delta	9
+2022-01-06	Malaysia	Delta	9
+2022-01-07	Malaysia	Delta	2
+2022-01-08	Malaysia	Delta	5
+2022-01-09	Malaysia	Delta	4
+2022-01-10	Malaysia	Delta	8
+2022-01-11	Malaysia	Delta	5
+2022-01-12	Malaysia	Delta	2
+2022-01-14	Malaysia	Delta	1
+2022-01-15	Malaysia	Delta	11
+2022-01-17	Malaysia	Delta	3
+2022-01-18	Malaysia	Delta	1
+2022-01-19	Malaysia	Delta	3
+2022-01-20	Malaysia	Delta	1
+2022-01-21	Malaysia	Delta	2
+2022-01-22	Malaysia	Delta	5
+2022-01-24	Malaysia	Delta	1
+2022-01-26	Malaysia	Delta	1
+2022-01-28	Malaysia	Delta	1
+2021-11-19	Malaysia	Omicron 21K	1
+2021-11-26	Malaysia	Omicron 21K	1
+2021-12-03	Malaysia	Omicron 21K	1
+2021-12-05	Malaysia	Omicron 21K	1
+2021-12-10	Malaysia	Omicron 21K	4
+2021-12-11	Malaysia	Omicron 21K	3
+2021-12-12	Malaysia	Omicron 21K	5
+2021-12-13	Malaysia	Omicron 21K	3
+2021-12-14	Malaysia	Omicron 21K	11
+2021-12-15	Malaysia	Omicron 21K	7
+2021-12-16	Malaysia	Omicron 21K	16
+2021-12-17	Malaysia	Omicron 21K	20
+2021-12-18	Malaysia	Omicron 21K	9
+2021-12-19	Malaysia	Omicron 21K	16
+2021-12-20	Malaysia	Omicron 21K	38
+2021-12-21	Malaysia	Omicron 21K	32
+2021-12-22	Malaysia	Omicron 21K	82
+2021-12-23	Malaysia	Omicron 21K	58
+2021-12-24	Malaysia	Omicron 21K	56
+2021-12-25	Malaysia	Omicron 21K	21
+2021-12-26	Malaysia	Omicron 21K	48
+2021-12-27	Malaysia	Omicron 21K	151
+2021-12-28	Malaysia	Omicron 21K	22
+2021-12-29	Malaysia	Omicron 21K	17
+2021-12-30	Malaysia	Omicron 21K	23
+2021-12-31	Malaysia	Omicron 21K	10
+2022-01-01	Malaysia	Omicron 21K	23
+2022-01-02	Malaysia	Omicron 21K	8
+2022-01-03	Malaysia	Omicron 21K	26
+2022-01-04	Malaysia	Omicron 21K	15
+2022-01-05	Malaysia	Omicron 21K	9
+2022-01-06	Malaysia	Omicron 21K	16
+2022-01-07	Malaysia	Omicron 21K	31
+2022-01-08	Malaysia	Omicron 21K	18
+2022-01-10	Malaysia	Omicron 21K	17
+2022-01-11	Malaysia	Omicron 21K	7
+2022-01-12	Malaysia	Omicron 21K	3
+2022-01-13	Malaysia	Omicron 21K	1
+2022-01-14	Malaysia	Omicron 21K	1
+2022-01-15	Malaysia	Omicron 21K	10
+2022-01-16	Malaysia	Omicron 21K	5
+2022-01-17	Malaysia	Omicron 21K	33
+2022-01-18	Malaysia	Omicron 21K	49
+2022-01-19	Malaysia	Omicron 21K	26
+2022-01-20	Malaysia	Omicron 21K	7
+2022-01-21	Malaysia	Omicron 21K	12
+2022-01-22	Malaysia	Omicron 21K	1
+2022-01-23	Malaysia	Omicron 21K	1
+2022-01-24	Malaysia	Omicron 21K	5
+2022-01-25	Malaysia	Omicron 21K	5
+2022-01-26	Malaysia	Omicron 21K	5
+2022-01-27	Malaysia	Omicron 21K	7
+2022-01-28	Malaysia	Omicron 21K	7
+2022-01-29	Malaysia	Omicron 21K	5
+2022-01-30	Malaysia	Omicron 21K	5
+2022-01-31	Malaysia	Omicron 21K	5
+2022-02-01	Malaysia	Omicron 21K	3
+2022-02-02	Malaysia	Omicron 21K	11
+2022-02-03	Malaysia	Omicron 21K	3
+2022-02-04	Malaysia	Omicron 21K	11
+2022-02-05	Malaysia	Omicron 21K	5
+2022-02-06	Malaysia	Omicron 21K	9
+2022-02-14	Malaysia	Omicron 21K	5
+2021-12-23	Malaysia	Omicron 21L	1
+2021-12-24	Malaysia	Omicron 21L	1
+2021-12-26	Malaysia	Omicron 21L	1
+2021-12-27	Malaysia	Omicron 21L	1
+2021-12-30	Malaysia	Omicron 21L	1
+2022-01-01	Malaysia	Omicron 21L	1
+2022-01-03	Malaysia	Omicron 21L	1
+2022-01-05	Malaysia	Omicron 21L	1
+2022-01-07	Malaysia	Omicron 21L	1
+2022-01-08	Malaysia	Omicron 21L	1
+2022-01-12	Malaysia	Omicron 21L	1
+2022-01-14	Malaysia	Omicron 21L	1
+2022-01-16	Malaysia	Omicron 21L	1
+2022-01-17	Malaysia	Omicron 21L	5
+2022-01-18	Malaysia	Omicron 21L	13
+2022-01-19	Malaysia	Omicron 21L	2
+2022-02-02	Malaysia	Omicron 21L	1
+2022-02-03	Malaysia	Omicron 21L	1
+2022-02-05	Malaysia	Omicron 21L	1
+2022-02-14	Malaysia	Omicron 21L	5
+2021-12-26	Malaysia	other	1
+2021-12-27	Malaysia	other	1
 2021-11-18	South Africa	Delta	10
 2021-11-19	South Africa	Delta	5
 2021-11-20	South Africa	Delta	3

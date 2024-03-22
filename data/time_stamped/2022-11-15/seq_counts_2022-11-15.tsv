@@ -686,6 +686,27 @@ date	location	variant	sequences
 2022-10-25	Brazil	Omicron 22E	3
 2022-10-29	Brazil	Omicron 22E	1
 2022-10-30	Brazil	Omicron 22E	1
+2022-08-22	Egypt	Omicron 21K	1
+2022-08-29	Egypt	Omicron 21K	4
+2022-10-20	Egypt	Omicron 22A	1
+2022-08-04	Egypt	Omicron 22B	4
+2022-08-06	Egypt	Omicron 22B	1
+2022-08-08	Egypt	Omicron 22B	5
+2022-08-15	Egypt	Omicron 22B	2
+2022-08-18	Egypt	Omicron 22B	1
+2022-08-22	Egypt	Omicron 22B	6
+2022-08-23	Egypt	Omicron 22B	1
+2022-09-05	Egypt	Omicron 22B	1
+2022-09-14	Egypt	Omicron 22B	4
+2022-09-21	Egypt	Omicron 22B	1
+2022-10-02	Egypt	Omicron 22B	20
+2022-10-03	Egypt	Omicron 22B	4
+2022-10-20	Egypt	Omicron 22B	1
+2022-08-08	Egypt	other	1
+2022-08-29	Egypt	other	1
+2022-09-14	Egypt	other	2
+2022-09-29	Egypt	other	1
+2022-10-02	Egypt	other	4
 2022-08-05	Japan	Omicron 21K	1
 2022-09-15	Japan	Omicron 21K	1
 2022-09-28	Japan	Omicron 21K	1
@@ -1125,6 +1146,267 @@ date	location	variant	sequences
 2022-10-26	Japan	other	2
 2022-10-27	Japan	other	2
 2022-10-28	Japan	other	2
+2022-08-09	Malaysia	Omicron 21K	1
+2022-08-25	Malaysia	Omicron 21K	1
+2022-08-04	Malaysia	Omicron 21L	11
+2022-08-05	Malaysia	Omicron 21L	2
+2022-08-06	Malaysia	Omicron 21L	3
+2022-08-07	Malaysia	Omicron 21L	3
+2022-08-08	Malaysia	Omicron 21L	5
+2022-08-09	Malaysia	Omicron 21L	4
+2022-08-10	Malaysia	Omicron 21L	5
+2022-08-11	Malaysia	Omicron 21L	8
+2022-08-12	Malaysia	Omicron 21L	2
+2022-08-13	Malaysia	Omicron 21L	1
+2022-08-14	Malaysia	Omicron 21L	1
+2022-08-15	Malaysia	Omicron 21L	3
+2022-08-16	Malaysia	Omicron 21L	3
+2022-08-17	Malaysia	Omicron 21L	1
+2022-08-18	Malaysia	Omicron 21L	2
+2022-08-19	Malaysia	Omicron 21L	1
+2022-08-20	Malaysia	Omicron 21L	2
+2022-08-21	Malaysia	Omicron 21L	3
+2022-08-22	Malaysia	Omicron 21L	5
+2022-08-23	Malaysia	Omicron 21L	3
+2022-08-24	Malaysia	Omicron 21L	2
+2022-08-25	Malaysia	Omicron 21L	2
+2022-08-26	Malaysia	Omicron 21L	1
+2022-08-27	Malaysia	Omicron 21L	3
+2022-08-28	Malaysia	Omicron 21L	4
+2022-08-30	Malaysia	Omicron 21L	2
+2022-08-31	Malaysia	Omicron 21L	2
+2022-09-02	Malaysia	Omicron 21L	1
+2022-09-05	Malaysia	Omicron 21L	1
+2022-09-07	Malaysia	Omicron 21L	1
+2022-09-08	Malaysia	Omicron 21L	1
+2022-09-09	Malaysia	Omicron 21L	1
+2022-09-10	Malaysia	Omicron 21L	1
+2022-09-12	Malaysia	Omicron 21L	1
+2022-09-13	Malaysia	Omicron 21L	5
+2022-09-14	Malaysia	Omicron 21L	2
+2022-09-20	Malaysia	Omicron 21L	2
+2022-09-23	Malaysia	Omicron 21L	1
+2022-09-24	Malaysia	Omicron 21L	2
+2022-09-25	Malaysia	Omicron 21L	1
+2022-09-27	Malaysia	Omicron 21L	2
+2022-09-28	Malaysia	Omicron 21L	2
+2022-09-29	Malaysia	Omicron 21L	2
+2022-10-04	Malaysia	Omicron 21L	2
+2022-10-05	Malaysia	Omicron 21L	1
+2022-10-06	Malaysia	Omicron 21L	1
+2022-10-13	Malaysia	Omicron 21L	1
+2022-10-19	Malaysia	Omicron 21L	2
+2022-10-23	Malaysia	Omicron 21L	1
+2022-10-25	Malaysia	Omicron 21L	1
+2022-10-27	Malaysia	Omicron 21L	1
+2022-10-31	Malaysia	Omicron 21L	1
+2022-08-05	Malaysia	Omicron 22A	2
+2022-08-06	Malaysia	Omicron 22A	2
+2022-08-07	Malaysia	Omicron 22A	2
+2022-08-08	Malaysia	Omicron 22A	1
+2022-08-11	Malaysia	Omicron 22A	1
+2022-08-17	Malaysia	Omicron 22A	1
+2022-08-29	Malaysia	Omicron 22A	3
+2022-09-01	Malaysia	Omicron 22A	2
+2022-09-02	Malaysia	Omicron 22A	1
+2022-09-05	Malaysia	Omicron 22A	2
+2022-09-08	Malaysia	Omicron 22A	1
+2022-09-09	Malaysia	Omicron 22A	1
+2022-09-12	Malaysia	Omicron 22A	1
+2022-09-15	Malaysia	Omicron 22A	1
+2022-09-16	Malaysia	Omicron 22A	1
+2022-09-20	Malaysia	Omicron 22A	2
+2022-09-28	Malaysia	Omicron 22A	1
+2022-09-29	Malaysia	Omicron 22A	1
+2022-11-01	Malaysia	Omicron 22A	1
+2022-08-04	Malaysia	Omicron 22B	73
+2022-08-05	Malaysia	Omicron 22B	57
+2022-08-06	Malaysia	Omicron 22B	54
+2022-08-07	Malaysia	Omicron 22B	41
+2022-08-08	Malaysia	Omicron 22B	102
+2022-08-09	Malaysia	Omicron 22B	69
+2022-08-10	Malaysia	Omicron 22B	53
+2022-08-11	Malaysia	Omicron 22B	56
+2022-08-12	Malaysia	Omicron 22B	64
+2022-08-13	Malaysia	Omicron 22B	33
+2022-08-14	Malaysia	Omicron 22B	49
+2022-08-15	Malaysia	Omicron 22B	74
+2022-08-16	Malaysia	Omicron 22B	119
+2022-08-17	Malaysia	Omicron 22B	70
+2022-08-18	Malaysia	Omicron 22B	76
+2022-08-19	Malaysia	Omicron 22B	42
+2022-08-20	Malaysia	Omicron 22B	33
+2022-08-21	Malaysia	Omicron 22B	51
+2022-08-22	Malaysia	Omicron 22B	69
+2022-08-23	Malaysia	Omicron 22B	54
+2022-08-24	Malaysia	Omicron 22B	35
+2022-08-25	Malaysia	Omicron 22B	40
+2022-08-26	Malaysia	Omicron 22B	38
+2022-08-27	Malaysia	Omicron 22B	21
+2022-08-28	Malaysia	Omicron 22B	43
+2022-08-29	Malaysia	Omicron 22B	46
+2022-08-30	Malaysia	Omicron 22B	47
+2022-08-31	Malaysia	Omicron 22B	25
+2022-09-01	Malaysia	Omicron 22B	54
+2022-09-02	Malaysia	Omicron 22B	47
+2022-09-03	Malaysia	Omicron 22B	35
+2022-09-04	Malaysia	Omicron 22B	19
+2022-09-05	Malaysia	Omicron 22B	45
+2022-09-06	Malaysia	Omicron 22B	37
+2022-09-07	Malaysia	Omicron 22B	60
+2022-09-08	Malaysia	Omicron 22B	38
+2022-09-09	Malaysia	Omicron 22B	39
+2022-09-10	Malaysia	Omicron 22B	26
+2022-09-11	Malaysia	Omicron 22B	26
+2022-09-12	Malaysia	Omicron 22B	66
+2022-09-13	Malaysia	Omicron 22B	47
+2022-09-14	Malaysia	Omicron 22B	44
+2022-09-15	Malaysia	Omicron 22B	36
+2022-09-16	Malaysia	Omicron 22B	26
+2022-09-17	Malaysia	Omicron 22B	18
+2022-09-18	Malaysia	Omicron 22B	33
+2022-09-19	Malaysia	Omicron 22B	46
+2022-09-20	Malaysia	Omicron 22B	36
+2022-09-21	Malaysia	Omicron 22B	35
+2022-09-22	Malaysia	Omicron 22B	28
+2022-09-23	Malaysia	Omicron 22B	29
+2022-09-24	Malaysia	Omicron 22B	23
+2022-09-25	Malaysia	Omicron 22B	17
+2022-09-26	Malaysia	Omicron 22B	31
+2022-09-27	Malaysia	Omicron 22B	19
+2022-09-28	Malaysia	Omicron 22B	29
+2022-09-29	Malaysia	Omicron 22B	26
+2022-09-30	Malaysia	Omicron 22B	27
+2022-10-01	Malaysia	Omicron 22B	6
+2022-10-02	Malaysia	Omicron 22B	13
+2022-10-03	Malaysia	Omicron 22B	29
+2022-10-04	Malaysia	Omicron 22B	22
+2022-10-05	Malaysia	Omicron 22B	17
+2022-10-06	Malaysia	Omicron 22B	8
+2022-10-07	Malaysia	Omicron 22B	6
+2022-10-08	Malaysia	Omicron 22B	3
+2022-10-09	Malaysia	Omicron 22B	6
+2022-10-10	Malaysia	Omicron 22B	4
+2022-10-11	Malaysia	Omicron 22B	19
+2022-10-12	Malaysia	Omicron 22B	6
+2022-10-13	Malaysia	Omicron 22B	12
+2022-10-14	Malaysia	Omicron 22B	13
+2022-10-15	Malaysia	Omicron 22B	5
+2022-10-16	Malaysia	Omicron 22B	5
+2022-10-17	Malaysia	Omicron 22B	10
+2022-10-18	Malaysia	Omicron 22B	12
+2022-10-19	Malaysia	Omicron 22B	12
+2022-10-20	Malaysia	Omicron 22B	8
+2022-10-21	Malaysia	Omicron 22B	7
+2022-10-22	Malaysia	Omicron 22B	7
+2022-10-23	Malaysia	Omicron 22B	1
+2022-10-24	Malaysia	Omicron 22B	1
+2022-10-25	Malaysia	Omicron 22B	2
+2022-10-26	Malaysia	Omicron 22B	6
+2022-10-28	Malaysia	Omicron 22B	3
+2022-10-29	Malaysia	Omicron 22B	2
+2022-10-30	Malaysia	Omicron 22B	1
+2022-10-31	Malaysia	Omicron 22B	10
+2022-11-01	Malaysia	Omicron 22B	4
+2022-08-12	Malaysia	Omicron 22C	1
+2022-08-13	Malaysia	Omicron 22C	1
+2022-08-18	Malaysia	Omicron 22C	1
+2022-08-05	Malaysia	Omicron 22D	2
+2022-08-10	Malaysia	Omicron 22D	3
+2022-08-14	Malaysia	Omicron 22D	1
+2022-08-16	Malaysia	Omicron 22D	2
+2022-08-21	Malaysia	Omicron 22D	2
+2022-08-22	Malaysia	Omicron 22D	1
+2022-08-23	Malaysia	Omicron 22D	4
+2022-08-24	Malaysia	Omicron 22D	2
+2022-08-26	Malaysia	Omicron 22D	2
+2022-08-29	Malaysia	Omicron 22D	1
+2022-08-30	Malaysia	Omicron 22D	1
+2022-09-01	Malaysia	Omicron 22D	1
+2022-09-02	Malaysia	Omicron 22D	1
+2022-09-04	Malaysia	Omicron 22D	1
+2022-09-05	Malaysia	Omicron 22D	1
+2022-09-06	Malaysia	Omicron 22D	1
+2022-09-07	Malaysia	Omicron 22D	2
+2022-09-08	Malaysia	Omicron 22D	1
+2022-09-09	Malaysia	Omicron 22D	2
+2022-09-10	Malaysia	Omicron 22D	3
+2022-09-11	Malaysia	Omicron 22D	2
+2022-09-13	Malaysia	Omicron 22D	1
+2022-09-14	Malaysia	Omicron 22D	1
+2022-09-15	Malaysia	Omicron 22D	3
+2022-09-16	Malaysia	Omicron 22D	2
+2022-09-19	Malaysia	Omicron 22D	3
+2022-09-20	Malaysia	Omicron 22D	1
+2022-09-21	Malaysia	Omicron 22D	3
+2022-09-22	Malaysia	Omicron 22D	1
+2022-09-23	Malaysia	Omicron 22D	1
+2022-09-24	Malaysia	Omicron 22D	1
+2022-09-25	Malaysia	Omicron 22D	2
+2022-09-26	Malaysia	Omicron 22D	2
+2022-09-27	Malaysia	Omicron 22D	8
+2022-09-28	Malaysia	Omicron 22D	2
+2022-09-29	Malaysia	Omicron 22D	3
+2022-09-30	Malaysia	Omicron 22D	1
+2022-10-03	Malaysia	Omicron 22D	1
+2022-10-04	Malaysia	Omicron 22D	3
+2022-10-05	Malaysia	Omicron 22D	1
+2022-10-06	Malaysia	Omicron 22D	2
+2022-10-07	Malaysia	Omicron 22D	2
+2022-10-08	Malaysia	Omicron 22D	1
+2022-10-10	Malaysia	Omicron 22D	1
+2022-10-11	Malaysia	Omicron 22D	2
+2022-10-12	Malaysia	Omicron 22D	1
+2022-10-13	Malaysia	Omicron 22D	3
+2022-10-14	Malaysia	Omicron 22D	2
+2022-10-15	Malaysia	Omicron 22D	3
+2022-10-16	Malaysia	Omicron 22D	1
+2022-10-17	Malaysia	Omicron 22D	5
+2022-10-18	Malaysia	Omicron 22D	1
+2022-10-19	Malaysia	Omicron 22D	1
+2022-10-20	Malaysia	Omicron 22D	2
+2022-10-21	Malaysia	Omicron 22D	2
+2022-10-22	Malaysia	Omicron 22D	1
+2022-10-24	Malaysia	Omicron 22D	2
+2022-10-25	Malaysia	Omicron 22D	6
+2022-10-26	Malaysia	Omicron 22D	1
+2022-10-27	Malaysia	Omicron 22D	3
+2022-10-29	Malaysia	Omicron 22D	2
+2022-10-31	Malaysia	Omicron 22D	5
+2022-11-01	Malaysia	Omicron 22D	6
+2022-09-11	Malaysia	Omicron 22E	1
+2022-10-12	Malaysia	Omicron 22E	1
+2022-10-17	Malaysia	Omicron 22E	2
+2022-10-19	Malaysia	Omicron 22E	1
+2022-10-24	Malaysia	Omicron 22E	1
+2022-10-25	Malaysia	Omicron 22E	2
+2022-10-26	Malaysia	Omicron 22E	4
+2022-10-31	Malaysia	Omicron 22E	1
+2022-11-01	Malaysia	Omicron 22E	1
+2022-09-08	Malaysia	other	1
+2022-09-11	Malaysia	other	1
+2022-09-15	Malaysia	other	1
+2022-09-16	Malaysia	other	1
+2022-09-23	Malaysia	other	3
+2022-09-30	Malaysia	other	1
+2022-10-03	Malaysia	other	3
+2022-10-05	Malaysia	other	2
+2022-10-08	Malaysia	other	1
+2022-10-09	Malaysia	other	1
+2022-10-11	Malaysia	other	1
+2022-10-12	Malaysia	other	4
+2022-10-14	Malaysia	other	2
+2022-10-15	Malaysia	other	1
+2022-10-18	Malaysia	other	2
+2022-10-19	Malaysia	other	1
+2022-10-21	Malaysia	other	3
+2022-10-22	Malaysia	other	1
+2022-10-24	Malaysia	other	3
+2022-10-25	Malaysia	other	6
+2022-10-26	Malaysia	other	6
+2022-10-28	Malaysia	other	3
+2022-10-31	Malaysia	other	6
+2022-11-01	Malaysia	other	11
 2022-08-12	South Africa	Omicron 21K	1
 2022-08-18	South Africa	Omicron 21K	1
 2022-08-21	South Africa	Omicron 21K	1
