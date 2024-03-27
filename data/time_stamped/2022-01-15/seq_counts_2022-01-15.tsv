@@ -310,6 +310,108 @@ date	location	variant	sequences
 2021-12-28	Brazil	other	13
 2021-12-29	Brazil	other	3
 2021-12-30	Brazil	other	3
+2021-10-04	Costa Rica	Delta	18
+2021-10-05	Costa Rica	Delta	10
+2021-10-06	Costa Rica	Delta	6
+2021-10-07	Costa Rica	Delta	16
+2021-10-08	Costa Rica	Delta	9
+2021-10-09	Costa Rica	Delta	2
+2021-10-10	Costa Rica	Delta	6
+2021-10-11	Costa Rica	Delta	23
+2021-10-12	Costa Rica	Delta	21
+2021-10-13	Costa Rica	Delta	8
+2021-10-14	Costa Rica	Delta	15
+2021-10-15	Costa Rica	Delta	9
+2021-10-16	Costa Rica	Delta	4
+2021-10-17	Costa Rica	Delta	3
+2021-10-18	Costa Rica	Delta	21
+2021-10-19	Costa Rica	Delta	15
+2021-10-20	Costa Rica	Delta	8
+2021-10-21	Costa Rica	Delta	13
+2021-10-22	Costa Rica	Delta	9
+2021-10-23	Costa Rica	Delta	2
+2021-10-24	Costa Rica	Delta	4
+2021-10-25	Costa Rica	Delta	15
+2021-10-26	Costa Rica	Delta	15
+2021-10-27	Costa Rica	Delta	12
+2021-10-28	Costa Rica	Delta	18
+2021-10-29	Costa Rica	Delta	9
+2021-10-30	Costa Rica	Delta	2
+2021-10-31	Costa Rica	Delta	3
+2021-11-01	Costa Rica	Delta	22
+2021-11-02	Costa Rica	Delta	16
+2021-11-03	Costa Rica	Delta	15
+2021-11-04	Costa Rica	Delta	20
+2021-11-05	Costa Rica	Delta	16
+2021-11-06	Costa Rica	Delta	5
+2021-11-07	Costa Rica	Delta	7
+2021-11-08	Costa Rica	Delta	8
+2021-11-09	Costa Rica	Delta	16
+2021-11-10	Costa Rica	Delta	10
+2021-11-11	Costa Rica	Delta	7
+2021-11-12	Costa Rica	Delta	7
+2021-11-13	Costa Rica	Delta	4
+2021-11-14	Costa Rica	Delta	5
+2021-11-15	Costa Rica	Delta	13
+2021-11-16	Costa Rica	Delta	14
+2021-11-17	Costa Rica	Delta	6
+2021-11-18	Costa Rica	Delta	10
+2021-11-19	Costa Rica	Delta	6
+2021-11-20	Costa Rica	Delta	1
+2021-11-21	Costa Rica	Delta	3
+2021-11-22	Costa Rica	Delta	10
+2021-11-23	Costa Rica	Delta	13
+2021-11-24	Costa Rica	Delta	12
+2021-11-25	Costa Rica	Delta	11
+2021-11-26	Costa Rica	Delta	12
+2021-11-27	Costa Rica	Delta	2
+2021-11-28	Costa Rica	Delta	2
+2021-11-29	Costa Rica	Delta	3
+2021-11-30	Costa Rica	Delta	19
+2021-12-01	Costa Rica	Delta	15
+2021-12-02	Costa Rica	Delta	19
+2021-12-03	Costa Rica	Delta	12
+2021-12-04	Costa Rica	Delta	4
+2021-12-05	Costa Rica	Delta	4
+2021-12-06	Costa Rica	Delta	13
+2021-12-07	Costa Rica	Delta	11
+2021-12-08	Costa Rica	Delta	14
+2021-12-09	Costa Rica	Delta	4
+2021-12-10	Costa Rica	Delta	13
+2021-12-11	Costa Rica	Delta	4
+2021-12-12	Costa Rica	Delta	4
+2021-12-13	Costa Rica	Delta	9
+2021-12-14	Costa Rica	Delta	13
+2021-12-15	Costa Rica	Delta	5
+2021-12-16	Costa Rica	Delta	8
+2021-12-17	Costa Rica	Delta	7
+2021-12-18	Costa Rica	Delta	3
+2021-12-19	Costa Rica	Delta	3
+2021-12-20	Costa Rica	Delta	4
+2021-12-21	Costa Rica	Delta	12
+2021-12-22	Costa Rica	Delta	3
+2021-12-23	Costa Rica	Delta	2
+2021-12-24	Costa Rica	Delta	1
+2021-12-28	Costa Rica	Delta	1
+2021-12-29	Costa Rica	Delta	1
+2021-12-10	Costa Rica	Omicron 21K	1
+2021-12-16	Costa Rica	Omicron 21K	7
+2021-12-17	Costa Rica	Omicron 21K	4
+2021-12-18	Costa Rica	Omicron 21K	5
+2021-12-19	Costa Rica	Omicron 21K	8
+2021-12-20	Costa Rica	Omicron 21K	8
+2021-12-21	Costa Rica	Omicron 21K	13
+2021-12-22	Costa Rica	Omicron 21K	24
+2021-12-23	Costa Rica	Omicron 21K	11
+2021-12-24	Costa Rica	Omicron 21K	5
+2021-12-25	Costa Rica	Omicron 21K	2
+2021-12-26	Costa Rica	Omicron 21K	2
+2021-12-27	Costa Rica	Omicron 21K	11
+2021-12-28	Costa Rica	Omicron 21K	17
+2021-12-29	Costa Rica	Omicron 21K	12
+2021-12-30	Costa Rica	Omicron 21K	9
+2021-12-31	Costa Rica	Omicron 21K	1
+2021-10-31	Costa Rica	other	1
 2021-10-06	Egypt	Delta	1
 2021-10-12	Egypt	Delta	3
 2021-10-13	Egypt	Delta	3
@@ -442,124 +544,7 @@ date	location	variant	sequences
 2021-12-31	Japan	Omicron 21K	11
 2022-01-01	Japan	Omicron 21K	6
 2021-10-16	Japan	other	1
-2021-10-04	Malaysia	Delta	63
-2021-10-05	Malaysia	Delta	52
-2021-10-06	Malaysia	Delta	44
-2021-10-07	Malaysia	Delta	34
-2021-10-08	Malaysia	Delta	50
-2021-10-09	Malaysia	Delta	31
-2021-10-10	Malaysia	Delta	24
-2021-10-11	Malaysia	Delta	36
-2021-10-12	Malaysia	Delta	22
-2021-10-13	Malaysia	Delta	29
-2021-10-14	Malaysia	Delta	22
-2021-10-15	Malaysia	Delta	22
-2021-10-16	Malaysia	Delta	9
-2021-10-17	Malaysia	Delta	24
-2021-10-18	Malaysia	Delta	27
-2021-10-19	Malaysia	Delta	22
-2021-10-20	Malaysia	Delta	37
-2021-10-21	Malaysia	Delta	39
-2021-10-22	Malaysia	Delta	32
-2021-10-23	Malaysia	Delta	24
-2021-10-24	Malaysia	Delta	30
-2021-10-25	Malaysia	Delta	35
-2021-10-26	Malaysia	Delta	43
-2021-10-27	Malaysia	Delta	47
-2021-10-28	Malaysia	Delta	30
-2021-10-29	Malaysia	Delta	28
-2021-10-30	Malaysia	Delta	28
-2021-10-31	Malaysia	Delta	13
-2021-11-01	Malaysia	Delta	30
-2021-11-02	Malaysia	Delta	34
-2021-11-03	Malaysia	Delta	28
-2021-11-04	Malaysia	Delta	26
-2021-11-05	Malaysia	Delta	79
-2021-11-06	Malaysia	Delta	25
-2021-11-07	Malaysia	Delta	17
-2021-11-08	Malaysia	Delta	39
-2021-11-09	Malaysia	Delta	31
-2021-11-10	Malaysia	Delta	36
-2021-11-11	Malaysia	Delta	44
-2021-11-12	Malaysia	Delta	16
-2021-11-13	Malaysia	Delta	18
-2021-11-14	Malaysia	Delta	22
-2021-11-15	Malaysia	Delta	35
-2021-11-16	Malaysia	Delta	32
-2021-11-17	Malaysia	Delta	21
-2021-11-18	Malaysia	Delta	39
-2021-11-19	Malaysia	Delta	11
-2021-11-20	Malaysia	Delta	25
-2021-11-21	Malaysia	Delta	15
-2021-11-22	Malaysia	Delta	19
-2021-11-23	Malaysia	Delta	29
-2021-11-24	Malaysia	Delta	20
-2021-11-25	Malaysia	Delta	17
-2021-11-26	Malaysia	Delta	40
-2021-11-27	Malaysia	Delta	16
-2021-11-28	Malaysia	Delta	30
-2021-11-29	Malaysia	Delta	37
-2021-11-30	Malaysia	Delta	22
-2021-12-01	Malaysia	Delta	22
-2021-12-02	Malaysia	Delta	24
-2021-12-03	Malaysia	Delta	20
-2021-12-04	Malaysia	Delta	16
-2021-12-05	Malaysia	Delta	12
-2021-12-06	Malaysia	Delta	26
-2021-12-07	Malaysia	Delta	30
-2021-12-08	Malaysia	Delta	12
-2021-12-09	Malaysia	Delta	16
-2021-12-10	Malaysia	Delta	12
-2021-12-11	Malaysia	Delta	18
-2021-12-12	Malaysia	Delta	7
-2021-12-13	Malaysia	Delta	23
-2021-12-14	Malaysia	Delta	15
-2021-12-15	Malaysia	Delta	3
-2021-12-16	Malaysia	Delta	4
-2021-12-17	Malaysia	Delta	17
-2021-12-18	Malaysia	Delta	11
-2021-12-19	Malaysia	Delta	14
-2021-12-20	Malaysia	Delta	13
-2021-12-21	Malaysia	Delta	13
-2021-12-22	Malaysia	Delta	15
-2021-12-23	Malaysia	Delta	4
-2021-12-24	Malaysia	Delta	6
-2021-12-25	Malaysia	Delta	4
-2021-12-26	Malaysia	Delta	3
-2021-12-27	Malaysia	Delta	3
-2021-12-28	Malaysia	Delta	4
-2021-12-29	Malaysia	Delta	4
-2021-12-30	Malaysia	Delta	1
-2021-12-31	Malaysia	Delta	2
-2022-01-01	Malaysia	Delta	2
-2021-11-19	Malaysia	Omicron 21K	1
-2021-12-05	Malaysia	Omicron 21K	1
-2021-12-10	Malaysia	Omicron 21K	2
-2021-12-11	Malaysia	Omicron 21K	3
-2021-12-12	Malaysia	Omicron 21K	5
-2021-12-13	Malaysia	Omicron 21K	3
-2021-12-14	Malaysia	Omicron 21K	10
-2021-12-15	Malaysia	Omicron 21K	7
-2021-12-16	Malaysia	Omicron 21K	13
-2021-12-17	Malaysia	Omicron 21K	17
-2021-12-18	Malaysia	Omicron 21K	5
-2021-12-19	Malaysia	Omicron 21K	12
-2021-12-20	Malaysia	Omicron 21K	28
-2021-12-21	Malaysia	Omicron 21K	24
-2021-12-22	Malaysia	Omicron 21K	44
-2021-12-23	Malaysia	Omicron 21K	11
-2021-12-24	Malaysia	Omicron 21K	27
-2021-12-25	Malaysia	Omicron 21K	9
-2021-12-26	Malaysia	Omicron 21K	40
-2021-12-27	Malaysia	Omicron 21K	48
-2021-12-28	Malaysia	Omicron 21K	1
-2021-12-30	Malaysia	Omicron 21K	1
-2021-12-24	Malaysia	Omicron 21L	1
-2021-12-26	Malaysia	Omicron 21L	1
-2021-12-27	Malaysia	Omicron 21L	1
-2021-10-28	Malaysia	other	1
-2021-11-05	Malaysia	other	2
-2021-11-12	Malaysia	other	1
+2021-12-13	Panama	Omicron 21K	1
 2021-10-04	South Africa	Delta	40
 2021-10-05	South Africa	Delta	30
 2021-10-06	South Africa	Delta	33
@@ -753,6 +738,117 @@ date	location	variant	sequences
 2021-12-15	South Africa	other	2
 2021-12-18	South Africa	other	1
 2021-12-29	South Africa	other	1
+2021-10-04	Trinidad and Tobago	Delta	6
+2021-10-05	Trinidad and Tobago	Delta	4
+2021-10-06	Trinidad and Tobago	Delta	8
+2021-10-07	Trinidad and Tobago	Delta	1
+2021-10-08	Trinidad and Tobago	Delta	9
+2021-10-09	Trinidad and Tobago	Delta	2
+2021-10-10	Trinidad and Tobago	Delta	4
+2021-10-11	Trinidad and Tobago	Delta	4
+2021-10-12	Trinidad and Tobago	Delta	6
+2021-10-13	Trinidad and Tobago	Delta	13
+2021-10-14	Trinidad and Tobago	Delta	8
+2021-10-15	Trinidad and Tobago	Delta	13
+2021-10-16	Trinidad and Tobago	Delta	3
+2021-10-17	Trinidad and Tobago	Delta	3
+2021-10-18	Trinidad and Tobago	Delta	12
+2021-10-19	Trinidad and Tobago	Delta	6
+2021-10-20	Trinidad and Tobago	Delta	12
+2021-10-21	Trinidad and Tobago	Delta	5
+2021-10-22	Trinidad and Tobago	Delta	10
+2021-10-23	Trinidad and Tobago	Delta	7
+2021-10-24	Trinidad and Tobago	Delta	1
+2021-10-25	Trinidad and Tobago	Delta	6
+2021-10-26	Trinidad and Tobago	Delta	13
+2021-10-27	Trinidad and Tobago	Delta	4
+2021-10-28	Trinidad and Tobago	Delta	7
+2021-10-29	Trinidad and Tobago	Delta	10
+2021-10-30	Trinidad and Tobago	Delta	3
+2021-10-31	Trinidad and Tobago	Delta	1
+2021-11-01	Trinidad and Tobago	Delta	16
+2021-11-02	Trinidad and Tobago	Delta	7
+2021-11-03	Trinidad and Tobago	Delta	20
+2021-11-04	Trinidad and Tobago	Delta	2
+2021-11-05	Trinidad and Tobago	Delta	6
+2021-11-06	Trinidad and Tobago	Delta	2
+2021-11-07	Trinidad and Tobago	Delta	3
+2021-11-08	Trinidad and Tobago	Delta	22
+2021-11-09	Trinidad and Tobago	Delta	19
+2021-11-10	Trinidad and Tobago	Delta	12
+2021-11-11	Trinidad and Tobago	Delta	19
+2021-11-12	Trinidad and Tobago	Delta	19
+2021-11-13	Trinidad and Tobago	Delta	2
+2021-11-14	Trinidad and Tobago	Delta	8
+2021-11-15	Trinidad and Tobago	Delta	8
+2021-11-16	Trinidad and Tobago	Delta	11
+2021-11-17	Trinidad and Tobago	Delta	10
+2021-11-18	Trinidad and Tobago	Delta	7
+2021-11-19	Trinidad and Tobago	Delta	5
+2021-11-20	Trinidad and Tobago	Delta	8
+2021-11-21	Trinidad and Tobago	Delta	2
+2021-11-22	Trinidad and Tobago	Delta	4
+2021-11-23	Trinidad and Tobago	Delta	11
+2021-11-24	Trinidad and Tobago	Delta	5
+2021-11-25	Trinidad and Tobago	Delta	7
+2021-11-26	Trinidad and Tobago	Delta	14
+2021-11-27	Trinidad and Tobago	Delta	4
+2021-11-28	Trinidad and Tobago	Delta	5
+2021-11-29	Trinidad and Tobago	Delta	11
+2021-11-30	Trinidad and Tobago	Delta	16
+2021-12-01	Trinidad and Tobago	Delta	10
+2021-12-02	Trinidad and Tobago	Delta	4
+2021-12-03	Trinidad and Tobago	Delta	6
+2021-12-04	Trinidad and Tobago	Delta	6
+2021-12-05	Trinidad and Tobago	Delta	7
+2021-12-06	Trinidad and Tobago	Delta	19
+2021-12-07	Trinidad and Tobago	Delta	10
+2021-12-08	Trinidad and Tobago	Delta	4
+2021-12-09	Trinidad and Tobago	Delta	5
+2021-12-10	Trinidad and Tobago	Delta	3
+2021-12-11	Trinidad and Tobago	Delta	2
+2021-12-13	Trinidad and Tobago	Delta	7
+2021-12-14	Trinidad and Tobago	Delta	4
+2021-12-15	Trinidad and Tobago	Delta	12
+2021-12-16	Trinidad and Tobago	Delta	3
+2021-12-20	Trinidad and Tobago	Delta	1
+2021-12-10	Trinidad and Tobago	Omicron 21K	1
+2021-12-11	Trinidad and Tobago	Omicron 21K	1
+2021-12-15	Trinidad and Tobago	Omicron 21K	1
+2021-12-16	Trinidad and Tobago	Omicron 21K	1
+2021-12-21	Trinidad and Tobago	Omicron 21K	5
+2021-12-22	Trinidad and Tobago	Omicron 21K	1
+2021-10-04	Trinidad and Tobago	other	1
+2021-10-05	Trinidad and Tobago	other	5
+2021-10-06	Trinidad and Tobago	other	4
+2021-10-07	Trinidad and Tobago	other	2
+2021-10-08	Trinidad and Tobago	other	3
+2021-10-09	Trinidad and Tobago	other	2
+2021-10-10	Trinidad and Tobago	other	3
+2021-10-11	Trinidad and Tobago	other	3
+2021-10-12	Trinidad and Tobago	other	6
+2021-10-13	Trinidad and Tobago	other	4
+2021-10-14	Trinidad and Tobago	other	3
+2021-10-15	Trinidad and Tobago	other	2
+2021-10-17	Trinidad and Tobago	other	2
+2021-10-18	Trinidad and Tobago	other	1
+2021-10-19	Trinidad and Tobago	other	3
+2021-10-20	Trinidad and Tobago	other	4
+2021-10-21	Trinidad and Tobago	other	1
+2021-10-22	Trinidad and Tobago	other	1
+2021-10-24	Trinidad and Tobago	other	1
+2021-10-25	Trinidad and Tobago	other	1
+2021-10-26	Trinidad and Tobago	other	2
+2021-10-28	Trinidad and Tobago	other	1
+2021-10-29	Trinidad and Tobago	other	2
+2021-10-30	Trinidad and Tobago	other	3
+2021-11-03	Trinidad and Tobago	other	3
+2021-11-04	Trinidad and Tobago	other	1
+2021-11-08	Trinidad and Tobago	other	1
+2021-11-19	Trinidad and Tobago	other	2
+2021-11-24	Trinidad and Tobago	other	1
+2021-11-26	Trinidad and Tobago	other	1
+2021-11-27	Trinidad and Tobago	other	1
 2021-10-04	USA	Delta	10544
 2021-10-05	USA	Delta	10472
 2021-10-06	USA	Delta	9546
@@ -1191,3 +1287,81 @@ date	location	variant	sequences
 2021-12-30	United Kingdom	other	7
 2021-12-31	United Kingdom	other	2
 2022-01-01	United Kingdom	other	2
+2021-10-04	Vietnam	Delta	9
+2021-10-05	Vietnam	Delta	6
+2021-10-06	Vietnam	Delta	12
+2021-10-07	Vietnam	Delta	7
+2021-10-08	Vietnam	Delta	2
+2021-10-09	Vietnam	Delta	1
+2021-10-10	Vietnam	Delta	1
+2021-10-11	Vietnam	Delta	4
+2021-10-12	Vietnam	Delta	1
+2021-10-13	Vietnam	Delta	5
+2021-10-14	Vietnam	Delta	1
+2021-10-16	Vietnam	Delta	7
+2021-10-17	Vietnam	Delta	2
+2021-10-18	Vietnam	Delta	4
+2021-10-19	Vietnam	Delta	16
+2021-10-20	Vietnam	Delta	5
+2021-10-21	Vietnam	Delta	14
+2021-10-22	Vietnam	Delta	19
+2021-10-23	Vietnam	Delta	10
+2021-10-25	Vietnam	Delta	1
+2021-10-26	Vietnam	Delta	4
+2021-10-28	Vietnam	Delta	5
+2021-10-31	Vietnam	Delta	4
+2021-11-01	Vietnam	Delta	5
+2021-11-02	Vietnam	Delta	3
+2021-11-03	Vietnam	Delta	7
+2021-11-04	Vietnam	Delta	9
+2021-11-05	Vietnam	Delta	5
+2021-11-06	Vietnam	Delta	3
+2021-11-07	Vietnam	Delta	14
+2021-11-08	Vietnam	Delta	3
+2021-11-09	Vietnam	Delta	6
+2021-11-11	Vietnam	Delta	5
+2021-11-12	Vietnam	Delta	6
+2021-11-14	Vietnam	Delta	3
+2021-11-15	Vietnam	Delta	6
+2021-11-16	Vietnam	Delta	3
+2021-11-17	Vietnam	Delta	11
+2021-11-18	Vietnam	Delta	1
+2021-11-19	Vietnam	Delta	3
+2021-11-20	Vietnam	Delta	2
+2021-11-27	Vietnam	Delta	5
+2021-11-28	Vietnam	Delta	28
+2021-12-02	Vietnam	Delta	1
+2021-12-03	Vietnam	Delta	4
+2021-12-05	Vietnam	Delta	2
+2021-12-06	Vietnam	Delta	4
+2021-12-07	Vietnam	Delta	5
+2021-12-08	Vietnam	Delta	1
+2021-12-09	Vietnam	Delta	7
+2021-12-10	Vietnam	Delta	2
+2021-12-11	Vietnam	Delta	2
+2021-12-12	Vietnam	Delta	8
+2021-12-13	Vietnam	Delta	1
+2021-12-14	Vietnam	Delta	11
+2021-12-15	Vietnam	Delta	20
+2021-12-16	Vietnam	Delta	14
+2021-12-17	Vietnam	Delta	5
+2021-12-18	Vietnam	Delta	1
+2021-12-19	Vietnam	Delta	4
+2021-12-20	Vietnam	Delta	3
+2021-12-21	Vietnam	Delta	2
+2021-12-22	Vietnam	Delta	1
+2021-12-23	Vietnam	Delta	1
+2021-12-24	Vietnam	Delta	11
+2021-12-25	Vietnam	Delta	3
+2021-12-26	Vietnam	Delta	3
+2021-12-27	Vietnam	Delta	10
+2021-12-28	Vietnam	Delta	7
+2021-12-29	Vietnam	Delta	3
+2021-12-30	Vietnam	Delta	1
+2022-01-01	Vietnam	Delta	10
+2021-12-21	Vietnam	Omicron 21K	1
+2021-12-22	Vietnam	Omicron 21K	3
+2021-12-23	Vietnam	Omicron 21K	1
+2021-12-25	Vietnam	Omicron 21K	1
+2021-12-31	Vietnam	Omicron 21K	1
+2021-12-29	Vietnam	Omicron 21L	1
