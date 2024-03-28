@@ -18,7 +18,7 @@ def smooth_freq(df):
 def load_data(filepath):
     # Check if file exists and continue if not
     if not os.path.exists(filepath):
-        return None  
+        return None
     # read models and add to dict
 
     raw_pred = pd.read_csv(filepath)
@@ -28,7 +28,17 @@ def load_data(filepath):
         raw_pred["pred_freq"] = raw_pred["pred_freq"].fillna(
             value=raw_pred["median_freq_nowcast"]
         )
-    return raw_pred
+
+    if (
+        "freq_forecast_lower_50" in raw_pred.columns
+        and "freq_forecast_upper_95" in raw_pred.columns
+    ):
+        ci_low = raw_pred["freq_forecast_lower_50"]
+        ci_high = raw_pred["freq_forecast_upper_95"]
+    else:
+        ci_low = None
+        ci_high = None
+    return raw_pred, ci_low, ci_high
 
 
 # reading truth_set
@@ -68,14 +78,12 @@ def prep_freq_data(final_set):
     # convert frequencies to arrays
     raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy())
 
-
     if len(raw_freq) == 0:
         return (None,) * 5
     raw_freq[np.isnan(raw_freq)] = 0
     # smoothed freq
     smoothed_freq = np.squeeze(final_set[["smoothed_freq"]].to_numpy())
     smoothed_freq[np.isnan(smoothed_freq)] = 0
-
 
     # return seq_total
     seq_count = np.squeeze(final_set[["sequences"]].to_numpy())
@@ -99,7 +107,8 @@ def merge_truth_pred(df, location_truth):
     ].transform("sum")
     # compute truth frequencies for each variant
     merged_set["truth_freq"] = (
-        merged_set["sequences"] / merged_set["total_seq"])
+        merged_set["sequences"] / merged_set["total_seq"]
+    )
     return merged_set[merged_set["pred_freq"].notnull()]
 
 
@@ -125,6 +134,8 @@ def calculate_errors(merged, pivot_date):
         seq_count,
         total_seq,
         smoothed_freq,
+        ci_low,
+        ci_high,
     ) = prep_freq_data(merged)
 
     if raw_freq is None:
@@ -143,6 +154,18 @@ def calculate_errors(merged, pivot_date):
     # Logloss error
     logloss = LogLoss()
     error_df["loglik"] = logloss.evaluate(seq_count, total_seq, pred_freq)
+
+    # Adding confidence intervals
+    # Computing Coverage
+    coverage = Coverage()
+    if ci_low is not None and ci_high is not None:
+        error_df["freq_forecast_lower_50"] = ci_low
+        error_df["freq_forecast_upper_95"] = ci_high
+
+        # Compute coverage
+    error_df["coverage"] = Coverage.compute_coverage(
+        smoothed_freq, ci_low, ci_high
+    )
 
     # adding frequencies columns for comparison and diagnostics
     error_df["total_seq"] = total_seq
@@ -165,7 +188,18 @@ class MAE(Scores):
 
     def evaluate(self, truth, prediction):
         abs_error = np.abs(truth - prediction)
+        # abs_error = prediction - truth
         return abs_error
+
+
+class Coverage(Scores):
+    def __init__(self):
+        pass
+
+    def compute_coverage(self, truth, ci_low, ci_high):
+        within_interval = (truth >= ci_low) & (truth <= ci_high)
+        coverage = within_interval  # Maybe add .mean() here?
+        return coverage
 
 
 class MSE(Scores):
@@ -204,12 +238,35 @@ if __name__ == "__main__":
         "Australia",
         "South Africa",
         "Japan",
+        "Malaysia",
     ]
     models = ["GARW", "MLR", "FGA", "Piantham", "dummy"]
-    dates = ['2022-01-01', '2022-01-15','2022-02-01','2022-02-15','2022-03-01','2022-03-15',
-         '2022-04-01','2022-04-15','2022-05-01','2022-05-15','2022-06-01','2022-06-15',
-         '2022-07-01','2022-07-15','2022-08-01','2022-08-15','2022-09-01','2022-09-15',
-         '2022-10-01','2022-10-15','2022-11-01','2022-11-15','2022-12-01','2022-12-15']
+    dates = [
+        "2022-01-01",
+        "2022-01-15",
+        "2022-02-01",
+        "2022-02-15",
+        "2022-03-01",
+        "2022-03-15",
+        "2022-04-01",
+        "2022-04-15",
+        "2022-05-01",
+        "2022-05-15",
+        "2022-06-01",
+        "2022-06-15",
+        "2022-07-01",
+        "2022-07-15",
+        "2022-08-01",
+        "2022-08-15",
+        "2022-09-01",
+        "2022-09-15",
+        "2022-10-01",
+        "2022-10-15",
+        "2022-11-01",
+        "2022-11-15",
+        "2022-12-01",
+        "2022-12-15",
+    ]
 
     # truth_seq_count per variant
     truth_set = load_truthset(
@@ -229,7 +286,7 @@ if __name__ == "__main__":
             # for all specified pivot dates
             for pivot_date in dates:
 
-                filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.tsv"
+                filepath = f"../model_estimates_fullRank/cast_estimates_full_{model}/{location}/freq_full_{pivot_date}.csv"
 
                 # Load data
                 raw_pred = load_data(filepath)
@@ -248,10 +305,12 @@ if __name__ == "__main__":
 
                 score_df_list.append(error_df)
 
+    # print(score_df_list)
     score_df = pd.concat(score_df_list)
 
     # Save score output to a tsv file
     error_filepath = "../errors/"
     if not os.path.exists(error_filepath):
         os.makedirs(error_filepath)
-    score_df.to_csv(error_filepath + "model_scores_output.tsv", sep="\t", index=False)
+    score_df.to_csv(error_filepath + "model_scores.tsv", sep="\t", index=False)
+
