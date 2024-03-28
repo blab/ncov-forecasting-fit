@@ -229,7 +229,7 @@ if __name__ == "__main__":
             # for all specified pivot dates
             for pivot_date in dates:
 
-                filepath = f"../plot-est2/cast_estimates_full_{model}/{location}/freq_full_{pivot_date}.csv"
+                filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.tsv"
 
                 # Load data
                 raw_pred = load_data(filepath)
@@ -248,8 +248,10 @@ if __name__ == "__main__":
 
                 score_df_list.append(error_df)
 
-    # print(score_df_list)
     score_df = pd.concat(score_df_list)
 
-    # save score output to a csv file
-    score_df.to_csv(f"../estimates/model_scores_output.csv", index=False)
+    # Save score output to a tsv file
+    error_filepath = "../errors/"
+    if not os.path.exists(error_filepath):
+        os.makedirs(filepath)
+    score_df.to_csv(error_filepath + "model_scores_output.tsv", sep="\t", index=False)
