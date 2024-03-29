@@ -197,14 +197,11 @@ class LogLoss(Scores):
 
 
 if __name__ == "__main__":
-    locations = [
-        "USA",
-        "United Kingdom",
-        "Brazil",
-        "Australia",
-        "South Africa",
-        "Japan",
-    ]
+    locations = [ "USA", "United Kingdom", "Brazil","Australia",
+    "South Africa", "Japan",  "Panama",
+    "Trinidad and Tobago", "Costa Rica",
+    "Hong King", "Vietnam", "Egypt"]
+
     models = ["GARW", "MLR", "FGA", "Piantham", "dummy"]
     dates = ['2022-01-01', '2022-01-15','2022-02-01','2022-02-15','2022-03-01','2022-03-15',
          '2022-04-01','2022-04-15','2022-05-01','2022-05-15','2022-06-01','2022-06-15',
@@ -229,20 +226,20 @@ if __name__ == "__main__":
             # for all specified pivot dates
             for pivot_date in dates:
 
-                filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.tsv"
-
+                filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.csv"
+                
                 # Load data
                 raw_pred = load_data(filepath)
-                print(raw_pred)
+                #print(raw_pred)
                 if raw_pred is None:
                     continue
 
                 # Merge predictions and truth set
                 merged = merge_truth_pred(raw_pred, location_truth)
-
+                #print(merged)
                 # Make dataframe containing the errors
                 error_df = calculate_errors(merged, pivot_date)
-                print(error_df)
+                #print(error_df)
                 if error_df is None:
                     continue
 
@@ -254,4 +251,4 @@ if __name__ == "__main__":
     error_filepath = "../errors/"
     if not os.path.exists(error_filepath):
         os.makedirs(error_filepath)
-    score_df.to_csv(error_filepath + "model_scores_output.tsv", sep="\t", index=False)
+    score_df.to_csv(error_filepath + "model_scores_output.csv", sep="\t", index=False)
