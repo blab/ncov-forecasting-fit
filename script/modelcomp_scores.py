@@ -10,8 +10,12 @@ from scipy.stats import binom
 # smoothing truth raw frequency using 1dimension filter
 def smooth_freq(df):
 
-    raw_freq = df["truth_freq"].values
-    df["smoothed_freq"] = uniform_filter1d(raw_freq, size=7, mode="nearest")
+    #raw_freq = df["truth_freq"].values
+    #df["smoothed_freq"] = uniform_filter1d(raw_freq, size=7, mode="nearest")
+    raw_freq = pd.Series(df["truth_freq"])
+    smoothed_freq = raw_freq.rolling(window=7, min_periods=1, center=True).mean().values
+    #smoothed_freq = np.convolve(raw_freq, np.ones(7)/7, mode='same')
+    df["smoothed_freq"] = smoothed_freq
     return df
 
 
@@ -66,15 +70,23 @@ def load_truthset(path):
 def prep_freq_data(final_set):
 
     # convert frequencies to arrays
-    raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy())
+    raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy(), axis = -1)
+    
+    #raw_freq[np.isnan(raw_freq)] = 0
 
-
+    # Checking for empty arrays or arrays with all zeros
+    
     if len(raw_freq) == 0:
         return (None,) * 5
-    raw_freq[np.isnan(raw_freq)] = 0
+    #print(raw_freq)
+
+
+
     # smoothed freq
     smoothed_freq = np.squeeze(final_set[["smoothed_freq"]].to_numpy())
-    smoothed_freq[np.isnan(smoothed_freq)] = 0
+    #smoothed_freq[np.isnan(smoothed_freq)] = 0
+
+    print(smoothed_freq)
 
 
     # return seq_total
@@ -202,7 +214,7 @@ if __name__ == "__main__":
     "Trinidad and Tobago", "Costa Rica",
     "Hong King", "Vietnam", "Egypt"]
 
-    models = ["GARW", "MLR", "FGA", "Piantham", "dummy"]
+    models = ["GARW", "MLR", "FGA", "Piantham", "naive"]
     dates = ['2022-01-01', '2022-01-15','2022-02-01','2022-02-15','2022-03-01','2022-03-15',
          '2022-04-01','2022-04-15','2022-05-01','2022-05-15','2022-06-01','2022-06-15',
          '2022-07-01','2022-07-15','2022-08-01','2022-08-15','2022-09-01','2022-09-15',
@@ -233,6 +245,7 @@ if __name__ == "__main__":
                 #print(raw_pred)
                 if raw_pred is None:
                     continue
+                
 
                 # Merge predictions and truth set
                 merged = merge_truth_pred(raw_pred, location_truth)
