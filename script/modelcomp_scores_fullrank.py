@@ -10,36 +10,41 @@ from scipy.stats import binom
 # smoothing truth raw frequency using 1dimension filter
 def smooth_freq(df):
 
-    raw_freq = df["truth_freq"].values
-    df["smoothed_freq"] = uniform_filter1d(raw_freq, size=7, mode="nearest")
+    raw_freq = pd.Series(df["truth_freq"])
+    smoothed_freq = raw_freq.rolling(window=7, min_periods=1, center=True).mean().values
+    #smoothed_freq = np.convolve(raw_freq, np.ones(7)/7, mode='same')
+    df["smoothed_freq"] = smoothed_freq
     return df
 
 
 def load_data(filepath):
     # Check if file exists and continue if not
     if not os.path.exists(filepath):
-        return None  
-    # read models and add to dict
-
+        return None  # Return None if file does not exist
+    
+    # Read the CSV file into a DataFrame
     raw_pred = pd.read_csv(filepath)
-    # print(model,location,date)
+    
+    # Assign values from "median_freq_forecast" column to "pred_freq" column
     raw_pred["pred_freq"] = raw_pred["median_freq_forecast"]
+    
+    # Fill missing values in "pred_freq" column with values from "median_freq_nowcast" column if available
     if "median_freq_nowcast" in raw_pred.columns:
-        raw_pred["pred_freq"] = raw_pred["pred_freq"].fillna(
-            value=raw_pred["median_freq_nowcast"]
-        )
+        raw_pred["pred_freq"].fillna(value=raw_pred["median_freq_nowcast"], inplace=True)
+    
 
-    if "freq_forecast_lower_50" in raw_pred.columns and "freq_forecast_upper_95" in raw_pred.columns:
-        ci_low = raw_pred["freq_forecast_lower_50"]
-        ci_high = raw_pred["freq_forecast_upper_95"]
-    else:
-        ci_low = None
-        ci_high = None
-    return raw_pred, ci_low, ci_high
-
-
-
-
+    # Check if forecasting confidence intervals are available in the DataFrame
+    if "freq_forecast_lower_95" in raw_pred.columns and "freq_forecast_upper_95" in raw_pred.columns:
+    # Add columns for confidence intervals to the DataFrame
+        raw_pred["ci_low"] = raw_pred["freq_forecast_lower_95"]
+        raw_pred["ci_high"] = raw_pred["freq_forecast_upper_95"]
+        if "freq_lower_95" in raw_pred.columns:
+            raw_pred["ci_low"] = raw_pred[["ci_low", "freq_lower_95"]].min(axis = 1)
+        if "freq_nowcast_upper_95" in raw_pred.columns:
+            raw_pred["ci_high"] = raw_pred[["ci_high", "freq_nowcast_upper_95"]].max(axis = 1)
+    
+    # Return the modified DataFrame raw_pred
+    return raw_pred
 
 # reading truth_set
 def load_truthset(path):
@@ -72,6 +77,7 @@ def load_truthset(path):
     return new_truth
 
 
+
 # comment
 def prep_freq_data(final_set):
 
@@ -80,7 +86,7 @@ def prep_freq_data(final_set):
 
 
     if len(raw_freq) == 0:
-        return (None,) * 5
+        return (None,) * 7
     raw_freq[np.isnan(raw_freq)] = 0
     # smoothed freq
     smoothed_freq = np.squeeze(final_set[["smoothed_freq"]].to_numpy())
@@ -96,7 +102,11 @@ def prep_freq_data(final_set):
     # convert predicted frequencies to arrays
     pred_freq = np.squeeze(final_set[["pred_freq"]].to_numpy())
 
-    return raw_freq, pred_freq, seq_count, total_seq, smoothed_freq
+    # Confidence intervals
+    ci_low = np.squeeze(final_set[["ci_low"]].to_numpy())
+    ci_high = np.squeeze(final_set[["ci_high"]].to_numpy())
+
+    return raw_freq, pred_freq, seq_count, total_seq, smoothed_freq, ci_low, ci_high
 
 
 def merge_truth_pred(df, location_truth):
@@ -159,13 +169,14 @@ def calculate_errors(merged, pivot_date):
 
     # Adding confidence intervals
     # Computing Coverage
-    coverage = Coverage()
-    if ci_low is not None and ci_high is not None:
-        error_df["freq_forecast_lower_50"] = ci_low
-        error_df["freq_forecast_upper_95"] = ci_high
-
+    
+    #if ci_low is not None and ci_high is not None:
+    #    error_df["freq_forecast_lower_50"] = ci_low
+    #    error_df["freq_forecast_upper_95"] = ci_high
         # Compute coverage
-    error_df["coverage"] = Coverage.compute_coverage(smoothed_freq, ci_low, ci_high)
+    coverage = Coverage()
+    error_df["coverage"] = coverage.compute_coverage(smoothed_freq, ci_low, ci_high)
+    #print(error_df["coverage"])
         
 
 
@@ -200,7 +211,7 @@ class Coverage(Scores):
 
     def compute_coverage(self, truth, ci_low, ci_high):
         within_interval = (truth >= ci_low) & (truth <= ci_high)
-        coverage = within_interval  #Maybe add .mean() here?
+        coverage = within_interval.astype(int)
         return coverage
 
 
@@ -234,13 +245,14 @@ class LogLoss(Scores):
 
 if __name__ == "__main__":
     locations = [
+        "Australia",
+        "Brazil",
+        "Japan",
+        "South Africa",
+        "Trinidad and Tobago",
         "USA",
         "United Kingdom",
-        "Brazil",
-        "Australia",
-        "South Africa",
-        "Japan",
-        "Malaysia"
+        "Vietnam"
     ]
     models = ["GARW", "MLR", "FGA", "Piantham", "dummy"]
     dates = ['2022-01-01', '2022-01-15','2022-02-01','2022-02-15','2022-03-01','2022-03-15',
@@ -260,17 +272,18 @@ if __name__ == "__main__":
     for model in models:
 
         for location in locations:
+            print(location)
             pred_dic = {}
             # filtering final_truth dataset to run location
             location_truth = truth_set[truth_set["location"] == location]
             # for all specified pivot dates
             for pivot_date in dates:
 
-                filepath = f"../model_estimates_fullRank/cast_estimates_full_{model}/{location}/freq_full_{pivot_date}.csv"
+                filepath = f"../model_estimates_fullRank/{model}/{location}/freq_full_{pivot_date}.csv"
 
                 # Load data
                 raw_pred = load_data(filepath)
-                print(raw_pred)
+                #print(raw_pred)
                 if raw_pred is None:
                     continue
 
@@ -279,7 +292,7 @@ if __name__ == "__main__":
 
                 # Make dataframe containing the errors
                 error_df = calculate_errors(merged, pivot_date)
-                print(error_df)
+                #print(error_df)
                 if error_df is None:
                     continue
 
@@ -289,4 +302,4 @@ if __name__ == "__main__":
     score_df = pd.concat(score_df_list)
 
     # save score output to a csv file
-    score_df.to_csv(f"../estimates_fullrank/model_scores_output.csv", index=False)
+    score_df.to_csv(f"../errors_fullRank/model_scores_output.csv", index=False)
