@@ -2,17 +2,17 @@
 
 ## Computing model errors based on truth sets
 
-This script computes model errors for different evolutionary forecasting models ("GARW", "MLR", "FGA", "Piantham", "dummy") based on provided truth sets. 
+This script computes model errors for different evolutionary forecasting models ("GARW", "MLR", "FGA", "Piantham", "dummy") based on provided retrospective sequence counts.
+
 The script does this in the following steps:
-
-1. Loads the truth set data.
-2. Processes the model output files for each location and model.
+1. Loads the retrospective sequence counts to produce a truth set of retrospective smooth frequencies.
+2. Loads the model predictions from each model and estimation date.
 3. Merges the model predictions with the corresponding truth set.
-4. Calculates error metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Multinomial Log Loss.
-5. Generates an output DataFrame containing the error metrics and additional frequency columns.
-6. Exports the error metrics to a file `../estimates/model_scores_output.csv`.
+4. Calculates error metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and coverage.
+5. Generates an output DataFrame containing the error metrics and additional retrospective frequency columns.
+6. Exports the error metrics to a file `../estimates/model_scores.tsv`.
 
-This process can be found in the script `./modelcomp_scores.py`.
+This process can be found in the script `./compute_model_scores.py`.
 
 ## Formatting growth advantages from `evofr` models
 
