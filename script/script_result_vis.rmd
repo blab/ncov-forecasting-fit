@@ -81,13 +81,15 @@ my_theme() {
 
 #read error datasets
 
-error_dataset = read.csv('../estimates/model_scores_output.csv') %>%
-  mutate(model = recode(model, dummy = "Naïve")) 
+error_dataset = read.csv('../errors/model_scores_output.csv', sep="\t") %>%
+  mutate(model = recode(model, naive = "Naïve")) 
 
-error_dataset_fullrank = read.csv('../estimates_fullrank/model_scores_output.csv') %>%
-  mutate(model = recode(model, dummy = "Naïve")) 
 
-range(error_dataset$MAE)
+# Read full rank CI error dataset
+error_dataset_fullrank = read.csv('../errors_fullrank/model_scores_output.csv') %>%
+  mutate(model = recode(model, naive = "Naïve")) 
+
+table(error_dataset_fullrank$location)
 #growth advantage dataset per variant
 growthadv_dataset = read.csv("../estimates/ga_output.csv")
 
@@ -113,7 +115,6 @@ seq_last =  read.csv("../data/time_stamped/2022-12-01/seq_counts_2022-12-01.tsv"
 truth_set = read.csv("../data/time_stamped/truth/seq_counts_truth.tsv",sep = "\t")
 
 
-table(seqs_first$location)
 
 sum(seq_mid$sequences=="Egypt")
 
@@ -140,7 +141,8 @@ variant_colorsga = c("Delta" = "#926224",		"Omicron 21K" = "#781C86","Omicron 22
 
 
 loc_color_map = c("USA" = "#a12525", "United Kingdom" = "#00299b", "Japan" = "#3d405b",
-                  "Brazil" = "#f9722f","Australia" = "#309975", "South Africa"= "#b300b3")
+                  "Brazil" = "#f9722f","Australia" = "#309975", "South Africa"= "#b300b3",
+                  "Vietnam" = "#ffbb00", "Trinidad and Tobago" = "#1e90ff")
 
 model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", "FGA" = "#FFCF00","GARW" = "#D62828" )
 
@@ -701,8 +703,11 @@ ggsave("figure2.png", plot = error_quantiles_mae, width = 25, height = 20, units
 library(extrafont)
 
 # make y percent with hline 5% showing the error
-med_log_error_30 = error_dataset %>%
+med_log_error_30 = 
+# Median MAE with log scale
+error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
@@ -717,9 +722,9 @@ med_log_error_30 = error_dataset %>%
   labs(linetype = " ", color = "Model", shape = 1) +
   scale_color_manual(values = model_colors,
                      breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
-  labs( y = "Median Bias Error") +
+  labs(x = "Days from date of estimation", y = "Median Absolute Error") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
-  theme(axis.title.x = element_blank(),
+  theme(axis.title.x = element_text(color = "Black", size = 14),
         axis.title.y = element_text(color = "Black", size = 14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
@@ -731,29 +736,25 @@ med_log_error_30 = error_dataset %>%
         axis.ticks = element_line(),
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = 12),
-        legend.position = "right",
+        legend.position = "top",
         legend.title = element_text(size = 12)) +
-  #ylim(-0.05,0.05)+
-  scale_y_continuous(
-    limits = c(-0.05, 0.05), # This sets the limits from 0% to 5%
-    breaks = seq(-0.05, 0.05, by = 0.025), # This sets the breaks at every 1% increment
-    labels = scales::percent(seq(-0.05, 0.05, by = 0.025)) # This sets the labels to show the percentages
-  ) +
-  #scale_y_continuous(trans = log_trans(),
-                    # breaks = c(0.001, 0.005, 0.1, 1),
-                     #labels = label_percent()
-    #                ) +
+  scale_y_continuous(trans = log_trans(),
+                     breaks = c(0.001, 0.005, 0.1, 1),
+                     labels = label_percent()) +
   annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 5,
            color = NA, fill = "#bdc3c7", alpha = 0.15) +
   annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
   annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 5,
            color = NA, fill = "#2c3e50", alpha = 0.15) +
-  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4) #+
-  #geom_hline(yintercept = 0.05, linetype = "dashed")
+  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4) +
+  geom_hline(yintercept = 0.05, linetype = "dashed")
+  
   
 
-mae_nat_error_30 =error_dataset %>%
+mae_nat_error_30 =# Mean MAE with natural scale
+error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
@@ -766,17 +767,12 @@ mae_nat_error_30 =error_dataset %>%
   labs(linetype = " ", color = "Model", shape = 1) +
   scale_color_manual(values = model_colors,
                      breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
-  labs(x = "Days from date of estimation", y = "Mean Bias Error") +
+  labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
     scale_y_continuous(
-    limits = c(-0.1, 0.1), # This sets the limits from 0% to 5%
-    breaks = seq(-0.1, 0.1, by = 0.025), # This sets the breaks at every 1% increment
-    labels = scales::percent(seq(-0.1, 0.1, by = 0.025))# This sets the labels to show the percentages
-  ) +
-    scale_y_continuous(
     limits = c(0, 0.2), # This sets the limits from 0% to 5%
-    breaks = seq(0, 0.1, by = 0.025), # This sets the breaks at every 1% increment
-    labels = scales::percent(seq(0, 0.1, by = 0.025)) # This sets the labels to show the percentages
+    breaks = seq(0, 0.2, by = 0.05), # This sets the breaks at every 1% increment
+    labels = scales::percent(seq(0, 0.2, by = 0.05)) # This sets the labels to show the percentages
   ) +  # Set y-axis breaks and labels
   theme(axis.title.x = element_text(color = "Black", size = 14),
         axis.title.y = element_text(color = "Black", size = 14),
@@ -790,15 +786,14 @@ mae_nat_error_30 =error_dataset %>%
         axis.ticks = element_line(),
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = 12),
-        legend.position = "right",
+        legend.position = "none",
         legend.title = element_text(size = 12)) +
   annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.2,
            color = NA, fill = "#bdc3c7", alpha = 0.15) +
-  annotate(geom = "text", x = -18, y = 0.18, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "text", x = -18, y = 0.15, label = "Nowcast", size = 3, fontface = 4) +
   annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.2,
            color = NA, fill = "#2c3e50", alpha = 0.15) +
-  annotate(geom = "text", x = 18, y = 0.18, label = "Forecast", size = 3, fontface = 4)# +
-  #geom_hline(yintercept = 0.05, linetype = "dashed")
+  annotate(geom = "text", x = 18, y = 0.15, label = "Forecast", size = 3, fontface = 4)  + geom_hline(yintercept = 0.05, linetype = "dashed")
 
 ggsave("figure2-30day.png", plot = error_quant_30, width = 25, height = 20, units = "cm", bg = 'transparent')
 
@@ -812,6 +807,7 @@ ggsave("figure2-30day.png", plot = error_quant_30, width = 25, height = 20, unit
 # Median MAE with log scale
 error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","United Kingdom", "Vietnam","USA",  "Trinidad and Tobago")) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
@@ -858,6 +854,7 @@ error_dataset %>%
 
 error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","United Kingdom", "Vietnam","USA",  "Trinidad and Tobago")) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
@@ -904,6 +901,7 @@ error_dataset %>%
 
 error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","United Kingdom", "Vietnam","USA",  "Trinidad and Tobago")) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
@@ -919,9 +917,9 @@ error_dataset %>%
   labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
     scale_y_continuous(
-    limits = c(0, 0.2), # This sets the limits from 0% to 5%
-    breaks = seq(0, 0.2, by = 0.05), # This sets the breaks at every 1% increment
-    labels = scales::percent(seq(0, 0.2, by = 0.05)) # This sets the labels to show the percentages
+    limits = c(0, 0.3), # This sets the limits from 0% to 5%
+    breaks = seq(0, 0.3, by = 0.05), # This sets the breaks at every 1% increment
+    labels = scales::percent(seq(0, 0.3, by = 0.05)) # This sets the labels to show the percentages
   ) +  # Set y-axis breaks and labels
   theme(axis.title.x = element_text(color = "Black", size = 14),
         axis.title.y = element_text(color = "Black", size = 14),
@@ -937,12 +935,12 @@ error_dataset %>%
         plot.title = element_text(family = "Helvetica", size = 12),
         legend.position = "right",
         legend.title = element_text(size = 12)) +
-  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.2,
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.3,
            color = NA, fill = "#bdc3c7", alpha = 0.15) +
-  annotate(geom = "text", x = -18, y = 0.025, label = "Nowcast", size = 3, fontface = 4) +
-  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.2,
+  annotate(geom = "text", x = -18, y = 0.25, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.3,
            color = NA, fill = "#2c3e50", alpha = 0.15) +
-  annotate(geom = "text", x = 18, y = 0.025, label = "Forecast", size = 3, fontface = 4)
+  annotate(geom = "text", x = 18, y = 0.25, label = "Forecast", size = 3, fontface = 4)  + geom_hline(yintercept = 0.05, linetype = "dashed")
 
 #Median with natural scale
 
@@ -991,6 +989,7 @@ error_dataset %>%
            color = NA, fill = "#2c3e50", alpha = 0.15) +
   annotate(geom = "text", x = 18, y = 0.025, label = "Forecast", size = 3, fontface = 4)
 
+table(error_dataset$model)
 
 ```
 
@@ -1008,12 +1007,14 @@ lags = as_labeller(c("-30" = "-30 Lag", "0" = "0 Lag","30"= "30 Lag"))
 
 
 MAE_fig2_dat = error_dataset %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
   filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model)
 
-range(MAE_fig2_dat$MAE)
+table(MAE_fig2_dat$location)
 
 mae_quant_data = error_dataset %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam")) %>%
   filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model) %>%
   summarise(
@@ -1023,8 +1024,8 @@ mae_quant_data = error_dataset %>%
     meanMAE = mean(MAE)
   ) %>%
   group_by(model, lead)
+names(mae_quant_data)
 
-#mae_dist = 
 
 # Function to create the combined plot
 create_combined_plot <- function(mae_quant_data, MAE_fig2_dat) {
@@ -1058,7 +1059,8 @@ create_combined_plot <- function(mae_quant_data, MAE_fig2_dat) {
       size = 0.7,
       alpha = 0.15,
       groupOnX = T,
-      inherit.aes = FALSE
+      inherit.aes = FALSE,
+      fast = FALSE
     )+
     geom_errorbar(
       data = mae_quant_data,
@@ -1210,14 +1212,15 @@ Figure_2A=  (med_log_error_30 + labs(title = element_text( "A",face = "bold"))) 
 
 
 
-Figure_2B = (figure_2B + labs(title = element_text( "C",face = "bold"))) +
+Figure_2B = figure_2B  +
   plot_layout( guides = "collect" , ncol = 1) & theme(legend.position = "right") 
              
 Figure_2= (Figure_2A + theme(plot.margin = unit(c(0,0,0,0), "pt")))  /(Figure_2B+ theme(plot.margin = unit(c(0,0,0,0), "pt")))
 
 
 
-ggsave("model_comp.png", plot = Figure_2, width = 30, height = 40, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+ggsave("model_comp_A.png", plot = Figure_2A, width = 20, height = 30, units = "cm", bg = 'white',  dpi = 300)
+ggsave("model_comp_B.png", plot = Figure_2B, width = 20, height = 15, units = "cm", bg = 'white')
 
 Version()
 
@@ -1234,6 +1237,7 @@ This plot shows the median RMSE error for each model, this provides a more detai
 ```{r}
 
 table1 = error_dataset %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","United Kingdom", "Vietnam","USA",  "Trinidad and Tobago")) %>%
   filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model, location) %>%
   summarise(Median = median(MAE),
@@ -1278,79 +1282,102 @@ model_comp_table = table1 %>%
 #-30 LEAD
     tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR , Mean_FGA, Mean_GARW, Mean_MLR, Mean_Piantham), 
+            locations = cells_body(columns= c( Median_GARW , Mean_FGA, Mean_GARW, Mean_MLR, Mean_FGA), 
                                    rows = 1)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham, Median_MLR, Mean_FGA), 
+            locations = cells_body(columns= c(Median_Piantham, Mean_FGA), 
                                    rows = 2)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_Piantham), 
+            locations = cells_body(columns= c(Median_Piantham,  Mean_FGA, Mean_GARW, Mean_Piantham, Mean_MLR), 
                                    rows = 3)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW, Mean_FGA, Mean_GARW), 
+            locations = cells_body(columns= c(Median_FGA, Median_GARW, Mean_GARW), 
                                    rows = 4)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_GARW), 
+            locations = cells_body(columns= c(Median_Piantham, Mean_MLR), 
                                    rows = 5)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR,  Mean_FGA, Mean_GARW, Mean_MLR), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_MLR), 
                                    rows = 6)) %>%
+  tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_GARW), 
+                                   rows = 7)) %>%
+      tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
+                                   rows = 8)) %>%
   
 #0 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW,Mean_GARW ), 
-                                   rows = 7)) %>%
-      tab_style(style = list(
-                         cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_MLR, Median_FGA, Median_GARW,Mean_GARW  ), 
-                                   rows = 8)) %>%
-      tab_style(style = list(
-                         cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_MLR, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW,Mean_GARW ), 
                                    rows = 9)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_MLR, Median_GARW, Mean_MLR), 
+            locations = cells_body(columns= c( Median_GARW,Mean_MLR, Mean_FGA  ), 
                                    rows = 10)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Mean_FGA, Mean_GARW), 
+            locations = cells_body(columns= c(Median_MLR,Median_GARW, Mean_MLR ), 
                                    rows = 11)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW, Mean_FGA), 
                                    rows = 12)) %>%
-#30 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
             locations = cells_body(columns= c(Median_GARW, Mean_MLR), 
                                    rows = 13)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW, Mean_FGA), 
+            locations = cells_body(columns= c(Median_GARW,Median_FGA, Mean_MLR), 
                                    rows = 14)) %>%
-      tab_style(style = list(
+    tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW, Median_MLR, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
                                    rows = 15)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW, Median_MLR, Median_Piantham, Mean_MLR), 
+            locations = cells_body(columns= c(Median_FGA, Mean_FGA), 
                                    rows = 16)) %>%
+#30 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW, Median_MLR, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
                                    rows = 17)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_MLR, Median_GARW, Mean_MLR), 
+            locations = cells_body(columns= c(Median_Piantham, Mean_FGA), 
                                    rows = 18)) %>%
+      tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c(Median_FGA, Median_MLR, Mean_GARW), 
+                                   rows = 19)) %>%
+      tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c(Median_GARW, Median_MLR, Mean_FGA), 
+                                   rows = 20)) %>%
+      tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c(Median_FGA, Median_MLR, Mean_MLR), 
+                                   rows = 21)) %>%
+      tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c(Median_MLR, Mean_MLR), 
+                                   rows = 22)) %>%tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c( Median_GARW, Mean_MLR), 
+                                   rows = 23)) %>%
+      tab_style(style = list(
+                         cell_text(weight = 'bold')), 
+            locations = cells_body(columns= c( Median_GARW, Mean_GARW), 
+                                   rows = 24)) %>%
  gt_theme_guardian()%>%
   tab_options(
       table.font.color = "black",
@@ -3925,8 +3952,8 @@ plot_error_dataset <- function(error_dataset, model_input, country_input) {
 }
 
 
-countries <- unique(error_dataset$location)
-models <- c("MLR", "GARW", "Piantham", "FGA")
+
+models <- c("Piantham","MLR", "FGA", "GARW")
 
 for (country in countries) {
   plot_list <- list()  # Initialize a list to store plots for this country
@@ -3937,8 +3964,13 @@ for (country in countries) {
   }
   
   # Stack the plots vertically for this country
-  grid.arrange(grobs = plot_list, ncol = 1)
+  combined_plot <- grid.arrange(grobs = plot_list, ncol = 1)
+  
+  # Save the plot with appropriate name
+  file_name <- paste0("supplementary_fig_", country, ".png")
+  ggsave(file_name, combined_plot, width = 20, height = 15)
 }
+
 
 ```
 
@@ -3950,8 +3982,8 @@ for (country in countries) {
 # SUP 1 A
 
 ```{R}
-Supp_1_countries = c("USA", "United Kingdom", "Brazil","Australia","South Africa", "Japan", "Malaysia", "Egypt")
-ylim_values <- c(10000, 10000, 1000, 1000, 1000, 2000, 1000, 100)
+countries = c("Australia", "Brazil","South Africa", "Trinidad and Tobago", "United Kingdom", "Vietnam")
+ylim_values <- c(750, 750, 250, 50, 15000, 100)
 # Call the function for each country
 plot_all_countries_sequences <- function(countries, seqs_first, seq_mid, seq_mid2, seq_last, ylim_values) {
   country_plots <- list()
@@ -3971,13 +4003,15 @@ plot_all_countries_sequences <- function(countries, seqs_first, seq_mid, seq_mid
   
   arranged_plots <- wrap_plots(country_plots, ncol = 1)
   
+  
   return(arranged_plots)
 }
 
-supp1_Test = plot_all_countries_sequences(Supp_1_countries, seqs_first, seq_mid, seq_mid2, seq_last, ylim_values)
 
-ggsave("supp1_Test.png", plot = supp1_Test, width = 30, height = 40, units = "cm" )
+supp1_fig = plot_all_countries_sequences(countries, seqs_first, seq_mid, seq_mid2, seq_last, ylim_values)
 
+
+ggsave("Supplementary_Fig_1A.png", plot = supp1_fig, width = 40, height = 30, units = "cm" )
 
 
 ```
@@ -4008,16 +4042,22 @@ ggsave("dynamic_forecasting_env_supplementary.png", plot = Figure_1_SUPP, width 
 
 ```{r}
 
+names(error_dataset_fullrank)
+
+
 # Median MAE with log scale
-error_dataset %>%
+error_dataset_fullrank %>%
   group_by(lead, location, model) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
             quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
-            meanMAE = mean(MAE)) %>%
-  ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")))) +
+            meanMAE = mean(MAE),
+            coverage = mean(coverage)) %>%
+ ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
+             shape = factor(coverage)))  +
   geom_line(aes(y = quant50), size = 0.5) +
+  geom_point()+
   #geom_line(aes(y =meanMAE ), alpha = 0.75)+
   #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
   facet_wrap(~location) +
@@ -4055,23 +4095,26 @@ error_dataset %>%
 
 # Mean MAE with log scale
 
-error_dataset %>%
+error_dataset_fullrank %>%
   group_by(lead, location, model) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
             quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
-            meanMAE = mean(MAE)) %>%
-  ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")))) +
+            meanMAE = mean(MAE),
+            coverage = mean(coverage)) %>%
+   ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW"))))  +
   #geom_line(aes(y = quant50), size = 0.5) +
-  geom_line(aes(y =meanMAE ), alpha = 0.75)+
+  geom_line(aes(y =coverage ), alpha = 0.75)+
+
+  #geom_point(aes(y = coverage)) +
   #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
   facet_wrap(~location) +
   bbc_style() +
   labs(linetype = " ", color = "Model", shape = 1) +
   scale_color_manual(values = model_colors,
                      breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
-  labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
+  labs(x = "Days from date of estimation", y = "Coverage (Percent in 95% CI)") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
   theme(axis.title.x = element_text(color = "Black", size = 14),
         axis.title.y = element_text(color = "Black", size = 14),
@@ -4088,8 +4131,10 @@ error_dataset %>%
         legend.position = "right",
         legend.title = element_text(size = 12)) +
   scale_y_continuous(trans = log_trans(),
-                     breaks = c(0.001, 0.005, 0.1, 1),
+                     
+                     #breaks = c(0.001, 0.005,, 0.1, 1),
                      labels = label_percent()) +
+    ylim(0,1)+
   annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 5,
            color = NA, fill = "#bdc3c7", alpha = 0.15) +
   annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
