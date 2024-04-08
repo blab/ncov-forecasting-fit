@@ -36,7 +36,7 @@ def load_data(filepath):
 
     # Fixing column name if using old runs
     if "freq_nowcast_upper_95" in raw_pred.columns:
-        raw_pred["freq_upper_96"] = ["freq_nowcast_upper_95"]
+        raw_pred["freq_upper_96"] = raw_pred["freq_nowcast_upper_95"]
 
     # Check if forecasting confidence intervals are available in the DataFrame
     if (

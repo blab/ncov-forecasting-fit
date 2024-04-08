@@ -35,11 +35,11 @@ main:
     - "Panama"
     - "Trinidad and Tobago"
     - "Costa Rica"
-    - "Hong King"
+    - "Hong Kong"
     - "Vietnam"
   models:
     - "GARW"
     - "FGA"
     - "Piantham"
-    - 'MLR'
+    - "MLR"
     - "naive"
