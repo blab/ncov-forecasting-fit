@@ -38,6 +38,7 @@ main:
     - "Hong Kong"
     - "Vietnam"
   models:
+    - "Hierarchical-MLR"
     - "GARW"
     - "FGA"
     - "Piantham"
