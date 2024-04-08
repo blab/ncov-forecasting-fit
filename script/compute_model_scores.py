@@ -17,13 +17,13 @@ def smooth_freq(df):
     return df
 
 
-def load_data(filepath):
+def load_data(filepath, sep):
     # Check if file exists and continue if not
     if not os.path.exists(filepath):
         return None  # Return None if file does not exist
 
-    # Read the CSV file into a DataFrame
-    raw_pred = pd.read_csv(filepath)
+    # Read the file into a DataFrame
+    raw_pred = pd.read_csv(filepath, sep=sep)
 
     # Assign values from "median_freq_forecast" column to "pred_freq" column
     raw_pred["pred_freq"] = raw_pred["median_freq_forecast"]
@@ -52,7 +52,7 @@ def load_data(filepath):
             )
         if "freq_upper_95" in raw_pred.columns:
             raw_pred["ci_high"] = raw_pred[
-                ["ci_high", "freq_nowcast_upper_95"]
+                ["ci_high", "freq_upper_95"]
             ].max(axis=1)
 
     # Return the modified DataFrame raw_pred
@@ -285,10 +285,14 @@ if __name__ == "__main__":
                 continue
 
             for pivot_date in dates:
-                filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.csv"
+                filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.tsv"
+                # if no .tsv, check for .csv
+                if not os.path.exists(filepath):
+                    filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.csv"
 
                 # Load data
-                raw_pred = load_data(filepath)
+                sep = "\t" if filepath.endswith(".tsv") else ","
+                raw_pred = load_data(filepath, sep=sep)
                 if raw_pred is None:
                     print(
                         f"No {model} predictions found for location {location} on analysis date {pivot_date}"
