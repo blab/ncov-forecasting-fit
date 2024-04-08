@@ -92,7 +92,7 @@ def load_truthset(path):
 def prep_freq_data(final_set):
 
     # Convert frequencies to arrays
-    raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy())
+    raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy(), axis=-1)
 
     if len(raw_freq) == 0:
         return (None,) * 7
@@ -110,8 +110,15 @@ def prep_freq_data(final_set):
     pred_freq = np.squeeze(final_set[["pred_freq"]].to_numpy())
 
     # Convert credible intervals to arrays
-    ci_low = np.squeeze(final_set[["ci_low"]].to_numpy())
-    ci_high = np.squeeze(final_set[["ci_high"]].to_numpy())
+    if "ci_low" in final_set.columns:
+        ci_low = np.squeeze(final_set[["ci_low"]].to_numpy())
+    else:
+        ci_low = None
+
+    if "ci_high" in final_set.columns:
+        ci_high = np.squeeze(final_set[["ci_high"]].to_numpy())
+    else:
+        ci_high = None
 
     return (
         raw_freq,
@@ -185,9 +192,10 @@ def calculate_errors(merged, pivot_date):
 
     # Computing Coverage
     coverage = Coverage()
-    error_df["coverage"] = coverage.compute_coverage(
-        smoothed_freq, ci_low, ci_high
-    )
+    if ci_low is not None and ci_high is not None:
+        error_df["coverage"] = coverage.compute_coverage(
+            smoothed_freq, ci_low, ci_high
+        )
 
     # Adding frequencies columns for comparison and diagnostics
     error_df["total_seq"] = total_seq
@@ -251,7 +259,7 @@ class LogLoss(Scores):
 
 
 if __name__ == "__main__":
-    with open("../config.yaml", 'r') as config:
+    with open("../config.yaml", "r") as config:
         config = yaml.safe_load(config)
 
     dates = config["main"]["estimation_dates"]
@@ -270,12 +278,21 @@ if __name__ == "__main__":
             pred_dic = {}
             # Filtering to location of increast
             location_truth = truth_set[truth_set["location"] == location]
+            if location_truth is None:
+                print(
+                    f"{location_truth} is not in the retrospective frequencies."
+                )
+                continue
+
             for pivot_date in dates:
                 filepath = f"../estimates/{model}/{location}/freq_full_{pivot_date}.csv"
 
                 # Load data
                 raw_pred = load_data(filepath)
                 if raw_pred is None:
+                    print(
+                        f"No {model} predictions found for location {location} on analysis date {pivot_date}"
+                    )
                     continue
 
                 # Merge predictions and truth set
