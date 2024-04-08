@@ -1,0 +1,4 @@
+location,variant,median_ga,ga_upper_95,ga_lower_95,ga_upper_80,ga_lower_80,ga_upper_50,ga_lower_50
+Japan,Delta,1.3786521,1.7985904,1.0418553,1.6539909,1.1609668,1.5178376,1.2626207
+Japan,Omicron 21K,2.5323071,3.3783395,1.8415076,3.0999846,2.0461013,2.8224528,2.268736
+Japan,other,1.0,1.0,1.0,1.0,1.0,1.0,1.0

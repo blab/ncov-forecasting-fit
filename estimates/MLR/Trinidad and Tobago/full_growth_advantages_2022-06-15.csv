@@ -1,0 +1,4 @@
+location,variant,median_ga,ga_upper_95,ga_lower_95,ga_upper_80,ga_lower_80,ga_upper_50,ga_lower_50
+Trinidad and Tobago,Omicron 21K,0.72642577,0.7789685,0.676948,0.7598778,0.6927037,0.74393076,0.7089009
+Trinidad and Tobago,Omicron 22C,1.1645266,1.3943691,0.9764937,1.3086355,1.0371195,1.2366562,1.0953205
+Trinidad and Tobago,other,1.0565538,1.2150855,0.9219239,1.1552389,0.9629597,1.1086174,1.0129898

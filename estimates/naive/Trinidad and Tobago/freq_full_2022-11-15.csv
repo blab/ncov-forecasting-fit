@@ -1,0 +1,370 @@
+variant,location,freq,date,median_freq_nowcast,median_freq_forecast
+Omicron 21L,Trinidad and Tobago,0.125,2022-09-17,0.125,
+Omicron 22A,Trinidad and Tobago,0.3383333333333333,2022-09-17,0.3383333333333333,
+Omicron 22B,Trinidad and Tobago,0.7200680272108844,2022-09-17,0.7200680272108844,
+Omicron 22D,Trinidad and Tobago,0.14285714285714285,2022-09-17,0.14285714285714285,
+Omicron 21L,Trinidad and Tobago,0.125,2022-09-18,0.125,
+Omicron 22A,Trinidad and Tobago,0.32291666666666663,2022-09-18,0.32291666666666663,
+Omicron 22B,Trinidad and Tobago,0.7295918367346939,2022-09-18,0.7295918367346939,
+Omicron 22D,Trinidad and Tobago,0.23809523809523808,2022-09-18,0.23809523809523808,
+Omicron 21L,Trinidad and Tobago,0.125,2022-09-19,0.125,
+Omicron 22A,Trinidad and Tobago,0.4895833333333333,2022-09-19,0.4895833333333333,
+Omicron 22B,Trinidad and Tobago,0.7400793650793651,2022-09-19,0.7400793650793651,
+Omicron 22D,Trinidad and Tobago,0.23809523809523808,2022-09-19,0.23809523809523808,
+Omicron 21L,Trinidad and Tobago,0.125,2022-09-20,0.125,
+Omicron 22A,Trinidad and Tobago,0.425,2022-09-20,0.425,
+Omicron 22B,Trinidad and Tobago,0.7083333333333334,2022-09-20,0.7083333333333334,
+Omicron 22D,Trinidad and Tobago,0.25,2022-09-20,0.25,
+Omicron 21L,Trinidad and Tobago,0.125,2022-09-21,0.125,
+Omicron 22A,Trinidad and Tobago,0.38749999999999996,2022-09-21,0.38749999999999996,
+Omicron 22B,Trinidad and Tobago,0.6749999999999999,2022-09-21,0.6749999999999999,
+Omicron 22D,Trinidad and Tobago,0.25,2022-09-21,0.25,
+Omicron 21L,Trinidad and Tobago,0.10795454545454546,2022-09-22,0.10795454545454546,
+Omicron 22A,Trinidad and Tobago,0.3193181818181818,2022-09-22,0.3193181818181818,
+Omicron 22B,Trinidad and Tobago,0.728030303030303,2022-09-22,0.728030303030303,
+Omicron 22D,Trinidad and Tobago,0.25,2022-09-22,0.25,
+Omicron 21L,Trinidad and Tobago,0.09090909090909091,2022-09-23,0.09090909090909091,
+Omicron 22A,Trinidad and Tobago,0.34015151515151515,2022-09-23,0.34015151515151515,
+Omicron 22B,Trinidad and Tobago,0.728030303030303,2022-09-23,0.728030303030303,
+Omicron 22D,Trinidad and Tobago,0.25,2022-09-23,0.25,
+Omicron 21L,Trinidad and Tobago,0.09090909090909091,2022-09-24,0.09090909090909091,
+Omicron 22A,Trinidad and Tobago,0.31792929292929295,2022-09-24,0.31792929292929295,
+Omicron 22B,Trinidad and Tobago,0.7502525252525253,2022-09-24,0.7502525252525253,
+Omicron 22D,Trinidad and Tobago,0.25,2022-09-24,0.25,
+Omicron 21L,Trinidad and Tobago,0.09090909090909091,2022-09-25,0.09090909090909091,
+Omicron 22A,Trinidad and Tobago,0.31792929292929295,2022-09-25,0.31792929292929295,
+Omicron 22B,Trinidad and Tobago,0.8058080808080809,2022-09-25,0.8058080808080809,
+Omicron 22D,Trinidad and Tobago,0.16666666666666666,2022-09-25,0.16666666666666666,
+Omicron 21L,Trinidad and Tobago,0.10101010101010101,2022-09-26,0.10101010101010101,
+Omicron 22A,Trinidad and Tobago,0.16978114478114478,2022-09-26,0.16978114478114478,
+Omicron 22B,Trinidad and Tobago,0.785930735930736,2022-09-26,0.785930735930736,
+Omicron 22D,Trinidad and Tobago,0.16666666666666666,2022-09-26,0.16666666666666666,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-09-26,0.1111111111111111,
+Omicron 21L,Trinidad and Tobago,0.10101010101010101,2022-09-27,0.10101010101010101,
+Omicron 22A,Trinidad and Tobago,0.17533670033670035,2022-09-27,0.17533670033670035,
+Omicron 22B,Trinidad and Tobago,0.7906926406926408,2022-09-27,0.7906926406926408,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-09-27,0.1111111111111111,
+other,Trinidad and Tobago,0.1,2022-09-27,0.1,
+Omicron 21L,Trinidad and Tobago,0.10101010101010101,2022-09-28,0.10101010101010101,
+Omicron 22A,Trinidad and Tobago,0.16978114478114478,2022-09-28,0.16978114478114478,
+Omicron 22B,Trinidad and Tobago,0.7954545454545455,2022-09-28,0.7954545454545455,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-09-28,0.1111111111111111,
+other,Trinidad and Tobago,0.1,2022-09-28,0.1,
+Omicron 21L,Trinidad and Tobago,0.1111111111111111,2022-09-29,0.1111111111111111,
+Omicron 22A,Trinidad and Tobago,0.17843915343915343,2022-09-29,0.17843915343915343,
+Omicron 22B,Trinidad and Tobago,0.8010204081632653,2022-09-29,0.8010204081632653,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-09-29,0.1111111111111111,
+other,Trinidad and Tobago,0.1,2022-09-29,0.1,
+Omicron 21L,Trinidad and Tobago,0.1111111111111111,2022-09-30,0.1111111111111111,
+Omicron 22A,Trinidad and Tobago,0.17380952380952383,2022-09-30,0.17380952380952383,
+Omicron 22B,Trinidad and Tobago,0.8049886621315192,2022-09-30,0.8049886621315192,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-09-30,0.1111111111111111,
+other,Trinidad and Tobago,0.1,2022-09-30,0.1,
+Omicron 21L,Trinidad and Tobago,0.1111111111111111,2022-10-01,0.1111111111111111,
+Omicron 22A,Trinidad and Tobago,0.17380952380952383,2022-10-01,0.17380952380952383,
+Omicron 22B,Trinidad and Tobago,0.8049886621315192,2022-10-01,0.8049886621315192,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-10-01,0.1111111111111111,
+other,Trinidad and Tobago,0.1,2022-10-01,0.1,
+Omicron 21L,Trinidad and Tobago,0.1111111111111111,2022-10-02,0.1111111111111111,
+Omicron 22A,Trinidad and Tobago,0.17380952380952383,2022-10-02,0.17380952380952383,
+Omicron 22B,Trinidad and Tobago,0.8049886621315192,2022-10-02,0.8049886621315192,
+Omicron 22E,Trinidad and Tobago,0.1111111111111111,2022-10-02,0.1111111111111111,
+other,Trinidad and Tobago,0.1,2022-10-02,0.1,
+Omicron 22A,Trinidad and Tobago,0.18634920634920635,2022-10-03,0.18634920634920635,
+Omicron 22B,Trinidad and Tobago,0.8526077097505669,2022-10-03,0.8526077097505669,
+other,Trinidad and Tobago,0.1,2022-10-03,0.1,
+Omicron 22A,Trinidad and Tobago,0.21301587301587302,2022-10-04,0.21301587301587302,
+Omicron 22B,Trinidad and Tobago,0.8478458049886621,2022-10-04,0.8478458049886621,
+Omicron 22A,Trinidad and Tobago,0.2596825396825397,2022-10-05,0.2596825396825397,
+Omicron 22B,Trinidad and Tobago,0.8145124716553288,2022-10-05,0.8145124716553288,
+Omicron 22A,Trinidad and Tobago,0.4311111111111111,2022-10-06,0.4311111111111111,
+Omicron 22B,Trinidad and Tobago,0.8074074074074074,2022-10-06,0.8074074074074074,
+Omicron 22A,Trinidad and Tobago,0.48333333333333334,2022-10-07,0.48333333333333334,
+Omicron 22B,Trinidad and Tobago,0.8133333333333332,2022-10-07,0.8133333333333332,
+Omicron 22A,Trinidad and Tobago,0.5777777777777778,2022-10-08,0.5777777777777778,
+Omicron 22B,Trinidad and Tobago,0.8533333333333333,2022-10-08,0.8533333333333333,
+Omicron 22A,Trinidad and Tobago,0.5777777777777778,2022-10-09,0.5777777777777778,
+Omicron 22B,Trinidad and Tobago,0.8533333333333333,2022-10-09,0.8533333333333333,
+Omicron 22A,Trinidad and Tobago,0.5777777777777778,2022-10-10,0.5777777777777778,
+Omicron 22B,Trinidad and Tobago,0.8533333333333333,2022-10-10,0.8533333333333333,
+Omicron 22A,Trinidad and Tobago,0.7,2022-10-11,0.7,
+Omicron 22B,Trinidad and Tobago,0.9199999999999999,2022-10-11,0.9199999999999999,
+Omicron 22A,Trinidad and Tobago,0.5714285714285714,2022-10-12,0.5714285714285714,
+Omicron 22B,Trinidad and Tobago,0.9714285714285713,2022-10-12,0.9714285714285713,
+Omicron 22A,Trinidad and Tobago,0.17142857142857143,2022-10-13,0.17142857142857143,
+Omicron 22B,Trinidad and Tobago,0.942857142857143,2022-10-13,0.942857142857143,
+Omicron 22A,Trinidad and Tobago,0.2253968253968254,2022-10-14,0.2253968253968254,
+Omicron 22B,Trinidad and Tobago,0.9034013605442176,2022-10-14,0.9034013605442176,
+Omicron 22A,Trinidad and Tobago,0.21071428571428572,2022-10-15,0.21071428571428572,
+Omicron 22B,Trinidad and Tobago,0.8795918367346939,2022-10-15,0.8795918367346939,
+Omicron 22A,Trinidad and Tobago,0.21071428571428572,2022-10-16,0.21071428571428572,
+Omicron 22B,Trinidad and Tobago,0.8795918367346939,2022-10-16,0.8795918367346939,
+Omicron 22A,Trinidad and Tobago,0.21071428571428572,2022-10-17,0.21071428571428572,
+Omicron 22B,Trinidad and Tobago,0.8795918367346939,2022-10-17,0.8795918367346939,
+Omicron 22A,Trinidad and Tobago,0.21071428571428572,2022-10-18,0.21071428571428572,
+Omicron 22B,Trinidad and Tobago,0.8795918367346938,2022-10-18,0.8795918367346938,
+Omicron 22A,Trinidad and Tobago,0.28214285714285714,2022-10-19,0.28214285714285714,
+Omicron 22B,Trinidad and Tobago,0.8183673469387756,2022-10-19,0.8183673469387756,
+Omicron 22E,Trinidad and Tobago,0.14285714285714285,2022-10-19,0.14285714285714285,
+Omicron 22A,Trinidad and Tobago,0.2571428571428571,2022-10-20,0.2571428571428571,
+Omicron 22B,Trinidad and Tobago,0.8040816326530612,2022-10-20,0.8040816326530612,
+Omicron 22E,Trinidad and Tobago,0.17142857142857143,2022-10-20,0.17142857142857143,
+Omicron 22A,Trinidad and Tobago,0.23174603174603173,2022-10-21,0.23174603174603173,
+Omicron 22B,Trinidad and Tobago,0.8517006802721089,2022-10-21,0.8517006802721089,
+Omicron 22E,Trinidad and Tobago,0.17142857142857143,2022-10-21,0.17142857142857143,
+Omicron 22A,Trinidad and Tobago,0.2642857142857143,2022-10-22,0.2642857142857143,
+Omicron 22B,Trinidad and Tobago,0.8755102040816326,2022-10-22,0.8755102040816326,
+Omicron 22E,Trinidad and Tobago,0.17142857142857143,2022-10-22,0.17142857142857143,
+Omicron 22A,Trinidad and Tobago,0.2642857142857143,2022-10-23,0.2642857142857143,
+Omicron 22B,Trinidad and Tobago,0.8755102040816326,2022-10-23,0.8755102040816326,
+Omicron 22E,Trinidad and Tobago,0.17142857142857143,2022-10-23,0.17142857142857143,
+Omicron 22A,Trinidad and Tobago,0.2642857142857143,2022-10-24,0.2642857142857143,
+Omicron 22B,Trinidad and Tobago,0.8755102040816326,2022-10-24,0.8755102040816326,
+Omicron 22E,Trinidad and Tobago,0.17142857142857143,2022-10-24,0.17142857142857143,
+Omicron 22A,Trinidad and Tobago,0.2873015873015873,2022-10-25,0.2873015873015873,
+Omicron 22B,Trinidad and Tobago,0.827891156462585,2022-10-25,0.827891156462585,
+Omicron 22E,Trinidad and Tobago,0.17142857142857143,2022-10-25,0.17142857142857143,
+Omicron 22A,Trinidad and Tobago,0.21666666666666667,2022-10-26,0.21666666666666667,
+Omicron 22B,Trinidad and Tobago,0.8944444444444444,2022-10-26,0.8944444444444444,
+Omicron 22E,Trinidad and Tobago,0.6,2022-10-26,0.6,
+Omicron 22A,Trinidad and Tobago,0.3333333333333333,2022-10-27,0.3333333333333333,
+Omicron 22B,Trinidad and Tobago,0.9444444444444445,2022-10-27,0.9444444444444445,
+Omicron 22E,Trinidad and Tobago,1.0,2022-10-27,1.0,
+Omicron 22A,Trinidad and Tobago,0.6666666666666666,2022-10-28,0.6666666666666666,
+Omicron 22B,Trinidad and Tobago,0.9333333333333332,2022-10-28,0.9333333333333332,
+Omicron 22E,Trinidad and Tobago,1.0,2022-10-28,1.0,
+Omicron 22A,Trinidad and Tobago,0.6666666666666666,2022-10-29,0.6666666666666666,
+Omicron 22B,Trinidad and Tobago,0.9166666666666666,2022-10-29,0.9166666666666666,
+Omicron 22E,Trinidad and Tobago,1.0,2022-10-29,1.0,
+Omicron 22A,Trinidad and Tobago,0.6666666666666666,2022-10-30,0.6666666666666666,
+Omicron 22B,Trinidad and Tobago,0.8888888888888888,2022-10-30,0.8888888888888888,
+Omicron 22E,Trinidad and Tobago,1.0,2022-10-30,1.0,
+Omicron 22A,Trinidad and Tobago,0.6666666666666666,2022-10-31,0.6666666666666666,
+Omicron 22B,Trinidad and Tobago,0.8333333333333333,2022-10-31,0.8333333333333333,
+Omicron 22E,Trinidad and Tobago,1.0,2022-10-31,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-01,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-01,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-01,1.0,
+Omicron 22E,Trinidad and Tobago,1.0,2022-11-01,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-02,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-02,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-02,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-03,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-03,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-03,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-04,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-04,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-04,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-05,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-05,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-05,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-06,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-06,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-06,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-07,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-07,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-07,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-08,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-08,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-08,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-09,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-09,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-09,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-10,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-10,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-10,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-11,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-11,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-11,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-12,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-12,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-12,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-13,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-13,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-13,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-14,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-14,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-14,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-15,1.0,
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-15,1.0,
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-15,1.0,
+Delta,Trinidad and Tobago,1.0,2022-11-16,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-16,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-16,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-17,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-17,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-17,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-18,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-18,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-18,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-19,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-19,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-19,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-20,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-20,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-20,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-21,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-21,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-21,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-22,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-22,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-22,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-23,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-23,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-23,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-24,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-24,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-24,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-25,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-25,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-25,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-26,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-26,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-26,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-27,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-27,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-27,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-28,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-28,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-28,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-29,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-29,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-29,,1.0
+Delta,Trinidad and Tobago,1.0,2022-11-30,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-11-30,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-11-30,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-01,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-01,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-01,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-02,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-02,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-02,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-03,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-03,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-03,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-04,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-04,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-04,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-05,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-05,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-05,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-06,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-06,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-06,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-07,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-07,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-07,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-08,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-08,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-08,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-09,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-09,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-09,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-10,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-10,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-10,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-11,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-11,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-11,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-12,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-12,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-12,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-13,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-13,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-13,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-14,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-14,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-14,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-15,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-15,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-15,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-16,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-16,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-16,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-17,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-17,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-17,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-18,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-18,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-18,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-19,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-19,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-19,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-20,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-20,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-20,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-21,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-21,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-21,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-22,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-22,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-22,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-23,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-23,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-23,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-24,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-24,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-24,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-25,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-25,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-25,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-26,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-26,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-26,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-27,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-27,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-27,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-28,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-28,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-28,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-29,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-29,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-29,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-30,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-30,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-30,,1.0
+Delta,Trinidad and Tobago,1.0,2022-12-31,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2022-12-31,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2022-12-31,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-01,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-01,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-01,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-02,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-02,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-02,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-03,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-03,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-03,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-04,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-04,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-04,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-05,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-05,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-05,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-06,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-06,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-06,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-07,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-07,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-07,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-08,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-08,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-08,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-09,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-09,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-09,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-10,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-10,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-10,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-11,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-11,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-11,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-12,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-12,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-12,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-13,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-13,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-13,,1.0
+Delta,Trinidad and Tobago,1.0,2023-01-14,,1.0
+Omicron 22A,Trinidad and Tobago,1.0,2023-01-14,,1.0
+Omicron 22B,Trinidad and Tobago,1.0,2023-01-14,,1.0

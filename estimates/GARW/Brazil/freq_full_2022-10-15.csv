@@ -1,0 +1,631 @@
+date,location,variant,median_freq_nowcast,freq_nowcast_upper_95,freq_lower_95,freq_upper_80,freq_lower_80,freq_upper_50,freq_lower_50,median_freq_forecast,freq_forecast_upper_95,freq_forecast_lower_95,freq_forecast_upper_80,freq_forecast_lower_80,freq_forecast_upper_50,freq_forecast_lower_50
+2022-08-17,Brazil,Omicron 21K,2.1787677e-16,6.266208e-11,1.4194233e-23,3.3271072e-13,1.0947848e-20,1.5095721e-14,2.1259894e-18,,,,,,,
+2022-08-18,Brazil,Omicron 21K,5.5147724e-17,2.7510924e-11,1.6111488e-24,1.1240435e-13,1.6490637e-21,4.4376386e-15,4.1858893e-19,,,,,,,
+2022-08-19,Brazil,Omicron 21K,1.3675018e-17,1.18100425e-11,1.8121183e-25,3.7991223e-14,2.351634e-22,1.3000417e-15,8.3164144e-20,,,,,,,
+2022-08-20,Brazil,Omicron 21K,3.2713455e-18,5.0941395e-12,2.0283349e-26,1.32903815e-14,3.4326042e-23,3.9987973e-16,1.6013065e-20,,,,,,,
+2022-08-21,Brazil,Omicron 21K,7.925878e-19,2.2123672e-12,2.2690598e-27,4.8202955e-15,5.720757e-24,1.208921e-16,3.101441e-21,,,,,,,
+2022-08-22,Brazil,Omicron 21K,1.9541069e-19,9.688466e-13,1.0227316e-27,1.7853176e-15,8.639108e-25,3.668749e-17,6.414141e-22,,,,,,,
+2022-08-23,Brazil,Omicron 21K,4.8751137e-20,4.2837692e-13,8.607073e-28,6.6650143e-16,1.425244e-25,1.17008825e-17,1.3757655e-22,,,,,,,
+2022-08-24,Brazil,Omicron 21K,1.19943976e-20,1.91453e-13,7.6385155e-28,2.4618645e-16,2.4207486e-26,3.7885476e-18,2.9191908e-23,,,,,,,
+2022-08-25,Brazil,Omicron 21K,3.2640753e-21,8.657537e-14,7.6069274e-28,8.912957e-17,4.4486613e-27,1.2435322e-18,6.0948742e-24,,,,,,,
+2022-08-26,Brazil,Omicron 21K,8.628485e-22,3.9644306e-14,8.017452e-28,3.5680777e-17,2.2773636e-27,4.0020844e-19,1.3353361e-24,,,,,,,
+2022-08-27,Brazil,Omicron 21K,2.2342265e-22,1.841847e-14,7.574524e-28,1.29890956e-17,2.023004e-27,1.3169739e-19,2.973577e-25,,,,,,,
+2022-08-28,Brazil,Omicron 21K,5.9934054e-23,8.68674e-15,7.883066e-28,5.479237e-18,2.2385448e-27,4.6526486e-20,6.799743e-26,,,,,,,
+2022-08-29,Brazil,Omicron 21K,1.6759416e-23,4.1556394e-15,8.498197e-28,2.4430841e-18,2.332231e-27,1.686925e-20,1.5849787e-26,,,,,,,
+2022-08-30,Brazil,Omicron 21K,4.7791714e-24,2.016877e-15,9.581005e-28,1.0743543e-18,2.2590792e-27,5.625465e-21,7.9380384e-27,,,,,,,
+2022-08-31,Brazil,Omicron 21K,1.3865145e-24,9.949308e-16,9.878322e-28,4.668926e-19,2.2551567e-27,1.9719889e-21,7.169661e-27,,,,,,,
+2022-09-01,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,Omicron 21K,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-08-17,Brazil,Omicron 22A,3.0964042e-18,2.1091255e-13,2.351167e-25,2.8605533e-15,1.906309e-22,1.168349e-16,3.1747912e-20,,,,,,,
+2022-08-18,Brazil,Omicron 22A,6.8275607e-19,8.523321e-14,2.656569e-26,9.84864e-16,2.8390236e-23,3.3286145e-17,5.997366e-21,,,,,,,
+2022-08-19,Brazil,Omicron 22A,1.7035092e-19,3.4680327e-14,2.9653613e-27,3.248277e-16,4.2165846e-24,9.500965e-18,1.1691474e-21,,,,,,,
+2022-08-20,Brazil,Omicron 22A,3.7687467e-20,1.4191505e-14,3.2840799e-28,1.0557961e-16,6.266947e-25,2.716362e-18,2.3293237e-22,,,,,,,
+2022-08-21,Brazil,Omicron 22A,9.285526e-21,5.8506497e-15,3.5331615e-29,3.4856293e-17,9.3319275e-26,7.7476404e-19,4.6588812e-23,,,,,,,
+2022-08-22,Brazil,Omicron 22A,2.2793794e-21,2.433961e-15,1.5081527e-29,1.20751826e-17,1.397584e-26,2.2653683e-19,9.350553e-24,,,,,,,
+2022-08-23,Brazil,Omicron 22A,6.0876636e-22,1.023155e-15,1.3003178e-29,4.234614e-18,2.1146545e-27,6.558323e-20,1.8976655e-24,,,,,,,
+2022-08-24,Brazil,Omicron 22A,1.5916227e-22,4.350826e-16,1.24498574e-29,1.5406471e-18,3.225533e-28,2.0410622e-20,3.9601611e-25,,,,,,,
+2022-08-25,Brazil,Omicron 22A,4.1959922e-23,1.8733101e-16,1.2072963e-29,5.577453e-19,7.1950263e-29,6.2603242e-21,8.0400685e-26,,,,,,,
+2022-08-26,Brazil,Omicron 22A,1.0392719e-23,8.172756e-17,1.1220056e-29,2.0418866e-19,3.3471775e-29,1.954202e-21,1.6963862e-26,,,,,,,
+2022-08-27,Brazil,Omicron 22A,2.8020186e-24,3.6147296e-17,1.0302594e-29,7.278767e-20,2.5110323e-29,6.225368e-22,3.7160714e-27,,,,,,,
+2022-08-28,Brazil,Omicron 22A,7.440482e-25,1.644523e-17,1.0105282e-29,2.854933e-20,2.4067919e-29,2.0100994e-22,8.33372e-28,,,,,,,
+2022-08-29,Brazil,Omicron 22A,1.9592263e-25,7.757594e-18,1.0721971e-29,1.0916966e-20,2.4574282e-29,6.633435e-23,1.8819872e-28,,,,,,,
+2022-08-30,Brazil,Omicron 22A,5.076021e-26,3.7169377e-18,1.089502e-29,4.474323e-21,2.4383531e-29,2.3724069e-23,8.308051e-29,,,,,,,
+2022-08-31,Brazil,Omicron 22A,1.438938e-26,1.8091052e-18,1.20302055e-29,1.8677633e-21,2.4359516e-29,8.257037e-24,7.397924e-29,,,,,,,
+2022-09-01,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,Omicron 22A,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-08-17,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-18,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-19,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-20,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-21,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-22,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-23,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-24,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-25,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-26,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-27,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-28,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-29,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-30,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-08-31,Brazil,Omicron 22B,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,
+2022-09-01,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,Omicron 22B,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-08-17,Brazil,Omicron 22C,4.0518435e-16,4.2558245e-11,2.5869873e-23,5.0724323e-13,1.8994852e-20,1.9858342e-14,4.9152917e-18,,,,,,,
+2022-08-18,Brazil,Omicron 22C,1.0475206e-16,1.8259245e-11,2.966709e-24,2.0378408e-13,3.0816785e-21,6.1817168e-15,1.0627606e-18,,,,,,,
+2022-08-19,Brazil,Omicron 22C,2.7477621e-17,7.86514e-12,3.578623e-25,7.0216944e-14,4.949983e-22,1.9449073e-15,2.2352664e-19,,,,,,,
+2022-08-20,Brazil,Omicron 22C,7.201745e-18,3.4088145e-12,4.3000568e-26,2.605121e-14,7.895639e-23,6.0989146e-16,4.5742073e-20,,,,,,,
+2022-08-21,Brazil,Omicron 22C,1.8764015e-18,1.4897446e-12,5.1671206e-27,1.0037251e-14,1.2787973e-23,1.8975011e-16,9.815232e-21,,,,,,,
+2022-08-22,Brazil,Omicron 22C,4.9267735e-19,6.6057294e-13,3.114388e-27,3.9777777e-15,1.9681034e-24,5.768055e-17,2.2169396e-21,,,,,,,
+2022-08-23,Brazil,Omicron 22C,1.2893686e-19,3.028833e-13,2.4621797e-27,1.4878946e-15,3.1540784e-25,1.9139527e-17,4.802917e-22,,,,,,,
+2022-08-24,Brazil,Omicron 22C,3.4637936e-20,1.4065946e-13,2.7256046e-27,5.633149e-16,5.3557924e-26,6.6666183e-18,1.0067844e-22,,,,,,,
+2022-08-25,Brazil,Omicron 22C,9.609995e-21,6.623366e-14,2.9162616e-27,2.164041e-16,1.0479057e-26,2.1672525e-18,2.2003913e-23,,,,,,,
+2022-08-26,Brazil,Omicron 22C,2.665147e-21,3.165074e-14,2.7276299e-27,8.737648e-17,7.634283e-27,7.315069e-19,4.996253e-24,,,,,,,
+2022-08-27,Brazil,Omicron 22C,7.612885e-22,1.5359353e-14,3.0248975e-27,3.561756e-17,7.357483e-27,2.6085174e-19,1.1111455e-24,,,,,,,
+2022-08-28,Brazil,Omicron 22C,2.2323022e-22,7.572728e-15,3.2197853e-27,1.449294e-17,7.8025585e-27,9.146352e-20,2.5080874e-25,,,,,,,
+2022-08-29,Brazil,Omicron 22C,6.665504e-23,3.7135356e-15,3.7349983e-27,5.965643e-18,8.4751795e-27,3.16117e-20,5.775591e-26,,,,,,,
+2022-08-30,Brazil,Omicron 22C,1.9918394e-23,1.8410765e-15,4.4832198e-27,2.3305022e-18,9.1506486e-27,1.1697525e-20,2.767467e-26,,,,,,,
+2022-08-31,Brazil,Omicron 22C,5.7650282e-24,9.309515e-16,5.260642e-27,9.833675e-19,1.05037785e-26,4.2863566e-21,2.4755762e-26,,,,,,,
+2022-09-01,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,Omicron 22C,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-08-17,Brazil,Omicron 22E,3.591414e-33,1.5963323e-28,0.0,4.440012e-30,1.986208e-37,1.2871883e-31,4.7722453e-35,,,,,,,
+2022-08-18,Brazil,Omicron 22E,8.089371e-34,5.4540404e-29,0.0,1.3269694e-30,2.70458e-38,3.4414352e-32,8.559935e-36,,,,,,,
+2022-08-19,Brazil,Omicron 22E,1.7257837e-34,1.8650167e-29,0.0,3.994155e-31,0.0,8.953367e-33,1.5265377e-36,,,,,,,
+2022-08-20,Brazil,Omicron 22E,3.6883715e-35,6.654992e-30,0.0,1.2996772e-31,0.0,2.3805752e-33,2.7157406e-37,,,,,,,
+2022-08-21,Brazil,Omicron 22E,8.150788e-36,2.4603954e-30,0.0,3.984763e-32,0.0,6.4190367e-34,3.684513e-38,,,,,,,
+2022-08-22,Brazil,Omicron 22E,1.8127735e-36,9.31301e-31,0.0,1.20676706e-32,0.0,1.7472332e-34,0.0,,,,,,,
+2022-08-23,Brazil,Omicron 22E,4.097916e-37,3.5851082e-31,0.0,3.574555e-33,0.0,4.55701e-35,0.0,,,,,,,
+2022-08-24,Brazil,Omicron 22E,8.987294e-38,1.3975055e-31,0.0,1.1512117e-33,0.0,1.2430132e-35,0.0,,,,,,,
+2022-08-25,Brazil,Omicron 22E,2.0074623e-38,5.5221004e-32,0.0,3.6990243e-34,0.0,3.639801e-36,0.0,,,,,,,
+2022-08-26,Brazil,Omicron 22E,0.0,2.2137491e-32,0.0,1.1933417e-34,0.0,1.0543463e-36,0.0,,,,,,,
+2022-08-27,Brazil,Omicron 22E,0.0,9.009725e-33,0.0,3.9087015e-35,0.0,3.2276574e-37,0.0,,,,,,,
+2022-08-28,Brazil,Omicron 22E,0.0,3.7838436e-33,0.0,1.30053e-35,0.0,9.837086e-38,0.0,,,,,,,
+2022-08-29,Brazil,Omicron 22E,0.0,1.6357158e-33,0.0,4.3644927e-36,0.0,2.0848391e-38,0.0,,,,,,,
+2022-08-30,Brazil,Omicron 22E,0.0,4.978713e-32,0.0,9.619537e-35,0.0,5.502431e-37,0.0,,,,,,,
+2022-08-31,Brazil,Omicron 22E,6.193681e-34,5.349663e-26,9.824241e-37,8.9910366e-29,1.4684986e-36,4.0995163e-31,2.3016526e-36,,,,,,,
+2022-09-01,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,Omicron 22E,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-08-17,Brazil,other,6.062977e-21,3.531355e-16,4.4917366e-28,7.432395e-18,3.7188858e-25,2.4066758e-19,5.9446576e-23,,,,,,,
+2022-08-18,Brazil,other,1.4217409e-21,1.387869e-16,4.802529e-29,2.5203025e-18,5.4089474e-26,6.687984e-20,1.14992104e-23,,,,,,,
+2022-08-19,Brazil,other,3.409316e-22,5.5028534e-17,5.0769454e-30,8.196642e-19,8.043442e-27,1.9095222e-20,2.1820944e-24,,,,,,,
+2022-08-20,Brazil,other,8.227115e-23,2.2647292e-17,5.32917e-31,2.6593205e-19,1.2958549e-27,5.5214245e-21,4.220347e-25,,,,,,,
+2022-08-21,Brazil,other,1.8403538e-23,9.415895e-18,5.632247e-32,8.708528e-20,2.081422e-28,1.6205675e-21,8.224473e-26,,,,,,,
+2022-08-22,Brazil,other,4.482866e-24,3.962264e-18,3.1855068e-32,3.1318493e-20,3.112058e-29,4.982687e-22,1.6357661e-26,,,,,,,
+2022-08-23,Brazil,other,1.1196924e-24,1.6902851e-18,2.7744353e-32,1.1519223e-20,4.695382e-30,1.4533988e-22,3.1966427e-27,,,,,,,
+2022-08-24,Brazil,other,2.782138e-25,7.31986e-19,2.9207473e-32,4.0072155e-21,7.1720554e-31,3.962879e-23,6.2402384e-28,,,,,,,
+2022-08-25,Brazil,other,7.04915e-26,3.2215994e-19,2.149687e-32,1.4097279e-21,1.6190322e-31,1.1892021e-23,1.2870595e-28,,,,,,,
+2022-08-26,Brazil,other,1.7837957e-26,1.4422998e-19,2.0877395e-32,4.8839376e-22,7.4668236e-32,3.6220067e-24,2.7499018e-29,,,,,,,
+2022-08-27,Brazil,other,4.8136855e-27,6.572612e-20,1.9720358e-32,1.558998e-22,5.753209e-32,1.1084032e-24,5.7784455e-30,,,,,,,
+2022-08-28,Brazil,other,1.3089562e-27,3.0500657e-20,2.0079715e-32,5.503175e-23,5.960568e-32,3.5679986e-25,1.2284672e-30,,,,,,,
+2022-08-29,Brazil,other,3.7824465e-28,1.4416784e-20,2.0916132e-32,2.0604851e-23,5.3590106e-32,1.1777808e-25,3.0882313e-31,,,,,,,
+2022-08-30,Brazil,other,1.0460354e-28,6.941023e-21,2.1147289e-32,7.837899e-24,5.074718e-32,3.9409066e-26,1.3615873e-31,,,,,,,
+2022-08-31,Brazil,other,2.827478e-29,3.403245e-21,2.2223316e-32,3.1332908e-24,4.3695655e-32,1.4049089e-26,1.362268e-31,,,,,,,
+2022-09-01,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,other,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-08-17,Brazil,Omicron 21L,2.9512553e-19,2.3908276e-14,2.45595e-26,3.2219098e-16,1.3614491e-23,1.1817746e-17,3.2905295e-21,,,,,,,
+2022-08-18,Brazil,Omicron 21L,7.037924e-20,9.395959e-15,2.4365404e-27,9.718782e-17,1.9816444e-24,3.2465476e-18,5.9904835e-22,,,,,,,
+2022-08-19,Brazil,Omicron 21L,1.5298075e-20,3.715393e-15,2.3650805e-28,3.3588483e-17,2.9696383e-25,8.925207e-19,1.137833e-22,,,,,,,
+2022-08-20,Brazil,Omicron 21L,3.362437e-21,1.4779243e-15,2.268618e-29,1.0359019e-17,4.8214223e-26,2.599161e-19,2.1766544e-23,,,,,,,
+2022-08-21,Brazil,Omicron 21L,7.959243e-22,5.923454e-16,2.2467737e-30,3.2102137e-18,7.4067344e-27,7.3295466e-20,4.319982e-24,,,,,,,
+2022-08-22,Brazil,Omicron 21L,1.8484884e-22,2.395945e-16,1.435522e-30,1.1061933e-18,1.03942025e-27,2.108664e-20,8.337539e-25,,,,,,,
+2022-08-23,Brazil,Omicron 21L,4.3850534e-23,1.0054457e-16,1.0663203e-30,3.566886e-19,1.4607413e-28,5.9310546e-21,1.5720137e-25,,,,,,,
+2022-08-24,Brazil,Omicron 21L,1.0541798e-23,4.2881817e-17,9.838242e-31,1.1571993e-19,2.0778685e-29,1.6885073e-21,3.1627572e-26,,,,,,,
+2022-08-25,Brazil,Omicron 21L,2.6906282e-24,1.8539358e-17,1.0112418e-30,4.4749392e-20,3.253436e-30,4.9573796e-22,6.2509253e-27,,,,,,,
+2022-08-26,Brazil,Omicron 21L,6.8426525e-25,8.1323815e-18,8.434966e-31,1.7653585e-20,1.9271312e-30,1.474943e-22,1.3543953e-27,,,,,,,
+2022-08-27,Brazil,Omicron 21L,1.7053206e-25,3.627286e-18,7.7107206e-31,7.1070066e-21,1.6905557e-30,4.851952e-23,2.9827736e-28,,,,,,,
+2022-08-28,Brazil,Omicron 21L,4.397898e-26,1.6422997e-18,8.143488e-31,2.7719658e-21,1.5820772e-30,1.5027084e-23,6.3082096e-29,,,,,,,
+2022-08-29,Brazil,Omicron 21L,1.1187866e-26,7.127097e-19,8.013633e-31,9.205542e-22,1.5634749e-30,4.676525e-24,1.3402014e-29,,,,,,,
+2022-08-30,Brazil,Omicron 21L,2.9029812e-27,3.1383051e-19,8.161644e-31,3.09277e-22,1.5653185e-30,1.6275869e-24,3.847276e-30,,,,,,,
+2022-08-31,Brazil,Omicron 21L,7.935724e-28,1.4026755e-19,7.44134e-31,1.0452513e-22,1.5315852e-30,5.609121e-25,3.363927e-30,,,,,,,
+2022-09-01,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-02,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-03,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-04,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-05,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-06,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-07,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-08,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-09,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-10,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-11,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-12,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-13,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-14,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-15,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-16,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-17,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-18,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-19,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-20,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-21,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-22,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-23,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-24,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-25,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-26,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-27,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-28,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-29,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-09-30,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-01,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-02,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-03,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-04,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-05,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-06,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-07,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-08,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-09,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-10,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-11,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-12,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-13,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-14,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-15,Brazil,Omicron 21L,nan,nan,nan,nan,nan,nan,nan,,,,,,,
+2022-10-16,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,Omicron 21K,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-16,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,Omicron 22A,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-16,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,Omicron 22B,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-16,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,Omicron 22C,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-16,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,Omicron 22E,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-16,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,other,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-16,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-17,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-18,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-19,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-20,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-21,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-22,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-23,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-24,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-25,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-26,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-27,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-28,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-29,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-30,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-10-31,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-01,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-02,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-03,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-04,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-05,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-06,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-07,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-08,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-09,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-10,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-11,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-12,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-13,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan
+2022-11-14,Brazil,Omicron 21L,,,,,,,,nan,nan,nan,nan,nan,nan,nan

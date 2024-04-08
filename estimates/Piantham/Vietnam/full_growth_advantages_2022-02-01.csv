@@ -1,0 +1,3 @@
+location,variant,median_ga,ga_upper_95,ga_lower_95,ga_upper_80,ga_lower_80,ga_upper_50,ga_lower_50
+Vietnam,Delta,0.8996062,1.105552,0.7261019,1.0494646,0.778133,0.97477615,0.8319433
+Vietnam,Omicron 21K,1.6830372,2.077114,1.3467202,1.9347448,1.4415697,1.80042,1.5582385

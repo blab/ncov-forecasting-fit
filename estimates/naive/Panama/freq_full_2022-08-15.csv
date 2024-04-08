@@ -1,0 +1,7 @@
+variant,location,freq,date,median_freq_nowcast,median_freq_forecast
+Omicron 21L,Panama,0.2909090909090909,2022-06-17,0.2909090909090909,
+Omicron 22B,Panama,0.24545454545454548,2022-06-17,0.24545454545454548,
+other,Panama,0.4636363636363636,2022-06-17,0.4636363636363636,
+Omicron 21L,Panama,0.4,2022-06-18,0.4,
+Omicron 22B,Panama,0.4,2022-06-18,0.4,
+other,Panama,0.2,2022-06-18,0.2,
