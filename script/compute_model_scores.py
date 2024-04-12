@@ -51,9 +51,9 @@ def load_data(filepath, sep):
                 axis=1
             )
         if "freq_upper_95" in raw_pred.columns:
-            raw_pred["ci_high"] = raw_pred[
-                ["ci_high", "freq_upper_95"]
-            ].max(axis=1)
+            raw_pred["ci_high"] = raw_pred[["ci_high", "freq_upper_95"]].max(
+                axis=1
+            )
 
     # Return the modified DataFrame raw_pred
     return raw_pred
@@ -74,7 +74,6 @@ def load_truthset(path):
     )
 
     new_truth = df.merge(truth_set, how="left").fillna(0)
-
     new_truth["total_seq"] = new_truth.groupby(["date", "location"])[
         "sequences"
     ].transform("sum")
@@ -89,34 +88,32 @@ def load_truthset(path):
     return new_truth
 
 
-def prep_freq_data(final_set):
+def prep_freq_data(merged):
 
     # Convert frequencies to arrays
-    raw_freq = np.squeeze(final_set[["truth_freq"]].to_numpy(), axis=-1)
+    raw_freq = np.squeeze(merged[["truth_freq"]].to_numpy(), axis=-1)
 
     if len(raw_freq) == 0:
         return (None,) * 7
-    raw_freq[np.isnan(raw_freq)] = 0
 
     # Convert smoothed frequencies to arrays
-    smoothed_freq = np.squeeze(final_set[["smoothed_freq"]].to_numpy())
-    smoothed_freq[np.isnan(smoothed_freq)] = 0
+    smoothed_freq = np.squeeze(merged[["smoothed_freq"]].to_numpy())
 
     # Convert sequences and total sequnces to arrays
-    seq_count = np.squeeze(final_set[["sequences"]].to_numpy())
-    total_seq = np.squeeze(final_set[["total_seq"]].to_numpy())
+    seq_count = np.squeeze(merged[["sequences"]].to_numpy())
+    total_seq = np.squeeze(merged[["total_seq"]].to_numpy())
 
     # Convert predicted frequencies to arrays
-    pred_freq = np.squeeze(final_set[["pred_freq"]].to_numpy())
+    pred_freq = np.squeeze(merged[["pred_freq"]].to_numpy())
 
     # Convert credible intervals to arrays
-    if "ci_low" in final_set.columns:
-        ci_low = np.squeeze(final_set[["ci_low"]].to_numpy())
+    if "ci_low" in merged.columns:
+        ci_low = np.squeeze(merged[["ci_low"]].to_numpy())
     else:
         ci_low = None
 
-    if "ci_high" in final_set.columns:
-        ci_high = np.squeeze(final_set[["ci_high"]].to_numpy())
+    if "ci_high" in merged.columns:
+        ci_high = np.squeeze(merged[["ci_high"]].to_numpy())
     else:
         ci_high = None
 
@@ -133,8 +130,9 @@ def prep_freq_data(final_set):
 
 def merge_truth_pred(df, location_truth):
 
-    merged_set = pd.merge(df, location_truth, how="left")
-    merged_set["sequences"] = merged_set["sequences"].fillna(0)
+    merged_set = pd.merge(
+        location_truth, df, how="left", on=["date", "location", "variant"]
+    )
 
     # Compute total sequences for each location and date
     merged_set["total_seq"] = merged_set.groupby(["date", "location"])[
@@ -278,10 +276,8 @@ if __name__ == "__main__":
             pred_dic = {}
             # Filtering to location of increast
             location_truth = truth_set[truth_set["location"] == location]
-            if location_truth is None:
-                print(
-                    f"{location_truth} is not in the retrospective frequencies."
-                )
+            if len(location_truth) == 0:
+                print(f"{location} is not in the retrospective frequencies.")
                 continue
 
             for pivot_date in dates:
