@@ -73,7 +73,7 @@ def load_truthset(path):
         data=list(itertools.product(*combined)),
     )
 
-    new_truth = df.merge(truth_set, how="left").fillna(0)
+    new_truth = df.merge(truth_set, how="left")#.fillna(0)
 
     new_truth["total_seq"] = new_truth.groupby(["date", "location"])[
         "sequences"
@@ -134,7 +134,7 @@ def prep_freq_data(final_set):
 def merge_truth_pred(df, location_truth):
 
     merged_set = pd.merge(df, location_truth, how="left")
-    merged_set["sequences"] = merged_set["sequences"].fillna(0)
+    merged_set["sequences"] = merged_set["sequences"]#.fillna(0)
 
     # Compute total sequences for each location and date
     merged_set["total_seq"] = merged_set.groupby(["date", "location"])[
