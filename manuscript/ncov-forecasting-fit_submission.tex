@@ -165,30 +165,19 @@ Consistent with less available data, we observe that the model predictions for J
 
 \begin{figure}[tb!]
 	\centering
-	\includegraphics[width=0.87\textwidth]{figures/model_comp_A.png}
+	\includegraphics[width=0.87\textwidth]{figures/model_comp.png}
 	\caption{\textbf{Absolute error across models, countries and forecast lags.}
 	(A) Median absolute error and (B) mean absolute error across countries, models and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts.
 	For each county / model / lag combination, the median and the mean are summarized across analysis data sets.
 	Panel A uses a log y axis for legibility while panel B uses a natural y axis.
-	}
-	\label{fig:model_comp_A}
-\end{figure}
-
-
-\begin{figure}[tb!]
-	\centering
-	\includegraphics[width=0.87\textwidth]{figures/model_comp_B.png}
-	\caption{\textbf{Absolute error across models, countries and forecast lags.}
 	(C) Distribution of absolute error on a log scale across models and across forecast lags.
 	Each point represents the absolute error for a data set / country combination.
 	Solid lines show the median of these distributions and dashed lines show the means of these distributions.
 	}
-	\label{fig:model_comp_B}
+	\label{fig:model_comp_fig}
 \end{figure}
 
-
-
-We utilize five models for predicting the frequencies of SARS-CoV-2 variants in eight countries (Australia, Brazil, Japan, South Africa, UK, USA, Vietnam and Trinidad and Tobago).
+We utilize five models for predicting the frequencies of SARS-CoV-2 variants in six countries (Australia, Brazil, Japan, South Africa, UK and USA).
 The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}, which uses only clade-specific sequence counts and has a fixed growth advantage for each variant.
 More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant $R_t$ model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to clade-specific sequence counts.
 The Piantham et al model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific $R_t$, but differs in model details.
@@ -208,28 +197,15 @@ We compare forecasting accuracy across different time lags from $-30$ days back 
 \end{table}
 
 We refer to the absolute error $\mathrm{AE}_{t}^{m,d}$ for a given model $m$, data set $d$ and time $t$ as the difference between the retrospective 7-day smoothed frequency and the model predicted frequency (see Methods).
-We calculate median absolute error and mean absolute error across datasets and across time lags to assess the relative performance of the models for the eight countries (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
-Moreover, we perform a direct comparison between pooled hierarchical MLR and MLR across all countries (Fig.~\ref{fig:model_comp_PooledMLR}). 
+We calculate median absolute error and mean absolute error across datasets and across time lags to assess the relative performance of the models for the six countries (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}).
 As expected, we observe decreasing performance across models as lags increase from $-30$ days to $+30$ days.
 For example, median absolute error increases for the MLR model from 0.1--1\% at $-30$ days, to 0.3--1.4\% at 0 days and to 0.4--1.4\% at $+30$ days.
 Similarly, mean absolute error increases for the MLR model from 0.4--2.3\% at $-30$ days, to 2.2--5.7\% at 0 days and to 5.8--9.6\% at $+30$ days.
 All four forecasting models perform better than the naive model in terms of median absolute error, with MLR and the variant $R_t$ models FGA and GARW performing slightly better than the Piantham variant $R_t$ model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% median absolute error compared to Piantham.
 However, we observe larger differences when comparing mean absolute error across models wherein MLR generally has lowest mean absolute error at $+30$ days, improving on FGA and GARW by $\sim$1\% in most countries.
 Piantham often shows large errors and mean absolute error is comparable to the naive model at $+30$ days.
-Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_B}C).
+Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_fig}C).
 This skewed distribution results in the large observed differences between median and mean summary statistics.
-
-\begin{figure}[tb!]
-	\centering
-	\includegraphics[width=0.87\textwidth]{figures/model_comp_PooledMLR.png}
-	\caption{\textbf{Absolute error comparing hierarchical MLR and MLR across countries and forecast lags.}
-	(A) mean absolute error across countries and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts comparing MLR and hierarchical pooled MLR.
-	}
-	\label{fig:model_comp_PooledMLR}
-\end{figure}
-
-
-
 
 In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants that present a small window of time to observe dynamics and where sequence count data is often rare.
 We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across analysis dates (Fig.~\ref{fig:ga_estimates}).
@@ -296,9 +272,6 @@ Additionally, the effect appears to saturate at different values depending on th
 We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is sufficient to minimize forecast error.
 We arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark (Fig.~\ref{fig:downscaling}B-E).
 
-
-
-
 %%% DISCUSSION %%%
 \section*{Discussion}
 
@@ -308,10 +281,10 @@ We arrive at a similar threshold of 1000 sequences per week for both the UK and 
 % Discussion: Include error vs lag (Table 1, Figure 2)
 
 In this manuscript we sought to perform a comprehensive analysis of the accuracy of nowcasts and short-term forecasts from fitness models of SARS-CoV-2 variant frequency.
-We observe substantial differences between median and mean absolute error (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}) with median errors generally quite well contained at 0.4--1.4\% in the $+30$ day forecast, while mean errors are larger at 5.8--9.6\%.
-This difference is due to the highly skewed distribution of model errors (Fig.~\ref{fig:model_comp_B}C) where most predictions are highly accurate, but a smaller fraction are off-target.
+We observe substantial differences between median and mean absolute error (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}) with median errors generally quite well contained at 0.4--1.4\% in the $+30$ day forecast, while mean errors are larger at 5.8--9.6\%.
+This difference is due to the highly skewed distribution of model errors (Fig.~\ref{fig:model_comp_fig}C) where most predictions are highly accurate, but a smaller fraction are off-target.
 We find that better performing models more often avoid this failure mode of large errors.
-The Piantham \cite{piantham2021estimating} model is the strongest example here, where it shows a similar profile in terms of median absolute error, but performs substantially worse in terms of mean absolute error (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
+The Piantham \cite{piantham2021estimating} model is the strongest example here, where it shows a similar profile in terms of median absolute error, but performs substantially worse in terms of mean absolute error (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}).
 Similarly, we observe MLR slightly outperforming FGA and GARW \cite{figgins2022sars} in terms of mean absolute error, but not median absolute error.
 As expected, errors increase as target shifts from $-30$ day hindcast to $+30$ day forecast, but error increases more rapidly for mean absolute error than median absolute error.
 
@@ -319,7 +292,7 @@ As expected, errors increase as target shifts from $-30$ day hindcast to $+30$ d
 % Discussion: With specific discussion of improvement over naive model at -30 day hindcast
 
 \sloppy % keep long URLs below from overflowing
-We find that the MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
+We find that the MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:model_comp_fig}, Table~\ref{table:model_comp_table}).
 For the MLR model, at $+30$ days the improvement in median absolute error over naive is 1.5--14.4\% and the improvement in mean absolute error is 6.9--17.1\%.
 This result supports the use of MLR models in live dashboards like the CDC Variant Proportions nowcast (\href{https://covid.cdc.gov/covid-data-tracker/\#variant-proportions}{covid.cdc.gov/covid-data-tracker/\#variant-proportions}) and the Nextstrain SARS-CoV-2 Forecasts (\href{https://nextstrain.org/sars-cov-2/forecasts/}{nextstrain.org/sars-cov-2/forecasts/}).
 
@@ -401,7 +374,7 @@ We calculated the `absolute error` (AE) for a given model $m$ and data set $d$ a
 where $f_{v}^{d}(t)$ and $\hat{f}_{v}^{m,d}(t)$ are the retrospective frequencies and the predicted frequencies for model $m$, data $d$, variant $v$ and time $t$.
 The AE is the mean across individual variants for a specific model, data set and timepoint.
 Additionally, we often work with the lead time which is defined as the difference between date of analysis for the data set and the forecast date $l = t - T_{\text{obs}}$.
-We summarized median absolute error and mean absolute error across multiple analysis datasets in Figure \ref{fig:model_comp_A} and Table \ref{table:model_comp_table}.
+We summarized median absolute error and mean absolute error across multiple analysis datasets in Figure \ref{fig:model_comp_fig} and Table \ref{table:model_comp_table}.
 
 \subsection*{Generating predictors of error}
 
@@ -457,18 +430,6 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 		Retrospective smoothed frequency is shown as a thick black line.
 	}
 	\label{fig:dynamic_forecasting_env_supplementary}
-\end{figure}
-
-
-%%% Coverage supplementary %%%
-\begin{figure}[tb!]
-	\centering
-	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/coverage_supp_2.png}
-	\caption{
-		\textbf{Coverage for estimates across all countries and models}
-		(A) The proportion of estimates lying within the 95\% confidence intervals (CIs) across lag times (-30,-30)
-	}
-	\label{fig:coverage_supp_2}
 \end{figure}
 
 \end{document}
