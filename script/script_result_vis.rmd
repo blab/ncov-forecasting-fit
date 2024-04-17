@@ -81,9 +81,12 @@ my_theme() {
 
 #read error datasets
 
-error_dataset = read.csv('../errors/model_scores_output.csv', sep="\t") %>%
+error_dataset = read.csv('../errors/model_scores.tsv', sep="\t") %>%
   mutate(model = recode(model, naive = "Naïve")) 
 
+
+
+table(error_dataset$model)
 
 # Read full rank CI error dataset
 error_dataset_fullrank = read.csv('../errors_fullrank/model_scores_output.csv') %>%
@@ -144,8 +147,7 @@ loc_color_map = c("USA" = "#a12525", "United Kingdom" = "#00299b", "Japan" = "#3
                   "Brazil" = "#f9722f","Australia" = "#309975", "South Africa"= "#b300b3",
                   "Vietnam" = "#ffbb00", "Trinidad and Tobago" = "#1e90ff")
 
-model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", "FGA" = "#FFCF00","GARW" = "#D62828" )
-
+model_colors = c("Naïve"= "#5E0035", "Piantham" ="#17BEBB", "MLR" = "#003049", "FGA" = "#FFCF00","GARW" = "#D62828" , "Hierarchical-MLR" = "#2ECC71")
 
 ```
 
@@ -700,19 +702,18 @@ ggsave("figure2.png", plot = error_quantiles_mae, width = 25, height = 20, units
 ```{r}
 
 #plotting error quantile 60 days from and after the lead
-library(extrafont)
 
 # make y percent with hline 5% showing the error
 med_log_error_30 = 
 # Median MAE with log scale
 error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(model != "Hierarchical-MLR") %>%
   filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
-            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
-            meanMAE = mean(MAE)) %>%
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE)) %>%
   ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")))) +
   geom_line(aes(y = quant50), size = 0.5) +
   #geom_line(aes(y =meanMAE ), alpha = 0.75)+
@@ -754,6 +755,7 @@ error_dataset %>%
 mae_nat_error_30 =# Mean MAE with natural scale
 error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(model != "Hierarchical-MLR") %>%
   filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
@@ -1503,7 +1505,7 @@ library(ggh4x)
 library(scales)
 
 variant_colorsga
-ga_models = full_ga %>% 
+ga_models = growthadv_dataset %>% 
   #filter(pivot_date != "2022-05-06") %>% 
   filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C", "Omicron 22D",
                         "Omicron 22E", "Omicron 23A")) %>%
@@ -3090,396 +3092,113 @@ jtools::export_summs(reg_JP, reg_UK, reg_US, scale = F, results = 'asis',
 
 
 
-#All countries Model
 
-
-
-
+#Figure 6: Pooled MlR and MLR
 ```{r}
 
-all_count_model = full_model_data %>%
-  filter(model =="MLR") 
-
-
-
-
-first.tree= tree(meanMAE~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model)
-initial_tree = plot(first.tree);text(first.tree)
-summary(first.tree)
-
-
-#train
-
-set.seed(100)
-n = length(US_model$meanMAE)
-Z= sample(n,n/2)
-train = US_model[Z,]
-test= US_model[-Z,]
-tree.US = tree(meanMAE~frac_seq_avail + seq_available + lead +mean_delay + median_delay + selective_pres,train)
-summary(tree.US)
-plot(tree.US);text(tree.US)
-
-##Prune tree
-
-
-cv.US = cv.tree(tree.US)
-cv.US$dev #dev is RSS
-cv.US$size #How many terminal nodes
-
-plot(cv.US$size,cv.US$dev, type = "b" )
-cbind(cv.US$size,cv.US$dev)  #best 9
-
-#Prune
-pruned.tree = prune.tree(tree.US, best = 10)
-plot(tree.US); text(tree.US, pretty = 1)
-
-
-
-
-
-
-
-
-
-library(rpart)
-library(rpart.plot)
-set.seed(1)
-m1 = rpart(meanMAE~frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model)
-rpart.plot(m1)
-
-summary(m1)
-
-
-#Random forest
-
-library(randomForest)
-set.seed(1)
-n = length(all_count_model$meanMAE)
-Z= sample(n,n/2)
-train = all_count_model[Z,]
-test= all_count_model[-Z,]
-tree.all = tree(meanMAE~frac_seq_avail + seq_available + lead + median_delay + selective_pres,train)
-plot(tree.all);text(tree.all)
-
-
-#Fit random forest
-
-#Assumptions to consider
-
-plot(rf.fit, "proximity")
-
-
-#+ seq_available + lead + median_delay +
-rf.fit = randomForest(meanMAE~frac_seq_avail + seq_available + lead + median_delay+ selective_pres,data=all_count_model,importance = TRUE)
-print(rf.fit)
-varImpPlot(rf.fit, main = "Random Forest Variable")
-which.min(rf.fit$rsq)
-plot(rf.fit)
-#Prediction
-
-importance(rf.fit)
-
-
-
-plot(yhat.rf, residuals(rf.fit, test$meanMAE))
-
-print(rf.fit)
-yhat.rf = predict(rf.fit,newdata=test)
-
-table(yhat.rf, test$meanMAE)
-
-mean((yhat.rf-test$meanMAE)^2)
-
-
-# Create a scatterplot of the model's predictions
-ggplot(data = data.frame(yhat.rf, test$meanMAE), aes(x = yhat.rf, y = test$meanMAE)) +geom_point() + theme_bw()
-
-
-
-
-
-
-
-
-# Get variable importance from the model fit
-#Visualize
-ImpData <- as.data.frame(importance(rf.fit))
-ImpData$Var.Names <- row.names(ImpData)
-
-ggplot(ImpData, aes(x=Var.Names, y=`IncNodePurity`)) +
-  geom_segment( aes(x=Var.Names, xend=Var.Names, y=0, yend=`IncNodePurity`), color="black") +
-  geom_point(aes(size =`%IncMSE`), color="black", alpha=0.6) +
-  theme_light() +
-  coord_flip() +
-  theme(
-    legend.position="bottom",
-    panel.grid.major.y = element_blank(),
-    panel.border = element_blank(),
-    axis.ticks.y = element_blank()
-  )
-
-
-
-```
-
-
-#Full model
-
-```{r}
-#Try a mixture model
-#lead vary
-#add the intercept differ
-
-#what other models could explain
-
-
-
-all_count_model = full_model_data %>%
-  filter(model =="MLR") 
-
-#Regression Model #*location*location 
-reg_all = lm(qlogis(meanMAE) ~ frac_seq_avail + seq_collected + lead + median_delay + selective_pres*frac_seq_avail + location, all_count_model)
-
-reg_all$fitted.values
-#Stepwise regression
-step.model_all <- stepAIC(reg_all, direction = "backward", trace = FALSE)
-
-summary(reg_all)
-
-library(performance)
-summary(reg_all)
-check_model(reg_all)
-
-ggplot(all_count_model, aes(x=plogis(reg_all$fitted.values), y= meanMAE, color= location)) +
-  geom_point() +
-  facet_wrap(~location)+
-  geom_abline(intercept=0, slope=1) +
-  theme_bw() #+
-  #Mean('Observed log(MeanMAE)') +
-  #ylab('predicted log(MeanMAE)')
-library(jtools) # Load jtools
-
-plot_summs(reg_all, inner_ci_level = .9, plot.distributions = TRUE)
-
-plot(cooks.distance(reg_all))
-summ(reg_all, center = T, transform.response = TRUE)
-
-export_summs(reg_all, error_format = "[{conf.low}, {conf.high}]")
-```
-
-
-#Mixture model
-
-
-```{r}
-library(flexmix)
-
-
-
-# Fit the mixture model
-fit <- flexmix(qlogis(meanMAE) ~ seq_collected + lead + median_delay + selective_pres*frac_seq_avail + location, 
-               data = all_count_model, k = 2)
-
-
-
-fitted_values = fitted(fit)
-# Plot the fitted densities for each component
-#plot(density(fit, comp = 1), col = "red", lwd = 2, main = "Component 1", xlab = "qlogis(meanMAE)")
-#lines(density(fit, comp = 2), col = "blue", lwd = 2, main = "Component 2")
-
-# Plot the log-likelihoods for each observation
-plot(fit, main = "Observation Log-Likelihoods")
-plot(fit)
-summary(fit)
-summary(reg_all)
-# Plot the posterior probabilities for each observation
-plot(fit, type= "count")
-
-parameters(fit, component = 2)
-
-
-posterior_first = posterior(fit)[,1]
-
-
-
-cluster_pos_assignment = clusters(fit)
-
-BIC(reg_all)
-BIC(fit)
-
-
-
-# Plot the scatterplot
-#Try different variables
-
-all_count_model %>%
-  ggplot(aes(x = pivot_date, y = frac_seq_avail)) +
-  geom_point(aes(color = factor(cluster_pos_assignment)))+
-  facet_wrap(~location)+
-  #scale_color_discrete(name = "Cluster") +
-  theme_bw()
-
-
-all_count_model %>%
-  ggplot(aes(x = pivot_date, y = meanMAE)) +
-  geom_point(aes(color = factor(cluster_pos_assignment)))+
-  facet_wrap(~location)+
-  #scale_color_discrete(name = "Cluster") +
-  theme_bw()
-
-
-
-
-#multiplying posterior prob of clusters to fitted value for that cluster
-#summing to get the expectation of clusters
-posterior_fit = rowSums(posterior(fit)*fitted(fit))
-
-#Try different clusters
-
-
-all_count_model %>%
-  ggplot(aes(x = plogis(posterior_fit), y = meanMAE)) +
-  geom_point(aes(color = factor(cluster_pos_assignment)))+
-  facet_wrap(~location)+
-  geom_abline(a=1)+
-  #scale_color_discrete(name = "Cluster") +
-  theme_bw()
-
-
-```
-
-
-#Mixed Effects
-#Figure 5:MEM
-```{r}
-
-#mixeffect_model 
-
-
-
-library(lme4)
-
-#
-
-#predictors effects can differ between different locations but should be similar 
-
-
-#Choose what is fixed factors and what as a random effect
-
-#Random Effects that vary > selective pressure by location
-# median delay by location
-
-
-mixed_data = 
-  full_model_data %>%
-  filter(model == "MLR") %>%
-  mutate(location = as.factor(location)) %>%
-  mutate(seq_availper1000 = seq_available/1000)
-
-
-range(mixed_data$frac_seq_avail)
-
-install.packages("optimx")
-library(tidymodels)
-library(ggeffects)
-library(optimx)
-
-
-mixed.lmer <- lme4::lmer(qlogis(meanMAE) ~  frac_seq_avail + lead + seq_availper1000 +median_delay + (1+ median_delay+ frac_seq_avail | location), data = mixed_data, REML = T, lmerControl(optimizer ='optimx', optCtrl=list(method='bobyqa')))
-
-
-library(glmmTMB)
-library(sjPlot)
-library(sjmisc)
-library(sjlabelled)
-
-sjp.lmer(mixed.lmer, y.offset = .4)
-
-ranef(mixed.lmer)
-
-plot_model(mixed.lmer, type ="re")
-
-
-mixed_data %>%
-  filter(lead == -13) %>%
-  filter(location == "Japan") %>%
-  ggplot()+
-  geom_point(aes(x = seq_available, y = selective_pres))
-
-
-
-coef(mixed.lmer)
-
-predict(mixed.lmer)
-
-
-ggplot(aes(x = plogis(predict(mixed.lmer)), y = meanMAE, color = location), data = mixed_data) +
-  geom_point() +
-  facet_wrap(~location)+
-  theme_bw() +
-  xlab("Predicted Mean MAE")+
-  ylab("Observed Mean MAE")+
-  geom_abline()
-
-
-sjPlot::plot_model(mixed.lmer)
-
-
-sjPlot::plot_model(mixed.lmer, 
-                   axis.labels=c("Fractions seq Avail", "lead", "Seq Available", "Median Delay"),
-                   show.values=TRUE, show.p=TRUE,
-                   title="Effect of VOI on MAE") +
-  theme_bw()
-
-
-sjPlot:: tab_model(mixed.lmer)
-
-ggplot(mixed_data, aes(x=median_delay, y=meanMAE, colour=location)) +
-  geom_point(size=2, alpha = 0.2) +
-  geom_line(aes(y=plogis(predict(mixed.lmer)), group=location, size="location"), alpha = 0.75) +
-  #geom_line(data=newdat, aes(y=predict(fm2, level=0, newdata=newdat), size="Population")) +
-  #scale_size_manual(name="Predictions", values=c("Subjects"=0.5, "Population"=3)) +
-  theme_bw(base_size=22) 
-
-
-
-ggpredict(mixed.lmer, terms = c("frac_seq_avail","location"), type = "re") %>%
-  plot()
-
-library(mixedup)
-
-summarize_model(mixed.lmer) 
-
-
-ddd = mixedup::extract_random_effects(mixed.lmer)
-
-ddd %>%
-  ggplot() +
-  geom_point(aes(x =group , y = value, color = effect)) +
-  theme_minimal()
-
-
-ddd %>%
-  ggplot() +
-  geom_point(aes(x =effect , y = value, color = group)) +
-  theme_minimal()+
-        labs( x = "Location", y= "Effect Size")+
-  theme(axis.title.x = element_text(color="Black", size=14),
-        axis.title.y = element_text(color="Black", size=14),
+# make y percent with hline 5% showing the error
+med_log_error_30_pooled6 = 
+# Median MAE with log scale
+error_dataset %>%
+  filter(model %in% c("Naïve", "MLR", "Hierarchical-MLR")) %>%
+  group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
+  filter(lead > -30 & lead < 30) %>%
+  summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
+            meanMAE = mean(MAE)) %>%
+  ggplot(aes(x = lead, color = factor(model, levels = c("Naïve",  "MLR", "Hierarchical-MLR")))) +
+  geom_line(aes(y = quant50), size = 0.5) +
+  #geom_line(aes(y =meanMAE ), alpha = 0.75)+
+  #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
+  facet_wrap(~location) +
+  bbc_style() +
+  labs(linetype = " ", color = "Model", shape = 1) +
+  scale_color_manual(values = model_colors,
+                     breaks = c("Naïve",  "MLR", "Hierarchical-MLR")) +
+  labs(x = "Days from date of estimation", y = "Median Absolute Error") +
+  scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
+  theme(axis.title.x = element_text(color = "Black", size = 14),
+        axis.title.y = element_text(color = "Black", size = 14),
         panel.grid.major = element_line(),
         axis.line = element_line(colour = "black"),
         panel.grid.major.y = element_blank(),
-        #panel.grid.minor.y = element_blank(),
         strip.text.x = element_text(size = 13),
         legend.text = element_text(size = 12),
         axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
-        axis.ticks = element_line(), 
+        axis.ticks = element_line(),
         strip.text.y = element_text(size = 11),
-        plot.title = element_text(family = "Helvetica", size = (12)),
+        plot.title = element_text(family = "Helvetica", size = 12),
         legend.position = "top",
-        legend.title = element_blank()) 
+        legend.title = element_text(size = 12)) +
+  scale_y_continuous(trans = log_trans(),
+                     breaks = c(0.001, 0.005, 0.1, 1),
+                     labels = label_percent()) +
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 5,
+           color = NA, fill = "#bdc3c7", alpha = 0.15) +
+  annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 5,
+           color = NA, fill = "#2c3e50", alpha = 0.15) +
+  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4) +
+  geom_hline(yintercept = 0.05, linetype = "dashed")
+  
+  
+
+mae_nat_error_30_pooled6 =# Mean MAE with natural scale
+error_dataset %>%
+  filter(model %in% c("Naïve", "MLR", "Hierarchical-MLR")) %>%
+  group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
+  filter(lead > -30 & lead < 30) %>%
+  summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
+            meanMAE = mean(MAE)) %>%
+  ggplot(aes(x = lead, color = factor(model, levels = c("Naïve",  "MLR", "Hierarchical-MLR")))) +
+  geom_line(aes(y = meanMAE), size = 0.5) +
+  facet_wrap(~location) +
+  bbc_style() +
+  labs(linetype = " ", color = "Model", shape = 1) +
+  scale_color_manual(values = model_colors,
+                     breaks = c("Naïve",  "MLR", "Hierarchical-MLR")) +
+  labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
+  scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
+    scale_y_continuous(
+    limits = c(0, 0.2), # This sets the limits from 0% to 5%
+    breaks = seq(0, 0.2, by = 0.05), # This sets the breaks at every 1% increment
+    labels = scales::percent(seq(0, 0.2, by = 0.05)) # This sets the labels to show the percentages
+  ) +  # Set y-axis breaks and labels
+  theme(axis.title.x = element_text(color = "Black", size = 14),
+        axis.title.y = element_text(color = "Black", size = 14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(),
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = 12),
+        legend.position = "none",
+        legend.title = element_text(size = 12)) +
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.2,
+           color = NA, fill = "#bdc3c7", alpha = 0.15) +
+  annotate(geom = "text", x = -18, y = 0.15, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.2,
+           color = NA, fill = "#2c3e50", alpha = 0.15) +
+  annotate(geom = "text", x = 18, y = 0.15, label = "Forecast", size = 3, fontface = 4)  + geom_hline(yintercept = 0.05, linetype = "dashed")
+
+
+Figure_6=  (med_log_error_30_pooled6 + labs(title = element_text( "A",face = "bold"))) / (mae_nat_error_30_pooled6 +labs(title = element_text( "B",face = "bold"))) 
+
+
+ggsave("model_comp_PooledMLR.png", plot = Figure_6, width = 20, height = 30, units = "cm", bg = 'white',  dpi = 300)
 ```
+
+
 
 
 
@@ -3954,7 +3673,7 @@ plot_error_dataset <- function(error_dataset, model_input, country_input) {
 
 
 models <- c("Piantham","MLR", "FGA", "GARW")
-
+countries = "USA"
 for (country in countries) {
   plot_list <- list()  # Initialize a list to store plots for this country
   
@@ -4042,60 +3761,9 @@ ggsave("dynamic_forecasting_env_supplementary.png", plot = Figure_1_SUPP, width 
 
 ```{r}
 
-names(error_dataset_fullrank)
-
-
-# Median MAE with log scale
-error_dataset_fullrank %>%
-  group_by(lead, location, model) %>%
-  filter(lead > -30 & lead < 30) %>%
-  summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
-            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
-            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
-            meanMAE = mean(MAE),
-            coverage = mean(coverage)) %>%
- ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW")),
-             shape = factor(coverage)))  +
-  geom_line(aes(y = quant50), size = 0.5) +
-  geom_point()+
-  #geom_line(aes(y =meanMAE ), alpha = 0.75)+
-  #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
-  facet_wrap(~location) +
-  bbc_style() +
-  labs(linetype = " ", color = "Model", shape = 1) +
-  scale_color_manual(values = model_colors,
-                     breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
-  labs(x = "Days from date of estimation", y = "Median Mean Absolute Error") +
-  scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
-  theme(axis.title.x = element_text(color = "Black", size = 14),
-        axis.title.y = element_text(color = "Black", size = 14),
-        panel.grid.major = element_line(),
-        axis.line = element_line(colour = "black"),
-        panel.grid.major.y = element_blank(),
-        strip.text.x = element_text(size = 13),
-        legend.text = element_text(size = 12),
-        axis.text.x = element_text(size = 12),
-        axis.text.y = element_text(size = 12),
-        axis.ticks = element_line(),
-        strip.text.y = element_text(size = 11),
-        plot.title = element_text(family = "Helvetica", size = 12),
-        legend.position = "right",
-        legend.title = element_text(size = 12)) +
-  scale_y_continuous(trans = log_trans(),
-                     breaks = c(0.001, 0.005, 0.1, 1),
-                     labels = label_percent()) +
-  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 5,
-           color = NA, fill = "#bdc3c7", alpha = 0.15) +
-  annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
-  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 5,
-           color = NA, fill = "#2c3e50", alpha = 0.15) +
-  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4) +
-  geom_hline(yintercept = 0.05, linetype = "dashed")
-  
-
 # Mean MAE with log scale
 
-error_dataset_fullrank %>%
+coverage_supp_2 = error_dataset_fullrank %>%
   group_by(lead, location, model) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
@@ -4135,14 +3803,16 @@ error_dataset_fullrank %>%
                      #breaks = c(0.001, 0.005,, 0.1, 1),
                      labels = label_percent()) +
     ylim(0,1)+
-  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 5,
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 1,
            color = NA, fill = "#bdc3c7", alpha = 0.15) +
   annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
-  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 5,
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 1,
            color = NA, fill = "#2c3e50", alpha = 0.15) +
-  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4) +
-  geom_hline(yintercept = 0.05, linetype = "dashed")
+  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4)
+  #geom_hline(yintercept = 0.05, linetype = "dashed")
 
+
+ggsave("coverage_supp_2.png", plot = coverage_supp_2, width = 25, height = 20, units = "cm", bg = 'white',  dpi = 300)
 
 ```
 
@@ -4159,6 +3829,391 @@ error_dataset_fullrank %>%
 
 #Misc code
 
+
+#All countries Model
+
+
+
+
+```{r}
+
+all_count_model = full_model_data %>%
+  filter(model =="MLR") 
+
+
+
+
+first.tree= tree(meanMAE~ frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model)
+initial_tree = plot(first.tree);text(first.tree)
+summary(first.tree)
+
+
+#train
+
+set.seed(100)
+n = length(US_model$meanMAE)
+Z= sample(n,n/2)
+train = US_model[Z,]
+test= US_model[-Z,]
+tree.US = tree(meanMAE~frac_seq_avail + seq_available + lead +mean_delay + median_delay + selective_pres,train)
+summary(tree.US)
+plot(tree.US);text(tree.US)
+
+##Prune tree
+
+
+cv.US = cv.tree(tree.US)
+cv.US$dev #dev is RSS
+cv.US$size #How many terminal nodes
+
+plot(cv.US$size,cv.US$dev, type = "b" )
+cbind(cv.US$size,cv.US$dev)  #best 9
+
+#Prune
+pruned.tree = prune.tree(tree.US, best = 10)
+plot(tree.US); text(tree.US, pretty = 1)
+
+
+
+
+
+
+
+
+
+library(rpart)
+library(rpart.plot)
+set.seed(1)
+m1 = rpart(meanMAE~frac_seq_avail + seq_available + lead + median_delay + selective_pres, all_count_model)
+rpart.plot(m1)
+
+summary(m1)
+
+
+#Random forest
+
+library(randomForest)
+set.seed(1)
+n = length(all_count_model$meanMAE)
+Z= sample(n,n/2)
+train = all_count_model[Z,]
+test= all_count_model[-Z,]
+tree.all = tree(meanMAE~frac_seq_avail + seq_available + lead + median_delay + selective_pres,train)
+plot(tree.all);text(tree.all)
+
+
+#Fit random forest
+
+#Assumptions to consider
+
+plot(rf.fit, "proximity")
+
+
+#+ seq_available + lead + median_delay +
+rf.fit = randomForest(meanMAE~frac_seq_avail + seq_available + lead + median_delay+ selective_pres,data=all_count_model,importance = TRUE)
+print(rf.fit)
+varImpPlot(rf.fit, main = "Random Forest Variable")
+which.min(rf.fit$rsq)
+plot(rf.fit)
+#Prediction
+
+importance(rf.fit)
+
+
+
+plot(yhat.rf, residuals(rf.fit, test$meanMAE))
+
+print(rf.fit)
+yhat.rf = predict(rf.fit,newdata=test)
+
+table(yhat.rf, test$meanMAE)
+
+mean((yhat.rf-test$meanMAE)^2)
+
+
+# Create a scatterplot of the model's predictions
+ggplot(data = data.frame(yhat.rf, test$meanMAE), aes(x = yhat.rf, y = test$meanMAE)) +geom_point() + theme_bw()
+
+
+
+
+
+
+
+
+# Get variable importance from the model fit
+#Visualize
+ImpData <- as.data.frame(importance(rf.fit))
+ImpData$Var.Names <- row.names(ImpData)
+
+ggplot(ImpData, aes(x=Var.Names, y=`IncNodePurity`)) +
+  geom_segment( aes(x=Var.Names, xend=Var.Names, y=0, yend=`IncNodePurity`), color="black") +
+  geom_point(aes(size =`%IncMSE`), color="black", alpha=0.6) +
+  theme_light() +
+  coord_flip() +
+  theme(
+    legend.position="bottom",
+    panel.grid.major.y = element_blank(),
+    panel.border = element_blank(),
+    axis.ticks.y = element_blank()
+  )
+
+#mixeffect_model 
+
+
+
+library(lme4)
+
+#
+
+#predictors effects can differ between different locations but should be similar 
+
+
+#Choose what is fixed factors and what as a random effect
+
+#Random Effects that vary > selective pressure by location
+# median delay by location
+
+
+mixed_data = 
+  full_model_data %>%
+  filter(model == "MLR") %>%
+  mutate(location = as.factor(location)) %>%
+  mutate(seq_availper1000 = seq_available/1000)
+
+
+range(mixed_data$frac_seq_avail)
+
+install.packages("optimx")
+library(tidymodels)
+library(ggeffects)
+library(optimx)
+
+
+mixed.lmer <- lme4::lmer(qlogis(meanMAE) ~  frac_seq_avail + lead + seq_availper1000 +median_delay + (1+ median_delay+ frac_seq_avail | location), data = mixed_data, REML = T, lmerControl(optimizer ='optimx', optCtrl=list(method='bobyqa')))
+
+
+library(glmmTMB)
+library(sjPlot)
+library(sjmisc)
+library(sjlabelled)
+
+sjp.lmer(mixed.lmer, y.offset = .4)
+
+ranef(mixed.lmer)
+
+plot_model(mixed.lmer, type ="re")
+
+
+mixed_data %>%
+  filter(lead == -13) %>%
+  filter(location == "Japan") %>%
+  ggplot()+
+  geom_point(aes(x = seq_available, y = selective_pres))
+
+
+
+coef(mixed.lmer)
+
+predict(mixed.lmer)
+
+
+ggplot(aes(x = plogis(predict(mixed.lmer)), y = meanMAE, color = location), data = mixed_data) +
+  geom_point() +
+  facet_wrap(~location)+
+  theme_bw() +
+  xlab("Predicted Mean MAE")+
+  ylab("Observed Mean MAE")+
+  geom_abline()
+
+
+sjPlot::plot_model(mixed.lmer)
+
+
+sjPlot::plot_model(mixed.lmer, 
+                   axis.labels=c("Fractions seq Avail", "lead", "Seq Available", "Median Delay"),
+                   show.values=TRUE, show.p=TRUE,
+                   title="Effect of VOI on MAE") +
+  theme_bw()
+
+
+sjPlot:: tab_model(mixed.lmer)
+
+ggplot(mixed_data, aes(x=median_delay, y=meanMAE, colour=location)) +
+  geom_point(size=2, alpha = 0.2) +
+  geom_line(aes(y=plogis(predict(mixed.lmer)), group=location, size="location"), alpha = 0.75) +
+  #geom_line(data=newdat, aes(y=predict(fm2, level=0, newdata=newdat), size="Population")) +
+  #scale_size_manual(name="Predictions", values=c("Subjects"=0.5, "Population"=3)) +
+  theme_bw(base_size=22) 
+
+
+
+ggpredict(mixed.lmer, terms = c("frac_seq_avail","location"), type = "re") %>%
+  plot()
+
+library(mixedup)
+
+summarize_model(mixed.lmer) 
+
+
+ddd = mixedup::extract_random_effects(mixed.lmer)
+
+ddd %>%
+  ggplot() +
+  geom_point(aes(x =group , y = value, color = effect)) +
+  theme_minimal()
+
+
+ddd %>%
+  ggplot() +
+  geom_point(aes(x =effect , y = value, color = group)) +
+  theme_minimal()+
+        labs( x = "Location", y= "Effect Size")+
+  theme(axis.title.x = element_text(color="Black", size=14),
+        axis.title.y = element_text(color="Black", size=14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        #panel.grid.minor.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(), 
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = (12)),
+        legend.position = "top",
+        legend.title = element_blank()) 
+```
+
+
+```
+
+
+#Full model
+
+```{r}
+#Try a mixture model
+#lead vary
+#add the intercept differ
+
+#what other models could explain
+
+
+
+all_count_model = full_model_data %>%
+  filter(model =="MLR") 
+
+#Regression Model #*location*location 
+reg_all = lm(qlogis(meanMAE) ~ frac_seq_avail + seq_collected + lead + median_delay + selective_pres*frac_seq_avail + location, all_count_model)
+
+reg_all$fitted.values
+#Stepwise regression
+step.model_all <- stepAIC(reg_all, direction = "backward", trace = FALSE)
+
+summary(reg_all)
+
+library(performance)
+summary(reg_all)
+check_model(reg_all)
+
+ggplot(all_count_model, aes(x=plogis(reg_all$fitted.values), y= meanMAE, color= location)) +
+  geom_point() +
+  facet_wrap(~location)+
+  geom_abline(intercept=0, slope=1) +
+  theme_bw() #+
+  #Mean('Observed log(MeanMAE)') +
+  #ylab('predicted log(MeanMAE)')
+library(jtools) # Load jtools
+
+plot_summs(reg_all, inner_ci_level = .9, plot.distributions = TRUE)
+
+plot(cooks.distance(reg_all))
+summ(reg_all, center = T, transform.response = TRUE)
+
+export_summs(reg_all, error_format = "[{conf.low}, {conf.high}]")
+```
+
+
+#Mixture model
+
+
+```{r}
+library(flexmix)
+
+
+
+# Fit the mixture model
+fit <- flexmix(qlogis(meanMAE) ~ seq_collected + lead + median_delay + selective_pres*frac_seq_avail + location, 
+               data = all_count_model, k = 2)
+
+
+
+fitted_values = fitted(fit)
+# Plot the fitted densities for each component
+#plot(density(fit, comp = 1), col = "red", lwd = 2, main = "Component 1", xlab = "qlogis(meanMAE)")
+#lines(density(fit, comp = 2), col = "blue", lwd = 2, main = "Component 2")
+
+# Plot the log-likelihoods for each observation
+plot(fit, main = "Observation Log-Likelihoods")
+plot(fit)
+summary(fit)
+summary(reg_all)
+# Plot the posterior probabilities for each observation
+plot(fit, type= "count")
+
+parameters(fit, component = 2)
+
+
+posterior_first = posterior(fit)[,1]
+
+
+
+cluster_pos_assignment = clusters(fit)
+
+BIC(reg_all)
+BIC(fit)
+
+
+
+# Plot the scatterplot
+#Try different variables
+
+all_count_model %>%
+  ggplot(aes(x = pivot_date, y = frac_seq_avail)) +
+  geom_point(aes(color = factor(cluster_pos_assignment)))+
+  facet_wrap(~location)+
+  #scale_color_discrete(name = "Cluster") +
+  theme_bw()
+
+
+all_count_model %>%
+  ggplot(aes(x = pivot_date, y = meanMAE)) +
+  geom_point(aes(color = factor(cluster_pos_assignment)))+
+  facet_wrap(~location)+
+  #scale_color_discrete(name = "Cluster") +
+  theme_bw()
+
+
+
+
+#multiplying posterior prob of clusters to fitted value for that cluster
+#summing to get the expectation of clusters
+posterior_fit = rowSums(posterior(fit)*fitted(fit))
+
+#Try different clusters
+
+
+all_count_model %>%
+  ggplot(aes(x = plogis(posterior_fit), y = meanMAE)) +
+  geom_point(aes(color = factor(cluster_pos_assignment)))+
+  facet_wrap(~location)+
+  geom_abline(a=1)+
+  #scale_color_discrete(name = "Cluster") +
+  theme_bw()
+
+
+```
 
 
 #Helper function
