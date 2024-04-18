@@ -155,7 +155,7 @@ Different countries with different genomic surveillance systems have different l
 \end{figure}
 
 We employ a sliding window approach in which we conduct an analysis twice each month (on the 1st and the 15th) and estimate variant frequencies from $-90$ days to $+30$ days relative to each analysis date.
-We illustrate our frequency predictions using the MLR model with Figure \ref{fig:dynamic_forecast_env}B showing resulting trajectories for Japan and the US and Figure \ref{fig:dynamic_forecasting_env_supplementary}B showing trajectories for Australia, Brazil, South Africa and the UK.
+We illustrate our frequency predictions using the MLR model with Figure \ref{fig:dynamic_forecast_env}B showing resulting trajectories for Japan and the US and Figure (\ref{fig:supplementary_fig_Australia}, \ref{fig:supplementary_fig_Brazil}, \ref{fig:supplementary_fig_South Africa}, \ref{fig:supplementary_fig_Trinidad and Tobago}, \ref{fig:supplementary_fig_United Kingdom}, \ref{fig:supplementary_fig_Vietnam}) showing trajectories for Australia, Brazil, South Africa, Trinidad and Tobago, the UK, and Vietnam.
 Sometimes we see initial over-shoot or under-shoot of variant growth and decline, but there is general consistency across trajectories.
 Additionally, we retrospectively reconstructed the simple 7-day smoothed frequency across variants and present these trajectories as solid black lines.
 We treat this retrospective trajectory as `truth' and thus deviations from model projections and retrospective truth can be assessed to determine nowcast and short-term forecast accuracy.
@@ -445,18 +445,100 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 \renewcommand{\thefigure}{S\arabic{figure}}
 \renewcommand{\thetable}{S\arabic{table}}
 
+
+
+
 %%% dynamic_forecasting_env_supplementary %%%
 \begin{figure}[tb!]
 	\centering
-	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/dynamic_forecasting_env_supplementary.png}
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/Supplementary_Fig_1A.png}
 	\caption{
-		\textbf{Reconstructing available data sets and corresponding predictions for Australia, Brazil, South Africa and the United Kingdom.}
-		(A) Variant sequence counts categorized by Nextstrain clade at 4 different analysis dates.
-		(B) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model.
+		\textbf{Reconstructing available data sets for Australia, Brazil, South Africa, Trinidad and Tobago, the United Kingdom, and Vietnam.}
+		(A) Variant sequence counts categorized by Nextstrain clade at 4 different analysis dates. 
+	}
+	\label{fig:Supplementary_Fig_1A}
+\end{figure}
+
+
+% Australia Analysis
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/supplementary_fig_Australia.png}
+	\caption{
+		\textbf{Reconstructing predictions for Australia}
+		(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Australia.
 		Each forecast trajectory is shown as a different colored line.
 		Retrospective smoothed frequency is shown as a thick black line.
 	}
-	\label{fig:dynamic_forecasting_env_supplementary}
+	\label{fig:supplementary_fig_Australia}
+\end{figure}
+
+% Brazil Analysis
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/supplementary_fig_Brazil.png}
+	\caption{
+		\textbf{Reconstructing predictions for Brazil}
+		(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Brazil.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
+	\label{fig:supplementary_fig_Brazil}
+\end{figure}
+
+
+% SA Analysis
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/supplementary_fig_South Africa.png}
+	\caption{
+		\textbf{Reconstructing predictions for South Africa}
+		(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for South Africa.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
+	\label{fig:supplementary_fig_South Africa}
+\end{figure}
+
+
+% TB Analysis
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/supplementary_fig_Trinidad and Tobago.png}
+	\caption{
+		\textbf{Reconstructing predictions for Trinidad and Tobago}
+		(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Trinidad and Tobago.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
+	\label{fig:supplementary_fig_Trinidad and Tobago}
+\end{figure}
+
+% UK Analysis
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/supplementary_fig_United Kingdom.png}
+	\caption{
+		\textbf{Reconstructing predictions for United Kingdom}
+		(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for United Kingdom.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
+	\label{fig:supplementary_fig_United Kingdom}
+\end{figure}
+
+
+% Vietnam Analysis
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/supplementary_fig_Vietnam.png}
+	\caption{
+		\textbf{Reconstructing predictions for Vietnam}
+		(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Vietnam.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
+	\label{fig:supplementary_fig_Vietnam}
 \end{figure}
 
 
