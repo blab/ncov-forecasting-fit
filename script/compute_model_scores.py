@@ -88,13 +88,25 @@ def load_truthset(path):
     return new_truth
 
 
+def sample_predictive_quantile(total_seq, freq, q, num_samples=100):
+    freq_pred = np.full_like(total_seq, fill_value=np.nan)
+    if np.isnan(total_seq).all():
+        return freq_pred
+    sample_counts = np.random.binomial(
+        total_seq.astype(int), freq, size=(num_samples, len(total_seq))
+    )
+    sample_quants = np.nanquantile(sample_counts, q, axis=0)
+    np.divide(sample_quants, total_seq, out=freq_pred, where=total_seq != 0)
+    return freq_pred
+
+
 def prep_freq_data(merged):
 
     # Convert frequencies to arrays
     raw_freq = np.squeeze(merged[["truth_freq"]].to_numpy(), axis=-1)
 
     if len(raw_freq) == 0:
-        return (None,) * 7
+        return (None,) * 9
 
     # Convert smoothed frequencies to arrays
     smoothed_freq = np.squeeze(merged[["smoothed_freq"]].to_numpy())
@@ -109,13 +121,17 @@ def prep_freq_data(merged):
     # Convert credible intervals to arrays
     if "ci_low" in merged.columns:
         ci_low = np.squeeze(merged[["ci_low"]].to_numpy())
+        ci_low_pred = sample_predictive_quantile(total_seq, ci_low, q=0.025)
     else:
         ci_low = None
+        ci_low_pred = None
 
     if "ci_high" in merged.columns:
         ci_high = np.squeeze(merged[["ci_high"]].to_numpy())
+        ci_high_pred = sample_predictive_quantile(total_seq, ci_high, q=0.975)
     else:
         ci_high = None
+        ci_high_pred = None
 
     return (
         raw_freq,
@@ -124,7 +140,9 @@ def prep_freq_data(merged):
         total_seq,
         smoothed_freq,
         ci_low,
+        ci_low_pred,
         ci_high,
+        ci_high_pred,
     )
 
 
@@ -169,7 +187,9 @@ def calculate_errors(merged, pivot_date):
         total_seq,
         smoothed_freq,
         ci_low,
+        ci_low_pred,
         ci_high,
+        ci_high_pred,
     ) = prep_freq_data(merged)
 
     if raw_freq is None:
@@ -191,10 +211,13 @@ def calculate_errors(merged, pivot_date):
     # Computing Coverage
     coverage = Coverage()
     if ci_low is not None and ci_high is not None:
-        error_df["coverage"] = coverage.compute_coverage(
+        error_df["coverage_posterior"] = coverage.compute_coverage(
             smoothed_freq, ci_low, ci_high
         )
-
+    if ci_low_pred is not None and ci_high_pred is not None:
+        error_df["coverage_predictive"] = coverage.compute_coverage(
+            smoothed_freq, ci_low_pred, ci_high_pred
+        )
     # Adding frequencies columns for comparison and diagnostics
     error_df["total_seq"] = total_seq
     error_df["raw_freq"] = raw_freq
