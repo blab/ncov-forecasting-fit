@@ -2809,7 +2809,7 @@ pivot_mae = full_model_data %>%
   group_by(location, pivot_date) %>%
   mutate(pivot_date = as.Date(pivot_date)) %>%
   summarise(#seq_collected = median(seq_collected),
-            mean_nowcast_MAE = median(meanMAE)) %>%
+            mean_nowcast_MAE = median(AE)) %>%
   ggplot(aes(x = prop_qc_bad, y = mean_nowcast_MAE, group = location, color = location))+
   geom_line()+
   geom_point(size = 2, alpha = 0.5)+
@@ -2880,10 +2880,10 @@ qc_mae = full_model_data %>%
   #summarise(#seq_collected = median(seq_collected),
   #          mean_nowcast_MAE = median(meanMAE)) %>%
   ggplot(aes(x = prop_qc_bad, y = AE, group = location, color = location))+
-  #geom_point(size = 2)+
-    geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
-                priority = "density",
-                show.legend = T, groupOnX = T)+
+  geom_point(size = 2)+
+    #geom_beeswarm(aes(color= location), cex = 2, size = 1.5, alpha = 0.9,
+     #           priority = "density",
+    #            show.legend = T, groupOnX = T)+
   stat_cor(method = "pearson", aes(x = prop_qc_bad, y = AE), label.x = 0.2, inherit.aes = F,
            cor.coef.name = "r")+
   theme_minimal()+
@@ -2937,7 +2937,7 @@ Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4b), left = "Absol
 
 
 
-ggsave("Var_of_interest.png", plot = Figure_4_full, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
+ggsave("Var_of_interest.png", plot = Figure_4_full, width = 38, height = 30, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
 
 
 
@@ -3761,19 +3761,23 @@ ggsave("dynamic_forecasting_env_supplementary.png", plot = Figure_1_SUPP, width 
 
 ```{r}
 
-# Mean MAE with log scale
+# Coverage posterior
 
-coverage_supp_2 = error_dataset_fullrank %>%
+coverage_supp_2_A = error_dataset %>%
   group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
+  filter(model %in% c("Naïve", "Piantham", "MLR","Hierarchical-MLR", "FGA", "GARW")) %>%
   filter(lead > -30 & lead < 30) %>%
   summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
             quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
             quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
             meanMAE = mean(MAE),
-            coverage = mean(coverage)) %>%
-   ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR", "FGA", "GARW"))))  +
+            coverage_posterior = mean(coverage_posterior),
+            coverage_predictive = mean(coverage_predictive)) %>%
+   ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR","Hierarchical-MLR", "FGA", "GARW"))))  +
   #geom_line(aes(y = quant50), size = 0.5) +
-  geom_line(aes(y =coverage ), alpha = 0.75)+
+  geom_line(aes(y =coverage_posterior ), alpha = 0.75)+
+  
 
   #geom_point(aes(y = coverage)) +
   #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
@@ -3781,8 +3785,8 @@ coverage_supp_2 = error_dataset_fullrank %>%
   bbc_style() +
   labs(linetype = " ", color = "Model", shape = 1) +
   scale_color_manual(values = model_colors,
-                     breaks = c("Naïve", "Piantham", "MLR", "FGA", "GARW")) +
-  labs(x = "Days from date of estimation", y = "Coverage (Percent in 95% CI)") +
+                     breaks = c("Naïve", "Piantham", "MLR","Hierarchical-MLR", "FGA", "GARW")) +
+  labs(x = "Days from date of estimation", y = "Posterior Coverage (Percent in 95% CI)") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
   theme(axis.title.x = element_text(color = "Black", size = 14),
         axis.title.y = element_text(color = "Black", size = 14),
@@ -3812,7 +3816,68 @@ coverage_supp_2 = error_dataset_fullrank %>%
   #geom_hline(yintercept = 0.05, linetype = "dashed")
 
 
-ggsave("coverage_supp_2.png", plot = coverage_supp_2, width = 25, height = 20, units = "cm", bg = 'white',  dpi = 300)
+# B: coverage predictive
+
+coverage_supp_2_B = error_dataset %>%
+  group_by(lead, location, model) %>%
+  filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
+  filter(model %in% c("Naïve", "Piantham", "MLR","Hierarchical-MLR", "FGA", "GARW"))  %>%
+  filter(lead > -30 & lead < 30) %>%
+  summarise(quant75 = quantile(MAE, probs = c(0.75), na.rm = TRUE),
+            quant50 = quantile(MAE, probs = c(0.50), na.rm = TRUE),
+            quant25 = quantile(MAE, probs = c(0.25), na.rm = TRUE),
+            meanMAE = mean(MAE),
+            coverage_posterior = mean(coverage_posterior),
+            coverage_predictive = mean(coverage_predictive)) %>%
+   ggplot(aes(x = lead, color = factor(model, levels = c("Naïve", "Piantham", "MLR","Hierarchical-MLR", "FGA", "GARW"))))  +
+  #geom_line(aes(y = quant50), size = 0.5) +
+  geom_line(aes(y =coverage_predictive ), alpha = 0.75)+
+  
+
+  #geom_point(aes(y = coverage)) +
+  #geom_point(aes(y = quant50), size = 0.9, alpha = 0.75) +
+  facet_wrap(~location) +
+  bbc_style() +
+  labs(linetype = " ", color = "Model", shape = 1) +
+  scale_color_manual(values = model_colors,
+                     breaks = c("Naïve", "Piantham", "MLR", "Hierarchical-MLR", "FGA", "GARW", "Heir")) +
+  labs(x = "Days from date of estimation", y = "Predictive Coverage (Percent in 95% CI)") +
+  scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
+  theme(axis.title.x = element_text(color = "Black", size = 14),
+        axis.title.y = element_text(color = "Black", size = 14),
+        panel.grid.major = element_line(),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major.y = element_blank(),
+        strip.text.x = element_text(size = 13),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.ticks = element_line(),
+        strip.text.y = element_text(size = 11),
+        plot.title = element_text(family = "Helvetica", size = 12),
+        legend.position = "right",
+        legend.title = element_text(size = 12)) +
+  scale_y_continuous(trans = log_trans(),
+                     
+                     #breaks = c(0.001, 0.005,, 0.1, 1),
+                     labels = label_percent()) +
+    ylim(0,1)+
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 1,
+           color = NA, fill = "#bdc3c7", alpha = 0.15) +
+  annotate(geom = "text", x = -18, y = 2, label = "Nowcast", size = 3, fontface = 4) +
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 1,
+           color = NA, fill = "#2c3e50", alpha = 0.15) +
+  annotate(geom = "text", x = 18, y = 2, label = "Forecast", size = 3, fontface = 4)
+
+
+coverage_supp_2 = ggarrange(coverage_supp_2_A, coverage_supp_2_B, 
+          ncol = 1,
+                                labels = c("A", "B"), 
+                                common.legend = TRUE, 
+                                legend = "right")
+
+
+ggsave("coverage_supp_2.png", plot = coverage_supp_2, width = 25, height = 30, units = "cm", bg = 'white',  dpi = 300)
 
 ```
 

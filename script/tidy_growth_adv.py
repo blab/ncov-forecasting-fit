@@ -1,41 +1,14 @@
 import pandas as pd
 import os
+import yaml
 
-locations = [
-    "USA",
-    "Japan",
-    "United Kingdom",
-    "Brazil",
-    "Australia",
-    "South Africa",
-]
-models = ["GARW", "MLR", "FGA", "Piantham"]
-dates = [
-    "2022-01-01",
-    "2022-01-15",
-    "2022-02-01",
-    "2022-02-15",
-    "2022-03-01",
-    "2022-03-15",
-    "2022-04-01",
-    "2022-04-15",
-    "2022-05-01",
-    "2022-05-15",
-    "2022-06-01",
-    "2022-06-15",
-    "2022-07-01",
-    "2022-07-15",
-    "2022-08-01",
-    "2022-08-15",
-    "2022-09-01",
-    "2022-09-15",
-    "2022-10-01",
-    "2022-10-15",
-    "2022-11-01",
-    "2022-11-15",
-    "2022-12-01",
-    "2022-12-15",
-]
+if __name__ == "__main__":
+    with open("../config.yaml", "r") as config:
+        config = yaml.safe_load(config)
+
+    dates = config["main"]["estimation_dates"]
+    locations = config["main"]["locations"]
+    models = config["main"]["models"]
 
 
 def format_growth_advantages(ga_data, pivot_date, model, location):
