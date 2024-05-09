@@ -219,22 +219,10 @@ Piantham often shows large errors and mean absolute error is comparable to the n
 Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_B}C).
 This skewed distribution results in the large observed differences between median and mean summary statistics.
 
-\begin{figure}[tb!]
-	\centering
-	\includegraphics[width=0.87\textwidth]{figures/model_comp_PooledMLR.png}
-	\caption{\textbf{Absolute error comparing hierarchical MLR and MLR across countries and forecast lags.}
-	(A) mean absolute error across countries and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts comparing MLR and hierarchical pooled MLR.
-	}
-	\label{fig:model_comp_PooledMLR}
-\end{figure}
-
-
-
-
 In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants that present a small window of time to observe dynamics and where sequence count data is often rare.
 We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across analysis dates (Fig.~\ref{fig:ga_estimates}).
 Generally, we see sharp changes in estimated growth advantage in the first 1-3 weeks when a variant is emerging, but then see less pronounced changes.
-Thus it often takes a couple weeks for the MLR model to `dial in' estimated growth advantage and accuracy will tend to be poorer in early weeks when variant-specific growth advantage is uncertain.
+Thus, it often takes a couple weeks for the MLR model to `dial in' estimated growth advantage and accuracy will tend to be poorer in early weeks when variant-specific growth advantage is uncertain.
 
 \begin{figure}[H]
 	\centering
@@ -264,7 +252,7 @@ Thus it often takes a couple weeks for the MLR model to `dial in' estimated grow
 \end{figure}
 
 Again, using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA  (Fig.~\ref{fig:vars_of_interest}A).
-We find that broad statistics describing both quantity and quality of sequence data available in at different analysis timepoints and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
+We find that broad statistics describing both quantity and quality of sequence data available in at different analysis time points and in different genomic surveillance systems correlates with forecasting error (Fig.~\ref{fig:vars_of_interest}B--E).
 Using Pearson correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:vars_of_interest}B).
 We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with mean absolute error (Fig.~\ref{fig:vars_of_interest}E).
 
@@ -296,8 +284,23 @@ Additionally, the effect appears to saturate at different values depending on th
 We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is sufficient to minimize forecast error.
 We arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark (Fig.~\ref{fig:downscaling}B-E).
 
+\subsection*{Comparing country-level and hierarchical short-term forecast models}
 
+Joint modeling of data from multiple countries has been proposed as a way to getting improved estimates of variant growth advantages and improving frequency estimates in low and middle income countries. 
+Hierarchical or joint forecast models for short-term frequency forecasts typically operate by pooling parameters between `groups` in a model.
+For our application, we pool the relative fitness of variants across countries, so that estimated relative fitnesses are informed by not just the observed relative fitness within a location, but also the relative fitnesses in other locations.
 
+We compare the short-term forecast accuracy for individual models fit using MLR and this hierarchical MLR model in Figure \ref{fig:model_comp_PooledMLR}.
+We find that overall the hierarchical MLR matches or outperforms the single country models in all locations and at all forecast lengths suggesting that it may be a useful general improvement to these models for forecasting SARS-CoV-2.
+
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.87\textwidth]{figures/model_comp_PooledMLR.png}
+	\caption{\textbf{Absolute error comparing hierarchical MLR and MLR across countries and forecast lags.}
+	(A) mean absolute error across countries and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts comparing MLR and hierarchical pooled MLR.
+	}
+	\label{fig:model_comp_PooledMLR}
+\end{figure}
 
 %%% DISCUSSION %%%
 \section*{Discussion}
@@ -390,7 +393,17 @@ Growth advantages presented in this manuscript are estimated relative to the bas
 Further details on the model formats can be found in their respective citations.
 All models were implemented using the evofr software package for evolutionary forecasting (\href{https://github.com/blab/evofr}{https://github.com/blab/evofr}) using Numpyro for inference.
 
-We compared the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies at the last timepoint with sequence data with a minimum of 1 observation required and centered around each data point.
+As a baseline, we compared the four models above to a naive model which generates the forecast as the avearge of the last available frequencies.
+
+Additionally, we implement a hierarchical variant of the model where multiple countries are fit simultaneously with a Normal prior on the relative fitness of a given variant between countries, so that
+
+\begin{align*}
+    \delta_{v, g} \sim \text{Normal}(\overline{\delta}_{v}, \sigma).
+\end{align*}
+
+Similar formulations of this hierarchical model have been used for SARS-CoV-2 frequency forecasts previously. \cite{susswein2023leveraging}
+
+We additionally compare the multinomial logistic regression model to the hierarchical version of the model in Figure \ref{fig:model_comp_PooledMLR}.
 
 \subsection*{Evaluation criteria}
 
@@ -399,7 +412,7 @@ We calculated the `absolute error` (AE) for a given model $m$ and data set $d$ a
     \mathrm{AE}_{t}^{m,d} = \frac{1}{n} \sum_{v \in V} \left|f_{v}^{d}(t) - \hat{f}^{m,d}_{v}(t) \right|,
 \end{equation}
 where $f_{v}^{d}(t)$ and $\hat{f}_{v}^{m,d}(t)$ are the retrospective frequencies and the predicted frequencies for model $m$, data $d$, variant $v$ and time $t$.
-The AE is the mean across individual variants for a specific model, data set and timepoint.
+The AE is the mean across individual variants for a specific model, data set and time point.
 Additionally, we often work with the lead time which is defined as the difference between date of analysis for the data set and the forecast date $l = t - T_{\text{obs}}$.
 We summarized median absolute error and mean absolute error across multiple analysis datasets in Figure \ref{fig:model_comp_A} and Table \ref{table:model_comp_table}.
 
@@ -410,15 +423,35 @@ These variables are defined as proportion of bad quality control (QC) sequences 
 To calculate these variables, we selected a 14-day window of data before each and every analysis date and used the collection and submission dates to determine their availability.
 Total sequence availability was calculated by dividing the sequences where submission date was before the date of analysis by the total collected sequences and similarly fraction of sequences at observation was estimated.
 Sequence submission delay was calculated by taking the difference between the submission date and the date of collection.
-Bad QC sequence proportion was estimated by dividing the sequences with bad Nextclade classification by the total collected sequences.
-All estimates were run for all defined dates of analysis across all countries.
+Bad QC sequence proportion was estimated by dividing the sequences with bad QC classification by the total collected sequences.
+Estimates were computed for all defined dates of analysis across all countries.
+
+\paragraph{Assessing coverage for short-term frequency forecasts}
+
+The main results of our analyses rely on mean and median absolute error as metrics, however, there is much to gain by using probabilistic forecasts for variant frequency.
+To this aim, we aim to investigate the coverage of these different methods for forecasting.
+In particular, we estimate the coverage of 95\% posterior latent frequencies (Figure \ref{fig:frequency_coverage}A) and posterior predictive sample frequencies (Figure \ref{fig:frequency_coverage}B) for the model explored in this paper.
+We generate the posterior predictive coverage by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
+We find that the posterior predictive coverage is generally higher and a better fit for the models in question.
+Additionally, we find that the coverage is lower in countries with the highest sequencing intensity like the US and UK, suggesting that there may be over-dispersion in the sequence counts relative to binomial or multinomial sampling.
 
 \subsection*{Downscaling historical sequencing effort}
 
-We explored the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
-Using the sequencing data from the United Kingdom and Denmark, we subsampled existing available sequences at the time of analysis at a rate of 100, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, and 2000 sequences per week for the same analysis dates and study period used in the previous analyses, generating 5 subsampled data sets for each sequencing rate, location, and analysis date.
+We analyze the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
+Using the sequencing data from the United Kingdom and Denmark, we subsampled existing available sequences at the time of analysis at a rate of 100, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, and 2000 sequences per week of any submission date.
+We then generated datasets for the same analysis dates and study period used in the previous analyses, generating 5 replicate subsampled data sets of sequences available at each analysis date for each eventual sequencing rate, location, and analysis date.
+Subsampling sequences per week before checking which sequences were available by the analysis date ensures that we respect the availability of sequences by submission date and submission delay in each country i.e. that countries with many sequences per week but long delays will maintain these delays.
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after analysis date and compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
 To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within an error tolerance (5\% AE) as well as the average error at different sequence threshold and lag times.
+
+\subsection*{Comparing forecasts using retrospective clade designations and real-time designations}
+
+The main analyses discussed in this manuscript rely on subseting and filtering SARS-CoV-2 sequence metadata accessed on a particular data.
+However, the clade designations used throughout this manuscript may not have been the same as clade designations at the time the data was available.
+To understand how this affects our evaluation of forecast error, we compare the accuracy of models fit to the sequence counts from metadata at the time and using the available Nextclade version to those fit on the retrospective Nextclade version used in the rest of the analyses in this paper.
+In particular, we focus on the timing of the designation of Omicron 22E in October 2022 and show the accuracy of MLR using the different data sets at different forecast leads.
+We compare the resulting MAE of these analyses between Nextclade versions in supplemental figure (\ref{fig:mae_nextclade_comparison}) and 
+show trajectories from individual countries in supplementary figures (\ref{fig:forecast-comparison-by-nextclade-version-Australia}-\ref{fig:forecast-comparison-by-nextclade-version-Vietnam})
 
 \subsection*{Data and code accessibility}
 
@@ -550,7 +583,42 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 		\textbf{Coverage for estimates across all countries and models}
 		(A) The proportion of estimates lying within the 95\% confidence intervals (CIs) across lag times (-30,-30)
 	}
-	\label{fig:coverage_supp_2}
+	\label{fig:frequency_coverage}
 \end{figure}
+
+
+% Nextclade comparison
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{./supp_figures/mean_absolute_error_at_lead_nextclade_version_comparison.png}
+	\caption{
+		\textbf{Comparing the accuracy of short-term forecast models under different versions of Nextclade.}
+        (A-H) Mean absolute error for MLR as a function of days since date of estimation, starting from 30 day hindcasts to 30 days forecasts. 
+        Intervals shown have width of two standard errors of the mean.
+        We find that errors are qualitatively similar regardless of Nextclade version with errors being potentially higher for the current Nextclade version.
+	}
+	\label{fig:mae_nextclade_comparison}
+\end{figure}
+
+\def\forecastcomparisonnextclade#1#2{
+    \begin{figure}[t!]
+        \centering
+        \includegraphics[width=0.9\textwidth=0.01]{./supp_figures/forecast-comparison-by-nextclade-version-#1.png}
+        \caption{
+            \textbf{Forecasts for #2 using clade designations with different Nextclade versions}
+        Forecasts from MLR fit to data generated using retrospective Nextclade designations (A) and real-time Nextclade clade designations (B).
+        }
+        \label{fig:forecast-comparison-by-nextclade-version-#1}
+    \end{figure}
+}
+
+\forecastcomparisonnextclade{Australia}{Australia}
+\forecastcomparisonnextclade{Brazil}{Brazil}
+\forecastcomparisonnextclade{Japan}{Japan}
+\forecastcomparisonnextclade{South_Africa}{South Africa}
+\forecastcomparisonnextclade{Trinidad_and_Tobago}{Trinidad and Tobago}
+\forecastcomparisonnextclade{USA}{United States}
+\forecastcomparisonnextclade{United_Kingdom}{United Kingdom}
+\forecastcomparisonnextclade{Vietnam}{Vietnam}
 
 \end{document}
