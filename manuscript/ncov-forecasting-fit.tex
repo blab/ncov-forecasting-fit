@@ -443,6 +443,15 @@ Subsampling sequences per week before checking which sequences were available by
 We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after analysis date and compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
 To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within an error tolerance (5\% AE) as well as the average error at different sequence threshold and lag times.
 
+\subsection*{Comparing forecasts using retrospective clade designations and real-time designations}
+
+The main analyses discussed in this manuscript rely on subseting and filtering SARS-CoV-2 sequence metadata accessed on a particular data.
+However, the clade designations used throughout this manuscript may not have been the same as clade designations at the time the data was available.
+To understand how this affects our evaluation of forecast error, we compare the accuracy of models fit to the sequence counts from metadata at the time and using the available Nextclade version to those fit on the retrospective Nextclade version used in the rest of the analyses in this paper.
+In particular, we focus on the timing of the designation of Omicron 22E in October 2022 and show the accuracy of MLR using the different data sets at different forecast leads.
+We compare the resulting MAE of these analyses between Nextclade versions in supplemental figure (\ref{fig:mae_nextclade_comparison}) and 
+show trajectories from individual countries in supplementary figures (\ref{fig:forecast-comparison-by-nextclade-version-Australia}-\ref{fig:forecast-comparison-by-nextclade-version-Vietnam})
+
 \subsection*{Data and code accessibility}
 
 Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated data set that pulls data from GISAID database.
@@ -575,5 +584,40 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 	}
 	\label{fig:frequency_coverage}
 \end{figure}
+
+
+% Nextclade comparison
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.9\textwidth=0.01]{./supp_figures/mean_absolute_error_at_lead_nextclade_version_comparison.png}
+	\caption{
+		\textbf{Comparing the accuracy of short-term forecast models under different versions of Nextclade.}
+        (A-H) Mean absolute error for MLR as a function of days since date of estimation, starting from 30 day hindcasts to 30 days forecasts. 
+        Intervals shown have width of two standard errors of the mean.
+        We find that errors are qualitatively similar regardless of Nextclade version with errors being potentially higher for the current Nextclade version.
+	}
+	\label{fig:mae_nextclade_comparison}
+\end{figure}
+
+\def\forecastcomparisonnextclade#1#2{
+    \begin{figure}[t!]
+        \centering
+        \includegraphics[width=0.9\textwidth=0.01]{./supp_figures/forecast-comparison-by-nextclade-version-#1.png}
+        \caption{
+            \textbf{Forecasts for #2 using clade designations with different Nextclade versions}
+        Forecasts from MLR fit to data generated using retrospective Nextclade designations (A) and real-time Nextclade clade designations (B).
+        }
+        \label{fig:forecast-comparison-by-nextclade-version-#1}
+    \end{figure}
+}
+
+\forecastcomparisonnextclade{Australia}{Australia}
+\forecastcomparisonnextclade{Brazil}{Brazil}
+\forecastcomparisonnextclade{Japan}{Japan}
+\forecastcomparisonnextclade{South_Africa}{South Africa}
+\forecastcomparisonnextclade{Trinidad_and_Tobago}{Trinidad and Tobago}
+\forecastcomparisonnextclade{USA}{United States}
+\forecastcomparisonnextclade{United_Kingdom}{United Kingdom}
+\forecastcomparisonnextclade{Vietnam}{Vietnam}
 
 \end{document}
