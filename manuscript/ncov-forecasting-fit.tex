@@ -219,18 +219,6 @@ Piantham often shows large errors and mean absolute error is comparable to the n
 Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_B}C).
 This skewed distribution results in the large observed differences between median and mean summary statistics.
 
-\begin{figure}[tb!]
-	\centering
-	\includegraphics[width=0.87\textwidth]{figures/model_comp_PooledMLR.png}
-	\caption{\textbf{Absolute error comparing hierarchical MLR and MLR across countries and forecast lags.}
-	(A) mean absolute error across countries and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts comparing MLR and hierarchical pooled MLR.
-	}
-	\label{fig:model_comp_PooledMLR}
-\end{figure}
-
-
-
-
 In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants that present a small window of time to observe dynamics and where sequence count data is often rare.
 We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across analysis dates (Fig.~\ref{fig:ga_estimates}).
 Generally, we see sharp changes in estimated growth advantage in the first 1-3 weeks when a variant is emerging, but then see less pronounced changes.
@@ -296,8 +284,23 @@ Additionally, the effect appears to saturate at different values depending on th
 We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is sufficient to minimize forecast error.
 We arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark (Fig.~\ref{fig:downscaling}B-E).
 
+\subsection*{Comparing country-level and hierarchical short-term forecast models}
 
+Joint modeling of data from multiple countries has been proposed as a way to getting improved estimates of variant growth advantages and improving frequency estimates in low and middle income countries. 
+Hierarchical or joint forecast models for short-term frequency forecasts typically operate by pooling parameters between `groups` in a model.
+For our application, we pool the relative fitness of variants across countries, so that estimated relative fitnesses are informed by not just the observed relative fitness within a location, but also the relative fitnesses in other locations.
 
+We compare the short-term forecast accuracy for individual models fit using MLR and this hierarchical MLR model in Figure \ref{fig:model_comp_PooledMLR}.
+We find that overall the hierarchical MLR matches or outperforms the single country models in all locations and at all forecast lengths suggesting that it may be a useful general improvement to these models for forecasting SARS-CoV-2.
+
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=0.87\textwidth]{figures/model_comp_PooledMLR.png}
+	\caption{\textbf{Absolute error comparing hierarchical MLR and MLR across countries and forecast lags.}
+	(A) mean absolute error across countries and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts comparing MLR and hierarchical pooled MLR.
+	}
+	\label{fig:model_comp_PooledMLR}
+\end{figure}
 
 %%% DISCUSSION %%%
 \section*{Discussion}
@@ -390,7 +393,17 @@ Growth advantages presented in this manuscript are estimated relative to the bas
 Further details on the model formats can be found in their respective citations.
 All models were implemented using the evofr software package for evolutionary forecasting (\href{https://github.com/blab/evofr}{https://github.com/blab/evofr}) using Numpyro for inference.
 
-We compared the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies at the last timepoint with sequence data.
+We compared the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies at the last time point with sequence data.
+
+Additionally, we implement a hierarchical variant of the model where multiple countries are fit simultaneously with a Normal prior on the relative fitness of a given variant between countries, so that
+
+\begin{align*}
+    \delta_{v, g} \sim \text{Normal}(\overline{\delta}_{v}, \sigma).
+\end{align*}
+
+Similar formulations of this hierarchical model have been used for SARS-CoV-2 frequency forecasts previously. \cite{susswein2023leveraging}
+
+We additionally compare the multinomial logistic regression model to the hierarchical version of the model in Figure \ref{fig:model_comp_PooledMLR}.
 
 \subsection*{Evaluation criteria}
 
