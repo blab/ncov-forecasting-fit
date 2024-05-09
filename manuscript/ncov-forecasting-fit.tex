@@ -390,7 +390,7 @@ Growth advantages presented in this manuscript are estimated relative to the bas
 Further details on the model formats can be found in their respective citations.
 All models were implemented using the evofr software package for evolutionary forecasting (\href{https://github.com/blab/evofr}{https://github.com/blab/evofr}) using Numpyro for inference.
 
-We compared the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies at the last timepoint with sequence data.
+We compared the four models to a naive model which is implemented as a 7-day moving average on the retrospective raw frequencies at the last timepoint with sequence data with a minimum of 1 observation required and centered around each data point.
 
 \subsection*{Evaluation criteria}
 
