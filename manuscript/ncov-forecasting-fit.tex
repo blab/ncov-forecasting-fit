@@ -425,6 +425,14 @@ Total sequence availability was calculated by dividing the sequences where submi
 Sequence submission delay was calculated by taking the difference between the submission date and the date of collection.
 Bad QC sequence proportion was estimated by dividing the sequences with bad Nextclade classification by the total collected sequences.
 All estimates were run for all defined dates of analysis across all countries.
+\paragraph{Assessing coverage for short-term frequency forecasts}
+
+The main results of our analyses rely on mean and median absolute error as metrics, however, there is much to gain by using probabilistic forecasts for variant frequency.
+To this aim, we aim to investigate the coverage of these different methods for forecasting.
+In particular, we estimate the coverage of 95\% posterior latent frequencies (Figure \ref{fig:frequency_coverage}A) and posterior predictive sample frequencies (Figure \ref{fig:frequency_coverage}B) for the model explored in this paper.
+We generate the posterior predictive coverage by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
+We find that the posterior predictive coverage is generally higher and a better fit for the models in question.
+Additionally, we find that the coverage is lower in countries with the highest sequencing intensity like the US and UK, suggesting that there may be over-dispersion in the sequence counts relative to binomial or multinomial sampling.
 
 \subsection*{Downscaling historical sequencing effort}
 
@@ -563,7 +571,7 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 		\textbf{Coverage for estimates across all countries and models}
 		(A) The proportion of estimates lying within the 95\% confidence intervals (CIs) across lag times (-30,-30)
 	}
-	\label{fig:coverage_supp_2}
+	\label{fig:frequency_coverage}
 \end{figure}
 
 \end{document}
