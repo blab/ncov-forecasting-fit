@@ -348,9 +348,14 @@ This level of sequencing enables robust short-term forecasts of pathogen frequen
 We find that simple fitness models like MLR provide accurate and robust short-term forecasts of SARS-CoV-2 variant frequency.
 Despite the performance of these simple models, there is evidence to show that modeling variant frequencies using a hierarchical fitness model can further provide improved short-term forecasts for SARS-CoV-2 variant dynamics \cite{susswein2023leveraging}.
 This gives one avenue for further development of fitness models for short-term forecasts.
+
+Another avenue for improvement of these models lies in the incorporation of mechanism.
+In general, the methods discussed here are primarily statistical in nature and do not account for much of the biological or immunological knowledge that we have or could obtain.
+The incorporation of such knowledge could increase the short-term and medium-term capabilities of these models.
+
 That being said, these fitness models do not account for future mutations and can only project forward from circulating viral diversity.
 This intrinsically limits the effective forecasting horizon achievable by these models.
-Future modeling work should seek to incorporate the emergence and spread of `adjacent possible' mutations \cite{kauffman1993origins}.
+Future modeling work should seek to incorporate the emergence and spread of `adjacent possible' mutations for longer term forecasts on the order of several months or years \cite{kauffman1993origins}.
 Without empirical frequency dynamics to draw upon, the fitness effects of these adjacent possible mutations may be estimated from empirical data such as deep mutational scanning \cite{cao2022ba, greaney2022antibody, dadonaite2023full}.
 Continued timely genomic surveillance and biological characterization along with further model development will be necessary for successful real-time evolutionary forecasting of SARS-CoV-2.
 
