@@ -1,7 +1,5 @@
 main:
   estimation_dates:
-    - '2022-01-01'
-    - '2022-01-15'
     - '2022-02-01'
     - '2022-02-15'
     - '2022-03-01'
@@ -31,11 +29,7 @@ main:
     - "Australia"
     - "South Africa"
     - "Japan"
-    - "Egypt"
-    - "Panama"
     - "Trinidad and Tobago"
-    - "Costa Rica"
-    - "Hong Kong"
     - "Vietnam"
   models:
     - "Hierarchical-MLR"
