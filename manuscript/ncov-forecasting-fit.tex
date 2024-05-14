@@ -214,7 +214,7 @@ As expected, we observe decreasing performance across models as lags increase fr
 For example, median absolute error increases for the MLR model from 0.1--1\% at $-30$ days, to 0.3--1.4\% at 0 days and to 0.4--1.4\% at $+30$ days.
 Similarly, mean absolute error increases for the MLR model from 0.4--2.3\% at $-30$ days, to 2.2--5.7\% at 0 days and to 5.8--9.6\% at $+30$ days.
 All four forecasting models perform better than the naive model in terms of median absolute error, with MLR and the variant $R_t$ models FGA and GARW performing slightly better than the Piantham variant $R_t$ model, except for in Australia where MLR, FGA and GARW performed decreased error by 2.4\% median absolute error compared to Piantham.
-However, we observe larger differences when comparing mean absolute error across models wherein MLR generally has lowest mean absolute error at $+30$ days, improving on FGA and GARW by $\sim$1\% in most countries.
+However, we observe larger differences when comparing mean absolute error across models wherein MLR generally has the lowest mean absolute error at $+30$ days, improving on FGA and GARW by $\sim$1\% in most countries.
 Piantham often shows large errors and mean absolute error is comparable to the naive model at $+30$ days.
 Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_B}C).
 This skewed distribution results in the large observed differences between median and mean summary statistics.
@@ -222,7 +222,7 @@ This skewed distribution results in the large observed differences between media
 In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants that present a small window of time to observe dynamics and where sequence count data is often rare.
 We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across analysis dates (Fig.~\ref{fig:ga_estimates}).
 Generally, we see sharp changes in estimated growth advantage in the first 1-3 weeks when a variant is emerging, but then see less pronounced changes.
-Thus, it often takes a couple weeks for the MLR model to `dial in' estimated growth advantage and accuracy will tend to be poorer in early weeks when variant-specific growth advantage is uncertain.
+Thus, it often takes a several weeks for the MLR model to `dial in' estimated growth advantage and accuracy will tend to be poorer in early weeks when variant-specific growth advantage is uncertain.
 
 \begin{figure}[H]
 	\centering
@@ -416,6 +416,14 @@ The AE is the mean across individual variants for a specific model, data set and
 Additionally, we often work with the lead time which is defined as the difference between date of analysis for the data set and the forecast date $l = t - T_{\text{obs}}$.
 We summarized median absolute error and mean absolute error across multiple analysis datasets in Figure \ref{fig:model_comp_A} and Table \ref{table:model_comp_table}.
 
+Throughout this study, we primarily use the median and mean absolute error to evaluate the accuracy of our point forecasts.
+We select the median absolute error as a measure of central tendency on our forecast errors, reducing the influence of outliers and skewed data distributions due to the contribution of forecasts which tend to diverge rapidly in forecast lead. 
+To balance this and account for the effect of outliers and rapidly divergent forecasts, we also use the mean absolute error which is less sensitive to outliers than the mean square error and has units in terms of frequencies directly.
+
+However, these are not the only possible choices for error metrics, and are motivated by our decision to focus primarily on point forecasts of variant frequencies.
+To supplement this analysis, we also address the coverage of probabilistic extensions of the models discussed here.
+
+
 \subsection*{Generating predictors of error}
 
 We explored four key variables to describe the effect of sequencing efforts on nowcast errors and estimated Pearson correlations with the mean absolute nowcast errors.
@@ -430,6 +438,7 @@ Estimates were computed for all defined dates of analysis across all countries.
 
 The main results of our analyses rely on mean and median absolute error as metrics, however, there is much to gain by using probabilistic forecasts for variant frequency.
 To this aim, we aim to investigate the coverage of these different methods for forecasting.
+Though not all models described initially were designed with uncertainty quantification in mind, we develop and fit Bayesian extensions of these models which are fit to the same data sets as before using stochastic variational inference.
 In particular, we estimate the coverage of 95\% posterior latent frequencies (Figure \ref{fig:frequency_coverage}A) and posterior predictive sample frequencies (Figure \ref{fig:frequency_coverage}B) for the model explored in this paper.
 We generate the posterior predictive coverage by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
 We find that the posterior predictive coverage is generally higher and a better fit for the models in question.
