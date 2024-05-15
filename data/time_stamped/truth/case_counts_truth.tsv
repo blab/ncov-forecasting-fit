@@ -1476,49 +1476,84 @@ date	location	cases
 2024-01-18	Australia	0.0
 2024-01-19	Australia	0.0
 2024-01-20	Australia	0.0
-2024-01-21	Australia	10758.0
+2024-01-21	Australia	10792.0
 2024-01-22	Australia	0.0
 2024-01-23	Australia	0.0
 2024-01-24	Australia	0.0
 2024-01-25	Australia	0.0
 2024-01-26	Australia	0.0
 2024-01-27	Australia	0.0
-2024-01-28	Australia	9025.0
+2024-01-28	Australia	9043.0
 2024-01-29	Australia	0.0
 2024-01-30	Australia	0.0
 2024-01-31	Australia	0.0
 2024-02-01	Australia	0.0
 2024-02-02	Australia	0.0
 2024-02-03	Australia	0.0
-2024-02-04	Australia	7923.0
+2024-02-04	Australia	7918.0
 2024-02-05	Australia	0.0
 2024-02-06	Australia	0.0
 2024-02-07	Australia	0.0
 2024-02-08	Australia	0.0
 2024-02-09	Australia	0.0
 2024-02-10	Australia	0.0
-2024-02-11	Australia	7863.0
+2024-02-11	Australia	8100.0
 2024-02-12	Australia	0.0
 2024-02-13	Australia	0.0
 2024-02-14	Australia	0.0
 2024-02-15	Australia	0.0
 2024-02-16	Australia	0.0
 2024-02-17	Australia	0.0
-2024-02-18	Australia	7475.0
+2024-02-18	Australia	7461.0
 2024-02-19	Australia	0.0
 2024-02-20	Australia	0.0
 2024-02-21	Australia	0.0
 2024-02-22	Australia	0.0
 2024-02-23	Australia	0.0
 2024-02-24	Australia	0.0
-2024-02-25	Australia	7224.0
+2024-02-25	Australia	7398.0
 2024-02-26	Australia	0.0
 2024-02-27	Australia	0.0
 2024-02-28	Australia	0.0
 2024-02-29	Australia	0.0
 2024-03-01	Australia	0.0
 2024-03-02	Australia	0.0
-2024-03-03	Australia	7002.0
+2024-03-03	Australia	7388.0
+2024-03-04	Australia	0.0
+2024-03-05	Australia	0.0
+2024-03-06	Australia	0.0
+2024-03-07	Australia	0.0
+2024-03-08	Australia	0.0
+2024-03-09	Australia	0.0
+2024-03-10	Australia	6719.0
+2024-03-11	Australia	0.0
+2024-03-12	Australia	0.0
+2024-03-13	Australia	0.0
+2024-03-14	Australia	0.0
+2024-03-15	Australia	0.0
+2024-03-16	Australia	0.0
+2024-03-17	Australia	5924.0
+2024-03-18	Australia	0.0
+2024-03-19	Australia	0.0
+2024-03-20	Australia	0.0
+2024-03-21	Australia	0.0
+2024-03-22	Australia	0.0
+2024-03-23	Australia	0.0
+2024-03-24	Australia	5196.0
+2024-03-25	Australia	0.0
+2024-03-26	Australia	0.0
+2024-03-27	Australia	0.0
+2024-03-28	Australia	0.0
+2024-03-29	Australia	0.0
+2024-03-30	Australia	0.0
+2024-03-31	Australia	4653.0
+2024-04-01	Australia	0.0
+2024-04-02	Australia	0.0
+2024-04-03	Australia	0.0
+2024-04-04	Australia	0.0
+2024-04-05	Australia	0.0
+2024-04-06	Australia	0.0
+2024-04-07	Australia	3880.0
 2020-01-05	Brazil	0.0
 2020-01-06	Brazil	0.0
 2020-01-07	Brazil	0.0
@@ -3039,6 +3074,41 @@ date	location	cases
 2024-03-01	Brazil	0.0
 2024-03-02	Brazil	0.0
 2024-03-03	Brazil	0.0
+2024-03-04	Brazil	0.0
+2024-03-05	Brazil	0.0
+2024-03-06	Brazil	0.0
+2024-03-07	Brazil	0.0
+2024-03-08	Brazil	0.0
+2024-03-09	Brazil	0.0
+2024-03-10	Brazil	0.0
+2024-03-11	Brazil	0.0
+2024-03-12	Brazil	0.0
+2024-03-13	Brazil	0.0
+2024-03-14	Brazil	0.0
+2024-03-15	Brazil	0.0
+2024-03-16	Brazil	0.0
+2024-03-17	Brazil	0.0
+2024-03-18	Brazil	0.0
+2024-03-19	Brazil	0.0
+2024-03-20	Brazil	0.0
+2024-03-21	Brazil	0.0
+2024-03-22	Brazil	0.0
+2024-03-23	Brazil	0.0
+2024-03-24	Brazil	0.0
+2024-03-25	Brazil	0.0
+2024-03-26	Brazil	0.0
+2024-03-27	Brazil	0.0
+2024-03-28	Brazil	0.0
+2024-03-29	Brazil	0.0
+2024-03-30	Brazil	0.0
+2024-03-31	Brazil	0.0
+2024-04-01	Brazil	0.0
+2024-04-02	Brazil	0.0
+2024-04-03	Brazil	0.0
+2024-04-04	Brazil	0.0
+2024-04-05	Brazil	0.0
+2024-04-06	Brazil	0.0
+2024-04-07	Brazil	0.0
 2020-01-05	Costa Rica	0.0
 2020-01-06	Costa Rica	0.0
 2020-01-07	Costa Rica	0.0
@@ -4559,6 +4629,41 @@ date	location	cases
 2024-03-01	Costa Rica	0.0
 2024-03-02	Costa Rica	0.0
 2024-03-03	Costa Rica	0.0
+2024-03-04	Costa Rica	0.0
+2024-03-05	Costa Rica	0.0
+2024-03-06	Costa Rica	0.0
+2024-03-07	Costa Rica	0.0
+2024-03-08	Costa Rica	0.0
+2024-03-09	Costa Rica	0.0
+2024-03-10	Costa Rica	0.0
+2024-03-11	Costa Rica	0.0
+2024-03-12	Costa Rica	0.0
+2024-03-13	Costa Rica	0.0
+2024-03-14	Costa Rica	0.0
+2024-03-15	Costa Rica	0.0
+2024-03-16	Costa Rica	0.0
+2024-03-17	Costa Rica	0.0
+2024-03-18	Costa Rica	0.0
+2024-03-19	Costa Rica	0.0
+2024-03-20	Costa Rica	0.0
+2024-03-21	Costa Rica	0.0
+2024-03-22	Costa Rica	0.0
+2024-03-23	Costa Rica	0.0
+2024-03-24	Costa Rica	0.0
+2024-03-25	Costa Rica	0.0
+2024-03-26	Costa Rica	0.0
+2024-03-27	Costa Rica	0.0
+2024-03-28	Costa Rica	0.0
+2024-03-29	Costa Rica	0.0
+2024-03-30	Costa Rica	0.0
+2024-03-31	Costa Rica	0.0
+2024-04-01	Costa Rica	0.0
+2024-04-02	Costa Rica	0.0
+2024-04-03	Costa Rica	0.0
+2024-04-04	Costa Rica	0.0
+2024-04-05	Costa Rica	0.0
+2024-04-06	Costa Rica	0.0
+2024-04-07	Costa Rica	0.0
 2020-01-05	Egypt	0.0
 2020-01-06	Egypt	0.0
 2020-01-07	Egypt	0.0
@@ -6079,6 +6184,41 @@ date	location	cases
 2024-03-01	Egypt	0.0
 2024-03-02	Egypt	0.0
 2024-03-03	Egypt	0.0
+2024-03-04	Egypt	0.0
+2024-03-05	Egypt	0.0
+2024-03-06	Egypt	0.0
+2024-03-07	Egypt	0.0
+2024-03-08	Egypt	0.0
+2024-03-09	Egypt	0.0
+2024-03-10	Egypt	0.0
+2024-03-11	Egypt	0.0
+2024-03-12	Egypt	0.0
+2024-03-13	Egypt	0.0
+2024-03-14	Egypt	0.0
+2024-03-15	Egypt	0.0
+2024-03-16	Egypt	0.0
+2024-03-17	Egypt	0.0
+2024-03-18	Egypt	0.0
+2024-03-19	Egypt	0.0
+2024-03-20	Egypt	0.0
+2024-03-21	Egypt	0.0
+2024-03-22	Egypt	0.0
+2024-03-23	Egypt	0.0
+2024-03-24	Egypt	0.0
+2024-03-25	Egypt	0.0
+2024-03-26	Egypt	0.0
+2024-03-27	Egypt	0.0
+2024-03-28	Egypt	0.0
+2024-03-29	Egypt	0.0
+2024-03-30	Egypt	0.0
+2024-03-31	Egypt	0.0
+2024-04-01	Egypt	0.0
+2024-04-02	Egypt	0.0
+2024-04-03	Egypt	0.0
+2024-04-04	Egypt	0.0
+2024-04-05	Egypt	0.0
+2024-04-06	Egypt	0.0
+2024-04-07	Egypt	0.0
 2020-01-05	Japan	0.0
 2020-01-06	Japan	0.0
 2020-01-07	Japan	0.0
@@ -7599,9 +7739,41 @@ date	location	cases
 2024-03-01	Japan	0.0
 2024-03-02	Japan	0.0
 2024-03-03	Japan	0.0
+2024-03-04	Japan	0.0
+2024-03-05	Japan	0.0
 2024-03-06	Japan	0.0
+2024-03-07	Japan	0.0
+2024-03-08	Japan	0.0
+2024-03-09	Japan	0.0
+2024-03-10	Japan	0.0
+2024-03-11	Japan	0.0
+2024-03-12	Japan	0.0
 2024-03-13	Japan	0.0
+2024-03-14	Japan	0.0
+2024-03-15	Japan	0.0
+2024-03-16	Japan	0.0
+2024-03-17	Japan	0.0
+2024-03-18	Japan	0.0
+2024-03-19	Japan	0.0
 2024-03-20	Japan	0.0
+2024-03-21	Japan	0.0
+2024-03-22	Japan	0.0
+2024-03-23	Japan	0.0
+2024-03-24	Japan	0.0
+2024-03-25	Japan	0.0
+2024-03-26	Japan	0.0
+2024-03-27	Japan	0.0
+2024-03-28	Japan	0.0
+2024-03-29	Japan	0.0
+2024-03-30	Japan	0.0
+2024-03-31	Japan	0.0
+2024-04-01	Japan	0.0
+2024-04-02	Japan	0.0
+2024-04-03	Japan	0.0
+2024-04-04	Japan	0.0
+2024-04-05	Japan	0.0
+2024-04-06	Japan	0.0
+2024-04-07	Japan	0.0
 2020-01-05	Panama	0.0
 2020-01-06	Panama	0.0
 2020-01-07	Panama	0.0
@@ -8834,231 +9006,231 @@ date	location	cases
 2023-05-18	Panama	0.0
 2023-05-19	Panama	0.0
 2023-05-20	Panama	0.0
-2023-05-21	Panama	0.0
+2023-05-21	Panama	260.0
 2023-05-22	Panama	0.0
 2023-05-23	Panama	0.0
 2023-05-24	Panama	0.0
 2023-05-25	Panama	0.0
 2023-05-26	Panama	0.0
 2023-05-27	Panama	0.0
-2023-05-28	Panama	0.0
+2023-05-28	Panama	330.0
 2023-05-29	Panama	0.0
 2023-05-30	Panama	0.0
 2023-05-31	Panama	0.0
 2023-06-01	Panama	0.0
 2023-06-02	Panama	0.0
 2023-06-03	Panama	0.0
-2023-06-04	Panama	0.0
+2023-06-04	Panama	408.0
 2023-06-05	Panama	0.0
 2023-06-06	Panama	0.0
 2023-06-07	Panama	0.0
 2023-06-08	Panama	0.0
 2023-06-09	Panama	0.0
 2023-06-10	Panama	0.0
-2023-06-11	Panama	0.0
+2023-06-11	Panama	436.0
 2023-06-12	Panama	0.0
 2023-06-13	Panama	0.0
 2023-06-14	Panama	0.0
 2023-06-15	Panama	0.0
 2023-06-16	Panama	0.0
 2023-06-17	Panama	0.0
-2023-06-18	Panama	0.0
+2023-06-18	Panama	563.0
 2023-06-19	Panama	0.0
 2023-06-20	Panama	0.0
 2023-06-21	Panama	0.0
 2023-06-22	Panama	0.0
 2023-06-23	Panama	0.0
 2023-06-24	Panama	0.0
-2023-06-25	Panama	0.0
+2023-06-25	Panama	473.0
 2023-06-26	Panama	0.0
 2023-06-27	Panama	0.0
 2023-06-28	Panama	0.0
 2023-06-29	Panama	0.0
 2023-06-30	Panama	0.0
 2023-07-01	Panama	0.0
-2023-07-02	Panama	0.0
+2023-07-02	Panama	347.0
 2023-07-03	Panama	0.0
 2023-07-04	Panama	0.0
 2023-07-05	Panama	0.0
 2023-07-06	Panama	0.0
 2023-07-07	Panama	0.0
 2023-07-08	Panama	0.0
-2023-07-09	Panama	0.0
+2023-07-09	Panama	211.0
 2023-07-10	Panama	0.0
 2023-07-11	Panama	0.0
 2023-07-12	Panama	0.0
 2023-07-13	Panama	0.0
 2023-07-14	Panama	0.0
 2023-07-15	Panama	0.0
-2023-07-16	Panama	0.0
+2023-07-16	Panama	178.0
 2023-07-17	Panama	0.0
 2023-07-18	Panama	0.0
 2023-07-19	Panama	0.0
 2023-07-20	Panama	0.0
 2023-07-21	Panama	0.0
 2023-07-22	Panama	0.0
-2023-07-23	Panama	0.0
+2023-07-23	Panama	91.0
 2023-07-24	Panama	0.0
 2023-07-25	Panama	0.0
 2023-07-26	Panama	0.0
 2023-07-27	Panama	0.0
 2023-07-28	Panama	0.0
 2023-07-29	Panama	0.0
-2023-07-30	Panama	0.0
+2023-07-30	Panama	75.0
 2023-07-31	Panama	0.0
 2023-08-01	Panama	0.0
 2023-08-02	Panama	0.0
 2023-08-03	Panama	0.0
 2023-08-04	Panama	0.0
 2023-08-05	Panama	0.0
-2023-08-06	Panama	0.0
+2023-08-06	Panama	56.0
 2023-08-07	Panama	0.0
 2023-08-08	Panama	0.0
 2023-08-09	Panama	0.0
 2023-08-10	Panama	0.0
 2023-08-11	Panama	0.0
 2023-08-12	Panama	0.0
-2023-08-13	Panama	0.0
+2023-08-13	Panama	46.0
 2023-08-14	Panama	0.0
 2023-08-15	Panama	0.0
 2023-08-16	Panama	0.0
 2023-08-17	Panama	0.0
 2023-08-18	Panama	0.0
 2023-08-19	Panama	0.0
-2023-08-20	Panama	0.0
+2023-08-20	Panama	37.0
 2023-08-21	Panama	0.0
 2023-08-22	Panama	0.0
 2023-08-23	Panama	0.0
 2023-08-24	Panama	0.0
 2023-08-25	Panama	0.0
 2023-08-26	Panama	0.0
-2023-08-27	Panama	0.0
+2023-08-27	Panama	37.0
 2023-08-28	Panama	0.0
 2023-08-29	Panama	0.0
 2023-08-30	Panama	0.0
 2023-08-31	Panama	0.0
 2023-09-01	Panama	0.0
 2023-09-02	Panama	0.0
-2023-09-03	Panama	0.0
+2023-09-03	Panama	38.0
 2023-09-04	Panama	0.0
 2023-09-05	Panama	0.0
 2023-09-06	Panama	0.0
 2023-09-07	Panama	0.0
 2023-09-08	Panama	0.0
 2023-09-09	Panama	0.0
-2023-09-10	Panama	0.0
+2023-09-10	Panama	32.0
 2023-09-11	Panama	0.0
 2023-09-12	Panama	0.0
 2023-09-13	Panama	0.0
 2023-09-14	Panama	0.0
 2023-09-15	Panama	0.0
 2023-09-16	Panama	0.0
-2023-09-17	Panama	0.0
+2023-09-17	Panama	37.0
 2023-09-18	Panama	0.0
 2023-09-19	Panama	0.0
 2023-09-20	Panama	0.0
 2023-09-21	Panama	0.0
 2023-09-22	Panama	0.0
 2023-09-23	Panama	0.0
-2023-09-24	Panama	0.0
+2023-09-24	Panama	22.0
 2023-09-25	Panama	0.0
 2023-09-26	Panama	0.0
 2023-09-27	Panama	0.0
 2023-09-28	Panama	0.0
 2023-09-29	Panama	0.0
 2023-09-30	Panama	0.0
-2023-10-01	Panama	0.0
+2023-10-01	Panama	52.0
 2023-10-02	Panama	0.0
 2023-10-03	Panama	0.0
 2023-10-04	Panama	0.0
 2023-10-05	Panama	0.0
 2023-10-06	Panama	0.0
 2023-10-07	Panama	0.0
-2023-10-08	Panama	0.0
+2023-10-08	Panama	50.0
 2023-10-09	Panama	0.0
 2023-10-10	Panama	0.0
 2023-10-11	Panama	0.0
 2023-10-12	Panama	0.0
 2023-10-13	Panama	0.0
 2023-10-14	Panama	0.0
-2023-10-15	Panama	0.0
+2023-10-15	Panama	53.0
 2023-10-16	Panama	0.0
 2023-10-17	Panama	0.0
 2023-10-18	Panama	0.0
 2023-10-19	Panama	0.0
 2023-10-20	Panama	0.0
 2023-10-21	Panama	0.0
-2023-10-22	Panama	0.0
+2023-10-22	Panama	44.0
 2023-10-23	Panama	0.0
 2023-10-24	Panama	0.0
 2023-10-25	Panama	0.0
 2023-10-26	Panama	0.0
 2023-10-27	Panama	0.0
 2023-10-28	Panama	0.0
-2023-10-29	Panama	0.0
+2023-10-29	Panama	39.0
 2023-10-30	Panama	0.0
 2023-10-31	Panama	0.0
 2023-11-01	Panama	0.0
 2023-11-02	Panama	0.0
 2023-11-03	Panama	0.0
 2023-11-04	Panama	0.0
-2023-11-05	Panama	0.0
+2023-11-05	Panama	37.0
 2023-11-06	Panama	0.0
 2023-11-07	Panama	0.0
 2023-11-08	Panama	0.0
 2023-11-09	Panama	0.0
 2023-11-10	Panama	0.0
 2023-11-11	Panama	0.0
-2023-11-12	Panama	0.0
+2023-11-12	Panama	37.0
 2023-11-13	Panama	0.0
 2023-11-14	Panama	0.0
 2023-11-15	Panama	0.0
 2023-11-16	Panama	0.0
 2023-11-17	Panama	0.0
 2023-11-18	Panama	0.0
-2023-11-19	Panama	0.0
+2023-11-19	Panama	31.0
 2023-11-20	Panama	0.0
 2023-11-21	Panama	0.0
 2023-11-22	Panama	0.0
 2023-11-23	Panama	0.0
 2023-11-24	Panama	0.0
 2023-11-25	Panama	0.0
-2023-11-26	Panama	0.0
+2023-11-26	Panama	48.0
 2023-11-27	Panama	0.0
 2023-11-28	Panama	0.0
 2023-11-29	Panama	0.0
 2023-11-30	Panama	0.0
 2023-12-01	Panama	0.0
 2023-12-02	Panama	0.0
-2023-12-03	Panama	0.0
+2023-12-03	Panama	53.0
 2023-12-04	Panama	0.0
 2023-12-05	Panama	0.0
 2023-12-06	Panama	0.0
 2023-12-07	Panama	0.0
 2023-12-08	Panama	0.0
 2023-12-09	Panama	0.0
-2023-12-10	Panama	0.0
+2023-12-10	Panama	48.0
 2023-12-11	Panama	0.0
 2023-12-12	Panama	0.0
 2023-12-13	Panama	0.0
 2023-12-14	Panama	0.0
 2023-12-15	Panama	0.0
 2023-12-16	Panama	0.0
-2023-12-17	Panama	0.0
+2023-12-17	Panama	102.0
 2023-12-18	Panama	0.0
 2023-12-19	Panama	0.0
 2023-12-20	Panama	0.0
 2023-12-21	Panama	0.0
 2023-12-22	Panama	0.0
 2023-12-23	Panama	0.0
-2023-12-24	Panama	0.0
+2023-12-24	Panama	176.0
 2023-12-25	Panama	0.0
 2023-12-26	Panama	0.0
 2023-12-27	Panama	0.0
 2023-12-28	Panama	0.0
 2023-12-29	Panama	0.0
 2023-12-30	Panama	0.0
-2023-12-31	Panama	0.0
+2023-12-31	Panama	402.0
 2024-01-01	Panama	0.0
 2024-01-02	Panama	0.0
 2024-01-03	Panama	0.0
@@ -9093,7 +9265,7 @@ date	location	cases
 2024-02-01	Panama	0.0
 2024-02-02	Panama	0.0
 2024-02-03	Panama	0.0
-2024-02-04	Panama	41.0
+2024-02-04	Panama	42.0
 2024-02-05	Panama	0.0
 2024-02-06	Panama	0.0
 2024-02-07	Panama	0.0
@@ -9114,14 +9286,49 @@ date	location	cases
 2024-02-22	Panama	0.0
 2024-02-23	Panama	0.0
 2024-02-24	Panama	0.0
-2024-02-25	Panama	20.0
+2024-02-25	Panama	22.0
 2024-02-26	Panama	0.0
 2024-02-27	Panama	0.0
 2024-02-28	Panama	0.0
 2024-02-29	Panama	0.0
 2024-03-01	Panama	0.0
 2024-03-02	Panama	0.0
-2024-03-03	Panama	15.0
+2024-03-03	Panama	17.0
+2024-03-04	Panama	0.0
+2024-03-05	Panama	0.0
+2024-03-06	Panama	0.0
+2024-03-07	Panama	0.0
+2024-03-08	Panama	0.0
+2024-03-09	Panama	0.0
+2024-03-10	Panama	21.0
+2024-03-11	Panama	0.0
+2024-03-12	Panama	0.0
+2024-03-13	Panama	0.0
+2024-03-14	Panama	0.0
+2024-03-15	Panama	0.0
+2024-03-16	Panama	0.0
+2024-03-17	Panama	10.0
+2024-03-18	Panama	0.0
+2024-03-19	Panama	0.0
+2024-03-20	Panama	0.0
+2024-03-21	Panama	0.0
+2024-03-22	Panama	0.0
+2024-03-23	Panama	0.0
+2024-03-24	Panama	11.0
+2024-03-25	Panama	0.0
+2024-03-26	Panama	0.0
+2024-03-27	Panama	0.0
+2024-03-28	Panama	0.0
+2024-03-29	Panama	0.0
+2024-03-30	Panama	0.0
+2024-03-31	Panama	3.0
+2024-04-01	Panama	0.0
+2024-04-02	Panama	0.0
+2024-04-03	Panama	0.0
+2024-04-04	Panama	0.0
+2024-04-05	Panama	0.0
+2024-04-06	Panama	0.0
+2024-04-07	Panama	3.0
 2020-01-05	South Africa	0.0
 2020-01-06	South Africa	0.0
 2020-01-07	South Africa	0.0
@@ -10642,6 +10849,41 @@ date	location	cases
 2024-03-01	South Africa	0.0
 2024-03-02	South Africa	0.0
 2024-03-03	South Africa	0.0
+2024-03-04	South Africa	0.0
+2024-03-05	South Africa	0.0
+2024-03-06	South Africa	0.0
+2024-03-07	South Africa	0.0
+2024-03-08	South Africa	0.0
+2024-03-09	South Africa	0.0
+2024-03-10	South Africa	0.0
+2024-03-11	South Africa	0.0
+2024-03-12	South Africa	0.0
+2024-03-13	South Africa	0.0
+2024-03-14	South Africa	0.0
+2024-03-15	South Africa	0.0
+2024-03-16	South Africa	0.0
+2024-03-17	South Africa	2.0
+2024-03-18	South Africa	0.0
+2024-03-19	South Africa	0.0
+2024-03-20	South Africa	0.0
+2024-03-21	South Africa	0.0
+2024-03-22	South Africa	0.0
+2024-03-23	South Africa	0.0
+2024-03-24	South Africa	4.0
+2024-03-25	South Africa	0.0
+2024-03-26	South Africa	0.0
+2024-03-27	South Africa	0.0
+2024-03-28	South Africa	0.0
+2024-03-29	South Africa	0.0
+2024-03-30	South Africa	0.0
+2024-03-31	South Africa	6.0
+2024-04-01	South Africa	0.0
+2024-04-02	South Africa	0.0
+2024-04-03	South Africa	0.0
+2024-04-04	South Africa	0.0
+2024-04-05	South Africa	0.0
+2024-04-06	South Africa	0.0
+2024-04-07	South Africa	4.0
 2020-01-05	Trinidad and Tobago	0.0
 2020-01-06	Trinidad and Tobago	0.0
 2020-01-07	Trinidad and Tobago	0.0
@@ -12162,6 +12404,41 @@ date	location	cases
 2024-03-01	Trinidad and Tobago	0.0
 2024-03-02	Trinidad and Tobago	0.0
 2024-03-03	Trinidad and Tobago	0.0
+2024-03-04	Trinidad and Tobago	0.0
+2024-03-05	Trinidad and Tobago	0.0
+2024-03-06	Trinidad and Tobago	0.0
+2024-03-07	Trinidad and Tobago	0.0
+2024-03-08	Trinidad and Tobago	0.0
+2024-03-09	Trinidad and Tobago	0.0
+2024-03-10	Trinidad and Tobago	0.0
+2024-03-11	Trinidad and Tobago	0.0
+2024-03-12	Trinidad and Tobago	0.0
+2024-03-13	Trinidad and Tobago	0.0
+2024-03-14	Trinidad and Tobago	0.0
+2024-03-15	Trinidad and Tobago	0.0
+2024-03-16	Trinidad and Tobago	0.0
+2024-03-17	Trinidad and Tobago	0.0
+2024-03-18	Trinidad and Tobago	0.0
+2024-03-19	Trinidad and Tobago	0.0
+2024-03-20	Trinidad and Tobago	0.0
+2024-03-21	Trinidad and Tobago	0.0
+2024-03-22	Trinidad and Tobago	0.0
+2024-03-23	Trinidad and Tobago	0.0
+2024-03-24	Trinidad and Tobago	0.0
+2024-03-25	Trinidad and Tobago	0.0
+2024-03-26	Trinidad and Tobago	0.0
+2024-03-27	Trinidad and Tobago	0.0
+2024-03-28	Trinidad and Tobago	0.0
+2024-03-29	Trinidad and Tobago	0.0
+2024-03-30	Trinidad and Tobago	0.0
+2024-03-31	Trinidad and Tobago	0.0
+2024-04-01	Trinidad and Tobago	0.0
+2024-04-02	Trinidad and Tobago	0.0
+2024-04-03	Trinidad and Tobago	0.0
+2024-04-04	Trinidad and Tobago	0.0
+2024-04-05	Trinidad and Tobago	0.0
+2024-04-06	Trinidad and Tobago	0.0
+2024-04-07	Trinidad and Tobago	0.0
 2020-01-05	United Kingdom	0.0
 2020-01-06	United Kingdom	0.0
 2020-01-07	United Kingdom	0.0
@@ -13562,126 +13839,161 @@ date	location	cases
 2023-11-02	United Kingdom	0.0
 2023-11-03	United Kingdom	0.0
 2023-11-04	United Kingdom	0.0
-2023-11-05	United Kingdom	6583.0
+2023-11-05	United Kingdom	6596.0
 2023-11-06	United Kingdom	0.0
 2023-11-07	United Kingdom	0.0
 2023-11-08	United Kingdom	0.0
 2023-11-09	United Kingdom	0.0
 2023-11-10	United Kingdom	0.0
 2023-11-11	United Kingdom	0.0
-2023-11-12	United Kingdom	4866.0
+2023-11-12	United Kingdom	4868.0
 2023-11-13	United Kingdom	0.0
 2023-11-14	United Kingdom	0.0
 2023-11-15	United Kingdom	0.0
 2023-11-16	United Kingdom	0.0
 2023-11-17	United Kingdom	0.0
 2023-11-18	United Kingdom	0.0
-2023-11-19	United Kingdom	5209.0
+2023-11-19	United Kingdom	5226.0
 2023-11-20	United Kingdom	0.0
 2023-11-21	United Kingdom	0.0
 2023-11-22	United Kingdom	0.0
 2023-11-23	United Kingdom	0.0
 2023-11-24	United Kingdom	0.0
 2023-11-25	United Kingdom	0.0
-2023-11-26	United Kingdom	4708.0
+2023-11-26	United Kingdom	4730.0
 2023-11-27	United Kingdom	0.0
 2023-11-28	United Kingdom	0.0
 2023-11-29	United Kingdom	0.0
 2023-11-30	United Kingdom	0.0
 2023-12-01	United Kingdom	0.0
 2023-12-02	United Kingdom	0.0
-2023-12-03	United Kingdom	5359.0
+2023-12-03	United Kingdom	5388.0
 2023-12-04	United Kingdom	0.0
 2023-12-05	United Kingdom	0.0
 2023-12-06	United Kingdom	0.0
 2023-12-07	United Kingdom	0.0
 2023-12-08	United Kingdom	0.0
 2023-12-09	United Kingdom	0.0
-2023-12-10	United Kingdom	7505.0
+2023-12-10	United Kingdom	7530.0
 2023-12-11	United Kingdom	0.0
 2023-12-12	United Kingdom	0.0
 2023-12-13	United Kingdom	0.0
 2023-12-14	United Kingdom	0.0
 2023-12-15	United Kingdom	0.0
 2023-12-16	United Kingdom	0.0
-2023-12-17	United Kingdom	9414.0
+2023-12-17	United Kingdom	9455.0
 2023-12-18	United Kingdom	0.0
 2023-12-19	United Kingdom	0.0
 2023-12-20	United Kingdom	0.0
 2023-12-21	United Kingdom	0.0
 2023-12-22	United Kingdom	0.0
 2023-12-23	United Kingdom	0.0
-2023-12-24	United Kingdom	10620.0
+2023-12-24	United Kingdom	10691.0
 2023-12-25	United Kingdom	0.0
 2023-12-26	United Kingdom	0.0
 2023-12-27	United Kingdom	0.0
 2023-12-28	United Kingdom	0.0
 2023-12-29	United Kingdom	0.0
 2023-12-30	United Kingdom	0.0
-2023-12-31	United Kingdom	10043.0
+2023-12-31	United Kingdom	10103.0
 2024-01-01	United Kingdom	0.0
 2024-01-02	United Kingdom	0.0
 2024-01-03	United Kingdom	0.0
 2024-01-04	United Kingdom	0.0
 2024-01-05	United Kingdom	0.0
 2024-01-06	United Kingdom	0.0
-2024-01-07	United Kingdom	8771.0
+2024-01-07	United Kingdom	8830.0
 2024-01-08	United Kingdom	0.0
 2024-01-09	United Kingdom	0.0
 2024-01-10	United Kingdom	0.0
 2024-01-11	United Kingdom	0.0
 2024-01-12	United Kingdom	0.0
 2024-01-13	United Kingdom	0.0
-2024-01-14	United Kingdom	6708.0
+2024-01-14	United Kingdom	6747.0
 2024-01-15	United Kingdom	0.0
 2024-01-16	United Kingdom	0.0
 2024-01-17	United Kingdom	0.0
 2024-01-18	United Kingdom	0.0
 2024-01-19	United Kingdom	0.0
 2024-01-20	United Kingdom	0.0
-2024-01-21	United Kingdom	6501.0
+2024-01-21	United Kingdom	6529.0
 2024-01-22	United Kingdom	0.0
 2024-01-23	United Kingdom	0.0
 2024-01-24	United Kingdom	0.0
 2024-01-25	United Kingdom	0.0
 2024-01-26	United Kingdom	0.0
 2024-01-27	United Kingdom	0.0
-2024-01-28	United Kingdom	6554.0
+2024-01-28	United Kingdom	6571.0
 2024-01-29	United Kingdom	0.0
 2024-01-30	United Kingdom	0.0
 2024-01-31	United Kingdom	0.0
 2024-02-01	United Kingdom	0.0
 2024-02-02	United Kingdom	0.0
 2024-02-03	United Kingdom	0.0
-2024-02-04	United Kingdom	5116.0
+2024-02-04	United Kingdom	5147.0
 2024-02-05	United Kingdom	0.0
 2024-02-06	United Kingdom	0.0
 2024-02-07	United Kingdom	0.0
 2024-02-08	United Kingdom	0.0
 2024-02-09	United Kingdom	0.0
 2024-02-10	United Kingdom	0.0
-2024-02-11	United Kingdom	4014.0
+2024-02-11	United Kingdom	4057.0
 2024-02-12	United Kingdom	0.0
 2024-02-13	United Kingdom	0.0
 2024-02-14	United Kingdom	0.0
 2024-02-15	United Kingdom	0.0
 2024-02-16	United Kingdom	0.0
 2024-02-17	United Kingdom	0.0
-2024-02-18	United Kingdom	2838.0
+2024-02-18	United Kingdom	2864.0
 2024-02-19	United Kingdom	0.0
 2024-02-20	United Kingdom	0.0
 2024-02-21	United Kingdom	0.0
 2024-02-22	United Kingdom	0.0
 2024-02-23	United Kingdom	0.0
 2024-02-24	United Kingdom	0.0
-2024-02-25	United Kingdom	1921.0
+2024-02-25	United Kingdom	1975.0
 2024-02-26	United Kingdom	0.0
 2024-02-27	United Kingdom	0.0
 2024-02-28	United Kingdom	0.0
 2024-02-29	United Kingdom	0.0
 2024-03-01	United Kingdom	0.0
 2024-03-02	United Kingdom	0.0
-2024-03-03	United Kingdom	1402.0
+2024-03-03	United Kingdom	1563.0
+2024-03-04	United Kingdom	0.0
+2024-03-05	United Kingdom	0.0
+2024-03-06	United Kingdom	0.0
+2024-03-07	United Kingdom	0.0
+2024-03-08	United Kingdom	0.0
+2024-03-09	United Kingdom	0.0
+2024-03-10	United Kingdom	1594.0
+2024-03-11	United Kingdom	0.0
+2024-03-12	United Kingdom	0.0
+2024-03-13	United Kingdom	0.0
+2024-03-14	United Kingdom	0.0
+2024-03-15	United Kingdom	0.0
+2024-03-16	United Kingdom	0.0
+2024-03-17	United Kingdom	1702.0
+2024-03-18	United Kingdom	0.0
+2024-03-19	United Kingdom	0.0
+2024-03-20	United Kingdom	0.0
+2024-03-21	United Kingdom	0.0
+2024-03-22	United Kingdom	0.0
+2024-03-23	United Kingdom	0.0
+2024-03-24	United Kingdom	1470.0
+2024-03-25	United Kingdom	0.0
+2024-03-26	United Kingdom	0.0
+2024-03-27	United Kingdom	0.0
+2024-03-28	United Kingdom	0.0
+2024-03-29	United Kingdom	0.0
+2024-03-30	United Kingdom	0.0
+2024-03-31	United Kingdom	1416.0
+2024-04-01	United Kingdom	0.0
+2024-04-02	United Kingdom	0.0
+2024-04-03	United Kingdom	0.0
+2024-04-04	United Kingdom	0.0
+2024-04-05	United Kingdom	0.0
+2024-04-06	United Kingdom	0.0
+2024-04-07	United Kingdom	1517.0
 2020-01-05	USA	0.0
 2020-01-06	USA	0.0
 2020-01-07	USA	0.0
@@ -15220,6 +15532,34 @@ date	location	cases
 2024-03-19	USA	0.0
 2024-03-20	USA	0.0
 2024-03-21	USA	0.0
+2024-03-22	USA	0.0
+2024-03-23	USA	0.0
+2024-03-24	USA	0.0
+2024-03-25	USA	0.0
+2024-03-26	USA	0.0
+2024-03-27	USA	0.0
+2024-03-28	USA	0.0
+2024-03-29	USA	0.0
+2024-03-30	USA	0.0
+2024-03-31	USA	0.0
+2024-04-01	USA	0.0
+2024-04-02	USA	0.0
+2024-04-03	USA	0.0
+2024-04-04	USA	0.0
+2024-04-05	USA	0.0
+2024-04-06	USA	0.0
+2024-04-07	USA	0.0
+2024-04-08	USA	0.0
+2024-04-09	USA	0.0
+2024-04-10	USA	0.0
+2024-04-11	USA	0.0
+2024-04-12	USA	0.0
+2024-04-13	USA	0.0
+2024-04-14	USA	0.0
+2024-04-15	USA	0.0
+2024-04-16	USA	0.0
+2024-04-17	USA	0.0
+2024-04-18	USA	0.0
 2020-01-05	Vietnam	0.0
 2020-01-06	Vietnam	0.0
 2020-01-07	Vietnam	0.0
@@ -16740,3 +17080,38 @@ date	location	cases
 2024-03-01	Vietnam	0.0
 2024-03-02	Vietnam	0.0
 2024-03-03	Vietnam	0.0
+2024-03-04	Vietnam	0.0
+2024-03-05	Vietnam	0.0
+2024-03-06	Vietnam	0.0
+2024-03-07	Vietnam	0.0
+2024-03-08	Vietnam	0.0
+2024-03-09	Vietnam	0.0
+2024-03-10	Vietnam	0.0
+2024-03-11	Vietnam	0.0
+2024-03-12	Vietnam	0.0
+2024-03-13	Vietnam	0.0
+2024-03-14	Vietnam	0.0
+2024-03-15	Vietnam	0.0
+2024-03-16	Vietnam	0.0
+2024-03-17	Vietnam	0.0
+2024-03-18	Vietnam	0.0
+2024-03-19	Vietnam	0.0
+2024-03-20	Vietnam	0.0
+2024-03-21	Vietnam	0.0
+2024-03-22	Vietnam	0.0
+2024-03-23	Vietnam	0.0
+2024-03-24	Vietnam	0.0
+2024-03-25	Vietnam	0.0
+2024-03-26	Vietnam	0.0
+2024-03-27	Vietnam	0.0
+2024-03-28	Vietnam	0.0
+2024-03-29	Vietnam	0.0
+2024-03-30	Vietnam	0.0
+2024-03-31	Vietnam	0.0
+2024-04-01	Vietnam	0.0
+2024-04-02	Vietnam	0.0
+2024-04-03	Vietnam	0.0
+2024-04-04	Vietnam	0.0
+2024-04-05	Vietnam	0.0
+2024-04-06	Vietnam	0.0
+2024-04-07	Vietnam	0.0
