@@ -1,0 +1,901 @@
+date	location	variant	median_freq_nowcast	freq_upper_95	freq_lower_95	freq_upper_80	freq_lower_80	freq_upper_50	freq_lower_50	median_freq_forecast	freq_forecast_upper_95	freq_forecast_lower_95	freq_forecast_upper_80	freq_forecast_lower_80	freq_forecast_upper_50	freq_forecast_lower_50
+2022-09-17	USA	Delta	2.0089904e-16	2.0108071e-10	1.2229598e-25	3.053901e-12	5.3633277e-22	6.680717e-14	3.7286324e-19							
+2022-09-18	USA	Delta	6.95791e-17	1.098662e-10	1.9848877e-26	1.3921435e-12	1.1928654e-22	2.635517e-14	9.4793716e-20							
+2022-09-19	USA	Delta	2.2351492e-17	6.0225984e-11	3.2644043e-27	6.533696e-13	2.673514e-23	1.0993251e-14	2.5162655e-20							
+2022-09-20	USA	Delta	7.568744e-18	3.3088064e-11	5.8733916e-28	3.1057226e-13	6.0404835e-24	4.654569e-15	6.93543e-21							
+2022-09-21	USA	Delta	2.4927464e-18	1.8195348e-11	1.0592055e-28	1.467125e-13	1.3703756e-24	1.991195e-15	1.962539e-21							
+2022-09-22	USA	Delta	8.179105e-19	9.922648e-12	1.5910419e-29	6.960775e-14	3.108371e-25	8.307996e-16	5.7272837e-22							
+2022-09-23	USA	Delta	2.7436128e-19	5.3882706e-12	4.7614187e-30	3.2658822e-14	6.4394814e-26	3.3723955e-16	1.5510165e-22							
+2022-09-24	USA	Delta	8.848655e-20	2.9149443e-12	3.8297433e-30	1.6005562e-14	1.3980996e-26	1.3748658e-16	4.188667e-23							
+2022-09-25	USA	Delta	2.862484e-20	1.5687535e-12	3.990797e-30	7.668881e-15	3.2002067e-27	5.669217e-17	1.1257715e-23							
+2022-09-26	USA	Delta	9.43595e-21	8.387921e-13	4.0269845e-30	3.6549552e-15	7.5894346e-28	2.1424267e-17	2.8465728e-24							
+2022-09-27	USA	Delta	3.0054218e-21	4.4506537e-13	4.24798e-30	1.7063792e-15	1.6429383e-28	8.01663e-18	7.2988083e-25							
+2022-09-28	USA	Delta	9.453119e-22	2.340987e-13	4.6595874e-30	7.849727e-16	3.4647095e-29	3.0179238e-18	1.9133253e-25							
+2022-09-29	USA	Delta	2.8862303e-22	1.1778413e-13	4.771046e-30	3.587845e-16	1.2331215e-29	1.2280867e-18	5.015738e-26							
+2022-09-30	USA	Delta	8.935149e-23	6.088851e-14	5.1250124e-30	1.6083612e-16	1.1190314e-29	4.932028e-19	1.3001677e-26							
+2022-10-01	USA	Delta	2.7732478e-23	3.2028362e-14	5.526659e-30	7.224506e-17	9.931318e-30	1.8494376e-19	3.429425e-27							
+2022-10-02	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 21K	1.4977584e-13	1.1355045e-07	3.8333086e-23	2.3110536e-09	2.6271088e-19	4.278099e-11	2.360948e-16							
+2022-09-18	USA	Omicron 21K	4.8414987e-14	6.262668e-08	6.6697756e-24	1.084691e-09	6.279673e-20	1.9140831e-11	7.1207525e-17							
+2022-09-19	USA	Omicron 21K	1.6693366e-14	3.482874e-08	1.0935848e-24	5.0625965e-10	1.515126e-20	8.624889e-12	2.0973131e-17							
+2022-09-20	USA	Omicron 21K	6.3639025e-15	1.9440126e-08	1.8719536e-25	2.3646002e-10	3.6808455e-21	3.821892e-12	5.9884886e-18							
+2022-09-21	USA	Omicron 21K	2.4495625e-15	1.097575e-08	3.3979903e-26	1.14436474e-10	8.977002e-22	1.70415e-12	1.7332372e-18							
+2022-09-22	USA	Omicron 21K	8.8935e-16	6.2762036e-09	8.655587e-27	6.074387e-11	2.1908137e-22	7.420258e-13	4.986223e-19							
+2022-09-23	USA	Omicron 21K	3.2274862e-16	3.7421346e-09	3.5219843e-27	3.3110965e-11	5.3353326e-23	3.3735048e-13	1.4415428e-19							
+2022-09-24	USA	Omicron 21K	1.1690248e-16	2.2347613e-09	1.9419333e-27	1.8114437e-11	1.2939389e-23	1.4473547e-13	4.1235593e-20							
+2022-09-25	USA	Omicron 21K	4.234073e-17	1.3362216e-09	2.3277313e-27	9.934954e-12	2.7500306e-24	6.316147e-14	1.1484471e-20							
+2022-09-26	USA	Omicron 21K	1.614023e-17	7.981346e-10	2.8786773e-27	5.254455e-12	5.5094864e-25	2.7414342e-14	3.1355602e-21							
+2022-09-27	USA	Omicron 21K	6.187771e-18	4.758599e-10	3.1908422e-27	2.6323947e-12	1.2053634e-25	1.13358606e-14	8.0511235e-22							
+2022-09-28	USA	Omicron 21K	2.3544902e-18	2.8300506e-10	2.6407435e-27	1.3118052e-12	4.921952e-26	4.8797805e-15	2.1270967e-22							
+2022-09-29	USA	Omicron 21K	8.777504e-19	1.6779518e-10	3.234054e-27	6.406277e-13	2.7351835e-26	2.2075131e-15	5.9526674e-23							
+2022-09-30	USA	Omicron 21K	3.1052262e-19	9.9140286e-11	3.809696e-27	3.0549803e-13	1.2417847e-26	9.471619e-16	1.7316242e-23							
+2022-10-01	USA	Omicron 21K	1.02371866e-19	5.835492e-11	4.28883e-27	1.54626e-13	1.3826473e-26	3.8867414e-16	4.850614e-24							
+2022-10-02	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 22A	1.7795974e-15	1.2637332e-09	7.859089e-25	2.0352033e-11	3.8253646e-21	4.0682063e-13	2.001618e-18							
+2022-09-18	USA	Omicron 22A	5.62018e-16	6.7753025e-10	1.1374053e-25	8.957968e-12	8.0389374e-22	1.6322433e-13	5.19065e-19							
+2022-09-19	USA	Omicron 22A	1.815405e-16	3.6337053e-10	1.759003e-26	4.2337874e-12	1.7023563e-22	6.556822e-14	1.3932282e-19							
+2022-09-20	USA	Omicron 22A	5.953959e-17	1.9146801e-10	3.0000434e-27	1.9430362e-12	3.6262932e-23	2.6511122e-14	3.6666532e-20							
+2022-09-21	USA	Omicron 22A	1.9702367e-17	1.0119662e-10	5.098188e-28	9.0752346e-13	7.752608e-24	1.04329285e-14	9.766543e-21							
+2022-09-22	USA	Omicron 22A	6.58202e-18	5.3591808e-11	7.629916e-29	4.283025e-13	1.68826e-24	4.14517e-15	2.498337e-21							
+2022-09-23	USA	Omicron 22A	2.1582164e-18	2.842454e-11	2.6523516e-29	1.9930154e-13	4.0215042e-25	1.6657919e-15	6.681512e-22							
+2022-09-24	USA	Omicron 22A	6.9426675e-19	1.5156038e-11	1.8234625e-29	9.240695e-14	9.6582355e-26	6.670754e-16	1.8128486e-22							
+2022-09-25	USA	Omicron 22A	2.1763065e-19	8.082444e-12	1.8124847e-29	4.2742634e-14	2.1434047e-26	2.6525641e-16	4.7559944e-23							
+2022-09-26	USA	Omicron 22A	6.761625e-20	4.308613e-12	1.6997349e-29	1.9699091e-14	5.0646534e-27	1.02808915e-16	1.16393815e-23							
+2022-09-27	USA	Omicron 22A	2.2109895e-20	2.295051e-12	1.8166849e-29	8.9405065e-15	1.0784216e-27	4.0176725e-17	3.1573032e-24							
+2022-09-28	USA	Omicron 22A	7.0014675e-21	1.1849914e-12	1.8096697e-29	4.1107763e-15	2.0515227e-28	1.5535077e-17	7.9812987e-25							
+2022-09-29	USA	Omicron 22A	2.3100626e-21	5.7057375e-13	1.9393573e-29	1.9016885e-15	7.80179e-29	5.71857e-18	2.0130956e-25							
+2022-09-30	USA	Omicron 22A	7.714054e-22	2.7090827e-13	1.9800696e-29	8.619421e-16	6.485348e-29	2.1288291e-18	5.0343442e-26							
+2022-10-01	USA	Omicron 22A	2.44917e-22	1.2864647e-13	2.2180722e-29	3.9420098e-16	4.966019e-29	7.812179e-19	1.2964696e-26							
+2022-10-02	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 22B	1.8253696e-14	1.420284e-08	7.527601e-24	2.430697e-10	5.248668e-20	5.706947e-12	2.7546569e-17							
+2022-09-18	USA	Omicron 22B	6.0621394e-15	7.761837e-09	1.1248853e-24	1.053034e-10	1.1208453e-20	2.186019e-12	6.980598e-18							
+2022-09-19	USA	Omicron 22B	1.9478173e-15	4.267711e-09	1.7091357e-25	4.55277e-11	2.5570544e-21	8.3179367e-13	1.7443386e-18							
+2022-09-20	USA	Omicron 22B	6.447111e-16	2.3588083e-09	2.6397215e-26	2.080008e-11	5.803874e-22	3.149078e-13	4.534794e-19							
+2022-09-21	USA	Omicron 22B	2.130148e-16	1.3091187e-09	4.108587e-27	9.38106e-12	1.2413843e-22	1.2181011e-13	1.2182222e-19							
+2022-09-22	USA	Omicron 22B	6.9567696e-17	7.1502093e-10	6.4236943e-28	4.2178474e-12	2.652399e-23	4.939163e-14	3.28284e-20							
+2022-09-23	USA	Omicron 22B	2.2312615e-17	3.9003717e-10	2.4237751e-28	1.9984505e-12	6.0201774e-24	1.9817779e-14	8.404271e-21							
+2022-09-24	USA	Omicron 22B	7.008603e-18	2.1257257e-10	2.1003528e-28	9.44377e-13	1.2894364e-24	7.797016e-15	2.1690582e-21							
+2022-09-25	USA	Omicron 22B	2.289284e-18	1.15878175e-10	2.1291136e-28	4.4629402e-13	2.457367e-25	3.0560021e-15	5.687023e-22							
+2022-09-26	USA	Omicron 22B	7.489766e-19	6.2264575e-11	2.0755956e-28	2.0983577e-13	5.3867724e-26	1.1720846e-15	1.5020266e-22							
+2022-09-27	USA	Omicron 22B	2.448561e-19	3.1383812e-11	2.2921272e-28	8.970151e-14	1.1000691e-26	4.4943637e-16	3.818256e-23							
+2022-09-28	USA	Omicron 22B	8.015843e-20	1.5337655e-11	2.3533964e-28	3.708707e-14	2.1291876e-27	1.8069819e-16	9.3464524e-24							
+2022-09-29	USA	Omicron 22B	2.545492e-20	7.353238e-12	2.5932757e-28	1.5751377e-14	8.56802e-28	7.210735e-17	2.3231504e-24							
+2022-09-30	USA	Omicron 22B	8.2470755e-21	3.4898382e-12	2.6778082e-28	7.112231e-15	7.1775938e-28	2.7925985e-17	5.494545e-25							
+2022-10-01	USA	Omicron 22B	2.444559e-21	1.6384237e-12	2.5516424e-28	3.1773155e-15	5.459554e-28	1.0410701e-17	1.4653475e-25							
+2022-10-02	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 22C	1.1682009e-13	9.3230724e-08	5.4237734e-23	1.8784048e-09	2.5439705e-19	3.2663684e-11	2.7878859e-16							
+2022-09-18	USA	Omicron 22C	4.2192107e-14	5.354685e-08	1.00749e-23	8.9892443e-10	5.893805e-20	1.4087218e-11	7.947988e-17							
+2022-09-19	USA	Omicron 22C	1.5131142e-14	3.099608e-08	2.065947e-24	4.324559e-10	1.3761075e-20	6.613026e-12	2.1777657e-17							
+2022-09-20	USA	Omicron 22C	5.4258135e-15	1.8148448e-08	3.4683157e-25	2.1019274e-10	3.233272e-21	2.7944144e-12	6.0834924e-18							
+2022-09-21	USA	Omicron 22C	1.9424928e-15	1.044214e-08	5.536306e-26	1.0204168e-10	7.7638085e-22	1.2434153e-12	1.7009046e-18							
+2022-09-22	USA	Omicron 22C	7.043962e-16	5.9207097e-09	9.0840384e-27	4.9692996e-11	1.8232267e-22	5.5286125e-13	4.695903e-19							
+2022-09-23	USA	Omicron 22C	2.551329e-16	3.3515541e-09	3.5389725e-27	2.4765873e-11	4.647453e-23	2.3046623e-13	1.3424228e-19							
+2022-09-24	USA	Omicron 22C	9.23051e-17	1.891225e-09	2.975038e-27	1.1843368e-11	1.1933744e-23	9.3936374e-14	4.037426e-20							
+2022-09-25	USA	Omicron 22C	3.3383878e-17	1.0367922e-09	3.057179e-27	5.720281e-12	2.9529203e-24	3.9747567e-14	1.23757674e-20							
+2022-09-26	USA	Omicron 22C	1.2224292e-17	5.622532e-10	3.3806842e-27	2.7756955e-12	6.6734936e-25	1.663922e-14	3.447018e-21							
+2022-09-27	USA	Omicron 22C	4.444787e-18	3.02943e-10	3.824159e-27	1.3404223e-12	1.4915346e-25	6.6958725e-15	8.939991e-22							
+2022-09-28	USA	Omicron 22C	1.5341413e-18	1.620589e-10	3.2402835e-27	6.436219e-13	3.4516923e-26	2.773856e-15	2.325752e-22							
+2022-09-29	USA	Omicron 22C	5.3121963e-19	8.602343e-11	3.8914986e-27	3.135465e-13	2.0223475e-26	1.1125189e-15	6.0871234e-23							
+2022-09-30	USA	Omicron 22C	1.8197456e-19	4.5290036e-11	4.2456417e-27	1.5690082e-13	1.258374e-26	4.428859e-16	1.6727646e-23							
+2022-10-01	USA	Omicron 22C	6.544118e-20	2.371036e-11	4.4821297e-27	7.795121e-14	1.1948415e-26	1.8908208e-16	4.747603e-24							
+2022-10-02	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 22D	4.531139e-16	4.447539e-10	1.082988e-25	1.0802123e-11	3.8913224e-22	1.1310465e-13	3.7909266e-19							
+2022-09-18	USA	Omicron 22D	1.4793385e-16	2.2746657e-10	1.8355308e-26	5.0694306e-12	8.7428356e-23	4.5039337e-14	1.01099346e-19							
+2022-09-19	USA	Omicron 22D	4.8844896e-17	1.1899343e-10	3.132624e-27	2.391791e-12	1.9051967e-23	1.8084868e-14	2.639436e-20							
+2022-09-20	USA	Omicron 22D	1.5949093e-17	6.2424746e-11	5.076407e-28	1.0818106e-12	4.037566e-24	7.149294e-15	6.6293792e-21							
+2022-09-21	USA	Omicron 22D	5.4592866e-18	3.2788876e-11	8.2848234e-29	4.97293e-13	8.592965e-25	2.9082453e-15	1.7391002e-21							
+2022-09-22	USA	Omicron 22D	1.8514554e-18	1.721344e-11	1.354624e-29	2.3161128e-13	1.832287e-25	1.1419985e-15	4.6861756e-22							
+2022-09-23	USA	Omicron 22D	6.1962776e-19	9.017643e-12	3.5320043e-30	1.0808072e-13	3.673945e-26	4.5841317e-16	1.2222143e-22							
+2022-09-24	USA	Omicron 22D	2.0803689e-19	4.7075243e-12	2.2020368e-30	5.1839565e-14	7.2156776e-27	1.9471693e-16	3.2171117e-23							
+2022-09-25	USA	Omicron 22D	6.8614684e-20	2.445519e-12	2.161678e-30	2.6161461e-14	1.409193e-27	7.934131e-17	8.49959e-24							
+2022-09-26	USA	Omicron 22D	2.1425442e-20	1.262623e-12	2.4375325e-30	1.3229536e-14	3.7352634e-28	3.1407505e-17	2.2338823e-24							
+2022-09-27	USA	Omicron 22D	7.138219e-21	6.528441e-13	2.0323763e-30	6.6670078e-15	8.6489674e-29	1.2194014e-17	5.8299444e-25							
+2022-09-28	USA	Omicron 22D	2.3695713e-21	3.3564465e-13	2.072204e-30	2.9628054e-15	4.5624203e-29	5.032697e-18	1.5081476e-25							
+2022-09-29	USA	Omicron 22D	7.6480613e-22	1.718336e-13	1.9540545e-30	1.3038429e-15	1.7622223e-29	2.0076337e-18	3.6832966e-26							
+2022-09-30	USA	Omicron 22D	2.3614083e-22	8.843685e-14	1.5978472e-30	5.689768e-16	1.2951366e-29	7.6034494e-19	9.3323116e-27							
+2022-10-01	USA	Omicron 22D	7.351482e-23	4.5479117e-14	1.2419737e-30	2.4605275e-16	9.185382e-30	3.010054e-19	2.4969832e-27							
+2022-10-02	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 22D	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 22E	1.0	1.0	0.99999976	1.0	1.0	1.0	1.0							
+2022-09-18	USA	Omicron 22E	1.0	1.0	0.9999998	1.0	1.0	1.0	1.0							
+2022-09-19	USA	Omicron 22E	1.0	1.0	0.9999999	1.0	1.0	1.0	1.0							
+2022-09-20	USA	Omicron 22E	1.0	1.0	0.99999994	1.0	1.0	1.0	1.0							
+2022-09-21	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-22	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-23	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-24	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-25	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-26	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-27	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-28	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-29	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-09-30	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-10-01	USA	Omicron 22E	1.0	1.0	1.0	1.0	1.0	1.0	1.0							
+2022-10-02	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 22E	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 23A	1.7105786e-30	1.8582167e-24	0.0	2.7788343e-26	4.463442e-36	5.757844e-28	3.6694764e-33							
+2022-09-18	USA	Omicron 23A	5.130353e-31	8.973011e-25	0.0	1.10755285e-26	8.4888015e-37	2.121924e-28	8.235056e-34							
+2022-09-19	USA	Omicron 23A	1.5407282e-31	4.3568896e-25	0.0	4.834013e-27	1.6261458e-37	7.8512755e-29	1.9018284e-34							
+2022-09-20	USA	Omicron 23A	4.6992438e-32	2.1245247e-25	0.0	1.962152e-27	2.856019e-38	2.79143e-29	4.181592e-35							
+2022-09-21	USA	Omicron 23A	1.3946473e-32	9.836726e-26	0.0	8.024268e-28	0.0	9.985274e-30	9.636554e-36							
+2022-09-22	USA	Omicron 23A	4.079554e-33	4.494913e-26	0.0	3.2852137e-28	0.0	3.6431244e-30	2.1403945e-36							
+2022-09-23	USA	Omicron 23A	1.1891464e-33	2.0487614e-26	0.0	1.3730241e-28	0.0	1.3080032e-30	4.6126844e-37							
+2022-09-24	USA	Omicron 23A	3.3032659e-34	9.3006084e-27	0.0	5.769563e-29	0.0	4.5669253e-31	1.0450746e-37							
+2022-09-25	USA	Omicron 23A	9.220424e-35	4.199039e-27	0.0	2.4194763e-29	0.0	1.632496e-31	1.9661316e-38							
+2022-09-26	USA	Omicron 23A	2.58613e-35	1.8828843e-27	0.0	1.01085796e-29	0.0	5.891246e-32	0.0							
+2022-09-27	USA	Omicron 23A	7.1713234e-36	8.375486e-28	0.0	4.2013127e-30	0.0	2.0184553e-32	0.0							
+2022-09-28	USA	Omicron 23A	1.9768541e-36	3.6917342e-28	0.0	1.7324118e-30	0.0	7.1149536e-33	0.0							
+2022-09-29	USA	Omicron 23A	5.7484456e-37	1.610844e-28	0.0	7.0120283e-31	0.0	2.3049347e-33	0.0							
+2022-09-30	USA	Omicron 23A	1.5707197e-37	7.0421105e-29	0.0	2.8028433e-31	0.0	7.6051656e-34	0.0							
+2022-10-01	USA	Omicron 23A	3.9494084e-38	3.1020987e-29	0.0	1.0323707e-31	0.0	2.5436828e-34	0.0							
+2022-10-02	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 23A	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	other	3.2224925e-17	3.7230496e-11	1.1073251e-26	6.2703873e-13	1.1098755e-22	1.01307555e-14	5.7619495e-20							
+2022-09-18	USA	other	1.009703e-17	1.886711e-11	1.9232999e-27	2.73351e-13	2.3687488e-23	3.8712345e-15	1.336567e-20							
+2022-09-19	USA	other	3.2033649e-18	9.216068e-12	2.9047744e-28	1.1424558e-13	5.1166828e-24	1.4850715e-15	3.1100028e-21							
+2022-09-20	USA	other	1.0416987e-18	4.5786144e-12	4.418546e-29	4.873732e-14	1.1150512e-24	5.825702e-16	7.4133175e-22							
+2022-09-21	USA	other	3.4783607e-19	2.335744e-12	6.813347e-30	2.121156e-14	2.441957e-25	2.2921442e-16	1.7735003e-22							
+2022-09-22	USA	other	1.1653576e-19	1.19988e-12	1.1157979e-30	9.813213e-15	5.3517624e-26	9.21216e-17	4.4915342e-23							
+2022-09-23	USA	other	3.8250127e-20	6.196301e-13	3.4779516e-31	4.366191e-15	1.169447e-26	3.6179153e-17	1.1729538e-23							
+2022-09-24	USA	other	1.2769045e-20	3.2071462e-13	3.5827055e-31	1.9640172e-15	2.3621575e-27	1.3425317e-17	3.0505957e-24							
+2022-09-25	USA	other	4.3058588e-21	1.6507784e-13	3.6105702e-31	9.018146e-16	4.4946226e-28	4.956444e-18	8.0394955e-25							
+2022-09-26	USA	other	1.3028987e-21	8.161189e-14	3.4443905e-31	4.0867243e-16	8.798515e-29	1.8644345e-18	2.1084006e-25							
+2022-09-27	USA	other	4.0031836e-22	4.0118018e-14	3.7623432e-31	1.8425281e-16	2.0023645e-29	7.370828e-19	5.5670555e-26							
+2022-09-28	USA	other	1.247025e-22	1.958948e-14	3.5541556e-31	8.25533e-17	4.592122e-30	2.90251e-19	1.3077372e-26							
+2022-09-29	USA	other	3.7345398e-23	9.492851e-15	3.6387895e-31	3.6716572e-17	1.1669473e-30	1.1352162e-19	3.2082877e-27							
+2022-09-30	USA	other	1.1371164e-23	4.47342e-15	3.830959e-31	1.6062855e-17	8.667816e-31	4.353573e-20	7.758976e-28							
+2022-10-01	USA	other	3.424303e-24	2.059931e-15	3.9947977e-31	6.941018e-18	7.2995228e-31	1.6551042e-20	1.8610858e-28							
+2022-10-02	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	other	nan	nan	nan	nan	nan	nan	nan							
+2022-09-17	USA	Omicron 21L	1.4821879e-17	1.429483e-11	9.208968e-27	2.8678348e-13	4.7322033e-23	3.853495e-15	3.2062244e-20							
+2022-09-18	USA	Omicron 21L	4.828211e-18	7.475833e-12	1.3579194e-27	1.295033e-13	1.0204637e-23	1.4513932e-15	8.121728e-21							
+2022-09-19	USA	Omicron 21L	1.4939006e-18	3.9302346e-12	2.0418348e-28	5.449822e-14	2.2318226e-24	5.657154e-16	2.0139863e-21							
+2022-09-20	USA	Omicron 21L	4.89158e-19	2.0349976e-12	3.1033788e-29	2.3950829e-14	4.951887e-25	2.2128936e-16	4.92685e-22							
+2022-09-21	USA	Omicron 21L	1.6494059e-19	1.0239292e-12	5.0512335e-30	1.0540493e-14	1.1156621e-25	8.673277e-17	1.1512507e-22							
+2022-09-22	USA	Omicron 21L	5.3994082e-20	5.109661e-13	8.1675595e-31	4.621358e-15	2.533674e-26	3.4000716e-17	2.7979192e-23							
+2022-09-23	USA	Omicron 21L	1.7338972e-20	2.5449727e-13	2.259996e-31	2.1030994e-15	5.1329792e-27	1.3448959e-17	6.6861555e-24							
+2022-09-24	USA	Omicron 21L	5.4085527e-21	1.2635288e-13	2.256106e-31	9.586219e-16	9.833413e-28	5.205377e-18	1.6165982e-24							
+2022-09-25	USA	Omicron 21L	1.6508301e-21	6.245247e-14	2.2358208e-31	4.3503872e-16	1.8408584e-28	2.0874798e-18	3.967423e-25							
+2022-09-26	USA	Omicron 21L	5.0088533e-22	3.069506e-14	2.2017978e-31	1.9699956e-16	3.3767303e-29	8.16921e-19	9.71434e-26							
+2022-09-27	USA	Omicron 21L	1.5091492e-22	1.4985883e-14	1.9392478e-31	8.8139456e-17	6.1458324e-30	3.2501457e-19	2.3795598e-26							
+2022-09-28	USA	Omicron 21L	4.7508728e-23	7.308857e-15	1.7268864e-31	3.8143657e-17	1.1342538e-30	1.2882141e-19	5.649359e-27							
+2022-09-29	USA	Omicron 21L	1.4783591e-23	3.5163675e-15	1.8877261e-31	1.6361598e-17	5.9785704e-31	5.075649e-20	1.3589176e-27							
+2022-09-30	USA	Omicron 21L	4.649047e-24	1.6755121e-15	1.7854326e-31	6.949131e-18	4.384763e-31	1.8299406e-20	3.2260208e-28							
+2022-10-01	USA	Omicron 21L	1.3853474e-24	7.901124e-16	1.7316652e-31	2.9195687e-18	3.6897096e-31	6.180509e-21	7.3597114e-29							
+2022-10-02	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-03	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-04	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-05	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-06	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-07	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-08	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-09	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-10	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-11	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-12	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-13	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-14	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-15	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-16	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-17	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-18	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-19	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-20	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-21	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-22	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-23	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-24	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-25	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-26	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-27	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-28	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-29	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-30	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-10-31	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-01	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-02	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-03	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-04	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-05	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-06	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-07	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-08	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-09	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-10	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-11	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-12	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-13	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-14	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-15	USA	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-11-16	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 22D								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 22E								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 23A								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	other								nan	nan	nan	nan	nan	nan	nan
+2022-11-16	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-17	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-18	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-19	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-20	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-21	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-22	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-23	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-24	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-25	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-26	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-27	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-28	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-29	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-11-30	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-01	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-02	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-03	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-04	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-05	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-06	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-07	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-08	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-09	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-10	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-11	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-12	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-13	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-14	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-12-15	USA	Omicron 21L								nan	nan	nan	nan	nan	nan	nan

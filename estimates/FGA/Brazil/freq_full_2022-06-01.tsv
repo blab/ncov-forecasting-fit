@@ -1,0 +1,631 @@
+date	location	variant	median_freq_nowcast	freq_upper_95	freq_lower_95	freq_upper_80	freq_lower_80	freq_upper_50	freq_lower_50	median_freq_forecast	freq_forecast_upper_95	freq_forecast_lower_95	freq_forecast_upper_80	freq_forecast_lower_80	freq_forecast_upper_50	freq_forecast_lower_50
+2022-04-03	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	Delta	nan	nan	nan	nan	nan	nan	nan							
+2022-04-03	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	Omicron 21K	nan	nan	nan	nan	nan	nan	nan							
+2022-04-03	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	Omicron 22A	nan	nan	nan	nan	nan	nan	nan							
+2022-04-03	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	Omicron 22B	nan	nan	nan	nan	nan	nan	nan							
+2022-04-03	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	Omicron 22C	nan	nan	nan	nan	nan	nan	nan							
+2022-04-03	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	other	nan	nan	nan	nan	nan	nan	nan							
+2022-04-03	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-04	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-05	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-06	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-07	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-08	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-09	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-10	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-11	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-12	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-13	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-14	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-15	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-16	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-17	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-18	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-19	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-20	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-21	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-22	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-23	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-24	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-25	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-26	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-27	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-28	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-29	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-04-30	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-01	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-02	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-03	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-04	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-05	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-06	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-07	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-08	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-09	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-10	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-11	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-12	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-13	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-14	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-15	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-16	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-17	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-18	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-19	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-20	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-21	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-22	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-23	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-24	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-25	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-26	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-27	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-28	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-29	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-30	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-05-31	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-06-01	Brazil	Omicron 21L	nan	nan	nan	nan	nan	nan	nan							
+2022-06-02	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	Delta								nan	nan	nan	nan	nan	nan	nan
+2022-06-02	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	Omicron 21K								nan	nan	nan	nan	nan	nan	nan
+2022-06-02	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	Omicron 22A								nan	nan	nan	nan	nan	nan	nan
+2022-06-02	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	Omicron 22B								nan	nan	nan	nan	nan	nan	nan
+2022-06-02	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	Omicron 22C								nan	nan	nan	nan	nan	nan	nan
+2022-06-02	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	other								nan	nan	nan	nan	nan	nan	nan
+2022-06-02	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-03	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-04	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-05	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-06	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-07	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-08	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-09	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-10	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-11	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-12	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-13	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-14	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-15	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-16	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-17	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-18	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-19	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-20	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-21	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-22	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-23	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-24	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-25	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-26	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-27	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-28	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-29	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-06-30	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan
+2022-07-01	Brazil	Omicron 21L								nan	nan	nan	nan	nan	nan	nan

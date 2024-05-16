@@ -1,0 +1,4 @@
+location	variant	median_ga	ga_upper_95	ga_lower_95	ga_upper_80	ga_lower_80	ga_upper_50	ga_lower_50
+Brazil	Delta	1.2735724	1.341459	1.2134509	1.3166274	1.2345635	1.2968037	1.2529662
+Brazil	Omicron 21K	4.9482946	5.811981	4.244907	5.4567146	4.5036397	5.2229023	4.6927485
+Brazil	other	1.0	1.0	1.0	1.0	1.0	1.0	1.0
