@@ -77,7 +77,7 @@ date	location	variant	sequences
 2022-03-23	Australia	Omicron 21L	447
 2022-03-24	Australia	Omicron 21L	483
 2022-03-25	Australia	Omicron 21L	278
-2022-03-26	Australia	Omicron 21L	422
+2022-03-26	Australia	Omicron 21L	423
 2022-03-27	Australia	Omicron 21L	626
 2022-03-28	Australia	Omicron 21L	538
 2022-03-29	Australia	Omicron 21L	609
@@ -89,7 +89,7 @@ date	location	variant	sequences
 2022-04-04	Australia	Omicron 21L	439
 2022-04-05	Australia	Omicron 21L	424
 2022-04-06	Australia	Omicron 21L	381
-2022-04-07	Australia	Omicron 21L	431
+2022-04-07	Australia	Omicron 21L	432
 2022-04-08	Australia	Omicron 21L	254
 2022-04-09	Australia	Omicron 21L	205
 2022-04-10	Australia	Omicron 21L	292
@@ -108,7 +108,7 @@ date	location	variant	sequences
 2022-04-23	Australia	Omicron 21L	235
 2022-04-24	Australia	Omicron 21L	346
 2022-04-25	Australia	Omicron 21L	458
-2022-04-26	Australia	Omicron 21L	592
+2022-04-26	Australia	Omicron 21L	593
 2022-04-27	Australia	Omicron 21L	418
 2022-04-28	Australia	Omicron 21L	401
 2022-04-29	Australia	Omicron 21L	170
@@ -122,7 +122,7 @@ date	location	variant	sequences
 2022-05-07	Australia	Omicron 21L	304
 2022-05-08	Australia	Omicron 21L	362
 2022-05-09	Australia	Omicron 21L	422
-2022-05-10	Australia	Omicron 21L	499
+2022-05-10	Australia	Omicron 21L	500
 2022-05-11	Australia	Omicron 21L	356
 2022-05-12	Australia	Omicron 21L	418
 2022-05-13	Australia	Omicron 21L	354
@@ -143,15 +143,15 @@ date	location	variant	sequences
 2022-05-28	Australia	Omicron 21L	217
 2022-05-29	Australia	Omicron 21L	278
 2022-05-30	Australia	Omicron 21L	378
-2022-05-31	Australia	Omicron 21L	455
+2022-05-31	Australia	Omicron 21L	456
 2022-06-01	Australia	Omicron 21L	341
 2022-06-02	Australia	Omicron 21L	289
 2022-06-03	Australia	Omicron 21L	232
 2022-06-04	Australia	Omicron 21L	139
-2022-06-05	Australia	Omicron 21L	246
+2022-06-05	Australia	Omicron 21L	247
 2022-06-06	Australia	Omicron 21L	333
 2022-06-07	Australia	Omicron 21L	250
-2022-06-08	Australia	Omicron 21L	194
+2022-06-08	Australia	Omicron 21L	195
 2022-06-09	Australia	Omicron 21L	137
 2022-06-10	Australia	Omicron 21L	99
 2022-06-11	Australia	Omicron 21L	76
@@ -710,228 +710,16 @@ date	location	variant	sequences
 2022-06-13	Brazil	other	1
 2022-06-14	Brazil	other	1
 2022-06-17	Brazil	other	1
-2022-03-20	Costa Rica	Omicron 21K	3
-2022-03-21	Costa Rica	Omicron 21K	11
-2022-03-22	Costa Rica	Omicron 21K	15
-2022-03-23	Costa Rica	Omicron 21K	10
-2022-03-24	Costa Rica	Omicron 21K	8
-2022-03-25	Costa Rica	Omicron 21K	4
-2022-03-27	Costa Rica	Omicron 21K	2
-2022-03-28	Costa Rica	Omicron 21K	5
-2022-03-29	Costa Rica	Omicron 21K	5
-2022-03-30	Costa Rica	Omicron 21K	5
-2022-03-31	Costa Rica	Omicron 21K	1
-2022-04-01	Costa Rica	Omicron 21K	3
-2022-04-02	Costa Rica	Omicron 21K	1
-2022-04-03	Costa Rica	Omicron 21K	3
-2022-04-04	Costa Rica	Omicron 21K	4
-2022-04-05	Costa Rica	Omicron 21K	2
-2022-04-06	Costa Rica	Omicron 21K	3
-2022-04-07	Costa Rica	Omicron 21K	4
-2022-04-08	Costa Rica	Omicron 21K	2
-2022-04-09	Costa Rica	Omicron 21K	1
-2022-04-11	Costa Rica	Omicron 21K	1
-2022-04-14	Costa Rica	Omicron 21K	2
-2022-04-18	Costa Rica	Omicron 21K	1
-2022-04-19	Costa Rica	Omicron 21K	3
-2022-04-20	Costa Rica	Omicron 21K	4
-2022-04-21	Costa Rica	Omicron 21K	1
-2022-04-22	Costa Rica	Omicron 21K	1
-2022-04-24	Costa Rica	Omicron 21K	1
-2022-04-25	Costa Rica	Omicron 21K	1
-2022-04-27	Costa Rica	Omicron 21K	1
-2022-04-28	Costa Rica	Omicron 21K	1
-2022-05-03	Costa Rica	Omicron 21K	1
-2022-05-04	Costa Rica	Omicron 21K	1
-2022-03-21	Costa Rica	Omicron 21L	7
-2022-03-22	Costa Rica	Omicron 21L	5
-2022-03-23	Costa Rica	Omicron 21L	9
-2022-03-24	Costa Rica	Omicron 21L	3
-2022-03-25	Costa Rica	Omicron 21L	9
-2022-03-26	Costa Rica	Omicron 21L	3
-2022-03-27	Costa Rica	Omicron 21L	1
-2022-03-28	Costa Rica	Omicron 21L	13
-2022-03-29	Costa Rica	Omicron 21L	15
-2022-03-30	Costa Rica	Omicron 21L	12
-2022-03-31	Costa Rica	Omicron 21L	7
-2022-04-01	Costa Rica	Omicron 21L	5
-2022-04-02	Costa Rica	Omicron 21L	8
-2022-04-03	Costa Rica	Omicron 21L	5
-2022-04-04	Costa Rica	Omicron 21L	29
-2022-04-05	Costa Rica	Omicron 21L	11
-2022-04-06	Costa Rica	Omicron 21L	15
-2022-04-07	Costa Rica	Omicron 21L	9
-2022-04-08	Costa Rica	Omicron 21L	3
-2022-04-09	Costa Rica	Omicron 21L	4
-2022-04-10	Costa Rica	Omicron 21L	10
-2022-04-11	Costa Rica	Omicron 21L	4
-2022-04-12	Costa Rica	Omicron 21L	9
-2022-04-13	Costa Rica	Omicron 21L	6
-2022-04-14	Costa Rica	Omicron 21L	3
-2022-04-15	Costa Rica	Omicron 21L	8
-2022-04-16	Costa Rica	Omicron 21L	9
-2022-04-17	Costa Rica	Omicron 21L	15
-2022-04-18	Costa Rica	Omicron 21L	33
-2022-04-19	Costa Rica	Omicron 21L	18
-2022-04-20	Costa Rica	Omicron 21L	11
-2022-04-21	Costa Rica	Omicron 21L	15
-2022-04-22	Costa Rica	Omicron 21L	14
-2022-04-23	Costa Rica	Omicron 21L	2
-2022-04-24	Costa Rica	Omicron 21L	8
-2022-04-25	Costa Rica	Omicron 21L	17
-2022-04-26	Costa Rica	Omicron 21L	18
-2022-04-27	Costa Rica	Omicron 21L	15
-2022-04-28	Costa Rica	Omicron 21L	16
-2022-04-29	Costa Rica	Omicron 21L	13
-2022-04-30	Costa Rica	Omicron 21L	5
-2022-05-01	Costa Rica	Omicron 21L	7
-2022-05-02	Costa Rica	Omicron 21L	28
-2022-05-03	Costa Rica	Omicron 21L	13
-2022-05-04	Costa Rica	Omicron 21L	18
-2022-05-05	Costa Rica	Omicron 21L	29
-2022-05-06	Costa Rica	Omicron 21L	16
-2022-05-07	Costa Rica	Omicron 21L	9
-2022-05-08	Costa Rica	Omicron 21L	12
-2022-05-09	Costa Rica	Omicron 21L	27
-2022-05-10	Costa Rica	Omicron 21L	27
-2022-05-11	Costa Rica	Omicron 21L	34
-2022-05-12	Costa Rica	Omicron 21L	30
-2022-05-13	Costa Rica	Omicron 21L	8
-2022-05-14	Costa Rica	Omicron 21L	6
-2022-05-15	Costa Rica	Omicron 21L	13
-2022-05-16	Costa Rica	Omicron 21L	37
-2022-05-17	Costa Rica	Omicron 21L	28
-2022-05-18	Costa Rica	Omicron 21L	18
-2022-05-19	Costa Rica	Omicron 21L	15
-2022-05-20	Costa Rica	Omicron 21L	6
-2022-05-21	Costa Rica	Omicron 21L	5
-2022-05-22	Costa Rica	Omicron 21L	13
-2022-05-23	Costa Rica	Omicron 21L	12
-2022-05-24	Costa Rica	Omicron 21L	16
-2022-05-25	Costa Rica	Omicron 21L	7
-2022-05-26	Costa Rica	Omicron 21L	19
-2022-05-27	Costa Rica	Omicron 21L	14
-2022-05-28	Costa Rica	Omicron 21L	7
-2022-05-29	Costa Rica	Omicron 21L	8
-2022-05-30	Costa Rica	Omicron 21L	18
-2022-05-31	Costa Rica	Omicron 21L	9
-2022-06-01	Costa Rica	Omicron 21L	5
-2022-06-02	Costa Rica	Omicron 21L	8
-2022-06-03	Costa Rica	Omicron 21L	5
-2022-06-04	Costa Rica	Omicron 21L	1
-2022-06-05	Costa Rica	Omicron 21L	2
-2022-06-06	Costa Rica	Omicron 21L	14
-2022-06-07	Costa Rica	Omicron 21L	11
-2022-06-08	Costa Rica	Omicron 21L	4
-2022-06-09	Costa Rica	Omicron 21L	4
-2022-05-03	Costa Rica	Omicron 22A	1
-2022-05-05	Costa Rica	Omicron 22A	1
-2022-05-10	Costa Rica	Omicron 22A	1
-2022-05-16	Costa Rica	Omicron 22A	1
-2022-05-17	Costa Rica	Omicron 22A	1
-2022-05-18	Costa Rica	Omicron 22A	1
-2022-05-22	Costa Rica	Omicron 22A	1
-2022-05-23	Costa Rica	Omicron 22A	1
-2022-05-24	Costa Rica	Omicron 22A	1
-2022-05-27	Costa Rica	Omicron 22A	2
-2022-05-30	Costa Rica	Omicron 22A	4
-2022-05-31	Costa Rica	Omicron 22A	3
-2022-06-03	Costa Rica	Omicron 22A	1
-2022-06-05	Costa Rica	Omicron 22A	2
-2022-06-06	Costa Rica	Omicron 22A	2
-2022-06-07	Costa Rica	Omicron 22A	2
-2022-06-09	Costa Rica	Omicron 22A	2
-2022-05-18	Costa Rica	Omicron 22B	1
-2022-05-26	Costa Rica	Omicron 22B	1
-2022-05-30	Costa Rica	Omicron 22B	1
-2022-05-31	Costa Rica	Omicron 22B	1
-2022-06-03	Costa Rica	Omicron 22B	1
-2022-06-05	Costa Rica	Omicron 22B	1
-2022-06-06	Costa Rica	Omicron 22B	2
-2022-06-08	Costa Rica	Omicron 22B	1
-2022-04-18	Costa Rica	Omicron 22C	1
-2022-05-02	Costa Rica	Omicron 22C	1
-2022-05-03	Costa Rica	Omicron 22C	3
-2022-05-05	Costa Rica	Omicron 22C	2
-2022-05-09	Costa Rica	Omicron 22C	2
-2022-05-10	Costa Rica	Omicron 22C	1
-2022-05-11	Costa Rica	Omicron 22C	1
-2022-05-12	Costa Rica	Omicron 22C	2
-2022-05-16	Costa Rica	Omicron 22C	2
-2022-05-17	Costa Rica	Omicron 22C	3
-2022-05-18	Costa Rica	Omicron 22C	2
-2022-05-20	Costa Rica	Omicron 22C	1
-2022-05-23	Costa Rica	Omicron 22C	1
-2022-05-24	Costa Rica	Omicron 22C	2
-2022-05-25	Costa Rica	Omicron 22C	1
-2022-05-26	Costa Rica	Omicron 22C	1
-2022-05-27	Costa Rica	Omicron 22C	1
-2022-05-28	Costa Rica	Omicron 22C	1
-2022-05-29	Costa Rica	Omicron 22C	1
-2022-05-30	Costa Rica	Omicron 22C	2
-2022-05-31	Costa Rica	Omicron 22C	2
-2022-06-03	Costa Rica	Omicron 22C	1
-2022-06-06	Costa Rica	Omicron 22C	4
-2022-03-20	Costa Rica	other	1
-2022-03-21	Costa Rica	other	2
-2022-03-22	Costa Rica	other	2
-2022-03-26	Costa Rica	other	2
-2022-03-28	Costa Rica	other	2
-2022-03-29	Costa Rica	other	1
-2022-03-30	Costa Rica	other	1
-2022-04-03	Costa Rica	other	1
-2022-04-04	Costa Rica	other	3
-2022-04-07	Costa Rica	other	1
-2022-04-11	Costa Rica	other	1
-2022-04-14	Costa Rica	other	1
-2022-04-16	Costa Rica	other	1
-2022-04-19	Costa Rica	other	1
-2022-04-21	Costa Rica	other	2
-2022-04-22	Costa Rica	other	1
-2022-04-25	Costa Rica	other	2
-2022-04-26	Costa Rica	other	1
-2022-04-27	Costa Rica	other	1
-2022-04-28	Costa Rica	other	2
-2022-04-29	Costa Rica	other	1
-2022-05-02	Costa Rica	other	3
-2022-05-04	Costa Rica	other	2
-2022-05-05	Costa Rica	other	5
-2022-05-06	Costa Rica	other	1
-2022-05-07	Costa Rica	other	1
-2022-05-08	Costa Rica	other	2
-2022-05-09	Costa Rica	other	4
-2022-05-10	Costa Rica	other	3
-2022-05-11	Costa Rica	other	1
-2022-05-12	Costa Rica	other	2
-2022-05-13	Costa Rica	other	2
-2022-05-16	Costa Rica	other	4
-2022-05-17	Costa Rica	other	4
-2022-05-19	Costa Rica	other	3
-2022-05-20	Costa Rica	other	2
-2022-05-21	Costa Rica	other	2
-2022-05-22	Costa Rica	other	1
-2022-05-23	Costa Rica	other	3
-2022-05-24	Costa Rica	other	1
-2022-05-25	Costa Rica	other	3
-2022-05-27	Costa Rica	other	1
-2022-05-28	Costa Rica	other	1
-2022-05-29	Costa Rica	other	1
-2022-05-30	Costa Rica	other	3
-2022-06-01	Costa Rica	other	2
-2022-06-02	Costa Rica	other	1
-2022-06-03	Costa Rica	other	1
-2022-06-06	Costa Rica	other	1
-2022-06-07	Costa Rica	other	2
 2022-03-20	Japan	Omicron 21K	151
 2022-03-21	Japan	Omicron 21K	191
 2022-03-22	Japan	Omicron 21K	424
 2022-03-23	Japan	Omicron 21K	240
 2022-03-24	Japan	Omicron 21K	340
-2022-03-25	Japan	Omicron 21K	247
+2022-03-25	Japan	Omicron 21K	248
 2022-03-26	Japan	Omicron 21K	256
 2022-03-27	Japan	Omicron 21K	117
-2022-03-28	Japan	Omicron 21K	262
-2022-03-29	Japan	Omicron 21K	237
+2022-03-28	Japan	Omicron 21K	264
+2022-03-29	Japan	Omicron 21K	238
 2022-03-30	Japan	Omicron 21K	193
 2022-03-31	Japan	Omicron 21K	228
 2022-04-01	Japan	Omicron 21K	302
@@ -952,7 +740,7 @@ date	location	variant	sequences
 2022-04-16	Japan	Omicron 21K	39
 2022-04-17	Japan	Omicron 21K	35
 2022-04-18	Japan	Omicron 21K	108
-2022-04-19	Japan	Omicron 21K	66
+2022-04-19	Japan	Omicron 21K	67
 2022-04-20	Japan	Omicron 21K	84
 2022-04-21	Japan	Omicron 21K	63
 2022-04-22	Japan	Omicron 21K	78
@@ -994,7 +782,7 @@ date	location	variant	sequences
 2022-03-21	Japan	Omicron 21L	105
 2022-03-22	Japan	Omicron 21L	411
 2022-03-23	Japan	Omicron 21L	167
-2022-03-24	Japan	Omicron 21L	459
+2022-03-24	Japan	Omicron 21L	460
 2022-03-25	Japan	Omicron 21L	202
 2022-03-26	Japan	Omicron 21L	351
 2022-03-27	Japan	Omicron 21L	88
@@ -1026,17 +814,17 @@ date	location	variant	sequences
 2022-04-22	Japan	Omicron 21L	725
 2022-04-23	Japan	Omicron 21L	295
 2022-04-24	Japan	Omicron 21L	160
-2022-04-25	Japan	Omicron 21L	993
-2022-04-26	Japan	Omicron 21L	476
+2022-04-25	Japan	Omicron 21L	994
+2022-04-26	Japan	Omicron 21L	477
 2022-04-27	Japan	Omicron 21L	697
-2022-04-28	Japan	Omicron 21L	436
+2022-04-28	Japan	Omicron 21L	437
 2022-04-29	Japan	Omicron 21L	204
-2022-04-30	Japan	Omicron 21L	339
+2022-04-30	Japan	Omicron 21L	340
 2022-05-01	Japan	Omicron 21L	181
-2022-05-02	Japan	Omicron 21L	792
+2022-05-02	Japan	Omicron 21L	795
 2022-05-03	Japan	Omicron 21L	293
 2022-05-04	Japan	Omicron 21L	353
-2022-05-05	Japan	Omicron 21L	262
+2022-05-05	Japan	Omicron 21L	263
 2022-05-06	Japan	Omicron 21L	1330
 2022-05-07	Japan	Omicron 21L	383
 2022-05-08	Japan	Omicron 21L	225
@@ -1049,14 +837,14 @@ date	location	variant	sequences
 2022-05-15	Japan	Omicron 21L	229
 2022-05-16	Japan	Omicron 21L	865
 2022-05-17	Japan	Omicron 21L	414
-2022-05-18	Japan	Omicron 21L	578
-2022-05-19	Japan	Omicron 21L	403
+2022-05-18	Japan	Omicron 21L	585
+2022-05-19	Japan	Omicron 21L	404
 2022-05-20	Japan	Omicron 21L	469
-2022-05-21	Japan	Omicron 21L	148
+2022-05-21	Japan	Omicron 21L	149
 2022-05-22	Japan	Omicron 21L	75
 2022-05-23	Japan	Omicron 21L	402
 2022-05-24	Japan	Omicron 21L	154
-2022-05-25	Japan	Omicron 21L	287
+2022-05-25	Japan	Omicron 21L	288
 2022-05-26	Japan	Omicron 21L	89
 2022-05-27	Japan	Omicron 21L	177
 2022-05-28	Japan	Omicron 21L	61
@@ -1162,184 +950,6 @@ date	location	variant	sequences
 2022-05-30	Japan	other	1
 2022-06-01	Japan	other	1
 2022-06-14	Japan	other	2
-2022-03-21	Panama	Omicron 21K	5
-2022-03-22	Panama	Omicron 21K	7
-2022-03-23	Panama	Omicron 21K	1
-2022-03-24	Panama	Omicron 21K	7
-2022-03-25	Panama	Omicron 21K	6
-2022-03-26	Panama	Omicron 21K	2
-2022-03-28	Panama	Omicron 21K	2
-2022-03-29	Panama	Omicron 21K	8
-2022-03-30	Panama	Omicron 21K	2
-2022-03-31	Panama	Omicron 21K	1
-2022-04-01	Panama	Omicron 21K	4
-2022-04-02	Panama	Omicron 21K	1
-2022-04-04	Panama	Omicron 21K	4
-2022-04-05	Panama	Omicron 21K	6
-2022-04-06	Panama	Omicron 21K	2
-2022-04-07	Panama	Omicron 21K	2
-2022-04-08	Panama	Omicron 21K	1
-2022-04-11	Panama	Omicron 21K	7
-2022-04-13	Panama	Omicron 21K	1
-2022-04-21	Panama	Omicron 21K	1
-2022-04-23	Panama	Omicron 21K	1
-2022-04-25	Panama	Omicron 21K	1
-2022-05-04	Panama	Omicron 21K	1
-2022-05-11	Panama	Omicron 21K	1
-2022-05-18	Panama	Omicron 21K	1
-2022-05-28	Panama	Omicron 21K	1
-2022-05-29	Panama	Omicron 21K	1
-2022-06-01	Panama	Omicron 21K	1
-2022-06-08	Panama	Omicron 21K	1
-2022-03-21	Panama	Omicron 21L	1
-2022-03-22	Panama	Omicron 21L	2
-2022-03-24	Panama	Omicron 21L	4
-2022-03-25	Panama	Omicron 21L	1
-2022-03-26	Panama	Omicron 21L	1
-2022-03-28	Panama	Omicron 21L	1
-2022-03-29	Panama	Omicron 21L	6
-2022-03-30	Panama	Omicron 21L	1
-2022-03-31	Panama	Omicron 21L	3
-2022-04-01	Panama	Omicron 21L	1
-2022-04-02	Panama	Omicron 21L	3
-2022-04-04	Panama	Omicron 21L	2
-2022-04-07	Panama	Omicron 21L	5
-2022-04-08	Panama	Omicron 21L	2
-2022-04-09	Panama	Omicron 21L	1
-2022-04-11	Panama	Omicron 21L	6
-2022-04-12	Panama	Omicron 21L	5
-2022-04-13	Panama	Omicron 21L	3
-2022-04-14	Panama	Omicron 21L	4
-2022-04-16	Panama	Omicron 21L	2
-2022-04-18	Panama	Omicron 21L	1
-2022-04-19	Panama	Omicron 21L	2
-2022-04-20	Panama	Omicron 21L	3
-2022-04-21	Panama	Omicron 21L	9
-2022-04-22	Panama	Omicron 21L	10
-2022-04-25	Panama	Omicron 21L	1
-2022-04-27	Panama	Omicron 21L	6
-2022-04-28	Panama	Omicron 21L	8
-2022-04-29	Panama	Omicron 21L	4
-2022-04-30	Panama	Omicron 21L	2
-2022-05-02	Panama	Omicron 21L	1
-2022-05-03	Panama	Omicron 21L	6
-2022-05-04	Panama	Omicron 21L	9
-2022-05-05	Panama	Omicron 21L	8
-2022-05-06	Panama	Omicron 21L	8
-2022-05-07	Panama	Omicron 21L	6
-2022-05-09	Panama	Omicron 21L	3
-2022-05-10	Panama	Omicron 21L	10
-2022-05-11	Panama	Omicron 21L	16
-2022-05-12	Panama	Omicron 21L	10
-2022-05-13	Panama	Omicron 21L	9
-2022-05-16	Panama	Omicron 21L	15
-2022-05-17	Panama	Omicron 21L	1
-2022-05-18	Panama	Omicron 21L	7
-2022-05-19	Panama	Omicron 21L	2
-2022-05-20	Panama	Omicron 21L	7
-2022-05-21	Panama	Omicron 21L	4
-2022-05-22	Panama	Omicron 21L	2
-2022-05-23	Panama	Omicron 21L	2
-2022-05-25	Panama	Omicron 21L	2
-2022-05-26	Panama	Omicron 21L	1
-2022-05-29	Panama	Omicron 21L	3
-2022-05-30	Panama	Omicron 21L	3
-2022-05-31	Panama	Omicron 21L	4
-2022-06-01	Panama	Omicron 21L	5
-2022-06-02	Panama	Omicron 21L	6
-2022-06-03	Panama	Omicron 21L	5
-2022-06-04	Panama	Omicron 21L	3
-2022-06-05	Panama	Omicron 21L	4
-2022-06-06	Panama	Omicron 21L	5
-2022-06-08	Panama	Omicron 21L	11
-2022-06-10	Panama	Omicron 21L	2
-2022-06-11	Panama	Omicron 21L	2
-2022-06-04	Panama	Omicron 22A	1
-2022-06-05	Panama	Omicron 22A	1
-2022-05-16	Panama	Omicron 22B	1
-2022-05-20	Panama	Omicron 22B	1
-2022-05-29	Panama	Omicron 22B	1
-2022-06-02	Panama	Omicron 22B	1
-2022-06-03	Panama	Omicron 22B	1
-2022-06-05	Panama	Omicron 22B	1
-2022-06-08	Panama	Omicron 22B	2
-2022-06-09	Panama	Omicron 22B	1
-2022-06-10	Panama	Omicron 22B	1
-2022-06-11	Panama	Omicron 22B	2
-2022-04-13	Panama	Omicron 22C	2
-2022-05-05	Panama	Omicron 22C	1
-2022-05-06	Panama	Omicron 22C	1
-2022-05-09	Panama	Omicron 22C	1
-2022-05-16	Panama	Omicron 22C	1
-2022-05-17	Panama	Omicron 22C	1
-2022-05-18	Panama	Omicron 22C	1
-2022-05-19	Panama	Omicron 22C	2
-2022-05-20	Panama	Omicron 22C	5
-2022-05-21	Panama	Omicron 22C	1
-2022-05-30	Panama	Omicron 22C	3
-2022-06-01	Panama	Omicron 22C	1
-2022-06-02	Panama	Omicron 22C	1
-2022-06-03	Panama	Omicron 22C	4
-2022-06-05	Panama	Omicron 22C	1
-2022-06-06	Panama	Omicron 22C	1
-2022-06-08	Panama	Omicron 22C	4
-2022-06-09	Panama	Omicron 22C	2
-2022-03-21	Panama	other	1
-2022-03-26	Panama	other	3
-2022-03-29	Panama	other	1
-2022-04-04	Panama	other	4
-2022-04-05	Panama	other	1
-2022-04-07	Panama	other	5
-2022-04-08	Panama	other	4
-2022-04-11	Panama	other	5
-2022-04-12	Panama	other	2
-2022-04-13	Panama	other	4
-2022-04-19	Panama	other	1
-2022-04-20	Panama	other	7
-2022-04-21	Panama	other	2
-2022-04-22	Panama	other	1
-2022-04-25	Panama	other	3
-2022-04-27	Panama	other	2
-2022-04-28	Panama	other	2
-2022-04-29	Panama	other	7
-2022-04-30	Panama	other	9
-2022-05-02	Panama	other	1
-2022-05-03	Panama	other	2
-2022-05-04	Panama	other	8
-2022-05-05	Panama	other	5
-2022-05-06	Panama	other	6
-2022-05-07	Panama	other	3
-2022-05-09	Panama	other	3
-2022-05-10	Panama	other	4
-2022-05-11	Panama	other	4
-2022-05-12	Panama	other	8
-2022-05-13	Panama	other	7
-2022-05-14	Panama	other	1
-2022-05-15	Panama	other	2
-2022-05-16	Panama	other	5
-2022-05-17	Panama	other	3
-2022-05-18	Panama	other	6
-2022-05-19	Panama	other	5
-2022-05-20	Panama	other	10
-2022-05-21	Panama	other	4
-2022-05-22	Panama	other	1
-2022-05-23	Panama	other	1
-2022-05-24	Panama	other	1
-2022-05-25	Panama	other	2
-2022-05-27	Panama	other	2
-2022-05-29	Panama	other	3
-2022-05-30	Panama	other	7
-2022-05-31	Panama	other	5
-2022-06-01	Panama	other	6
-2022-06-02	Panama	other	5
-2022-06-03	Panama	other	10
-2022-06-05	Panama	other	6
-2022-06-06	Panama	other	7
-2022-06-07	Panama	other	9
-2022-06-08	Panama	other	14
-2022-06-09	Panama	other	4
-2022-06-10	Panama	other	8
-2022-06-11	Panama	other	1
 2022-03-23	South Africa	Delta	1
 2022-03-25	South Africa	Delta	1
 2022-03-28	South Africa	Delta	1
@@ -1388,16 +998,16 @@ date	location	variant	sequences
 2022-03-20	South Africa	Omicron 21L	5
 2022-03-21	South Africa	Omicron 21L	10
 2022-03-22	South Africa	Omicron 21L	60
-2022-03-23	South Africa	Omicron 21L	54
+2022-03-23	South Africa	Omicron 21L	53
 2022-03-24	South Africa	Omicron 21L	42
 2022-03-25	South Africa	Omicron 21L	46
 2022-03-26	South Africa	Omicron 21L	13
 2022-03-27	South Africa	Omicron 21L	19
-2022-03-28	South Africa	Omicron 21L	23
+2022-03-28	South Africa	Omicron 21L	22
 2022-03-29	South Africa	Omicron 21L	25
 2022-03-30	South Africa	Omicron 21L	42
 2022-03-31	South Africa	Omicron 21L	31
-2022-04-01	South Africa	Omicron 21L	28
+2022-04-01	South Africa	Omicron 21L	27
 2022-04-02	South Africa	Omicron 21L	15
 2022-04-03	South Africa	Omicron 21L	21
 2022-04-04	South Africa	Omicron 21L	39
@@ -1407,7 +1017,7 @@ date	location	variant	sequences
 2022-04-08	South Africa	Omicron 21L	24
 2022-04-09	South Africa	Omicron 21L	14
 2022-04-10	South Africa	Omicron 21L	15
-2022-04-11	South Africa	Omicron 21L	41
+2022-04-11	South Africa	Omicron 21L	40
 2022-04-12	South Africa	Omicron 21L	41
 2022-04-13	South Africa	Omicron 21L	31
 2022-04-14	South Africa	Omicron 21L	19
@@ -1455,12 +1065,12 @@ date	location	variant	sequences
 2022-03-20	South Africa	Omicron 22A	3
 2022-03-21	South Africa	Omicron 22A	1
 2022-03-22	South Africa	Omicron 22A	15
-2022-03-23	South Africa	Omicron 22A	10
+2022-03-23	South Africa	Omicron 22A	11
 2022-03-24	South Africa	Omicron 22A	19
 2022-03-25	South Africa	Omicron 22A	20
 2022-03-26	South Africa	Omicron 22A	5
 2022-03-27	South Africa	Omicron 22A	6
-2022-03-28	South Africa	Omicron 22A	17
+2022-03-28	South Africa	Omicron 22A	18
 2022-03-29	South Africa	Omicron 22A	13
 2022-03-30	South Africa	Omicron 22A	28
 2022-03-31	South Africa	Omicron 22A	25
@@ -1490,7 +1100,7 @@ date	location	variant	sequences
 2022-04-24	South Africa	Omicron 22A	19
 2022-04-25	South Africa	Omicron 22A	120
 2022-04-26	South Africa	Omicron 22A	138
-2022-04-27	South Africa	Omicron 22A	28
+2022-04-27	South Africa	Omicron 22A	29
 2022-04-28	South Africa	Omicron 22A	136
 2022-04-29	South Africa	Omicron 22A	85
 2022-04-30	South Africa	Omicron 22A	54
@@ -1525,7 +1135,7 @@ date	location	variant	sequences
 2022-05-29	South Africa	Omicron 22A	11
 2022-05-30	South Africa	Omicron 22A	34
 2022-05-31	South Africa	Omicron 22A	20
-2022-06-01	South Africa	Omicron 22A	20
+2022-06-01	South Africa	Omicron 22A	19
 2022-06-02	South Africa	Omicron 22A	14
 2022-06-03	South Africa	Omicron 22A	18
 2022-06-04	South Africa	Omicron 22A	7
@@ -1554,7 +1164,7 @@ date	location	variant	sequences
 2022-04-07	South Africa	Omicron 22B	18
 2022-04-08	South Africa	Omicron 22B	18
 2022-04-09	South Africa	Omicron 22B	2
-2022-04-11	South Africa	Omicron 22B	13
+2022-04-11	South Africa	Omicron 22B	14
 2022-04-12	South Africa	Omicron 22B	11
 2022-04-13	South Africa	Omicron 22B	3
 2022-04-14	South Africa	Omicron 22B	7
@@ -1605,7 +1215,7 @@ date	location	variant	sequences
 2022-05-29	South Africa	Omicron 22B	1
 2022-05-30	South Africa	Omicron 22B	12
 2022-05-31	South Africa	Omicron 22B	9
-2022-06-01	South Africa	Omicron 22B	1
+2022-06-01	South Africa	Omicron 22B	2
 2022-06-02	South Africa	Omicron 22B	2
 2022-06-03	South Africa	Omicron 22B	7
 2022-06-04	South Africa	Omicron 22B	6
@@ -1627,6 +1237,7 @@ date	location	variant	sequences
 2022-03-24	South Africa	other	2
 2022-03-25	South Africa	other	1
 2022-03-28	South Africa	other	1
+2022-04-01	South Africa	other	1
 2022-04-07	South Africa	other	1
 2022-04-09	South Africa	other	1
 2022-04-12	South Africa	other	2
@@ -1767,10 +1378,10 @@ date	location	variant	sequences
 2022-05-30	USA	Delta	1
 2022-06-02	USA	Delta	2
 2022-03-20	USA	Omicron 21K	724
-2022-03-21	USA	Omicron 21K	1410
+2022-03-21	USA	Omicron 21K	1412
 2022-03-22	USA	Omicron 21K	1099
-2022-03-23	USA	Omicron 21K	998
-2022-03-24	USA	Omicron 21K	938
+2022-03-23	USA	Omicron 21K	1001
+2022-03-24	USA	Omicron 21K	939
 2022-03-25	USA	Omicron 21K	746
 2022-03-26	USA	Omicron 21K	532
 2022-03-27	USA	Omicron 21K	538
@@ -1780,30 +1391,30 @@ date	location	variant	sequences
 2022-03-31	USA	Omicron 21K	598
 2022-04-01	USA	Omicron 21K	547
 2022-04-02	USA	Omicron 21K	354
-2022-04-03	USA	Omicron 21K	301
+2022-04-03	USA	Omicron 21K	302
 2022-04-04	USA	Omicron 21K	674
-2022-04-05	USA	Omicron 21K	526
-2022-04-06	USA	Omicron 21K	450
+2022-04-05	USA	Omicron 21K	527
+2022-04-06	USA	Omicron 21K	448
 2022-04-07	USA	Omicron 21K	435
-2022-04-08	USA	Omicron 21K	377
+2022-04-08	USA	Omicron 21K	378
 2022-04-09	USA	Omicron 21K	214
 2022-04-10	USA	Omicron 21K	196
 2022-04-11	USA	Omicron 21K	355
-2022-04-12	USA	Omicron 21K	253
+2022-04-12	USA	Omicron 21K	254
 2022-04-13	USA	Omicron 21K	257
-2022-04-14	USA	Omicron 21K	246
+2022-04-14	USA	Omicron 21K	254
 2022-04-15	USA	Omicron 21K	193
 2022-04-16	USA	Omicron 21K	165
 2022-04-17	USA	Omicron 21K	55
-2022-04-18	USA	Omicron 21K	266
-2022-04-19	USA	Omicron 21K	171
-2022-04-20	USA	Omicron 21K	157
+2022-04-18	USA	Omicron 21K	268
+2022-04-19	USA	Omicron 21K	172
+2022-04-20	USA	Omicron 21K	158
 2022-04-21	USA	Omicron 21K	162
 2022-04-22	USA	Omicron 21K	136
 2022-04-23	USA	Omicron 21K	96
 2022-04-24	USA	Omicron 21K	73
 2022-04-25	USA	Omicron 21K	108
-2022-04-26	USA	Omicron 21K	74
+2022-04-26	USA	Omicron 21K	75
 2022-04-27	USA	Omicron 21K	62
 2022-04-28	USA	Omicron 21K	40
 2022-04-29	USA	Omicron 21K	53
@@ -1853,93 +1464,93 @@ date	location	variant	sequences
 2022-06-16	USA	Omicron 21K	1
 2022-06-17	USA	Omicron 21K	3
 2022-03-20	USA	Omicron 21L	1054
-2022-03-21	USA	Omicron 21L	2115
-2022-03-22	USA	Omicron 21L	1934
+2022-03-21	USA	Omicron 21L	2114
+2022-03-22	USA	Omicron 21L	1932
 2022-03-23	USA	Omicron 21L	2064
 2022-03-24	USA	Omicron 21L	1828
-2022-03-25	USA	Omicron 21L	1800
+2022-03-25	USA	Omicron 21L	1801
 2022-03-26	USA	Omicron 21L	1530
 2022-03-27	USA	Omicron 21L	1537
-2022-03-28	USA	Omicron 21L	2715
-2022-03-29	USA	Omicron 21L	2435
-2022-03-30	USA	Omicron 21L	2672
-2022-03-31	USA	Omicron 21L	2419
-2022-04-01	USA	Omicron 21L	2434
+2022-03-28	USA	Omicron 21L	2716
+2022-03-29	USA	Omicron 21L	2436
+2022-03-30	USA	Omicron 21L	2669
+2022-03-31	USA	Omicron 21L	2417
+2022-04-01	USA	Omicron 21L	2433
 2022-04-02	USA	Omicron 21L	1836
-2022-04-03	USA	Omicron 21L	1782
+2022-04-03	USA	Omicron 21L	1780
 2022-04-04	USA	Omicron 21L	3966
-2022-04-05	USA	Omicron 21L	3420
-2022-04-06	USA	Omicron 21L	3219
-2022-04-07	USA	Omicron 21L	3384
-2022-04-08	USA	Omicron 21L	3418
+2022-04-05	USA	Omicron 21L	3424
+2022-04-06	USA	Omicron 21L	3221
+2022-04-07	USA	Omicron 21L	3390
+2022-04-08	USA	Omicron 21L	3417
 2022-04-09	USA	Omicron 21L	2068
-2022-04-10	USA	Omicron 21L	2091
-2022-04-11	USA	Omicron 21L	4215
-2022-04-12	USA	Omicron 21L	3192
-2022-04-13	USA	Omicron 21L	3013
-2022-04-14	USA	Omicron 21L	3029
-2022-04-15	USA	Omicron 21L	3143
+2022-04-10	USA	Omicron 21L	2087
+2022-04-11	USA	Omicron 21L	4219
+2022-04-12	USA	Omicron 21L	3187
+2022-04-13	USA	Omicron 21L	3014
+2022-04-14	USA	Omicron 21L	3089
+2022-04-15	USA	Omicron 21L	3141
 2022-04-16	USA	Omicron 21L	2359
 2022-04-17	USA	Omicron 21L	1107
-2022-04-18	USA	Omicron 21L	4097
-2022-04-19	USA	Omicron 21L	3379
-2022-04-20	USA	Omicron 21L	3264
-2022-04-21	USA	Omicron 21L	3028
-2022-04-22	USA	Omicron 21L	3157
-2022-04-23	USA	Omicron 21L	2153
-2022-04-24	USA	Omicron 21L	2238
-2022-04-25	USA	Omicron 21L	3868
-2022-04-26	USA	Omicron 21L	3317
-2022-04-27	USA	Omicron 21L	2949
-2022-04-28	USA	Omicron 21L	2524
-2022-04-29	USA	Omicron 21L	2625
-2022-04-30	USA	Omicron 21L	2114
-2022-05-01	USA	Omicron 21L	1839
-2022-05-02	USA	Omicron 21L	3584
-2022-05-03	USA	Omicron 21L	3066
-2022-05-04	USA	Omicron 21L	2905
-2022-05-05	USA	Omicron 21L	2900
-2022-05-06	USA	Omicron 21L	2702
-2022-05-07	USA	Omicron 21L	2080
-2022-05-08	USA	Omicron 21L	1788
-2022-05-09	USA	Omicron 21L	3847
-2022-05-10	USA	Omicron 21L	2934
-2022-05-11	USA	Omicron 21L	2742
-2022-05-12	USA	Omicron 21L	2472
-2022-05-13	USA	Omicron 21L	2247
-2022-05-14	USA	Omicron 21L	1833
-2022-05-15	USA	Omicron 21L	1470
-2022-05-16	USA	Omicron 21L	2838
-2022-05-17	USA	Omicron 21L	2365
-2022-05-18	USA	Omicron 21L	2290
-2022-05-19	USA	Omicron 21L	1876
-2022-05-20	USA	Omicron 21L	1777
-2022-05-21	USA	Omicron 21L	1387
-2022-05-22	USA	Omicron 21L	1323
-2022-05-23	USA	Omicron 21L	2182
-2022-05-24	USA	Omicron 21L	2044
-2022-05-25	USA	Omicron 21L	1762
+2022-04-18	USA	Omicron 21L	4088
+2022-04-19	USA	Omicron 21L	3376
+2022-04-20	USA	Omicron 21L	3259
+2022-04-21	USA	Omicron 21L	3022
+2022-04-22	USA	Omicron 21L	3152
+2022-04-23	USA	Omicron 21L	2144
+2022-04-24	USA	Omicron 21L	2232
+2022-04-25	USA	Omicron 21L	3865
+2022-04-26	USA	Omicron 21L	3304
+2022-04-27	USA	Omicron 21L	2941
+2022-04-28	USA	Omicron 21L	2515
+2022-04-29	USA	Omicron 21L	2612
+2022-04-30	USA	Omicron 21L	2112
+2022-05-01	USA	Omicron 21L	1830
+2022-05-02	USA	Omicron 21L	3569
+2022-05-03	USA	Omicron 21L	3055
+2022-05-04	USA	Omicron 21L	2900
+2022-05-05	USA	Omicron 21L	2893
+2022-05-06	USA	Omicron 21L	2694
+2022-05-07	USA	Omicron 21L	2076
+2022-05-08	USA	Omicron 21L	1778
+2022-05-09	USA	Omicron 21L	3834
+2022-05-10	USA	Omicron 21L	2938
+2022-05-11	USA	Omicron 21L	2738
+2022-05-12	USA	Omicron 21L	2462
+2022-05-13	USA	Omicron 21L	2245
+2022-05-14	USA	Omicron 21L	1830
+2022-05-15	USA	Omicron 21L	1458
+2022-05-16	USA	Omicron 21L	2831
+2022-05-17	USA	Omicron 21L	2350
+2022-05-18	USA	Omicron 21L	2276
+2022-05-19	USA	Omicron 21L	1871
+2022-05-20	USA	Omicron 21L	1772
+2022-05-21	USA	Omicron 21L	1382
+2022-05-22	USA	Omicron 21L	1319
+2022-05-23	USA	Omicron 21L	2174
+2022-05-24	USA	Omicron 21L	2043
+2022-05-25	USA	Omicron 21L	1765
 2022-05-26	USA	Omicron 21L	1382
-2022-05-27	USA	Omicron 21L	1416
-2022-05-28	USA	Omicron 21L	968
-2022-05-29	USA	Omicron 21L	1001
-2022-05-30	USA	Omicron 21L	451
-2022-05-31	USA	Omicron 21L	1858
-2022-06-01	USA	Omicron 21L	1104
-2022-06-02	USA	Omicron 21L	1079
-2022-06-03	USA	Omicron 21L	998
-2022-06-04	USA	Omicron 21L	628
+2022-05-27	USA	Omicron 21L	1407
+2022-05-28	USA	Omicron 21L	965
+2022-05-29	USA	Omicron 21L	997
+2022-05-30	USA	Omicron 21L	448
+2022-05-31	USA	Omicron 21L	1856
+2022-06-01	USA	Omicron 21L	1103
+2022-06-02	USA	Omicron 21L	1081
+2022-06-03	USA	Omicron 21L	991
+2022-06-04	USA	Omicron 21L	627
 2022-06-05	USA	Omicron 21L	637
-2022-06-06	USA	Omicron 21L	1139
-2022-06-07	USA	Omicron 21L	959
-2022-06-08	USA	Omicron 21L	801
-2022-06-09	USA	Omicron 21L	577
-2022-06-10	USA	Omicron 21L	486
-2022-06-11	USA	Omicron 21L	319
+2022-06-06	USA	Omicron 21L	1141
+2022-06-07	USA	Omicron 21L	956
+2022-06-08	USA	Omicron 21L	798
+2022-06-09	USA	Omicron 21L	572
+2022-06-10	USA	Omicron 21L	484
+2022-06-11	USA	Omicron 21L	318
 2022-06-12	USA	Omicron 21L	254
-2022-06-13	USA	Omicron 21L	425
+2022-06-13	USA	Omicron 21L	426
 2022-06-14	USA	Omicron 21L	253
-2022-06-15	USA	Omicron 21L	206
+2022-06-15	USA	Omicron 21L	205
 2022-06-16	USA	Omicron 21L	149
 2022-06-17	USA	Omicron 21L	92
 2022-03-30	USA	Omicron 22A	1
@@ -1971,42 +1582,42 @@ date	location	variant	sequences
 2022-04-30	USA	Omicron 22A	17
 2022-05-01	USA	Omicron 22A	12
 2022-05-02	USA	Omicron 22A	26
-2022-05-03	USA	Omicron 22A	34
+2022-05-03	USA	Omicron 22A	33
 2022-05-04	USA	Omicron 22A	29
 2022-05-05	USA	Omicron 22A	29
 2022-05-06	USA	Omicron 22A	37
 2022-05-07	USA	Omicron 22A	31
 2022-05-08	USA	Omicron 22A	32
-2022-05-09	USA	Omicron 22A	70
+2022-05-09	USA	Omicron 22A	69
 2022-05-10	USA	Omicron 22A	72
-2022-05-11	USA	Omicron 22A	72
-2022-05-12	USA	Omicron 22A	85
+2022-05-11	USA	Omicron 22A	71
+2022-05-12	USA	Omicron 22A	84
 2022-05-13	USA	Omicron 22A	68
-2022-05-14	USA	Omicron 22A	70
+2022-05-14	USA	Omicron 22A	68
 2022-05-15	USA	Omicron 22A	45
-2022-05-16	USA	Omicron 22A	125
+2022-05-16	USA	Omicron 22A	124
 2022-05-17	USA	Omicron 22A	113
 2022-05-18	USA	Omicron 22A	110
 2022-05-19	USA	Omicron 22A	131
 2022-05-20	USA	Omicron 22A	130
 2022-05-21	USA	Omicron 22A	99
 2022-05-22	USA	Omicron 22A	137
-2022-05-23	USA	Omicron 22A	190
-2022-05-24	USA	Omicron 22A	233
-2022-05-25	USA	Omicron 22A	220
-2022-05-26	USA	Omicron 22A	218
+2022-05-23	USA	Omicron 22A	189
+2022-05-24	USA	Omicron 22A	232
+2022-05-25	USA	Omicron 22A	219
+2022-05-26	USA	Omicron 22A	220
 2022-05-27	USA	Omicron 22A	238
 2022-05-28	USA	Omicron 22A	171
-2022-05-29	USA	Omicron 22A	226
+2022-05-29	USA	Omicron 22A	227
 2022-05-30	USA	Omicron 22A	121
-2022-05-31	USA	Omicron 22A	447
-2022-06-01	USA	Omicron 22A	277
+2022-05-31	USA	Omicron 22A	451
+2022-06-01	USA	Omicron 22A	276
 2022-06-02	USA	Omicron 22A	357
-2022-06-03	USA	Omicron 22A	305
-2022-06-04	USA	Omicron 22A	257
-2022-06-05	USA	Omicron 22A	300
-2022-06-06	USA	Omicron 22A	514
-2022-06-07	USA	Omicron 22A	478
+2022-06-03	USA	Omicron 22A	304
+2022-06-04	USA	Omicron 22A	254
+2022-06-05	USA	Omicron 22A	297
+2022-06-06	USA	Omicron 22A	513
+2022-06-07	USA	Omicron 22A	477
 2022-06-08	USA	Omicron 22A	380
 2022-06-09	USA	Omicron 22A	374
 2022-06-10	USA	Omicron 22A	322
@@ -2059,32 +1670,32 @@ date	location	variant	sequences
 2022-05-20	USA	Omicron 22B	147
 2022-05-21	USA	Omicron 22B	136
 2022-05-22	USA	Omicron 22B	168
-2022-05-23	USA	Omicron 22B	273
+2022-05-23	USA	Omicron 22B	271
 2022-05-24	USA	Omicron 22B	304
 2022-05-25	USA	Omicron 22B	276
-2022-05-26	USA	Omicron 22B	277
-2022-05-27	USA	Omicron 22B	312
-2022-05-28	USA	Omicron 22B	224
+2022-05-26	USA	Omicron 22B	276
+2022-05-27	USA	Omicron 22B	313
+2022-05-28	USA	Omicron 22B	221
 2022-05-29	USA	Omicron 22B	325
 2022-05-30	USA	Omicron 22B	141
-2022-05-31	USA	Omicron 22B	703
+2022-05-31	USA	Omicron 22B	707
 2022-06-01	USA	Omicron 22B	529
-2022-06-02	USA	Omicron 22B	526
+2022-06-02	USA	Omicron 22B	528
 2022-06-03	USA	Omicron 22B	529
 2022-06-04	USA	Omicron 22B	432
 2022-06-05	USA	Omicron 22B	472
-2022-06-06	USA	Omicron 22B	954
-2022-06-07	USA	Omicron 22B	927
-2022-06-08	USA	Omicron 22B	918
+2022-06-06	USA	Omicron 22B	963
+2022-06-07	USA	Omicron 22B	924
+2022-06-08	USA	Omicron 22B	915
 2022-06-09	USA	Omicron 22B	703
-2022-06-10	USA	Omicron 22B	742
+2022-06-10	USA	Omicron 22B	741
 2022-06-11	USA	Omicron 22B	513
-2022-06-12	USA	Omicron 22B	472
-2022-06-13	USA	Omicron 22B	832
-2022-06-14	USA	Omicron 22B	629
-2022-06-15	USA	Omicron 22B	603
+2022-06-12	USA	Omicron 22B	471
+2022-06-13	USA	Omicron 22B	833
+2022-06-14	USA	Omicron 22B	630
+2022-06-15	USA	Omicron 22B	599
 2022-06-16	USA	Omicron 22B	373
-2022-06-17	USA	Omicron 22B	261
+2022-06-17	USA	Omicron 22B	260
 2022-03-20	USA	Omicron 22C	73
 2022-03-21	USA	Omicron 22C	115
 2022-03-22	USA	Omicron 22C	120
@@ -2094,118 +1705,118 @@ date	location	variant	sequences
 2022-03-26	USA	Omicron 22C	109
 2022-03-27	USA	Omicron 22C	137
 2022-03-28	USA	Omicron 22C	262
-2022-03-29	USA	Omicron 22C	289
-2022-03-30	USA	Omicron 22C	277
-2022-03-31	USA	Omicron 22C	273
+2022-03-29	USA	Omicron 22C	290
+2022-03-30	USA	Omicron 22C	276
+2022-03-31	USA	Omicron 22C	274
 2022-04-01	USA	Omicron 22C	285
 2022-04-02	USA	Omicron 22C	266
 2022-04-03	USA	Omicron 22C	272
-2022-04-04	USA	Omicron 22C	597
-2022-04-05	USA	Omicron 22C	571
+2022-04-04	USA	Omicron 22C	596
+2022-04-05	USA	Omicron 22C	567
 2022-04-06	USA	Omicron 22C	604
-2022-04-07	USA	Omicron 22C	697
+2022-04-07	USA	Omicron 22C	696
 2022-04-08	USA	Omicron 22C	770
-2022-04-09	USA	Omicron 22C	451
+2022-04-09	USA	Omicron 22C	449
 2022-04-10	USA	Omicron 22C	513
 2022-04-11	USA	Omicron 22C	1101
 2022-04-12	USA	Omicron 22C	924
-2022-04-13	USA	Omicron 22C	866
+2022-04-13	USA	Omicron 22C	862
 2022-04-14	USA	Omicron 22C	903
-2022-04-15	USA	Omicron 22C	940
-2022-04-16	USA	Omicron 22C	826
+2022-04-15	USA	Omicron 22C	938
+2022-04-16	USA	Omicron 22C	825
 2022-04-17	USA	Omicron 22C	372
-2022-04-18	USA	Omicron 22C	1493
-2022-04-19	USA	Omicron 22C	1436
-2022-04-20	USA	Omicron 22C	1227
-2022-04-21	USA	Omicron 22C	1179
-2022-04-22	USA	Omicron 22C	1287
-2022-04-23	USA	Omicron 22C	1006
-2022-04-24	USA	Omicron 22C	1153
-2022-04-25	USA	Omicron 22C	1899
-2022-04-26	USA	Omicron 22C	1806
-2022-04-27	USA	Omicron 22C	1677
-2022-04-28	USA	Omicron 22C	1463
-2022-04-29	USA	Omicron 22C	1638
-2022-04-30	USA	Omicron 22C	1340
-2022-05-01	USA	Omicron 22C	1148
-2022-05-02	USA	Omicron 22C	2724
-2022-05-03	USA	Omicron 22C	2571
+2022-04-18	USA	Omicron 22C	1491
+2022-04-19	USA	Omicron 22C	1429
+2022-04-20	USA	Omicron 22C	1225
+2022-04-21	USA	Omicron 22C	1175
+2022-04-22	USA	Omicron 22C	1279
+2022-04-23	USA	Omicron 22C	1003
+2022-04-24	USA	Omicron 22C	1146
+2022-04-25	USA	Omicron 22C	1896
+2022-04-26	USA	Omicron 22C	1800
+2022-04-27	USA	Omicron 22C	1668
+2022-04-28	USA	Omicron 22C	1450
+2022-04-29	USA	Omicron 22C	1618
+2022-04-30	USA	Omicron 22C	1338
+2022-05-01	USA	Omicron 22C	1142
+2022-05-02	USA	Omicron 22C	2715
+2022-05-03	USA	Omicron 22C	2562
 2022-05-04	USA	Omicron 22C	2527
-2022-05-05	USA	Omicron 22C	2538
-2022-05-06	USA	Omicron 22C	2400
-2022-05-07	USA	Omicron 22C	1923
-2022-05-08	USA	Omicron 22C	1781
-2022-05-09	USA	Omicron 22C	3690
-2022-05-10	USA	Omicron 22C	3261
-2022-05-11	USA	Omicron 22C	3033
-2022-05-12	USA	Omicron 22C	3149
+2022-05-05	USA	Omicron 22C	2541
+2022-05-06	USA	Omicron 22C	2389
+2022-05-07	USA	Omicron 22C	1921
+2022-05-08	USA	Omicron 22C	1780
+2022-05-09	USA	Omicron 22C	3670
+2022-05-10	USA	Omicron 22C	3251
+2022-05-11	USA	Omicron 22C	3022
+2022-05-12	USA	Omicron 22C	3132
 2022-05-13	USA	Omicron 22C	3154
-2022-05-14	USA	Omicron 22C	2464
-2022-05-15	USA	Omicron 22C	2163
-2022-05-16	USA	Omicron 22C	3984
-2022-05-17	USA	Omicron 22C	3818
-2022-05-18	USA	Omicron 22C	3556
-2022-05-19	USA	Omicron 22C	2902
+2022-05-14	USA	Omicron 22C	2452
+2022-05-15	USA	Omicron 22C	2157
+2022-05-16	USA	Omicron 22C	3969
+2022-05-17	USA	Omicron 22C	3797
+2022-05-18	USA	Omicron 22C	3536
+2022-05-19	USA	Omicron 22C	2889
 2022-05-20	USA	Omicron 22C	3096
-2022-05-21	USA	Omicron 22C	2799
-2022-05-22	USA	Omicron 22C	2650
-2022-05-23	USA	Omicron 22C	4703
-2022-05-24	USA	Omicron 22C	4401
-2022-05-25	USA	Omicron 22C	3882
-2022-05-26	USA	Omicron 22C	3099
-2022-05-27	USA	Omicron 22C	3388
-2022-05-28	USA	Omicron 22C	2379
-2022-05-29	USA	Omicron 22C	2607
-2022-05-30	USA	Omicron 22C	1166
-2022-05-31	USA	Omicron 22C	5084
-2022-06-01	USA	Omicron 22C	3230
-2022-06-02	USA	Omicron 22C	3011
-2022-06-03	USA	Omicron 22C	2974
-2022-06-04	USA	Omicron 22C	2113
-2022-06-05	USA	Omicron 22C	2164
-2022-06-06	USA	Omicron 22C	3742
-2022-06-07	USA	Omicron 22C	3400
-2022-06-08	USA	Omicron 22C	2666
-2022-06-09	USA	Omicron 22C	2045
-2022-06-10	USA	Omicron 22C	1779
-2022-06-11	USA	Omicron 22C	1208
-2022-06-12	USA	Omicron 22C	982
-2022-06-13	USA	Omicron 22C	1565
-2022-06-14	USA	Omicron 22C	1102
-2022-06-15	USA	Omicron 22C	926
-2022-06-16	USA	Omicron 22C	539
-2022-06-17	USA	Omicron 22C	316
+2022-05-21	USA	Omicron 22C	2789
+2022-05-22	USA	Omicron 22C	2645
+2022-05-23	USA	Omicron 22C	4698
+2022-05-24	USA	Omicron 22C	4412
+2022-05-25	USA	Omicron 22C	3886
+2022-05-26	USA	Omicron 22C	3108
+2022-05-27	USA	Omicron 22C	3389
+2022-05-28	USA	Omicron 22C	2375
+2022-05-29	USA	Omicron 22C	2601
+2022-05-30	USA	Omicron 22C	1169
+2022-05-31	USA	Omicron 22C	5119
+2022-06-01	USA	Omicron 22C	3266
+2022-06-02	USA	Omicron 22C	3034
+2022-06-03	USA	Omicron 22C	2986
+2022-06-04	USA	Omicron 22C	2114
+2022-06-05	USA	Omicron 22C	2166
+2022-06-06	USA	Omicron 22C	3752
+2022-06-07	USA	Omicron 22C	3406
+2022-06-08	USA	Omicron 22C	2669
+2022-06-09	USA	Omicron 22C	2053
+2022-06-10	USA	Omicron 22C	1776
+2022-06-11	USA	Omicron 22C	1206
+2022-06-12	USA	Omicron 22C	980
+2022-06-13	USA	Omicron 22C	1561
+2022-06-14	USA	Omicron 22C	1101
+2022-06-15	USA	Omicron 22C	917
+2022-06-16	USA	Omicron 22C	536
+2022-06-17	USA	Omicron 22C	309
 2022-03-20	USA	other	7
 2022-03-21	USA	other	15
 2022-03-22	USA	other	12
-2022-03-23	USA	other	11
+2022-03-23	USA	other	10
 2022-03-24	USA	other	8
 2022-03-25	USA	other	7
 2022-03-26	USA	other	12
 2022-03-27	USA	other	6
 2022-03-28	USA	other	15
-2022-03-29	USA	other	19
+2022-03-29	USA	other	17
 2022-03-30	USA	other	14
 2022-03-31	USA	other	8
 2022-04-01	USA	other	12
 2022-04-02	USA	other	13
 2022-04-03	USA	other	13
-2022-04-04	USA	other	24
-2022-04-05	USA	other	19
+2022-04-04	USA	other	23
+2022-04-05	USA	other	18
 2022-04-06	USA	other	16
 2022-04-07	USA	other	15
 2022-04-08	USA	other	19
 2022-04-09	USA	other	11
-2022-04-10	USA	other	10
+2022-04-10	USA	other	12
 2022-04-11	USA	other	23
-2022-04-12	USA	other	33
+2022-04-12	USA	other	34
 2022-04-13	USA	other	17
 2022-04-14	USA	other	15
 2022-04-15	USA	other	17
 2022-04-16	USA	other	19
 2022-04-17	USA	other	8
 2022-04-18	USA	other	36
-2022-04-19	USA	other	35
+2022-04-19	USA	other	34
 2022-04-20	USA	other	26
 2022-04-21	USA	other	24
 2022-04-22	USA	other	26
@@ -2213,14 +1824,14 @@ date	location	variant	sequences
 2022-04-24	USA	other	18
 2022-04-25	USA	other	37
 2022-04-26	USA	other	28
-2022-04-27	USA	other	23
+2022-04-27	USA	other	24
 2022-04-28	USA	other	15
 2022-04-29	USA	other	18
 2022-04-30	USA	other	20
 2022-05-01	USA	other	10
 2022-05-02	USA	other	40
 2022-05-03	USA	other	37
-2022-05-04	USA	other	22
+2022-05-04	USA	other	21
 2022-05-05	USA	other	21
 2022-05-06	USA	other	31
 2022-05-07	USA	other	29
@@ -2228,37 +1839,37 @@ date	location	variant	sequences
 2022-05-09	USA	other	44
 2022-05-10	USA	other	26
 2022-05-11	USA	other	36
-2022-05-12	USA	other	41
-2022-05-13	USA	other	22
+2022-05-12	USA	other	38
+2022-05-13	USA	other	20
 2022-05-14	USA	other	18
 2022-05-15	USA	other	31
-2022-05-16	USA	other	53
-2022-05-17	USA	other	50
-2022-05-18	USA	other	41
-2022-05-19	USA	other	32
-2022-05-20	USA	other	30
-2022-05-21	USA	other	25
+2022-05-16	USA	other	52
+2022-05-17	USA	other	49
+2022-05-18	USA	other	40
+2022-05-19	USA	other	33
+2022-05-20	USA	other	29
+2022-05-21	USA	other	26
 2022-05-22	USA	other	29
-2022-05-23	USA	other	41
-2022-05-24	USA	other	44
-2022-05-25	USA	other	31
-2022-05-26	USA	other	25
-2022-05-27	USA	other	32
-2022-05-28	USA	other	17
+2022-05-23	USA	other	39
+2022-05-24	USA	other	42
+2022-05-25	USA	other	32
+2022-05-26	USA	other	26
+2022-05-27	USA	other	31
+2022-05-28	USA	other	19
 2022-05-29	USA	other	45
-2022-05-30	USA	other	13
+2022-05-30	USA	other	12
 2022-05-31	USA	other	25
 2022-06-01	USA	other	20
-2022-06-02	USA	other	24
+2022-06-02	USA	other	25
 2022-06-03	USA	other	11
 2022-06-04	USA	other	10
 2022-06-05	USA	other	20
-2022-06-06	USA	other	21
-2022-06-07	USA	other	17
+2022-06-06	USA	other	22
+2022-06-07	USA	other	16
 2022-06-08	USA	other	18
-2022-06-09	USA	other	13
+2022-06-09	USA	other	11
 2022-06-10	USA	other	11
-2022-06-11	USA	other	8
+2022-06-11	USA	other	7
 2022-06-12	USA	other	6
 2022-06-13	USA	other	8
 2022-06-14	USA	other	14
@@ -2375,7 +1986,7 @@ date	location	variant	sequences
 2022-04-16	United Kingdom	Omicron 21L	2378
 2022-04-17	United Kingdom	Omicron 21L	1977
 2022-04-18	United Kingdom	Omicron 21L	2946
-2022-04-19	United Kingdom	Omicron 21L	4269
+2022-04-19	United Kingdom	Omicron 21L	4270
 2022-04-20	United Kingdom	Omicron 21L	2451
 2022-04-21	United Kingdom	Omicron 21L	2542
 2022-04-22	United Kingdom	Omicron 21L	2054
@@ -2553,7 +2164,7 @@ date	location	variant	sequences
 2022-05-24	United Kingdom	Omicron 22B	65
 2022-05-25	United Kingdom	Omicron 22B	76
 2022-05-26	United Kingdom	Omicron 22B	63
-2022-05-27	United Kingdom	Omicron 22B	75
+2022-05-27	United Kingdom	Omicron 22B	74
 2022-05-28	United Kingdom	Omicron 22B	67
 2022-05-29	United Kingdom	Omicron 22B	78
 2022-05-30	United Kingdom	Omicron 22B	126
@@ -2719,7 +2330,7 @@ date	location	variant	sequences
 2022-05-24	United Kingdom	other	5
 2022-05-25	United Kingdom	other	2
 2022-05-26	United Kingdom	other	4
-2022-05-27	United Kingdom	other	1
+2022-05-27	United Kingdom	other	2
 2022-05-28	United Kingdom	other	3
 2022-05-29	United Kingdom	other	4
 2022-05-30	United Kingdom	other	9

@@ -263,7 +263,7 @@ date	location	variant	sequences
 2021-12-10	Brazil	Omicron 21K	7
 2021-12-11	Brazil	Omicron 21K	5
 2021-12-12	Brazil	Omicron 21K	3
-2021-12-13	Brazil	Omicron 21K	29
+2021-12-13	Brazil	Omicron 21K	30
 2021-12-14	Brazil	Omicron 21K	35
 2021-12-15	Brazil	Omicron 21K	38
 2021-12-16	Brazil	Omicron 21K	32
@@ -283,17 +283,17 @@ date	location	variant	sequences
 2021-12-30	Brazil	Omicron 21K	164
 2021-12-31	Brazil	Omicron 21K	83
 2022-01-01	Brazil	Omicron 21K	49
-2022-01-02	Brazil	Omicron 21K	190
-2022-01-03	Brazil	Omicron 21K	559
+2022-01-02	Brazil	Omicron 21K	192
+2022-01-03	Brazil	Omicron 21K	563
 2022-01-04	Brazil	Omicron 21K	530
 2022-01-05	Brazil	Omicron 21K	426
-2022-01-06	Brazil	Omicron 21K	496
+2022-01-06	Brazil	Omicron 21K	497
 2022-01-07	Brazil	Omicron 21K	414
 2022-01-08	Brazil	Omicron 21K	177
-2022-01-09	Brazil	Omicron 21K	181
+2022-01-09	Brazil	Omicron 21K	182
 2022-01-10	Brazil	Omicron 21K	645
-2022-01-11	Brazil	Omicron 21K	281
-2022-01-12	Brazil	Omicron 21K	206
+2022-01-11	Brazil	Omicron 21K	282
+2022-01-12	Brazil	Omicron 21K	207
 2022-01-13	Brazil	Omicron 21K	73
 2022-01-14	Brazil	Omicron 21K	78
 2022-01-15	Brazil	Omicron 21K	8
@@ -341,200 +341,6 @@ date	location	variant	sequences
 2021-12-29	Brazil	other	3
 2021-12-30	Brazil	other	3
 2022-01-10	Brazil	other	2
-2021-10-21	Costa Rica	Delta	13
-2021-10-22	Costa Rica	Delta	9
-2021-10-23	Costa Rica	Delta	2
-2021-10-24	Costa Rica	Delta	4
-2021-10-25	Costa Rica	Delta	15
-2021-10-26	Costa Rica	Delta	15
-2021-10-27	Costa Rica	Delta	12
-2021-10-28	Costa Rica	Delta	18
-2021-10-29	Costa Rica	Delta	9
-2021-10-30	Costa Rica	Delta	2
-2021-10-31	Costa Rica	Delta	3
-2021-11-01	Costa Rica	Delta	22
-2021-11-02	Costa Rica	Delta	16
-2021-11-03	Costa Rica	Delta	15
-2021-11-04	Costa Rica	Delta	20
-2021-11-05	Costa Rica	Delta	16
-2021-11-06	Costa Rica	Delta	5
-2021-11-07	Costa Rica	Delta	7
-2021-11-08	Costa Rica	Delta	8
-2021-11-09	Costa Rica	Delta	16
-2021-11-10	Costa Rica	Delta	10
-2021-11-11	Costa Rica	Delta	7
-2021-11-12	Costa Rica	Delta	7
-2021-11-13	Costa Rica	Delta	4
-2021-11-14	Costa Rica	Delta	5
-2021-11-15	Costa Rica	Delta	13
-2021-11-16	Costa Rica	Delta	14
-2021-11-17	Costa Rica	Delta	6
-2021-11-18	Costa Rica	Delta	10
-2021-11-19	Costa Rica	Delta	6
-2021-11-20	Costa Rica	Delta	1
-2021-11-21	Costa Rica	Delta	3
-2021-11-22	Costa Rica	Delta	10
-2021-11-23	Costa Rica	Delta	13
-2021-11-24	Costa Rica	Delta	12
-2021-11-25	Costa Rica	Delta	11
-2021-11-26	Costa Rica	Delta	12
-2021-11-27	Costa Rica	Delta	2
-2021-11-28	Costa Rica	Delta	2
-2021-11-29	Costa Rica	Delta	3
-2021-11-30	Costa Rica	Delta	19
-2021-12-01	Costa Rica	Delta	15
-2021-12-02	Costa Rica	Delta	19
-2021-12-03	Costa Rica	Delta	12
-2021-12-04	Costa Rica	Delta	4
-2021-12-05	Costa Rica	Delta	4
-2021-12-06	Costa Rica	Delta	13
-2021-12-07	Costa Rica	Delta	11
-2021-12-08	Costa Rica	Delta	14
-2021-12-09	Costa Rica	Delta	4
-2021-12-10	Costa Rica	Delta	13
-2021-12-11	Costa Rica	Delta	4
-2021-12-12	Costa Rica	Delta	4
-2021-12-13	Costa Rica	Delta	9
-2021-12-14	Costa Rica	Delta	13
-2021-12-15	Costa Rica	Delta	5
-2021-12-16	Costa Rica	Delta	8
-2021-12-17	Costa Rica	Delta	7
-2021-12-18	Costa Rica	Delta	3
-2021-12-19	Costa Rica	Delta	3
-2021-12-20	Costa Rica	Delta	4
-2021-12-21	Costa Rica	Delta	12
-2021-12-22	Costa Rica	Delta	3
-2021-12-23	Costa Rica	Delta	2
-2021-12-24	Costa Rica	Delta	1
-2021-12-25	Costa Rica	Delta	1
-2021-12-27	Costa Rica	Delta	1
-2021-12-28	Costa Rica	Delta	1
-2021-12-29	Costa Rica	Delta	2
-2021-12-30	Costa Rica	Delta	1
-2021-12-31	Costa Rica	Delta	4
-2022-01-01	Costa Rica	Delta	3
-2022-01-02	Costa Rica	Delta	2
-2022-01-03	Costa Rica	Delta	3
-2022-01-04	Costa Rica	Delta	2
-2022-01-05	Costa Rica	Delta	1
-2022-01-06	Costa Rica	Delta	1
-2021-12-10	Costa Rica	Omicron 21K	1
-2021-12-16	Costa Rica	Omicron 21K	7
-2021-12-17	Costa Rica	Omicron 21K	4
-2021-12-18	Costa Rica	Omicron 21K	5
-2021-12-19	Costa Rica	Omicron 21K	8
-2021-12-20	Costa Rica	Omicron 21K	8
-2021-12-21	Costa Rica	Omicron 21K	13
-2021-12-22	Costa Rica	Omicron 21K	25
-2021-12-23	Costa Rica	Omicron 21K	11
-2021-12-24	Costa Rica	Omicron 21K	5
-2021-12-25	Costa Rica	Omicron 21K	2
-2021-12-26	Costa Rica	Omicron 21K	2
-2021-12-27	Costa Rica	Omicron 21K	15
-2021-12-28	Costa Rica	Omicron 21K	19
-2021-12-29	Costa Rica	Omicron 21K	19
-2021-12-30	Costa Rica	Omicron 21K	23
-2021-12-31	Costa Rica	Omicron 21K	14
-2022-01-01	Costa Rica	Omicron 21K	11
-2022-01-02	Costa Rica	Omicron 21K	12
-2022-01-03	Costa Rica	Omicron 21K	23
-2022-01-04	Costa Rica	Omicron 21K	23
-2022-01-05	Costa Rica	Omicron 21K	20
-2022-01-06	Costa Rica	Omicron 21K	15
-2022-01-07	Costa Rica	Omicron 21K	6
-2022-01-10	Costa Rica	Omicron 21K	5
-2022-01-11	Costa Rica	Omicron 21K	11
-2022-01-12	Costa Rica	Omicron 21K	14
-2022-01-13	Costa Rica	Omicron 21K	5
-2021-10-31	Costa Rica	other	1
-2021-10-21	Egypt	Delta	12
-2021-10-22	Egypt	Delta	10
-2021-10-23	Egypt	Delta	11
-2021-10-25	Egypt	Delta	5
-2021-10-28	Egypt	Delta	2
-2021-11-01	Egypt	Delta	1
-2021-11-02	Egypt	Delta	3
-2021-11-04	Egypt	Delta	4
-2021-11-07	Egypt	Delta	3
-2021-11-09	Egypt	Delta	3
-2021-11-11	Egypt	Delta	4
-2021-11-12	Egypt	Delta	7
-2021-11-13	Egypt	Delta	2
-2021-11-14	Egypt	Delta	2
-2021-11-15	Egypt	Delta	3
-2021-11-16	Egypt	Delta	2
-2021-11-17	Egypt	Delta	3
-2021-11-18	Egypt	Delta	2
-2021-11-19	Egypt	Delta	1
-2021-11-20	Egypt	Delta	2
-2021-11-24	Egypt	Delta	1
-2021-11-25	Egypt	Delta	2
-2021-11-28	Egypt	Delta	5
-2021-11-30	Egypt	Delta	1
-2021-12-01	Egypt	Delta	26
-2021-12-02	Egypt	Delta	9
-2021-12-03	Egypt	Delta	5
-2021-12-04	Egypt	Delta	16
-2021-12-05	Egypt	Delta	13
-2021-12-06	Egypt	Delta	6
-2021-12-07	Egypt	Delta	2
-2021-12-08	Egypt	Delta	9
-2021-12-09	Egypt	Delta	2
-2021-12-10	Egypt	Delta	10
-2021-12-11	Egypt	Delta	6
-2021-12-12	Egypt	Delta	7
-2021-12-13	Egypt	Delta	5
-2021-12-14	Egypt	Delta	14
-2021-12-15	Egypt	Delta	14
-2021-12-16	Egypt	Delta	5
-2021-12-17	Egypt	Delta	13
-2021-12-18	Egypt	Delta	5
-2021-12-19	Egypt	Delta	15
-2021-12-20	Egypt	Delta	1
-2021-12-23	Egypt	Delta	4
-2021-12-24	Egypt	Delta	1
-2021-12-27	Egypt	Delta	4
-2021-12-28	Egypt	Delta	8
-2021-12-29	Egypt	Delta	10
-2021-12-30	Egypt	Delta	4
-2021-12-31	Egypt	Delta	48
-2022-01-01	Egypt	Delta	6
-2022-01-02	Egypt	Delta	26
-2022-01-04	Egypt	Delta	1
-2022-01-05	Egypt	Delta	1
-2022-01-06	Egypt	Delta	1
-2022-01-07	Egypt	Delta	4
-2022-01-08	Egypt	Delta	6
-2021-11-08	Egypt	Omicron 21K	1
-2021-12-01	Egypt	Omicron 21K	6
-2021-12-03	Egypt	Omicron 21K	1
-2021-12-04	Egypt	Omicron 21K	3
-2021-12-05	Egypt	Omicron 21K	2
-2021-12-06	Egypt	Omicron 21K	5
-2021-12-07	Egypt	Omicron 21K	2
-2021-12-09	Egypt	Omicron 21K	3
-2021-12-12	Egypt	Omicron 21K	1
-2021-12-13	Egypt	Omicron 21K	6
-2021-12-14	Egypt	Omicron 21K	1
-2021-12-23	Egypt	Omicron 21K	1
-2021-12-27	Egypt	Omicron 21K	1
-2021-12-28	Egypt	Omicron 21K	1
-2021-12-31	Egypt	Omicron 21K	1
-2022-01-02	Egypt	Omicron 21K	1
-2022-01-03	Egypt	Omicron 21K	1
-2021-11-13	Egypt	other	1
-2021-11-30	Egypt	other	1
-2021-12-01	Egypt	other	1
-2021-12-04	Egypt	other	4
-2021-12-05	Egypt	other	1
-2021-12-06	Egypt	other	1
-2021-12-08	Egypt	other	1
-2021-12-10	Egypt	other	2
-2021-12-12	Egypt	other	6
-2021-12-13	Egypt	other	5
-2021-12-15	Egypt	other	2
-2021-12-17	Egypt	other	4
-2021-12-28	Egypt	other	1
 2021-10-21	Japan	Delta	31
 2021-10-22	Japan	Delta	39
 2021-10-23	Japan	Delta	23
@@ -612,7 +418,7 @@ date	location	variant	sequences
 2022-01-03	Japan	Delta	58
 2022-01-04	Japan	Delta	107
 2022-01-05	Japan	Delta	113
-2022-01-06	Japan	Delta	96
+2022-01-06	Japan	Delta	97
 2022-01-07	Japan	Delta	102
 2022-01-08	Japan	Delta	73
 2022-01-10	Japan	Delta	1
@@ -669,7 +475,6 @@ date	location	variant	sequences
 2022-01-07	Japan	Omicron 21L	1
 2022-01-08	Japan	Omicron 21L	1
 2022-01-17	Japan	Omicron 21L	1
-2021-12-13	Panama	Omicron 21K	1
 2021-10-21	South Africa	Delta	23
 2021-10-22	South Africa	Delta	22
 2021-10-23	South Africa	Delta	4
@@ -1000,71 +805,71 @@ date	location	variant	sequences
 2021-11-26	Trinidad and Tobago	other	1
 2021-11-27	Trinidad and Tobago	other	1
 2021-10-21	USA	Delta	8075
-2021-10-22	USA	Delta	8382
-2021-10-23	USA	Delta	5546
+2021-10-22	USA	Delta	8383
+2021-10-23	USA	Delta	5545
 2021-10-24	USA	Delta	4323
 2021-10-25	USA	Delta	10575
 2021-10-26	USA	Delta	8965
 2021-10-27	USA	Delta	8848
 2021-10-28	USA	Delta	8547
 2021-10-29	USA	Delta	7767
-2021-10-30	USA	Delta	5214
+2021-10-30	USA	Delta	5216
 2021-10-31	USA	Delta	4244
-2021-11-01	USA	Delta	8859
-2021-11-02	USA	Delta	10090
-2021-11-03	USA	Delta	10436
-2021-11-04	USA	Delta	9553
-2021-11-05	USA	Delta	8537
-2021-11-06	USA	Delta	5741
-2021-11-07	USA	Delta	5421
-2021-11-08	USA	Delta	10160
-2021-11-09	USA	Delta	10706
-2021-11-10	USA	Delta	11134
-2021-11-11	USA	Delta	8406
-2021-11-12	USA	Delta	9319
-2021-11-13	USA	Delta	6905
+2021-11-01	USA	Delta	8861
+2021-11-02	USA	Delta	10093
+2021-11-03	USA	Delta	10440
+2021-11-04	USA	Delta	9556
+2021-11-05	USA	Delta	8548
+2021-11-06	USA	Delta	5752
+2021-11-07	USA	Delta	5423
+2021-11-08	USA	Delta	10162
+2021-11-09	USA	Delta	10711
+2021-11-10	USA	Delta	11136
+2021-11-11	USA	Delta	8411
+2021-11-12	USA	Delta	9320
+2021-11-13	USA	Delta	6907
 2021-11-14	USA	Delta	4516
 2021-11-15	USA	Delta	10119
-2021-11-16	USA	Delta	10686
-2021-11-17	USA	Delta	9916
-2021-11-18	USA	Delta	8783
-2021-11-19	USA	Delta	7503
-2021-11-20	USA	Delta	4850
-2021-11-21	USA	Delta	5218
-2021-11-22	USA	Delta	9391
-2021-11-23	USA	Delta	9150
-2021-11-24	USA	Delta	8184
+2021-11-16	USA	Delta	10687
+2021-11-17	USA	Delta	9923
+2021-11-18	USA	Delta	8791
+2021-11-19	USA	Delta	7508
+2021-11-20	USA	Delta	4852
+2021-11-21	USA	Delta	5221
+2021-11-22	USA	Delta	9394
+2021-11-23	USA	Delta	9161
+2021-11-24	USA	Delta	8185
 2021-11-25	USA	Delta	1244
 2021-11-26	USA	Delta	6724
 2021-11-27	USA	Delta	6549
-2021-11-28	USA	Delta	5832
-2021-11-29	USA	Delta	12802
-2021-11-30	USA	Delta	10596
-2021-12-01	USA	Delta	10829
-2021-12-02	USA	Delta	9441
-2021-12-03	USA	Delta	8709
+2021-11-28	USA	Delta	5833
+2021-11-29	USA	Delta	12806
+2021-11-30	USA	Delta	10599
+2021-12-01	USA	Delta	10830
+2021-12-02	USA	Delta	9442
+2021-12-03	USA	Delta	8711
 2021-12-04	USA	Delta	6482
-2021-12-05	USA	Delta	4369
+2021-12-05	USA	Delta	4370
 2021-12-06	USA	Delta	10856
 2021-12-07	USA	Delta	9668
-2021-12-08	USA	Delta	9773
-2021-12-09	USA	Delta	8209
+2021-12-08	USA	Delta	9776
+2021-12-09	USA	Delta	8211
 2021-12-10	USA	Delta	7487
-2021-12-11	USA	Delta	4978
-2021-12-12	USA	Delta	3392
-2021-12-13	USA	Delta	7722
-2021-12-14	USA	Delta	8166
+2021-12-11	USA	Delta	4979
+2021-12-12	USA	Delta	3396
+2021-12-13	USA	Delta	7772
+2021-12-14	USA	Delta	8169
 2021-12-15	USA	Delta	6992
 2021-12-16	USA	Delta	5953
 2021-12-17	USA	Delta	5795
 2021-12-18	USA	Delta	3023
 2021-12-19	USA	Delta	2110
 2021-12-20	USA	Delta	4116
-2021-12-21	USA	Delta	3867
+2021-12-21	USA	Delta	3868
 2021-12-22	USA	Delta	3228
 2021-12-23	USA	Delta	2199
 2021-12-24	USA	Delta	636
-2021-12-25	USA	Delta	329
+2021-12-25	USA	Delta	330
 2021-12-26	USA	Delta	1202
 2021-12-27	USA	Delta	2025
 2021-12-28	USA	Delta	1579
@@ -1072,49 +877,51 @@ date	location	variant	sequences
 2021-12-30	USA	Delta	1102
 2021-12-31	USA	Delta	320
 2022-01-01	USA	Delta	216
-2022-01-02	USA	Delta	403
+2022-01-02	USA	Delta	404
 2022-01-03	USA	Delta	754
 2022-01-04	USA	Delta	661
-2022-01-05	USA	Delta	397
+2022-01-05	USA	Delta	398
 2022-01-06	USA	Delta	321
 2022-01-07	USA	Delta	233
 2022-01-08	USA	Delta	126
 2022-01-09	USA	Delta	132
 2022-01-10	USA	Delta	211
-2022-01-11	USA	Delta	163
-2022-01-12	USA	Delta	103
+2022-01-11	USA	Delta	164
+2022-01-12	USA	Delta	104
 2022-01-13	USA	Delta	76
 2022-01-14	USA	Delta	64
 2022-01-15	USA	Delta	24
 2022-01-16	USA	Delta	19
 2022-01-17	USA	Delta	25
 2022-01-18	USA	Delta	25
+2021-10-23	USA	Omicron 21K	1
 2021-10-27	USA	Omicron 21K	1
 2021-10-28	USA	Omicron 21K	1
 2021-11-08	USA	Omicron 21K	2
 2021-11-15	USA	Omicron 21K	1
+2021-11-18	USA	Omicron 21K	1
 2021-11-21	USA	Omicron 21K	1
 2021-11-22	USA	Omicron 21K	1
 2021-11-23	USA	Omicron 21K	3
-2021-11-24	USA	Omicron 21K	7
+2021-11-24	USA	Omicron 21K	8
 2021-11-25	USA	Omicron 21K	2
 2021-11-26	USA	Omicron 21K	23
 2021-11-27	USA	Omicron 21K	12
 2021-11-28	USA	Omicron 21K	14
-2021-11-29	USA	Omicron 21K	42
+2021-11-29	USA	Omicron 21K	41
 2021-11-30	USA	Omicron 21K	56
-2021-12-01	USA	Omicron 21K	73
+2021-12-01	USA	Omicron 21K	72
 2021-12-02	USA	Omicron 21K	75
 2021-12-03	USA	Omicron 21K	95
 2021-12-04	USA	Omicron 21K	58
 2021-12-05	USA	Omicron 21K	74
 2021-12-06	USA	Omicron 21K	220
-2021-12-07	USA	Omicron 21K	354
+2021-12-07	USA	Omicron 21K	355
 2021-12-08	USA	Omicron 21K	659
 2021-12-09	USA	Omicron 21K	650
 2021-12-10	USA	Omicron 21K	755
 2021-12-11	USA	Omicron 21K	695
-2021-12-12	USA	Omicron 21K	698
+2021-12-12	USA	Omicron 21K	699
 2021-12-13	USA	Omicron 21K	2079
 2021-12-14	USA	Omicron 21K	3586
 2021-12-15	USA	Omicron 21K	4848
@@ -1129,25 +936,25 @@ date	location	variant	sequences
 2021-12-24	USA	Omicron 21K	2977
 2021-12-25	USA	Omicron 21K	1188
 2021-12-26	USA	Omicron 21K	6159
-2021-12-27	USA	Omicron 21K	13185
-2021-12-28	USA	Omicron 21K	12624
+2021-12-27	USA	Omicron 21K	13187
+2021-12-28	USA	Omicron 21K	12627
 2021-12-29	USA	Omicron 21K	14038
-2021-12-30	USA	Omicron 21K	12577
-2021-12-31	USA	Omicron 21K	4439
-2022-01-01	USA	Omicron 21K	2213
+2021-12-30	USA	Omicron 21K	12578
+2021-12-31	USA	Omicron 21K	4440
+2022-01-01	USA	Omicron 21K	2214
 2022-01-02	USA	Omicron 21K	6931
-2022-01-03	USA	Omicron 21K	14627
-2022-01-04	USA	Omicron 21K	15396
+2022-01-03	USA	Omicron 21K	14628
+2022-01-04	USA	Omicron 21K	15399
 2022-01-05	USA	Omicron 21K	9407
-2022-01-06	USA	Omicron 21K	7218
-2022-01-07	USA	Omicron 21K	6560
-2022-01-08	USA	Omicron 21K	4484
-2022-01-09	USA	Omicron 21K	4600
-2022-01-10	USA	Omicron 21K	8573
-2022-01-11	USA	Omicron 21K	8078
-2022-01-12	USA	Omicron 21K	6185
-2022-01-13	USA	Omicron 21K	4053
-2022-01-14	USA	Omicron 21K	4469
+2022-01-06	USA	Omicron 21K	7219
+2022-01-07	USA	Omicron 21K	6562
+2022-01-08	USA	Omicron 21K	4485
+2022-01-09	USA	Omicron 21K	4601
+2022-01-10	USA	Omicron 21K	8574
+2022-01-11	USA	Omicron 21K	8188
+2022-01-12	USA	Omicron 21K	6226
+2022-01-13	USA	Omicron 21K	4055
+2022-01-14	USA	Omicron 21K	4472
 2022-01-15	USA	Omicron 21K	2642
 2022-01-16	USA	Omicron 21K	2508
 2022-01-17	USA	Omicron 21K	4139
@@ -1169,7 +976,7 @@ date	location	variant	sequences
 2022-01-08	USA	Omicron 21L	10
 2022-01-09	USA	Omicron 21L	5
 2022-01-10	USA	Omicron 21L	14
-2022-01-11	USA	Omicron 21L	15
+2022-01-11	USA	Omicron 21L	17
 2022-01-12	USA	Omicron 21L	14
 2022-01-13	USA	Omicron 21L	7
 2022-01-14	USA	Omicron 21L	18
@@ -1182,7 +989,7 @@ date	location	variant	sequences
 2021-10-23	USA	other	16
 2021-10-24	USA	other	22
 2021-10-25	USA	other	50
-2021-10-26	USA	other	34
+2021-10-26	USA	other	35
 2021-10-27	USA	other	24
 2021-10-28	USA	other	16
 2021-10-29	USA	other	35
@@ -1197,20 +1004,20 @@ date	location	variant	sequences
 2021-11-07	USA	other	26
 2021-11-08	USA	other	60
 2021-11-09	USA	other	48
-2021-11-10	USA	other	60
-2021-11-11	USA	other	65
+2021-11-10	USA	other	58
+2021-11-11	USA	other	64
 2021-11-12	USA	other	48
 2021-11-13	USA	other	64
 2021-11-14	USA	other	63
 2021-11-15	USA	other	79
-2021-11-16	USA	other	126
+2021-11-16	USA	other	125
 2021-11-17	USA	other	106
-2021-11-18	USA	other	96
+2021-11-18	USA	other	97
 2021-11-19	USA	other	66
 2021-11-20	USA	other	38
 2021-11-21	USA	other	34
 2021-11-22	USA	other	47
-2021-11-23	USA	other	31
+2021-11-23	USA	other	32
 2021-11-24	USA	other	12
 2021-11-25	USA	other	1
 2021-11-26	USA	other	20
@@ -1226,7 +1033,7 @@ date	location	variant	sequences
 2021-12-06	USA	other	17
 2021-12-07	USA	other	19
 2021-12-08	USA	other	28
-2021-12-09	USA	other	35
+2021-12-09	USA	other	33
 2021-12-10	USA	other	30
 2021-12-11	USA	other	12
 2021-12-12	USA	other	6
@@ -1238,20 +1045,20 @@ date	location	variant	sequences
 2021-12-18	USA	other	24
 2021-12-19	USA	other	17
 2021-12-20	USA	other	38
-2021-12-21	USA	other	54
+2021-12-21	USA	other	53
 2021-12-22	USA	other	51
 2021-12-23	USA	other	41
 2021-12-24	USA	other	9
 2021-12-25	USA	other	1
 2021-12-26	USA	other	31
-2021-12-27	USA	other	89
-2021-12-28	USA	other	62
+2021-12-27	USA	other	88
+2021-12-28	USA	other	61
 2021-12-29	USA	other	60
 2021-12-30	USA	other	79
 2021-12-31	USA	other	6
 2022-01-01	USA	other	6
-2022-01-02	USA	other	17
-2022-01-03	USA	other	21
+2022-01-02	USA	other	16
+2022-01-03	USA	other	20
 2022-01-04	USA	other	20
 2022-01-05	USA	other	7
 2022-01-06	USA	other	16
@@ -1269,63 +1076,63 @@ date	location	variant	sequences
 2021-10-21	United Kingdom	Delta	5365
 2021-10-22	United Kingdom	Delta	5068
 2021-10-23	United Kingdom	Delta	6057
-2021-10-24	United Kingdom	Delta	5604
-2021-10-25	United Kingdom	Delta	6402
-2021-10-26	United Kingdom	Delta	6213
-2021-10-27	United Kingdom	Delta	6677
-2021-10-28	United Kingdom	Delta	5877
-2021-10-29	United Kingdom	Delta	5202
-2021-10-30	United Kingdom	Delta	6135
-2021-10-31	United Kingdom	Delta	7462
-2021-11-01	United Kingdom	Delta	7616
-2021-11-02	United Kingdom	Delta	5969
-2021-11-03	United Kingdom	Delta	7014
-2021-11-04	United Kingdom	Delta	6382
-2021-11-05	United Kingdom	Delta	6839
-2021-11-06	United Kingdom	Delta	5028
-2021-11-07	United Kingdom	Delta	6262
-2021-11-08	United Kingdom	Delta	9543
+2021-10-24	United Kingdom	Delta	5591
+2021-10-25	United Kingdom	Delta	6398
+2021-10-26	United Kingdom	Delta	6194
+2021-10-27	United Kingdom	Delta	6668
+2021-10-28	United Kingdom	Delta	5863
+2021-10-29	United Kingdom	Delta	5191
+2021-10-30	United Kingdom	Delta	6125
+2021-10-31	United Kingdom	Delta	7458
+2021-11-01	United Kingdom	Delta	7592
+2021-11-02	United Kingdom	Delta	5948
+2021-11-03	United Kingdom	Delta	6999
+2021-11-04	United Kingdom	Delta	6364
+2021-11-05	United Kingdom	Delta	6829
+2021-11-06	United Kingdom	Delta	5018
+2021-11-07	United Kingdom	Delta	6249
+2021-11-08	United Kingdom	Delta	9512
 2021-11-09	United Kingdom	Delta	7282
 2021-11-10	United Kingdom	Delta	7813
-2021-11-11	United Kingdom	Delta	7888
-2021-11-12	United Kingdom	Delta	7311
+2021-11-11	United Kingdom	Delta	7887
+2021-11-12	United Kingdom	Delta	7309
 2021-11-13	United Kingdom	Delta	6268
-2021-11-14	United Kingdom	Delta	5776
-2021-11-15	United Kingdom	Delta	8416
-2021-11-16	United Kingdom	Delta	8285
-2021-11-17	United Kingdom	Delta	8319
-2021-11-18	United Kingdom	Delta	7212
-2021-11-19	United Kingdom	Delta	6736
+2021-11-14	United Kingdom	Delta	5731
+2021-11-15	United Kingdom	Delta	8333
+2021-11-16	United Kingdom	Delta	8223
+2021-11-17	United Kingdom	Delta	8273
+2021-11-18	United Kingdom	Delta	7174
+2021-11-19	United Kingdom	Delta	6709
 2021-11-20	United Kingdom	Delta	7800
-2021-11-21	United Kingdom	Delta	7073
-2021-11-22	United Kingdom	Delta	10196
-2021-11-23	United Kingdom	Delta	8414
-2021-11-24	United Kingdom	Delta	8684
-2021-11-25	United Kingdom	Delta	7808
-2021-11-26	United Kingdom	Delta	9729
-2021-11-27	United Kingdom	Delta	5664
-2021-11-28	United Kingdom	Delta	8234
-2021-11-29	United Kingdom	Delta	12563
-2021-11-30	United Kingdom	Delta	11104
-2021-12-01	United Kingdom	Delta	9174
-2021-12-02	United Kingdom	Delta	8160
-2021-12-03	United Kingdom	Delta	7502
-2021-12-04	United Kingdom	Delta	6461
-2021-12-05	United Kingdom	Delta	7731
-2021-12-06	United Kingdom	Delta	10985
-2021-12-07	United Kingdom	Delta	11373
-2021-12-08	United Kingdom	Delta	9097
-2021-12-09	United Kingdom	Delta	6906
-2021-12-10	United Kingdom	Delta	5872
-2021-12-11	United Kingdom	Delta	4962
-2021-12-12	United Kingdom	Delta	5157
-2021-12-13	United Kingdom	Delta	5802
-2021-12-14	United Kingdom	Delta	4881
-2021-12-15	United Kingdom	Delta	4792
-2021-12-16	United Kingdom	Delta	3823
-2021-12-17	United Kingdom	Delta	2636
-2021-12-18	United Kingdom	Delta	2806
-2021-12-19	United Kingdom	Delta	1896
+2021-11-21	United Kingdom	Delta	7071
+2021-11-22	United Kingdom	Delta	10172
+2021-11-23	United Kingdom	Delta	8389
+2021-11-24	United Kingdom	Delta	8662
+2021-11-25	United Kingdom	Delta	7775
+2021-11-26	United Kingdom	Delta	9716
+2021-11-27	United Kingdom	Delta	5655
+2021-11-28	United Kingdom	Delta	8214
+2021-11-29	United Kingdom	Delta	12537
+2021-11-30	United Kingdom	Delta	11072
+2021-12-01	United Kingdom	Delta	9146
+2021-12-02	United Kingdom	Delta	8144
+2021-12-03	United Kingdom	Delta	7489
+2021-12-04	United Kingdom	Delta	6449
+2021-12-05	United Kingdom	Delta	7728
+2021-12-06	United Kingdom	Delta	10967
+2021-12-07	United Kingdom	Delta	11348
+2021-12-08	United Kingdom	Delta	9080
+2021-12-09	United Kingdom	Delta	6888
+2021-12-10	United Kingdom	Delta	5861
+2021-12-11	United Kingdom	Delta	4956
+2021-12-12	United Kingdom	Delta	5143
+2021-12-13	United Kingdom	Delta	5782
+2021-12-14	United Kingdom	Delta	4859
+2021-12-15	United Kingdom	Delta	4770
+2021-12-16	United Kingdom	Delta	3802
+2021-12-17	United Kingdom	Delta	2624
+2021-12-18	United Kingdom	Delta	2792
+2021-12-19	United Kingdom	Delta	1889
 2021-12-20	United Kingdom	Delta	2116
 2021-12-21	United Kingdom	Delta	1177
 2021-12-22	United Kingdom	Delta	894
@@ -1377,20 +1184,20 @@ date	location	variant	sequences
 2021-12-03	United Kingdom	Omicron 21K	190
 2021-12-04	United Kingdom	Omicron 21K	264
 2021-12-05	United Kingdom	Omicron 21K	325
-2021-12-06	United Kingdom	Omicron 21K	774
-2021-12-07	United Kingdom	Omicron 21K	1106
+2021-12-06	United Kingdom	Omicron 21K	773
+2021-12-07	United Kingdom	Omicron 21K	1101
 2021-12-08	United Kingdom	Omicron 21K	1097
-2021-12-09	United Kingdom	Omicron 21K	1299
-2021-12-10	United Kingdom	Omicron 21K	1987
+2021-12-09	United Kingdom	Omicron 21K	1297
+2021-12-10	United Kingdom	Omicron 21K	1979
 2021-12-11	United Kingdom	Omicron 21K	1633
-2021-12-12	United Kingdom	Omicron 21K	3046
-2021-12-13	United Kingdom	Omicron 21K	4677
-2021-12-14	United Kingdom	Omicron 21K	5747
-2021-12-15	United Kingdom	Omicron 21K	7713
-2021-12-16	United Kingdom	Omicron 21K	5274
-2021-12-17	United Kingdom	Omicron 21K	4863
-2021-12-18	United Kingdom	Omicron 21K	7783
-2021-12-19	United Kingdom	Omicron 21K	5827
+2021-12-12	United Kingdom	Omicron 21K	3043
+2021-12-13	United Kingdom	Omicron 21K	4667
+2021-12-14	United Kingdom	Omicron 21K	5731
+2021-12-15	United Kingdom	Omicron 21K	7697
+2021-12-16	United Kingdom	Omicron 21K	5250
+2021-12-17	United Kingdom	Omicron 21K	4853
+2021-12-18	United Kingdom	Omicron 21K	7765
+2021-12-19	United Kingdom	Omicron 21K	5819
 2021-12-20	United Kingdom	Omicron 21K	7211
 2021-12-21	United Kingdom	Omicron 21K	5269
 2021-12-22	United Kingdom	Omicron 21K	4659
@@ -1420,7 +1227,7 @@ date	location	variant	sequences
 2022-01-15	United Kingdom	Omicron 21K	5485
 2022-01-16	United Kingdom	Omicron 21K	5246
 2022-01-17	United Kingdom	Omicron 21K	8148
-2022-01-18	United Kingdom	Omicron 21K	7984
+2022-01-18	United Kingdom	Omicron 21K	7985
 2021-12-06	United Kingdom	Omicron 21L	1
 2021-12-09	United Kingdom	Omicron 21L	1
 2021-12-25	United Kingdom	Omicron 21L	2
@@ -1478,7 +1285,7 @@ date	location	variant	sequences
 2021-12-08	United Kingdom	other	4
 2021-12-09	United Kingdom	other	7
 2021-12-10	United Kingdom	other	9
-2021-12-11	United Kingdom	other	6
+2021-12-11	United Kingdom	other	5
 2021-12-12	United Kingdom	other	9
 2021-12-13	United Kingdom	other	12
 2021-12-14	United Kingdom	other	24
@@ -1515,7 +1322,7 @@ date	location	variant	sequences
 2022-01-15	United Kingdom	other	5
 2022-01-16	United Kingdom	other	3
 2022-01-17	United Kingdom	other	7
-2022-01-18	United Kingdom	other	10
+2022-01-18	United Kingdom	other	9
 2021-10-21	Vietnam	Delta	14
 2021-10-22	Vietnam	Delta	19
 2021-10-23	Vietnam	Delta	10
