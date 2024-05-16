@@ -1,0 +1,48 @@
+variant	location	freq	date	median_freq_nowcast	median_freq_forecast
+Delta	Trinidad and Tobago	0.75	2022-02-01	0.75	
+Delta	Trinidad and Tobago	0.75	2022-02-02	0.75	
+Delta	Trinidad and Tobago	0.75	2022-02-03	0.75	
+Delta	Trinidad and Tobago	1.0	2022-02-04	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-01	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-02	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-03	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-04	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-05	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-06	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-07	1.0	
+Omicron 21K	Trinidad and Tobago	1.0	2022-02-21	1.0	
+Omicron 21K	Trinidad and Tobago	0.875	2022-02-22	0.875	
+Omicron 21K	Trinidad and Tobago	0.9166666666666666	2022-02-23	0.9166666666666666	
+Omicron 21K	Trinidad and Tobago	0.9375	2022-02-24	0.9375	
+Omicron 21K	Trinidad and Tobago	0.85	2022-02-25	0.85	
+Omicron 21K	Trinidad and Tobago	0.8194444444444445	2022-02-26	0.8194444444444445	
+Omicron 21K	Trinidad and Tobago	0.8194444444444445	2022-02-27	0.8194444444444445	
+Omicron 21K	Trinidad and Tobago	0.8194444444444443	2022-02-28	0.8194444444444443	
+Omicron 21K	Trinidad and Tobago	0.861111111111111	2022-03-01	0.861111111111111	
+Omicron 21K	Trinidad and Tobago	0.7777777777777777	2022-03-02	0.7777777777777777	
+Omicron 21K	Trinidad and Tobago	0.7222222222222222	2022-03-03	0.7222222222222222	
+Omicron 21K	Trinidad and Tobago	0.7666666666666666	2022-03-04	0.7666666666666666	
+Omicron 21K	Trinidad and Tobago	0.7916666666666666	2022-03-05	0.7916666666666666	
+Omicron 21K	Trinidad and Tobago	0.7916666666666666	2022-03-06	0.7916666666666666	
+Omicron 21K	Trinidad and Tobago	0.7222222222222222	2022-03-07	0.7222222222222222	
+Omicron 21K	Trinidad and Tobago	0.5833333333333333	2022-03-08	0.5833333333333333	
+Omicron 21K	Trinidad and Tobago	0.6666666666666666	2022-03-09	0.6666666666666666	
+Omicron 21L	Trinidad and Tobago	0.25	2022-02-22	0.25	
+Omicron 21L	Trinidad and Tobago	0.25	2022-02-23	0.25	
+Omicron 21L	Trinidad and Tobago	0.25	2022-02-24	0.25	
+Omicron 21L	Trinidad and Tobago	0.375	2022-02-25	0.375	
+Omicron 21L	Trinidad and Tobago	0.3611111111111111	2022-02-26	0.3611111111111111	
+Omicron 21L	Trinidad and Tobago	0.3611111111111111	2022-02-27	0.3611111111111111	
+Omicron 21L	Trinidad and Tobago	0.3611111111111111	2022-02-28	0.3611111111111111	
+Omicron 21L	Trinidad and Tobago	0.41666666666666663	2022-03-01	0.41666666666666663	
+Omicron 21L	Trinidad and Tobago	0.4444444444444444	2022-03-02	0.4444444444444444	
+Omicron 21L	Trinidad and Tobago	0.41666666666666663	2022-03-03	0.41666666666666663	
+Omicron 21L	Trinidad and Tobago	0.38888888888888884	2022-03-04	0.38888888888888884	
+Omicron 21L	Trinidad and Tobago	0.41666666666666663	2022-03-05	0.41666666666666663	
+Omicron 21L	Trinidad and Tobago	0.41666666666666663	2022-03-06	0.41666666666666663	
+Omicron 21L	Trinidad and Tobago	0.41666666666666663	2022-03-07	0.41666666666666663	
+Omicron 21L	Trinidad and Tobago	0.41666666666666663	2022-03-08	0.41666666666666663	
+Omicron 21L	Trinidad and Tobago	0.3333333333333333	2022-03-09	0.3333333333333333	
+other	Trinidad and Tobago	0.5	2022-02-01	0.5	
+other	Trinidad and Tobago	0.5	2022-02-02	0.5	
+other	Trinidad and Tobago	0.5	2022-02-03	0.5	

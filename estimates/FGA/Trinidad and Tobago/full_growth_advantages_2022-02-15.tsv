@@ -1,0 +1,4 @@
+location	variant	median_ga	ga_upper_95	ga_lower_95	ga_upper_80	ga_lower_80	ga_upper_50	ga_lower_50
+Trinidad and Tobago	Delta	1.0145713	1.080946	0.94697857	1.0611385	0.9685697	1.0392466	0.9917895
+Trinidad and Tobago	Omicron 21K	1.5211304	1.6248405	1.4289433	1.5855806	1.460856	1.5550193	1.4906467
+Trinidad and Tobago	other	1.0	1.0	1.0	1.0	1.0	1.0	1.0

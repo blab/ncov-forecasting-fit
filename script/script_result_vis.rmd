@@ -86,11 +86,7 @@ error_dataset = read.csv('../errors/model_scores.tsv', sep="\t") %>%
 
 
 
-table(error_dataset$model)
 
-# Read full rank CI error dataset
-error_dataset_fullrank = read.csv('../errors_fullrank/model_scores_output.csv') %>%
-  mutate(model = recode(model, naive = "Naïve")) 
 
 table(error_dataset_fullrank$location)
 #growth advantage dataset per variant
@@ -98,14 +94,13 @@ growthadv_dataset = read.csv("../estimates/ga_output.csv")
 
 #Read qc data
 
-seq_qc <- read.csv("../notebooks/seq_counts_qc.tsv", sep =  "\t")
+seq_qc <- read.csv("../data/seq_counts_qc.tsv", sep =  "\t")
 
 
 
 #seq by submitted date
 
 seq_date = read.csv("../data/seq_counts_delayed.tsv" ,sep = "\t")
-
 
 #schematic figure data
 seqs_first = read.csv("../data/time_stamped/2022-04-01/seq_counts_2022-04-01.tsv", sep = "\t")
@@ -772,9 +767,9 @@ error_dataset %>%
   labs(x = "Days from date of estimation", y = "Mean Absolute Error") +
   scale_x_continuous(breaks = c(-30, -14, 0, 14, 30)) +
     scale_y_continuous(
-    limits = c(0, 0.2), # This sets the limits from 0% to 5%
-    breaks = seq(0, 0.2, by = 0.05), # This sets the breaks at every 1% increment
-    labels = scales::percent(seq(0, 0.2, by = 0.05)) # This sets the labels to show the percentages
+    limits = c(0, 0.3), # This sets the limits from 0% to 5%
+    breaks = seq(0, 0.3, by = 0.05), # This sets the breaks at every 1% increment
+    labels = scales::percent(seq(0, 0.3, by = 0.05)) # This sets the labels to show the percentages
   ) +  # Set y-axis breaks and labels
   theme(axis.title.x = element_text(color = "Black", size = 14),
         axis.title.y = element_text(color = "Black", size = 14),
@@ -788,14 +783,17 @@ error_dataset %>%
         axis.ticks = element_line(),
         strip.text.y = element_text(size = 11),
         plot.title = element_text(family = "Helvetica", size = 12),
-        legend.position = "none",
+        legend.position = "right",
         legend.title = element_text(size = 12)) +
-  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.2,
+  annotate(geom = "rect", xmin = -30, xmax = 0, ymin = 0, ymax = 0.3,
            color = NA, fill = "#bdc3c7", alpha = 0.15) +
   annotate(geom = "text", x = -18, y = 0.15, label = "Nowcast", size = 3, fontface = 4) +
-  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.2,
+  annotate(geom = "rect", xmin = 0, xmax = 30, ymin = 0, ymax = 0.3,
            color = NA, fill = "#2c3e50", alpha = 0.15) +
   annotate(geom = "text", x = 18, y = 0.15, label = "Forecast", size = 3, fontface = 4)  + geom_hline(yintercept = 0.05, linetype = "dashed")
+
+
+
 
 ggsave("figure2-30day.png", plot = error_quant_30, width = 25, height = 20, units = "cm", bg = 'transparent')
 
@@ -1009,13 +1007,15 @@ lags = as_labeller(c("-30" = "-30 Lag", "0" = "0 Lag","30"= "30 Lag"))
 
 
 MAE_fig2_dat = error_dataset %>%
+  filter(model != "Hierarchical-MLR") %>%
   filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam" )) %>%
   filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model)
 
-table(MAE_fig2_dat$location)
+table(error_dataset$model)
 
 mae_quant_data = error_dataset %>%
+  filter(model != "Hierarchical-MLR") %>%
   filter(location %in% c("Australia", "Brazil","Japan","South Africa","Trinidad and Tobago", "United Kingdom","USA", "Vietnam")) %>%
   filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model) %>%
@@ -1242,6 +1242,7 @@ table1 = error_dataset %>%
   filter(location %in% c("Australia", "Brazil","Japan","South Africa","United Kingdom", "Vietnam","USA",  "Trinidad and Tobago")) %>%
   filter(lead %in% c(0, 30, -30)) %>%
   group_by(lead, model, location) %>%
+  filter(model != "Hierarchical-MLR") %>%
   summarise(Median = median(MAE),
             Mean = mean(MAE)) %>%
   mutate_if(is.numeric, round, digits = 3) %>%
@@ -1251,6 +1252,7 @@ table1 = error_dataset %>%
 
 
 model_comp_table = table1 %>%
+
       mutate(lead = paste(lead, "Lead from date of estimation")) %>%
     group_by(lead)  %>%
   gt() %>%
@@ -1284,49 +1286,49 @@ model_comp_table = table1 %>%
 #-30 LEAD
     tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c( Median_GARW , Mean_FGA, Mean_GARW, Mean_MLR, Mean_FGA), 
+            locations = cells_body(columns= c( Median_Piantham, Mean_FGA, Mean_MLR, Mean_Piantham), 
                                    rows = 1)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham, Mean_FGA), 
+            locations = cells_body(columns= c(Median_Piantham, Median_GARW, Mean_MLR), 
                                    rows = 2)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,  Mean_FGA, Mean_GARW, Mean_Piantham, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW, Median_FGA, Median_MLR, Median_GARW, Median_Piantham, Mean_GARW, Mean_Piantham, Mean_MLR), 
                                    rows = 3)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_GARW, Mean_GARW), 
+            locations = cells_body(columns= c(Median_GARW,Median_FGA, Mean_GARW, Mean_FGA), 
                                    rows = 4)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham, Mean_MLR), 
+            locations = cells_body(columns= c(Median_MLR,Median_GARW, Median_FGA, Mean_MLR, Mean_FGA, Mean_GARW), 
                                    rows = 5)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_MLR), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_GARW), 
                                    rows = 6)) %>%
   tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_GARW), 
+            locations = cells_body(columns= c(Median_Piantham,Median_FGA, Median_GARW,Median_MLR, Mean_MLR, Mean_Piantham), 
                                    rows = 7)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
+            locations = cells_body(columns= c(Median_MLR, Mean_MLR), 
                                    rows = 8)) %>%
   
 #0 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW,Mean_GARW ), 
+            locations = cells_body(columns= c(Median_FGA, Median_MLR, Median_Piantham,Mean_FGA), 
                                    rows = 9)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c( Median_GARW,Mean_MLR, Mean_FGA  ), 
+            locations = cells_body(columns= c( Median_FGA,Mean_MLR), 
                                    rows = 10)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_MLR,Median_GARW, Mean_MLR ), 
+            locations = cells_body(columns= c(Median_MLR, Mean_MLR ), 
                                    rows = 11)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
@@ -1338,47 +1340,48 @@ model_comp_table = table1 %>%
                                    rows = 13)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW,Median_FGA, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW,Median_FGA,Median_MLR, Mean_GARW), 
                                    rows = 14)) %>%
     tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
+            locations = cells_body(columns= c(Median_GARW, Mean_MLR), 
                                    rows = 15)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Mean_FGA), 
+            locations = cells_body(columns= c(Median_FGA, Mean_MLR), 
                                    rows = 16)) %>%
 #30 LEAD
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Mean_GARW), 
+            locations = cells_body(columns= c(Median_GARW, Mean_MLR), 
                                    rows = 17)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_Piantham, Mean_FGA), 
+            locations = cells_body(columns= c(Median_Piantham, Mean_Piantham), 
                                    rows = 18)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_MLR, Mean_GARW), 
+            locations = cells_body(columns= c(Median_FGA,Median_MLR,Median_GARW, Mean_GARW), 
                                    rows = 19)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_GARW, Median_MLR, Mean_FGA), 
+            locations = cells_body(columns= c(Median_GARW, Mean_FGA), 
                                    rows = 20)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_FGA, Median_MLR, Mean_MLR), 
+            locations = cells_body(columns= c(Median_GARW, Mean_Piantham), 
                                    rows = 21)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c(Median_MLR, Mean_MLR), 
-                                   rows = 22)) %>%tab_style(style = list(
+            locations = cells_body(columns= c(Median_GARW,Median_FGA, Mean_FGA), 
+                                   rows = 22)) %>%
+  tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c( Median_GARW, Mean_MLR), 
+            locations = cells_body(columns= c( Median_GARW,Median_FGA, Mean_GARW, Mean_MLR), 
                                    rows = 23)) %>%
       tab_style(style = list(
                          cell_text(weight = 'bold')), 
-            locations = cells_body(columns= c( Median_GARW, Mean_GARW), 
+            locations = cells_body(columns= c( Median_FGA, Mean_Piantham), 
                                    rows = 24)) %>%
  gt_theme_guardian()%>%
   tab_options(
@@ -1562,55 +1565,6 @@ full_ga$location
 
 ```
 
-
-
-#Figure 3B: Freq needed to stabilize GA?
-
-```{r}
-
-#Grouping by Pivot_date,
-#GA vs maximum retrospective freq (at the time of interest) (Freq at pivot date)
-Figure3B = select_pres_data %>%
-  group_by(pivot_date, location) %>%
-  filter(lead == -13) %>%
-  filter(variant %in% c("Omicron 22A", "Omicron 22B", "Omicron 22C", "Omicron 22D",
-                        "Omicron 22E", "Omicron 23A")) %>%
-  filter(model == "MLR") %>%
-  ggplot(aes(x = smoothed_freq, y = median_ga, color = variant)) +
-  geom_smooth() +
-  geom_point()+
-  #facet_wrap(~location, scales='free')+
-  theme_minimal() +
-  scale_x_continuous(limits = c(0.001,0.5),
-    trans=logit_trans(),
-                     breaks = c(0.001, 0.01,0.05,0.1,0.25,0.5),
-    labels = c("0.1%","1%", "5%","10%","25%","50%"))+
-   scale_color_manual(values = variant_colorsga)+
-  #ylim(1,2.5)+
-  labs( x = "Variant Frequency at Observation", y= "Median Growth Advantage")+
-  theme(axis.title.x = element_text(color="Black", size=14),
-        axis.title.y = element_text(color="Black", size=14),
-        panel.grid.major = element_line(),
-        axis.line = element_line(colour = "black"),
-        panel.grid.major.y = element_blank(),
-        #panel.grid.minor.y = element_blank(),
-        strip.text.x = element_text(size = 13),
-        legend.text = element_text(size = 12),
-        axis.text.x = element_text(size = 11),
-        axis.text.y = element_text(size = 12),
-        axis.ticks = element_line(), 
-        strip.text.y = element_text(size = 11),
-        plot.title = element_text(family = "Helvetica", size = (12)),
-        legend.position = "none",
-        legend.title = element_blank())
-  
-
-
-
-Figure3B
-
-ggsave("GA&Fred.png", plot = Figure3B, width = 30, height = 20, units = "cm", bg = 'white',  dpi = 300,  scale = 0.85)
-```
 
 
 #Figure 3:Growth advantage modeling and observed frequencies at observation
@@ -2347,24 +2301,6 @@ for (pivot_date in pivot_dates) {
 
 
 
-```{r}
-seq_date %>%
-  mutate(delay = as.Date(date_submitted) - as.Date(date)) %>%
-  mutate(delay = as.integer(delay)) %>%
-  ggplot() +
-  geom_histogram(aes(x = delay, y= ..density..), bins = 70) +
-  facet_wrap(~location) +
-  xlim(0,100)+
-  geom_vline(xintercept = 30)+
-  theme_bw()
-  
-
-
-
-
-
-```
-
 #Variant Selection Pressure with MAE
 
 ***Calculate selective pressure***
@@ -2426,60 +2362,6 @@ select_pres_data2 = get_selective_pres(select_pres_data)
 
 
 
-
-
-```
-
-
-
-```{r}
-
-select_pres_data2 %>% 
-  filter(lead > -14) %>%
-  ggplot()+
-  geom_path(aes(x = MAE_avg, y = selective_pres, group = factor(pivot_date), color = factor(pivot_date)))+
-  geom_smooth(aes(x = MAE_avg, y =selective_pres), method = "glm")+
-  #geom_point(aes(x = selective_pres, y =MAE_avg , group = pivot_date, color= pivot_date))+
-  facet_wrap(~location) +
-  #stat_summary(aes(x = selective_pres, y =MAE_avg , group=pivot_date, color = pivot_date), fun=mean, geom="line") +
-  theme_classic()
-
-
-select_pres_data2 %>%
-  filter(lead > -14 ) %>%
-  ggplot()+
-  geom_point(aes(x = as.Date(date), y =selective_pres , color = location), size = 0.5)+
-  #geom_smooth(aes(x = selective_pres, y =MAE), method = "lm")+
-  facet_wrap(~location) +
-  theme_classic()
-
-
-select_pres_data2 %>%
-  filter(lead > -14) %>%
-  ggplot()+
-  geom_point(aes(x = as.Date(date), y =delta_bar , color = location), size = 0.5)+
-  #geom_smooth(aes(x = selective_pres, y =MAE), method = "lm")+
-  facet_wrap(~location) +
-  theme_classic()
-
-#Clean up and seperate pivot dates
-#Fit a line
-
-select_pres_data2 %>%
-  mutate(
-    date = as.Date(date),
-    pivot_date = as.Date(pivot_date)
-  ) %>%
-  #filter(lead > -14) %>%
-  ggplot(aes(x =  as.Date(date), y = selective_pres))+
-  facet_wrap(~location, scales = "free_y")+
-  geom_path(aes(y = MAE_avg/scale, color =as.factor(location), group = pivot_date),   size = 0.5)+
-  geom_point(aes(y = selective_pres, group =as.Date(pivot_date)), color = "black", size = 0.5, alpha = 0.05)+
-
-  #geom_smooth(formula = MAE_avg~selective_pres , method="lm", se=TRUE,colour="red") +
-  scale_y_continuous(sec.axis = sec_axis(~.*scale, name="MAE"))+
-  bbc_style()+
-  theme(axis.title.y = element_text(color="Black", size=17))
 
 
 ```
@@ -2554,37 +2436,6 @@ range(full_model_data$lead)
 
 
 #Final Model
-
-
-
-
-```{r}
-
-
-test3 = full_test %>%
-  filter(model =="MLR") %>%
-  filter(location =="USA")
-
-reg = lm(log(meanMAE) ~ frac_seq_avail + seq_available + lead +mean_delay + median_delay + selective_pres + frac_seq_avail *  mean_delay, test3)
-
-test3
-step.model <- stepAIC(reg, direction = "both", 
-                      trace = FALSE)
-
-
-summary(step.model) 
-
-residuals(step.model)
-
-
-#update ncovfit
-
-
-
-
-
-```
-
 
 
 #Variable selection
@@ -2695,6 +2546,7 @@ correlation_plot("Japan")
 #median delay 
 med_del_corr = full_model_data %>%
   mutate(median_delay = as.numeric(median_delay)) %>%
+  filter(AE < 0.3) %>%
    #filter(lead==-1) %>%
   #group_by(location, pivot_date) %>%
   #summarise(median_delay = median(median_delay),
@@ -2809,7 +2661,8 @@ pivot_mae = full_model_data %>%
   group_by(location, pivot_date) %>%
   mutate(pivot_date = as.Date(pivot_date)) %>%
   summarise(#seq_collected = median(seq_collected),
-            mean_nowcast_MAE = median(AE)) %>%
+            mean_nowcast_MAE = median(AE),
+            prop_qc_bad= prop_qc_bad) %>%
   ggplot(aes(x = prop_qc_bad, y = mean_nowcast_MAE, group = location, color = location))+
   geom_line()+
   geom_point(size = 2, alpha = 0.5)+
@@ -2931,7 +2784,7 @@ Figure_4b = ggpubr::ggarrange(qc_mae + rremove("ylab"), med_del_corr + rremove("
   theme(plot.margin = margin(1, 0, 0, 0, "cm"))
 
 
-
+library(patchwork)
 Figure_4_full = grid.arrange(patchworkGrob(Figure_4A / Figure_4b), left = "Absolute Error")
 
 
@@ -3377,8 +3230,6 @@ freq_plot
 
 
 
-
-
 ggsave("freq_plot.png", plot = freq_plot, width = 20, height = 20, units = "cm" )
 
 
@@ -3672,8 +3523,15 @@ plot_error_dataset <- function(error_dataset, model_input, country_input) {
 
 
 
-models <- c("Piantham","MLR", "FGA", "GARW")
-countries = "USA"
+models <- c("FGA",'GARW', 'Piantham', 'MLR')
+countries = c('USA',
+ 'United Kingdom',
+ 'Brazil',
+ 'Australia',
+ 'South Africa',
+ 'Japan',
+ 'Trinidad and Tobago',
+ 'Vietnam')
 for (country in countries) {
   plot_list <- list()  # Initialize a list to store plots for this country
   

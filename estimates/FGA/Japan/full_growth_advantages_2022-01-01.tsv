@@ -1,0 +1,4 @@
+location	variant	median_ga	ga_upper_95	ga_lower_95	ga_upper_80	ga_lower_80	ga_upper_50	ga_lower_50
+Japan	Delta	1.181549	1.3893437	0.9853468	1.323862	1.05566	1.2528515	1.1160039
+Japan	Omicron 21K	2.6783118	3.3952832	2.0752344	3.137415	2.2744308	2.9081497	2.4688005
+Japan	other	1.0	1.0	1.0	1.0	1.0	1.0	1.0

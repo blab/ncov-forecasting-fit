@@ -1,0 +1,3 @@
+location	variant	median_ga	ga_upper_95	ga_lower_95	ga_upper_80	ga_lower_80	ga_upper_50	ga_lower_50
+Vietnam	Delta	0.8845941	1.0836618	0.70725703	1.0172292	0.76732254	0.9483913	0.82506
+Vietnam	Omicron 21K	1.6607656	2.0310466	1.3305639	1.9126108	1.4452195	1.7894008	1.5451142
