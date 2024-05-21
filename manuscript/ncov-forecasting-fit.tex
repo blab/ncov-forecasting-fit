@@ -209,7 +209,7 @@ We compare forecasting accuracy across different time lags from $-30$ days back 
 
 We refer to the absolute error $\mathrm{AE}_{t}^{m,d}$ for a given model $m$, data set $d$ and time $t$ as the difference between the retrospective 7-day smoothed frequency and the model predicted frequency (see Methods).
 We calculate median absolute error and mean absolute error across datasets and across time lags to assess the relative performance of the models for the eight countries (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
-Moreover, we perform a direct comparison between pooled hierarchical MLR and MLR across all countries (Fig.~\ref{fig:model_comp_PooledMLR}). 
+Moreover, we perform a direct comparison between pooled hierarchical MLR and MLR across all countries (Fig.~\ref{fig:model_comp_PooledMLR}).
 As expected, we observe decreasing performance across models as lags increase from $-30$ days to $+30$ days.
 For example, median absolute error increases for the MLR model from 0.1--1\% at $-30$ days, to 0.3--1.4\% at 0 days and to 0.4--1.4\% at $+30$ days.
 Similarly, mean absolute error increases for the MLR model from 0.4--2.3\% at $-30$ days, to 2.2--5.7\% at 0 days and to 5.8--9.6\% at $+30$ days.
@@ -286,7 +286,7 @@ We arrive at a similar threshold of 1000 sequences per week for both the UK and 
 
 \subsection*{Comparing country-level and hierarchical short-term forecast models}
 
-Joint modeling of data from multiple countries has been proposed as a way to getting improved estimates of variant growth advantages and improving frequency estimates in low and middle income countries. 
+Joint modeling of data from multiple countries has been proposed as a way to getting improved estimates of variant growth advantages and improving frequency estimates in low and middle income countries.
 Hierarchical or joint forecast models for short-term frequency forecasts typically operate by pooling parameters between `groups` in a model.
 For our application, we pool the relative fitness of variants across countries, so that estimated relative fitnesses are informed by not just the observed relative fitness within a location, but also the relative fitnesses in other locations.
 
@@ -422,7 +422,7 @@ Additionally, we often work with the lead time which is defined as the differenc
 We summarized median absolute error and mean absolute error across multiple analysis datasets in Figure \ref{fig:model_comp_A} and Table \ref{table:model_comp_table}.
 
 Throughout this study, we primarily use the median and mean absolute error to evaluate the accuracy of our point forecasts.
-We select the median absolute error as a measure of central tendency on our forecast errors, reducing the influence of outliers and skewed data distributions due to the contribution of forecasts which tend to diverge rapidly in forecast lead. 
+We select the median absolute error as a measure of central tendency on our forecast errors, reducing the influence of outliers and skewed data distributions due to the contribution of forecasts which tend to diverge rapidly in forecast lead.
 To balance this and account for the effect of outliers and rapidly divergent forecasts, we also use the mean absolute error which is less sensitive to outliers than the mean square error and has units in terms of frequencies directly.
 
 However, these are not the only possible choices for error metrics, and are motivated by our decision to focus primarily on point forecasts of variant frequencies.
@@ -501,7 +501,7 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/Supplementary_Fig_1A.png}
 	\caption{
 		\textbf{Reconstructing available data sets for Australia, Brazil, South Africa, Trinidad and Tobago, the United Kingdom, and Vietnam.}
-		(A) Variant sequence counts categorized by Nextstrain clade at 4 different analysis dates. 
+		(A) Variant sequence counts categorized by Nextstrain clade at 4 different analysis dates.
 	}
 	\label{fig:Supplementary_Fig_1A}
 \end{figure}
