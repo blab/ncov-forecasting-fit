@@ -442,9 +442,9 @@ Estimates were computed for all defined dates of analysis across all countries.
 \paragraph{Assessing coverage for short-term frequency forecasts}
 
 The main results of our analyses rely on mean and median absolute error as metrics, however, there is much to gain by using probabilistic forecasts for variant frequency.
-To this aim, we aim to investigate the coverage of these different methods for forecasting.
+To this aim, we investigate the coverage of these different methods for forecasting variant frequency.
 Though not all models described initially were designed with uncertainty quantification in mind, we develop and fit Bayesian extensions of these models which are fit to the same data sets as before using stochastic variational inference.
-In particular, we estimate the coverage of 95\% posterior latent frequencies (Figure \ref{fig:frequency_coverage}A) and posterior predictive sample frequencies (Figure \ref{fig:frequency_coverage}B) for the model explored in this paper.
+In particular, we estimate the coverage of 95\% posterior latent frequencies (Supp.\ Fig.\ \ref{fig:frequency_coverage}A) and posterior predictive sample frequencies (Supp.\ Fig.\ \ref{fig:frequency_coverage}B) for the model explored in this paper.
 We generate the posterior predictive coverage by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
 We find that the posterior predictive coverage is generally higher and a better fit for the models in question.
 Additionally, we find that the coverage is lower in countries with the highest sequencing intensity like the US and UK, suggesting that there may be over-dispersion in the sequence counts relative to binomial or multinomial sampling.
@@ -464,8 +464,7 @@ The main analyses discussed in this manuscript rely on subseting and filtering S
 However, the clade designations used throughout this manuscript may not have been the same as clade designations at the time the data was available.
 To understand how this affects our evaluation of forecast error, we compare the accuracy of models fit to the sequence counts from metadata at the time and using the available Nextclade version to those fit on the retrospective Nextclade version used in the rest of the analyses in this paper.
 In particular, we focus on the timing of the designation of Omicron 22E in October 2022 and show the accuracy of MLR using the different data sets at different forecast leads.
-We compare the resulting MAE of these analyses between Nextclade versions in supplemental figure (\ref{fig:mae_nextclade_comparison}) and 
-show trajectories from individual countries in supplementary figures (\ref{fig:forecast-comparison-by-nextclade-version-Australia}-\ref{fig:forecast-comparison-by-nextclade-version-Vietnam})
+We compare the resulting MAE of these analyses between Nextclade versions in Supp.\ Figure (\ref{fig:mae_nextclade_comparison}) and show trajectories from individual countries in Supp.\ Figures (\ref{fig:forecast-comparison-by-nextclade-version-Australia}-\ref{fig:forecast-comparison-by-nextclade-version-Vietnam})
 
 \subsection*{Data and code accessibility}
 
@@ -594,8 +593,10 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 	\centering
 	\includegraphics[width=0.9\textwidth=0.01]{supp_figures/coverage_supp_2.png}
 	\caption{
-		\textbf{Coverage for estimates across all countries and models}
-		(A) The proportion of estimates lying within the 95\% confidence intervals (CIs) across lag times (-30,-30)
+		\textbf{Posterior and predictive coverage for estimates across countries and models}
+		(A) The proportion of estimates lying within the 95\% confidence intervals (CIs) of posterior latent frequencies across lag times (-30,-30).
+		(B) The proportion of estimates lying within the 95\% confidence intervals (CIs) of posterior predictive sample frequencies across lag times (-30,-30).
+		We generate the posterior predictive sample frequencies by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
 	}
 	\label{fig:frequency_coverage}
 \end{figure}
@@ -606,9 +607,10 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
 	\centering
 	\includegraphics[width=0.9\textwidth=0.01]{./supp_figures/mean_absolute_error_at_lead_nextclade_version_comparison.png}
 	\caption{
-		\textbf{Comparing the accuracy of short-term forecast models under different versions of Nextclade.}
-        (A-H) Mean absolute error for MLR as a function of days since date of estimation, starting from 30 day hindcasts to 30 days forecasts. 
+		\textbf{Comparing the accuracy of short-term forecast models under retrospective vs real-time clade assignments.}
+        (A-H) Mean absolute error for MLR as a function of days since date of estimation, starting from 30 day hindcasts to 30 days forecasts.
         Intervals shown have width of two standard errors of the mean.
+			  We compare retrospective Nextstrain clade assignments made today (`Current Nextclade') to Nextstrain clade assignments available in Oct 2022 (`Real-time Nextclade`).
         We find that errors are qualitatively similar regardless of Nextclade version with errors being potentially higher for the current Nextclade version.
 	}
 	\label{fig:mae_nextclade_comparison}
@@ -619,8 +621,8 @@ This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a Howard H
         \centering
         \includegraphics[width=0.9\textwidth=0.01]{./supp_figures/forecast-comparison-by-nextclade-version-#1.png}
         \caption{
-            \textbf{Forecasts for #2 using clade designations with different Nextclade versions}
-        Forecasts from MLR fit to data generated using retrospective Nextclade designations (A) and real-time Nextclade clade designations (B).
+            \textbf{Forecasts for #2 using clade designations under retrospective vs real-time clade assignments}
+        Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (`Current Nextclade') (A) and Nextstrain clade assignments available in Oct 2022 (`Real-time Nextclade`) (B).
         }
         \label{fig:forecast-comparison-by-nextclade-version-#1}
     \end{figure}
