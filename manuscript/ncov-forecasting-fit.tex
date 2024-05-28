@@ -271,8 +271,11 @@ We find that good sequence quantity as measured by total sequences available at 
     \label{fig:downscaling}
 \end{figure}
 
-As suggested by these correlations across countries and time points, we expect that as sequencing intensity and timeliness increases, our accuracy in forecasting should also generally increase.
-In order to investigate what number of sequences need to be collected weekly to keep forecast error within acceptable bounds, we subsampled existing sequences from the United Kingdom and Denmark.
+These results show that South Africa with $\sim$16k sequences collected in 2022 and median of 173 sequences available from the previous 30-days yields a mean absolute +30 day forecasting error of 7.0\% for the MLR model (Table~\ref{table:model_comp_table}), which is only slightly greater than the mean absolute error of 6.3\% for the US with $\sim$2.0M sequences collected in 2022 and of 5.8\% for the UK with $\sim$1.2M sequences collected in 2022.
+However, Vietnam with $\sim$6k sequences collected in 2022 and median of 31 sequences available from the previous 30-delays yields a mean absolute forecasting error of 11.6\% and Trinidad and Tobago with $\sim$2.3k sequences collected in 2022 and median of 44 sequences available from the previous 30-delays yields a mean absolute forecasting error of 12.0\%.
+This suggests that genomic surveillance systems with cadence and throughput greater than 50-100 sequences collected in the previous 30 days yield sufficient timely data to permit short-term forecasts.
+
+We follow up on this across-country analysis and subsample existing sequences from the United Kingdom and Denmark to investigate what number of sequences need to be collected weekly to keep forecast error within acceptable bounds.
 For context, we also computed the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:downscaling}A).
 We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error.
 Additionally, we include Denmark due to its large counts of available sequences and to explore the possibility of stochastic effects due to relative population sizes (Denmark has $\sim$9\% the population of the UK).
