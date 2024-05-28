@@ -212,7 +212,7 @@ All four forecasting models perform better than the naive model, with all four m
 We observe a larger decrease in performance as lags increase in terms of mean absolute error compared to median absolute error.
 Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:model_comp_B}C).
 This skewed distribution results in the large observed differences between median and mean summary statistics.
-Thus, models predict frequencies well most of the time, but are occassionally incorrect and the proportion of incorrect predictions increases through time.
+Thus, models predict frequencies well most of the time, but are occasionally incorrect and the proportion of incorrect predictions increases through time.
 
 In addition to calculating median and mean absolute error, we estimate the coverage of 95\% posterior latent frequencies (Supp.\ Fig.\ \ref{fig:frequency_coverage}A) and posterior predictive sample frequencies (Supp.\ Fig.\ \ref{fig:frequency_coverage}B) across models.
 We generate the posterior predictive coverage by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
@@ -286,7 +286,7 @@ We arrive at a similar threshold of 1000 sequences per week for both the UK and 
 
 \subsection*{Comparing country-level and hierarchical short-term forecast models}
 
-In observing poor performance in initial period of variant emergence (Fig.\ \ref{fig:ga_estimates}), as well as poor performance in countries with less intensive genomic surveillane (Fig.\ \ref{fig:vars_of_interest}), we conclude lack of data results in poor fitness estimates and so poor predictive performance.
+In observing poor performance in initial period of variant emergence (Fig.\ \ref{fig:ga_estimates}), as well as poor performance in countries with less intensive genomic surveillance (Fig.\ \ref{fig:vars_of_interest}), we conclude lack of data results in poor fitness estimates and so poor predictive performance.
 Joint modeling of data from multiple countries has been proposed as a way to getting improved estimates of variant growth advantages in general and also specifically improving frequency estimates in low and middle income countries.
 Hierarchical or joint forecast models for short-term frequency forecasts typically operate by pooling parameters between `groups` in a model.
 For our application, we pool the relative fitness of variants across countries, so that estimated relative fitnesses are informed by not just the observed relative fitness within a location, but also the relative fitnesses in other locations.
@@ -327,7 +327,7 @@ All four forecasting models explored here present a largely similar spectrum of 
 % Discussion: With specific discussion of improvement over naive model at -30 day hindcast
 
 \sloppy % keep long URLs below from overflowing
-We find that the Pantham, MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
+We find that the Piantham, MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
 For the MLR model, at $+30$ days the improvement in median absolute error over naive is 1.4--31.0\% and the improvement in mean absolute error is 6.8--26.2\%.
 This result supports the use of MLR models in live dashboards like the CDC Variant Proportions nowcast (\href{https://covid.cdc.gov/covid-data-tracker/\#variant-proportions}{covid.cdc.gov/covid-data-tracker/\#variant-proportions}) and the Nextstrain SARS-CoV-2 Forecasts (\href{https://nextstrain.org/sars-cov-2/forecasts/}{nextstrain.org/sars-cov-2/forecasts/}).
 
@@ -351,7 +351,7 @@ As observed in Susswein et al.\ \cite{susswein2023leveraging}, pooling data acro
 % Discussion: These models fundamentally don't deal with new mutations and thus have limited forecasting horizons
 % Discussion: Future modeling work should seek to expand forecasting horizon by incorporating experimental data or otherwise estimating biological impact of future mutations
 
-Although these models appear largely accurate for short-term forecasts, they may be improved by incorporating underlying biological mechansism.
+Although these models appear largely accurate for short-term forecasts, they may be improved by incorporating underlying biological mechanism.
 In general, the methods discussed here are primarily statistical in nature and do not account for much of the biological or immunological knowledge that we have or could obtain.
 The incorporation of such knowledge could increase the short-term and medium-term capabilities of these models.
 Additionally, these fitness models do not account for future mutations and can only project forward from circulating viral diversity.
