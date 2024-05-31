@@ -16,6 +16,7 @@ gisaid_metadata_filtered.tsv
 
 # Compiled LaTeX output
 ncov-forecasting-fit.pdf
+ncov-forecasting-fit-plos.pdf
 
 # Protect environment variables
 environment*
