@@ -270,7 +270,7 @@ These models were first introduced for the study of seasonal influenza virus \ci
 In modeling emergence and spread of SARS-CoV-2 variant viruses, the use of Multinomial Logistic Regression (MLR) has become commonplace \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}.
 Here, MLR is analogous to a population genetics model of a haploid population in which different variants have a fixed growth advantage and are undergoing Malthusian growth.
 As such, it presents a natural model for describing evolution and spread of SARS-CoV-2 variants.
-Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} and by Piantham et al \cite{piantham2021estimating} incorporate case counts and variant-specific $R_t$, but still can be used to project variant frequencies.
+Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} incorporate case counts and variant-specific $R_t$, but still can be used to project variant frequencies while Piantham et al \cite{piantham2021estimating} does not incorporate them.
 
 % Broad overview of approach
 Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
@@ -554,7 +554,7 @@ To reconstruct available sequence data for a given analysis date, we filtered to
 These sequences were tallied according to their annotated Nextstrain clade to produce sequence count for each country, for each clade and for each day over the period of interest.
 Sequence counts were produced independently for the 8 focal countries Australia, Brazil, Japan, South Africa, Trinidad and Tobago, the United Kingdom, the United States, and Vietnam.
 We repeated this process for a series of analysis dates on the 1st and 15th of each month starting with January 1, 2022 and ending with December 15, 2022 giving a total of 24 analysis data sets for each country.
-Since three models (FGA, GARW and Piantham) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data (\href{https://ourworldindata.org/covid-cases}{ourworldindata.org/covid-cases}).
+Since two models (FGA, GARW) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data (\href{https://ourworldindata.org/covid-cases}{ourworldindata.org/covid-cases}).
 
 \subsection*{Frequency dynamics and transmission advantages}
 
