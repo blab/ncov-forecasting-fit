@@ -1,0 +1,872 @@
+% Template for PLoS
+% Version 3.6 Aug 2022
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended
+% to minimize problems and delays during our production
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% Once your paper is accepted for publication,
+% PLEASE REMOVE ALL TRACKED CHANGES in this file
+% and leave only the final text of your manuscript.
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info or contact us at latex@plos.org.
+%
+%
+% There are no restrictions on package use within the LaTeX files except that no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file.
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission.
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% For inline equations, please be sure to include all portions of an equation in the math environment.  For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+%
+% Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column.
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% When adding superscript or subscripts outside of brackets/braces, please group using {}.  For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2".
+%
+% Do not use \cal for caligraphic font.  Instead, use \mathcal{}
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage[nopatch=eqnum]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+% TODO: replace with thickhline commands above?
+\usepackage{booktabs}
+
+% Inline comments for authors by initials.
+\definecolor{purple}{rgb}{0.459,0.109,0.538}
+\def\jhc#1{\textcolor{red}{[#1]}}
+\def\snc#1{\textcolor{blue}{[#1]}}
+\def\tbc#1{\textcolor{purple}{[#1]}}
+\def\abc#1{\textcolor{orange}{[#1]}}
+
+% Remove comment for double spacing
+\usepackage{setspace}
+\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Fitness models provide accurate short-term forecasts of SARS-CoV-2 variant frequency} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Eslam Abousamra\textsuperscript{1,2,$\dagger$,*},
+Marlin Figgins\textsuperscript{1,3, $\dagger$},
+Trevor Bedford\textsuperscript{1,2,4}
+\\
+\bigskip
+\textbf{1} Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center, Seattle, WA, USA
+\\
+\textbf{2} Department of Epidemiology, University of Washington, Seattle, WA, USA
+\\
+\textbf{3} Department of Applied Mathematics, University of Washington, Seattle, WA, USA
+\\
+\textbf{4} Howard Hughes Medical Institute, Seattle, WA, USA
+\\
+\textbf{$\dagger$} These authors contributed equally to this work.
+\\
+\textbf{*} To whom correspondence should be addressed: eabousam@uw.edu
+
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+%
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+%\Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+%\ddag These authors also contributed equally to this work.
+
+% Current address notes
+% \textcurrency c Insert third current address
+
+% Deceased author note
+%\dag Deceased
+
+% Group/Consortium Author Note
+%\textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+\section*{Abstract}
+Genomic surveillance of pathogen evolution is essential for public health response, treatment strategies, and vaccine development.
+In the context of SARS-COV-2, multiple models have been developed including Multinomial Logistic Regression (MLR) describing variant frequency growth as well as Fixed Growth Advantage (FGA), Growth Advantage Random Walk (GARW) and Piantham parameterizations describing variant $R_t$.
+These models provide estimates of variant fitness and can be used to forecast changes in variant frequency.
+We introduce a framework for evaluating real-time forecasts of variant frequencies, and apply this framework to the evolution of SARS-CoV-2 during 2022 in which multiple new viral variants emerged and rapidly spread through the population.
+We compare models across representative countries with different intensities of genomic surveillance.
+Retrospective assessment of model accuracy highlights that most models of variant frequency perform well and are able to produce reasonable forecasts.
+We find that the simple MLR model provides $\sim$0.6\% median absolute error and $\sim$6\% mean absolute error when forecasting 30 days out for countries with robust genomic surveillance.
+We investigate impacts of sequence quantity and quality across countries on forecast accuracy and conduct systematic downsampling to identify that 1000 sequences per week is fully sufficient for accurate short-term forecasts.
+We conclude that fitness models represent a useful prognostic tool for short-term evolutionary forecasting.
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step.
+% Author Summary not valid for PLOS ONE submissions.
+\section*{Author summary}
+
+Over the course of the COVID-19 pandemic, SARS-CoV-2 evolved into many different genetic variants such as the well known Alpha, Beta, Gamma and Delta variants in early 2021 and the Omicron variant in late 2021.
+These genetic variants could more easily spread from person to person and so outcompeted previous versions of the virus. Even if they aren’t being given Greek letter names, new variants are still arising with recent waves of COVID-19 caused by variants such as XBB and JN.1.
+Predicting which variants will increase in frequency and which variants will decrease in frequency is important for public health, particularly in terms of updating the formulation of the annual COVID-19 vaccine.
+In this paper, we investigate statistical models that use observed frequencies of different variants in the past weeks to estimate the frequency of different variants today and to forecast the frequency of different variants in 30 days time.
+We find that in countries with sufficient amounts and timeliness of genetic sequence data, that models forecast well and can be a useful tool for public health.
+
+\linenumbers
+
+% Use "Eq" instead of "Equation" for equation citations.
+\section*{Introduction}
+
+% Paragraph giving overview of SARS-COV-2 genomic surveillance and spread of variant viruses
+The emergence of acute respiratory virus SARS-CoV-2 causing COVID-19 disease and its subsequent circulating variants severely impacted global health and worldwide economies \cite{onyeaka2021covid19}.
+Due to its rapid evolution, original SARS-CoV-2 strains were replaced by derived, selectively advantageous variant lineages during 2021 \cite{campbell2021increased}, with Omicron, a highly transmissible and immune evasive variant becoming the dominant strain in early 2022 \cite{viana2022rapid}.
+It has become increasingly evident that monitoring the evolution and dissemination of these variants remains crucial with SARS-CoV-2 continuing to evolve beyond Omicron \cite{carabelli2023sarscov2}.
+Forecasting variant dynamics allows us to make informed decisions about vaccines and to predict variant-driven epidemics.
+
+% Paragraph giving overview of previous application of fitness models (flu and SARS-CoV-2)
+Fitness models are a key framework for forecasting changes in variant frequency through time.
+These models were first introduced for the study of seasonal influenza virus \cite{luksza2014predictive, morris2018predictive, huddleston2020integrating} and there have relied on correlates of viral fitness such as mutations to epitope sites on influenza's surface proteins.
+In modeling emergence and spread of SARS-CoV-2 variant viruses, the use of Multinomial Logistic Regression (MLR) has become commonplace \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}.
+Here, MLR is analogous to a population genetics model of a haploid population in which different variants have a fixed growth advantage and are undergoing Malthusian growth.
+As such, it presents a natural model for describing evolution and spread of SARS-CoV-2 variants.
+Additionally, models introduced by Figgins and Bedford \cite{figgins2022sars} and by Piantham et al \cite{piantham2021estimating} incorporate case counts and variant-specific $R_t$, but still can be used to project variant frequencies.
+
+% Broad overview of approach
+Here, we systematically assess the predictive accuracy of fitness models for nowcasts and short-term forecasts of SARS-CoV-2 variant frequencies.
+We focus on variant dynamics during 2022 in which multiple sub-lineages of Omicron including BA.2, BA.5 and BQ.1 spread rapidly throughout the world.
+We compare across several countries including Australia, Brazil, Japan, South Africa, Trinidad and Tobago, the United Kingdom, the United States, and Vietnam to assess genomic surveillance systems with different levels of throughput and timeliness.
+To assess the performance of these models, we used mean and median absolute error (AE) as a metric to compare the predicted frequencies to retrospective truth.
+This metric allowed us to evaluate the accuracy and reliability of the models and to identify those that were most effective in predicting SARS-CoV-2 variant frequency.
+We also examined aspects of country-level genomic surveillance that contribute to errors in these models and explored the role of sequence availability on nowcast and forecast errors through downsampling sequencing efforts.
+
+% Results and Discussion can be combined.
+\section*{Results}
+
+\subsection*{Reconstructing real-time forecasts}
+
+We focus on SARS-CoV-2 sequence data shared to the GISAID EpiCoV database \cite{shu2017gisaid}.
+Each sequence is annotated with both a collection date, as well as a submission date.
+We seek to reconstruct data sets that were actually available on particular `analysis dates', and so we use use submission date to filter to sequences that were available at a specific analysis date.
+We additionally filter to sequences with collection dates up to 90 days before the analysis date.
+We categorize each sequence by Nextstrain clade (21K, 21L, etc\dots) as such clades are generally at a reasonable level of granularity for understanding adaptive dynamics \cite{bloom2023fitness}; there are 7 clades circulating during 2022 vs hundreds of Pango lineages.
+Resulting data sets for representative countries Japan and the USA for analysis dates of Apr 1 2022, Jun 1 2022, Sep 1 2022 and Dec 1 2022 are shown in Figure \ref{fig:Fig1}A, while Supp. Figure \nameref{fig:S1} shows data sets for Australia, Brazil, South Africa, Trinidad and Tobago, the UK, and Vietnam.
+We see consequential backfill in which genome sequences are not immediately available and instead available after a delay due to the necessary bottlenecks of sample acquisition, testing, sequencing, assembly and data deposition.
+Thus, even estimating variant frequencies on the analysis date as a nowcast requires extrapolating from past week's data.
+Different countries with different genomic surveillance systems have different levels of throughput as well as different amounts of delay between sample collection and sequence submission \cite{brito2022global}.
+
+%%% dynamic_forecast_env %%%
+\begin{figure}[tb!]
+	\centering
+	%\includegraphics[width=1.0\textwidth=0.01]{figures/dynamic_est_env.png}
+	\caption{
+		\bf{Reconstructing available data sets and corresponding predictions for Japan and USA.}
+		(A) Variant sequence counts categorized by Nextstrain clade from Japan and United States at 4 different analysis dates.
+		(B) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+	}
+	\label{fig:Fig1}
+\end{figure}
+
+We employ a sliding window approach in which we conduct an analysis twice each month (on the 1st and the 15th) and estimate variant frequencies from $-90$ days to $+30$ days relative to each analysis date.
+We illustrate our frequency predictions using the MLR model showing resulting trajectories for Japan and the US in Figure \ref{fig:Fig1}B and showing trajectories for Australia, Brazil, South Africa, Trinidad and Tobago, the UK, and Vietnam in Supp.\ Figures \nameref{fig:S2}--\nameref{fig:S7}.
+Sometimes we see initial over-shoot or under-shoot of variant growth and decline, but there is general consistency across trajectories.
+Additionally, we retrospectively reconstructed the simple 7-day smoothed frequency across variants and present these trajectories as solid black lines.
+We treat this retrospective trajectory as `truth' and thus deviations from model projections and retrospective truth can be assessed to determine nowcast and short-term forecast accuracy.
+Consistent with less available data, we observe that the model predictions for Japan were more frequently misestimated compared to the United States with particularly large differences for clades 22B (lineage BA.5) and 22E (lineage BQ.1) (Fig.~\ref{fig:Fig1}B).
+
+
+
+\subsection*{Model error comparison}
+
+
+We utilize five models for predicting the frequencies of SARS-CoV-2 variants.
+The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}, which uses only variant-specific sequence counts and has a fixed growth advantage for each variant.
+More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant $R_t$ model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to variant-specific sequence counts.
+The Piantham et al.\ model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific $R_t$, but differs in model details.
+We compare these four models to a naive model to serve as a reference for comparison.
+The naive model is implemented as a 7-day moving average on the retrospective raw frequencies using the most recent seven days for which sequencing data is available.
+We compare forecasting accuracy across different time lags from $-30$ days back from date of analysis as hindcast, to +0 days from date of analysis as nowcast, and $+30$ days forward from date of analysis as forecast.
+
+
+We refer to the absolute error $\mathrm{AE}_{t}^{m,d}$ for a given model $m$, data set $d$ and time $t$ as the difference between the retrospective 7-day smoothed frequency and the model predicted frequency (see Methods).
+We calculate median absolute error and mean absolute error across datasets and across time lags to assess the relative performance of the models for the eight countries (Fig.~\ref{fig:Fig2}, Table~\ref{table:Table1}).
+As expected, we observe decreasing performance across models as lags increase from $-30$ days to $+30$ days.
+For example, median absolute error increases for the MLR model from 0.1--1.4\% at $-30$ days, to 0.3--2.0\% at 0 days and to 0.5--1.9\% at $+30$ days.
+Similarly, mean absolute error increases for the MLR model from 0.4--4.2\% at $-30$ days, to 2.2--8.6\% at 0 days and to 5.8--12.0\% at $+30$ days.
+All four forecasting models perform better than the naive model, with all four models exhibiting similar performance.
+We observe a larger decrease in performance as lags increase in terms of mean absolute error compared to median absolute error.
+Absolute error varies substantially across predictions for individual analysis dates and variants with most predictions having very little error, while a subset of predictions have larger error (Fig.~\ref{fig:Fig3}).
+This skewed distribution results in the large observed differences between median and mean summary statistics.
+Thus, models predict frequencies well most of the time, but are occasionally incorrect and the proportion of incorrect predictions increases through time.
+
+\begin{figure}[h!]
+	\centering
+	%\includegraphics[width=0.75\textwidth]{figures/model_comp_A.png}
+	\caption{\textbf{Absolute error across models, countries and forecast lags.}
+	(A) Median absolute error and (B) mean absolute error across countries, models and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts.
+	For each county / model / lag combination, the median and the mean are summarized across analysis data sets.
+	Panel A uses a log y axis for legibility while panel B uses a natural y axis.
+	}
+	\label{fig:Fig2}
+\end{figure}
+
+%%% model_comp_table %%%
+\begin{table}[h!]
+	\centering
+	\caption{
+		\textbf{Median and mean absolute error across models, countries and forecast lags}
+		Models with the lowest error for each country / lag combination are bolded for clarity.
+	}
+	%\includegraphics[width=1\textwidth]{figures/model_comp_table.png}
+	\label{table:Table1}
+\end{table}
+
+\begin{figure}[tb!]
+	\centering
+	%\includegraphics[width=0.87\textwidth]{figures/model_comp_B.png}
+	\caption{\textbf{Absolute error across models, countries and forecast lags.}
+	Distribution of absolute error on a log scale across models and across forecast lags.
+	Each point represents the absolute error for a data set / country combination.
+	Solid lines show the median of these distributions and dashed lines show the means of these distributions.
+	}
+	\label{fig:Fig3}
+\end{figure}
+
+In addition to calculating median and mean absolute error, we estimate the coverage of 95\% posterior latent frequencies (Supp.\ Fig.\ \nameref{fig:S8}A) and posterior predictive sample frequencies (Supp.\ Fig.\ \nameref{fig:S8}B) across models.
+We generate the posterior predictive coverage by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
+We find that the posterior predictive coverage is generally higher and a better fit for the models in question.
+Additionally, we find that the coverage is lower in countries with the highest sequencing intensity like the US and UK, suggesting that there may be over-dispersion in the sequence counts relative to binomial or multinomial sampling.
+
+In observing heterogeneity in prediction accuracy, we hypothesized that error is largest for emerging variants that present a small window of time to observe dynamics and where sequence count data is often rare.
+We investigate this hypothesis by charting how variant-specific growth advantage estimated in the MLR model varied across analysis dates (Fig.~\ref{fig:Fig4}).
+Generally, we see sharp changes in estimated growth advantage in the first 1-3 weeks when a variant is emerging, but then see less pronounced changes.
+Thus, it often takes a several weeks for the MLR model to `dial in' estimated growth advantage and accuracy will tend to be poorer in early weeks when variant-specific growth advantage is uncertain.
+
+% For figure citations, please use "Fig" instead of "Figure".
+
+% Place figure captions after the first paragraph in which they are cited.
+
+\begin{figure}[tb!]
+	\centering
+    %\includegraphics[width=1.0\textwidth]{figures/ga_estimates.png}
+	\caption{
+		\textbf{Growth advantage of variants across analysis dates.}
+		Growth advantage is estimated via the MLR model and is computed relative to clade 21K (lineage BA.1).
+	}
+	\label{fig:Fig4}
+\end{figure}
+
+
+
+
+
+\subsection*{Genomic surveillance systems and forecast error}
+
+Using the MLR model, we find that different countries have consistently different levels of forecasting error with forecasts in Brazil and South Africa showing more error than forecasts in the UK and the USA, while Trinidad and Tobago and Vietnam show more error than the other six countries (Fig.~\ref{fig:Fig5}A).
+We correlate broad statistics describing both quantity and quality of sequence data available in at different analysis time points and in different genomic surveillance systems to forecasting error (Fig.~\ref{fig:Fig5}B--E).
+Using Pearson correlations we find that poor sequence quality as measured by proportion of available sequences labeled as `bad' by Nextclade quality control \cite{aksamentov2021nextclade} correlates slightly with mean AE (Fig.~\ref{fig:Fig5}B).
+We find that good sequence quantity as measured by total sequences available at analysis has a moderate negative correlation with mean absolute error (Fig.~\ref{fig:Fig5}E).
+
+\begin{figure}[tb!]
+	\centering
+    %\includegraphics[width=0.85\textwidth]{figures/Var_of_interest.png}
+	\caption{
+		\textbf{Sequence quantity and quality influence nowcasts error.}
+    (A) Absolute error at nowcast for the MLR model across countries.
+		Points represent separate data sets at different analysis dates.
+		Median and interquartile range of absolute errors are shown as box-and-whisker plots.
+		(B-E) Correlation of sequence quality and sequence quantity metrics with absolute error.
+		Points represent separate data sets at different analysis dates.
+    Correlation strength and significance are calculated via Pearson correlation and are inset in each panel.
+	}
+	\label{fig:Fig5}
+\end{figure}
+
+These results show that South Africa with $\sim$16k sequences collected in 2022 and median of 173 sequences available from the previous 30-days yields a mean absolute +30 day forecasting error of 7.0\% for the MLR model (Table~\ref{table:Table1}), which is only slightly greater than the mean absolute error of 6.3\% for the US with $\sim$2.0M sequences collected in 2022 and of 5.8\% for the UK with $\sim$1.2M sequences collected in 2022.
+However, Vietnam with $\sim$6k sequences collected in 2022 and median of 31 sequences available from the previous 30-delays yields a mean absolute forecasting error of 11.6\% and Trinidad and Tobago with $\sim$2.3k sequences collected in 2022 and median of 44 sequences available from the previous 30-delays yields a mean absolute forecasting error of 12.0\%.
+This suggests that genomic surveillance systems with cadence and throughput greater than 50-100 sequences collected in the previous 30 days yield sufficient timely data to permit short-term forecasts.
+
+
+We follow up on this across-country analysis and subsample existing sequences from the United Kingdom and Denmark to investigate what number of sequences need to be collected weekly to keep forecast error within acceptable bounds.
+For context, we also computed the mean weekly sequences collected for selected countries globally in 2022 (Fig.~\ref{fig:Fig6}A).
+We select the United Kingdom due to its large counts of available sequences, relatively short submission delay, and low forecast error.
+Additionally, we include Denmark due to its large counts of available sequences and to explore the possibility of stochastic effects due to relative population sizes (Denmark has $\sim$9\% the population of the UK).
+We simulate several downscaled data sets by subsampling the collected sequences at multiple thresholds for number of sequences per week and then fit the MLR model to each of the resulting data sets to see how forecast accuracy varies with sampling intensity.
+In order to properly account for variability in the subsampled data sets, we generate 5 subsamples per threshold, location and analysis date.
+
+
+\begin{figure}[tb!]
+    \centering
+    %\includegraphics[width=1.0\linewidth]{figures/downscaling_sequencing.png}
+    \caption{
+			\textbf{Increasing sequencing intensity reduces forecast error}
+    	(A) Mean sequences collected per week for selected countries in 2022.
+			Intervals are 95\% confidence intervals of the mean.
+			Dashed lines correspond to sampling rates used in (B-E).
+    	(B, C) Mean absolute error as a function of sequences collected per week colored by forecast horizon (-30 days, -15 days, 0 days, +15 days, +30 days) for the United Kingdom and Denmark.
+			The dash line corresponds to 5\% frequency error.
+    	(D, E) Proportion of forecasts within 5\% of retrospective frequency as a function of sequences collected for week for the United Kingdom and Denmark.
+  	}
+    \label{fig:Fig6}
+\end{figure}
+
+
+From this analysis, we find that increasing the number of sequences per week generally decreases the average error (Fig.~\ref{fig:Fig6}B,C), as well as decreasing the proportion of out-of-bounds predictions (Fig.~\ref{fig:Fig6}D,E), but there are diminishing returns.
+Additionally, the effect appears to saturate at different values depending on the forecast length.
+We find that for +14 and +30 day forecasts sampling at least 1000 sequences per week is fully sufficient to minimize forecast error, and 200 sequences per week is largely sufficient to curtail error.
+We arrive at a similar threshold of 1000 sequences per week for both the UK and Denmark (Fig.~\ref{fig:Fig6}B-E).
+
+
+\subsection*{Comparing country-level and hierarchical short-term forecast models}
+
+In observing poor performance in initial period of variant emergence (Fig.\ \ref{fig:Fig4}), as well as poor performance in countries with less intensive genomic surveillance (Fig.\ \ref{fig:Fig5}), we conclude lack of data results in poor fitness estimates and so poor predictive performance.
+Joint modeling of data from multiple countries has been proposed as a way to getting improved estimates of variant growth advantages in general and also specifically improving frequency estimates in low and middle income countries.
+Hierarchical or joint forecast models for short-term frequency forecasts typically operate by pooling parameters between `groups` in a model.
+For our application, we pool the relative fitness of variants across countries, so that estimated relative fitnesses are informed by not just the observed relative fitness within a location, but also the relative fitnesses in other locations.
+
+We compare the short-term forecast accuracy for individual models fit using MLR and this hierarchical MLR model in Figure \ref{fig:Fig7}.
+We find that overall the hierarchical MLR matches or outperforms the single country models in all locations and at all forecast lengths.
+Perhaps as expected the hierarchical MLR model matches MLR performance in countries with abundant data like the US and UK, while countries with less data like Trinidad and Tobago and Vietnam show a large performance advantage to hierarchical MLR.
+
+
+\begin{figure}[h!]
+	\centering
+	%\includegraphics[width=0.87\textwidth]{figures/model_comp_PooledMLR.png}
+	\caption{\textbf{Absolute error comparing standard MLR and hierarchical MLR across countries and forecast lags.}
+	(A) Median absolute error and (B) mean absolute error across countries, models and forecast lags moving from $-30$ day hindcasts to $+30$ day forecasts.
+	For each county / model / lag combination, the median and the mean are summarized across analysis data sets.
+	Panel A uses a log y axis for legibility while panel B uses a natural y axis.
+	}
+	\label{fig:Fig7}
+\end{figure}
+
+%\begin{figure}[!h]
+%\includegraphics[width=\columnwidth]{figures/sarscov2-embeddings-by-Nextstrain_clade-clade.png}
+%\caption{{\bf Phylogeny of early (2020--2022) SARS-CoV-2 sequences plotted by number of nucleotide substitutions from the most recent common ancestor on the x-axis (top) and low-dimensional embeddings of the same sequences by PCA (middle left), MDS (middle right), t-SNE (bottom left), and UMAP (bottom right).}
+%  Tips in the tree and embeddings are colored by their Nextstrain clade assignment.
+%  Line segments in each embedding reflect phylogenetic relationships with internal node positions calculated from the mean positions of their immediate descendants in each dimension (see Methods).
+%  Line thickness scales by the square root of the number of leaves descending from a given node in the phylogeny.
+%}
+%\label{fig:sars-cov-2-early-embeddings-by-Nextstrain-clade}
+%\end{figure}
+
+\section*{Discussion}
+
+% Discussion: Overall model performance and comparison across models (Table 1, Figure 2)
+% Discussion: Include distribution of errors (Figure 2B)
+% Discussion: Include discussion of MLR vs FGA vs GARW vs Piantham (Table 1, Figure 2)
+% Discussion: Include error vs lag (Table 1, Figure 2)
+
+In this manuscript we sought to perform a comprehensive analysis of the accuracy of nowcasts and short-term forecasts from fitness models of SARS-CoV-2 variant frequency.
+We observe substantial differences between median and mean absolute error (Fig.~\ref{fig:Fig2}, Table~\ref{table:Table1}) with median errors generally quite well contained at 0.5--1.9\% in the $+30$ day forecast, while mean errors are larger at 5.8--12.0\%.
+This difference is due to the highly skewed distribution of model errors (Fig.~\ref{fig:Fig3}) where most predictions are highly accurate, but a smaller fraction are off-target.
+%We find that better performing models more often avoid this failure mode of large errors.
+%The Piantham \cite{piantham2021estimating} model is the strongest example here, where it shows a similar profile in terms of median absolute error, but performs substantially worse in terms of mean absolute error (Fig.~\ref{fig:model_comp_A}, Table~\ref{table:model_comp_table}).
+%Similarly, we observe MLR slightly outperforming FGA and GARW \cite{figgins2022sars} in terms of mean absolute error, but not median absolute error.
+As expected, errors increase as target shifts from $-30$ day hindcast to $+30$ day forecast, but error increases more rapidly for mean absolute error than median absolute error.
+All four forecasting models explored here present a largely similar spectrum of errors.
+
+% Discussion: Include discussion of improvement over naive (Table 1, Figure 2)
+% Discussion: With specific discussion of improvement over naive model at -30 day hindcast
+
+\sloppy % keep long URLs below from overflowing
+We find that the Piantham, MLR, FGA and GARW models provide systematic and substantial improvements in forecasting accuracy relative to a `naive' model that uses 7-day smoothed frequency at the last timepoint with sequence data (Fig.~\ref{fig:Fig2}, Table~\ref{table:Table1}).
+For the MLR model, at $+30$ days the improvement in median absolute error over naive is 1.4--31.0\% and the improvement in mean absolute error is 6.8--26.2\%.
+This result supports the use of MLR models in live dashboards like the CDC Variant Proportions nowcast (\href{https://covid.cdc.gov/covid-data-tracker/\#variant-proportions}{covid.cdc.gov/covid-data-tracker/\#variant-proportions}) and the Nextstrain SARS-CoV-2 Forecasts (\href{https://nextstrain.org/sars-cov-2/forecasts/}{nextstrain.org/sars-cov-2/forecasts/}).
+
+We also observe improvements in accuracy for the $-30$ day hindcast of modeled frequency relative to naive frequency with the MLR model showing improvement in median absolute error of 0.1--11.1\% and improvement in mean absolute error of 0.9--17.0\%.
+These improvements were greatest in countries with lower cadence and throughput of genomic surveillance (Trinidad and Tobago and Vietnam).
+Importantly, this suggests that fitness models are useful for hindcasts in addition to short-term forecasts and that $-30$ day retrospective frequency should not be taken as truth, ie it takes more time than 30 days for backfill to resolve retrospective frequency.
+
+% Discussion: We believe the primary source of error is difficulty dealing with the emergence of new variants (Figure 3)
+% Discussion: Importance of both sequence quantity and sequence quality to forecast accuracy (Figure 4)
+% Discussion: Diminishing returns to increasing sequencing capacity (Figure 5)
+
+We find that variability in forecast errors is partially driven by data limitations.
+When new variants are emerging, we lack sequence counts and lack time to observe growth dynamics resulting in initial uncertainty of variant growth rates (Fig.~\ref{fig:Fig3}).
+Relatedly, analyzing the variation in nowcast error, we find that overall sequence quality and quantity at time of analysis are associated with model accuracy (Fig.~\ref{fig:Fig5}).
+Thus, as expected, sequence quality, volume and turnaround time are all important for providing accurate, real-time estimates of variant fitness and frequency.
+Subsampling existing data in high sequencing intensity countries, we find that there are diminishing returns to increasing sequencing efforts and that maximum accuracy is achieved at around 1000 sequences per week and substantial accuracy is achieved at around 200 sequences per week (Fig.~\ref{fig:Fig6}).
+This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
+As observed in Susswein et al.\ \cite{susswein2023leveraging}, pooling data across countries using a hierarchical fitness model improves short-term forecasts for SARS-CoV-2 variant dynamics (Fig.~\ref{fig:Fig7}).
+
+% Discussion: We find that short-term forecasts are well supported by simple growth advantage models like MLR
+% Discussion: These models fundamentally don't deal with new mutations and thus have limited forecasting horizons
+% Discussion: Future modeling work should seek to expand forecasting horizon by incorporating experimental data or otherwise estimating biological impact of future mutations
+
+Although these models appear largely accurate for short-term forecasts, they may be improved by incorporating underlying biological mechanism.
+In general, the methods discussed here are primarily statistical in nature and do not account for much of the biological or immunological knowledge that we have or could obtain.
+The incorporation of such knowledge could increase the short-term and medium-term capabilities of these models.
+Additionally, these fitness models do not account for future mutations and can only project forward from circulating viral diversity.
+This intrinsically limits the effective forecasting horizon achievable by these models.
+Future modeling work should seek to incorporate the emergence and spread of `adjacent possible' mutations for longer term forecasts on the order of several months or years \cite{kauffman1993origins}.
+Without empirical frequency dynamics to draw upon, the fitness effects of these adjacent possible mutations may be estimated from empirical data such as deep mutational scanning \cite{cao2022ba, greaney2022antibody, dadonaite2023full}.
+Continued timely genomic surveillance and biological characterization along with further model development will be necessary for successful real-time evolutionary forecasting of SARS-CoV-2.
+
+\section*{Methods}
+
+\subsection*{Preparing sequence counts and case counts}
+
+We prepared sequence count data sets to replicate a live forecasting environment using the Nextstrain-curated SARS-CoV-2 sequence metadata \cite{hadfield2018nextstrain} which is created using the GISAID EpiCoV database \cite{khare2021gisaid}.
+To reconstruct available sequence data for a given analysis date, we filtered to all sequences with collection dates up to 90 days before the analysis date, and additionally filtered to those sequences which were submitted before the analysis date.
+These sequences were tallied according to their annotated Nextstrain clade to produce sequence count for each country, for each clade and for each day over the period of interest.
+Sequence counts were produced independently for the 8 focal countries Australia, Brazil, Japan, South Africa, Trinidad and Tobago, the United Kingdom, the United States, and Vietnam.
+We repeated this process for a series of analysis dates on the 1st and 15th of each month starting with January 1, 2022 and ending with December 15, 2022 giving a total of 24 analysis data sets for each country.
+Since three models (FGA, GARW and Piantham) also use case counts for their estimates, we additionally prepare data sets using case counts over the time periods of interest as available from Our World in Data (\href{https://ourworldindata.org/covid-cases}{ourworldindata.org/covid-cases}).
+
+\subsection*{Frequency dynamics and transmission advantages}
+
+We implemented and evaluated multiple models that forecast variant frequency.
+These models estimate the frequency $f_{v}(t)$ of variant $v$ at time $t$, and simultaneously estimate the variant transmission advantage $\Delta_{v} = \frac{R_{t}^{v}}{R_{t}^{u}}$ where $R_{t}^{v}$ is the effective reproduction number for variant $v$ and $u$ is an arbitrarily assigned reference variant with fixed fitness.
+We can interpret these transmission advantages as the effective reproduction number of a variant relative to some reference variant.
+
+The four models of interest are: Multinomial Logistic Regression (MLR) of frequency growth and three models of variant-specific $R_t$: a fixed growth advantage model (FGA) parameterization and a growth advantage random walk (GARW) parameterization of the renewal equation framework of Figgins and Bedford \cite{figgins2022sars}, as well as an alternative approach to estimating variant $R_t$ by Piantham et al \cite{piantham2021estimating}.
+We provide a brief mathematical overview of these methods below.
+
+The multinomial logistic regression model estimates a fixed growth advantage using logistic regression with a variant-specific intercept and time coefficient, so that the frequency of variant $v$ at time $t$ can be modeled as
+\begin{equation}
+    f_{v}(t) = \frac{\exp(\alpha_{v} + \delta_{v} t)}{\sum_{u} \exp(\alpha_{u} + \delta_{u} t)},
+\end{equation}
+where $\alpha_v$ is the initial frequency and $\delta_v$ is the growth rate of variant $v$, and the summation in the denominator is over variants 1 to $n$.
+Inferred frequency growth $f_v$ can be converted to a growth advantage (or selective coefficient) as $\Delta_{v} = \exp(\delta_{v} \tau)$ assuming a fixed deterministic  generation time of $\tau$.
+
+The model by Piantham et al \cite{piantham2021estimating} relies on an approximation to the renewal equation wherein new infections do not vary greatly over the generation time of the virus.
+This model generalizes the MLR model in that it accounts for non-fixed generation time though it assumes little overall case growth.
+
+The fixed growth advantage (FGA) model uses a renewal equation model based on both case counts and sequence counts to estimate variant-specific $R_t$ assuming that the growth advantage $\Delta_{v}$ of variant $v$ is fixed relative to reference variant $u$ \cite{figgins2022sars}.
+The growth advantage random walk (GARW) model uses the same renewal equation framework and data, but allows variant growth advantages to vary smoothly in time \cite{figgins2022sars}.
+
+The models used all differ in the complexity of their assumptions in computing the variant growth advantage.
+Growth advantages presented in this manuscript are estimated relative to the baseline Omicron 21L (BA.1) strain, providing a point of reference for competing growth advantages and how median values change over time.
+Further details on the model formats can be found in their respective citations.
+All models were implemented using the evofr software package for evolutionary forecasting (\href{https://github.com/blab/evofr}{https://github.com/blab/evofr}) using Numpyro for inference.
+
+As a baseline, we compared the four models above to a naive model which generates the forecast as the average of the last available frequencies.
+
+Additionally, we implement a hierarchical variant of the model where multiple countries are fit simultaneously with a Normal prior on the relative fitness of a given variant between countries, so that $\delta_{v, g} \sim \text{Normal}(\overline{\delta}_{v}, \sigma)$.
+Similar formulations of this hierarchical model have been used for SARS-CoV-2 frequency forecasts previously. \cite{susswein2023leveraging}
+
+\subsection*{Evaluation criteria}
+
+We calculated the `absolute error` (AE) for a given model $m$ and data set $d$ as the difference between the retrospective raw frequencies and the predicted frequencies as
+\begin{equation}
+    \mathrm{AE}_{t}^{m,d} = \frac{1}{n} \sum_{v \in V} \left|f_{v}^{d}(t) - \hat{f}^{m,d}_{v}(t) \right|,
+\end{equation}
+where $f_{v}^{d}(t)$ and $\hat{f}_{v}^{m,d}(t)$ are the retrospective frequencies and the predicted frequencies for model $m$, data $d$, variant $v$ and time $t$.
+The AE is the mean across individual variants for a specific model, data set and time point.
+Additionally, we often work with the lead time which is defined as the difference between date of analysis for the data set and the forecast date $l = t - T_{\text{obs}}$.
+We summarized median absolute error and mean absolute error across multiple analysis datasets in Figure \ref{fig:Fig2} and Table \ref{table:Table1}.
+
+Throughout this study, we primarily use the median and mean absolute error to evaluate the accuracy of our point forecasts.
+We select the median absolute error as a measure of central tendency on our forecast errors, reducing the influence of outliers and skewed data distributions due to the contribution of forecasts which tend to diverge rapidly in forecast lead.
+To balance this and account for the effect of outliers and rapidly divergent forecasts, we also use the mean absolute error which is less sensitive to outliers than the mean square error and has units in terms of frequencies directly.
+
+However, these are not the only possible choices for error metrics, and are motivated by our decision to focus primarily on point forecasts of variant frequencies.
+To supplement this analysis, we also address the coverage of probabilistic extensions of the models discussed here.
+
+\subsection*{Generating predictors of error}
+
+We explored four key variables to describe the effect of sequencing efforts on nowcast errors and estimated Pearson correlations with the mean absolute nowcast errors.
+These variables are defined as proportion of bad quality control (QC) sequences according to Nextclade \cite{aksamentov2021nextclade}, fraction of sequences available within 14 days of the prediction time, total sequences availability within 14 days of the prediction time and median delay of sequence submission.
+To calculate these variables, we selected a 14-day window of data before each and every analysis date and used the collection and submission dates to determine their availability.
+Total sequence availability was calculated by dividing the sequences where submission date was before the date of analysis by the total collected sequences and similarly fraction of sequences at observation was estimated.
+Sequence submission delay was calculated by taking the difference between the submission date and the date of collection.
+Bad QC sequence proportion was estimated by dividing the sequences with bad QC classification by the total collected sequences.
+Estimates were computed for all defined dates of analysis across all countries.
+
+\subsection*{Assessing coverage for short-term frequency forecasts}
+
+The main results of our analyses rely on mean and median absolute error as metrics, however, there is much to gain by using probabilistic forecasts for variant frequency.
+To this aim, we investigate the coverage of these different methods for forecasting variant frequency.
+Though not all models described initially were designed with uncertainty quantification in mind, we develop and fit Bayesian extensions of these models which are fit to the same data sets as before using stochastic variational inference.
+
+\subsection*{Downscaling historical sequencing effort}
+
+We analyze the effects of scaling back sequencing efforts to assess the effect of sequencing volume on nowcast and forecast errors.
+Using the sequencing data from the United Kingdom and Denmark, we subsampled existing available sequences at the time of analysis at a rate of 100, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, and 2000 sequences per week of any submission date.
+We then generated datasets for the same analysis dates and study period used in the previous analyses, generating 5 replicate subsampled data sets of sequences available at each analysis date for each eventual sequencing rate, location, and analysis date.
+Subsampling sequences per week before checking which sequences were available by the analysis date ensures that we respect the availability of sequences by submission date and submission delay in each country i.e. that countries with many sequences per week but long delays will maintain these delays.
+We then fit the MLR forecast model to each resulting data set and forecast up to 30 days after analysis date and compared these forecasts to the truth set in previous sections to compute the forecast error for each model.
+To better understand how the forecast error varies with sequencing intensity and forecast length, we computed the fraction of forecasts within an error tolerance (5\% AE) as well as the average error at different sequence threshold and lag times.
+
+\subsection*{Comparing forecasts using retrospective clade designations and real-time designations}
+
+The main analyses discussed in this manuscript rely on subsetting and filtering SARS-CoV-2 sequence metadata accessed on a particular data.
+However, the clade designations used throughout this manuscript may not have been the same as clade designations at the time the data was available.
+To understand how this affects our evaluation of forecast error, we compare the accuracy of models fit to the sequence counts from metadata at the time and using the available Nextclade version to those fit on the retrospective Nextclade version used in the rest of the analyses in this paper.
+In particular, we focus on the timing of the designation of Omicron 22E in October 2022 and show the accuracy of MLR using the different data sets at different forecast leads.
+We compare the resulting MAE of these analyses between Nextclade versions in Supp.\  \nameref{fig:S9} and show trajectories from individual countries in Supp.\ Figures \nameref{fig:S10}--\nameref{fig:S17}.
+
+\subsection*{Data and code accessibility}
+
+Sequence data including date and location of collection as well as clade annotation was obtained via the Nextstrain-curated data set that pulls data from GISAID database.
+A full list of sequences analyzed with accession numbers, derived data of sequence counts and case counts, along with all source code used to analyze this data and produce figures is available via the GitHub repository \href{https://github.com/blab/ncov-forecasting-fit}{github.com/blab/ncov-forecasting-fit}.
+
+
+\section*{Supporting information}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{S1 Fig.}
+\label{fig:S1}
+{\bf Reconstructing available data sets for Australia, Brazil, South Africa, Trinidad and Tobago, the United Kingdom, and Vietnam.}
+(A) Variant sequence counts categorized by Nextstrain clade at 4 different analysis dates.
+
+\paragraph*{S2 Fig.}
+\label{fig:S2}
+{\bf Reconstructing predictions for Australia}
+(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Australia.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+
+\paragraph*{S3 Fig.}
+\label{fig:S3}
+{\bf Reconstructing predictions for Brazil}
+(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Brazil.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+
+\paragraph*{S4 Fig.}
+\label{fig:S4}
+{\bf Reconstructing predictions for South Africa}
+(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for South Africa.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+        
+\paragraph*{S5 Fig.}
+\label{fig:S4}
+{\bf Reconstructing predictions for Trinidad and Tobago}
+(A) +30 day frequency
+forecasts for variants in bimonthly intervals using the MLR model for Trinidad and Tobago. Each
+forecast trajectory is shown as a different colored line. Retrospective smoothed frequency is shown
+as a thick black line.
+
+\paragraph*{S6 Fig.}
+\label{fig:S6}
+{\bf Reconstructing predictions for United Kingdom}
+(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for United Kingdom.
+		Each forecast trajectory is shown as a different colored line.
+		Retrospective smoothed frequency is shown as a thick black line.
+
+        
+\paragraph*{S7 Fig.}
+\label{fig:S7}
+{\bf Reconstructing predictions for Vietnam}
+(A) +30 day frequency forecasts for variants in bimonthly intervals using the MLR model for Vietnam.
+Each forecast trajectory is shown as a different colored line.
+Retrospective smoothed frequency is shown as a thick black line.
+
+
+\paragraph*{S8 Fig.}
+\label{fig:S8}
+{\bf Posterior and predictive coverage for estimates across countries and models}
+(A) The proportion of estimates lying within the 95\% confidence intervals (CIs) of posterior latent frequencies across lag times (-30,-30).
+(B) The proportion of estimates lying within the 95\% confidence intervals (CIs) of posterior predictive sample frequencies across lag times (-30,-30).
+We generate the posterior predictive sample frequencies by sampling random counts for each variant using their posterior latent frequencies conditioning on the total sequences being those observed retrospectively.
+
+\paragraph*{S9 Fig.}
+\label{fig:S9}
+{\bf Comparing the accuracy of short-term forecast models under retrospective vs real-time clade assignments.}
+(A-H) Mean absolute error for MLR as a function of days
+since date of estimation, starting from 30 day hindcasts to 30 days forecasts. Intervals shown have
+width of two standard errors of the mean. We compare retrospective Nextstrain clade assignments
+made today (‘Current Nextclade’) to Nextstrain clade assignments available in Oct 2022 (‘Real-
+time Nextclade‘). We find that errors are qualitatively similar regardless of Nextclade version with
+errors being potentially higher for the current Nextclade version.
+
+\paragraph*{S10 Fig.}
+\label{fig:S10}
+{\bf Forecasts for Australia using clade designations under retrospective vs real-time clade assignments}
+Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments available
+in Oct 2022 (‘Real-time Nextclade‘) (B). 
+
+\paragraph*{S11 Fig.}
+\label{fig:S11}
+{\bf Forecasts for Brazil using clade designations under retrospective vs real-time clade assignments}
+Forecasts from MLR fit to data generated using retrospective Nextstrain
+clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments available in Oct
+2022 (‘Real-time Nextclade‘) (B).
+
+\paragraph*{S12 Fig.}
+\label{fig:S12}
+{\bf Forecasts for Japan using clade designations under retrospective vs real-time clade assignments}
+Forecasts from MLR fit to data generated using retrospective Nextstrain
+clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments available in Oct
+2022 (‘Real-time Nextclade‘) (B).
+
+\paragraph*{S13 Fig.}
+\label{fig:S13}
+{\bf Forecasts for South Africa using clade designations under retrospective vs real-time clade assignments }
+Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments available
+in Oct 2022 (‘Real-time Nextclade‘) (B).
+
+\paragraph*{S14 Fig.}
+\label{fig:S14}
+{\bf Forecasts for Trinidad and Tobago using clade designations under retrospective vs real-time clade assignments}
+Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (‘Current Nextclade’) (A) and Nextstrain clade assign-
+ments available in Oct 2022 (‘Real-time Nextclade‘) (B).
+
+\paragraph*{S15 Fig.}
+\label{fig:S15}
+{\bf Forecasts for United States using clade designations under retrospective vs real-time clade assignments}
+Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments available
+in Oct 2022 (‘Real-time Nextclade‘) (B).
+
+\paragraph*{S16 Fig.}
+\label{fig:S16}
+{\bf Forecasts for United Kingdom using clade designations under retrospective vs real-time clade assignments }
+Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments
+available in Oct 2022 (‘Real-time Nextclade‘) (B).
+
+\paragraph*{S17 Fig.}
+\label{fig:S17}
+{\bf Forecasts for Vietnam using clade designations under retrospective vs real-time clade assignments}
+Forecasts from MLR fit to data generated using retrospective Nextstrain clade designations (‘Current Nextclade’) (A) and Nextstrain clade assignments available
+in Oct 2022 (‘Real-time Nextclade‘) (B).
+
+
+\section*{Acknowledgements}
+
+We thank John Huddleston for many helpful comments on the approach and on the manuscript.
+We gratefully acknowledge all data contributors, ie the Authors and their Originating laboratories responsible for obtaining the specimens, and their Submitting laboratories for generating the genetic sequence and metadata and sharing via the GISAID Initiative, on which this research is based.
+We have included an acknowledgements table in the associated GitHub repository under \texttt{data/final\_acknowledgements\_gisaid.tsv.gz}.
+MF is an ARCS Foundation scholar and was supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE1762114.
+TB is a Howard Hughes Medical Institute Investigator and employee of the Howard Hughes Medical Institute.
+This work is supported by NIH NIGMS R35 GM119774 awarded to TB and by a HHMI COVID-19 Collaboration Initiative awarded to TB. 
+The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+
+\nolinenumbers
+
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% or
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here. See http://journals.plos.org/plosone/s/latex for
+% step-by-step instructions.
+%
+
+% TODO: copy/paste bbl file contents below instead of using standard bibliography commands.
+%\bibliography{ncov-forecasting-fit.bib}
+
+\begin{thebibliography}{10}
+
+\bibitem{onyeaka2021covid19}Onyeaka, H., Anumudu, C., Al-Sharify, Z., Egele-Godswill, E. \& Mbaegbu, P. COVID-19 pandemic: A review of the global lockdown and its far-reaching effects. {\em Review Sci Prog}. \textbf{104}, 368504211019854 (2021)
+
+\bibitem{campbell2021increased}Campbell, F., Archer, B., Laurenson-Schafer, H., Jinnai, Y., Konings, F., Batra, N., Pavlin, B., Vandemaele, K., Kerkhove, M., Jombart, T., Morgan, O. \& Waroux, O. Increased transmissibility and global spread of SARS-CoV-2 variants of concern as at June 2021. {\em Euro Surveill}. \textbf{26} (2021), https://doi.org/10.2807/1560-7917.ES.2021.26.24.2100509
+
+\bibitem{viana2022rapid}Viana, R., Moyo, S., Amoako, D., Tegally, H., Scheepers, C., Althaus, C., Anyaneji, U., Bester, P., Boni, M., Chand, M. \& Others Rapid epidemic expansion of the SARS-CoV-2 Omicron variant in southern Africa. {\em Nature}. \textbf{603}, 679-686 (2022)
+
+\bibitem{carabelli2023sarscov2}Carabelli, A., Peacock, T., Thorne, L., Harvey, W., Hughes, J., Peacock, S., Silva, T., Robertson, D., Barclay, W. \& Towers, G. SARS-CoV-2 variant biology: immune escape, transmission, and fitness. {\em Nat Rev Microbiol}. \textbf{21}, 162-177 (2023), https://doi.org/10.1038/s41579-022-00841-7
+
+\bibitem{luksza2014predictive}Łuksza, M. \& Lässig, M. A predictive fitness model for influenza. {\em Nature}. \textbf{507}, 57-61 (2014)
+
+\bibitem{morris2018predictive}Morris, D., Gostic, K., Pompei, S., Bedford, T., Łuksza, M., Neher, R., Grenfell, B., Lässig, M. \& McCauley, J. Predictive modeling of influenza shows the promise of applied evolutionary biology. {\em Trends In Microbiology}. \textbf{26}, 102-118 (2018)
+
+\bibitem{huddleston2020integrating}Huddleston, J., Barnes, J., Rowe, T., Xu, X., Kondor, R., Wentworth, D., Whittaker, L., Ermetal, B., Daniels, R., McCauley, J. \& Others Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution. {\em Elife}. \textbf{9} pp. e60067 (2020)
+
+\bibitem{annavajhala2021emergence}Annavajhala, M., Mohri, H., Wang, P., Nair, M., Zucker, J., Sheng, Z., Gomez-Simmonds, A., Kelley, A., Tagliavia, M., Huang, Y. \& Others Emergence and expansion of SARS-CoV-2 B. 1.526 after identification in New York. {\em Nature}. \textbf{597}, 703-708 (2021)
+
+\bibitem{faria2021genomics}Faria, N., Mellan, T., Whittaker, C., Claro, I., Candido, D., Mishra, S., Crispim, M., Sales, F., Hawryluk, I., McCrone, J. \& Others Genomics and epidemiology of the P. 1 SARS-CoV-2 lineage in Manaus, Brazil. {\em Science}. \textbf{372}, 815-821 (2021)
+
+\bibitem{obermeyer2022analysis}Obermeyer, F., Jankowiak, M., Barkas, N., Schaffner, S., Pyle, J., Yurkovetskiy, L., Bosso, M., Park, D., Babadi, M., MacInnis, B. \& Others Analysis of 6.4 million SARS-CoV-2 genomes identifies mutations associated with fitness. {\em Science}. \textbf{376}, 1327-1332 (2022)
+
+\bibitem{susswein2023early}Susswein, Z., Johnson, K., Kassa, R., Parastaran, M., Peng, V., Wolansky, L., Scarpino, S. \& Bento, A. Early risk-assessment of pathogen genomic variants emergence. {\em MedRxiv}. pp. 2023-01 (2023)
+
+\bibitem{figgins2022sars}Figgins, M. \& Bedford, T. SARS-CoV-2 variant dynamics across US states. {\em MedRxiv}. (2022), https://doi.org/10.1101/2021.12.09.21267544
+
+\bibitem{piantham2021estimating}Piantham, C., Linton, N., Nishiura, H. \& Ito, K. Estimating the elevated transmissibility of the B.1.1.7 strain over previously circulating strains in England using GISAID sequence frequencies. {\em MedRxiv}. (2021), https://doi.org/10.1101/2021.03.17.21253775
+
+\bibitem{shu2017gisaid}Shu, Y. \& McCauley, J. GISAID: Global initiative on sharing all influenza data - from vision to reality. {\em Euro Surveill}. \textbf{22}, 30494 (2017,3)
+
+\bibitem{bloom2023fitness}Bloom, J. \& Neher, R. Fitness effects of mutations to SARS-CoV-2 proteins. {\em BioRxiv}. pp. 2023.01.30.526314 (2023)
+
+\bibitem{brito2022global}Brito, A., Semenova, E., Dudas, G., Hassler, G., Kalinich, C., Kraemer, M., Ho, J., Tegally, H., Githinji, G., Agoti, C. \& Others Global disparities in SARS-CoV-2 genomic surveillance. {\em Nature Communications}. \textbf{13}, 7003 (2022)
+
+\bibitem{aksamentov2021nextclade}Aksamentov, I., Roemer, C., Hodcroft, E. \& Neher, R. Nextclade: clade assignment, mutation calling and quality control for viral genomes. {\em Journal Of Open Source Software}. \textbf{6} pp. 3773 (2021)
+
+\bibitem{susswein2023leveraging}Susswein, Z., Johnson, K., Kassa, R., Parastaran, M., Peng, V., Wolansky, L., Scarpino, S. \& Bento, A. Leveraging global genomic sequencing data to estimate local variant dynamics. {\em MedRxiv}. (2023)
+
+\bibitem{kauffman1993origins}Kauffman, S. The origins of order: Self-organization and selection in evolution. (Oxford University Press, USA,1993)
+
+\bibitem{cao2022ba}Cao, Y., Yisimayi, A., Jian, F., Song, W., Xiao, T., Wang, L., Du, S., Wang, J., Li, Q., Chen, X. \& Others BA. 2.12. 1, BA. 4 and BA. 5 escape antibodies elicited by Omicron infection. {\em Nature}. \textbf{608}, 593-602 (2022)
+
+\bibitem{greaney2022antibody}Greaney, A., Starr, T. \& Bloom, J. An antibody-escape estimator for mutations to the SARS-CoV-2 receptor-binding domain. {\em Virus Evolution}. \textbf{8}, veac021 (2022)
+
+\bibitem{dadonaite2023full}Dadonaite, B., Brown, J., McMahon, T., Farrell, A., Asarnow, D., Stewart, C., Logue, J., Murrell, B., Chu, H., Veesler, D. \& Others Full-spike deep mutational scanning helps predict the evolutionary success of SARS-CoV-2 clades. {\em BioRxiv}. pp. 2023-11 (2023)
+
+\bibitem{hadfield2018nextstrain}Hadfield, J., Megill, C., Bell, S., Huddleston, J., Potter, B., Callender, C., Sagulenko, P., Bedford, T. \& Neher, R. Nextstrain: real-time tracking of pathogen evolution. {\em Bioinformatics}. \textbf{34} pp. 4121-4123 (2018)
+
+\bibitem{khare2021gisaid}Khare, S., Gurry, C., Freitas, L., Schultz, M., Bach, G., Diallo, A., Akite, N., Ho, J., Lee, R., Yeo, W. \& Others GISAID's role in pandemic response. {\em China CDC Weekly}. \textbf{3} pp. 1049 (2021)
+
+
+\end{thebibliography}
+
+% \bibitem{bib1}
+% Conant GC, Wolfe KH.
+% \newblock {{T}urning a hobby into a job: how duplicated genes find new
+%   functions}.
+% \newblock Nat Rev Genet. 2008 Dec;9(12):938--950.
+
+% \bibitem{bib2}
+% Ohno S.
+% \newblock Evolution by gene duplication.
+% \newblock London: George Alien \& Unwin Ltd. Berlin, Heidelberg and New York:
+%   Springer-Verlag.; 1970.
+
+% \bibitem{bib3}
+% Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM.
+% \newblock {{S}uccessive increases in the resistance of {D}rosophila to viral
+%   infection through a transposon insertion followed by a {D}uplication}.
+% \newblock PLoS Genet. 2011 Oct;7(10):e1002337.
+
+% \end{thebibliography}
+
+\end{document}
