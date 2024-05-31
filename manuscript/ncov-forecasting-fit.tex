@@ -187,7 +187,7 @@ Consistent with less available data, we observe that the model predictions for J
 We utilize five models for predicting the frequencies of SARS-CoV-2 variants.
 The simplest of these models is Multinomial Logistic Regression (MLR) commonly used in SARS-CoV-2 analyses \cite{annavajhala2021emergence, faria2021genomics, obermeyer2022analysis, susswein2023early}, which uses only variant-specific sequence counts and has a fixed growth advantage for each variant.
 More complex models include the Fixed Growth Advantage (FGA) and Growth Advantage Random Walk (GARW) parameterizations of the variant $R_t$ model introduced by Figgins and Bedford \cite{figgins2022sars}, which uses case counts in addition to variant-specific sequence counts.
-The Piantham et al.\ model \cite{piantham2021estimating} operates on a similar principle in estimating variant-specific $R_t$, but differs in model details.
+The Piantham et al.\ model \cite{piantham2021estimating} operates on a similar principle in estimating relative fitness, but differs in model details and does not use case counts.
 We compare these four models to a naive model to serve as a reference for comparison.
 The naive model is implemented as a 7-day moving average on the retrospective raw frequencies using the most recent seven days for which sequencing data is available.
 We compare forecasting accuracy across different time lags from $-30$ days back from date of analysis as hindcast, to +0 days from date of analysis as nowcast, and $+30$ days forward from date of analysis as forecast.
@@ -381,7 +381,7 @@ We implemented and evaluated multiple models that forecast variant frequency.
 These models estimate the frequency $f_{v}(t)$ of variant $v$ at time $t$, and simultaneously estimate the variant transmission advantage $\Delta_{v} = \frac{R_{t}^{v}}{R_{t}^{u}}$ where $R_{t}^{v}$ is the effective reproduction number for variant $v$ and $u$ is an arbitrarily assigned reference variant with fixed fitness.
 We can interpret these transmission advantages as the effective reproduction number of a variant relative to some reference variant.
 
-The four models of interest are: Multinomial Logistic Regression (MLR) of frequency growth and three models of variant-specific $R_t$: a fixed growth advantage model (FGA) parameterization and a growth advantage random walk (GARW) parameterization of the renewal equation framework of Figgins and Bedford \cite{figgins2022sars}, as well as an alternative approach to estimating variant $R_t$ by Piantham et al \cite{piantham2021estimating}.
+The four models of interest are: Multinomial Logistic Regression (MLR) of frequency growth, two models of variant-specific $R_t$: a fixed growth advantage model (FGA) parameterization and a growth advantage random walk (GARW) parameterization of the renewal equation framework of Figgins and Bedford \cite{figgins2022sars}, as well as another approach to estimating relative fitness by Piantham et al \cite{piantham2021estimating}.
 We provide a brief mathematical overview of these methods below.
 
 The multinomial logistic regression model estimates a fixed growth advantage using logistic regression with a variant-specific intercept and time coefficient, so that the frequency of variant $v$ at time $t$ can be modeled as
