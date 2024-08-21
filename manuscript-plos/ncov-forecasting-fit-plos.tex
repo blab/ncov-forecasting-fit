@@ -539,10 +539,17 @@ Subsampling existing data in high sequencing intensity countries, we find that t
 This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
 As observed in Susswein et al.\ \cite{susswein2023leveraging}, pooling data across countries using a hierarchical fitness model improves short-term forecasts for SARS-CoV-2 variant dynamics (Fig.~\ref{fig:Fig7}).
 
-In live MLR analyses, we have relied on the number of sequences available from samples collected in the previous 30-days as the key metric for inclusion of a country in the analysis.
+In live MLR analyses at \href{https://nextstrain.org/sars-cov-2/forecasts/}{nextstrain.org/sars-cov-2/forecasts/}, we have relied on the number of sequences available from samples collected in the previous 30-days as the key metric for inclusion of a country in the analysis.
 Along these lines, for pragmatic guidance for thresholds in which to trust MLR results, we observe that Trinidad and Tobago with 2.3k sequences collected in 2022 and a median 30-day sequence count of 43 shows a mean absolute forecasting error of 12\%, that Vietnam with 6k sequences collected in 2022 and a median 30-day sequence count of 30 shows a mean absolute forecasting error of 11\% and that South Africa with 16k sequences collected in 2022 and a median 30-day sequence count of 170 shows a mean absolute forecasting error of 7\%.
 This suggests that a threshold of 50 sequences in previous 30 days should be roughly consistent with a $\sim$10\% forecasting error.
 Keeping forecasting error under 10\%  seems like a reasonable target for public display of frequency forecasts and would support targeting a threshold of 50 sequences from samples collected in the previous 30 days.
+
+In addition to differences in genomic surveillance, we expect countries may differ in variant dynamics due to differences in absolute viral prevalence.
+We expect that variant frequencies we more closely follow the MLR expectation when absolute prevalence is large, achieved through a large host population and/or frequent repeated infection.
+Rapid continued evolution of SARS-CoV-2 \cite{kistler2023atlas} suggests that we will continue to see widespread circulation of SARS-CoV-2 and thus we generally expect fitness-based models to provide an adequate description of variant frequency dynamics.
+Of note, in comparing the UK with 67M people to Denmark with 6M people we observe similar levels of prediction error when sampling sequences at similar intensities (Fig.~\ref{fig:Fig6}).
+This suggests that stochastic effects from low absolute viral prevalence were not strongly manifesting with a population size of 6M.
+However, we do expect that at some smaller population size stochastic effects and repeated importations will cause a deviation in frequency dynamics from fitness model expectations.
 
 % Discussion: We find that short-term forecasts are well supported by simple growth advantage models like MLR
 % Discussion: These models fundamentally don't deal with new mutations and thus have limited forecasting horizons
@@ -846,6 +853,8 @@ The funders had no role in study design, data collection and analysis, decision 
 \bibitem{aksamentov2021nextclade}Aksamentov, I., Roemer, C., Hodcroft, E. \& Neher, R. Nextclade: clade assignment, mutation calling and quality control for viral genomes. {\em Journal Of Open Source Software}. \textbf{6} pp. 3773 (2021)
 
 \bibitem{susswein2023leveraging}Susswein, Z., Johnson, K., Kassa, R., Parastaran, M., Peng, V., Wolansky, L., Scarpino, S. \& Bento, A. Leveraging global genomic sequencing data to estimate local variant dynamics. {\em MedRxiv}. (2023)
+
+\bibitem{kistler2023atlas}Kistler, K. \& Bedford. T. An atlas of continuous adaptive evolution in endemic human viruses. {\em Cell Host Microbe}. \textbf{31}, 1898--1909 (2023)
 
 \bibitem{kauffman1993origins}Kauffman, S. The origins of order: Self-organization and selection in evolution. (Oxford University Press, USA,1993)
 
