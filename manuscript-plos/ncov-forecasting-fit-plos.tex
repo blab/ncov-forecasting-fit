@@ -539,6 +539,11 @@ Subsampling existing data in high sequencing intensity countries, we find that t
 This level of sequencing enables robust short-term forecasts of pathogen frequency dynamics at the level of a country and highlights the feasibility of pathogen surveillance for evolutionary forecasting.
 As observed in Susswein et al.\ \cite{susswein2023leveraging}, pooling data across countries using a hierarchical fitness model improves short-term forecasts for SARS-CoV-2 variant dynamics (Fig.~\ref{fig:Fig7}).
 
+In live MLR analyses, we have relied on the number of sequences available from samples collected in the previous 30-days as the key metric for inclusion of a country in the analysis.
+Along these lines, for pragmatic guidance for thresholds in which to trust MLR results, we observe that Trinidad and Tobago with 2.3k sequences collected in 2022 and a median 30-day sequence count of 43 shows a mean absolute forecasting error of 12\%, that Vietnam with 6k sequences collected in 2022 and a median 30-day sequence count of 30 shows a mean absolute forecasting error of 11\% and that South Africa with 16k sequences collected in 2022 and a median 30-day sequence count of 170 shows a mean absolute forecasting error of 7\%.
+This suggests that a threshold of 50 sequences in previous 30 days should be roughly consistent with a $\sim$10\% forecasting error.
+Keeping forecasting error under 10\%  seems like a reasonable target for public display of frequency forecasts and would support targeting a threshold of 50 sequences from samples collected in the previous 30 days.
+
 % Discussion: We find that short-term forecasts are well supported by simple growth advantage models like MLR
 % Discussion: These models fundamentally don't deal with new mutations and thus have limited forecasting horizons
 % Discussion: Future modeling work should seek to expand forecasting horizon by incorporating experimental data or otherwise estimating biological impact of future mutations
